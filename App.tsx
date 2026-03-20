@@ -44,15 +44,17 @@ import {
 } from './data.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
-import { Routes, Route, useLocation, Link, useNavigate, useParams } from 'react-router-dom';
+import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
 
 import { createSlug } from './utils.ts';
 
 const LoadingOverlay = () => (
-  <div className="fixed inset-0 z-[1000] bg-white dark:bg-slate-900 flex items-center justify-center animate-fade-in transition-all">
-    <div className="flex flex-col items-center">
-      <div className="w-16 h-16 border-4 border-brand-gold/20 border-t-brand-gold rounded-full animate-spin mb-4"></div>
-      <p className="text-brand-gold font-bold uppercase tracking-widest text-[10px]">Loading iExplain...</p>
+  <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-brand-blue/70 dark:bg-slate-950/80 backdrop-blur-md animate-fade-in transition-all duration-300">
+    <div className="flex flex-col items-center justify-center rounded-3xl border border-white/25 bg-white/15 px-8 py-7 shadow-2xl">
+      <div className="h-16 w-16 rounded-full border-4 border-brand-gold/25 border-t-brand-gold animate-spin mb-5"></div>
+      <p className="text-brand-gold font-black uppercase tracking-[0.25em] text-[11px] text-center">
+        iExplain Education
+      </p>
     </div>
   </div>
 );
@@ -280,15 +282,7 @@ const OfficeDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const office = OFFICE_ADDRESSES.find(o => o.slug === slug);
 
-  if (!office) return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center bg-white dark:bg-slate-900">
-      <div className="w-20 h-20 bg-red-100 text-red-500 rounded-full flex items-center justify-center mb-6">
-        <i className="fa-solid fa-location-slash text-3xl"></i>
-      </div>
-      <h2 className="text-2xl font-black text-brand-blue dark:text-white mb-4">Location Not Found</h2>
-      <Link to="/" className="px-6 py-3 bg-brand-gold text-white rounded-xl font-bold text-xs uppercase tracking-widest">Back to Home</Link>
-    </div>
-  );
+  if (!office) return <Navigate to="/contact" replace />;
 
   return (
     <div className="animate-fade-in bg-gray-50 dark:bg-slate-900 pb-20">
@@ -364,7 +358,7 @@ const ExamPage = () => {
    const { subPath } = useParams<{ subPath: string }>();
    const data = EXAMS_DETAILED[subPath || 'neet-ug'];
 
-   if (!data) return <div className="py-20 text-center font-bold text-gray-500">Exam information not available.</div>;
+   if (!data) return <Navigate to="/exams/neet-ug" replace />;
 
    // Mapping legacy exam data to new ProgramDetailPage format
    // If data.content is present (like in neet-ug), use it.
@@ -429,30 +423,35 @@ const CollegeDetailWrapper = () => {
   }, [slug]);
 
   if (loading) return <LoadingOverlay />;
+  if (!data) return <Navigate to="/" replace />;
   
   return <CollegeDetailPage data={data} />;
 };
 
 const StudyIndiaWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  return <StudyIndiaDetailPage data={INDIA_COURSES_DETAILED[subPath || 'mbbs']} />;
+  const data = INDIA_COURSES_DETAILED[subPath || 'mbbs'];
+  if (!data) return <Navigate to="/study-india/mbbs" replace />;
+  return <StudyIndiaDetailPage data={data} />;
 };
 
 const StudyAbroadWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  return <StudyAbroadDetailPage data={STUDY_ABROAD_DETAILED[subPath || 'usa']} />;
+  const data = STUDY_ABROAD_DETAILED[subPath || 'usa'];
+  if (!data) return <Navigate to="/study-abroad/usa" replace />;
+  return <StudyAbroadDetailPage data={data} />;
 };
 
 const MBBSAbroadWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  return <MBBSDetailPage data={MBBS_ABROAD_DETAILED[subPath || 'russia']} />;
+  const data = MBBS_ABROAD_DETAILED[subPath || 'russia'];
+  if (!data) return <Navigate to="/mbbs-abroad/russia" replace />;
+  return <MBBSDetailPage data={data} />;
 };
 
 const BlogDetailWrapper = () => {
-  const { category, slug } = useParams<{ category: string, slug: string }>();
-  // Handle both /blog/:slug and /blog/:category/:slug
-  // If only slug is present, it might be in the first param if route is defined differently
-  // But we will define routes clearly.
+  const { slug } = useParams<{ category: string, slug: string }>();
+  if (!slug) return <Navigate to="/blog" replace />;
   return <BlogDetailPage slug={slug || ''} />;
 };
 
@@ -465,6 +464,19 @@ const App: React.FC = () => {
   const [hasTriggeredPopup, setHasTriggeredPopup] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Show an interstitial preloader on every route change for smoother transitions.
+  useEffect(() => {
+    setIsLoading(true);
+
+    const loaderTimeout = window.setTimeout(() => {
+      setIsLoading(false);
+    }, 450);
+
+    return () => {
+      window.clearTimeout(loaderTimeout);
+    };
+  }, [location.pathname, location.search, location.hash]);
 
   // Reset popup trigger on route change
   useEffect(() => {
@@ -538,6 +550,8 @@ const App: React.FC = () => {
           <Route path="/admin" element={<AdminPanel onExit={handleAdminExit} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/blog" element={<BlogListPage />} />
+          <Route path="/blogs" element={<BlogListPage />} />
           <Route path="/service-detail/:id" element={<ServiceDetailPage />} />
           <Route path="/blog-list" element={<BlogListPage />} />
           <Route path="/blog/:category/:slug" element={<BlogDetailWrapper />} />
@@ -551,7 +565,7 @@ const App: React.FC = () => {
           <Route path="/college/:slug" element={<CollegeDetailWrapper />} />
           <Route path="/privacy-policy" element={<PolicyPage title="Privacy Policy" content={PRIVACY_POLICY_CONTENT} />} />
           <Route path="/terms-conditions" element={<PolicyPage title="Terms & Conditions" content={TERMS_CONTENT} />} />
-          <Route path="*" element={<div className="p-20 text-center">Page Not Found</div>} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         
         {/* Global CTA Strip on all pages except Home and Contact */}
