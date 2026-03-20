@@ -367,7 +367,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                                  
                                  {mobileProgramsOpen === key && (
                                    <div className="pl-6 space-y-3 border-l-2 border-gray-100 dark:border-slate-800 animate-fade-in">
-                                     {MEGA_MENU_DATA[key as keyof typeof MEGA_MENU_DATA].slice(0, 5).map((subItem: any, i: number) => (
+                                     {MEGA_MENU_DATA[key as keyof typeof MEGA_MENU_DATA].map((subItem: any, i: number) => (
                                        <Link key={i} to={subItem.link} onClick={() => setIsMobileMenuOpen(false)} className="block text-sm font-bold text-gray-600 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white transition-colors">
                                          {subItem.name}
                                        </Link>
