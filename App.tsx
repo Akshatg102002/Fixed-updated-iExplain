@@ -49,10 +49,12 @@ import { Routes, Route, useLocation, Link, useNavigate, useParams } from 'react-
 import { createSlug } from './utils.ts';
 
 const LoadingOverlay = () => (
-  <div className="fixed inset-0 z-[1000] bg-white dark:bg-slate-900 flex items-center justify-center animate-fade-in transition-all">
-    <div className="flex flex-col items-center">
-      <div className="w-16 h-16 border-4 border-brand-gold/20 border-t-brand-gold rounded-full animate-spin mb-4"></div>
-      <p className="text-brand-gold font-bold uppercase tracking-widest text-[10px]">Loading iExplain...</p>
+  <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-brand-blue/70 dark:bg-slate-950/80 backdrop-blur-md animate-fade-in transition-all duration-300">
+    <div className="flex flex-col items-center justify-center rounded-3xl border border-white/25 bg-white/15 px-8 py-7 shadow-2xl">
+      <div className="h-16 w-16 rounded-full border-4 border-brand-gold/25 border-t-brand-gold animate-spin mb-5"></div>
+      <p className="text-brand-gold font-black uppercase tracking-[0.25em] text-[11px] text-center">
+        iExplain Education
+      </p>
     </div>
   </div>
 );
@@ -465,6 +467,19 @@ const App: React.FC = () => {
   const [hasTriggeredPopup, setHasTriggeredPopup] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Show an interstitial preloader on every route change for smoother transitions.
+  useEffect(() => {
+    setIsLoading(true);
+
+    const loaderTimeout = window.setTimeout(() => {
+      setIsLoading(false);
+    }, 450);
+
+    return () => {
+      window.clearTimeout(loaderTimeout);
+    };
+  }, [location.pathname, location.search, location.hash]);
 
   // Reset popup trigger on route change
   useEffect(() => {
