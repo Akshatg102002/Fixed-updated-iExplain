@@ -159,25 +159,25 @@ const StudyAbroadDetailPage: React.FC<StudyAbroadDetailPageProps> = ({ data }) =
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 my-6">
           <a
-            href="#/study-abroad/usa"
+            href="#/study-in-usa"
             className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in USA
           </a>
           <a
-            href="#/study-abroad/uk"
+            href="#/study-in-uk"
             className="bg-green-600 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in UK
           </a>
           <a
-            href="#/study-abroad/canada"
+            href="#/study-in-canada"
             className="bg-yellow-400 text-black px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in Canada
           </a>
           <a
-            href="#/study-abroad/australia"
+            href="#/study-in-australia"
             className="bg-red-500 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in Australia

@@ -250,28 +250,28 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 my-6">
 
           <a
-            href="#/mbbs-abroad/russia"
+            href="#/mbbs-in-russia"
             className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study MBBS in Russia
           </a>
 
           <a
-            href="#/mbbs-abroad/georgia"
+            href="#/mbbs-in-georgia"
             className="bg-green-600 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study MBBS in Georgia
           </a>
 
           <a
-            href="#/mbbs-abroad/kazakhstan"
+            href="#/mbbs-in-kazakhstan"
             className="bg-yellow-400 text-black px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study MBBS in Kazakhstan
           </a>
 
           <a
-            href="#/mbbs-abroad/kyrgyzstan"
+            href="#/mbbs-in-kyrgyzstan"
             className="bg-red-500 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study MBBS in Kyrgyzstan
