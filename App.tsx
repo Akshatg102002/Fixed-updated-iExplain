@@ -435,7 +435,28 @@ const StudyIndiaWrapper = () => {
   return <StudyIndiaDetailPage data={data} />;
 };
 
-const StudyAbroadWrapper = () => {
+const CategoryTitleSlugWrapper = () => {
+  const { titleSlug } = useParams<{ titleSlug: string }>();
+  const normalizedSlug = createSlug(titleSlug || '');
+
+  if (!normalizedSlug) return <Navigate to="/" replace />;
+
+  if (normalizedSlug.startsWith('study-in-')) {
+    const data = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+    if (!data) return <Navigate to="/study-in-usa" replace />;
+    return <StudyAbroadDetailPage data={data} />;
+  }
+
+  if (normalizedSlug.startsWith('mbbs-in-')) {
+    const data = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+    if (!data) return <Navigate to="/mbbs-in-russia" replace />;
+    return <MBBSDetailPage data={data} />;
+  }
+
+  return <Navigate to="/" replace />;
+};
+
+const LegacyStudyAbroadRedirect = () => {
   const { subPath } = useParams<{ subPath: string }>();
   const targetSlug = createSlug(`study-in-${subPath || 'usa'}`);
   const data = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === targetSlug);
@@ -443,7 +464,7 @@ const StudyAbroadWrapper = () => {
   return <StudyAbroadDetailPage data={data} />;
 };
 
-const MBBSAbroadWrapper = () => {
+const LegacyMBBSAbroadRedirect = () => {
   const { subPath } = useParams<{ subPath: string }>();
   const targetSlug = createSlug(`mbbs-in-${subPath || 'russia'}`);
   const data = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === targetSlug);
