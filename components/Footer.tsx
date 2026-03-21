@@ -6,7 +6,7 @@ import {
     FOOTER_COLLEGES,
     OFFICE_ADDRESSES
 } from '../data.ts';
-import { createSlug } from '../utils.ts';
+import { createMBBSInPath, createSlug, createStudyInPath } from '../utils.ts';
 
 interface FooterProps {
     logoUrl?: string;
@@ -51,7 +51,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
                             <ul className="space-y-3">
                                 {mbbsCountries.map((country) => (
                                     <li key={country}>
-                                        <Link to={`/mbbs-abroad/${createSlug(country)}`} className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white hover:pl-1 transition-all block">
+                                        <Link to={createMBBSInPath(country)} className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white hover:pl-1 transition-all block">
                                             {country}
                                         </Link>
                                     </li>
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
                             <ul className="space-y-3">
                                 {studyCountries.map((country) => (
                                     <li key={country}>
-                                        <Link to={`/study-abroad/${createSlug(country)}`} className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white hover:pl-1 transition-all block">
+                                        <Link to={createStudyInPath(country)} className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white hover:pl-1 transition-all block">
                                             {country}
                                         </Link>
                                     </li>

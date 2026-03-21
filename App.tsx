@@ -435,18 +435,35 @@ const StudyIndiaWrapper = () => {
   return <StudyIndiaDetailPage data={data} />;
 };
 
-const StudyAbroadWrapper = () => {
-  const { subPath } = useParams<{ subPath: string }>();
-  const data = STUDY_ABROAD_DETAILED[subPath || 'usa'];
-  if (!data) return <Navigate to="/study-abroad/usa" replace />;
-  return <StudyAbroadDetailPage data={data} />;
+const CategoryTitleSlugWrapper = () => {
+  const { titleSlug } = useParams<{ titleSlug: string }>();
+  const normalizedSlug = createSlug(titleSlug || '');
+
+  if (!normalizedSlug) return <Navigate to="/" replace />;
+
+  if (normalizedSlug.startsWith('study-in-')) {
+    const data = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+    if (!data) return <Navigate to="/study-in-usa" replace />;
+    return <StudyAbroadDetailPage data={data} />;
+  }
+
+  if (normalizedSlug.startsWith('mbbs-in-')) {
+    const data = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+    if (!data) return <Navigate to="/mbbs-in-russia" replace />;
+    return <MBBSDetailPage data={data} />;
+  }
+
+  return <Navigate to="/" replace />;
 };
 
-const MBBSAbroadWrapper = () => {
+const LegacyStudyAbroadRedirect = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  const data = MBBS_ABROAD_DETAILED[subPath || 'russia'];
-  if (!data) return <Navigate to="/mbbs-abroad/russia" replace />;
-  return <MBBSDetailPage data={data} />;
+  return <Navigate to={`/study-in-${createSlug(subPath || 'usa')}`} replace />;
+};
+
+const LegacyMBBSAbroadRedirect = () => {
+  const { subPath } = useParams<{ subPath: string }>();
+  return <Navigate to={`/mbbs-in-${createSlug(subPath || 'russia')}`} replace />;
 };
 
 const BlogDetailWrapper = () => {
@@ -558,8 +575,9 @@ const App: React.FC = () => {
           <Route path="/blog/:slug" element={<BlogDetailWrapper />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
-          <Route path="/study-abroad/:subPath" element={<StudyAbroadWrapper />} />
-          <Route path="/mbbs-abroad/:subPath" element={<MBBSAbroadWrapper />} />
+          <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
+          <Route path="/study-abroad/:subPath" element={<LegacyStudyAbroadRedirect />} />
+          <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
           <Route path="/exams/:subPath" element={<ExamPage />} />
           <Route path="/office/:slug" element={<OfficeDetailPage />} />
           <Route path="/college/:slug" element={<CollegeDetailWrapper />} />
