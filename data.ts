@@ -311,7 +311,7 @@ export const MEGA_MENU_DATA = {
     { name: "Canada", link: "/study-abroad/canada", code: "CA" },
     { name: "Australia", link: "/study-abroad/australia", code: "AU" },
     { name: "New Zealand", link: "/study-abroad/newZealand", code: "NZ" },
-    { name: "Dubai", link: "/study-abroad/dubai", code: "AE" },
+    { name: "UAE", link: "/study-abroad/uae", code: "AE" },
     { name: "Ireland", link: "/study-abroad/ireland", code: "IE" },
     { name: "Europe", link: "/study-abroad/europe", code: "EU" }
   ],

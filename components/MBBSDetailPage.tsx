@@ -106,17 +106,24 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           </div>
         </section>
 
-        <CTAButtons />
 
         {/* Benefits */}
-        <ul className="space-y-2">
-          {data.benefits.map((b, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <FaCheckCircle className="text-green-600 mt-1" />
-              <span>{b}</span>
-            </li>
-          ))}
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mb-3">
+            Benefits to study in {data.title}
+          </h2>
+          <ul className="space-y-2">
+            {data.benefits.map((b, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <FaCheckCircle className="text-green-600 mt-1" />
+                <span>{b}</span>
+              </li>
+            ))}
+          </ul>
+
+        </section>
+
+        <CTAButtons />
 
         {/* Eligibility */}
         <section>

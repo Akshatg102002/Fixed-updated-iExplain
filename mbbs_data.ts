@@ -372,8 +372,8 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
   },
   "kazakhstan": {
     "title": "MBBS in Kazakhstan",
-    "heroImageMobile": "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA-2.jpg.jpeg",
-    "heroImage": "https://socialfoundationindia.org/wp-content/uploads/2026/03/kazakhstan-.jpg",
+    "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005783/Kazakhstan_2_ykvdwm.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005782/kazakhstan_h5koqf.jpg ",
     "intro": {
       "text": "Studying MBBS in Kazakhstan has become one of the most popular options for Indian students who want to pursue medical education abroad at an affordable cost. Kazakhstan offers globally recognized medical universities, modern infrastructure, and English-medium MBBS programs that attract thousands of international students every year.<br><br>Kazakhstan is known for its high-quality medical education system and affordable tuition fees compared to private medical colleges in India. The universities in Kazakhstan are recognized by international medical bodies such as the National Medical Commission (NMC) and the World Health Organization (WHO), allowing students to practice medicine globally after completing their degree.<br><br>Another major advantage is the low cost of living and easy admission process. Students can pursue MBBS in Kazakhstan without paying huge donations or capitation fees. With well-equipped laboratories, experienced faculty, and strong clinical exposure, Kazakhstan has become a top destination for MBBS abroad.",
       "image": "https://images.unsplash.com/photo-1549887534-3ec93abae1d6?q=80&w=870&auto=format&fit=crop"
@@ -562,8 +562,8 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
   },
   "georgia": {
     "title": "MBBS in Georgia",
-    "heroImageMobile": "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA-2.jpg.jpeg",
-    "heroImage": "https://socialfoundationindia.org/wp-content/uploads/2026/03/GEORGIA.jpg",
+    "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005618/georgia_2_bdsxf2.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005617/MBBS_IN_GEORGIA_zhozv2.jpg",
     "intro": {
       "text": "MBBS in Georgia has become one of the most preferred destinations for international medical education. Every year thousands of students choose MBBS in Georgia because the country offers globally recognized medical degrees, modern universities, and affordable tuition fees.<br><br>Many students who want to study MBBS in Georgia prefer the country because the admission process is simple and the education system follows international standards. Universities offering MBBS Georgia programs provide English medium courses which makes it easier for international students.<br><br>Another reason why students prefer MBBS in Georgia is the high quality of medical education and modern infrastructure. Universities providing MBBS Georgia programs are recognized by international organizations such as WHO and NMC.<br><br>Students who study MBBS in Georgia also get excellent clinical exposure and practical training. Because of these advantages, MBBS Georgia is becoming one of the fastest growing medical education destinations for Indian students.",
       "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=870&auto=format&fit=crop"
@@ -751,9 +751,9 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
     ]
   },
   "kyrgyzstan": {
-    "title": "MBBS in Kyrgyzstan",
-    "heroImageMobile": "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA-2.jpg.jpeg",
-    "heroImage": "https://socialfoundationindia.org/wp-content/uploads/2026/03/Kyrgyzstan.jpg ",
+    "title": "MBBS in  Kyrgyzstan",
+    "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005784/Kyrgyzstan_2_s658qj.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005782/Kyrgyzstan_oum1to.jpg",
     "intro": {
       "text": "Studying MBBS in Kyrgyzstan has become one of the most preferred options for Indian students who want to pursue medical education abroad at an affordable cost. Over the past few years, Kyrgyzstan has gained popularity as a leading destination for international medical students because of its quality education system, globally recognized universities, and modern medical infrastructure.<br><br>The medical universities in Kyrgyzstan follow international education standards and provide strong theoretical as well as practical training to students. One of the major reasons students choose Kyrgyzstan for MBBS is the affordable tuition fees compared to private medical colleges in India.<br><br>Students can complete their entire medical degree at a much lower cost without paying any donation or capitation fees. Most universities offer MBBS programs in English medium, which makes it easier for international students to understand the curriculum and communicate with faculty members.<br><br>Medical universities in Kyrgyzstan are recognized globally and are affiliated with organizations like the World Health Organization and the National Medical Commission, allowing students to sit for various international medical licensing exams and build successful careers.",
       "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=870&auto=format&fit=crop"
@@ -923,7 +923,7 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
   },
   "uzbekistan": {
     "title": "MBBS in Uzbekistan",
-    "heroImageMobile": "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA-2.jpg.jpeg",
+    "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774005984/MBBS_IN_UZBEKISTAN_2_kwthbu.jpg",
     "heroImage": "https://socialfoundationindia.org/wp-content/uploads/2026/03/MBBS-in-uzbekistan.jpg",
     "intro": {
       "text": "MBBS in Uzbekistan has become an increasingly popular option for Indian and international students who wish to pursue a medical degree abroad at an affordable cost. Over the last few years, Uzbekistan has developed a strong reputation for providing quality medical education, modern infrastructure, and internationally recognized medical degrees.<br><br>Many government medical universities in Uzbekistan offer English-medium MBBS programs that follow international standards of medical education, making it easier for foreign students to study and adapt to the academic environment.<br><br>One of the major factors for which students prefer Uzbekistan for their MBBS course is that they find the cost of the MBBS course in Uzbekistan very reasonable compared to private medical colleges in India. The overall cost is low, allowing students to fulfill their dream of becoming a doctor without financial burden.<br><br>Another major advantage is the simple and transparent admission process. Students only need to qualify NEET and can easily apply. Universities focus strongly on practical knowledge, clinical exposure, and hands-on experience, preparing students to become successful medical professionals.",
@@ -1482,5 +1482,380 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
         "answer": "Yes, after clearing FMGE/NExT."
       }
     ]
-  }
+  },
+  "philippines": {
+    "title": "MBBS in Philippines",
+    "heroImageMobile": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1600",
+    "heroImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1600",
+    "intro": {
+      "text": "MBBS in the Philippines has become one of the most preferred destinations for Indian students who wish to pursue a medical degree abroad at an affordable cost. The country follows a US-based education system which ensures strong theoretical and practical knowledge.<br><br>The medium of instruction in medical universities is English, making it easier for Indian students to study and communicate during clinical practice without any language barrier.<br><br>The MBBS equivalent in the Philippines is the MD (Doctor of Medicine) program. Students must first complete a pre-medical course before entering the MD program, making the total duration around 5.5 to 6 years.<br><br>Affordable tuition fees, high FMGE success rate, and global recognition by WHO and NMC make the Philippines a top choice for medical studies abroad.",
+      "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=870&auto=format&fit=crop"
+    },
+    "quickFacts": {
+      "country": "Philippines",
+      "capital": "Manila",
+      "currency": "Philippine Peso",
+      "language": "English, Filipino",
+      "population": "",
+      "climate": "Tropical",
+      "timeDifference": "+2:30 hours from India",
+      "popularCities": "Manila, Cebu, Davao",
+      "safety": "High"
+    },
+    "quickOverview": {
+      "courseName": "MD (Equivalent to MBBS)",
+      "duration": "5.5 – 6 Years (Pre-Med + MD + Internship)",
+      "medium": "English",
+      "eligibility": "10+2 with PCB",
+      "neet": "Mandatory",
+      "recognition": "WHO, NMC",
+      "intake": "June / July"
+    },
+    "forIndianStudents": "MBBS in the Philippines is highly preferred by Indian students due to its US-based curriculum and English-medium education. Students can easily adapt to the environment and prepare for global medical exams like USMLE.\n\nThe country offers affordable education, strong clinical exposure, and a high FMGE success rate, making it an excellent option for pursuing MBBS abroad.",
+    "benefits": [
+      "English medium education",
+      "US-based medical curriculum",
+      "Affordable tuition fees",
+      "High FMGE/NExT success rate",
+      "Strong clinical exposure",
+      "Globally recognized degree"
+    ],
+    "duration": {
+      "mbbs": "5.5 – 6 Years",
+      "internship": "Included"
+    },
+    "eligibility": {
+      "academic": "10+2 with PCB",
+      "marks": "50% in PCB (40% for reserved category)",
+      "neet": "Mandatory",
+      "age": "Minimum 17 Years"
+    },
+    "documents": [
+      "10th Marksheet",
+      "12th Marksheet",
+      "NEET Scorecard",
+      "Passport",
+      "Birth Certificate",
+      "Medical Fitness Certificate",
+      "HIV Test Report",
+      "Police Clearance Certificate",
+      "Admission Letter",
+      "Visa Invitation Letter"
+    ],
+    "indiaVsCountry": {
+      "fees": { "india": "₹50 Lakhs – ₹1 Crore", "country": "₹15 – ₹30 Lakhs" },
+      "exam": { "india": "NEET High Rank", "country": "NEET Qualified" },
+      "donation": { "india": "Often Required", "country": "Not Required" },
+      "exposure": { "india": "Limited", "country": "High" },
+      "infrastructure": { "india": "Good", "country": "Advanced" }
+    },
+    "topUniversities": [
+      {
+        "name": "University of Santo Tomas",
+        "description": "Oldest university in Asia with excellent reputation and clinical exposure.",
+        "established": "1611",
+        "location": "Manila",
+        "tuitionFees": "₹4.5 – ₹5.5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹14 – ₹18 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Davao Medical School Foundation",
+        "description": "Popular among Indian students with high FMGE success rate.",
+        "established": "1976",
+        "location": "Davao",
+        "tuitionFees": "₹3 – ₹4 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹20 – ₹25 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "AMA School of Medicine",
+        "description": "Modern infrastructure with US-based curriculum.",
+        "established": "2008",
+        "location": "Manila",
+        "tuitionFees": "₹2.5 – ₹3.5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹15 – ₹20 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Our Lady of Fatima University",
+        "description": "Globally recognized with strong clinical exposure.",
+        "established": "1967",
+        "location": "Valenzuela",
+        "tuitionFees": "₹3.5 – ₹5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹25 – ₹30 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "University of Perpetual Help",
+        "description": "Affordable fees with experienced faculty.",
+        "established": "1975",
+        "location": "Las Piñas",
+        "tuitionFees": "₹3 – ₹4 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹22 – ₹25 Lakhs",
+        "recognition": "WHO, NMC"
+      }
+    ],
+    "whyChooseUs": [
+      "Expert career counseling",
+      "University selection support",
+      "Complete admission assistance",
+      "Visa processing guidance",
+      "Pre-departure briefing",
+      "Post-arrival support"
+    ],
+    "checklist": [
+      { "item": "NEET Scorecard", "required": true },
+      { "item": "Valid Passport", "required": true },
+      { "item": "10th & 12th Mark Sheets", "required": true },
+      { "item": "University Recognition (NMC, WHO)", "required": true },
+      { "item": "Budget Planning", "required": true },
+      { "item": "Visa & Invitation Letter", "required": true }
+    ],
+    "hostelFacilities": {
+      "intro": "Medical universities in the Philippines provide comfortable and secure hostel facilities for international students. Hostels are modern and well-equipped.\n\nStudents benefit from Indian food, safety systems, and modern amenities for a smooth stay.",
+      "features": [
+        "Fully furnished rooms",
+        "Single / Double / Triple sharing",
+        "Separate hostels",
+        "24/7 security and CCTV",
+        "Air-conditioned rooms",
+        "Wi-Fi internet",
+        "Laundry rooms",
+        "Study rooms",
+        "Indian mess facility"
+      ]
+    },
+    "careerOpportunities": {
+      "practiceInIndia": "Students can return to India and clear FMGE/NExT to practice.",
+      "postgraduate": "Students can pursue MD/MS in India or abroad.",
+      "research": "Opportunities in research institutes and pharma companies.",
+      "administration": "Roles in hospital management and healthcare sector.",
+      "teaching": "Can pursue academic careers after higher education.",
+      "practiceAbroad": "Students can appear for USMLE, PLAB, and other exams."
+    },
+    "faqs": [
+      {
+        "question": "Is Philippines good for MBBS?",
+        "answer": "Yes, it offers US-based curriculum, English medium, and high FMGE success rate."
+      },
+      {
+        "question": "What is the duration?",
+        "answer": "5.5–6 years including pre-med and internship."
+      },
+      {
+        "question": "Is NEET required?",
+        "answer": "Yes, mandatory for Indian students."
+      },
+      {
+        "question": "Total cost?",
+        "answer": "₹15–₹30 Lakhs approximately."
+      },
+      {
+        "question": "Is IELTS required?",
+        "answer": "No, most universities do not require IELTS or TOEFL."
+      },
+      {
+        "question": "Can Indian students practice in India?",
+        "answer": "Yes, after clearing FMGE/NExT."
+      }
+    ]
+  },
+  "egypt": {
+    "title": "MBBS in Egypt",
+    "heroImageMobile": "https://socialfoundationindia.org/wp-content/uploads/2026/03/egypt.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1539650116574-75c0c6d0f3b7?auto=format&fit=crop&q=80&w=1600",
+    "intro": {
+      "text": "MBBS in Egypt is gaining popularity among Indian students due to its affordable fees, globally recognized universities, and rich medical heritage. Egypt is home to some of the oldest and most prestigious medical institutions, offering high-quality education with modern infrastructure and advanced clinical training.<br><br>The MBBS program in Egypt follows international standards and combines theoretical knowledge with extensive practical training in well-equipped hospitals. Many universities offer English-medium programs, making it easy for Indian students to study without language barriers.<br><br>One of the biggest advantages of studying MBBS in Egypt is its cost-effectiveness compared to other countries. The cost of living is also relatively low, making it budget-friendly for students.<br><br>Medical universities in Egypt are recognized by WHO and approved by NMC, allowing graduates to appear for FMGE/NExT and build a medical career in India or abroad.",
+      "image": "https://images.unsplash.com/photo-1505731132164-cca30f4e0c6f?q=80&w=870&auto=format&fit=crop"
+    },
+    "quickFacts": {
+      "country": "Egypt",
+      "capital": "Cairo",
+      "currency": "Egyptian Pound",
+      "language": "Arabic, English",
+      "population": "",
+      "climate": "Hot Desert Climate",
+      "timeDifference": "-3:30 hours from India",
+      "popularCities": "Cairo, Alexandria, Mansoura",
+      "safety": "High"
+    },
+    "quickOverview": {
+      "courseName": "MBBS / MD (Equivalent Degree)",
+      "duration": "5 – 6 Years (Including Internship)",
+      "medium": "English",
+      "eligibility": "10+2 with PCB",
+      "neet": "Mandatory",
+      "recognition": "WHO, NMC, ECFMG",
+      "intake": "September"
+    },
+    "forIndianStudents": "MBBS in Egypt has become an excellent option for Indian students due to affordable education, globally recognized universities, and strong clinical exposure. Students benefit from English-medium programs and international standards of medical education.\n\nThe country offers a safe and student-friendly environment with low living costs and good hostel facilities. Indian students can easily adapt and build successful medical careers globally.",
+    "benefits": [
+      "Affordable tuition fees",
+      "Globally recognized universities",
+      "English medium programs",
+      "Strong clinical exposure",
+      "Rich medical heritage",
+      "Low cost of living"
+    ],
+    "duration": {
+      "mbbs": "5 – 6 Years",
+      "internship": "Included"
+    },
+    "eligibility": {
+      "academic": "10+2 with PCB",
+      "marks": "50% in PCB (40% for reserved category)",
+      "neet": "Mandatory",
+      "age": "Minimum 17 Years"
+    },
+    "documents": [
+      "10th Marksheet",
+      "12th Marksheet",
+      "NEET Scorecard",
+      "Passport",
+      "Birth Certificate",
+      "Medical Fitness Certificate",
+      "HIV & Vaccination Certificate",
+      "Migration Certificate",
+      "Admission Letter",
+      "Visa Documents"
+    ],
+    "indiaVsCountry": {
+      "fees": { "india": "₹50 Lakhs – ₹1 Crore", "country": "₹20 – ₹30 Lakhs" },
+      "exam": { "india": "NEET + High Rank", "country": "NEET Qualified" },
+      "donation": { "india": "Often Required", "country": "Not Required" },
+      "exposure": { "india": "Limited", "country": "High" },
+      "infrastructure": { "india": "Good", "country": "Advanced" }
+    },
+    "topUniversities": [
+      {
+        "name": "Cairo University",
+        "description": "One of the oldest and most prestigious universities in Egypt with strong clinical exposure.",
+        "established": "1908",
+        "location": "Cairo",
+        "tuitionFees": "₹5 – ₹6 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹25 – ₹30 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Ain Shams University",
+        "description": "Well-known university offering quality medical education and research facilities.",
+        "established": "1950",
+        "location": "Cairo",
+        "tuitionFees": "₹4 – ₹5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹22 – ₹28 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Alexandria University",
+        "description": "Provides modern infrastructure and strong academic environment.",
+        "established": "1938",
+        "location": "Alexandria",
+        "tuitionFees": "₹4 – ₹5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹22 – ₹27 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Mansoura University",
+        "description": "Affordable university with good clinical training opportunities.",
+        "established": "1972",
+        "location": "Mansoura",
+        "tuitionFees": "₹3.5 – ₹4.5 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹20 – ₹25 Lakhs",
+        "recognition": "WHO, NMC"
+      },
+      {
+        "name": "Tanta University",
+        "description": "Known for quality education and affordable fees.",
+        "established": "1972",
+        "location": "Tanta",
+        "tuitionFees": "₹3 – ₹4 Lakhs / Year",
+        "hostelFees": "",
+        "firstYearPackage": "",
+        "totalPackage": "₹20 – ₹24 Lakhs",
+        "recognition": "WHO, NMC"
+      }
+    ],
+    "whyChooseUs": [
+      "Expert career counseling",
+      "University selection support",
+      "Complete admission assistance",
+      "Visa processing guidance",
+      "Pre-departure briefing",
+      "Post-arrival support"
+    ],
+    "checklist": [
+      { "item": "NEET Scorecard", "required": true },
+      { "item": "Valid Passport", "required": true },
+      { "item": "10th & 12th Mark Sheets", "required": true },
+      { "item": "University Recognition (NMC, WHO)", "required": true },
+      { "item": "Budget Planning", "required": true },
+      { "item": "Visa & Invitation Letter", "required": true }
+    ],
+    "hostelFacilities": {
+      "intro": "Medical universities in Egypt provide comfortable and secure hostel facilities for international students. Hostels are equipped with basic amenities.\n\nStudents benefit from affordable accommodation, food options, and a safe environment for a smooth stay.",
+      "features": [
+        "Fully furnished rooms",
+        "2–4 sharing options",
+        "Separate hostels for boys and girls",
+        "24/7 security",
+        "Wi-Fi internet",
+        "Laundry facilities",
+        "Study rooms",
+        "Indian food availability"
+      ]
+    },
+    "careerOpportunities": {
+      "practiceInIndia": "Students can return to India and clear FMGE/NExT to practice.",
+      "postgraduate": "Students can pursue MD/MS in India or abroad.",
+      "research": "Opportunities in research institutes and healthcare sector.",
+      "administration": "Roles in hospital management and public health.",
+      "teaching": "Academic careers after higher education.",
+      "practiceAbroad": "Students can appear for USMLE, PLAB, and other exams."
+    },
+    "faqs": [
+      {
+        "question": "Is Egypt good for MBBS?",
+        "answer": "Yes, Egypt offers affordable fees, globally recognized universities, and strong clinical exposure."
+      },
+      {
+        "question": "What is the duration?",
+        "answer": "5–6 years including internship."
+      },
+      {
+        "question": "Is NEET required?",
+        "answer": "Yes, mandatory for Indian students."
+      },
+      {
+        "question": "Total cost?",
+        "answer": "₹20–₹30 Lakhs approximately."
+      },
+      {
+        "question": "Is IELTS required?",
+        "answer": "No, most universities do not require IELTS or TOEFL."
+      },
+      {
+        "question": "Can Indian students practice in India?",
+        "answer": "Yes, after clearing FMGE/NExT."
+      }
+    ]
+  },
 };

@@ -160,8 +160,8 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
                         {/* Central Helpline Card */}
                         <div className="lg:col-span-1 bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 flex flex-col justify-center">
                             <h4 className="text-brand-gold font-black text-[10px] uppercase tracking-[0.2em] mb-2">Central Helpline</h4>
-                            <p className="text-3xl font-black text-white mb-2">{helpline || '+91-9311338511'}</p>
-                            <p className="text-sm text-white/60">{email || 'info@iexplaineducation.in'}</p>
+                            <p className="text-3xl font-black text-white mb-2">{helpline || '+91-9773847799'}</p>
+                            <p className="text-sm text-white/60">{email || 'contact@iexplaineducation.com'}</p>
                         </div>
                     </div>
                 </div>
