@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { KNOW_YOUR_DESTINATIONS } from '../data.ts';
-import { createSlug } from '../utils.ts';
 
 const KnowYourDestination: React.FC = () => {
   return (
@@ -22,7 +21,7 @@ const KnowYourDestination: React.FC = () => {
           {KNOW_YOUR_DESTINATIONS.map((dest, i) => (
             <Link 
               key={i} 
-              to={`/study-abroad/${createSlug(dest.name)}`}
+              to={dest.path}
               className="group relative h-48 md:h-64 rounded-[1.5rem] overflow-hidden shadow-lg cursor-pointer transform transition-transform hover:scale-[1.02]"
             >
               <img 

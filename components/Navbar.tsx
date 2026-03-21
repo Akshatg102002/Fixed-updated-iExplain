@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { LOGO_URL, MEGA_MENU_DATA, OFFICE_ADDRESSES, FOOTER_COLLEGES } from '../data.ts';
-import { createSlug } from '../utils.ts';
+import { createSlug, createStudyInPath } from '../utils.ts';
 import * as Flags from 'country-flag-icons/react/3x2';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -301,7 +301,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                             if (activeCollegeTab === 'INDIA') {
                               link = `/mbbs-india/${createSlug(college)}`;
                             } else if (countryData.country === 'Europe Top Destinations') {
-                              link = `/study-abroad/${createSlug(college)}`;
+                              link = createStudyInPath(college);
                             }
                             
                             return (

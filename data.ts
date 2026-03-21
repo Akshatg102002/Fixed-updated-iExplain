@@ -306,26 +306,26 @@ export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
 
 export const MEGA_MENU_DATA = {
   "STUDY ABROAD": [
-    { name: "USA", link: "/study-abroad/usa", code: "US" },
-    { name: "UK", link: "/study-abroad/uk", code: "GB" },
-    { name: "Canada", link: "/study-abroad/canada", code: "CA" },
-    { name: "Australia", link: "/study-abroad/australia", code: "AU" },
-    { name: "New Zealand", link: "/study-abroad/newZealand", code: "NZ" },
-    { name: "UAE", link: "/study-abroad/uae", code: "AE" },
-    { name: "Ireland", link: "/study-abroad/ireland", code: "IE" },
-    { name: "Europe", link: "/study-abroad/europe", code: "EU" }
+    { name: "USA", link: "/study-in-usa", code: "US" },
+    { name: "UK", link: "/study-in-uk", code: "GB" },
+    { name: "Canada", link: "/study-in-canada", code: "CA" },
+    { name: "Australia", link: "/study-in-australia", code: "AU" },
+    { name: "New Zealand", link: "/study-in-new-zealand", code: "NZ" },
+    { name: "UAE", link: "/study-in-uae", code: "AE" },
+    { name: "Ireland", link: "/study-in-ireland", code: "IE" },
+    { name: "Europe", link: "/study-in-europe", code: "EU" }
   ],
  "MBBS ABROAD": [
-  { name: "Russia", link: "/mbbs-abroad/russia", code: "RU" },
-  { name: "Georgia", link: "/mbbs-abroad/georgia", code: "GE" },
-  { name: "Kazakhstan", link: "/mbbs-abroad/kazakhstan", code: "KZ" },
-  { name: "Kyrgyzstan", link: "/mbbs-abroad/kyrgyzstan", code: "KG" },
-  { name: "Uzbekistan", link: "/mbbs-abroad/uzbekistan", code: "UZ" },
-  { name: "Philippines", link: "/mbbs-abroad/philippines", code: "PH" },
-  { name: "Bangladesh", link: "/mbbs-abroad/bangladesh", code: "BD" },
-  { name: "Nepal", link: "/mbbs-abroad/nepal", code: "NP" },
-  { name: "China", link: "/mbbs-abroad/china", code: "CN" },
-  { name: "Egypt", link: "/mbbs-abroad/egypt", code: "EG" }
+  { name: "Russia", link: "/mbbs-in-russia", code: "RU" },
+  { name: "Georgia", link: "/mbbs-in-georgia", code: "GE" },
+  { name: "Kazakhstan", link: "/mbbs-in-kazakhstan", code: "KZ" },
+  { name: "Kyrgyzstan", link: "/mbbs-in-kyrgyzstan", code: "KG" },
+  { name: "Uzbekistan", link: "/mbbs-in-uzbekistan", code: "UZ" },
+  { name: "Philippines", link: "/mbbs-in-philippines", code: "PH" },
+  { name: "Bangladesh", link: "/mbbs-in-bangladesh", code: "BD" },
+  { name: "Nepal", link: "/mbbs-in-nepal", code: "NP" },
+  { name: "China", link: "/mbbs-in-china", code: "CN" },
+  { name: "Egypt", link: "/mbbs-in-egypt", code: "EG" }
 ],
   "STUDY IN INDIA": [
     { name: "MBBS", link: "/study-india/mbbs", icon: "fa-solid fa-user-doctor" },
@@ -591,42 +591,42 @@ export const COUNTRY_ICONS: Record<string, string> = {
 export const KNOW_YOUR_DESTINATIONS = [
   {
     name: "Russia",
-    path: "/mbbs-abroad/russia",
+    path: "/mbbs-in-russia",
     image: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&q=80&w=600"
   },
   {
     name: "Georgia",
-    path: "/mbbs-abroad/georgia",
+    path: "/mbbs-in-georgia",
     image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&q=80&w=600"
   },
   {
     name: "USA",
-    path: "/study-abroad/usa",
+    path: "/study-in-usa",
     image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&q=80&w=600"
   },
   {
     name: "UK",
-    path: "/study-abroad/uk",
+    path: "/study-in-uk",
     image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=600"
   },
   {
     name: "Canada",
-    path: "/study-abroad/canada",
+    path: "/study-in-canada",
     image: "https://plus.unsplash.com/premium_photo-1673241100156-2e04fca1a4af?q=80&w=870&auto=format&fit=crop"
   },
   {
     name: "Australia",
-    path: "/study-abroad/australia",
+    path: "/study-in-australia",
     image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=600"
   },
   {
     name: "Uzbekistan",
-    path: "/mbbs-abroad/uzbekistan",
+    path: "/mbbs-in-uzbekistan",
     image: "https://images.unsplash.com/photo-1673446840855-1c82bafdb67d?q=80&w=863&auto=format&fit=crop"
   },
   {
     name: "Dubai",
-    path: "/study-abroad/dubai",
+    path: "/study-in-dubai",
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=600"
   }
 ];
