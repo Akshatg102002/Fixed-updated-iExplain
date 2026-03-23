@@ -315,18 +315,19 @@ export const MEGA_MENU_DATA = {
     { name: "Ireland", link: "/study-in-ireland", code: "IE" },
     { name: "Europe", link: "/study-in-europe", code: "EU" }
   ],
- "MBBS ABROAD": [
-  { name: "Russia", link: "/mbbs-in-russia", code: "RU" },
-  { name: "Georgia", link: "/mbbs-in-georgia", code: "GE" },
-  { name: "Kazakhstan", link: "/mbbs-in-kazakhstan", code: "KZ" },
-  { name: "Kyrgyzstan", link: "/mbbs-in-kyrgyzstan", code: "KG" },
-  { name: "Uzbekistan", link: "/mbbs-in-uzbekistan", code: "UZ" },
-  { name: "Philippines", link: "/mbbs-in-philippines", code: "PH" },
-  { name: "Bangladesh", link: "/mbbs-in-bangladesh", code: "BD" },
-  { name: "Nepal", link: "/mbbs-in-nepal", code: "NP" },
-  { name: "China", link: "/mbbs-in-china", code: "CN" },
-  { name: "Egypt", link: "/mbbs-in-egypt", code: "EG" }
-],
+  "MBBS ABROAD": [
+    { name: "Russia", link: "/mbbs-in-russia", code: "RU" },
+    { name: "Georgia", link: "/mbbs-in-georgia", code: "GE" },
+    { name: "Kazakhstan", link: "/mbbs-in-kazakhstan", code: "KZ" },
+    { name: "Kyrgyzstan", link: "/mbbs-in-kyrgyzstan", code: "KG" },
+    { name: "Uzbekistan", link: "/mbbs-in-uzbekistan", code: "UZ" },
+    { name: "Philippines", link: "/mbbs-in-philippines", code: "PH" },
+    { name: "Bangladesh", link: "/mbbs-in-bangladesh", code: "BD" },
+    { name: "Nepal", link: "/mbbs-in-nepal", code: "NP" },
+    { name: "China", link: "/mbbs-in-china", code: "CN" },
+    { name: "Egypt", link: "/mbbs-in-egypt", code: "EG" },
+    { name: "Serbia", link: "/mbbs-in-serbia", code: "RS" }
+  ],
   "STUDY IN INDIA": [
     { name: "MBBS", link: "/study-india/mbbs", icon: "fa-solid fa-user-doctor" },
     { name: "MD/MS", link: "/study-india/md-ms", icon: "fa-solid fa-stethoscope" },

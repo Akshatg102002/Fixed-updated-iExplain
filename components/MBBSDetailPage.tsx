@@ -106,21 +106,39 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           </div>
         </section>
 
-
-        {/* Benefits */}
+        {/* For Indian Students Section */}
         <section>
-          <h2 className="text-2xl font-bold mb-3">
-            Benefits to study in {data.title}
+          <h2 className="text-2xl font-bold mb-4 text-center md:text-left">
+            MBBS in {country} for Indian Students
           </h2>
-          <ul className="space-y-2">
-            {data.benefits.map((b, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <FaCheckCircle className="text-green-600 mt-1" />
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
 
+          <div className="rounded-lg p-5 bg-white">
+            {data.forIndianStudents.split("\n").map((line, i) => {
+              if (!line.trim()) {
+                return <div key={i} className="h-3" />;
+              }
+
+              if (
+                line.includes("Affordable") ||
+                line.includes("Globally") ||
+                line.includes("English") ||
+                line.includes("No donation") ||
+                line.includes("Advanced")
+              ) {
+                return (
+                  <li key={i} className="ml-5 list-disc text-gray-700">
+                    {line}
+                  </li>
+                );
+              }
+
+              return (
+                <p key={i} className="mb-3 text-gray-700 leading-relaxed">
+                  {line}
+                </p>
+              );
+            })}
+          </div>
         </section>
 
         <CTAButtons />

@@ -43,35 +43,93 @@ export interface College {
 }
 
 export interface CollegeDetailData {
-  id?: string; // Firebase ID
+  id?: string;
   slug?: string;
-  country?: string;
-  category?: 'MBBS Abroad' | 'Study Abroad';
-  name: string;
-  location: string;
-  type: string; // Public/Private
-  established: string;
-  image: string; // Banner
-  intro: string;
-  highlights: string[];
-  eligibility: string[];
-  admissionProcess: string[];
+
+  // BASIC INFO
+  title: string;
+
+  // HERO
+  heroImage: string;
+  heroImageMobile?: string;
+
+  // INTRO
+  intro: {
+    text: string;
+  };
+
+  // QUICK FACTS
+  quickFacts: Record<string, string>;
+
+  // OVERVIEW
+  quickOverview: Record<string, string>;
+
+  // BENEFITS
+  benefits: string[];
+
+  // ELIGIBILITY
+  eligibility: Record<string, string>;
+
+  // DURATION
+  duration: {
+    mbbs: string;
+    internship: string;
+  };
+
+  // SYLLABUS
+  syllabus: {
+    year: string;
+    subjects: string;
+  }[];
+
+  // DOCUMENTS
   documents: string[];
+
+  // FEES
   fees: {
-    structure: { label: string; value: string }[];
+    structure: {
+      label: string;
+      value: string;
+    }[];
     note?: string;
   };
+
+  // COURSES
   courses: string[];
+
+  // STUDENT LIFE
   studentLife: string[];
+
+  // PLACEMENTS
   placements: string[];
-  gallery?: string[];
+
+  // HOSTEL
+  hostelFacilities: {
+    intro: string;
+    features: string[];
+  };
+
+  // CAREER
+  careerOpportunities: Record<string, string>;
+
+  // RECOGNITION
+  recognition: string[];
+
+  // GALLERY
+  gallery: string[];
+
+  // FAQ
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
 }
 
 export interface ProgramDetailData {
   title: string;
   tagline?: string;
   heroImage?: string;
-  content: string; 
+  content: string;
   faqs?: { question: string; answer: string }[];
   overview?: string;
   about?: string;
@@ -80,7 +138,7 @@ export interface ProgramDetailData {
 export interface MBBSDetailData {
   title: string;
   heroImage: string;
-  heroImageMobile:string;
+  heroImageMobile: string;
   intro: {
     text: string;
     image: string;

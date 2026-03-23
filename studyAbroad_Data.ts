@@ -4,8 +4,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   usa: {
     title: "Study in USA",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/study-in-usa.jpg.jpeg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/usa-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244367/usa-d_w3l4uj.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244367/usa-m_ykwxds.webp",
 
     intro: {
       text: "Study in USA is one of the most popular choices for international students who want to pursue higher education abroad. Every year thousands of students choose to study in USA because of the world-class universities, advanced education system, and global career opportunities.<br /><br />When students decide to study in USA, they gain access to some of the best academic institutions in the world. Universities in the United States offer modern learning methods, practical training, and research-based education. Choosing to study in USA allows students to explore diverse academic programs and gain knowledge that is recognized worldwide.<br /><br />Another major reason why students prefer to study in USA is the flexible education system. Students who study in USA can choose their courses according to their interests and career goals. This flexibility helps them build strong academic foundations and professional skills.<br /><br />International exposure is another advantage when students study in USA. Students from different countries come together to study in USA, creating a multicultural learning environment. This experience improves communication skills and global networking opportunities.<br /><br />For students planning to build successful international careers, choosing to study in USA is a smart decision.",
@@ -238,8 +238,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   uk: {
     title: "Study in UK",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Study-in-uk.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/UK-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244369/uk-d_osdwps.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244369/uk-m_pjvvui.webp",
 
     intro: {
       text: "The United Kingdom is one of the most popular destinations for international students who wish to pursue the best education abroad. Every year, thousands of students decide to pursue their education in the UK due to the presence of the world's top-ranked universities and the presence of excellent research facilities and career prospects.<br /><br />The United Kingdom has earned a reputation for being flexible, innovative, and excellent in the education sector. By pursuing their higher education in the UK, students are given the opportunity to learn in a new and modern environment and from the most experienced faculty members in the industry.<br /><br />Another major reason why the United Kingdom is the most popular destination for students who wish to pursue their higher education is the presence of numerous universities and courses. From business and engineering to medicine and technology, students are given the option of pursuing any course from the top-ranked universities in the world.<br /><br />Studying in the United Kingdom also provides students with international exposure and excellent job opportunities after completing their courses.",
@@ -507,8 +507,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   australia: {
     title: "Study in Australia",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/STUDY-IN-AUSTRALIA.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/AUSTRALIA-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244367/aus-d_nrpld7.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244367/aus-m_ebcmao.webp",
 
 
     intro: {
@@ -747,8 +747,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   canada: {
     title: "Study in Canada",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/study-in-canada.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/500-by-500-study-in-canada-.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/canada-d_wwrlnd.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244367/canada-m_xtidvs.webp",
 
     intro: {
       text: "Studying in Canada has become one of the most popular choices for international students who want high-quality education, global career opportunities, and a safe learning environment. Canada is known for its world-class universities, multicultural society, and student-friendly immigration policies, making it an ideal destination for students from around the world.<br /><br />Every year, thousands of students choose Canada to pursue undergraduate, postgraduate, and professional programs in various fields. Canadian institutions focus on practical learning, research, and industry-oriented education, which helps students develop strong professional skills and prepare for global careers.<br /><br />Another major advantage of studying in Canada is the opportunity for post-study work and potential immigration pathways. The education system in Canada is regulated by the Government of Canada, ensuring high academic standards and globally recognized degrees.",
@@ -1003,8 +1003,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   ireland: {
     title: "Study in Ireland",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Study-in-IRELAND.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/STUDY-IN-IRELAND-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/ireland-d_jkgtdy.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/ireland-m_n9njsb.webp",
 
     intro: {
       text: "Ireland has become one of the fastest-growing study destinations for international students who want to pursue high-quality education in Europe. Known for its world-class universities, welcoming culture, and strong economy, Ireland offers students an excellent academic environment combined with exciting career opportunities.<br /><br />Recently, thousands of Indian students have opted for higher education in Ireland due to its globally recognized qualifications, English-speaking population, and excellent post-study work opportunities. The country's educational institutions are dedicated to creating an innovative, research-oriented, and practical learning environment for students, which is extremely beneficial for them in terms of gaining recognition in the global job market.<br /><br />Ireland is home to some of the world's leading technology hubs, pharmaceutical industries, and multinational companies. Some of these companies, including Google, Apple, Facebook, and Microsoft, have their European headquarters in Ireland. These companies offer excellent internship and job opportunities for students after completing their studies.<br /><br />Another significant advantage of studying in Ireland is that it offers a Post Study Work Visa, which enables international students to stay and work in the country after completing their studies. This makes Ireland a preferred choice for students who seek international experience in their careers.<br /><br />Considering its safe environment, education system, and career prospects, Ireland is one of the best options for students who are planning to study abroad.",
@@ -1331,8 +1331,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   newZealand: {
     title: "Study in New Zealand",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Study-in-NEWZELAND.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/STUDY-IN-NEWZEALAND-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/nz-d_c7mujr.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244369/nz-m_gtqjr8.webp",
 
     intro: {
       text: "New Zealand has become one of the most preferred study destinations for international students who are looking for high-quality education, globally recognized degrees, and excellent lifestyle opportunities. Known for its modern education system, safe environment, and innovative teaching methods, New Zealand provides students with a strong academic foundation along with practical skills required for global careers.<br><br>Universities in the country use a British-based education system, which provides globally recognized education with high academic standards. The country's education system places a strong emphasis on research, innovation, and practical learning, which allows students to gain practical work experience during their studies. This is highly beneficial for students, as they can acquire skills that are highly sought after by employers around the globe.<br><br>Another major advantage of pursuing higher education in New Zealand is the country's culture, which is highly favorable for international students. The country provides a high standard of living, a perfect balance of work and leisure, and a welcoming society for students from around the world.<br><br>New Zealand provides strong career prospects after completing the course. Some programs are developed in association with industries, allowing students to gain industry exposure through internships. There are also provisions for international students to work after completing their studies, helping them gain valuable international experience.<br><br>Auckland and Wellington are popular student destinations, offering quality education, vibrant culture, and good job opportunities.",
@@ -1516,8 +1516,8 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
   europe: {
     title: "Study in Europe",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/STUDY-IN-EUROPE.jpg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/EUROPE-2.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/europe-d_gl1dcb.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774244368/EUROPE-m_zp92jo.webp",
 
     intro: {
       text: "Studying in Europe has become one of the most attractive options for international students who are looking for high-quality education, global exposure, and affordable tuition fees. Europe is home to some of the world's oldest and most prestigious universities, offering a wide range of programs across various disciplines. Countries like Germany, Italy, France, Malta, the Netherlands, and Poland have gained popularity among Indian students due to their strong education systems, modern infrastructure, and career opportunities.<br /><br />One of the major benefits of pursuing education in Europe is the diversity it provides. Every country in Europe has a different culture, language, and educational system. European universities stress the importance of research and innovation in their curriculum, helping the student develop academic and professional skills of the highest standard. Also, most European countries offer their educational programs in English, making it easier for international students to adapt and not having to worry about language difficulties. Additionally, countries like Germany offer free education in public universities, making it a more affordable option for international students compared to the USA and UK.<br /><br />Europe also offers great travel opportunities, as students can travel across countries with just one visa, called the Schengen visa. This helps students become more global citizens, understanding the world better. In addition, the qualifications obtained in Europe are recognized worldwide, giving students access to international job opportunities.<br /><br />Next, the opportunity for post-study work is a great benefit for students, as they can gain international work experience after completing their studies. With the focus on quality education, affordable fees, and career progression, Europe is now the top choice for students aiming for a successful international career.",
