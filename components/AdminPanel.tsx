@@ -15,7 +15,7 @@ import { Blog, BlogCategory, SiteSettings, MediaItem, VideoStory, CollegeDetailD
 import { LOGO_URL, FOOTER_COLLEGES } from '../data.ts';
 import MediaManager from './MediaManager';
 
-type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'entries' | 'media' | 'stories' | 'settings';
+type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
 type ViewMode = 'list' | 'create' | 'edit';
 
 // Helper component for managing array of strings
@@ -62,6 +62,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [leads, setLeads] = useState<any[]>([]); 
   const [media, setMedia] = useState<any[]>([]);
   const [stories, setStories] = useState<any[]>([]);
+  const [pages, setPages] = useState<any[]>([]);
   const [settings, setSettings] = useState<SiteSettings | null>(null);
   const [sitemapContent, setSitemapContent] = useState<string>('');
   const [loading, setLoading] = useState(false);
@@ -74,6 +75,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   // Removed mediaForm state as it is handled by MediaManager
   const [storyForm, setStoryForm] = useState<Partial<VideoStory>>({});
   const [settingsForm, setSettingsForm] = useState<Partial<SiteSettings>>({});
+  const [pageForm, setPageForm] = useState<{ title: string; slug: string; category: 'MBBS Abroad' | 'Study Abroad'; payloadText: string }>({
+    title: '',
+    slug: '',
+    category: 'MBBS Abroad',
+    payloadText: ''
+  });
   
   // College Form State
   const initialCollegeState: Partial<CollegeDetailData> = {
@@ -91,7 +98,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const collections = ['blogs', 'categories', 'colleges', 'leads', 'media', 'settings', 'video_testimonials'];
+      const collections = ['blogs', 'categories', 'colleges', 'dynamic_pages', 'leads', 'media', 'settings', 'video_testimonials'];
       const results: any = {};
       for (const name of collections) {
         const snap = await getDocs(collection(db, name));
@@ -100,6 +107,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       setBlogs(results.blogs);
       setCategories(results.categories);
       setColleges(results.colleges);
+      setPages(results.dynamic_pages);
       setLeads(results.leads.sort((a: any, b: any) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0)));
       setMedia(results.media);
       setStories(results.video_testimonials);
@@ -165,6 +173,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setCategoryForm({ name: '', slug: '' });
     // Removed mediaForm reset
     setStoryForm({ studentName: '', university: '', videoUrl: '', thumbnailUrl: '', tagline: '' });
+    setPageForm({ title: '', slug: '', category: 'MBBS Abroad', payloadText: '' });
     setCollegeForm(initialCollegeState);
     setImagePreview(null);
     setEditingId(null);
@@ -202,6 +211,34 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   };
 
   const generateSlug = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+
+  const startEditingPage = (page: any) => {
+    setPageForm({
+      title: page.title || '',
+      slug: page.slug || '',
+      category: page.category === 'Study Abroad' ? 'Study Abroad' : 'MBBS Abroad',
+      payloadText: JSON.stringify(page.payload || {}, null, 2)
+    });
+    setEditingId(page.id);
+    setViewMode('edit');
+  };
+
+  const handleSavePage = async () => {
+    let parsedPayload: any = {};
+    try {
+      parsedPayload = JSON.parse(pageForm.payloadText || '{}');
+    } catch (error) {
+      alert('Invalid JSON in Page Payload. Please fix JSON format before saving.');
+      return;
+    }
+
+    await handleSave('dynamic_pages', {
+      title: pageForm.title,
+      slug: pageForm.slug || generateSlug(pageForm.title),
+      category: pageForm.category,
+      payload: parsedPayload
+    });
+  };
 
   if (!isAuthenticated) {
     return (
@@ -245,9 +282,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         </div>
         <nav className="flex-grow py-4 overflow-y-auto no-scrollbar space-y-1">
           <SidebarItem id="dashboard" icon="fa-chart-line" label="Overview" />
-          <SidebarItem id="entries" icon="fa-users-viewfinder" label="Entries" />
-          <SidebarItem id="colleges" icon="fa-building-columns" label="Colleges" />
-          <SidebarItem id="blogs" icon="fa-file-signature" label="Blog Posts" />
+                  <SidebarItem id="entries" icon="fa-users-viewfinder" label="Entries" />
+                  <SidebarItem id="colleges" icon="fa-building-columns" label="Colleges" />
+                  <SidebarItem id="pages" icon="fa-file-code" label="Program Pages" />
+                  <SidebarItem id="blogs" icon="fa-file-signature" label="Blog Posts" />
           <SidebarItem id="categories" icon="fa-tags" label="Categories" />
           <SidebarItem id="stories" icon="fa-play-circle" label="Video Stories" />
           <SidebarItem id="media" icon="fa-photo-film" label="Media Library" />
@@ -273,10 +311,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         <div className="flex-grow overflow-y-auto p-10 no-scrollbar">
           {activeTab === 'dashboard' && (
             <div className="space-y-8 animate-fade-in">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
                  {[
                    { label: 'Total Entries', val: leads.length, icon: 'fa-users', color: 'text-green-500' },
                    { label: 'Colleges', val: colleges.length, icon: 'fa-building-columns', color: 'text-blue-500' },
+                   { label: 'Program Pages', val: pages.length, icon: 'fa-file-code', color: 'text-indigo-500' },
                    { label: 'Published Blogs', val: blogs.length, icon: 'fa-file', color: 'text-brand-gold' },
                    { label: 'Media Items', val: media.length, icon: 'fa-images', color: 'text-purple-500' }
                  ].map((stat, i) => (
@@ -487,6 +526,87 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   </tbody>
                 </table>
               </div>
+            </div>
+          )}
+
+          {activeTab === 'pages' && (
+            <div className="animate-fade-in">
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-3xl font-black text-brand-blue">Manage <span className="text-brand-gold">Program Pages</span></h2>
+                <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
+                  {viewMode === 'list' ? 'New Program Page' : 'Back to List'}
+                </button>
+              </div>
+
+              {viewMode === 'list' ? (
+                <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                  <table className="w-full text-left">
+                    <thead className="bg-gray-50 border-b border-gray-100">
+                      <tr>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Title</th>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Slug</th>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Category</th>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-50">
+                      {pages.map(p => (
+                        <tr key={p.id} className="hover:bg-gray-50/50">
+                          <td className="px-8 py-5 text-sm font-bold text-brand-blue">{p.title || 'Untitled'}</td>
+                          <td className="px-8 py-5 text-sm font-medium text-gray-500">/{p.slug}</td>
+                          <td className="px-8 py-5 text-xs font-black uppercase text-brand-gold tracking-wider">{p.category || '-'}</td>
+                          <td className="px-8 py-5 text-right space-x-2">
+                            <button onClick={() => startEditingPage(p)} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><i className="fa-solid fa-pen"></i></button>
+                            <button onClick={() => deleteItem('dynamic_pages', p.id)} className="p-2 text-red-500 hover:bg-red-50 rounded-lg"><i className="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      ))}
+                      {pages.length === 0 && <tr><td colSpan={4} className="px-8 py-8 text-center text-gray-400 text-sm">No program pages found.</td></tr>}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div className="bg-white rounded-[2.5rem] p-12 shadow-sm border border-gray-100">
+                  <form onSubmit={(e) => { e.preventDefault(); handleSavePage(); }} className="space-y-6">
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="col-span-2 md:col-span-1">
+                        <label className="label">Page Title</label>
+                        <input required type="text" className="input-std" value={pageForm.title} onChange={e => setPageForm({ ...pageForm, title: e.target.value, slug: generateSlug(e.target.value) })} />
+                      </div>
+                      <div className="col-span-2 md:col-span-1">
+                        <label className="label">Slug</label>
+                        <input required type="text" className="input-std text-gray-500" value={pageForm.slug} onChange={e => setPageForm({ ...pageForm, slug: generateSlug(e.target.value) })} />
+                        <p className="mt-2 text-xs text-gray-400">Use slug like <span className="font-mono">mbbs-in-russia</span> or <span className="font-mono">study-in-usa</span>.</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="label">Category</label>
+                      <select className="input-std" value={pageForm.category} onChange={e => setPageForm({ ...pageForm, category: e.target.value as 'MBBS Abroad' | 'Study Abroad' })}>
+                        <option value="MBBS Abroad">MBBS Abroad</option>
+                        <option value="Study Abroad">Study Abroad</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="label">Page Payload (JSON)</label>
+                      <textarea
+                        required
+                        rows={18}
+                        className="input-std font-mono text-xs"
+                        placeholder="Paste JSON structure used in mbbs_data.ts or studyAbroad_Data.ts"
+                        value={pageForm.payloadText}
+                        onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })}
+                      />
+                      <p className="mt-2 text-xs text-gray-400">This keeps your current file-based process intact. Backend page is used first, local JSON remains fallback.</p>
+                    </div>
+
+                    <button type="submit" className="w-full py-5 bg-brand-gold text-white rounded-2xl font-black uppercase tracking-widest shadow-xl">
+                      {editingId ? 'Update Program Page' : 'Add Program Page'}
+                    </button>
+                  </form>
+                </div>
+              )}
             </div>
           )}
 

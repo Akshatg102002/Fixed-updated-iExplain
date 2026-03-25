@@ -4,6 +4,7 @@ import { LOGO_URL, MEGA_MENU_DATA, OFFICE_ADDRESSES, FOOTER_COLLEGES } from '../
 import { createSlug, createStudyInPath } from '../utils.ts';
 import * as Flags from 'country-flag-icons/react/3x2';
 import { Link, useNavigate } from 'react-router-dom';
+import { db, collection, getDocs } from '../firebase.ts';
 
 interface NavbarProps {
   isDarkMode: boolean;
@@ -167,6 +168,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
   const timerRef = useRef<number | null>(null);
   const navigate = useNavigate();
+  const [dynamicCollegeGroups, setDynamicCollegeGroups] = useState<{ mbbs: any[]; study: any[] }>({ mbbs: [], study: [] });
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -176,6 +178,39 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
       document.body.style.overflow = 'unset';
     }
   }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    const loadCollegeGroups = async () => {
+      try {
+        const snap = await getDocs(collection(db, 'colleges'));
+        const colleges = snap.docs.map(d => d.data() as { name?: string; country?: string; category?: string });
+
+        const mbbsMap = new Map<string, Set<string>>();
+        const studyMap = new Map<string, Set<string>>();
+
+        colleges.forEach((item) => {
+          if (!item?.name || !item?.country || !item?.category) return;
+          if (item.category === 'MBBS Abroad') {
+            if (!mbbsMap.has(item.country)) mbbsMap.set(item.country, new Set<string>());
+            mbbsMap.get(item.country)!.add(item.name);
+          }
+          if (item.category === 'Study Abroad') {
+            if (!studyMap.has(item.country)) studyMap.set(item.country, new Set<string>());
+            studyMap.get(item.country)!.add(item.name);
+          }
+        });
+
+        setDynamicCollegeGroups({
+          mbbs: Array.from(mbbsMap.entries()).map(([country, names]) => ({ country, names: Array.from(names) })),
+          study: Array.from(studyMap.entries()).map(([country, names]) => ({ country, names: Array.from(names) }))
+        });
+      } catch (error) {
+        console.error('Failed to load backend college groups:', error);
+      }
+    };
+
+    loadCollegeGroups();
+  }, []);
 
   const handleMouseEnter = (menuName: string) => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -196,8 +231,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
   const navLinks = ['HOME', 'ABOUT', 'PROGRAMS', 'COLLEGES', 'SERVICES', 'BLOGS', 'CONTACT'];
 
   const getCollegeData = () => {
-    if (activeCollegeTab === 'MBBS') return FOOTER_COLLEGES.mbbs;
-    if (activeCollegeTab === 'STUDY') return FOOTER_COLLEGES.study;
+    if (activeCollegeTab === 'MBBS') return dynamicCollegeGroups.mbbs.length > 0 ? dynamicCollegeGroups.mbbs : FOOTER_COLLEGES.mbbs;
+    if (activeCollegeTab === 'STUDY') return dynamicCollegeGroups.study.length > 0 ? dynamicCollegeGroups.study : FOOTER_COLLEGES.study;
     if (activeCollegeTab === 'INDIA') return FOOTER_COLLEGES.mbbs_india;
     return [];
   };
@@ -408,7 +443,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                              
                              {mobileCollegeOpen.mbbs && (
                                <div className="pl-6 space-y-4 border-l-2 border-gray-100 dark:border-slate-800 animate-fade-in">
-                                 {FOOTER_COLLEGES.mbbs.map((country, idx) => (
+                                 {(dynamicCollegeGroups.mbbs.length > 0 ? dynamicCollegeGroups.mbbs : FOOTER_COLLEGES.mbbs).map((country, idx) => (
                                    <div key={idx}>
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
@@ -433,7 +468,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                              
                              {mobileCollegeOpen.study && (
                                <div className="pl-6 space-y-4 border-l-2 border-gray-100 dark:border-slate-800 animate-fade-in">
-                                 {FOOTER_COLLEGES.study.map((country, idx) => (
+                                 {(dynamicCollegeGroups.study.length > 0 ? dynamicCollegeGroups.study : FOOTER_COLLEGES.study).map((country, idx) => (
                                    <div key={idx}>
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
