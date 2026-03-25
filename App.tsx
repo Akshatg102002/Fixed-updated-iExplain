@@ -438,8 +438,46 @@ const StudyIndiaWrapper = () => {
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const [remotePage, setRemotePage] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadRemotePage = async () => {
+      if (!normalizedSlug) {
+        setIsLoading(false);
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const q = query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug));
+        const snapshot = await getDocs(q);
+        if (!snapshot.empty) {
+          setRemotePage(snapshot.docs[0].data());
+        } else {
+          setRemotePage(null);
+        }
+      } catch (error) {
+        console.error('Failed to load dynamic page:', error);
+        setRemotePage(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadRemotePage();
+  }, [normalizedSlug]);
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
+  if (isLoading) return <LoadingOverlay />;
+
+  if (remotePage?.category === 'Study Abroad' && remotePage?.payload) {
+    return <StudyAbroadDetailPage data={remotePage.payload} />;
+  }
+
+  if (remotePage?.category === 'MBBS Abroad' && remotePage?.payload) {
+    return <MBBSDetailPage data={remotePage.payload} />;
+  }
 
   if (normalizedSlug.startsWith('study-in-')) {
     const data = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
