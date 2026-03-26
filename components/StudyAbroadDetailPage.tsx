@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { StudyAbroadDetailData } from "../types";
+import { LOGO_URL } from '../data.ts';
 import WhyChooseSection from "./WhyChooseSection";
 import KnowYourDestination from "./KnowYourDestination";
 
@@ -379,8 +380,58 @@ const StudyAbroadDetailPage: React.FC<StudyAbroadDetailPageProps> = ({ data }) =
           </div>
         </section>
 
-        {/* Why Choose Us — rendered inline if data exists, else fallback to component */}
-         <WhyChooseSection /> 
+        <section className="max-w-6xl mx-auto px-2 text-sm md:text-base text-gray-700 leading-relaxed">
+
+          {/* Heading */}
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left">
+            Why Choose IExplain Education to Study in {country}?
+          </h2>
+
+          <div className="flex flex-col md:flex-row items-start gap-4">
+
+            {/* Logo */}
+            <img
+              src={LOGO_URL}
+              alt="IExplain Education Logo"
+              className="w-28 h-auto object-contain rounded-md border border-gray-300 p-1 bg-white shadow-sm flex-shrink-0"
+            />
+
+            {/* Text Content */}
+            <div className="space-y-3">
+              <p className="text-justify">
+                {data.whyChooseUsIntro}
+              </p>
+            </div>
+
+          </div>
+
+          {/* Points */}
+          <div className="mt-10">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-left">
+              What Makes Us Stand Out
+            </h3>
+
+            <ul className="space-y-3">
+              {data.whyChooseUs.map((item, i) => {
+                const [title, desc] = item.split(":");
+                return (
+                  <li key={i} className="flex items-start gap-2">
+
+                    <span className="text-justify">
+                      <strong>{title}:</strong> {desc}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          {/* Tagline */}
+          <p className="mt-6 font-medium text-center md:text-left text-blue-800">
+            {data.whyChooseUsTagline}
+          </p>
+
+        </section>
 
         <KnowYourDestination />
 
@@ -422,9 +473,8 @@ const StudyAbroadDetailPage: React.FC<StudyAbroadDetailPageProps> = ({ data }) =
                 </button>
 
                 <div
-                  className={`px-4 overflow-hidden transition-all duration-300 ${
-                    openFAQ === i ? "max-h-40 py-3" : "max-h-0"
-                  }`}
+                  className={`px-4 overflow-hidden transition-all duration-300 ${openFAQ === i ? "max-h-40 py-3" : "max-h-0"
+                    }`}
                 >
                   <p>{faq.answer}</p>
                 </div>

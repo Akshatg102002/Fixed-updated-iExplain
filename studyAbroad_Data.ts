@@ -176,30 +176,17 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       additionalCosts: "Students studying in the USA typically spend around $10,000 - $20,000 per year on living expenses, including accommodation, food, transportation, and other daily costs. The exact amount may vary depending on the city, university location, and the student's lifestyle."
     },
 
+    whyChooseUsIntro: "Dreaming of studying in the USA but unsure where to start? iExplain Education is here to guide you at every step of your journey. We help students turn their dream of international education into reality with expert guidance and personalized support. Start Your USA Journey with Confidence At iExplain Education, we don’t just process applications - we build your future. Connect with us today and take the first step toward studying in the USA!",
+
     whyChooseUs: [
-      {
-        heading: "Personalized Career Counseling",
-        description: "Our experienced counselors understand your academic background, interests, and career goals to help you choose the right course and the best universities in the USA."
-      },
-      {
-        heading: "University & Course Selection",
-        description: "With access to a wide network of universities, we help you find programs that perfectly match your profile, budget, and future career plans."
-      },
-      {
-        heading: "Complete Application Support",
-        description: "From shortlisting universities to application submission, our team ensures your application stands out and increases your chances of admission."
-      },
-      {
-        heading: "Visa Guidance & Documentation",
-        description: "We provide expert assistance with documentation, visa preparation, and interview guidance to make your visa process smooth and stress-free."
-      },
-      {
-        heading: "End-to-End Support",
-        description: "From your first counseling session to your departure for the USA, we stay with you throughout the entire process."
-      }
+      "Personalized Career Counseling: iExplain Education offers one-to-one counseling sessions to understand each student's academic background, interests, and career goals, and helps them choose the right course and best universities in the USA.",
+      "University & Course Selection: We provide access to a wide network of universities and help students select programs that match their profile, budget, and long-term career plans.",
+      "Complete Application Support: From university shortlisting to application submission, iExplain Education ensures that your application is accurate, strong, and increases your chances of admission.",
+      "Visa Guidance & Documentation: We provide complete support for visa documentation, application process, and interview preparation, making the visa process smooth and stress-free.",
+      "End-to-End Support: From your first counseling session to your departure for the USA, iExplain Education supports you at every step of your study abroad journey.",
+      "Transparent & Trusted Process: We follow a 100% transparent process with no hidden charges, ensuring students and parents are informed and confident throughout the journey."
     ],
 
-    whyChooseUsTagline: "Start Your USA Journey with Confidence. At iExplain Education, we don't just process applications - we build your future. Connect with us today and take the first step toward studying in the USA!",
 
     lifeAndCareer: {
       description: "Choosing to study in the USA is not only about receiving a world-class education, but also about opening the door to global career opportunities and a high-quality lifestyle. Students gain international exposure, practical learning, and valuable skills that are highly respected by employers around the world.",
@@ -419,27 +406,15 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       additionalCosts: "The cost to study in UK depends upon the course, university, and city that a student selects. International students who plan to study in the UK must pay higher fees compared to local students. In addition to this, they must also consider the cost of living."
     },
 
-    whyChooseUs: [
-      {
-        heading: "Personalized Career Counseling",
-        description: "Our experienced counselors understand your academic background, interests, and career goals to help you choose the right course and the best universities in the UK."
-      },
-      {
-        heading: "University & Course Selection",
-        description: "With access to a wide network of universities, we help you find programs that perfectly match your profile, budget, and future career plans."
-      },
-      {
-        heading: "Complete Application Support",
-        description: "From shortlisting universities to application submission, our team ensures your application stands out and increases your chances of admission."
-      },
-      {
-        heading: "Visa Guidance & Documentation",
-        description: "We provide expert assistance with documentation, visa preparation, and interview guidance to make your visa process smooth and stress-free."
-      },
-      {
-        heading: "End-to-End Support",
-        description: "From your first counseling session to your departure for the UK, we stay with you throughout the entire process."
-      }
+
+    "whyChooseUsIntro": "Dreaming of studying in the UK but unsure where to start? iExplain Education is here to guide you at every step of your journey. We help students turn their dream of international education into reality with expert guidance and personalized support.",
+    "whyChooseUs": [
+      "Personalized Career Counseling: Our experienced counselors understand your academic background, interests, and career goals to help you choose the right course and the best universities in the UK.",
+      "University & Course Selection: With access to a wide network of universities, we help you find programs that perfectly match your profile, budget, and future career plans.",
+      "Complete Application Support: From shortlisting universities to application submission, our team ensures your application stands out and increases your chances of admission.",
+      "Visa Guidance & Documentation: We provide expert assistance with documentation, visa preparation, and interview guidance to make your visa process smooth and stress-free.",
+      "End-to-End Support: From your first counseling session to your departure for the UK, we stay with you throughout the entire process.",
+      "Build Your Future with Confidence: At iExplain Education, we don’t just process applications - we help shape your future with the right guidance and support."
     ],
 
     postStudyWork: {
@@ -676,27 +651,14 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       }
     ],
 
-    whyChooseUs: [
-      {
-        heading: "Personalized Career Counseling",
-        description: "Our experienced counselors understand your academic background, interests, and career goals to help you choose the right course and the best universities in Australia."
-      },
-      {
-        heading: "University & Course Selection",
-        description: "With access to a wide network of universities, we help you find programs that perfectly match your profile, budget, and future career plans."
-      },
-      {
-        heading: "Complete Application Support",
-        description: "From shortlisting universities to application submission, our team ensures your application stands out and increases your chances of admission."
-      },
-      {
-        heading: "Visa Guidance & Documentation",
-        description: "We provide expert assistance with documentation, visa preparation, and interview guidance to make your visa process smooth and stress-free."
-      },
-      {
-        heading: "End-to-End Support",
-        description: "From your first counseling session to your departure for Australia, we stay with you throughout the entire process."
-      }
+    "whyChooseUsIntro": "Dreaming of studying in Australia but unsure where to start? iExplain Education is here to guide you at every step of your journey. We help students turn their dream of international education into reality with expert guidance and personalised support.",
+    "whyChooseUs": [
+      "Personalized Career Counseling: Our experienced counselors understand your academic background, interests, and career goals to help you choose the right course and the best universities in Australia.",
+      "University & Course Selection: With access to a wide network of universities, we help you find programs that perfectly match your profile, budget, and future career plans.",
+      "Complete Application Support: From shortlisting universities to application submission, our team ensures your application stands out and increases your chances of admission.",
+      "Visa Guidance & Documentation: We provide expert assistance with documentation, visa preparation, and interview guidance to make your visa process smooth and stress-free.",
+      "End-to-End Support: From your first counseling session to your departure for Australia, we stay with you throughout the entire process.",
+      "Build Your Future with Confidence: At iExplain Education, we don’t just process applications – we help shape your future with the right guidance and support."
     ],
 
     whyChooseUsTagline: "Start Your Australia Journey with Confidence. At iExplain Education, we don't just process applications – we build your future.",
@@ -920,23 +882,12 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       }
     ],
 
-    whyChooseUs: [
-      {
-        heading: "Expert Career Counseling",
-        description: "iExplain Education provides individual counseling services to assist students in choosing the right course, university, and career according to their academic background and future objectives."
-      },
-      {
-        heading: "University Selection Assistance",
-        description: "Canada is home to a large number of universities and colleges offering a broad spectrum of courses. Experts at iExplain Education assist students in choosing the right course and university according to their interests and career goals."
-      },
-      {
-        heading: "Complete Admission Support",
-        description: "We assist students with the entire admission process from the submission of the application to the university communication. This helps in ensuring a smooth and efficient process for the students."
-      },
-      {
-        heading: "Visa Guidance and Documentation",
-        description: "The process of obtaining a student visa is a complicated one. We assist students with the entire process of obtaining a student visa."
-      }
+    "whyChooseUsIntro": "Choosing the right education consultant is an important step for students who want to study in Canada. iExplain Education provides complete guidance and professional support to help students achieve their dream of studying at top Canadian universities and colleges. Our experienced counselors assist students at every stage of the admission process, making the journey smooth and stress-free.",
+    "whyChooseUs": [
+      "Expert Career Counseling: iExplain Education provides individual counseling services to assist students in choosing the right course, university, and career according to their academic background and future objectives.",
+      "University Selection Assistance: Canada is home to a large number of universities and colleges offering a broad spectrum of courses. Our experts help students choose the right course and university based on their interests and career goals.",
+      "Complete Admission Support: We assist students with the entire admission process, from application submission to university communication, ensuring a smooth and efficient experience.",
+      "Visa Guidance and Documentation: The student visa process can be complex. We provide complete support with documentation, application procedures, and guidance to help students successfully obtain their visa."
     ],
 
     whyChooseUsTagline: "Start Your Canada Journey with Confidence. At iExplain Education, we don't just process applications - we build your future. Connect with us today and take the first step toward studying in the Canada!",
@@ -1250,38 +1201,16 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       }
     ],
 
-    whyChooseUs: [
-      {
-        heading: "Expert Counseling",
-        description: "Personalized guidance to help students choose the right course and university in Ireland."
-      },
-      {
-        heading: "University Selection",
-        description: "Assistance in selecting the best Ireland universities according to academic profile and career goals."
-      },
-      {
-        heading: "Application Assistance",
-        description: "Complete support with application forms, documentation, and admission procedures."
-      },
-      {
-        heading: "Visa Guidance",
-        description: "Professional help with the Ireland student visa process and documentation."
-      },
-      {
-        heading: "Scholarship Assistance",
-        description: "Guidance in finding scholarship opportunities to reduce study expenses."
-      },
-      {
-        heading: "Pre-Departure Support",
-        description: "Assistance with accommodation, travel planning, and preparation for life in Ireland."
-      },
-      {
-        heading: "End-to-End Support",
-        description: "Continuous support from admission to arrival in Ireland for a smooth study abroad experience."
-      }
+    "whyChooseUsIntro": "Choosing the right consultancy can make the process of studying abroad much easier and more successful. iExplain Education provides complete support and professional guidance to students who want to pursue higher education in Ireland. From selecting the right course and university to helping with the visa process, the team ensures that students receive the best possible assistance at every stage of their journey. With expert counseling and proper guidance, students can apply to leading Ireland universities such as Trinity College Dublin, University College Dublin, and University College Cork.",
+    "whyChooseUs": [
+      "Expert Counseling: Personalized guidance to help students choose the right course and university in Ireland.",
+      "University Selection: Assistance in selecting the best Ireland universities according to academic profile and career goals.",
+      "Application Assistance: Complete support with application forms, documentation, and admission procedures.",
+      "Visa Guidance: Professional help with the Ireland student visa process and documentation.",
+      "Scholarship Assistance: Guidance in finding scholarship opportunities to reduce study expenses.",
+      "Pre-Departure Support: Assistance with accommodation, travel planning, and preparation for life in Ireland.",
+      "End-to-End Support: Continuous support from admission to arrival in Ireland for a smooth study abroad experience."
     ],
-
-    whyChooseUsDescription: "Choosing the right consultancy can make the process of studying abroad much easier and more successful. iExplain Education provides complete support and professional guidance to students who want to pursue higher education in Ireland. From selecting the right course and university to helping with the visa process, the team ensures that students receive the best possible assistance at every stage of their journey. With expert counseling and proper guidance, students can apply to leading Ireland universities such as Trinity College Dublin, University College Dublin, and University College Cork.",
 
     postStudyWork: {
       program: "Post Study Work Visa",
@@ -1469,11 +1398,16 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       additionalCosts: "Accommodation, food, transport, and personal expenses"
     },
 
-    whyChooseUs: [
-      "Personalized career counseling and guidance.",
-      "University and course selection assistance.",
-      "Complete admission and documentation support.",
-      "Visa guidance and pre-departure assistance."
+    "whyChooseUsIntro": "Selecting an education consultancy is a major step for students who are planning to pursue their higher education in foreign countries. iExplain Education is an education consultancy that offers professional guidance and support to students who are seeking their dream of higher education in New Zealand. The consultancy helps students in every step of their study abroad process, starting from choosing the right course and college to helping them secure a visa for their foreign education. With proper counseling, students can plan their higher education in New Zealand.",
+
+    "whyChooseUs": [
+      "Expert Career Counseling: Personalized guidance to help students choose the right course and study destination based on their academic background and career goals.",
+      "University & Course Selection: Assistance in selecting suitable institutions and programs according to the student’s profile and future plans.",
+      "Application Assistance: Complete support with application forms, documentation, and admission procedures.",
+      "Visa Guidance: Professional help with the New Zealand student visa process and required documentation.",
+      "Scholarship Support: Guidance on available scholarships to help reduce the overall cost of studying abroad.",
+      "Pre-Departure Assistance: Support with travel arrangements, accommodation guidance, and preparation for student life abroad.",
+      "End-to-End Support: Continuous assistance from the initial counseling stage until the student successfully begins their studies in New Zealand."
     ],
 
     lifeAndCareer: {
@@ -1728,18 +1662,17 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       additionalCosts: "European Study Costs by Country (2026 Estimates). Germany offers €0 – €6,000 public university tuition making it one of the most affordable options. Total annual costs range from €9,200 (Poland) to €35,000 (Switzerland) depending on country, city, and lifestyle."
     },
 
-    whyChooseUs: [
-      "Personalized Career Counseling: iExplain Education offers one-to-one counseling sessions to understand students' academic backgrounds, budgets, and career aspirations. This enables us to recommend students with their best possible option of country, course, and university.",
-      "Expert University & Course Selection: With their extensive knowledge of European education, students can benefit from choosing their ideal university from various European countries such as Germany, Italy, France, Netherlands, Malta, and Poland.",
-      "Complete Admission Assistance: From application form filling to confirmation of the offer letter, students are provided with full support during the admission process.",
-      "Hassle-Free Documentation: Documents such as SOP, LOR, and other academic documents are well-prepared and verified to avoid the chances of rejection.",
-      "Visa Guidance & Support: iExplain Education provides complete visa assistance, including documentation, financial proof guidance, and interview preparation.",
-      "No Hidden Charges: The process is completely transparent, with clear fee structures and no hidden costs involved.",
-      "Pre-Departure Support: Students receive guidance before leaving, including travel planning, accommodation advice, and important instructions.",
-      "Post-Arrival Assistance: Support continues even after reaching Europe, helping students settle comfortably in a new country."
+    "whyChooseUsIntro": "Selecting a consultancy is a significant decision for students planning to study in Europe, as it will affect their university choice, success in admissions, and overall study experience. iExplain Education stands out with its clear and transparent process and expert guidance, helping students achieve their dream of studying abroad without confusion or hassle.",
+    "whyChooseUs": [
+      "Personalized Career Counseling: iExplain Education offers one-to-one counseling sessions to understand students’ academic backgrounds, budgets, and career aspirations, helping them choose the best country, course, and university.",
+      "Expert University & Course Selection: With extensive knowledge of European education systems, we help students select ideal universities across countries such as Germany, Italy, France, Netherlands, Malta, and Poland.",
+      "Complete Admission Assistance: From application form filling to receiving the offer letter, we provide full support throughout the admission process.",
+      "Hassle-Free Documentation: We assist in preparing and verifying documents such as SOPs, LORs, and academic records to minimize chances of rejection.",
+      "Visa Guidance & Support: Complete assistance with visa documentation, financial proof, and interview preparation ensures a smooth visa process.",
+      "No Hidden Charges: Our process is fully transparent with clear fee structures and no hidden costs.",
+      "Pre-Departure Support: Guidance on travel planning, accommodation, and essential information before departure.",
+      "Post-Arrival Assistance: Continued support after reaching Europe to help students settle comfortably in their new environment."
     ],
-
-    whyChooseUsDescription: "Selecting a consultancy is a significant decision for students planning to study in Europe, as it will affect their university choice, success in admissions, and overall study experience. iExplain Education is a consultancy that stands out for its clear and transparent process and expert advice, which will help students fulfil their dream of studying abroad without any confusion and hassles.",
 
     lifeAndCareer: {
       description: "Life after studying in Europe offers a perfect blend of global exposure, professional growth, and high-quality living standards. European countries are known for their strong economies, advanced industries, and excellent work environments, which provide graduates with a wide range of career opportunities. Students who complete their education in Europe gain internationally recognized degrees along with practical skills, making them highly competitive in the global job market.",
@@ -1930,17 +1863,16 @@ export const STUDY_ABROAD_DETAILED: Record<string, StudyAbroadDetailData> = {
       "Visa Application Documents – Completed student visa application form and supporting documents"
     ],
 
-    whyChooseUs: [
-      "Personalized Career Guidance: At iExplain Education, they emphasize a student-centered approach, understanding the strengths, objectives, and preferences of students prior to recommending the most appropriate course and university. Unlike other consultancies, they value students' futures over profits.",
-      "Wide Range of Study Destinations: The consultancy provides guidance on various countries, including the UAE, UK, USA, Canada, and many more. This enables the student to compare the options and make the best choice based on the student's profile as well as budget.",
-      "University & Course Selection Support: From selecting the right university to choosing the best course, their expert team provides complete assistance to ensure students make informed decisions aligned with their career goals.",
-      "Complete Admission Assistance: iExplain Education helps students with every step of the admission process, including application form filling, document preparation, SOP & LOR guidance, and admission submission, ensuring a smooth and error-free application process.",
-      "Visa & Documentation Support: Visa services are quite complicated, but iExplain helps students get their visa approved through proper guidance and documentation support.",
-      "Test Preparation Services: Students are provided with test preparation services for tests such as IELTS, TOEFL, PTE, GRE, and SAT, which helps them enhance their university profiles.",
-      "End-to-End Support: iExplain offers end-to-end support services ranging from counseling to post-admission services such as accommodation, forex, and travel services."
+    "whyChooseUsIntro": "Choosing the right consultancy is essential for building a successful international career. iExplain Education stands out as a trusted partner for students aiming to study in the United Arab Emirates and other global destinations. With a student-centric approach and extensive experience, iExplain Education ensures a smooth and hassle-free journey for every student.",
+    "whyChooseUs": [
+      "Personalized Career Guidance: iExplain Education follows a student-centered approach, understanding each student’s strengths, goals, and preferences before recommending the most suitable course and university.",
+      "Wide Range of Study Destinations: We provide guidance for multiple countries including the UAE, UK, USA, and Canada, allowing students to compare and choose the best option based on their profile and budget.",
+      "University & Course Selection Support: Our expert team assists students in selecting the right university and course aligned with their academic background and career goals.",
+      "Complete Admission Assistance: We support students throughout the admission process, including application form filling, document preparation, SOP & LOR guidance, and final submission to ensure a smooth and error-free process.",
+      "Visa & Documentation Support: We provide complete guidance for visa applications, helping students with proper documentation and increasing their chances of approval.",
+      "Test Preparation Services: Students receive support for exams such as IELTS, TOEFL, PTE, GRE, and SAT to strengthen their academic profiles.",
+      "End-to-End Support: From initial counseling to post-admission services like accommodation, forex, and travel assistance, we provide continuous support at every stage of the journey."
     ],
-
-    whyChooseUsDescription: "The United Arab Emirates, and iExplain Education is the best choice for a successful career in the international arena. The student-centric approach and experience of iExplain Education guarantee a hassle-free experience for students.",
 
     partTimeWork: {
       hoursPerWeek: "15 to 20 hours per week during academic sessions and full-time during semester breaks",

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MBBSDetailData } from "../types";
 import { FaCheckCircle } from "react-icons/fa";
+import { LOGO_URL } from '../data.ts';
 
 interface Props {
   data: MBBSDetailData;
@@ -308,7 +309,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* Floating Image */}
             <img
-              src="https://www.iexplaineducation.com/wp-content/uploads/2023/04/Logo-2-scaled-e1684926432756-768x307.jpg"
+              src={LOGO_URL}
               alt="IExplain Education Logo"
               className="w-28 h-28 object-contain rounded-md float-left mr-4 mb-2 border border-gray-300 p-1 bg-white shadow-sm"
             />

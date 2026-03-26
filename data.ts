@@ -2,7 +2,7 @@ import { Destination, Office, Blog, Testimonial, College, CollegeDetailData, Pro
 export { MBBS_ABROAD_DETAILED } from './mbbs_data.ts';
 export { STUDY_ABROAD_DETAILED } from './studyAbroad_Data.ts';
 
-export const LOGO_URL = "https://www.iexplaineducation.com/wp-content/uploads/2023/04/Logo-2-scaled-e1684926432756-768x307.jpg";
+export const LOGO_URL = "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774420049/iexplain_logo_xbdxmc.jpg";
 export const HERO_IMG_URL = "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200";
 
 export const PRIVACY_POLICY_CONTENT = `
