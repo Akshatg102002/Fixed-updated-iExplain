@@ -3,6 +3,7 @@ import { CollegeDetailData } from "./types";
 export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "kazan-federal-university": {
         title: "Kazan Federal University",
+        coursetype: "MBBS",
 
         heroImage:
             "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Kazan_Federal_ckcnvt.webp",
@@ -27,18 +28,48 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             "Campus Facilities": "Modern labs, hospitals, library, hostels",
         },
 
-        benefits: [
-            "Globally Recognized Degree – The MBBS degree from Kazan Federal University is recognized by major medical bodies such as NMC, WHO, ECFMG, and UNESCO. This allows students to appear for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK).",
-            "Affordable Fee Structure – Compared to private medical colleges in India, the MBBS program at Kazan Federal University is much more affordable, making it a budget-friendly option without compromising on quality education.",
-            "International Exposure – The university hosts students from over 100 countries, providing a multicultural environment that helps students gain global exposure and build international networks.",
-            "Advanced Medical Training – Students get hands-on clinical training in well-equipped hospitals and medical centers associated with the university. This practical exposure is essential for developing strong medical skills.",
-            "Experienced Faculty – Kazan Federal University has highly qualified and experienced professors who focus on both theoretical knowledge and practical learning, ensuring students receive a well-rounded medical education.",
-            "Modern Infrastructure – The university offers state-of-the-art laboratories, digital classrooms, advanced research centers, and a vast library, creating an ideal learning environment for medical students.",
-            "Comfortable Hostel Facilities – Safe and well-maintained hostel accommodations are available for international students, with all basic amenities and security.",
-            "English Medium Program – MBBS is available in English medium, which is a major advantage for Indian students as it removes the language barrier.",
-            "High Career Opportunities – Graduates from Kazan Federal University have excellent career prospects worldwide. After completing MBBS, students can pursue higher studies or practice medicine in different countries after clearing the required licensing exams.",
-        ],
+        benefits: {
+            intro: "Choosing Kazan Federal University for MBBS in Russia is a smart decision for Indian and international students due to its strong academic reputation, global recognition, and affordable education. Here are the key reasons why it stands out:",
 
+            items: [
+                {
+                    heading: "Globally Recognized Degree",
+                    details: "The MBBS degree from Kazan Federal University is recognized by major medical bodies such as NMC, WHO, ECFMG, and UNESCO. This allows students to appear for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK)."
+                },
+                {
+                    heading: "Affordable Fee Structure",
+                    details: "Compared to private medical colleges in India, the MBBS program at Kazan Federal University is much more affordable, making it a budget-friendly option without compromising on quality education."
+                },
+                {
+                    heading: "International Exposure",
+                    details: "The university hosts students from over 100 countries, providing a multicultural environment that helps students gain global exposure and build international networks."
+                },
+                {
+                    heading: "Advanced Medical Training",
+                    details: "Students get hands-on clinical training in well-equipped hospitals and medical centers associated with the university. This practical exposure is essential for developing strong medical skills."
+                },
+                {
+                    heading: "Experienced Faculty",
+                    details: "Kazan Federal University has highly qualified and experienced professors who focus on both theoretical knowledge and practical learning, ensuring students receive a well-rounded medical education."
+                },
+                {
+                    heading: "Modern Infrastructure",
+                    details: "The university offers state-of-the-art laboratories, digital classrooms, advanced research centers, and a vast library, creating an ideal learning environment for medical students."
+                },
+                {
+                    heading: "Comfortable Hostel Facilities",
+                    details: "Safe and well-maintained hostel accommodations are available for international students, with all basic amenities and security."
+                },
+                {
+                    heading: "English Medium Program",
+                    details: "MBBS is available in English medium, which is a major advantage for Indian students as it removes the language barrier."
+                },
+                {
+                    heading: "High Career Opportunities",
+                    details: "Graduates from Kazan Federal University have excellent career prospects worldwide. After completing MBBS, students can pursue higher studies or practice medicine in different countries after clearing the required licensing exams."
+                }
+            ]
+        },
 
         SyllabusIntro: "The MBBS program follows a 6-year curriculum that combines theoretical knowledge with practical clinical training. The syllabus is designed according to international medical education standards and gradually shifts from basic sciences to advanced clinical subjects.",
 
@@ -172,6 +203,7 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     },
     "bashkir-state-medical-university": {
         title: "Bashkir State Medical University",
+        coursetype: "MBBS",
 
         heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Bashkir_State_bbycah.webp",
         heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Bashkir_State_Medical_2_r7sey6.webp",
@@ -182,7 +214,7 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
 
         quickOverview: {
             "University Name": "Bashkir State Medical University (BSMU)",
-            "Established Year": "1932",
+            "Established": "1932",
             "Location": "Ufa city, Bashkortostan Republic, Russia",
             "Recognition & Accreditation": "Recognized by Russian Ministry of Health, WHO, and NMC (India)",
             "Courses Offered": "MBBS (General Medicine), Dentistry, Pharmacy, Postgraduate (MD/MS), PhD, Residency Programs",
@@ -196,17 +228,48 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             "Career Opportunities": "Practice in India after NMC screening, opportunities in Europe, USA, Middle East, Russia; research & academic careers",
         },
 
-        benefits: [
-            "Globally Recognized Degree: The MBBS degree from BSMU is recognized by major medical bodies including NMC (India), WHO, ECFMG, and UNESCO, allowing students to appear for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK).",
-            "Affordable Fee Structure: Compared to private medical colleges in India, the MBBS program at BSMU offers quality education at an affordable cost, making it a budget-friendly option without compromising on learning.",
-            "International Exposure: The university hosts students from over 80 countries, providing a multicultural environment that helps students gain global exposure and build international networks.",
-            "Advanced Medical Training: Students receive hands-on clinical training in well-equipped hospitals and medical centers associated with BSMU, giving them practical experience from the early years of the course.",
-            "Experienced Faculty: BSMU has highly qualified and experienced professors who focus on both theoretical knowledge and practical learning to prepare students for a successful medical career.",
-            "Modern Infrastructure: The university provides state-of-the-art labs, simulation centers, digital classrooms, and a comprehensive medical library for effective learning and research.",
-            "Safe & Comfortable Accommodation: International students enjoy well-maintained hostels with mess facilities, ensuring a secure and comfortable living environment.",
-            "Career Opportunities: Graduates can practice in India after NMC screening or pursue medical careers in Europe, USA, Middle East, and Russia, including opportunities in hospitals, research, and academic fields.",
-            "Holistic Student Development: BSMU encourages sports, cultural activities, and extracurricular programs, supporting overall personal and professional growth.",
-        ],
+        benefits: {
+            intro: "Choosing Bashkir State Medical University (BSMU) for MBBS in Russia is a smart choice for Indian and international students due to its strong academic reputation, global recognition, and affordable education. Here are the key reasons why it stands out:",
+
+            items: [
+                {
+                    heading: "Globally Recognized Degree",
+                    details: "The MBBS degree from BSMU is recognized by major medical bodies including NMC (India), WHO, ECFMG, and UNESCO, allowing students to appear for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK).",
+                },
+                {
+                    heading: "Affordable Fee Structure",
+                    details: "Compared to private medical colleges in India, the MBBS program at BSMU offers quality education at an affordable cost, making it a budget-friendly option without compromising on learning.",
+                },
+                {
+                    heading: "International Exposure",
+                    details: "The university hosts students from over 80 countries, providing a multicultural environment that helps students gain global exposure and build international networks.",
+                },
+                {
+                    heading: "Advanced Medical Training",
+                    details: "Students receive hands-on clinical training in well-equipped hospitals and medical centers associated with BSMU, giving them practical experience from the early years of the course.",
+                },
+                {
+                    heading: "Experienced Faculty",
+                    details: "BSMU has highly qualified and experienced professors who focus on both theoretical knowledge and practical learning to prepare students for a successful medical career.",
+                },
+                {
+                    heading: "Modern Infrastructure",
+                    details: "The university provides state-of-the-art labs, simulation centers, digital classrooms, and a comprehensive medical library for effective learning and research.",
+                },
+                {
+                    heading: "Safe & Comfortable Accommodation",
+                    details: "International students enjoy well-maintained hostels with mess facilities, ensuring a secure and comfortable living environment.",
+                },
+                {
+                    heading: "Career Opportunities",
+                    details: "Graduates can practice in India after NMC screening or pursue medical careers in Europe, USA, Middle East, and Russia, including opportunities in hospitals, research, and academic fields.",
+                },
+                {
+                    heading: "Holistic Student Development",
+                    details: "BSMU encourages sports, cultural activities, and extracurricular programs, supporting overall personal and professional growth.",
+                },
+            ],
+        },
 
         SyllabusIntro: "Bashkir State Medical University (BSMU) offers a comprehensive MBBS program spanning six years, designed to provide both theoretical knowledge and practical clinical skills. The syllabus is structured to gradually move students from basic medical sciences in the initial years to advanced clinical training and hands-on patient care in the later years. International students receive guidance in Russian language and practical exposure from the early years, ensuring a smooth transition into hospital settings. The final year includes intensive clinical rotations and internship training to prepare graduates for medical practice globally.",
 
@@ -335,6 +398,407 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
                 question: "Can students practice in India after completing MBBS?",
                 answer:
                     "Yes, after completing MBBS from Bashkir State Medical University, students can return to India and practice medicine. However, they must first clear the FMGE (Foreign Medical Graduate Examination) or the upcoming NEXT exam, as per NMC regulations.",
+            },
+        ],
+    },
+    "orenburg-state-medical-university": {
+        coursetype: "MBBS",
+        title: "Orenburg State Medical University",
+
+        heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514515/Orenburg_State_Medical_snd8eu.webp",
+        heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Orenburg_State_Medical_2_q5w0ph.webp",
+
+        intro: {
+            text: `Orenburg State Medical University (OrSMU) is one of the leading government medical universities in Russia, established in 1944 and located in the city of Orenburg. Over the years, the university has built a strong reputation for providing high-quality medical education and producing skilled healthcare professionals who are working across the world.\n\nThe university is recognized by major global medical bodies such as WHO, NMC (India), ECFMG, and is listed in the World Directory of Medical Schools, making it a preferred choice for international students, especially from India. It follows international standards of medical education and offers an English-medium MBBS program with a duration of 6 years, including practical training.\n\nOrenburg State Medical University is known for its strong academic structure, with over 40+ departments, experienced faculty, and modern laboratories that provide both theoretical knowledge and hands-on clinical exposure. The university is affiliated with more than 18 clinical hospitals, allowing students to gain real-time medical experience during their studies.\n\nWith affordable tuition fees, advanced infrastructure, and a safe environment for international students, Orenburg State Medical University has become a popular destination for students looking to pursue MBBS abroad. Its focus on practical training, research, and global exposure makes it an excellent choice for building a successful medical career.`,
+        },
+
+        quickOverview: {
+            "University Name": "Orenburg State Medical University (OrSMU)",
+            "Location": "Orenburg, Russia",
+            "Established Year": "1944",
+            "University Type": "Government Medical University",
+            "Course Offered": "MBBS (General Medicine)",
+            "Course Duration": "6 Years (Including Internship)",
+            "Recognition": "NMC (India), WHO, ECFMG, WDOMS",
+            "Eligibility Criteria": "50% in PCB (40% for reserved) + NEET Qualified",
+            "Entrance Exam": "No separate entrance exam (NEET required for Indians)",
+            "Hostel Facilities": "Available with basic amenities",
+            "Indian Students": "High number of Indian students",
+        },
+
+        benefits: {
+            intro: "Orenburg State Medical University is a popular choice among international students due to its globally recognized MBBS degree, which is approved by major medical bodies such as NMC, WHO, ECFMG, and listed in WDOMS. This recognition allows students to appear for international licensing exams like FMGE/NEXT, USMLE, and PLAB, opening doors to medical careers across the world. Here are the key reasons why it stands out:",
+
+            items: [
+                {
+                    heading: "Globally Recognized Degree",
+                    details: "Orenburg State Medical University is recognized by top medical bodies like NMC, WHO, ECFMG, and WDOMS. This allows students to appear for global licensing exams such as FMGE/NEXT, USMLE, and PLAB, providing excellent career opportunities worldwide.",
+                },
+                {
+                    heading: "Affordable Fee Structure",
+                    details: "The university offers MBBS at a much lower cost compared to private medical colleges in India. It is an ideal option for students who want quality education at an affordable price.",
+                },
+                {
+                    heading: "English Medium Education",
+                    details: "The MBBS course is taught in English, making it easier for international students to understand subjects. Additionally, basic Russian is taught for clinical interaction.",
+                },
+                {
+                    heading: "Strong Clinical Exposure",
+                    details: "Students gain hands-on clinical experience through training in affiliated hospitals, which helps them develop practical medical skills.",
+                },
+                {
+                    heading: "Experienced Faculty",
+                    details: "The university has experienced and skilled faculty members who focus on both theoretical knowledge and practical training.",
+                },
+                {
+                    heading: "International Student Environment",
+                    details: "With students from various countries, especially India, the university provides a diverse and friendly environment that enhances global exposure.",
+                },
+                {
+                    heading: "Comfortable Hostel Facilities",
+                    details: "The university offers well-maintained hostels with essential amenities, security, and Indian food options for a comfortable stay.",
+                },
+                {
+                    heading: "FMGE/NEXT Preparation Support",
+                    details: "Students receive guidance and support for exams like FMGE/NEXT, helping them pursue medical careers in India.",
+                },
+                {
+                    heading: "Safe & Student-Friendly Environment",
+                    details: "Orenburg is a safe city with proper security arrangements, ensuring a secure environment for international students.",
+                },
+            ],
+        },
+
+        SyllabusIntro: "The MBBS syllabus at Orenburg State Medical University is designed to provide a strong foundation in medical sciences along with extensive clinical training. The course is structured over a period of 6 years, where students gradually move from basic medical subjects to advanced clinical practice. In the initial years, the focus is on pre-clinical subjects, followed by para-clinical studies, and finally clinical subjects with hands-on hospital training. This systematic approach helps students develop both theoretical knowledge and practical medical skills required for a successful career.",
+
+        syllabus: [
+            {
+                year: "1st Year",
+                subjects: "Anatomy, Histology, Biochemistry, Physiology, Medical Biology",
+            },
+            {
+                year: "2nd Year",
+                subjects: "Anatomy, Physiology, Biochemistry, Microbiology, Pathology",
+            },
+            {
+                year: "3rd Year",
+                subjects: "Pathology, Pharmacology, Microbiology, Pathophysiology",
+            },
+            {
+                year: "4th Year",
+                subjects: "General Medicine, General Surgery, Obstetrics & Gynecology, Pediatrics",
+            },
+            {
+                year: "5th Year",
+                subjects: "Neurology, Psychiatry, Orthopedics, ENT, Ophthalmology",
+            },
+            {
+                year: "6th Year",
+                subjects: "Internship, Clinical Practice, Internal Medicine, Surgery, Emergency Care",
+            },
+        ],
+
+        fees: {
+            structure: [
+                { year: "1st Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+                { year: "2nd Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+                { year: "3rd Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+                { year: "4th Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+                { year: "5th Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+                { year: "6th Year", tuition: "6,000 USD", hostel: "₹50,000 – ₹60,000", total: "₹5.0 – ₹5.2 Lakhs + Hostel" },
+            ],
+        },
+
+        duration: {
+            "Pre-Clinical Phase": "2 Years – Basic subjects like Anatomy, Physiology, Biochemistry",
+            "Para-Clinical Phase": "1 Year – Subjects like Pathology, Microbiology, Pharmacology",
+            "Clinical Phase": "2 Years – Clinical subjects with hospital exposure (Medicine, Surgery, etc.)",
+            "Internship / Practical": "1 Year – Hands-on training in hospitals under supervision",
+            "Total Duration": "6 Years (Includes academic + clinical training)",
+        },
+
+        studentSupport: `Orenburg State Medical University provides a comprehensive and student-friendly support system to help international students adjust smoothly to academic and personal life in Russia. The university has dedicated support staff who assist students with academic guidance, administrative issues, and personal concerns throughout their MBBS journey. Orientation programs and workshops are organized to help new students understand the education system and adapt to a new environment easily.\n\nThe university also offers strong health and medical support, including an on-campus medical center and tie-ups with nearby hospitals to handle emergencies and provide regular health check-ups. In addition, students receive language support through Russian language classes, which helps them communicate effectively with patients during clinical training.\n\nFor accommodation and daily life, the university provides hostel support, Indian food facilities, and cultural integration programs. There are Indian student associations and communities that help new students feel at home by celebrating festivals and providing peer support. The university also ensures safety and security with CCTV surveillance, secure hostels, and a student-friendly environment.\n\nAdditionally, Orenburg State Medical University focuses on overall student development by offering career counseling, FMGE/NEXT guidance, and participation in student clubs, cultural activities, and sports events. These activities not only enhance academic growth but also improve communication skills, confidence, and global exposure.`,
+
+        recognition: `Orenburg State Medical University is a well-established government medical institution in Russia, operating under the Ministry of Health of the Russian Federation, which ensures that the university follows strict national standards in medical education and training.\n\nIn terms of affiliations, the university is associated with prestigious international and regional educational organizations including the International Association of Universities (IAU) and the European University Association (EUA), which reflect its active participation in global academic collaboration. Additionally, the university maintains strong ties with leading clinical hospitals, providing students with excellent practical exposure and hands-on training.\n\nOrenburg State Medical University is globally recognized by major medical councils and organizations, making its MBBS degree valid worldwide. It is approved by the National Medical Commission (NMC) India, World Health Organization (WHO), Educational Commission for Foreign Medical Graduates (ECFMG) USA, Foundation for Advancement of International Medical Education and Research (FAIMER), General Medical Council (GMC) UK, and Medical Council of Canada (MCC). These recognitions allow graduates to appear for international licensing exams such as FMGE/NEXT, USMLE, PLAB, and others.\n\nOrenburg State Medical University has achieved a strong global reputation due to its academic excellence and contribution to medical education. The university has 47+ departments and collaborations with more than 18 clinical hospitals, ensuring high-quality practical training. It has produced thousands of qualified doctors who are successfully working in countries like India, the USA, UK, and Canada. The university is also known for its research-oriented approach, international collaborations, and participation in global medical conferences. Its continuous focus on innovation, modern infrastructure, and quality education has helped it maintain a respected position among top medical universities in Russia.`,
+
+        hostelFacilities: `Orenburg State Medical University provides comfortable, safe, and affordable hostel facilities for international students. The university has 3 student hostels, which are equipped with all basic amenities and designed to provide a convenient living environment. However, due to limited capacity, hostel allotment may be subject to availability, and some students may choose private accommodation nearby.\n\nThe hostel rooms are fully furnished and usually shared by 2–3 students, including facilities such as beds, study tables, chairs, wardrobes, and heating systems. Students also get access to common kitchens, laundry areas, and bathrooms, allowing them to manage their daily routine comfortably.\n\nFor safety, all hostels are under 24/7 CCTV surveillance and security, ensuring a secure environment for international students. The hostels are generally located close to the university campus, making it easy for students to attend classes and clinical training without long travel.\n\nThe university also provides additional facilities such as Wi-Fi, reading halls, gymnasium, playgrounds, and recreational areas, which help students maintain a balanced academic and social life. Indian students can benefit from Indian mess facilities or nearby restaurants, along with dedicated hostel sections that make them feel more at home.\n\nMoreover, the cost of accommodation is affordable, and students who prefer more independence can easily rent private apartments in the city at reasonable prices. Overall, the hostel and accommodation facilities at Orenburg State Medical University are student-friendly, secure, and suitable for a comfortable stay during the MBBS program.`,
+
+        studentLife: `Student life at Orenburg State Medical University is vibrant, engaging, and well-balanced, offering students a mix of academics, cultural exposure, and extracurricular activities. The university has a multicultural environment with students from over 50 countries, including a large number of Indian students, which helps create a friendly and inclusive atmosphere.\n\nApart from studies, students actively participate in cultural events, festivals, and student organizations, which promote interaction and global exposure. The university celebrates various international and Indian festivals, making students feel at home even while studying abroad. Cultural clubs, academic societies, and international student unions are active on campus, helping students develop social and leadership skills.\n\nThe university also focuses on physical well-being by offering sports facilities and activities such as football, basketball, volleyball, athletics, and indoor games. There is a dedicated sports club with multiple sports leagues that encourage students to maintain a healthy lifestyle and participate in competitions.\n\nStudents enjoy access to modern campus facilities like libraries, laboratories, gyms, Wi-Fi, and recreational areas, which support both academic and personal growth. The university also uses advanced learning tools and practical training methods to enhance the overall learning experience.\n\nAccommodation and daily life are comfortable, with well-equipped hostels, Indian mess facilities, and affordable living costs. The university ensures a safe and secure environment with proper security measures and student support services. Additionally, students receive guidance through language classes, career counseling, and psychological support when needed.`,
+
+        whyChooseUsIntro:
+            "Choosing the right consultancy is very important for MBBS abroad, as many students face issues due to lack of proper guidance or fake promises. A reliable consultancy like iExplain Education ensures a safe, transparent, and smooth admission process.",
+
+        whyChooseUs: [
+            "Personalized Counseling & Career Guidance: iExplain Education focuses on providing tailored guidance to each student based on their academic background, budget, and career goals. Their expert counselors help students make informed decisions and choose the most suitable university for MBBS abroad.",
+            "University Selection Assistance: The consultancy helps students select top NMC-approved universities like Orenburg State Medical University. With access to multiple countries and universities, students get a wide range of options instead of being limited to one choice.",
+            "End-to-End Admission Support: iExplain Education provides complete support from application filling to admission confirmation, ensuring a smooth and hassle-free process. They guide students at every step to avoid mistakes or delays.",
+            "Documentation & Visa Assistance: Students receive full assistance with documentation, visa processing, and approvals, increasing the chances of successful admission and visa acceptance without complications.",
+            "Pre-Departure & Travel Support: The consultancy helps students with travel planning, accommodation guidance, and essential arrangements like SIM cards and forex, making the transition to a new country easier.",
+            "Post-Arrival Assistance: iExplain Education continues support even after students reach abroad by helping with airport pickup, hostel setup, and local assistance, ensuring a comfortable start to student life.",
+            "Transparent & Student-Focused Approach: The organization emphasizes honest guidance and transparency, prioritizing student success over financial gain, which builds trust among students and parents.",
+            "Wide Range of Study Destinations: Students can explore MBBS opportunities in countries like Russia, Georgia, China, Bangladesh, and more, giving flexibility to choose the best option according to their needs.",
+        ],
+
+        documents: [
+            { document: "10th Marksheet", details: "Required for date of birth and academic verification" },
+            { document: "12th Marksheet", details: "Must include Physics, Chemistry, Biology with required marks" },
+            { document: "NEET Scorecard", details: "Mandatory for Indian students as per NMC guidelines" },
+            { document: "Valid Passport", details: "Minimum 18 months validity required" },
+            { document: "Admission Letter", details: "Issued by the university after application approval" },
+            { document: "Birth Certificate", details: "Required in English or translated copy" },
+            { document: "Medical Fitness Certificate", details: "Proof of physical fitness" },
+            { document: "HIV Test Report", details: "Mandatory for visa and admission" },
+            { document: "Visa Invitation Letter", details: "Issued by the university for visa process" },
+            { document: "Student Visa", details: "Required to enter and study in Russia" },
+        ],
+
+        conclusion: `Choosing Orenburg State Medical University for MBBS is an excellent decision for students seeking quality medical education at an affordable cost. With its strong academic foundation, experienced faculty, modern infrastructure, and extensive clinical exposure, the university provides all the essential elements required to build a successful medical career.\n\nThe university's global recognition by major medical bodies ensures that students have the opportunity to pursue careers not only in India but also internationally. Along with academics, students benefit from a safe environment, comfortable accommodation, and a multicultural campus, which enhances their overall learning experience.`,
+
+        faqs: [
+            {
+                question: "What is the total duration of MBBS at Orenburg State Medical University?",
+                answer:
+                    "The MBBS program has a total duration of 6 years, which includes 5 years of academic study and 1 year of compulsory internship. During this period, students gain both theoretical knowledge and practical clinical experience in affiliated hospitals.",
+            },
+            {
+                question: "Is NEET required for admission?",
+                answer:
+                    "Yes, NEET qualification is mandatory for Indian students as per the guidelines of the National Medical Commission (NMC). Without qualifying NEET, students are not eligible for admission or for practicing in India after completing MBBS.",
+            },
+            {
+                question: "What is the medium of instruction?",
+                answer:
+                    "The MBBS course is taught in English medium for international students. However, the university also provides Russian language training, which is essential for interacting with patients during clinical practice.",
+            },
+            {
+                question: "What is the total fee for MBBS?",
+                answer:
+                    "The total cost of MBBS at Orenburg State Medical University is approximately ₹28–32 lakhs for the complete 6-year course, including tuition fees and basic living expenses, making it an affordable option compared to private medical colleges in India.",
+            },
+            {
+                question: "Is the university recognized globally?",
+                answer:
+                    "Yes, the university is recognized by major medical bodies such as NMC (India), WHO, ECFMG, FAIMER, and is listed in the World Directory of Medical Schools (WDOMS). This allows students to appear for global licensing exams like FMGE/NEXT, USMLE, and PLAB.",
+            },
+            {
+                question: "Are hostel facilities available for international students?",
+                answer:
+                    "Yes, the university provides well-equipped hostel facilities with basic amenities like furnished rooms, heating, internet access, kitchens, and laundry services. Hostels are safe and located near the campus.",
+            },
+            {
+                question: "Is Indian food available for students?",
+                answer:
+                    "Yes, Indian students can access Indian mess facilities or nearby Indian restaurants, where both vegetarian and non-vegetarian food options are available, making it easier to adjust to life abroad.",
+            },
+            {
+                question: "Is Orenburg safe for Indian students?",
+                answer:
+                    "Yes, Orenburg is considered a safe and student-friendly city. The university provides 24/7 security, CCTV surveillance, and support services to ensure the safety of international students.",
+            },
+        ],
+    },
+    "immanuel-kant-baltic-federal-university": {
+        coursetype: "MBBS",
+        title: "Immanuel Kant Baltic Federal University",
+
+        heroImage: "",
+        heroImageMobile: "",
+
+        intro: {
+            text: `Immanuel Kant Baltic Federal University (IKBFU) is one of the leading federal universities in Russia, known for its strong academic foundation, modern research facilities, and international collaboration. Established in 1947 and later restructured as a federal university in 2010, IKBFU is located in Kaliningrad, the westernmost region of Russia, which acts as a bridge between Europe and Russia.\n\nThe university has a rich academic heritage linked to the historic University of Königsberg (Albertina), where the famous philosopher Immanuel Kant studied and taught. Today, IKBFU continues to uphold these traditions while integrating modern educational practices and innovative research methods.\n\nIKBFU offers more than 300 educational programs across various disciplines, including medicine, engineering, natural sciences, humanities, and management. It is recognized as a major educational, scientific, and cultural center in the region, with thousands of students from over 50 countries studying at the university.\n\nFor students planning MBBS abroad, especially in Russia, IKBFU has become a popular choice due to its globally aligned curriculum, affordable fee structure, and emphasis on practical and clinical training. The university is equipped with modern laboratories, research centers, and affiliated hospitals, ensuring students gain both theoretical knowledge and hands-on medical experience.`,
+        },
+
+        quickOverview: {
+            "University Name": "Immanuel Kant Baltic Federal University (IKBFU)",
+            "Location": "Kaliningrad, Russia",
+            "Established": "1947 (Federal University status in 2010)",
+            "University Type": "Public (Federal University)",
+            "Medium of Instruction": "English & Russian",
+            "Popular Course": "MBBS (MD equivalent)",
+            "Recognition": "World Health Organization (WHO), National Medical Commission (NMC)",
+            "Eligibility Criteria": "50% in PCB (Physics, Chemistry, Biology) in 12th",
+            "NEET Requirement": "Mandatory for Indian students",
+            "Licensing Exams": "Eligible for FMGE/NExT, USMLE, PLAB",
+            "Clinical Training": "Provided in affiliated hospitals",
+        },
+
+        benefits: {
+            intro: "Choosing Immanuel Kant Baltic Federal University (IKBFU) for MBBS is a smart decision for students planning MBBS abroad, especially in Russia, due to its quality education, affordability, and global recognition. Here are the key reasons:",
+
+            items: [
+                {
+                    heading: "Globally Recognized Degree",
+                    details: "The university is recognized by international medical bodies such as the World Health Organization and the National Medical Commission (NMC), allowing graduates to appear for FMGE/NExT, USMLE, and PLAB.",
+                },
+                {
+                    heading: "Affordable Fee Structure",
+                    details: "MBBS at IKBFU is cost-effective compared to private medical colleges in India, making it an excellent option for students seeking budget-friendly MBBS abroad.",
+                },
+                {
+                    heading: "English-Medium Program",
+                    details: "The MBBS course is available in English, making it convenient for international students without any language barrier.",
+                },
+                {
+                    heading: "Modern Infrastructure & Advanced Facilities",
+                    details: "The university offers well-equipped laboratories, simulation centers, research facilities, and modern classrooms that enhance practical learning.",
+                },
+                {
+                    heading: "Strong Clinical Exposure",
+                    details: "Students gain hands-on experience through training in affiliated hospitals in Kaliningrad, which helps in developing real-world medical skills.",
+                },
+                {
+                    heading: "European Location Advantage",
+                    details: "Located in Kaliningrad, a region close to Europe, students get exposure to international standards of education and lifestyle.",
+                },
+                {
+                    heading: "Multicultural Environment",
+                    details: "The university hosts students from more than 50 countries, providing a diverse and global learning environment.",
+                },
+                {
+                    heading: "No Donation & Easy Admission Process",
+                    details: "Admission is straightforward with no donation or capitation fees, making it accessible for many students.",
+                },
+                {
+                    heading: "Comfortable Hostel & Indian Food",
+                    details: "The university provides safe hostel facilities and availability of Indian food, ensuring a comfortable stay for Indian students.",
+                },
+            ],
+        },
+
+        SyllabusIntro: "The MBBS program at Immanuel Kant Baltic Federal University follows a 6-year curriculum structured into Pre-Clinical, Para-Clinical, and Clinical phases, ensuring a strong foundation in medical sciences along with advanced clinical training. The syllabus is aligned with global standards and prepares students for international medical licensing exams.",
+
+        syllabus: [
+            {
+                year: "1st Year",
+                subjects: "Anatomy, Biology, Histology, Chemistry, Physics, Medical Terminology (Latin), Russian Language, Medical Informatics",
+            },
+            {
+                year: "2nd Year",
+                subjects: "Anatomy, Biochemistry, Physiology, Microbiology, Immunology, Medical Genetics, Hygiene",
+            },
+            {
+                year: "3rd Year",
+                subjects: "Pathology, Pathophysiology, Pharmacology, Clinical Diagnostics, General Surgery, Internal Medicine (Intro)",
+            },
+            {
+                year: "4th Year",
+                subjects: "Obstetrics & Gynecology, Pediatrics, Neurology, Dermatology, Psychiatry, Surgery, Emergency Medicine",
+            },
+            {
+                year: "5th Year",
+                subjects: "Internal Medicine, Surgery, Oncology, Infectious Diseases, Traumatology, Orthopedics",
+            },
+            {
+                year: "6th Year",
+                subjects: "Clinical Rotations, Anesthesiology, Emergency Care, Endocrinology, Rehabilitation, Practical Training",
+            },
+        ],
+
+        fees: {
+            structure: [
+                { year: "1st Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+                { year: "2nd Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+                { year: "3rd Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+                { year: "4th Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+                { year: "5th Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+                { year: "6th Year", tuition: "3,00,000 – 3,15,000 RUB", hostel: "15,000 – 50,000 RUB", total: "3,15,000 – 3,65,000 RUB (₹3.2 – ₹3.8 Lakhs)" },
+            ],
+        },
+
+        duration: {
+            "Pre-Clinical Phase": "2 Years – Basic subjects like Anatomy, Physiology, Biochemistry",
+            "Para-Clinical Phase": "1 Year – Subjects like Pathology, Microbiology, Pharmacology",
+            "Clinical Phase": "2 Years – Clinical subjects with hospital exposure (Medicine, Surgery, etc.)",
+            "Internship / Practical": "1 Year – Hands-on training in hospitals under supervision",
+            "Total Duration": "6 Years (Includes academic + clinical training)",
+        },
+
+        studentSupport: `Immanuel Kant Baltic Federal University offers a comprehensive and well-organized student support system designed to help both local and international students adapt easily and succeed academically. The university provides dedicated international student support through its specialized departments, including assistance with admission, visa processing, migration registration, and legal guidance, ensuring a smooth transition to life in Kaliningrad.\n\nOne of the key highlights is the Buddy Program, where senior students help newcomers with airport pickup, accommodation, documentation, and settling into the university environment, making students feel comfortable from the very beginning. Additionally, orientation programs are conducted to help students understand university life, campus facilities, and local culture.\n\nThe university also offers strong academic support through modern digital systems, student portals, libraries, and access to Wi-Fi-enabled campuses, allowing students to manage their studies efficiently. Students are provided with medical insurance and access to healthcare services, ensuring their safety and well-being during their stay.\n\nAccommodation support is another important aspect, with university hostels and assistance in finding housing, along with guidance on daily life such as transportation, local services, and essential facilities. The university also encourages participation in extracurricular activities, including sports, cultural events, volunteering, and student organizations, helping students build a balanced and engaging campus life.\n\nMoreover, IKBFU provides opportunities for international exposure through exchange programs like Erasmus+ and collaborations with global universities, enhancing students' academic and professional growth.`,
+
+        recognition: `Immanuel Kant Baltic Federal University is one of the prestigious federal universities in Russia, widely recognized for its academic excellence, global affiliations, and strong reputation in medical education. The university is officially recognized by leading international organizations such as the World Health Organization (WHO) and the National Medical Commission (NMC), ensuring that its MBBS degree is globally accepted and allows graduates to appear for licensing exams like FMGE/NExT, USMLE, and PLAB. It is also listed in the World Directory of Medical Schools (WDOMS) and recognized by international bodies like FAIMER and ECFMG, which further strengthens its global credibility and opens pathways for higher education and medical practice worldwide.\n\nIn terms of affiliation, the university operates under the Ministry of Science and Higher Education of the Russian Federation and is counted among the top 10 federal universities in Russia, reflecting its strong academic governance and national importance. It also maintains collaborations with numerous international universities and institutions across Europe, Asia, and other regions, with over 170 cooperation agreements supporting student exchange programs, joint research, and global academic exposure.\n\nImmanuel Kant Baltic Federal University has consistently ranked among recognized global universities, including positions in QS World University Rankings and other international ranking systems, highlighting its growing academic reputation. The university is known for its strong research output in fields like biomedicine, neurotechnology, and applied sciences, along with modern infrastructure such as advanced laboratories and research centers. It also carries the rich academic legacy of the historic University of Königsberg (Albertina), further enhancing its prestige and intellectual heritage.`,
+
+        hostelFacilities: `Immanuel Kant Baltic Federal University provides well-developed and affordable hostel and accommodation facilities for both local and international students. The university has multiple dormitories located across Kaliningrad, ensuring easy access to academic buildings and campus facilities.\n\nThe university offers different types of accommodation, including shared rooms (2–3 students), upgraded hostel rooms, and limited private rooms based on availability. These hostels are fully furnished with basic amenities such as beds, study tables, chairs, wardrobes, and internet connectivity, ensuring a comfortable living environment for students.\n\nStudents are usually accommodated on a sharing basis, and separate arrangements are available for boys and girls. The hostels are equipped with modern facilities like Wi-Fi, central heating, air-conditioning (in some buildings), laundry services, common kitchens, and hygienic dining/mess facilities, allowing students to cook their own food if they prefer.\n\nThe university maintains a safe and secure environment with 24/7 security systems, CCTV surveillance, and controlled entry, which is especially important for international students. Additionally, many dormitories include common areas such as TV rooms, study spaces, sports facilities, and recreational zones to support a balanced student life.\n\nIn terms of cost, hostel accommodation is highly affordable, typically ranging from 1,500 to 8,000 RUB per month, depending on the type of room and facilities, making it budget-friendly compared to private housing options.`,
+
+        studentLife: `Student life at Immanuel Kant Baltic Federal University (IKBFU) is dynamic, diverse, and enriching, offering students an ideal balance between academics and personal growth. Located in Kaliningrad, a unique region of Russia with strong European influence, the university provides a modern and culturally rich environment that enhances the overall student experience.\n\nThe campus life is vibrant, with access to modern infrastructure such as digital libraries, research centers, sports complexes, and student activity zones that support both academic and extracurricular development. The university hosts students from over 50 countries, creating a multicultural environment where students can interact, build global networks, and gain international exposure — an important advantage for those studying MBBS abroad.\n\nStudents at IKBFU actively participate in various cultural events, festivals, and international programs. Celebrations of global and Indian festivals like Diwali and Holi are common, helping Indian students feel at home while studying in a foreign country. In addition, the university encourages involvement in sports activities such as football, basketball, volleyball, and fitness programs, along with clubs for music, arts, and social activities.\n\nThe university also focuses on student well-being by providing access to healthcare services, counseling support, and student organizations that help in personal and professional development. Accommodation facilities, safe surroundings, and affordable living costs further enhance the student experience. Moreover, IKBFU offers opportunities for research, internships, and international exchange programs like Erasmus+, which help students gain practical exposure and global career opportunities.`,
+
+        whyChooseUsIntro:
+            "Choosing the right consultancy is very important for a smooth MBBS admission process, and iExplain Education stands out as a reliable and student-focused platform. Here are the key reasons why students prefer it:",
+
+        whyChooseUs: [
+            "Expert Guidance & Counseling: iExplain Education provides professional and personalized counseling to students planning MBBS abroad, helping them choose the right university like Immanuel Kant Baltic Federal University based on their profile, budget, and career goals.",
+            "Student-Centric Approach: Unlike many consultancies, iExplain focuses on the student's needs rather than profit, offering honest advice and accurate information to ensure the best decision for your future.",
+            "Complete Admission Assistance: From filling out application forms to document verification and securing admission, the consultancy handles the entire process smoothly, reducing stress for students and parents.",
+            "Visa & Documentation Support: iExplain provides full support for visa processing, documentation, and legal formalities, ensuring a hassle-free transition to studying MBBS in Russia.",
+            "Pre-Departure & Post-Arrival Support: The support doesn't end with admission — students receive guidance for travel, accommodation, and settling in Kaliningrad, making the transition smooth and comfortable.",
+            "University Selection & Career Planning: iExplain helps students select the best university and also provides long-term career guidance, including preparation for exams like FMGE/NExT, USMLE, and PLAB.",
+            "Additional Services: Students also get support for forex, travel arrangements, accommodation, and even coaching for exams like IELTS, GRE, and others if required.",
+            "Proven Track Record: With experience across multiple countries like Russia, Georgia, and others, iExplain has successfully guided many students toward achieving their dream of studying MBBS abroad.",
+        ],
+
+        documents: [
+            { document: "10th Marksheet", details: "Required for date of birth verification" },
+            { document: "12th Marksheet", details: "Must include Physics, Chemistry, and Biology with required marks" },
+            { document: "NEET Scorecard", details: "Mandatory for Indian students" },
+            { document: "Valid Passport", details: "Should have at least 2 years validity" },
+            { document: "Admission Letter", details: "Issued by the university after acceptance" },
+            { document: "Invitation Letter", details: "Required for Russian student visa processing" },
+            { document: "Medical Fitness Certificate", details: "Certified by a registered medical practitioner" },
+            { document: "Migration Certificate", details: "Issued by the previous board or university" },
+            { document: "HIV Test Report", details: "Mandatory for international travel" },
+        ],
+
+        conclusion: `Applying for MBBS admission at Immanuel Kant Baltic Federal University becomes a smooth and hassle-free process when students prepare all the required documents carefully and in advance. Each document plays a crucial role, whether it is for academic verification, university approval, or student visa processing. Missing or incorrect documents can lead to unnecessary delays, so it is always recommended to cross-check every detail before submission.\n\nStudents should ensure that all certificates are valid, properly attested, and translated into English (if required). Keeping multiple copies of documents, both in physical and digital format, can be very helpful during different stages of the admission and travel process. Additionally, following the university guidelines and staying updated with the latest admission requirements can further simplify the procedure.\n\nOverall, with proper planning, accurate documentation, and expert guidance, securing admission to Immanuel Kant Baltic Federal University is a straightforward journey. It opens the door to quality medical education, global exposure, and a promising career in the medical field.`,
+
+        faqs: [
+            {
+                question: "Is NEET required for admission?",
+                answer:
+                    "Yes, NEET qualification is mandatory for Indian students to apply for MBBS at Immanuel Kant Baltic Federal University.",
+            },
+            {
+                question: "Do I need to submit original documents?",
+                answer:
+                    "Initially, scanned copies are required for application. However, original documents must be presented at the time of admission and verification.",
+            },
+            {
+                question: "Is a passport compulsory before applying?",
+                answer:
+                    "Yes, a valid passport is essential to process your admission and student visa.",
+            },
+            {
+                question: "Are documents required to be translated into English?",
+                answer:
+                    "Yes, if any document is not in English, it must be officially translated and attested.",
+            },
+            {
+                question: "What is the minimum validity required for a passport?",
+                answer:
+                    "Your passport should have at least 2 years of validity at the time of application.",
+            },
+            {
+                question: "Is a medical certificate necessary?",
+                answer:
+                    "Yes, a medical fitness certificate and HIV test report are mandatory for admission and visa processing.",
+            },
+            {
+                question: "How long does the admission process take?",
+                answer:
+                    "The complete admission process, including issuance of the admission and invitation letter, usually takes around 2–4 weeks.",
+            },
+            {
+                question: "Can I apply without a migration certificate?",
+                answer:
+                    "You can apply initially, but the migration certificate must be submitted before final enrollment.",
+            },
+            {
+                question: "What happens if any document is missing?",
+                answer:
+                    "Your application may be delayed or rejected, so it is important to submit all required documents correctly.",
+            },
+            {
+                question: "Do I need to appear for any entrance exam in Russia?",
+                answer:
+                    "No, there is no separate entrance exam conducted by the university. Admission is based on your academic performance and NEET qualification.",
             },
         ],
     },

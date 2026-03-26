@@ -15,6 +15,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
   };
 
   const collegeName = data.title;
+  const coursetype = data.coursetype;
 
   const renderParagraphs = (text: string) =>
     text.split("\n\n").map((para, i) => (
@@ -79,7 +80,18 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             <h2 className="text-2xl font-bold mb-3">
               Overview of {collegeName}
             </h2>
-            <table className="w-full border">
+            <table className="w-full border border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border p-3 text-left font-semibold">
+                    Particulars
+                  </th>
+                  <th className="border p-3 text-left font-semibold">
+                    Details
+                  </th>
+                </tr>
+              </thead>
+
               <tbody>
                 {Object.entries(data.quickOverview).map(([k, v], i) => (
                   <tr key={i}>
@@ -96,9 +108,26 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.benefits && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Why Choose {collegeName}
+              Why Study {coursetype} at {collegeName}?
             </h2>
-            <IconList items={data.benefits} />
+
+            {/* Intro */}
+            {data.benefits.intro && (
+              <p className="mb-4 text-gray-700">
+                {data.benefits.intro}
+              </p>
+            )}
+
+            {/* Inline heading + details (same style as your example) */}
+            <ul className="space-y-2">
+              {data.benefits.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="text-justify">
+                    <strong>{item.heading}:</strong> {item.details}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 
@@ -107,7 +136,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.syllabus && (
           <section>
             <h2 className="text-2xl font-bold mb-2">
-              Syllabus at {collegeName}
+              {coursetype} Syllabus at {collegeName}
             </h2>
 
             {data.intro && (
@@ -140,7 +169,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.fees && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Fee Structure of {collegeName}
+              {coursetype} Fee Structure of {collegeName}
             </h2>
             <table className="w-full border border-collapse">
               <thead>
@@ -169,7 +198,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.duration && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Duration at {collegeName}
+              Duration of {coursetype} in {collegeName}
             </h2>
             <table className="w-full border">
               <tbody>
@@ -274,7 +303,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* Heading */}
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-5 text-center md:text-left leading-snug">
-              Why Choose IExplain Education for Admission at {collegeName}?
+              Why Choose IExplain Education for Admission in {coursetype} at {collegeName}?
             </h2>
 
             {/* Logo + Intro */}
@@ -292,9 +321,9 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* KEEP YOUR POINTER SECTION EXACTLY SAME */}
             <div className="mt-10">
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-left">
                 What Makes Us Stand Out
-              </h3>
+              </h2>
               <ul className="space-y-3">
                 {data.whyChooseUs.map((item: string, i: number) => {
                   const [title, desc] = item.split(":");
@@ -320,7 +349,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.documents && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Documents Required for {collegeName}
+              Documents Required for Admission in {collegeName}
             </h2>
             <table className="w-full border border-collapse">
               <thead>
@@ -353,7 +382,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.faqs && (
           <section>
             <h2 className="text-2xl font-bold mb-4">
-              FAQs - {collegeName}
+              FAQs - {coursetype} at {collegeName}
             </h2>
             {data.faqs.map((faq, i) => (
               <div key={i} className="border mb-2 rounded">
