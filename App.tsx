@@ -434,47 +434,10 @@ const normalizeCollegeDetailData = (raw: any, slug: string) => {
   };
 };
 
-// --- DYNAMIC COLLEGE PAGE WRAPPER ---
-const CollegeDetailWrapper = () => {
+const LegacyCollegeRedirect = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        // Try fetching from Firestore by slug field
-        const q = query(collection(db, 'colleges'), where('slug', '==', slug));
-        const querySnapshot = await getDocs(q);
-
-        if (!querySnapshot.empty) {
-          setData(normalizeCollegeDetailData(querySnapshot.docs[0].data(), slug || ''));
-        } else {
-          // Fallback to local constants
-          if (slug && (STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug])) {
-            setData(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug], slug));
-          } else {
-            setData(null);
-          }
-        }
-      } catch (e) {
-        console.error("College fetch failed", e);
-        // Fallback on error
-        if (slug) setData(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug], slug));
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    if (slug) fetchData();
-    else setLoading(false);
-  }, [slug]);
-
-  if (loading) return <LoadingOverlay />;
-  if (!data) return <Navigate to="/" replace />;
-
-  return <CollegeDetailPage data={data} />;
+  if (!slug) return <Navigate to="/" replace />;
+  return <Navigate to={`/${slug}`} replace />;
 };
 
 const StudyIndiaWrapper = () => {
@@ -488,6 +451,7 @@ const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
   const [remotePage, setRemotePage] = useState<any>(null);
+  const [collegePage, setCollegePage] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -499,16 +463,33 @@ const CategoryTitleSlugWrapper = () => {
 
       setIsLoading(true);
       try {
-        const q = query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug));
-        const snapshot = await getDocs(q);
-        if (!snapshot.empty) {
-          setRemotePage(snapshot.docs[0].data());
+        const [dynamicSnapshot, collegeSnapshot] = await Promise.all([
+          getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug))),
+          getDocs(query(collection(db, 'colleges'), where('slug', '==', normalizedSlug))),
+        ]);
+
+        if (!dynamicSnapshot.empty) {
+          setRemotePage(dynamicSnapshot.docs[0].data());
         } else {
           setRemotePage(null);
+        }
+
+        if (!collegeSnapshot.empty) {
+          setCollegePage(normalizeCollegeDetailData(collegeSnapshot.docs[0].data(), normalizedSlug));
+        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+          setCollegePage(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug], normalizedSlug));
+        } else {
+          setCollegePage(null);
         }
       } catch (error) {
         console.error('Failed to load dynamic page:', error);
         setRemotePage(null);
+
+        if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+          setCollegePage(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug], normalizedSlug));
+        } else {
+          setCollegePage(null);
+        }
       } finally {
         setIsLoading(false);
       }
@@ -519,6 +500,10 @@ const CategoryTitleSlugWrapper = () => {
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
   if (isLoading) return <LoadingOverlay />;
+
+  if (collegePage) {
+    return <CollegeDetailPage data={collegePage} />;
+  }
 
   if (remotePage?.category === 'Study Abroad' && remotePage?.payload) {
     return <StudyAbroadDetailPage data={remotePage.payload} />;
@@ -662,7 +647,7 @@ const App: React.FC = () => {
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
           <Route path="/exams/:subPath" element={<ExamPage />} />
           <Route path="/office/:slug" element={<OfficeDetailPage />} />
-          <Route path="/college/:slug" element={<CollegeDetailWrapper />} />
+          <Route path="/college/:slug" element={<LegacyCollegeRedirect />} />
           <Route path="/privacy-policy" element={<PolicyPage title="Privacy Policy" content={PRIVACY_POLICY_CONTENT} />} />
           <Route path="/terms-conditions" element={<PolicyPage title="Terms & Conditions" content={TERMS_CONTENT} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
