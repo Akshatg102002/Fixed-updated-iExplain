@@ -1,5 +1,7 @@
-export const COLLEGE_DETAILS = {
-    kazan_federal_university: {
+import type { CollegeDetailData } from "./types";
+
+export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
+    "kazan-federal-university": {
         title: "Kazan Federal University",
 
         heroImage: "https://images.unsplash.com/photo-1541339907198-e08759dfc3ef?w=1600&q=80",
