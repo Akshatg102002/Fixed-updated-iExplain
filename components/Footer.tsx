@@ -99,7 +99,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
                                     <ul className="space-y-2.5">
                                         {section.names.map((name, i) => (
                                             <li key={i}>
-                                                <Link to={`/college/${createSlug(name)}`} className="text-[11px] font-bold text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white transition-colors leading-tight block">
+                                                <Link to={`/${createSlug(name)}`} className="text-[11px] font-bold text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white transition-colors leading-tight block">
                                                     {name}
                                                 </Link>
                                             </li>
@@ -120,7 +120,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
                                     <ul className="space-y-2.5">
                                         {section.names.map((name, i) => (
                                             <li key={i}>
-                                                <Link to={`/college/${createSlug(name)}`} className="text-[11px] font-bold text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white transition-colors leading-tight block">
+                                                <Link to={`/${createSlug(name)}`} className="text-[11px] font-bold text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white transition-colors leading-tight block">
                                                     {name}
                                                 </Link>
                                             </li>

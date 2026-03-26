@@ -332,7 +332,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                         </h4>
                         <ul className="space-y-2">
                           {countryData.names.map((college: string, cIdx: number) => {
-                            let link = `/college/${createSlug(college)}`;
+                            let link = `/${createSlug(college)}`;
                             if (activeCollegeTab === 'INDIA') {
                               link = `/mbbs-india/${createSlug(college)}`;
                             } else if (countryData.country === 'Europe Top Destinations') {
@@ -448,7 +448,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
                                        {country.names.map((college, cIdx) => (
-                                         <Link key={cIdx} to={`/college/${createSlug(college)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
+                                         <Link key={cIdx} to={`/${createSlug(college)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
                                            {college}
                                          </Link>
                                        ))}
@@ -473,7 +473,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
                                        {country.names.map((college, cIdx) => (
-                                         <Link key={cIdx} to={`/college/${createSlug(college)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
+                                         <Link key={cIdx} to={`/${createSlug(college)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
                                            {college}
                                          </Link>
                                        ))}
