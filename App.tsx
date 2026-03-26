@@ -31,7 +31,7 @@ import AwardsAchievements from './components/AwardsAchievements.tsx';
 import * as Flags from 'country-flag-icons/react/3x2';
 import {
   STUDENT_SERVICES_DATA,
-  COLLEGE_DETAILS,
+  COLLEGE_DETAILS as LEGACY_COLLEGE_DETAILS,
   OFFICE_ADDRESSES,
   BLOG_POSTS,
   INDIA_COURSES_DETAILED,
@@ -42,6 +42,7 @@ import {
   PRIVACY_POLICY_CONTENT,
   TERMS_CONTENT
 } from './data.ts';
+import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from './collegeData.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
@@ -385,6 +386,54 @@ const AboutPage = () => <div className="py-20 text-center"><h1 className="text-4
 const BlogListPage = () => <BlogSection />;
 const ContactPage = () => <div className="py-20 text-center"><h1 className="text-4xl font-bold">Contact</h1><ContactMapSection /></div>;
 
+const normalizeCollegeDetailData = (raw: any, slug: string) => {
+  if (!raw) return null;
+
+  if (raw.title && raw.heroImage && raw.intro?.text) {
+    return raw;
+  }
+
+  const title = raw.title || raw.name || slug.replace(/-/g, ' ');
+  const heroImage = raw.heroImage || raw.image || HERO_IMG_URL;
+
+  return {
+    ...raw,
+    slug: raw.slug || slug,
+    title,
+    heroImage,
+    heroImageMobile: raw.heroImageMobile || heroImage,
+    intro: typeof raw.intro === 'string' ? { text: raw.intro } : (raw.intro || { text: '' }),
+    quickFacts: raw.quickFacts || {
+      Location: raw.location || raw.country || 'N/A',
+      Type: raw.type || 'N/A',
+      Established: raw.established || 'N/A',
+    },
+    quickOverview: raw.quickOverview || {
+      Highlights: Array.isArray(raw.highlights) ? raw.highlights.join(', ') : 'N/A',
+      Category: raw.category || 'N/A',
+    },
+    benefits: raw.benefits || raw.highlights || [],
+    eligibility: Array.isArray(raw.eligibility)
+      ? raw.eligibility.reduce((acc: Record<string, string>, item: string, index: number) => {
+          acc[`Point ${index + 1}`] = item;
+          return acc;
+        }, {})
+      : (raw.eligibility || {}),
+    duration: raw.duration || { mbbs: 'Please contact counselor', internship: 'Please contact counselor' },
+    syllabus: raw.syllabus || [],
+    documents: raw.documents || [],
+    fees: raw.fees || { structure: [] },
+    courses: raw.courses || [],
+    studentLife: raw.studentLife || [],
+    placements: raw.placements || [],
+    hostelFacilities: raw.hostelFacilities || { intro: '', features: [] },
+    careerOpportunities: raw.careerOpportunities || {},
+    recognition: raw.recognition || [],
+    gallery: raw.gallery || [],
+    faqs: raw.faqs || [],
+  };
+};
+
 // --- DYNAMIC COLLEGE PAGE WRAPPER ---
 const CollegeDetailWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -400,11 +449,11 @@ const CollegeDetailWrapper = () => {
         const querySnapshot = await getDocs(q);
 
         if (!querySnapshot.empty) {
-          setData(querySnapshot.docs[0].data());
+          setData(normalizeCollegeDetailData(querySnapshot.docs[0].data(), slug || ''));
         } else {
           // Fallback to local constants
-          if (slug && COLLEGE_DETAILS[slug]) {
-            setData(COLLEGE_DETAILS[slug]);
+          if (slug && (STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug])) {
+            setData(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug], slug));
           } else {
             setData(null);
           }
@@ -412,7 +461,7 @@ const CollegeDetailWrapper = () => {
       } catch (e) {
         console.error("College fetch failed", e);
         // Fallback on error
-        if (slug) setData(COLLEGE_DETAILS[slug] || null);
+        if (slug) setData(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[slug] || LEGACY_COLLEGE_DETAILS[slug], slug));
       } finally {
         setLoading(false);
       }
