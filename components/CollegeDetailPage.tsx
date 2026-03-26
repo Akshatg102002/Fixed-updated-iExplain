@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CollegeDetailData } from "../types";
 import { FaCheckCircle } from "react-icons/fa";
+import { LOGO_URL } from '../data.ts';
 
 interface Props {
   data: CollegeDetailData;
@@ -12,6 +13,26 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
   const toggleFAQ = (i: number) => {
     setOpenFAQ(openFAQ === i ? -1 : i);
   };
+
+  const collegeName = data.title;
+
+  const renderParagraphs = (text: string) =>
+    text.split("\n\n").map((para, i) => (
+      <p key={i} className="mb-4 leading-relaxed text-justify">
+        {para}
+      </p>
+    ));
+
+  const IconList = ({ items, color = "text-green-500" }: any) => (
+    <ul className="space-y-2">
+      {items.map((item: string, i: number) => (
+        <li key={i} className="flex items-start gap-3">
+          <FaCheckCircle className={`${color} w-5 h-5 mt-[2px] flex-shrink-0`} />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
 
   const CTAButtons = () => (
     <div className="flex flex-col items-center gap-3 md:flex-row md:justify-center my-6">
@@ -36,48 +57,29 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
           <source media="(max-width: 768px)" srcSet={data.heroImageMobile} />
           <img
             src={data.heroImage}
-            alt={data.title}
+            alt={collegeName}
             className="w-full h-[400px] object-cover"
           />
         </picture>
       </section>
 
-      <div className="max-w-6xl mx-auto px-6 py-8 space-y-10 text-sm md:text-base text-gray-700 leading-relaxed">
+      <div className="max-w-6xl mx-auto px-6 py-8 space-y-10 text-sm md:text-base text-gray-700">
 
         {/* TITLE */}
-        <section>
-          <h1 className="text-2xl md:text-3xl font-bold text-center">
-            {data.title}
-          </h1>
-        </section>
+        <h1 className="text-2xl md:text-3xl font-bold text-center">
+          {collegeName}
+        </h1>
 
         {/* INTRO */}
-        <section>
-          <p className="text-justify">{data.intro?.text}</p>
-        </section>
-
-        {/* QUICK FACTS */}
-        {data.quickFacts && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">Quick Facts</h2>
-            <table className="w-full border border-gray-300">
-              <tbody>
-                {Object.entries(data.quickFacts).map(([k, v], i) => (
-                  <tr key={i}>
-                    <td className="border p-3 font-semibold">{k}</td>
-                    <td className="border p-3">{v}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </section>
-        )}
+        {data.intro && <section>{renderParagraphs(data.intro.text)}</section>}
 
         {/* OVERVIEW */}
         {data.quickOverview && (
           <section>
-            <h2 className="text-2xl font-bold mb-3">Overview</h2>
-            <table className="w-full border border-gray-300">
+            <h2 className="text-2xl font-bold mb-3">
+              Overview of {collegeName}
+            </h2>
+            <table className="w-full border">
               <tbody>
                 {Object.entries(data.quickOverview).map(([k, v], i) => (
                   <tr key={i}>
@@ -94,66 +96,33 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.benefits && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Why Choose {data.title}
+              Why Choose {collegeName}
             </h2>
-            <ul className="space-y-2">
-              {data.benefits.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-green-500 mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <IconList items={data.benefits} />
           </section>
         )}
 
         <CTAButtons />
 
-        {/* ELIGIBILITY */}
-        {data.eligibility && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Eligibility Criteria
-            </h2>
-            <ul className="space-y-2">
-              {Object.entries(data.eligibility).map(([k, v], i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-green-500 mt-1" />
-                  <span>
-                    <strong>{k}:</strong> {v}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* DURATION */}
-        {data.duration && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Course Duration
-            </h2>
-            <table className="w-full border">
-              <tbody>
-                <tr>
-                  <td className="border p-3">MBBS</td>
-                  <td className="border p-3">{data.duration.mbbs}</td>
-                </tr>
-                <tr>
-                  <td className="border p-3">Internship</td>
-                  <td className="border p-3">{data.duration.internship}</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        )}
-
-        {/* SYLLABUS */}
         {data.syllabus && (
           <section>
-            <h2 className="text-2xl font-bold mb-3">MBBS Syllabus</h2>
-            <table className="w-full border">
+            <h2 className="text-2xl font-bold mb-2">
+              Syllabus at {collegeName}
+            </h2>
+
+            {data.intro && (
+              <p className="mb-4 text-gray-700">
+                {data.SyllabusIntro}
+              </p>
+            )}
+
+            <table className="w-full border border-collapse">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border p-3 text-left">Year</th>
+                  <th className="border p-3 text-left">Subjects Covered</th>
+                </tr>
+              </thead>
               <tbody>
                 {data.syllabus.map((item, i) => (
                   <tr key={i}>
@@ -166,71 +135,78 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
           </section>
         )}
 
-        {/* DOCUMENTS */}
-        {data.documents && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Documents Required
-            </h2>
-            <table className="w-full border">
-              <tbody>
-                {data.documents.map((doc, i) => (
-                  <tr key={i}>
-                    <td className="border p-3">{i + 1}</td>
-                    <td className="border p-3">{doc}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </section>
-        )}
 
         {/* FEES */}
         {data.fees && (
           <section>
-            <h2 className="text-2xl font-bold mb-3">Fee Structure</h2>
-            <table className="w-full border">
+            <h2 className="text-2xl font-bold mb-3">
+              Fee Structure of {collegeName}
+            </h2>
+            <table className="w-full border border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border p-3 text-left font-semibold">Year</th>
+                  <th className="border p-3 text-left font-semibold">Tuition Fee (RUB)</th>
+                  <th className="border p-3 text-left font-semibold">Hostel Fee (RUB)</th>
+                  <th className="border p-3 text-left font-semibold">Total (RUB)</th>
+                </tr>
+              </thead>
               <tbody>
                 {data.fees.structure.map((f, i) => (
                   <tr key={i}>
-                    <td className="border p-3 font-semibold">{f.label}</td>
-                    <td className="border p-3">{f.value}</td>
+                    <td className="border p-3 font-semibold">{f.year}</td>
+                    <td className="border p-3">{f.tuition}</td>
+                    <td className="border p-3">{f.hostel}</td>
+                    <td className="border p-3">{f.total}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-            {data.fees.note && (
-              <p className="mt-2 text-sm text-gray-500">
-                {data.fees.note}
-              </p>
-            )}
           </section>
         )}
 
-        {/* COURSES */}
-        {data.courses && (
+        {/* DURATION */}
+        {data.duration && (
           <section>
-            <h2 className="text-2xl font-bold mb-3">Courses Offered</h2>
-            <ul className="list-disc ml-6">
-              {data.courses.map((course, i) => (
-                <li key={i}>{course}</li>
-              ))}
-            </ul>
+            <h2 className="text-2xl font-bold mb-3">
+              Duration at {collegeName}
+            </h2>
+            <table className="w-full border">
+              <tbody>
+                {Object.entries(data.duration).map(([k, v], i) => (
+                  <tr key={i}>
+                    <td className="border p-3 font-semibold">{k}</td>
+                    <td className="border p-3">{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </section>
         )}
 
-        {/* STUDENT LIFE */}
-        {data.studentLife && (
+        {/* STUDENT SUPPORT */}
+        {data.studentSupport && (
           <section>
-            <h2 className="text-2xl font-bold mb-3">Student Life</h2>
-            <ul className="space-y-2">
-              {data.studentLife.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-blue-500 mt-1" />
-                  {item}
-                </li>
+            <h2 className="text-2xl font-bold mb-3">
+              Student Support at {collegeName}
+            </h2>
+            {renderParagraphs(data.studentSupport)}
+          </section>
+        )}
+
+        {/* AFFILIATION / RECOGNITION */}
+        {data.recognition && (
+          <section>
+            <h2 className="text-2xl font-bold mb-3">
+              Affiliation, Recognition & Achievements of {collegeName}
+            </h2>
+            <div className="space-y-4">
+              {data.recognition.split("\n\n").map((para, i) => (
+                <p key={i} className="text-gray-700 leading-relaxed">
+                  {para}
+                </p>
               ))}
-            </ul>
+            </div>
           </section>
         )}
 
@@ -238,104 +214,156 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
         {data.hostelFacilities && (
           <section>
             <h2 className="text-2xl font-bold mb-3">
-              Hostel Facilities
+              Hostel & Accommodation at {collegeName}
             </h2>
-            <p className="mb-3">{data.hostelFacilities.intro}</p>
-            <ul className="space-y-2">
-              {data.hostelFacilities.features.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-green-500 mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* CAREER OPPORTUNITIES */}
-        {data.careerOpportunities && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Career Opportunities
-            </h2>
-            <ul className="space-y-2">
-              {Object.entries(data.careerOpportunities).map(([k, v], i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-indigo-500 mt-1" />
-                  <span>
-                    <strong>{k}:</strong> {v}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* PLACEMENTS */}
-        {data.placements && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Career & Placements
-            </h2>
-            <ul className="space-y-2">
-              {data.placements.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-purple-500 mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* RECOGNITION */}
-        {data.recognition && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">
-              Recognition & Accreditation
-            </h2>
-            <ul className="space-y-2">
-              {data.recognition.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <FaCheckCircle className="text-green-600 mt-1" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* GALLERY */}
-        {data.gallery && (
-          <section>
-            <h2 className="text-2xl font-bold mb-3">Gallery</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {data.gallery.map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={`gallery-${i}`}
-                  className="w-full h-40 object-cover rounded-lg"
-                />
+            <div className="space-y-4">
+              {data.hostelFacilities.split("\n\n").map((para, i) => (
+                <p key={i} className="text-gray-700 leading-relaxed">
+                  {para}
+                </p>
               ))}
             </div>
+          </section>
+        )}
+
+        {data.studentLife && (
+          <section>
+            <h2 className="text-2xl font-bold mb-3">
+              Student Life at {collegeName}
+            </h2>
+            <div className="space-y-4">
+              {data.studentLife.split("\n\n").map((para, i) => (
+                <p key={i} className="text-gray-700 leading-relaxed">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 my-6">
+          <a
+            href="/tbilisi-state-medical-university"
+            className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
+          >
+            Tbilisi State Medical University
+          </a>
+          <a
+            href="/bashkir-state-medical-university"
+            className="bg-green-600 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
+          >
+            Bashkir State Medical University
+          </a>
+          <a
+            href="/bangladesh-medical-college"
+            className="bg-yellow-400 text-black px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
+          >
+            Bangladesh Medical College
+          </a>
+          <a
+            href="/al-farabi-kazakh-national-university"
+            className="bg-red-500 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
+          >
+            Al-Farabi Kazakh National University
+          </a>
+        </div>
+
+        {/* WHY CHOOSE US */}
+        {data.whyChooseUs && (
+          <section className="max-w-6xl mx-auto text-sm md:text-base text-gray-700 leading-relaxed">
+
+            {/* Heading */}
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-5 text-center md:text-left leading-snug">
+              Why Choose IExplain Education for Admission at {collegeName}?
+            </h2>
+
+            {/* Logo + Intro */}
+            <div className="flex flex-col items-center md:flex-row md:items-start gap-4 md:gap-6 mb-6">
+              <img
+                src={LOGO_URL}
+                alt="IExplain Education Logo"
+                className="w-24 sm:w-28 h-auto object-contain rounded-md border border-gray-200 p-2 bg-white shadow-sm"
+              />
+
+              <p className="text-center md:text-left leading-7 sm:leading-8">
+                {data.whyChooseUsIntro}
+              </p>
+            </div>
+
+            {/* KEEP YOUR POINTER SECTION EXACTLY SAME */}
+            <div className="mt-10">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-center md:text-left">
+                What Makes Us Stand Out
+              </h3>
+              <ul className="space-y-3">
+                {data.whyChooseUs.map((item: string, i: number) => {
+                  const [title, desc] = item.split(":");
+                  return (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-justify">
+                        <strong>{title}:</strong> {desc}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            <p className="mt-6 font-medium text-center md:text-left text-blue-800">
+              {data.whyChooseUsTagline}
+            </p>
+
+          </section>
+        )}
+
+        {/* DOCUMENTS */}
+        {data.documents && (
+          <section>
+            <h2 className="text-2xl font-bold mb-3">
+              Documents Required for {collegeName}
+            </h2>
+            <table className="w-full border border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border p-3 text-left font-semibold">Document</th>
+                  <th className="border p-3 text-left font-semibold">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.documents.map((doc, i) => (
+                  <tr key={i}>
+                    <td className="border p-3 font-semibold">{doc.document}</td>
+                    <td className="border p-3">{doc.details}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        )}
+
+        {/* CONCLUSION */}
+        {data.conclusion && (
+          <section>
+            <h2 className="text-2xl font-bold mb-3">Conclusion</h2>
+            {renderParagraphs(data.conclusion)}
           </section>
         )}
 
         {/* FAQ */}
         {data.faqs && (
           <section>
-            <h2 className="text-2xl font-bold mb-4">FAQs</h2>
+            <h2 className="text-2xl font-bold mb-4">
+              FAQs - {collegeName}
+            </h2>
             {data.faqs.map((faq, i) => (
               <div key={i} className="border mb-2 rounded">
                 <button
                   onClick={() => toggleFAQ(i)}
                   className="w-full p-3 text-left bg-gray-100 flex justify-between"
                 >
-                  {faq.question}
+                  <span>{i + 1}. {faq.question}</span>
                   <span>{openFAQ === i ? "-" : "+"}</span>
                 </button>
-
                 {openFAQ === i && (
                   <div className="p-3">{faq.answer}</div>
                 )}
@@ -343,7 +371,6 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             ))}
           </section>
         )}
-
       </div>
     </div>
   );

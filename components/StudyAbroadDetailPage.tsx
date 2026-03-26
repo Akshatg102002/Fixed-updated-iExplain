@@ -160,25 +160,25 @@ const StudyAbroadDetailPage: React.FC<StudyAbroadDetailPageProps> = ({ data }) =
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 my-6">
           <a
-            href="#/study-in-usa"
+            href="/study-in-usa"
             className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in USA
           </a>
           <a
-            href="#/study-in-uk"
+            href="/study-in-uk"
             className="bg-green-600 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in UK
           </a>
           <a
-            href="#/study-in-canada"
+            href="/study-in-canada"
             className="bg-yellow-400 text-black px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in Canada
           </a>
           <a
-            href="#/study-in-australia"
+            href="/study-in-australia"
             className="bg-red-500 text-white px-5 py-2 rounded-md text-sm font-medium w-4/5 md:w-auto text-center hover:opacity-90 transition"
           >
             Study Abroad in Australia
@@ -387,22 +387,16 @@ const StudyAbroadDetailPage: React.FC<StudyAbroadDetailPageProps> = ({ data }) =
             Why Choose IExplain Education to Study in {country}?
           </h2>
 
-          <div className="flex flex-col md:flex-row items-start gap-4">
-
-            {/* Logo */}
+          <div className="flex flex-col items-center md:flex-row md:items-start gap-4 md:gap-6 mb-6">
             <img
               src={LOGO_URL}
               alt="IExplain Education Logo"
-              className="w-28 h-auto object-contain rounded-md border border-gray-300 p-1 bg-white shadow-sm flex-shrink-0"
+              className="w-24 sm:w-28 h-auto object-contain rounded-md border border-gray-200 p-2 bg-white shadow-sm"
             />
 
-            {/* Text Content */}
-            <div className="space-y-3">
-              <p className="text-justify">
-                {data.whyChooseUsIntro}
-              </p>
-            </div>
-
+            <p className="text-center md:text-left leading-7 sm:leading-8">
+              {data.whyChooseUsIntro}
+            </p>
           </div>
 
           {/* Points */}
