@@ -171,13 +171,20 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             <h2 className="text-2xl font-bold mb-3">
               {coursetype} Fee Structure of {collegeName}
             </h2>
+
+            {data.intro && (
+              <p className="mb-4 text-gray-700">
+                {data.feesIntro}
+              </p>
+            )}
+
             <table className="w-full border border-collapse">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="border p-3 text-left font-semibold">Year</th>
-                  <th className="border p-3 text-left font-semibold">Tuition Fee (RUB)</th>
-                  <th className="border p-3 text-left font-semibold">Hostel Fee (RUB)</th>
-                  <th className="border p-3 text-left font-semibold">Total (RUB)</th>
+                  <th className="border p-3 text-left font-semibold">Tuition Fee</th>
+                  <th className="border p-3 text-left font-semibold">Hostel Fee</th>
+                  <th className="border p-3 text-left font-semibold">Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -200,12 +207,31 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             <h2 className="text-2xl font-bold mb-3">
               Duration of {coursetype} in {collegeName}
             </h2>
+
+            {data.intro && (
+              <p className="mb-4 text-gray-700">
+                {data.durationIntro}
+              </p>
+            )}
+
             <table className="w-full border">
+              <thead>
+                <tr>
+                  {data.duration.headers.map((header, i) => (
+                    <th key={i} className="border p-3 font-semibold text-left">
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
               <tbody>
-                {Object.entries(data.duration).map(([k, v], i) => (
+                {data.duration.table.map((row, i) => (
                   <tr key={i}>
-                    <td className="border p-3 font-semibold">{k}</td>
-                    <td className="border p-3">{v}</td>
+                    {data.duration.headers.map((header, j) => (
+                      <td key={j} className="border p-3">
+                        {row[header] || ""}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
