@@ -139,7 +139,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
               {coursetype} Syllabus at {collegeName}
             </h2>
 
-            {data.intro && (
+            {data.SyllabusIntro && (
               <p className="mb-4 text-gray-700">
                 {data.SyllabusIntro}
               </p>
@@ -148,15 +148,26 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             <table className="w-full border border-collapse">
               <thead>
                 <tr className="bg-gray-200">
-                  <th className="border p-3 text-left">Year</th>
-                  <th className="border p-3 text-left">Subjects Covered</th>
+                  {data.syllabus.headers.map((header, i) => (
+                    <th key={i} className="border p-3 text-left font-semibold">
+                      {header}
+                    </th>
+                  ))}
                 </tr>
               </thead>
+
               <tbody>
-                {data.syllabus.map((item, i) => (
+                {data.syllabus.table.map((row, i) => (
                   <tr key={i}>
-                    <td className="border p-3 font-semibold">{item.year}</td>
-                    <td className="border p-3">{item.subjects}</td>
+                    {data.syllabus.headers.map((header, j) => (
+                      <td
+                        key={j}
+                        className={`border p-3 ${j === 0 ? "font-semibold" : ""
+                          }`}
+                      >
+                        {row[header]}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
@@ -181,19 +192,21 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
             <table className="w-full border border-collapse">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="border p-3 text-left font-semibold">Year</th>
-                  <th className="border p-3 text-left font-semibold">Tuition Fee</th>
-                  <th className="border p-3 text-left font-semibold">Hostel Fee</th>
-                  <th className="border p-3 text-left font-semibold">Total</th>
+                  {Object.keys(data.fees.structure[0]).map((key) => (
+                    <th key={key} className="border p-3 text-left font-semibold capitalize">
+                      {key}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {data.fees.structure.map((f, i) => (
+                {data.fees.structure.map((row, i) => (
                   <tr key={i}>
-                    <td className="border p-3 font-semibold">{f.year}</td>
-                    <td className="border p-3">{f.tuition}</td>
-                    <td className="border p-3">{f.hostel}</td>
-                    <td className="border p-3">{f.total}</td>
+                    {Object.values(row).map((value, idx) => (
+                      <td key={idx} className="border p-3">
+                        {value}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
