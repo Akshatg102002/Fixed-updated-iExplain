@@ -389,12 +389,20 @@ const ContactPage = () => <div className="py-20 text-center"><h1 className="text
 const normalizeCollegeDetailData = (raw: any, slug: string) => {
   if (!raw) return null;
 
-  if (raw.title && raw.heroImage && raw.intro?.text) {
-    return raw;
-  }
-
   const title = raw.title || raw.name || slug.replace(/-/g, ' ');
   const heroImage = raw.heroImage || raw.image || HERO_IMG_URL;
+  const normalizedBenefits = (() => {
+    if (!raw.benefits) return [];
+    if (Array.isArray(raw.benefits)) return raw.benefits;
+    if (Array.isArray(raw.benefits.items)) return raw.benefits.items;
+    if (Array.isArray(raw.benefits.table)) {
+      return raw.benefits.table.map((item: Record<string, string>) => ({
+        heading: item.heading || item.Heading || '',
+        details: item.details || item.Details || '',
+      }));
+    }
+    return [];
+  })();
 
   return {
     ...raw,
@@ -412,7 +420,10 @@ const normalizeCollegeDetailData = (raw: any, slug: string) => {
       Highlights: Array.isArray(raw.highlights) ? raw.highlights.join(', ') : 'N/A',
       Category: raw.category || 'N/A',
     },
-    benefits: raw.benefits || raw.highlights || [],
+    benefits: {
+      intro: raw.benefits?.intro || '',
+      items: normalizedBenefits,
+    },
     eligibility: Array.isArray(raw.eligibility)
       ? raw.eligibility.reduce((acc: Record<string, string>, item: string, index: number) => {
           acc[`Point ${index + 1}`] = item;
