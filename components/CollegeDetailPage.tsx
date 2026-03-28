@@ -16,6 +16,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
 
   const collegeName = data.title;
   const coursetype = data.coursetype;
+  const benefitItems = Array.isArray(data.benefits?.items) ? data.benefits.items : [];
 
   const renderParagraphs = (text: string) =>
     text.split("\n\n").map((para, i) => (
@@ -120,7 +121,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* Inline heading + details (same style as your example) */}
             <ul className="space-y-2">
-              {data.benefits.items.map((item, i) => (
+              {benefitItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-justify">
                     <strong>{item.heading}:</strong> {item.details}

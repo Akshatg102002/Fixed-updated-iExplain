@@ -389,10 +389,6 @@ const ContactPage = () => <div className="py-20 text-center"><h1 className="text
 const normalizeCollegeDetailData = (raw: any, slug: string) => {
   if (!raw) return null;
 
-  if (raw.title && raw.heroImage && raw.intro?.text) {
-    return raw;
-  }
-
   const title = raw.title || raw.name || slug.replace(/-/g, ' ');
   const heroImage = raw.heroImage || raw.image || HERO_IMG_URL;
   const normalizedBenefits = (() => {
