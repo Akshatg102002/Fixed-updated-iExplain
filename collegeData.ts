@@ -673,8 +673,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "immanuel-kant-baltic-federal-university": {
         "title": "Immanuel Kant Baltic Federal University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/IKBFU_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/IKBFU_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859709/Immanuel_Kant_Baltic_Federal_University_enqxap.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859709/Immanuel_Kant_Baltic_Federal_University_2_lladte.jpg",
         "intro": {
             "text": "Immanuel Kant Baltic Federal University (IKBFU) is one of the leading federal universities in Russia, known for its strong academic foundation, modern research facilities, and international collaboration. Established in 1947 and later restructured as a federal university in 2010, IKBFU is located in Kaliningrad, the westernmost region of Russia, which acts as a bridge between Europe and Russia.\n\nThe university has a rich academic heritage linked to the historic University of Königsberg (Albertina), where the famous philosopher Immanuel Kant studied and taught. Today, IKBFU continues to uphold these traditions while integrating modern educational practices and innovative research methods.\n\nIKBFU offers more than 300 educational programs across various disciplines, including medicine, engineering, natural sciences, humanities, and management. It is recognized as a major educational, scientific, and cultural center in the region, with thousands of students from over 50 countries studying at the university.\n\nFor students planning MBBS in abroad, especially in Russia, IKBFU has become a popular choice due to its globally aligned curriculum, affordable fee structure, and emphasis on practical and clinical training. The university is equipped with modern laboratories, research centers, and affiliated hospitals, ensuring students gain both theoretical knowledge and hands-on medical experience."
         },
@@ -1245,8 +1245,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "david-tvildiani-medical-university": {
         "title": "David Tvildiani Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/DTMU_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/DTMU_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859709/David_Tvildiani_ymikfu.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859708/David_Tvildiani_2_rczomg.jpg",
         "intro": {
             "text": "David Tvildiani Medical University (DTMU) is one of the leading private medical universities located in Tbilisi. Established in 1989 by renowned academicians, the university has built a strong reputation for providing high-quality medical education based on international standards. Over the years, it has become a popular destination for students who wish to pursue MBBS abroad, especially from countries like India.\n\nThe university is widely known for its USMLE-oriented curriculum, which helps students prepare for global medical licensing exams and build successful careers in countries like the USA, Europe, and other parts of the world. The MBBS (MD) program is taught entirely in English and focuses on a perfect blend of theoretical knowledge, practical training, and early clinical exposure, making it an ideal choice for students planning to study MBBS in Georgia.\n\nDTMU is recognized by major global medical bodies such as WHO, NMC, and ECFMG, ensuring worldwide acceptance of its degree. The university focuses on modern teaching methods, research-based learning, and strong clinical training. These factors make it a top option for students seeking affordable and high-quality education while pursuing MBBS in Abroad or specifically MBBS in Georgia.\n\nWith experienced faculty, advanced infrastructure, and a multicultural environment, David Tvildiani Medical University provides a strong academic foundation along with global career opportunities. For students aiming to study MBBS in Abroad or MBBS in Georgia, DTMU stands out as a trusted and reputed choice."
         },
@@ -1396,8 +1396,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "european-university-georgia": {
         "title": "European University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/European_University_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/European_University_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859708/European_University_dzmrof.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859709/European_University_2_gch0w9.jpg",
         "intro": {
             "text": "European University is one of the premier private medical universities located in Tbilisi, renowned for its high-quality medical education and international standards. Established with the mission to provide globally recognized medical programs, the university has emerged as a preferred destination for students from India, Europe, Africa, and other parts of the world who wish to pursue MBBS in Abroad and specifically MBBS in Georgia. Over the years, it has built a strong reputation for academic excellence, modern teaching methodologies, and a student-friendly environment that fosters both professional and personal growth.\n\nThe university offers a fully English-medium MBBS (MD) program that is designed to meet global medical education standards. The curriculum emphasizes a balanced combination of theoretical knowledge, practical skills, and early clinical exposure to ensure that students are well-prepared for real-world medical practice. With a focus on USMLE and FMGE/NExT exam preparation, European University equips students with the necessary knowledge and skills to pursue international medical careers. The course structure is carefully planned to include basic sciences, clinical subjects, and hands-on hospital training in the affiliated teaching hospitals, ensuring comprehensive medical education.\n\nRecognition and accreditation are one of the key strengths of European University. The university is recognized by globally reputed medical organizations such as WHO and the National Medical Commission (NMC) of India. These recognitions ensure that graduates of the university can practice medicine in various countries, pursue higher education, and participate in global licensing exams such as USMLE, PLAB, and FMGE. Additionally, the university maintains strong academic affiliations with other European institutions, promoting research collaborations, student exchange programs, and international exposure.\n\nEuropean University also focuses on creating a supportive and multicultural campus environment for its international students. The campus offers modern infrastructure, well-equipped laboratories, digital libraries, hostel facilities, and recreational amenities. Indian and international students feel at home with access to Indian food, cultural support, and student communities. Moreover, the university provides dedicated assistance with admission guidance, visa processing, documentation, and accommodation, making the transition to studying abroad smooth and hassle-free."
         },
@@ -1710,8 +1710,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "georgian-american-university": {
         "title": "Georgian American University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/GAU_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/GAU_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859708/Georgian_American_University_ivnlbz.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859710/Georgian_American_University_2_nkifti.jpg",
         "intro": {
             "text": "Georgian American University is a reputed private university located in Tbilisi, the capital city of Georgia. Established with the aim of delivering high-quality education based on international standards, GAU has quickly gained recognition as one of the leading institutions for higher education in the region. The university follows a modern, student-centered approach that combines academic excellence with practical learning, preparing students for global career opportunities.\n\nGeorgian American University offers a wide range of undergraduate and postgraduate programs in fields such as medicine, business administration, law, social sciences, and information technology. Its medical program, especially the MBBS (MD), is designed according to international medical education standards, making it a preferred choice for students planning to pursue MBBS abroad. The university is recognized by the Ministry of Education of Georgia and follows global academic practices, ensuring that students receive a degree that is widely accepted.\n\nThe campus of GAU is equipped with advanced infrastructure, including modern classrooms, well-equipped laboratories, libraries, and research facilities. The university emphasizes practical training through clinical exposure, internships, and hands-on learning, helping students develop real-world skills alongside theoretical knowledge.\n\nOne of the key strengths of GAU is its highly qualified and experienced faculty, including international professionals who bring global exposure to the classroom. The university also promotes research, innovation, and student participation in academic events such as seminars, workshops, and conferences."
         },
@@ -1873,8 +1873,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "al-farabi-kazakh-national-university": {
         "title": "Al-Farabi Kazakh National University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Al-Farabi_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Al-Farabi_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859795/Al-Farabi_Kazakh_National_University_kd0nfv.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859796/Al-Farabi_Kazakh_National_University_2_q10avd.jpg",
         "intro": {
             "text": "Al-Farabi Kazakh National University is one of the most prestigious and top-ranked universities in Kazakhstan, located in the beautiful city of Almaty. Established in 1934, the university has built a strong reputation for academic excellence, research, and innovation. It is widely recognized globally and is considered a leading destination for higher education, especially for international students. For those planning MBBS in Al-Farabi Kazakh National University, it offers a perfect blend of quality education, affordability, and global exposure.\n\nThe university’s MBBS (General Medicine) program is designed according to international medical education standards, blending rigorous theoretical training with practical clinical exposure. The program is fully recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) of India, enabling Indian students to practice medicine in India after clearing the FMGE/NExT exam. The curriculum focuses on fundamental medical sciences, clinical subjects, and hands-on hospital training in affiliated teaching hospitals, ensuring students acquire the necessary skills to succeed in global licensing exams such as USMLE, PLAB, and FMGE.\n\nAl-Farabi Kazakh National University also emphasizes research, innovation, and academic excellence. The university is equipped with modern laboratories, advanced classrooms, digital libraries, and simulation centers to provide students with state-of-the-art learning facilities. Its experienced faculty members guide students through a research-oriented and practical approach to medicine, fostering critical thinking, problem-solving, and clinical competence.\n\nThe university’s multicultural campus environment supports international students throughout their journey. Comfortable hostels, Indian and international cuisine, healthcare facilities, and student support services ensure that students feel at home while studying MBBS in Kazakhstan, especially for those pursuing MBBS in Al-Farabi Kazakh National University. Additionally, the university encourages students to participate in cultural events, sports, and extracurricular activities, promoting overall development and a balanced student life."
         },
@@ -1929,32 +1929,38 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             ]
         },
         "SyllabusIntro": "The MBBS (General Medicine) program at Al-Farabi Kazakh National University is a 6-year course designed according to international medical education standards. The curriculum combines theoretical knowledge, practical skills, and clinical exposure, making it ideal for students pursuing MBBS in Kazakhstan, especially those planning MBBS in Al-Farabi Kazakh National University.",
-        "syllabus": [
-            {
-                "year": "Anatomy, Physiology, Biochemistry",
-                "subjects": "Fundamentals of human body and basic medical sciences"
-            },
-            {
-                "year": "Pathology, Microbiology, Pharmacology",
-                "subjects": "Study of diseases, microbes, and drugs"
-            },
-            {
-                "year": "General Medicine, General Surgery, Community Medicine",
-                "subjects": "Introduction to clinical subjects and patient care"
-            },
-            {
-                "year": "Pediatrics, Obstetrics & Gynecology, Psychiatry",
-                "subjects": "Specialized clinical subjects with practical exposure"
-            },
-            {
-                "year": "ENT, Ophthalmology, Dermatology, Radiology",
-                "subjects": "Advanced diagnostics and clinical skills"
-            },
-            {
-                "year": "Internship & Clinical Rotations",
-                "subjects": "Hands-on patient care in affiliated hospitals and practical training"
-            }
-        ],
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry - Fundamentals of human body and basic medical sciences"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology - Study of diseases, microbes, and drugs"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "General Medicine, General Surgery, Community Medicine - Introduction to clinical subjects and patient care"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Pediatrics, Obstetrics & Gynecology, Psychiatry - Specialized clinical subjects with practical exposure"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "ENT, Ophthalmology, Dermatology, Radiology - Advanced diagnostics and clinical skills"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship & Clinical Rotations - Hands-on patient care in affiliated hospitals and practical training"
+                }
+            ]
+        },
         "feesIntro": "The MBBS (General Medicine) fee structure at Al-Farabi Kazakh National University is affordable and competitive compared to many other countries offering MBBS in Abroad and MBBS in Kazakhstan. Fees may vary slightly based on currency changes and university updates.",
         "fees": {
             "structure": [
@@ -2130,8 +2136,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "kazakh-national-medical-university": {
         "title": "Kazakh National Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/KazNMU_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/KazNMU_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774860203/Kazakh_National_erquhs.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774860203/Kazakh_National_2_bwlqha.jpg",
         "intro": {
             "text": "Kazakh National Medical University is one of the oldest and most prestigious medical universities in Kazakhstan, located in Almaty, the largest and most developed city of the country. Established in 1930, the university has a long-standing legacy of excellence in medical education, research, and healthcare training. Over the years, it has evolved into a leading national institution and was officially granted the status of a “National University” in 2001 due to its outstanding academic performance and contribution to the medical field.\n\nThe university offers a wide range of programs in general medicine (MBBS/MD), dentistry, pharmacy, pediatrics, and public health, attracting thousands of students from across the world. With more than 11,000 students and over 1,500 faculty members, KazNMU provides a strong academic environment supported by experienced professors, researchers, and healthcare professionals.\n\nKazakh National Medical University is widely recognized for its high-quality education, modern infrastructure, and advanced clinical training facilities. The university integrates theoretical knowledge with practical experience through its affiliated hospitals, simulation centers, and research institutes. This ensures that students gain real-world medical skills alongside classroom learning, making it a popular choice for students planning to pursue MBBS abroad.\n\nOne of the key strengths of KazNMU is its strong focus on research, innovation, and international collaboration. The university has partnerships with various global institutions, providing students with opportunities for academic exchange, research participation, and exposure to international medical standards."
         },
@@ -3566,45 +3572,308 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
         "conclusion": "International School of Medicine is a highly preferred destination for students planning to pursue MBBS abroad due to its affordable fee structure, English-medium education, global recognition, and strong clinical training. With modern infrastructure, experienced faculty, and a diverse international student community, the university offers a perfect environment for both academic excellence and personal growth. For students who are unable to secure a government seat in India or want to avoid the high cost of private medical colleges, MBBS in International School of Medicine provides a smart and practical alternative. However, choosing the right guidance and staying dedicated throughout the course is essential for success. With proper planning and effort, students can build a successful medical career in India or internationally after completing their degree.",
         "faqs": [
             {
-                "question": "1. Is International School of Medicine good for MBBS?",
+                "question": "Is International School of Medicine good for MBBS?",
                 "answer": "Yes, it is one of the popular choices for MBBS abroad due to its affordable fees, English-medium education, and global recognition."
             },
             {
-                "question": "2. What is the total fee for MBBS in International School of Medicine?",
+                "question": "What is the total fee for MBBS in International School of Medicine?",
                 "answer": "The total cost is approximately ₹30–32 lakhs, making it a budget-friendly option compared to private medical colleges in India."
             },
             {
-                "question": "3. Is NEET required for admission?",
+                "question": "Is NEET required for admission?",
                 "answer": "Yes, NEET qualification is mandatory for Indian students as per NMC guidelines."
             },
             {
-                "question": "4. What is the duration of MBBS at International School of Medicine?",
+                "question": "What is the duration of MBBS at International School of Medicine?",
                 "answer": "The course duration is 6 years, including 5 years of study + 1 year internship."
             },
             {
-                "question": "5. Is the MBBS degree valid in India?",
+                "question": "Is the MBBS degree valid in India?",
                 "answer": "Yes, but students must clear the FMGE/NExT exam to practice in India after completing MBBS abroad."
             },
             {
-                "question": "6. What is the medium of teaching?",
+                "question": "What is the medium of teaching?",
                 "answer": "The MBBS program is taught in English, which is suitable for international students."
             },
             {
-                "question": "7. Are hostel and food facilities available?",
+                "question": "Are hostel and food facilities available?",
                 "answer": "Yes, the university provides hostel facilities and Indian food options for students."
             },
             {
-                "question": "8. Is there any donation or entrance exam required?",
+                "question": "Is there any donation or entrance exam required?",
                 "answer": "No, there is no donation or capitation fee, and admission is based on NEET qualification only."
             },
             {
-                "question": "9. Can students practice abroad after MBBS?",
+                "question": "Can students practice abroad after MBBS?",
                 "answer": "Yes, students can appear for exams like USMLE (USA), PLAB (UK), and other licensing exams to practice internationally."
             },
             {
-                "question": "10. Is Kyrgyzstan safe for Indian students?",
+                "question": "Is Kyrgyzstan safe for Indian students?",
                 "answer": "Yes, Kyrgyzstan is considered a safe and student-friendly country, and the university provides proper security and support for international students."
             }
         ]
     },
+    "asian-medical-institute": {
+        "title": "Asian Medical Institute",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/ASMI_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/ASMI_Mobile.webp",
+        "intro": {
+            "text": "Asian Medical Institute is one of the well-known and rapidly growing medical universities in Kyrgyzstan, especially popular among Indian students who are planning to study MBBS in Kyrgyzstan and MBBS abroad at an affordable cost. Established in 2004, the institute is officially recognized by the Ministry of Education and Science of the Kyrgyz Republic, ensuring quality education and international standards.\n\nThe MBBS in Asian Medical Institute is designed as per global medical education standards, combining strong theoretical knowledge with practical clinical training. The program is offered in English medium, making it highly suitable for international students and eliminating language barriers. The university is also recognized by major global bodies such as NMC (India), WHO, and FAIMER, allowing students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their degree.\n\nLocated in Kant, near Bishkek, the institute provides a peaceful and student-friendly environment with modern infrastructure, advanced laboratories, and affiliated hospitals for clinical exposure. Students pursuing MBBS in Kyrgyzstan at Asian Medical Institute benefit from hands-on training, which is essential for building a strong medical career.\n\nOne of the biggest advantages of choosing Asian Medical Institute is its affordable fee structure, making it a top choice for students looking for low-cost MBBS in Kyrgyzstan. Compared to private medical colleges in India, students can complete their MBBS at a much lower cost without any donation or capitation fees. The university also offers hostel facilities, Indian food, and a comfortable living environment, which makes it easier for Indian students to adapt."
+        },
+        "quickOverview": {
+            "University Name": "Asian Medical Institute",
+            "Established": "2004",
+            "Type": "Private Medical Institute",
+            "Location": "Kant, Kyrgyzstan",
+            "Medium of Instruction": "English",
+            "Course Offered": "MBBS (MD Equivalent)",
+            "Course Duration": "5–6 Years (including internship)",
+            "Recognition": "NMC (India), WHO, FAIMER",
+            "Eligibility": "10+2 with PCB + NEET Qualification",
+            "Admission Process": "Direct (No Entrance Exam / No Donation)",
+            "Clinical Training": "Affiliated hospitals with practical exposure"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is crucial for building a successful medical career, and MBBS in Asian Medical Institute is considered a smart option for students planning to study MBBS in Kyrgyzstan and MBBS abroad. Here are the key reasons why students prefer this institute:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "Asian Medical Institute offers a low-cost MBBS in Kyrgyzstan, making it highly suitable for middle-class students. The total fees are much lower compared to private medical colleges in India."
+                },
+                {
+                    "Heading": "No Donation or Capitation Fee",
+                    "Details": "Students can take admission without paying any donation or hidden charges, ensuring a transparent and budget-friendly process."
+                },
+                {
+                    "Heading": "English Medium Education",
+                    "Details": "The MBBS program is taught in English, which eliminates language barriers for Indian and international students."
+                },
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by major bodies like NMC (India), WHO, and FAIMER, allowing students to appear for FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Simple Admission Process",
+                    "Details": "Admission is easy and hassle-free. Students only need to qualify NEET, with no additional entrance exams required."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students get hands-on training in affiliated hospitals, which helps them gain real-world medical experience."
+                },
+                {
+                    "Heading": "Modern Infrastructure",
+                    "Details": "The institute provides advanced laboratories, digital classrooms, and medical facilities, enhancing the learning experience."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Located near Bishkek, the campus offers a safe, peaceful, and comfortable environment for international students."
+                },
+                {
+                    "Heading": "Indian Food & Hostel Facilities",
+                    "Details": "The university provides separate hostels and Indian food options, making it easy for Indian students to adjust."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS in Asian Medical Institute follows a globally structured curriculum divided into pre-clinical, para-clinical, and clinical phases. The course duration is 5 years of academic study + 1 year of internship, focusing on both theoretical knowledge and practical hospital training.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Histology, Physiology, Biochemistry"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Pathophysiology, Pediatrics, Genetics, Preventive & Social Medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "General Surgery, Neurology, Oncology, Internal Medicine"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Obstetrics & Gynecology, Pediatrics, ENT, Psychiatry, Cardiology, Emergency Medicine"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship (Clinical Rotations in Hospitals)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS in Asian Medical Institute is one of the most affordable options for MBBS in Kyrgyzstan, with a low-cost fee structure suitable for Indian students. Below is the updated and accurate fee structure (approx. 2026 session):",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$450",
+                    "total": "₹3.2 – 3.5 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS in Asian Medical Institute follows an internationally accepted structure with a total duration of 6 years, which includes academic study as well as clinical internship. The course is designed to provide both strong theoretical knowledge and practical medical training.",
+        "duration": {
+            "headers": [
+                "Particulars",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Particulars": "Academic Duration",
+                    "Duration": "5 Years",
+                    "Details": "Classroom learning, laboratory work, and early clinical exposure"
+                },
+                {
+                    "Particulars": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Compulsory hospital training with real patient interaction"
+                },
+                {
+                    "Particulars": "Total Duration",
+                    "Duration": "6 Years",
+                    "Details": "Complete MBBS program"
+                }
+            ]
+        },
+        "studentSupport": "Asian Medical Institute provides a strong and student-friendly support system to ensure that international students pursuing MBBS in Kyrgyzstan have a smooth and comfortable journey. The university offers complete assistance from admission to settlement, including help with documentation, visa processing, and initial accommodation, making it easier for students to adapt to a new country. Students are provided with modern hostel facilities that include fully furnished rooms, Wi-Fi, heating systems, and 24/7 security with CCTV surveillance, ensuring a safe and secure living environment. Separate hostels are available for boys and girls, along with Indian food facilities, which help Indian students feel at home. The institute also supports students academically through experienced faculty, small batch sizes, modern laboratories, libraries, and simulation centers, ensuring quality education and practical learning. Additionally, students receive clinical training in affiliated hospitals, where they gain real patient exposure and hands-on medical experience. For daily life support, the university provides facilities like transport services between hostel and hospitals, laundry services, canteens, and nearby essential stores, helping students focus on their studies without worrying about basic needs. Apart from academics, the university promotes overall development by organizing cultural events, sports activities, festivals, and student engagement programs, creating a vibrant and multicultural environment for international students.",
+        "recognition": "Asian Medical Institute is a well-recognized medical institution that holds strong affiliations with national and international bodies, ensuring that its MBBS degree is globally accepted. The institute is officially approved by the Ministry of Education & Science of the Kyrgyz Republic and the Ministry of Health of Kyrgyzstan, which confirms its credibility as a government-recognized institution. It is also recognized by the National Medical Commission (NMC), India, allowing Indian students to appear for licensing exams like FMGE/NExT after completing their MBBS abroad. Additionally, the university is listed with the World Health Organization (WHO) and included in the World Directory of Medical Schools (WDOMS), ensuring global recognition of its degree. It is also acknowledged by FAIMER (Foundation for Advancement of International Medical Education and Research), which further enhances its international credibility. These recognitions allow graduates to pursue medical careers not only in India but also in countries like the USA, UK, and other parts of the world through exams such as USMLE and PLAB.",
+        "hostelFacilities": "Students are provided with modern hostel facilities that include fully furnished rooms, Wi-Fi, heating systems, and 24/7 security with CCTV surveillance, ensuring a safe and secure living environment. Separate hostels are available for boys and girls, along with Indian food facilities, which help Indian students feel at home. The university provides facilities like transport services between hostel and hospitals, laundry services, canteens, and nearby essential stores, helping students focus on their studies without worrying about basic needs.",
+        "studentLife": "Student life at Asian Medical Institute is comfortable, engaging, and well-balanced, making it an ideal choice for students pursuing MBBS in Kyrgyzstan and MBBS abroad. The institute offers a friendly and multicultural environment where students from different countries live and study together, helping them gain international exposure and develop strong interpersonal skills. Students are provided with safe and fully furnished hostel facilities equipped with Wi-Fi, heating systems, and 24/7 security, ensuring a secure and comfortable stay. The availability of Indian food and mess facilities makes it easier for Indian students to adjust to life abroad without major lifestyle changes. Academically, the institute provides a structured environment with modern classrooms, well-equipped laboratories, and libraries, supporting both theoretical and practical learning. Students also receive clinical training in affiliated hospitals, where they gain hands-on experience and interact with real patients, which is essential for building strong medical skills. Apart from academics, students actively participate in sports activities, cultural events, seminars, and festivals like Diwali, Holi, and New Year, creating a lively and homely atmosphere on campus. The institute also encourages students to join clubs and extracurricular activities, which help in personality development, leadership skills, and overall growth.",
+        "whyChooseUsIntro": "Choosing iExplain Education for admission in MBBS at Asian Medical Institute ensures a safe, transparent, and fully guided process. With expert counselling, end-to-end support, and a student-first approach, it helps students confidently start their journey toward a successful medical career abroad.",
+        "whyChooseUs": [
+            "Expert MBBS Abroad Counselling: iExplain Education provides professional guidance to help students choose the right university based on their NEET score, budget, and career goals",
+            "Student-Centric Approach: Unlike many consultants, they focus on personalized guidance by understanding each student’s strengths, preferences, and future plans instead of promoting random universities",
+            "Complete Admission Assistance: From university selection to application and admission confirmation, everything is handled step-by-step for a smooth and hassle-free process",
+            "Transparent & Honest Process: They provide accurate information, no hidden charges, and genuine counselling, helping students make the right decision without confusion",
+            "Visa & Travel Support: Full assistance is provided for visa processing, forex, and travel arrangements, making the transition abroad easy for students",
+            "Pre & Post-Departure Support: Support continues even after admission, including airport pickup, hostel arrangement, and settling abroad",
+            "FMGE/NExT Preparation Guidance: Students also receive guidance for licensing exams, which is crucial after completing MBBS abroad",
+            "Wide Global Network: They work with multiple countries like Kyrgyzstan, Russia, Georgia, Kazakhstan, and more, giving students multiple options to choose from",
+            "One-Stop Solution: From career counselling to admission, visa, and post-arrival support, everything is available under one platform"
+        ],
+        "documents": [
+            {
+                "document": "Passport",
+                "details": "Valid passport (minimum 1–2 years validity)"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of date of birth and basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology (PCB)"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "In English or officially translated"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "General health check-up report"
+            },
+            {
+                "document": "HIV Test Report",
+                "details": "Required as per visa/medical guidelines"
+            },
+            {
+                "document": "Invitation Letter",
+                "details": "Issued by the university after admission confirmation"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Official confirmation from the university"
+            }
+        ],
+        "conclusion": "Asian Medical Institute has emerged as one of the most reliable and preferred destinations for students planning to pursue MBBS in Kyrgyzstan and MBBS abroad at an affordable cost. The institute offers a perfect combination of quality medical education, globally recognized degree, and budget-friendly fee structure, making it especially suitable for middle-class Indian students who aspire to become doctors without facing the financial burden of expensive private medical colleges in India. The MBBS in Asian Medical Institute is designed according to international standards, focusing on both strong theoretical knowledge and practical clinical exposure, which helps students develop the necessary skills required in real-world medical practice. With English-medium education, experienced faculty, modern infrastructure, and well-equipped laboratories, students get a comprehensive learning experience. Additionally, the availability of hostel facilities, Indian food, and a safe, student-friendly environment ensures a comfortable lifestyle for international students. Moreover, the university’s recognition by major global bodies like NMC, WHO, and FAIMER opens doors for graduates to pursue medical careers not only in India but also in countries like the USA, UK, and other parts of the world after clearing the required licensing exams. The simple admission process, which requires only NEET qualification without any donation or entrance exam, further makes it a hassle-free option for students.",
+        "faqs": [
+            {
+                "question": "Is Asian Medical Institute a good option for MBBS abroad?",
+                "answer": "Yes, Asian Medical Institute is considered a good option for students planning to pursue MBBS in Kyrgyzstan due to its affordable fees, English-medium education, and global recognition. It is especially suitable for Indian students who have a limited budget but still want to obtain a quality medical degree from a recognized institution."
+            },
+            {
+                "question": "What is the total fee for MBBS in Asian Medical Institute?",
+                "answer": "The total cost of MBBS in Asian Medical Institute is approximately ₹20–25 lakhs, which includes tuition fees and hostel charges. This makes it one of the most affordable options compared to private medical colleges in India, where fees can go beyond ₹70 lakhs."
+            },
+            {
+                "question": "Is NEET compulsory for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad. Without qualifying NEET, students will not be eligible to appear for licensing exams like FMGE/NExT in India."
+            },
+            {
+                "question": "What is the duration of MBBS at Asian Medical Institute?",
+                "answer": "The MBBS program duration is 6 years, which includes 5 years of academic study and 1 year of compulsory internship. This structure ensures both theoretical knowledge and practical clinical exposure."
+            },
+            {
+                "question": "Is the MBBS degree valid in India?",
+                "answer": "Yes, the degree is valid, but students must clear the FMGE/NExT exam conducted in India to get a license to practice as a doctor."
+            },
+            {
+                "question": "What is the medium of instruction?",
+                "answer": "The entire MBBS course is taught in English, which makes it easier for Indian and international students to understand the subjects without any language barrier."
+            },
+            {
+                "question": "Are hostel and Indian food facilities available?",
+                "answer": "Yes, the university provides separate hostel facilities for boys and girls, along with Indian food options. This helps students adjust easily and feel comfortable while studying abroad."
+            },
+            {
+                "question": "Is there any donation or capitation fee required?",
+                "answer": "No, there is no donation or capitation fee required for admission. The process is completely transparent and based on NEET qualification."
+            },
+            {
+                "question": "What kind of clinical exposure do students get?",
+                "answer": "Students receive practical training in affiliated hospitals, where they interact with real patients and gain hands-on experience. This is essential for developing clinical skills."
+            },
+            {
+                "question": "Is Kyrgyzstan safe for Indian students?",
+                "answer": "Yes, Kyrgyzstan is considered a safe and student-friendly country. Universities provide proper security, and there is a good presence of Indian students, making it comfortable to live and study."
+            }
+        ]
+    }
 };
