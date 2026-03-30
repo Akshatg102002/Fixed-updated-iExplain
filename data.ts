@@ -72,7 +72,7 @@ export const FOOTER_COLLEGES = {
     { country: 'Georgia', code: 'GE', names: ['Tbilisi State Medical University', 'Batumi Shota Rustaveli State University', 'David Tvildiani Medical University', 'European University Georgia', 'Georgian National University SEU', 'Georgian American University'] },
     { country: 'Kazakhstan', code: 'KZ', names: ['Al-Farabi Kazakh National University', 'Kazakh National Medical University', 'Astana Medical University', 'South Kazakhstan Medical Academy'] },
     { country: 'Kyrgyzstan', code: 'KG', names: ['Osh State University', 'Jalal-Abad State University', 'International School of Medicine', 'Asian Medical Institute'] },
-    { country: 'Uzbekistan', code: 'UZ', names: ['Tashkent Medical Academy', 'Samarkand State Medical University', 'Bukhara State Medical Institute', 'Andijan State Medical Institute'] },
+    { country: 'Uzbekistan', code: 'UZ', names: ['Tashkent State Medical University', 'Samarkand State Medical University', 'Bukhara State Medical Institute', 'Andijan State Medical Institute'] },
     { country: 'China', code: 'CN', names: ['Nanjing Medical University', 'Jilin University', 'China Medical University', 'Dalian Medical University'] },
     { country: 'Nepal', code: 'NP', names: ['Tribhuvan University', 'Kathmandu University', 'B.P. Koirala Institute', 'Patan Academy of Health Sciences'] },
     { country: 'Bangladesh', code: 'BD', names: ['Dhaka National Medical College', 'Bangladesh Medical College', 'Jahurul Islam Medical College', 'Holy Family Red Crescent Medical College'] },
@@ -173,135 +173,290 @@ export const TEAM_MEMBERS = [{ name: "Sunil Baranwal", role: "Director", image: 
 
 export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
   "mbbs": {
-    title: "Study MBBS in India for Indian Students : MBBS Fees & MBBS Admission in India",
+    title: "Study MBBS in India for Indian Students",
     heroImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
-    intro: "MBBS in India is one of the highly preferred courses by medical aspirants worldwide. The strong education structure, sincere professors, and top-hole medical universities in India are paving the way for success. To secure admission for MBBS courses in India, the aspirants are required to appear in NEET. A healthy and peaceful environment in India helps the students to acquire knowledge more quickly. MBBS in India demands a student to get at least 50% in the 10+2 examinations. The duration of MBBS courses in India is 5.5 years. If you are thinking of earning an MBBS degree from a recognized university, India is a great choice. WHO, NMC, and UNESCO approve all the top medical colleges in India.",
+    intro: "MBBS in India is one of the most preferred career choices for students who want to become doctors and serve in the healthcare sector. India has a well-established medical education system with numerous government and private medical colleges that provide high-quality medical training and clinical exposure. Every year thousands of students appear for the medical entrance examination to secure admission to MBBS programs across the country.\n\nMedical colleges in India are regulated by the National Medical Commission, which ensures that all institutions maintain proper education standards, infrastructure, and clinical training facilities. The MBBS course in India provides strong theoretical knowledge along with practical clinical experience through hospital internships.\n\nDue to the increasing demand for qualified doctors and healthcare professionals, MBBS in India continues to be one of the most respected and rewarding career options. Students receive hands-on clinical training, work with experienced doctors, and gain practical exposure in hospitals, which helps them build a successful medical career.\n\nOne of the most important benefits of pursuing MBBS in India is the exposure that is gained by the students. India is a vast country with a large population, and because of this, the exposure that is gained by the students is quite diverse, and they are able to learn from real-life situations under the guidance and supervision of experienced doctors and medical professionals. Many medical colleges in India are also well-equipped with modern laboratory facilities, research, and teaching hospitals, making the learning experience very fulfilling for the students.\n\nWith the growing healthcare industry, the demand for qualified doctors, and the continuous development of medical science, MBBS in India is a promising career destination. If students complete their MBBS course successfully, they can find employment in hospitals, healthcare centers, and research centers or can opt for higher specialization to have a successful career in the medical line.",
+
+    overview: {
+      title: "Quick Overview of MBBS in India 2026-27",
+      table: [
+        { particular: "Course Name", details: "MBBS (Bachelor of Medicine & Bachelor of Surgery)" },
+        { particular: "Course Duration", details: "5.5 Years (4.5 Years Academic Study + 1 Year Internship)" },
+        { particular: "Entrance Exam", details: "National Eligibility cum Entrance Test" },
+        { particular: "Minimum Qualification", details: "10+2 with Physics, Chemistry & Biology" },
+        { particular: "Minimum Marks", details: "50% in PCB (General Category)" },
+        { particular: "Minimum Age", details: "17 Years" },
+        { particular: "Regulatory Authority", details: "National Medical Commission" },
+        { particular: "Course Recognition", details: "Recognized by NMC and global medical organizations" },
+        { particular: "Career Opportunities", details: "Doctor, Surgeon, Medical Researcher, Healthcare Specialist" }
+      ]
+    },
+
     why: {
       title: "Why MBBS in India?",
+      description: "Pursuing MBBS in India is one of the most preferred choices for students who aspire to build a successful career in medicine. India has a strong medical education system supported by experienced faculty, modern infrastructure, and globally recognized degrees. Medical colleges in India provide high-quality education along with extensive clinical exposure, which helps students gain practical knowledge and skills required to become competent doctors.\n\nThe biggest advantage of pursuing MBBS in India is that it is regulated under the National Medical Commission. This ensures that all medical colleges maintain high standards in terms of education and provide quality education to students. The degree of MBBS from medical colleges in India is highly respected and recognized both within and outside the country.\n\nAnother significant reason for opting for MBBS in India is that there are top-class government and private medical colleges with well-equipped hospitals attached to them, where students get a chance to interact with real patients and thus develop medical skills from a very early age.",
       points: [
-        "Medical universities in India are some of the finest and prominent ones in the world.",
-        "There are over 600+ medical universities and colleges in India. Out of these, around 200+ are private colleges.",
-        "There is a total of approximately 1,05,000 seats available in India.",
-        "MBBS in India is ranked higher due to its excellence in research and training programs.",
-        "Indian medical colleges are famous for providing excellent clinical knowledge and expertise.",
-        "Students have the advantage of attending international seminars and conferences.",
-        "The syllabus followed in Indian medical college is of global standard.",
-        "Students are free to practice in any part of the world after MBBS from India.",
-        "Students get to practice on actual human bodies."
+        {
+          title: "Globally Recognized Medical Degree",
+          description: "MBBS degrees from Indian medical colleges are recognized by organizations like the World Health Organization and the National Medical Commission, allowing graduates to pursue further studies or practice medicine in many countries after fulfilling licensing requirements."
+        },
+        {
+          title: "High-Quality Medical Education",
+          description: "India has some of the best medical institutions with experienced professors, modern laboratories, and advanced medical equipment that provide students with comprehensive theoretical and practical training."
+        },
+        {
+          title: "Extensive Clinical Exposure",
+          description: "Medical colleges in India are usually attached to large hospitals. This allows students to gain hands-on experience by treating a large number of patients during their internship and clinical rotations."
+        },
+        {
+          title: "Affordable Tuition Fees in Government Colleges",
+          description: "Government medical colleges in India offer highly subsidized tuition fees compared to many countries, making medical education more affordable for deserving students."
+        },
+        {
+          title: "Diverse Medical Specializations",
+          description: "After completing MBBS, students can pursue postgraduate medical courses such as MD or MS in various specialties like cardiology, surgery, pediatrics, orthopedics, and more."
+        },
+        {
+          title: "Strong Healthcare System Exposure",
+          description: "India has a vast and diverse patient population, which helps medical students understand different types of diseases and medical conditions, giving them valuable clinical experience."
+        }
       ]
     },
-    duration: {
-      title: "Duration of MBBS in India",
-      cards: [
-        "MBBS in India has a tenure of 5.5 years. It includes 4.5 years of classroom study, and the last year is for an internship.",
-        "For a postgraduate program, you will need a time of 3 years.",
-        "Diploma courses take two years to conclude.",
-        "Other specialization programs take specific times."
-      ]
-    },
+
     eligibility: {
       title: "Eligibility Criteria for MBBS in India",
-      points: [
-        "The candidate must be of 17 years of age at the time of MBBS admission in India.",
-        "The candidate must not exceed the age of 25 years.",
-        "The medical candidate needs to score 50% marks in 12th grade for general category students. Reserved category candidates must achieve a minimum of 40%.",
-        "For AIIMS, the percentage is 60% and 45% for SC/ST and OBC.",
-        "A medical candidate must have the primary subjects in 12th grade should be Physics, Chemistry, and Biology.",
-        "NEET is mandatory."
+      table: [
+        { criteria: "Educational Qualification", details: "Students must complete 10+2 (Higher Secondary Education) from a recognized board with Physics, Chemistry, Biology/Biotechnology, and English as compulsory subjects." },
+        { criteria: "Minimum Marks (General Category)", details: "At least 50% marks in Physics, Chemistry, and Biology (PCB) in 12th standard." },
+        { criteria: "Minimum Marks (OBC / SC / ST)", details: "At least 40% marks in PCB subjects." },
+        { criteria: "Minimum Marks (PWD Category)", details: "Minimum 45% marks in PCB subjects." },
+        { criteria: "Entrance Exam Requirement", details: "Students must qualify the NEET (National Eligibility cum Entrance Test) conducted by the National Testing Agency." },
+        { criteria: "Age Requirement", details: "Minimum 17 years of age on or before 31st December of the admission year." },
+        { criteria: "Regulatory Authority", details: "MBBS admissions and regulations are governed by the National Medical Commission." },
+        { criteria: "Nationality", details: "Eligible candidates include Indian citizens, NRIs, OCIs, PIOs, and Foreign Nationals (depending on college rules)." },
+        { criteria: "Medical Fitness", details: "Candidates must be medically fit and may need to provide a medical fitness certificate at the time of admission." }
       ]
     },
+
     documents: {
-      title: "Documents Required for MBBS in India",
-      subtitle: "Medical candidate must keep all the following documents ready for seeking MBBS admission in India:",
-      points: [
-        "Medical candidates must possess valid mark sheets of class 10th and class 12th.",
-        "NEET scorecard is an essential requirement for getting admission to MBBS India.",
-        "Medical candidates must possess a valid school transfer certificate, code of conduct certificate, medical certificate, health check-up certificate, and no criminal record certificate.",
-        "The students should have a caste certificate indicating that the medical candidate belongs to SC/ST/OBC.",
-        "Medical candidate needs to show parents' bank statement, which indicates that he/she will be able to pay the fees required during admission."
+      title: "Documents Required for MBBS Admission in India",
+      subtitle: "Students who want to take admission in MBBS in India must submit several important documents during the counseling and admission process. These documents are required to verify the student's academic qualifications, identity, and eligibility as per the guidelines of the National Medical Commission.",
+      table: [
+        { document: "NEET Scorecard", details: "Valid scorecard of NEET (National Eligibility cum Entrance Test) required for MBBS admission." },
+        { document: "NEET Admit Card", details: "Admit card issued during the NEET examination." },
+        { document: "Class 10 Marksheet & Certificate", details: "Required as proof of date of birth and academic qualification." },
+        { document: "Class 12 Marksheet & Certificate", details: "Must show completion of Physics, Chemistry, Biology, and English subjects." },
+        { document: "Migration Certificate", details: "Required if the student has passed 12th from a different board or state." },
+        { document: "Character Certificate", details: "Issued by the last school or institution attended." },
+        { document: "Domicile Certificate", details: "Required for state quota admissions in many states." },
+        { document: "Medical Fitness Certificate", details: "Certificate confirming the candidate is medically fit for the MBBS course." },
+        { document: "Category Certificate (if applicable)", details: "For candidates belonging to SC/ST/OBC/EWS categories." }
+      ],
+      quickList: [
+        "10th class mark sheet",
+        "12th class mark sheet",
+        "NEET score card",
+        "Passport-size photographs",
+        "Original passport",
+        "Medical certificate",
+        "NEET admit card"
       ]
     },
-    process: {
-      title: "Process of Admission for MBBS in India",
-      steps: [
-        "You must complete Class XII with Physics, Chemistry, and Biology.",
-        "The student must qualify in NEET for admission in MBBS.",
-        "After qualifying for the NEET exam, students must appear for counseling."
+
+    curriculum: {
+      title: "Curriculum and Internship",
+      description: "The MBBS curriculum in India is designed to provide a comprehensive understanding of medical sciences, clinical skills, and patient care. It follows the guidelines of the National Medical Commission (NMC) and spans 5.5 years, including 4.5 years of academic study and one year of mandatory internship.",
+      phases: [
+        { phase: "Pre-Clinical (1st year)", subjects: "Anatomy, Physiology, Biochemistry" },
+        { phase: "Para-Clinical (2nd year)", subjects: "Pathology, Microbiology, Pharmacology, Forensic Medicine" },
+        { phase: "Clinical (3rd to 4.5 years)", subjects: "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Orthopedics, ENT, Ophthalmology, Psychiatry, and Community Medicine" }
+      ],
+      internship: "The one-year internship is compulsory and provides hands-on training in various hospital departments like Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, and Community Medicine. Interns gain practical experience in patient management, emergency care, and minor procedures under supervision.",
+      subjectsTable: [
+        { year: "1st Year", subjects: "Anatomy, Physiology, Biochemistry" },
+        { year: "2nd Year", subjects: "Pathology, Microbiology, Pharmacology, Forensic Medicine" },
+        { year: "3rd Year", subjects: "Internal Medicine, Surgery, Pediatrics, Psychiatry" },
+        { year: "4th Year", subjects: "Obstetrics & Gynecology, Orthopedics, ENT, Ophthalmology" },
+        { year: "Internship", subjects: "Hands-on training in all major departments" }
       ]
     },
-    economical: {
-      title: "Economical MBBS India",
-      points: [
-        "India offers an economical MBBS if the medical student can clear the NEET exam, which is mandatory.",
-        "For private medical colleges, the medical candidate must spend at least 50 lakhs to 60 lakhs.",
-        "As the set trend, universities abroad offer a more economical program.",
-        "For the NRI students, the structure of fees in India may vary.",
-        "If the international students want more detailed information, they must contact the Indian Embassy for more accurate and correct information.",
-        "Insurance in India will cost you 5,000 INR to 15,000 INR per year.",
-        "The medical check-up will cost the student 20,000 INR to 30,000 INR per year.",
-        "The cost of food will be around 10,000 INR to 20,000 INR per year.",
-        "Hostel fees may differ for various colleges, but it varies from 70,000 INR to 1,00,000 INR annually."
+
+    topColleges: {
+      title: "List of Top Private Medical Colleges in India",
+      description: "A list of some of the best medical colleges in India that offer quality medical education and exposure. These medical colleges are recognized by the National Medical Commission and offer MBBS courses through the NEET entrance examination.",
+      stateWise: [
+        {
+          state: "Madhya Pradesh",
+          colleges: [
+            { name: "Index Medical College Hospital & Research Centre", estd: 2007, annualFee: "13,77,000", nriFee: "48,60,000" },
+            { name: "Peoples College of Medical Sciences & Research Centre", estd: 2005, annualFee: "13,89,750", nriFee: "49,05,000" },
+            { name: "Sri Aurobindo Medical College and Post Graduate Institute", estd: 2003, annualFee: "13,81,845", nriFee: "48,77,100" },
+            { name: "Ruxmaniben Deepchand Gardi Medical College", estd: 2001, annualFee: "8,18,181", nriFee: "27,00,000" },
+            { name: "L.N. Medical College and Research Centre", estd: 2009, annualFee: "14,09,300", nriFee: "49,74,000" }
+          ],
+          feeHeaders: ["College", "Estd", "Annual Tuition Fee (₹)", "Annual Tuition Fee NRI (₹)"]
+        },
+        {
+          state: "Rajasthan",
+          colleges: [
+            { name: "Ananta Institute of Medical Sciences", estd: 2016, stateQuota: "18,90,000", managementQuota: "28,00,000" },
+            { name: "DR SS TANTIA MEDICAL COLLEGE & HOSPITAL", estd: 2021, stateQuota: "22,25,000", managementQuota: "29,25,000" },
+            { name: "NIMS, JAIPUR", estd: 2004, stateQuota: "24,00,000", managementQuota: "30,00,000" },
+            { name: "American International Institute of Medical Science", estd: 2016, stateQuota: "18,90,000", managementQuota: "32,00,000" },
+            { name: "Geetanjali Medical College and Hospital", estd: 2008, stateQuota: "23,00,000", managementQuota: "30,00,000" }
+          ],
+          feeHeaders: ["College", "Estd", "State Quota (₹)", "Management Quota (₹)"]
+        },
+        {
+          state: "Uttar Pradesh",
+          colleges: [
+            { name: "Rama Medical College and Hospital", estd: 2008, place: "Kanpur", annualFee: "15,19,895" },
+            { name: "Saraswati Medical College", estd: 2008, place: "Unnao", annualFee: "11,59,610" },
+            { name: "Krishna Mohan Medical College and Hospital", estd: 2016, place: "Mathura", annualFee: "11,73,856" },
+            { name: "FH Medical College", estd: 2014, place: "Agra", annualFee: "16,50,000" },
+            { name: "G.S. Medical College and Hospital", estd: 2016, place: "Hapur", annualFee: "14,42,654" }
+          ],
+          feeHeaders: ["College", "Estd", "Place", "Per Year Fee (₹)"]
+        },
+        {
+          state: "Bihar",
+          colleges: [
+            { name: "Mata Gujri Memorial Medical College", location: "Kishanganj", annualFee: "9,63,000", nriFee: "-" },
+            { name: "Netaji Subhas Medical College and Hospital", location: "Patna", annualFee: "16,00,000", nriFee: "$35,000" },
+            { name: "Katihar Medical College", location: "Katihar", annualFee: "11,05,000", nriFee: "$28,000" },
+            { name: "Madhubani Medical College", location: "Madhubani", annualFee: "14,00,000", nriFee: "$30,000" },
+            { name: "Lord Buddha Koshi Medical College", location: "Saharsa", annualFee: "12,00,000", nriFee: "$30,000" }
+          ],
+          feeHeaders: ["College", "Location", "Annual Fees (₹)", "NRI Fees ($)"]
+        },
+        {
+          state: "Haryana",
+          colleges: [
+            { name: "Adesh Medical College and Hospital", estd: 2017, place: "Kurukshetra", annualFee: "12,00,000" },
+            { name: "NC Medical College and Hospital", estd: 2016, place: "Panipat", annualFee: "12,00,000" },
+            { name: "World College of Medical Sciences and Hospital", estd: 2016, place: "Jhajjar", annualFee: "12,00,000" },
+            { name: "Maharishi Markandeshwar Institute of Medical Sciences", estd: 1993, place: "Ambala", annualFee: "18,00,000" },
+            { name: "Amrita School of Medical Sciences", estd: 2023, place: "Faridabad", annualFee: "25,00,000" }
+          ],
+          feeHeaders: ["College", "Estd", "Place", "Per Year Fee (₹)"]
+        },
+        {
+          state: "Maharashtra",
+          colleges: [
+            { name: "Dr. D.Y. Patil Medical College", estd: 1989, place: "Navi Mumbai", annualFee: "26,00,000" },
+            { name: "Dr. D.Y. Patil Medical College", estd: 1995, place: "Pune", annualFee: "27,82,000" },
+            { name: "Bharati Vidyapeeth Medical College", estd: 1989, place: "Pune", annualFee: "25,30,000" },
+            { name: "Symbiosis Medical College for Women", estd: 2020, place: "Pune", annualFee: "11,00,000" },
+            { name: "Datta Meghe Institute of Medical Sciences", estd: 2020, place: "Nagpur", annualFee: "22,25,000" }
+          ],
+          feeHeaders: ["College", "Estd", "Place", "Per Year Fee (₹)"]
+        }
       ]
     },
+
+    careerScope: {
+      title: "Scope and Career Opportunities After MBBS in India",
+      description: "Completing MBBS in India opens the door to a wide range of career opportunities in the healthcare sector. With the increasing demand for qualified doctors and the expansion of healthcare services across the country, MBBS graduates have excellent career prospects in both the public and private sectors.",
+      paths: [
+        {
+          title: "Postgraduate Medical Studies",
+          description: "Many MBBS graduates pursue postgraduate programs such as MD (Doctor of Medicine) or MS (Master of Surgery) to specialise in fields like cardiology, orthopaedics, paediatrics, dermatology, or general surgery. Admission to postgraduate medical courses is conducted through exams like NEET PG."
+        },
+        {
+          title: "Clinical Practice",
+          description: "Graduates can start working as general physicians in hospitals, clinics, or healthcare centers. They can also open their own private clinics after gaining some professional experience and completing the required registration with the National Medical Commission."
+        },
+        {
+          title: "Government Jobs",
+          description: "MBBS graduates can apply for government healthcare jobs in institutions such as government hospitals, public health departments, and defence services. They may also work under national healthcare programs run by the Ministry of Health and Family Welfare."
+        },
+        {
+          title: "Medical Research",
+          description: "Students interested in research can work in medical laboratories, pharmaceutical companies, or research institutes. They can also pursue higher studies, such as a PhD in medical sciences, or work with organisations like the Indian Council of Medical Research."
+        }
+      ]
+    },
+
     advantages: {
       title: "Advantages of MBBS in India",
+      description: "Studying MBBS in India offers several advantages for students who want to build a successful career in the medical field. India has a well-structured medical education system with experienced faculty, modern hospitals, and strong clinical exposure.",
       points: [
-        "India is ranked among the top medical, educational facilities in the world.",
-        "During MBBS in India, students get to learn about tropical diseases. They study some of the rare diseases which don't exist in other foreign countries.",
-        "At the time of internships during MBBS in India, medical students get to face a real-life experience.",
-        "Every state has state-funded medical universities.",
-        "The Indian MBBS degree is accepted worldwide.",
-        "Exams like IELTS & TOEFL are not required.",
-        "India is a populated country, the need for doctor increase by the day.",
-        "Students get to experience modern technologies of medical science.",
-        "There are excellent postgraduate and specialization opportunities."
+        {
+          title: "Globally Recognized Medical Degree",
+          description: "The MBBS degree from Indian medical colleges is recognised by international medical bodies such as the World Health Organization. This allows graduates to pursue higher studies or medical practice in different countries after clearing the required licensing exams."
+        },
+        {
+          title: "High-Quality Medical Education",
+          description: "India has many reputed medical colleges with experienced professors, advanced laboratories, and well-equipped hospitals that provide students with strong theoretical knowledge and practical training."
+        },
+        {
+          title: "Extensive Clinical Exposure",
+          description: "Medical colleges in India are usually attached to large hospitals where students interact with a large number of patients. This gives them valuable hands-on clinical experience during their training."
+        },
+        {
+          title: "Strong Career Opportunities",
+          description: "India's healthcare sector is growing rapidly, creating a high demand for skilled doctors in hospitals, clinics, research centers, and public health organisations."
+        }
       ]
     },
-    international: {
-      title: "MBBS in India for International Applicants",
+
+    whyIExplain: {
+      title: "Why Choose iExplain Education for Admission in MBBS in India?",
+      description: "Choosing the right guidance is very important for securing admission to a good medical college. iExplain Education helps students throughout the entire admission journey, from career counseling to final enrollment in top medical colleges.",
       points: [
-        "Govt. of India has some reservations of seats for the Non-resident Indian (NRI) students and the students arriving from other countries.",
-        "Even NRI medical students can bag admissions in private and govt institutions.",
-        "NRI students can apply through the offices of diplomatic consultants, which are available in India.",
-        "Indian Embassy can offer more accurate and exact information needed by the NRI students.",
-        "In some situations, entrance tests are not required by NRI students.",
-        "Reserved NRI quota seats, which offer admission to International students.",
-        "In the NRI quota, too, the seats are allotted based on merit and performance.",
-        "Fees structure may vary for the NRI students in the medical council-approved colleges."
+        {
+          title: "Expert Career Counseling",
+          description: "iExplain Education provides professional counseling to help students understand their career options in the medical field. Our experts guide students in choosing the right medical colleges based on their NEET score, budget, and preferences."
+        },
+        {
+          title: "Assistance with College Selection",
+          description: "Selecting the right medical college is one of the most important decisions for any student. We help students shortlist the best government and private medical colleges in India according to their eligibility and career goals."
+        },
+        {
+          title: "Complete Admission Support",
+          description: "Our team provides complete assistance with the admission process, including NEET counseling guidance, documentation support, and application procedures, ensuring a smooth and hassle-free admission experience."
+        },
+        {
+          title: "Transparent and Reliable Process",
+          description: "At iExplain Education, we follow a transparent and ethical admission process. Students and parents receive accurate information about colleges, fees, and admission requirements without any hidden charges."
+        },
+        {
+          title: "Documentation Guidance",
+          description: "We assist students in preparing and verifying all the necessary documents required for MBBS admission, making the process faster and more organized."
+        },
+        {
+          title: "Personalized Student Support",
+          description: "Every student has different goals and academic backgrounds. Our counselors provide personalized support and one-on-one guidance to ensure students make the best decisions for their future."
+        }
       ]
     },
-    dates: {
-      title: "Imperative Dates for MBBS in India",
-      points: [
-        "NEET Entrance Test: National Eligibility cum Entrance Test.",
-        "The medical candidate is free to apply for Indian medical universities in June and July.",
-        "The academic year for MBBS in India starts in September or October."
-      ]
-    },
-    govt: {
-      title: "Why Pick Govt. Medical Universities in India?",
-      points: [
-        "Indian Govt. universities charge low fees.",
-        "Admissions in Govt. colleges in India are possible by clearing the NEET exam.",
-        "The quality of medical education provided in Govt. medical colleges in India is excellent.",
-        "The professors teaching in the medical field are knowledgeable and experienced, which gives a plus point to the students studying."
-      ]
-    },
-    explore: {
-      title: "Explore Beautiful India",
-      points: [
-        "Delhi is the capital of India.",
-        "The official language is Hindi.",
-        "More than 80% of India's population speak English.",
-        "The currency of India is Indian Rupee (INR).",
-        "India shares its boundary with China, Pakistan, Nepal, Myanmar, Afghanistan, and Bhutan.",
-        "In India, the weather is tropical monsoon climate and tropical wet and dry climate.",
-        "The population in India is approx. 133.92 crores.",
-        "India has the largest postal network across the globe, having more than 1 55,015 post offices.",
-        "India is known for organizing the largest gathering of people, Kumbh Mela."
+
+    faqs: {
+      title: "FAQs - MBBS in India",
+      items: [
+        {
+          question: "What is the duration of MBBS in India?",
+          answer: "The duration of MBBS in India is 5.5 years, which includes 4.5 years of academic study and 1 year of compulsory internship in hospitals or medical institutions."
+        },
+        {
+          question: "Is NEET mandatory for MBBS admission in India?",
+          answer: "Yes, qualifying the NEET (National Eligibility cum Entrance Test) is mandatory for admission to all government and private medical colleges in India."
+        },
+        {
+          question: "What is the minimum eligibility for MBBS in India?",
+          answer: "Students must complete 12th grade with Physics, Chemistry, and Biology (PCB) and obtain at least 50% marks (40% for reserved categories) to be eligible for MBBS admission."
+        },
+        {
+          question: "Who regulates MBBS education in India?",
+          answer: "MBBS education and medical colleges in India are regulated by the National Medical Commission, which ensures quality standards in medical education."
+        },
+        {
+          question: "What is the average cost of studying MBBS in India?",
+          answer: "The cost of MBBS in India varies depending on the type of college. Government medical colleges usually have lower fees, while private medical colleges may have higher tuition fees."
+        }
       ]
     }
-  }
+  },
 };
 
 export const MEGA_MENU_DATA = {
@@ -528,7 +683,7 @@ export const POPULAR_COLLEGES: College[] = [
   { name: "South Kazakhstan Medical Academy", country: "Kazakhstan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/South-Kazakhstan-Medical-Academy.webp" },
 
   // Uzbekistan
-  { name: "Tashkent Medical Academy", country: "Uzbekistan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Tashkent-Medical-Academy.webp" },
+  { name: "Tashkent State Medical University", country: "Uzbekistan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Tashkent-Medical-Academy.webp" },
   { name: "Samarkand State Medical University", country: "Uzbekistan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Samarkand-State-Medical-University.webp" },
   { name: "Bukhara State Medical Institute", country: "Uzbekistan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Bukhara-State-Medical-Institute.webp" },
   { name: "Andijan State Medical Institute", country: "Uzbekistan", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Andijan-State-Medical-Institute.webp" },

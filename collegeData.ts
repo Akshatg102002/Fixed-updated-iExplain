@@ -3875,5 +3875,1077 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
                 "answer": "Yes, Kyrgyzstan is considered a safe and student-friendly country. Universities provide proper security, and there is a good presence of Indian students, making it comfortable to live and study."
             }
         ]
+    },
+    "tashkent-state-medical-university": {
+        "title": "Tashkent State Medical University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Tashkent_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Tashkent_Mobile.webp",
+        "intro": {
+            "text": "Tashkent State Medical University is one of the most prestigious and well-established medical universities in Uzbekistan, making it a top choice for students aspiring to pursue MBBS in Abroad. Founded with a vision to deliver high-quality medical education and research, the university has built a strong reputation among international students, especially those looking for MBBS in Uzbekistan at an affordable cost. With modern infrastructure, advanced laboratories, and globally recognized teaching methodologies, Tashkent State Medical University offers an excellent environment for medical studies.\n\nFor students planning to Study MBBS Abroad, Tashkent State Medical University provides a perfect blend of theoretical knowledge and practical exposure. The university follows international medical education standards and offers MBBS programs in English medium, which makes it highly attractive for Indian and other international students. The curriculum is designed to match global medical guidelines, helping students prepare for licensing exams like FMGE/NExT, USMLE, and PLAB.\n\nOne of the major advantages of choosing MBBS in Tashkent State Medical University is its affordable fee structure compared to private medical colleges in India. Students can complete their MBBS Abroad journey at a fraction of the cost while still receiving world-class education. Additionally, the cost of living in Uzbekistan is quite economical, making it a budget-friendly destination for medical aspirants.\n\nThe university is recognized by major global medical bodies such as the World Health Organization and the National Medical Commission, ensuring that the degree holds international value. This recognition allows graduates to practice medicine in different countries after clearing the required licensing exams.\n\nAnother key highlight of Study MBBS in Uzbekistan at Tashkent State Medical University is the availability of experienced faculty members and advanced clinical training in affiliated hospitals. Students gain hands-on experience, which is crucial for building strong medical skills. The university also emphasizes research, innovation, and practical learning, making it an ideal destination for those who want to build a successful medical career."
+        },
+        "quickOverview": {
+            "University Name": "Tashkent State Medical University",
+            "Location": "Tashkent, Uzbekistan",
+            "Established": "2005 (formed by the merger of historic medical institutes)",
+            "Type": "Government Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Medium of Teaching": "English & Uzbek",
+            "Recognition": "World Health Organization, National Medical Commission",
+            "Admission Process": "Direct Admission (No Entrance Exam, NEET required for Indian students)",
+            "Eligibility": "10+2 with PCB (Physics, Chemistry, Biology) & NEET Qualification"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is crucial for a successful medical career, and Tashkent State Medical University stands out as an excellent option for students planning to study MBBS abroad. Here are the top reasons why it is a preferred destination for pursuing MBBS in Uzbekistan:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "One of the biggest advantages of studying at Tashkent State Medical University is its budget-friendly fee structure. Compared to private medical colleges in India, the cost of MBBS abroad here is significantly lower, making it ideal for middle-class students."
+                },
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by prestigious organizations like the World Health Organization and the National Medical Commission. This ensures that students can appear for licensing exams such as FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "For international students, especially from India, the university offers MBBS courses in English. This removes the language barrier and makes learning easier and more effective."
+                },
+                {
+                    "Heading": "High-Quality Education System",
+                    "Details": "Tashkent State Medical University follows international medical education standards with a well-structured curriculum that combines theoretical knowledge with practical training."
+                },
+                {
+                    "Heading": "Advanced Clinical Exposure",
+                    "Details": "Students get hands-on experience in affiliated hospitals, which helps them develop real-world medical skills. Early clinical exposure is a major advantage for building confidence in patient care."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The university has highly qualified and experienced professors who focus on both academic excellence and practical learning, ensuring students receive quality education."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Located in Tashkent, the capital of Uzbekistan, the city is safe, modern, and well-developed, making it comfortable for international students."
+                },
+                {
+                    "Heading": "Low Cost of Living",
+                    "Details": "Apart from affordable tuition fees, the cost of living in Uzbekistan is quite economical, including accommodation, food, and transportation."
+                },
+                {
+                    "Heading": "No Entrance Exam (Except NEET)",
+                    "Details": "Admission to MBBS in Tashkent State Medical University is simple and hassle-free. Indian students only need to qualify NEET, with no additional entrance exams required."
+                },
+                {
+                    "Heading": "Globally Accepted Career Opportunities",
+                    "Details": "Graduates from Tashkent State Medical University can pursue medical careers worldwide after clearing respective licensing exams, opening doors to global opportunities."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Tashkent State Medical University is designed according to international medical education standards. It is a 6-year program (including internship) that focuses on both theoretical knowledge and practical clinical training. The curriculum is divided into basic sciences, pre-clinical, para-clinical, and clinical subjects.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry, Histology, Embryology, Medical Psychology, Medical Genetics, Basics of Medicine"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology, Pathophysiology, Radiology, Community Medicine, Clinical Basics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Internal Medicine, Pediatrics, General Surgery, Obstetrics & Gynecology, Forensic Medicine, Epidemiology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Advanced Clinical Subjects: Medicine, Surgery, Psychiatry, Dermatology, ENT, Orthopedics, Ophthalmology, Radiology, Emergency Medicine"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Public Health, Community Medicine, Clinical Rotations, Hospital Training, Research Methodology"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship (Hands-on training in Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, and other departments)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Tashkent State Medical University is considered highly affordable compared to many private medical colleges in India. Below is the latest approximate fee breakdown for international students pursuing MBBS in Uzbekistan:",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "$3,500 – $7,550 (includes one-time charges)",
+                    "hostel": "Included / $500–$700",
+                    "total": "₹6 – ₹6.5 Lakhs (Approx. Total)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "$3,500",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – ₹3.5 Lakhs (Approx. Total)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "$3,500",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – ₹3.5 Lakhs (Approx. Total)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "$3,500",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – ₹3.5 Lakhs (Approx. Total)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "$3,500",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – ₹3.5 Lakhs (Approx. Total)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "$3,500",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – ₹3.5 Lakhs (Approx. Total)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Tashkent State Medical University is structured to provide both strong academic knowledge and practical clinical experience. The total duration of the course is:",
+        "duration": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Phase": "Total Course Duration",
+                    "Duration": "6 Years",
+                    "Details": "Complete MBBS program including academic study and internship"
+                },
+                {
+                    "Phase": "Pre-Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Basic subjects like Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Phase": "Clinical Phase",
+                    "Duration": "3 Years",
+                    "Details": "Core medical subjects such as Medicine, Surgery, Pediatrics, etc."
+                },
+                {
+                    "Phase": "Internship",
+                    "Duration": "1 Years",
+                    "Details": "Mandatory hands-on training in affiliated hospitals"
+                }
+            ]
+        },
+        "studentSupport": "Tashkent State Medical University provides a strong and well-structured student support system, making it an ideal choice for students planning to study MBBS abroad. The university offers complete assistance to international students, including help with admission procedures, visa processing, and settling in Tashkent, Uzbekistan. This ensures a smooth transition for students pursuing MBBS in Uzbekistan.\n\nThe university provides comfortable and fully equipped hostel facilities with modern amenities such as Wi-Fi, 24/7 security, and hygienic food, including Indian cuisine. This makes it easier for Indian students to adapt while studying MBBS abroad. In addition, on-campus medical services are available to take care of students’ health and well-being at all times.\n\nFrom an academic perspective, the university offers excellent support through experienced faculty, advanced laboratories, and well-stocked libraries. Students also receive strong clinical training in affiliated hospitals, which is essential for gaining practical knowledge during MBBS in Tashkent State Medical University. Counseling services are available to guide students academically and personally, helping them manage stress and adjust to a new environment.\n\nFurthermore, the university encourages participation in sports, cultural activities, and student clubs, promoting overall development. Language support is also provided to help students communicate effectively with patients during clinical practice. Career guidance for global licensing exams like FMGE/NExT, USMLE, and PLAB is another key advantage for students pursuing MBBS in abroad.",
+        "recognition": "Tashkent State Medical University is one of the most reputed institutions for MBBS in Uzbekistan, known for its strong global affiliations, international recognition, and academic achievements. These factors make it a trusted choice for students planning to study MBBS abroad.\n\nThe university is officially recognized by major global medical organizations such as the World Health Organization and the National Medical Commission, which ensures that its MBBS degree is valid for Indian students and globally accepted. It is also listed in international directories like WDOMS and recognized by bodies such as UNESCO and WFME, further strengthening its credibility in the field of medical education.\n\nIn terms of affiliations, Tashkent State Medical University has established academic and research collaborations with several well-known international universities and institutions, including partnerships with European and Asian medical universities. It is also a member of the Association of European Medical Schools, which highlights its global academic integration and international standards. These collaborations help students gain better exposure, exchange opportunities, and access to advanced research.\n\nTalking about achievements, the university has a rich academic legacy and has been consistently recognized for its contribution to medical education and research. It has been ranked among the top medical universities globally in the field of Medicine by Times Higher Education rankings, marking its presence on the international stage. Additionally, its predecessor institution was awarded the prestigious Order of the Red Banner of Labour, reflecting its historical excellence in education and healthcare development. The university is also known for its strong research output, modern infrastructure, and multidisciplinary clinical training facilities.",
+        "hostelFacilities": "The university provides comfortable and fully equipped hostel facilities with modern amenities such as Wi-Fi, 24/7 security, and hygienic food, including Indian cuisine. This makes it easier for Indian students to adapt while studying MBBS abroad. In addition, on-campus medical services are available to take care of students’ health and well-being at all times.",
+        "studentLife": "Student life at Tashkent State Medical University is vibrant, diverse, and well-balanced, offering an ideal environment for students pursuing MBBS in Uzbekistan. The university not only focuses on academic excellence but also ensures that students enjoy a comfortable and engaging lifestyle while they study MBBS abroad in Tashkent, Uzbekistan.\n\nThe campus life is dynamic, with students from different countries, especially India, creating a multicultural atmosphere. This diversity helps students adapt quickly and build global connections during their MBBS abroad journey. The university provides well-maintained hostels with modern amenities like Wi-Fi, heating systems, security, and access to hygienic food, including Indian cuisine, ensuring a homely environment for international students.\n\nApart from academics, students actively participate in extracurricular activities such as sports, cultural programs, festivals, and student clubs. The university regularly organizes events, celebrations, and competitions that allow students to showcase their talents and relieve academic stress. Indian festivals like Diwali and Holi are also celebrated, making Indian students feel at home while studying MBBS in Tashkent State Medical University.\n\nThe city of Tashkent offers a safe and student-friendly environment with modern infrastructure, shopping centers, cafes, and recreational spots. Students can explore historical places, parks, and cultural landmarks during their free time, enhancing their overall experience of studying MBBS abroad.",
+        "whyChooseUsIntro": "Choosing the right consultancy is very important when planning to study MBBS abroad, and iExplain Education is considered a reliable partner for students seeking admission to top universities like Tashkent State Medical University. With years of experience and a student-focused approach, the consultancy provides complete guidance throughout the admission journey.",
+        "whyChooseUs": [
+            "Expert Counseling for MBBS Abroad: Get professional guidance to choose the best option for MBBS in Uzbekistan based on your budget and career goals.",
+            "Complete Admission Assistance: End-to-end support for application, documentation, and securing admission in Tashkent State Medical University.",
+            "Visa Support & Documentation: Proper guidance for visa processing with a high success rate, ensuring a smooth journey to study MBBS abroad.",
+            "Personalized Guidance: One-on-one counseling to help students select the right university for MBBS in abroad.",
+            "Affordable & Transparent Process: Clear information about fees, with no hidden charges for MBBS in Tashkent State Medical University.",
+            "Pre-Departure Support: Assistance with travel arrangements, forex, and complete briefing before flying abroad.",
+            "Post-Arrival Assistance: Help with accommodation, local support, and settling in Tashkent, Uzbekistan.",
+            "FMGE/NExT Guidance: Support and advice for licensing exams after completing MBBS abroad.",
+            "Strong University Network: Direct tie-ups with top universities, ensuring reliable admission for MBBS in Uzbekistan.",
+            "Student-Centric Approach: Focus on student satisfaction, safety, and long-term career success."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled application form of the university"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport with at least 18 months validity"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Proof that student is medically fit"
+            },
+            {
+                "document": "Admission/Invitation Letter",
+                "details": "Issued by the university after approval"
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Student visa application and supporting documents"
+            },
+            {
+                "document": "Migration/Transfer Certificate",
+                "details": "From previous school (if required)"
+            }
+        ],
+        "conclusion": "In conclusion, preparing the required documents carefully is a crucial step for securing admission to Tashkent State Medical University. From academic certificates and NEET scorecard to passport, medical reports, and visa documents, each requirement plays an important role in ensuring a smooth admission process for students planning to study MBBS abroad. Proper verification, notarization, and timely submission of documents help avoid delays and increase the chances of successful admission. For students aiming to pursue MBBS in Uzbekistan, staying organized and following the guidelines correctly will make the entire process hassle-free. Overall, having complete and accurate documentation ensures a seamless journey toward achieving your dream of studying MBBS in abroad at Tashkent State Medical University.",
+        "faqs": [
+            {
+                "question": "Is Tashkent State Medical University a good option for MBBS abroad?",
+                "answer": "Yes, Tashkent State Medical University is considered one of the top choices for MBBS in Uzbekistan. It offers globally recognized degrees, affordable fees, modern infrastructure, and strong clinical exposure. The university follows international medical education standards, making it a reliable option for students planning to study MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at Tashkent State Medical University?",
+                "answer": "The total duration of MBBS in Tashkent State Medical University is 6 years, which includes 5 years of academic study and 1 year of compulsory internship. This structure ensures both theoretical knowledge and practical clinical experience."
+            },
+            {
+                "question": "Is NEET required for admission to Tashkent State Medical University?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to pursue MBBS abroad. It is also required to practice medicine in India after completing your degree."
+            },
+            {
+                "question": "What is the medium of teaching at Tashkent State Medical University?",
+                "answer": "The MBBS program is available in English medium for international students, which makes it easier for Indian students to study without any language barrier while pursuing MBBS in abroad."
+            },
+            {
+                "question": "What is the fee structure for MBBS at Tashkent State Medical University?",
+                "answer": "The total cost of MBBS in Uzbekistan at Tashkent State Medical University is quite affordable, usually ranging between ₹22–25 lakhs for the complete 6-year course, including tuition and hostel. This makes it a budget-friendly option compared to private medical colleges in India."
+            },
+            {
+                "question": "Is the degree from Tashkent State Medical University valid in India?",
+                "answer": "Yes, the degree is recognized by the National Medical Commission and World Health Organization. After completing MBBS, students must clear FMGE/NExT to practice in India."
+            },
+            {
+                "question": "What are the eligibility criteria for MBBS admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology with at least 50% marks (40% for reserved categories). NEET qualification is compulsory for Indian students who want to study MBBS abroad."
+            },
+            {
+                "question": "Are hostel and food facilities available for Indian students?",
+                "answer": "Yes, the university provides well-equipped hostel facilities with modern amenities like Wi-Fi, security, and Indian food options. This ensures a comfortable stay for students pursuing MBBS in Tashkent State Medical University."
+            },
+            {
+                "question": "Is Uzbekistan safe for Indian students?",
+                "answer": "Yes, Uzbekistan is considered a safe country for international students. The capital, Tashkent, offers a secure and student-friendly environment with good infrastructure."
+            },
+            {
+                "question": "What career options are available after MBBS from Tashkent State Medical University?",
+                "answer": "After completing MBBS abroad, students can appear for licensing exams like FMGE/NExT (India), USMLE (USA), or PLAB (UK). They can also pursue postgraduate studies or practice medicine globally."
+            }
+        ]
+    },
+    "samarkand-state-medical-university": {
+        "title": "Samarkand State Medical University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Samarkand_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Samarkand_Mobile.webp",
+        "intro": {
+            "text": "Samarkand State Medical University is one of the oldest and most prestigious medical universities in Uzbekistan, making it a top destination for students planning to study MBBS abroad. Established in 1930, the university has a rich legacy of excellence in medical education and has trained thousands of skilled doctors who are now practicing worldwide. It is especially popular among international students looking for MBBS in Uzbekistan at an affordable cost with global recognition.\n\nFor students aiming to pursue MBBS in abroad, Samarkand State Medical University offers a well-structured and internationally aligned curriculum that combines theoretical knowledge with practical clinical training. The university provides MBBS programs in English medium, making it convenient for Indian and other international students. Its focus on modern teaching methodologies, advanced laboratories, and hands-on hospital training ensures that students gain real-world medical experience.\n\nOne of the major advantages of choosing MBBS in Samarkand State Medical University is its cost-effective fee structure. Compared to private medical colleges in India, the university offers quality education at a much lower cost, making it an ideal choice for students from middle-income families who want to study MBBS abroad without financial burden. Additionally, the cost of living in Uzbekistan is quite affordable, further reducing the overall expenses.\n\nThe university is recognized by global medical bodies such as the World Health Organization and the National Medical Commission, ensuring that the degree is valid internationally. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the historic city of Samarkand, the university provides a safe, student-friendly, and culturally rich environment. Students not only receive quality education but also experience a vibrant lifestyle while studying MBBS in Uzbekistan."
+        },
+        "quickOverview": {
+            "University Name": "Samarkand State Medical University",
+            "Location": "Samarkand, Uzbekistan",
+            "Established": "1930",
+            "Type": "Government Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Medium of Teaching": "English & Uzbek",
+            "Recognition": "World Health Organization, National Medical Commission",
+            "Eligibility": "10+2 with PCB (Physics, Chemistry, Biology) + NEET Qualification",
+            "Admission Process": "Direct Admission (No Entrance Exam, NEET required for Indian students)",
+            "Clinical Training": "Provided in affiliated hospitals with hands-on experience"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is a crucial step for building a successful medical career, and Samarkand State Medical University stands out as a top option for students planning to study MBBS abroad. Here are the key reasons why it is a preferred destination for pursuing MBBS in Uzbekistan:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "The university offers a cost-effective fee structure, making it an excellent choice for students looking for low-cost MBBS abroad. Compared to private medical colleges in India, the overall expense is much lower."
+                },
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by international organizations such as the World Health Organization and the National Medical Commission, allowing graduates to practice medicine globally after clearing required exams."
+                },
+                {
+                    "Heading": "English-Medium Education",
+                    "Details": "For international students, especially from India, the MBBS program is available in English, making it easier to understand and study without language barriers."
+                },
+                {
+                    "Heading": "High-Quality Education System",
+                    "Details": "Samarkand State Medical University follows international standards with a well-structured curriculum that balances theory and practical training."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students receive hands-on clinical training in affiliated hospitals, which helps in gaining real-world medical experience during MBBS in Samarkand State Medical University."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The university has highly qualified and experienced professors dedicated to providing quality medical education."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Located in Samarkand, a historic and peaceful city in Uzbekistan, the environment is safe and ideal for international students."
+                },
+                {
+                    "Heading": "Low Cost of Living",
+                    "Details": "Apart from affordable tuition fees, the cost of living in Uzbekistan is quite economical, including accommodation, food, and transportation."
+                },
+                {
+                    "Heading": "No Entrance Exam (Except NEET)",
+                    "Details": "Admission is simple and hassle-free. Indian students only need to qualify NEET to pursue MBBS abroad."
+                },
+                {
+                    "Heading": "Global Career Opportunities",
+                    "Details": "Graduates can appear for licensing exams like FMGE/NExT, USMLE, and PLAB, opening doors to international medical careers after completing MBBS in abroad."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Samarkand State Medical University is designed as a 6-year program (5 years academic + 1 year internship), focusing on both theoretical knowledge and practical clinical training. The curriculum follows international standards, making it ideal for students planning to study MBBS abroad and pursue MBBS in Uzbekistan.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry, Medical Chemistry, Biology, Biophysics, Histology, Embryology, Medical Terminology"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology, Immunology, Clinical Anatomy, Physiology, Patient Care"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Forensic Medicine, Community Medicine, Radiology, ENT, General Surgery, Internal Medicine, Obstetrics & Gynecology (Intro)"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Radiology, Hygiene"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Ophthalmology, Psychiatry, Oncology, Clinical Immunology, Medical Genetics, Epidemiology, Infectious Diseases"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship (Clinical rotations in Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency, etc.)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Samarkand State Medical University is highly affordable, making it a popular choice for students planning to study MBBS abroad and pursue MBBS in Uzbekistan.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                },
+                {
+                    "year": "2 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                },
+                {
+                    "year": "3 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                },
+                {
+                    "year": "4 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                },
+                {
+                    "year": "5 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                },
+                {
+                    "year": "6 year",
+                    "tuition": "$3,850",
+                    "hostel": "$600",
+                    "total": "$4,450 (Approx. ₹3.7 Lakhs)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Samarkand State Medical University is structured according to international medical education standards, making it suitable for students planning to study MBBS abroad and pursue MBBS in Uzbekistan.",
+        "duration": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Phase": "Total Course Duration",
+                    "Duration": "6 year",
+                    "Details": "Complete MBBS program including academics and internship"
+                },
+                {
+                    "Phase": "Academic Study",
+                    "Duration": "5 year",
+                    "Details": "Theoretical + practical classroom and clinical learning"
+                },
+                {
+                    "Phase": "Internship",
+                    "Duration": "1 year",
+                    "Details": "Mandatory hands-on training in affiliated hospitals"
+                }
+            ]
+        },
+        "studentSupport": "Samarkand State Medical University offers a comprehensive and student-friendly support system, making it a great choice for students planning to study MBBS abroad and pursue MBBS in Uzbekistan. The university focuses on providing both academic and personal support to ensure that students have a smooth and successful learning experience. The university provides excellent hostel and accommodation facilities, with multiple dormitories equipped with modern amenities such as furnished rooms, common areas, and essential facilities for comfortable living. These hostels can accommodate a large number of international students, including those from India, ensuring a safe and convenient stay while pursuing MBBS abroad. For academic support, the university offers modern classrooms, advanced laboratories, and research facilities, along with experienced faculty members who guide students throughout their medical education. Students also benefit from clinical training in affiliated hospitals and simulation labs, which helps them gain practical knowledge during their MBBS in Samarkand State Medical University. The university also provides strong financial support systems, including scholarships, tuition fee waivers, and grants for deserving and economically weaker students. In addition, students have access to subsidized food services, food assistance programs, and basic living support, ensuring that their daily needs are taken care of without financial stress. The university encourages participation in student clubs, research groups, and scientific societies, where students can engage in research, attend international conferences, and enhance their skills beyond academics.",
+        "recognition": "Samarkand State Medical University is one of the most reputed government medical universities in Uzbekistan, known for its strong academic affiliations and global recognition in the field of medical education. The university operates under the Ministry of Health of Uzbekistan, which ensures that all academic programs, including MBBS in Uzbekistan, follow strict national and international standards. Over the years, it has developed collaborations and partnerships with various international universities, research organizations, and medical institutions, allowing students to gain global exposure, participate in exchange programs, and access advanced research opportunities. In terms of recognition, the university is approved by major global medical bodies such as the World Health Organization and the National Medical Commission, which ensures that the medical degree is globally accepted. This recognition is especially important for Indian students, as it allows them to appear for licensing exams like FMGE/NExT after completing their MBBS in abroad. Additionally, the university is listed in international medical directories such as WDOMS and follows global medical education guidelines, which further enhances its credibility. Talking about achievements, Samarkand State Medical University has earned international accreditation from reputed organizations like ECAQA, which reflects its commitment to maintaining high-quality education and healthcare standards. The university has consistently contributed to the advancement of medical science through its well-established research centers, laboratories, and teaching hospitals. Moreover, the university has produced thousands of qualified doctors and healthcare professionals who are now successfully working in different countries across the world, highlighting its strong academic legacy.",
+        "hostelFacilities": "The university provides well-equipped hostels with modern amenities like Wi-Fi, security, and hygienic food, including Indian food options. These hostels can accommodate a large number of international students, including those from India, ensuring a safe and convenient stay while pursuing MBBS abroad. Students have access to subsidized food services, food assistance programs, and basic living support, ensuring that their daily needs are taken care of without financial stress.",
+        "studentLife": "Student life at Samarkand State Medical University is vibrant, diverse, and well-balanced, offering an enriching experience for students pursuing MBBS in Uzbekistan. The university not only focuses on academic excellence but also ensures that students enjoy a comfortable and engaging lifestyle while they study MBBS abroad in Samarkand, Uzbekistan. With a multicultural environment and a large number of international students, especially from India, students get the opportunity to interact with peers from different backgrounds and build global connections. The university provides well-maintained hostel facilities with modern amenities such as Wi-Fi, heating systems, 24/7 security, and access to hygienic food, including Indian cuisine. Apart from academics, students actively participate in various extracurricular activities such as sports, cultural events, and student clubs. The university regularly organizes festivals, competitions, and international events where students can showcase their talents and reduce academic stress. Indian festivals like Diwali and Holi are also celebrated, creating a familiar and joyful environment for Indian students studying MBBS in Samarkand State Medical University. The city of Samarkand offers a unique blend of historical charm and modern lifestyle. Students can explore famous landmarks, parks, cafes, and shopping centers during their free time, making their journey of studying MBBS abroad more enjoyable.",
+        "whyChooseUsIntro": "Choosing the right consultancy plays a crucial role when planning to study MBBS abroad, and iExplain Education is a trusted partner for students seeking admission to top universities like Samarkand State Medical University. Here are the key reasons why students prefer iExplain Education for MBBS in Uzbekistan:",
+        "whyChooseUs": [
+            "Expert Counseling for MBBS Abroad – Get professional guidance to choose the best university for MBBS in abroad based on your budget, academic profile, and career goals.",
+            "Complete Admission Assistance – End-to-end support for application, documentation, and securing admission in Samarkand State Medical University.",
+            "Visa Processing Support – Proper assistance with visa documentation and a high success rate, ensuring a smooth process to study MBBS abroad.",
+            "Personalized Guidance – One-on-one counseling to help students make the right decision for MBBS in Uzbekistan.",
+            "Transparent & Affordable Process – Clear information about fees and admission procedures with no hidden charges for MBBS abroad.",
+            "Pre-Departure Assistance – Guidance on travel arrangements, forex exchange, and complete briefing before leaving India.",
+            "Post-Arrival Support – Assistance with accommodation and settling in Samarkand, Uzbekistan.",
+            "FMGE/NExT Guidance – Support for preparing licensing exams after completing MBBS in abroad.",
+            "Strong University Network – Direct partnerships with top universities ensure reliable and secure admission.",
+            "Student-Centric Approach – Focus on student satisfaction, safety, and long-term career success."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled university application form"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Proof of age (translated if required)"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport (minimum 18–24 months validity)"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Including HIV, Hepatitis B & C reports"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "From previous school/college (if required)"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Issued by the university after document verification"
+            }
+        ],
+        "conclusion": "In conclusion, having the correct and complete set of documents is essential for securing admission to Samarkand State Medical University. From academic certificates and NEET scorecard to passport, medical reports, and visa documents, each requirement plays a vital role in ensuring a smooth and hassle-free admission process for students planning to study MBBS abroad. Proper verification, attestation, and timely submission of documents help avoid delays and increase the chances of successful admission. For students aiming to pursue MBBS in Uzbekistan, staying organized and following all guidelines carefully is extremely important. Overall, accurate documentation ensures a seamless transition into your medical journey and helps you confidently begin your MBBS in abroad at Samarkand State Medical University, paving the way for a successful global medical career.",
+        "faqs": [
+            {
+                "question": "Is Samarkand State Medical University a good choice for MBBS abroad?",
+                "answer": "Yes, Samarkand State Medical University is one of the top choices for MBBS in Uzbekistan. It offers quality education, affordable fees, global recognition, and strong clinical exposure, making it ideal for students who want to study MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at Samarkand State Medical University?",
+                "answer": "The total duration of MBBS in Samarkand State Medical University is 6 years, including 5 years of academic study and 1 year of mandatory internship."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is compulsory for Indian students who wish to pursue MBBS abroad and later practice in India."
+            },
+            {
+                "question": "What is the medium of teaching?",
+                "answer": "The MBBS program is offered in English medium for international students, which makes it convenient for Indian students to study without language barriers."
+            },
+            {
+                "question": "What is the total fee for MBBS?",
+                "answer": "The total cost of MBBS in Uzbekistan at this university is approximately ₹25–27 lakhs for the complete 6-year course, making it an affordable option for MBBS abroad."
+            },
+            {
+                "question": "Is the degree valid in India?",
+                "answer": "Yes, the degree is recognized by the National Medical Commission and World Health Organization. Graduates must clear FMGE/NExT to practice in India."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the university provides well-equipped hostels with modern amenities like Wi-Fi, security, and hygienic food, including Indian food options."
+            },
+            {
+                "question": "Is Uzbekistan safe for Indian students?",
+                "answer": "Yes, Uzbekistan is a safe country for international students. The city of Samarkand is peaceful and student-friendly."
+            },
+            {
+                "question": "What are the eligibility criteria for admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology with at least 50% marks (40% for reserved categories) and must qualify NEET."
+            },
+            {
+                "question": "What career options are available after MBBS?",
+                "answer": "After completing MBBS abroad, students can appear for licensing exams like FMGE/NExT (India), USMLE (USA), or PLAB (UK), or pursue postgraduate studies and medical practice globally."
+            }
+        ]
+    },
+    "bukhara-state-medical-institute": {
+        "title": "Bukhara State Medical Institute",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Bukhara_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Bukhara_Mobile.webp",
+        "intro": {
+            "text": "Bukhara State Medical Institute is one of the leading government medical universities in Uzbekistan, widely known for providing high-quality medical education at an affordable cost. Established in 1990, the institute has gained strong popularity among international students, especially those planning to study MBBS abroad and looking for a reliable option for MBBS in Uzbekistan.\n\nFor students aiming to pursue MBBS in abroad, Bukhara State Medical Institute offers a well-structured and globally aligned curriculum that focuses on both theoretical knowledge and practical clinical training. The university provides MBBS programs in English medium, making it convenient for Indian and other international students. With modern infrastructure, advanced laboratories, and experienced faculty, the institute ensures a high standard of education.\n\nOne of the major advantages of choosing MBBS in Bukhara State Medical Institute is its affordable fee structure. Compared to private medical colleges in India, the cost of MBBS abroad here is significantly lower, making it an ideal choice for students from middle-income families. Additionally, the cost of living in Uzbekistan is economical, which further reduces the overall expenses for students.\n\nThe institute is recognized by major global medical organizations such as the World Health Organization and the National Medical Commission, ensuring that the degree is globally accepted. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the historic city of Bukhara, the institute offers a safe, peaceful, and culturally rich environment for students. It provides a perfect blend of academic excellence and comfortable living, making it an attractive destination for those planning to study MBBS abroad."
+        },
+        "quickOverview": {
+            "University Name": "Bukhara State Medical Institute",
+            "Location": "Bukhara, Uzbekistan",
+            "Established": "1990",
+            "Type": "Government Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Medium of Teaching": "English & Uzbek",
+            "Recognition": "World Health Organization, National Medical Commission",
+            "Eligibility": "10+2 with PCB (Physics, Chemistry, Biology) + NEET Qualification",
+            "Admission Process": "Direct Admission (No Entrance Exam, NEET required for Indian students)",
+            "Hostel Facility": "Available (Separate for Boys & Girls)"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is essential for a successful medical career, and Bukhara State Medical Institute is a great option for students planning to study MBBS abroad. Here are the key reasons why it is a preferred destination for pursuing MBBS in Uzbekistan:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "The institute offers a budget-friendly fee structure, making it an ideal choice for students looking for low-cost MBBS abroad. The total cost is much lower compared to private medical colleges in India."
+                },
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by international organizations such as the World Health Organization and the National Medical Commission, allowing graduates to pursue medical careers worldwide."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The MBBS course is available in English, which helps international students, especially from India, to study without language barriers while pursuing MBBS abroad."
+                },
+                {
+                    "Heading": "High-Quality Education System",
+                    "Details": "Bukhara State Medical Institute follows international medical education standards with a well-structured curriculum combining theory and practical training."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students receive hands-on training in affiliated hospitals, which is essential for gaining real-world experience during MBBS in Bukhara State Medical Institute."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The institute has highly qualified and experienced professors who focus on both academic excellence and practical knowledge."
+                },
+                {
+                    "Heading": "Safe & Peaceful Environment",
+                    "Details": "Located in Bukhara, a historic and calm city in Uzbekistan, it provides a safe and student-friendly environment."
+                },
+                {
+                    "Heading": "Low Cost of Living",
+                    "Details": "Apart from low tuition fees, the cost of living in Uzbekistan is very affordable, including accommodation, food, and transportation."
+                },
+                {
+                    "Heading": "Simple Admission Process",
+                    "Details": "Admission is easy and hassle-free. Indian students only need to qualify NEET to pursue MBBS in abroad."
+                },
+                {
+                    "Heading": "Global Career Opportunities",
+                    "Details": "Graduates can appear for exams like FMGE/NExT, USMLE, and PLAB, opening doors to international medical careers after completing MBBS abroad."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Bukhara State Medical Institute is designed according to international medical education standards. It is a 6-year program (including internship) that focuses on building a strong foundation in basic sciences followed by advanced clinical training. The curriculum is divided into pre-clinical, para-clinical, and clinical phases, ensuring students are well-prepared for global medical careers and licensing exams.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Medical Chemistry, Bioorganic Chemistry, Anatomy, Histology, Embryology, Psychology"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Physiology, Biochemistry, Microbiology, Patient Care, Emergency Medicine"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Pathology, Pharmacology, Pathophysiology, Internal Medicine (Intro), General Surgery"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Pediatrics, Oncology, Neurology, Obstetrics & Gynecology, Surgery"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Psychiatry, Cardiology, ENT, Clinical Immunology, Medical Genetics"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship (Clinical rotations in Medicine, Surgery, Pediatrics, OB-GYN, etc.)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Bukhara State Medical Institute is highly affordable, making it a top choice for students planning to study MBBS abroad and pursue MBBS in Uzbekistan. Below is the approximate and updated fee structure for international students:",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "$3,200",
+                    "hostel": "$400–$600",
+                    "total": "₹3.1 – 3.3 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Bukhara State Medical Institute follows international medical education standards and is designed to provide both theoretical knowledge and practical clinical training for students planning to study MBBS abroad.",
+        "duration": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Phase": "Total Course Duration",
+                    "Duration": "6 Years",
+                    "Details": "Complete MBBS program including academics and internship"
+                },
+                {
+                    "Phase": "Academic Study",
+                    "Duration": "5 Years",
+                    "Details": "Classroom learning + practical training (pre-clinical, para-clinical & clinical subjects)"
+                },
+                {
+                    "Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Mandatory clinical internship in affiliated hospitals"
+                }
+            ]
+        },
+        "studentSupport": "Bukhara State Medical Institute provides a strong and well-structured student support system, making it an excellent choice for students planning to study MBBS abroad and pursue MBBS in Uzbekistan. The university ensures that both academic and personal needs of students are taken care of, helping them adjust smoothly to a new environment.\n\nThe institute offers modern hostel and accommodation facilities for international students, including Indian students. Hostels are well-furnished with essential amenities such as beds, study tables, Wi-Fi, heating systems, and 24/7 electricity and water supply. Separate hostel arrangements are available for boys and girls, with strict security systems, wardens, and CCTV surveillance to ensure student safety. Additionally, facilities like laundry, gym, shared kitchens, and recreational areas are also provided, creating a comfortable living environment.\n\nTo further support accommodation needs, the university has expanded its housing capacity with multiple dormitories and even provides assistance in finding rental apartments near the campus for students who prefer off-campus living. Dedicated support centers and online assistance systems are also available to help students with accommodation-related queries.\n\nIn terms of academic support, the university provides advanced laboratories, digital classrooms, libraries, and experienced faculty guidance. Students receive continuous mentoring and hands-on clinical training in affiliated hospitals, which is essential for building practical skills during MBBS in Bukhara State Medical Institute.\n\nThe institute also ensures food and daily living support, with Indian food options available in hostels and nearby areas. This helps international students feel more comfortable and reduces cultural adjustment challenges.\n\nAdditionally, the university promotes student well-being through sports facilities, cultural activities, student clubs, and research opportunities, encouraging overall personality development. A multicultural environment with students from different countries helps build global exposure and networking opportunities.",
+        "recognition": "Bukhara State Medical Institute is a well-established government medical university in Uzbekistan, known for its strong academic affiliations, global recognition, and consistent achievements in the field of medical education. The institute is affiliated with the Ministry of Health of Uzbekistan, which ensures that its academic programs meet national and international standards. This affiliation guarantees quality education and structured clinical training for students pursuing MBBS in Uzbekistan.\n\nIn terms of recognition, the institute is approved by major global medical bodies such as the World Health Organization and the National Medical Commission. It is also listed in international medical directories like WDOMS, which confirms the global validity of its MBBS degree. These recognitions are especially important for Indian students who wish to study MBBS abroad, as they allow graduates to appear for licensing exams like FMGE/NExT, USMLE, and PLAB.\n\nTalking about achievements, Bukhara State Medical Institute has made significant contributions to medical education and healthcare research. The university regularly organizes international conferences, seminars, and workshops that enhance academic exposure for students and faculty. It has developed modern infrastructure, advanced laboratories, and well-equipped teaching hospitals to support practical learning. Over the years, the institute has produced thousands of skilled medical professionals who are now successfully working in different parts of the world.\n\nWith its strong government affiliation, global recognition, and continuous academic achievements, Bukhara State Medical Institute stands as a reliable and preferred destination for students planning to pursue MBBS in abroad, offering quality education and excellent career opportunities in the medical field.",
+        "hostelFacilities": "The institute offers modern hostel and accommodation facilities for international students, including Indian students. Hostels are well-furnished with essential amenities such as beds, study tables, Wi-Fi, heating systems, and 24/7 electricity and water supply. Separate hostel arrangements are available for boys and girls, with strict security systems, wardens, and CCTV surveillance to ensure student safety. Additionally, facilities like laundry, gym, shared kitchens, and recreational areas are also provided, creating a comfortable living environment. Indian food options are available in hostels and nearby areas, helping international students feel more comfortable.",
+        "studentLife": "Student life at Bukhara State Medical Institute is vibrant, comfortable, and well-balanced, making it an excellent experience for students pursuing MBBS in Uzbekistan. The institute focuses not only on academics but also on the overall development and well-being of students who choose to study MBBS abroad in Bukhara, Uzbekistan.\n\nThe campus provides a multicultural environment with students from different countries, especially India, which helps international students adapt quickly and feel at home. The university offers well-maintained hostels equipped with modern facilities such as Wi-Fi, heating, security, and hygienic food options, including Indian cuisine. This ensures a comfortable and safe stay for students during their MBBS abroad journey.\n\nApart from academics, students actively participate in extracurricular activities like sports, cultural events, and student clubs. The institute organizes various programs, festivals, and competitions throughout the year, allowing students to showcase their talents and reduce academic stress. Indian festivals such as Diwali and Holi are also celebrated, creating a familiar and enjoyable environment for Indian students studying MBBS in Bukhara State Medical Institute.\n\nThe city of Bukhara is known for its peaceful atmosphere and rich cultural heritage. Students can explore historical landmarks, markets, parks, and cafes during their free time, enhancing their overall experience of studying MBBS abroad. Public transportation is affordable and easily accessible, making daily life convenient for students.\n\nAcademically, students benefit from a structured schedule that balances classroom learning with clinical training in hospitals. This helps them gain both theoretical knowledge and practical experience, which is essential for building a successful medical career.",
+        "whyChooseUsIntro": "Choosing the right consultancy is a key step when planning to study MBBS abroad, and iExplain Education is a trusted partner for students seeking admission to top universities like Bukhara State Medical Institute. Here are the main reasons why students prefer iExplain Education for MBBS in Uzbekistan:",
+        "whyChooseUs": [
+            "Expert Counseling for MBBS Abroad – Get professional guidance to choose the best option for MBBS in abroad based on your academic profile, budget, and career goals.",
+            "Complete Admission Assistance – End-to-end support for application, documentation, and securing admission in Bukhara State Medical Institute.",
+            "Visa Processing Support – Proper guidance for visa documentation with a high success rate, ensuring a smooth process to study MBBS abroad.",
+            "Personalized Guidance – One-on-one counseling to help students select the right university for MBBS in Uzbekistan.",
+            "Transparent & Affordable Process – Clear and honest information about fees, admission process, and expenses with no hidden charges.",
+            "Pre-Departure Assistance – Support with travel arrangements, forex exchange, and complete guidance before leaving India.",
+            "Post-Arrival Support – Assistance with accommodation and settling in Bukhara, Uzbekistan.",
+            "FMGE/NExT Guidance – Guidance and support for licensing exams after completing MBBS abroad.",
+            "Strong University Network – Direct partnerships with reputed universities ensure safe and reliable admission.",
+            "Student-Centric Approach – Focus on student satisfaction, safety, and long-term career success."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled university application form"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport (minimum 18–24 months validity)"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "General health certificate"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Issued by the university after approval"
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Student visa application & supporting documents"
+            }
+        ],
+        "conclusion": "In conclusion, preparing all the required documents accurately and on time is a crucial step for securing admission to Bukhara State Medical Institute. From academic certificates and NEET scorecard to passport, medical reports, and visa documents, each requirement plays an important role in ensuring a smooth and hassle-free admission process for students planning to study MBBS abroad. Proper verification, attestation, and timely submission of documents help avoid delays and increase the chances of successful admission. For students aiming to pursue MBBS in Uzbekistan, staying organized and following all guidelines carefully is essential. Overall, having complete and accurate documentation ensures a seamless transition into your medical journey and helps you confidently begin your MBBS in abroad at Bukhara State Medical Institute, paving the way for a successful global medical career.",
+        "faqs": [
+            {
+                "question": "Is Bukhara State Medical Institute a good choice for MBBS abroad?",
+                "answer": "Yes, Bukhara State Medical Institute is a popular and reliable option for MBBS in Uzbekistan. It offers quality education, affordable fees, and global recognition, making it a great choice for students who want to study MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at Bukhara State Medical Institute?",
+                "answer": "The total duration of MBBS in Bukhara State Medical Institute is 6 years, including 5 years of academic study and 1 year of mandatory internship."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who wish to pursue MBBS abroad and practice in India."
+            },
+            {
+                "question": "What is the medium of teaching?",
+                "answer": "The MBBS program is offered in English medium for international students, which makes it easy for Indian students to study without language barriers."
+            },
+            {
+                "question": "What is the total fee for MBBS?",
+                "answer": "The total cost of MBBS in Uzbekistan at this institute is approximately ₹19–22 lakhs for the complete course, making it a budget-friendly option for MBBS abroad."
+            },
+            {
+                "question": "Is the degree valid in India?",
+                "answer": "Yes, the degree is recognized by the National Medical Commission and the World Health Organization. Students need to clear FMGE/NExT to practice in India."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the institute provides well-equipped hostels with modern amenities like Wi-Fi, security, and hygienic food, including Indian food options."
+            },
+            {
+                "question": "Is Uzbekistan safe for Indian students?",
+                "answer": "Yes, Uzbekistan is a safe country for international students. Bukhara is peaceful and student-friendly."
+            },
+            {
+                "question": "What are the eligibility criteria for admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology with at least 50% marks (40% for reserved categories) and must qualify NEET."
+            },
+            {
+                "question": "What career options are available after MBBS?",
+                "answer": "After completing MBBS abroad, students can appear for licensing exams like FMGE/NExT (India), USMLE (USA), or PLAB (UK), or pursue postgraduate studies and medical practice globally."
+            }
+        ]
+    },
+
+    "andijan-state-medical-institute": {
+        "title": "Andijan State Medical Institute",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Andijan_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Andijan_Mobile.webp",
+        "intro": {
+            "text": "Andijan State Medical Institute is one of the prominent government medical universities in Uzbekistan, known for offering quality medical education at an affordable cost. Established in 1955, the institute has built a strong academic reputation and has become a preferred destination for international students, especially those planning to study MBBS abroad and pursue MBBS in Uzbekistan.\n\nFor students aiming to pursue MBBS in abroad, Andijan State Medical Institute provides a well-structured and globally recognized curriculum that focuses on both theoretical knowledge and practical clinical training. The university offers MBBS programs in English medium, making it convenient for Indian and other international students. With modern infrastructure, advanced laboratories, and experienced faculty, the institute ensures high-quality education aligned with global standards.\n\nOne of the major advantages of choosing MBBS in Andijan State Medical Institute is its affordable fee structure. Compared to private medical colleges in India, the cost of MBBS abroad here is significantly lower, making it an ideal option for students from middle-income families. Additionally, the cost of living in Uzbekistan is quite economical, which further reduces the overall expenses.\n\nThe institute is recognized by international medical bodies such as the World Health Organization and the National Medical Commission, ensuring global acceptance of its medical degree. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the city of Andijan, the institute provides a safe, peaceful, and student-friendly environment. The university offers a multicultural atmosphere with students from different countries, helping them gain international exposure while studying MBBS in Uzbekistan."
+        },
+        "quickOverview": {
+            "University Name": "Andijan State Medical Institute",
+            "Location": "Andijan, Uzbekistan",
+            "Established": "1955",
+            "Type": "Government Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Medium of Teaching": "English & Uzbek",
+            "Recognition": "World Health Organization, National Medical Commission",
+            "Eligibility": "10+2 with Physics, Chemistry, Biology + NEET Qualification (for Indian students)",
+            "Admission Process": "Direct Admission (No Entrance Exam; NEET required for Indian students)"
+        },
+        "benefits": {
+            "intro": "Choosing the right medical university is crucial for a successful career in medicine, and Andijan State Medical Institute stands out as a top choice for students planning to study MBBS abroad. Here are the key reasons to pursue MBBS in Uzbekistan at this institute:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by the World Health Organization and the National Medical Commission, ensuring that graduates can practice medicine internationally and appear for exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Affordable Fee Structure",
+                    "Details": "Compared to private medical colleges in India, the tuition fees at Andijan State Medical Institute are highly economical, making it an ideal option for students seeking low-cost MBBS abroad."
+                },
+                {
+                    "Heading": "English-Medium Education",
+                    "Details": "The MBBS program is offered in English for international students, enabling Indian and other foreign students to study without language barriers."
+                },
+                {
+                    "Heading": "High-Quality Education",
+                    "Details": "The institute offers a structured MBBS curriculum that balances theoretical knowledge with practical clinical training, following international standards for medical education."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students get hands-on experience in affiliated hospitals, which is critical for practical learning and developing clinical skills required for a global medical career."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The university employs qualified and experienced professors who focus on both academic excellence and practical skill development."
+                },
+                {
+                    "Heading": "Safe and Peaceful Environment",
+                    "Details": "Andijan is a safe, calm, and student-friendly city, providing a conducive environment for studying MBBS abroad."
+                },
+                {
+                    "Heading": "Modern Infrastructure & Facilities",
+                    "Details": "The campus is equipped with advanced laboratories, digital classrooms, libraries, and hostel facilities to ensure a comfortable learning experience."
+                },
+                {
+                    "Heading": "Affordable Living Costs",
+                    "Details": "Apart from tuition, the cost of living in Uzbekistan is low, including accommodation, food, and transport, reducing the overall expense of MBBS in abroad."
+                },
+                {
+                    "Heading": "Multicultural Student Community",
+                    "Details": "The university hosts students from India, Asia, and other countries, offering exposure to diverse cultures and global networking opportunities."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Andijan State Medical Institute is designed to provide a comprehensive medical education that balances theoretical knowledge with practical clinical training. The program follows international medical standards and is ideal for students planning to study MBBS abroad. The course duration is 6 years, including 5 years of academic study and 1-year internship.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry, Medical Chemistry, Histology, Embryology, Psychology"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology, Community Medicine, Patient Care, Emergency Medicine"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "General Medicine, General Surgery, Internal Medicine basics, Clinical Skills, Paraclinical subjects"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Obstetrics & Gynecology, Pediatrics, ENT, Ophthalmology, Cardiology, Neurology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Surgery (Advanced), Medicine (Advanced), Psychiatry, Oncology, Clinical Immunology, Medical Genetics"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship / Clinical Rotations (Medicine, Surgery, Pediatrics, OB-GYN, Emergency, and Specialty Departments)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Andijan State Medical Institute is considered highly affordable, making it an attractive option for students who want to study MBBS abroad and pursue MBBS in Uzbekistan. Below is the approximate fee breakdown for international students:",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "$3,400",
+                    "hostel": "$500–$700",
+                    "total": "₹3.3 – 3.5 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Andijan State Medical Institute is designed to provide a comprehensive medical education combining theoretical knowledge with practical clinical exposure. The total duration of the course is 6 years, which includes 5 years of academic study and 1 year of mandatory internship. This duration is internationally recognized and prepares students for licensing exams such as FMGE/NExT (India), USMLE (USA), and PLAB (UK), making it ideal for students planning to study MBBS abroad.",
+        "duration": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Phase": "Total MBBS Duration",
+                    "Duration": "6 Years",
+                    "Details": "Complete course including internship"
+                },
+                {
+                    "Phase": "Academic Study",
+                    "Duration": "5 Years",
+                    "Details": "Covers pre-clinical, para-clinical, and clinical subjects"
+                },
+                {
+                    "Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Hands-on practical training in affiliated hospitals"
+                }
+            ]
+        },
+        "studentSupport": "Andijan State Medical Institute provides a comprehensive and student-friendly support system, making it an ideal choice for students planning to study MBBS abroad and pursue MBBS in Uzbekistan. The university ensures that international students, including Indian students, have a comfortable and secure environment for both academic and personal growth. The institute offers modern hostel facilities with separate accommodations for boys and girls. Hostels are equipped with essential amenities such as Wi-Fi, 24/7 electricity and water supply, study tables, beds, heating systems, and round-the-clock security with CCTV surveillance. Additionally, the hostels provide recreational areas, laundry services, and Indian food options to help international students adjust easily to campus life. Academically, the university emphasizes strong student support through qualified and experienced faculty members who provide guidance, mentoring, and personalized attention. Students have access to well-equipped laboratories, digital classrooms, and extensive libraries to facilitate research and learning. The institute also ensures early exposure to clinical practice in affiliated hospitals, which is essential for developing practical medical skills. Beyond academics, Andijan State Medical Institute promotes holistic student development. The university organizes extracurricular activities, sports, cultural events, and student clubs that encourage interaction, teamwork, and leadership skills. International students also benefit from a multicultural environment, gaining exposure to diverse cultures while building global networks. The institute also provides pre-departure and post-arrival support, including assistance with visa processing, travel arrangements, and settling into the city of Andijan.",
+        "recognition": "Andijan State Medical Institute is a government-run medical university in Uzbekistan, known for its quality medical education, global recognition, and strong academic achievements. The university is officially affiliated with the Ministry of Health of Uzbekistan, ensuring that its MBBS in Uzbekistan programs meet national and international standards for medical education. This affiliation guarantees structured learning, clinical training, and a recognized degree for students who wish to study MBBS abroad. In terms of recognition, the institute is approved by leading international medical organizations including the World Health Organization and is listed in the WDOMS directory. For Indian students, this recognition allows graduates to appear for the National Medical Commission screening exam (FMGE/NExT) to practice medicine in India. The global recognition also enables graduates to pursue further studies or medical careers in countries like the USA, UK, Canada, and Europe. The institute has a history of academic achievements including research publications, international conferences, and collaborations with reputed medical institutions. It has modern laboratories, teaching hospitals, and research centers that support students in both theoretical and practical learning. Over the years, thousands of graduates from Andijan State Medical Institute have gone on to successful medical careers worldwide, establishing the university’s reputation as a reliable institution for MBBS abroad.",
+        "hostelFacilities": "The institute offers modern hostel facilities with separate accommodations for boys and girls. Hostels are equipped with essential amenities such as Wi-Fi, 24/7 electricity and water supply, study tables, beds, heating systems, and round-the-clock security with CCTV surveillance. Additionally, the hostels provide recreational areas, laundry services, and Indian food options to help international students adjust easily to campus life. The city of Andijan is safe and student-friendly, offering affordable housing, transportation, and local amenities.",
+        "studentLife": "Student life at Andijan State Medical Institute is vibrant, safe, and well-balanced, providing an ideal environment for students pursuing MBBS in Uzbekistan and other international students who want to study MBBS abroad. The university focuses on creating a healthy balance between academics, practical clinical training, and extracurricular activities to ensure holistic development. The campus is equipped with modern facilities, including spacious classrooms, well-equipped laboratories, digital libraries, and research centers. These resources allow students to study efficiently, conduct research, and enhance their knowledge in both theoretical and practical aspects of medicine. The university also provides access to affiliated hospitals, giving students hands-on clinical experience under expert supervision, which is critical for building confidence and competence in real-life medical scenarios. Life outside academics is equally engaging. Students have access to sports facilities, cultural programs, clubs, and social events that encourage teamwork, creativity, and leadership skills. Indian and international festivals are celebrated on campus, helping foreign students feel at home and enjoy a multicultural atmosphere.",
+        "whyChooseUsIntro": "iExplain Education is a trusted consultancy that provides comprehensive guidance for students seeking MBBS abroad, including at top universities like Andijan State Medical Institute. Choosing the right consultancy can make the admission process smooth, hassle-free, and transparent. Here are the key reasons why students prefer iExplain Education for MBBS in Uzbekistan:",
+        "whyChooseUs": [
+            "Expert Counseling – Personalized guidance based on academic background, budget, and career goals for students aiming to study MBBS abroad.",
+            "Complete Admission Assistance – End-to-end support from filling applications to securing admission at Andijan State Medical Institute.",
+            "Visa Processing Support – Assistance with student visa documentation and approvals, ensuring a smooth transition to Uzbekistan.",
+            "Pre-Departure Guidance – Help with travel arrangements, foreign exchange, airport pickup, and settling into the city of Andijan.",
+            "Post-Arrival Support – Assistance with hostel accommodation, campus registration, and local orientation to help students adjust comfortably.",
+            "Transparent & Affordable Process – Clear information about fees, no hidden charges, and flexible payment options for MBBS in abroad.",
+            "FMGE/NExT Guidance – Support and preparation guidance for licensing exams after completing MBBS abroad, ensuring students can practice in India.",
+            "Strong University Network – Direct partnerships with reputed universities provide reliable and secure admission.",
+            "Student-Centric Approach – Focus on safety, satisfaction, and long-term career development of every student."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled university application form"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport with at least 18–24 months validity"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "General health certificate issued by a registered doctor"
+            },
+            {
+                "document": "Complete Medical Reports",
+                "details": "Health check-up reports including chest X-ray, blood tests"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Issued by the university after verification of documents"
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Student visa application and supporting papers"
+            }
+        ],
+        "conclusion": "In conclusion, Andijan State Medical Institute is an excellent choice for students aspiring to pursue MBBS abroad. With its globally recognized degree, affordable fee structure, English-medium education, and strong clinical exposure, it provides a solid foundation for a successful medical career. The institute’s modern infrastructure, experienced faculty, and safe, student-friendly environment in Andijan ensure a comfortable and enriching experience for international students. Moreover, with comprehensive support for admission, documentation, and post-arrival assistance, students can focus entirely on their studies and practical training. Overall, pursuing MBBS in Andijan State Medical Institute combines quality education, global recognition, and practical medical experience, making it one of the top choices for students looking to study MBBS in abroad and build a successful career in medicine.",
+        "faqs": [
+            {
+                "question": "Is Andijan State Medical Institute good for MBBS abroad?",
+                "answer": "Yes, Andijan State Medical Institute is a well-recognized government university offering quality medical education, affordable fees, and global recognition, making it ideal for students who want to study MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at Andijan State Medical Institute?",
+                "answer": "The MBBS course duration is 6 years, including 5 years of academic study and 1 year of mandatory internship."
+            },
+            {
+                "question": "Is NEET required for Indian students?",
+                "answer": "Yes, Indian students must qualify NEET to pursue MBBS in abroad and practice medicine in India."
+            },
+            {
+                "question": "What is the medium of teaching?",
+                "answer": "The MBBS program is taught in English for international students, making it convenient for Indian students."
+            },
+            {
+                "question": "How much does MBBS cost at this university?",
+                "answer": "The total cost of MBBS in Andijan State Medical Institute is approximately ₹22–24 Lakhs for the full 6-year course, including tuition, hostel, and basic expenses."
+            },
+            {
+                "question": "Is the MBBS degree recognized in India?",
+                "answer": "Yes, the degree is recognized by the National Medical Commission, and graduates can appear for FMGE/NExT to practice in India. It is also recognized by the World Health Organization for global practice."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the institute provides modern hostel facilities with Wi-Fi, security, hygienic food, and recreational areas, including Indian food options."
+            },
+            {
+                "question": "Is Andijan safe for international students?",
+                "answer": "Yes, Andijan is a safe and student-friendly city with a peaceful environment suitable for international students."
+            },
+            {
+                "question": "What are the eligibility criteria for admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology with at least 50% marks (40% for reserved categories) and must qualify for NEET."
+            },
+            {
+                "question": "What career opportunities are available after MBBS abroad?",
+                "answer": "Graduates can pursue postgraduate studies or medical practice globally by appearing in licensing exams such as FMGE/NExT (India), USMLE (USA), or PLAB (UK). They can also specialize in various medical fields or work in hospitals and healthcare institutions worldwide."
+            }
+        ]
     }
+
 };

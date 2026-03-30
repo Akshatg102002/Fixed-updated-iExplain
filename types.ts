@@ -285,55 +285,156 @@ export interface StudyAbroadDetailData {
   }[];
 }
 
+// ─── Shared primitives ────────────────────────────────────────────────────────
+
+interface TitledPoint {
+  title: string;
+  description: string;
+}
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+// ─── College fee structures (vary by state) ───────────────────────────────────
+
+interface CollegeMPRow {
+  name: string;
+  estd: number;
+  annualFee: string;
+  nriFee: string;
+}
+
+interface CollegeRajasthanRow {
+  name: string;
+  estd: number;
+  stateQuota: string;
+  managementQuota: string;
+}
+
+interface CollegeUPHaryanaRow {
+  name: string;
+  estd: number;
+  place: string;
+  annualFee: string;
+}
+
+interface CollegeBiharRow {
+  name: string;
+  location: string;
+  annualFee: string;
+  nriFee: string;
+}
+
+interface CollegeMaharashtraRow {
+  name: string;
+  estd: number;
+  place: string;
+  annualFee: string;
+}
+
+type CollegeRow =
+  | CollegeMPRow
+  | CollegeRajasthanRow
+  | CollegeUPHaryanaRow
+  | CollegeBiharRow
+  | CollegeMaharashtraRow;
+
+interface StateColleges {
+  state: string;
+  feeHeaders: string[];
+  colleges: CollegeRow[];
+}
+
+// ─── Section interfaces ───────────────────────────────────────────────────────
+
+interface OverviewSection {
+  title: string;
+  table: { particular: string; details: string }[];
+}
+
+interface WhySection {
+  title: string;
+  description: string;
+  points: TitledPoint[];
+}
+
+interface EligibilitySection {
+  title: string;
+  table: { criteria: string; details: string }[];
+}
+
+interface DocumentsSection {
+  title: string;
+  subtitle: string;
+  table: { document: string; details: string }[];
+  quickList: string[];
+}
+
+interface CurriculumPhase {
+  phase: string;
+  subjects: string;
+}
+
+interface CurriculumYearRow {
+  year: string;
+  subjects: string;
+}
+
+interface CurriculumSection {
+  title: string;
+  description: string;
+  phases: CurriculumPhase[];
+  internship: string;
+  subjectsTable: CurriculumYearRow[];
+}
+
+interface TopCollegesSection {
+  title: string;
+  description: string;
+  stateWise: StateColleges[];
+}
+
+interface CareerScopeSection {
+  title: string;
+  description: string;
+  paths: TitledPoint[];
+}
+
+interface AdvantagesSection {
+  title: string;
+  description: string;
+  points: TitledPoint[];
+}
+
+interface WhyIExplainSection {
+  title: string;
+  description: string;
+  points: TitledPoint[];
+}
+
+interface FAQSection {
+  title: string;
+  items: FAQItem[];
+}
+
+// ─── Root interface ───────────────────────────────────────────────────────────
+
 export interface StudyIndiaDetailData {
   title: string;
   heroImage: string;
   intro: string;
-  why: {
-    title: string;
-    points: string[];
-  };
-  duration: {
-    title: string;
-    cards: string[];
-  };
-  eligibility: {
-    title: string;
-    points: string[];
-  };
-  documents: {
-    title: string;
-    subtitle: string;
-    points: string[];
-  };
-  process: {
-    title: string;
-    steps: string[];
-  };
-  economical: {
-    title: string;
-    points: string[];
-  };
-  advantages: {
-    title: string;
-    points: string[];
-  };
-  international: {
-    title: string;
-    points: string[];
-  };
-  dates: {
-    title: string;
-    points: string[];
-  };
-  govt: {
-    title: string;
-    points: string[];
-  };
-  explore: {
-    title: string;
-    points: string[];
-  };
+  overview: OverviewSection;
+  why: WhySection;
+  eligibility: EligibilitySection;
+  documents: DocumentsSection;
+  curriculum: CurriculumSection;
+  topColleges: TopCollegesSection;
+  careerScope: CareerScopeSection;
+  advantages: AdvantagesSection;
+  whyIExplain: WhyIExplainSection;
+  faqs: FAQSection;
 }
 
 export interface BlogCategory {

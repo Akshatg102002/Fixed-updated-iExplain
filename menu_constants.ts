@@ -5,7 +5,7 @@ export const FOOTER_COLLEGES = {
     { country: "Georgia", code: "GE", names: ["Tbilisi State Medical University", "Batumi Shota Rustaveli State University", "David Tvildiani Medical University", "European University Georgia", "Georgian National University"] },
     { country: "Kazakhstan", code: "KZ", names: ["Al-Farabi Kazakh National University", "Kazakh National Medical University", "Astana Medical University", "South Kazakhstan Medical Academy"] },
     { country: "Kyrgyzstan", code: "KG", names: ["Osh State University", "Jalal-Abad State University", "International School of Medicine", "Asian Medical Institute"] },
-    { country: "Uzbekistan", code: "UZ", names: ["Tashkent Medical Academy", "Samarkand State Medical University", "Bukhara State Medical Institute"] },
+    { country: "Uzbekistan", code: "UZ", names: ["Tashkent State Medical University", "Samarkand State Medical University", "Bukhara State Medical Institute"] },
     { country: "China", code: "CN", names: ["Nanjing Medical University", "Jilin University", "China Medical University", "Dalian Medical University"] },
     { country: "Nepal", code: "NP", names: ["Tribhuvan University Institute of Medicine", "Kathmandu University School of Medical Sciences", "B.P. Koirala Institute of Health Sciences"] },
     { country: "Bangladesh", code: "BD", names: ["Dhaka National Medical College", "Bangladesh Medical College", "Jahurul Islam Medical College"] },

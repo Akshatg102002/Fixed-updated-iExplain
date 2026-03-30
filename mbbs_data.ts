@@ -1274,7 +1274,7 @@ These advantages make MBBS Russia one of the most preferred destinations for med
         recognition: "WHO, NMC"
       },
       {
-        name: "Tashkent State Medical Academy",
+        name: "Tashkent State Medical University",
         description: "Tashkent Medical Academy is situated in the capital city of Uzbekistan. It is one of the best medical universities in Uzbekistan. It offers advanced medical training, academic exposure, and clinical exposure to students.",
         established: "2005",
         location: "Tashkent, Uzbekistan",
