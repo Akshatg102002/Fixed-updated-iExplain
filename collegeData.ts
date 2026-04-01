@@ -4680,7 +4680,6 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             }
         ]
     },
-
     "andijan-state-medical-institute": {
         "title": "Andijan State Medical Institute",
         "coursetype": "MBBS",
@@ -4946,6 +4945,2082 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
                 "answer": "Graduates can pursue postgraduate studies or medical practice globally by appearing in licensing exams such as FMGE/NExT (India), USMLE (USA), or PLAB (UK). They can also specialize in various medical fields or work in hospitals and healthcare institutions worldwide."
             }
         ]
-    }
+    },
+    "nanjing-medical-university": {
+        "title": "Nanjing Medical University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Nanjing_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Nanjing_Mobile.webp",
+        "intro": {
+            "text": "Nanjing Medical University is a prestigious and globally recognized government medical university located in Nanjing, the capital of Jiangsu Province, China. Established in 1934, it has evolved over the decades into one of China’s leading centers for medical education, research, and healthcare training. With a rich legacy of excellence spanning nearly a century, the university is known for its commitment to producing skilled and competent medical professionals, making it a preferred destination for students planning to study MBBS abroad and pursue MBBS in China.\n\nThe university offers a comprehensive MBBS program in English, specifically designed for international students, including Indian students. The curriculum integrates theoretical knowledge, practical skills, and clinical exposure in a stepwise manner, ensuring that students are fully prepared to meet the challenges of global medical practice. Students are trained in modern medical sciences, including anatomy, physiology, biochemistry, pathology, pharmacology, and advanced clinical disciplines such as surgery, internal medicine, pediatrics, obstetrics, and gynecology. The university also focuses on preparing students for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK), ensuring global career opportunities.\n\nNanjing Medical University emphasizes research and innovation, providing state-of-the-art laboratories, simulation centers, digital libraries, and research institutes. Students are encouraged to participate in scientific research projects and medical conferences, which enhances their understanding of modern medical advancements and prepares them for postgraduate studies and specialization programs worldwide. The university’s affiliated hospitals are equipped with advanced diagnostic and treatment facilities, providing hands-on clinical experience and training under the supervision of experienced faculty and practicing doctors.\n\nThe campus is designed to provide a safe, comfortable, and student-friendly environment, with modern hostel accommodations, recreational facilities, sports complexes, and cafeterias serving international cuisines. The university also provides dedicated support services for international students, including pre-departure guidance, orientation programs, visa assistance, and counseling services. This ensures that students can adjust easily to life in China and focus entirely on their studies without administrative or logistical difficulties."
+        },
+        "quickOverview": {
+            "University Name": "Nanjing Medical University",
+            "Location": "Nanjing, China",
+            "Established": "1934",
+            "Type": "Government Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Medium of Teaching": "English & Chinese",
+            "Eligibility": "10+2 with Physics, Chemistry, Biology + NEET Qualification (for Indian students)",
+            "Admission Process": "Direct Admission (No Entrance Exam; NEET required for Indian students)",
+            "Hostel Facility": "Available (Modern hostels with separate accommodation for boys & girls)",
+            "Clinical Training": "Provided in affiliated hospitals with practical hands-on experience"
+        },
+        "benefits": {
+            "intro": "Pursuing MBBS in Nanjing Medical University is a popular choice for international students, especially from India, due to its globally recognized degree, affordable fees, and excellent academic environment. Here are the main reasons to choose this university for MBBS abroad:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by the World Health Organization and the National Medical Commission, allowing graduates to practice medicine internationally and appear for licensing exams such as FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "Compared to private medical colleges in India, Nanjing Medical University offers low-cost MBBS abroad with no capitation or donation fees, making it an ideal option for budget-conscious students."
+                },
+                {
+                    "Heading": "English-Medium Program",
+                    "Details": "The MBBS program is taught in English, making it convenient for international students to follow the curriculum without language barriers while still offering Chinese language courses for daily life and communication with patients."
+                },
+                {
+                    "Heading": "High-Quality Education & Curriculum",
+                    "Details": "The university follows a structured MBBS syllabus that combines theoretical knowledge, practical training, and clinical rotations. Students gain exposure to modern medical techniques, research, and healthcare practices, aligning with international standards."
+                },
+                {
+                    "Heading": "Extensive Clinical Exposure",
+                    "Details": "Students train in affiliated teaching hospitals with advanced facilities, gaining hands-on experience in internal medicine, surgery, pediatrics, obstetrics, gynecology, and other specializations. This practical training ensures readiness for global medical practice."
+                },
+                {
+                    "Heading": "Experienced Faculty & Research Opportunities",
+                    "Details": "Nanjing Medical University has qualified and experienced professors who provide academic mentoring, research guidance, and practical skill development, helping students excel in both theory and clinical practice."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Nanjing is a safe, culturally rich, and student-friendly city. The university provides modern hostels, recreational facilities, and support services for international students."
+                },
+                {
+                    "Heading": "Affordable Living Costs",
+                    "Details": "The cost of living in Nanjing is reasonable, including accommodation, food, and transportation, which reduces the overall expenses of pursuing MBBS abroad."
+                },
+                {
+                    "Heading": "Multicultural Campus",
+                    "Details": "The university hosts students from India, Asia, Africa, and other countries, providing a multicultural environment that promotes cross-cultural understanding and global networking."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at Nanjing Medical University is a 6-year course, designed to provide students with a strong foundation in medical sciences, combined with practical clinical exposure. The syllabus follows international standards and prepares students for global licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK), making it ideal for students who want to study MBBS abroad.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Human Anatomy, Histology, Embryology, Medical Chemistry, Physics, Psychology"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Physiology, Biochemistry, Microbiology, Pathophysiology, Introduction to Clinical Medicine"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "General Pathology, Pharmacology, Community Medicine, Forensic Medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "Internal Medicine, Surgery, Obstetrics & Gynecology, Pediatrics"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "ENT, Ophthalmology, Psychiatry, Dermatology, Clinical Immunology"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship – Clinical rotations in Internal Medicine, Surgery, Pediatrics, OB-GYN, and other departments"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Nanjing Medical University is considered affordable compared to many private medical colleges in India, making it a popular choice for students who want to study MBBS abroad. Below is the typical fee breakdown for international students enrolled in the 6‑year MBBS (English medium) program:",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "CNY 34,000",
+                    "hostel": "CNY 5,000 – 8,000",
+                    "total": "₹4.4 – 4.7 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Nanjing Medical University is a 6-year course, structured to provide a combination of theoretical knowledge, practical training, and clinical exposure. The duration is divided as follows for students planning to study MBBS abroad:",
+        "duration": {
+            "headers": ["Component", "Duration"],
+            "table": [
+                {
+                    "Component": "Pre-Clinical (Basic Sciences)",
+                    "Duration": "1st – 2nd Year"
+                },
+                {
+                    "Component": "Para-Clinical & Clinical Subjects",
+                    "Duration": "3rd – 5th Year"
+                },
+                {
+                    "Component": "Clinical Internship / Rotations",
+                    "Duration": "6th Year (Full-year hands-on training in affiliated hospitals)"
+                }
+            ]
+        },
+        "studentSupport": "Nanjing Medical University offers a comprehensive and student‑centric support system designed to help international students thrive academically, socially, and personally while they study MBBS abroad. The university’s support services ensure students can focus confidently on their medical education without unnecessary stress or difficulty. The university provides dedicated international student support services, where a specialized team assists with the admission process, documentation, and visa procedures. This helps students from different countries, especially those applying for MBBS in China, navigate the complex administrative requirements with clarity and ease. Before departure, students receive guidance on travel, accommodation, and pre‑departure preparations, ensuring they are well‑informed and ready for life in China. On arrival, the university conducts orientation programs to introduce students to campus life, academic expectations, local culture, and safety procedures. This helps new students feel comfortable and settle in quickly. The campus also has multilingual staff and mentors available to assist international students with academic queries, language challenges, and cultural adaptation, making the transition to university life much smoother. For ongoing academic support, students have access to modern libraries, online learning resources, digital classrooms, and research labs. Experienced faculty members provide personalized academic guidance, tutoring, and mentoring whenever needed. Clinical training takes place in affiliated teaching hospitals, where students receive hands‑on experience under the supervision of skilled clinicians—a major advantage for those pursuing MBBS in abroad.",
+        "recognition": "Nanjing Medical University holds a strong reputation both within China and globally, making it an excellent choice for students planning to study MBBS abroad. Established in 1934, the university has developed into one of China’s leading medical education and research institutions, known for its high academic standards and international cooperation. In terms of affiliation and recognition, Nanjing Medical University is officially approved by the Ministry of Education of the People’s Republic of China, ensuring the quality and validity of its medical programs. It is also recognized by major global medical organizations, including the World Health Organization and the National Medical Commission, which allows graduates to pursue careers internationally and appear for exams such as FMGE/NExT, USMLE, and PLAB. NMU is also listed in international medical directories (such as FAIMER/WDOMS), further validating its global recognition and acceptance. The university has earned notable achievements in academics and research. It is designated as a “Double First-Class” institution under China’s national initiative to develop world‑class universities, reflecting its emphasis on excellence in teaching and research. The university maintains strong research capabilities with numerous state‑level and provincial key laboratories, and a large network of 23 affiliated hospitals and more than 50 teaching hospitals across several Chinese provinces, offering extensive clinical training opportunities for MBBS students. NMU also actively promotes international cooperation and exchange programs with medical schools and research institutions from countries including the United States, Canada, the UK, Germany, Japan, and Australia, enhancing global exposure for students and faculty. Additionally, it celebrated its 90th anniversary in 2024, marking nearly a century of sustained contributions to medical education, research, and public health.",
+        "hostelFacilities": "The university ensures comfortable accommodation through modern hostel facilities. Hostels are well‑furnished, secure, and equipped with amenities like high‑speed internet, laundry facilities, common areas, and dining options, including provisions for international students’ dietary preferences. On‑campus and nearby off‑campus housing options are available to suit different budgets. The hostels are designed to provide a safe and supportive environment for students from different cultural backgrounds.",
+        "studentLife": "Student life at Nanjing Medical University is vibrant, culturally rich, and designed to provide a balanced academic and personal experience for students pursuing MBBS abroad. The university encourages holistic development by combining rigorous medical training with extracurricular engagement, cultural integration, and social networking. The campus hosts students from diverse countries, including India, Pakistan, Africa, and Southeast Asia, creating a multicultural environment that fosters global connections and cross-cultural understanding. International students are supported through orientation programs that introduce them to academic expectations, campus facilities, local culture, and city life in Nanjing. This helps students adjust quickly and feel at home in a new country. Academically, students benefit from modern classrooms, laboratories, simulation centers, and digital libraries. Practical exposure begins early in the program, with clinical rotations in affiliated hospitals that provide hands-on patient care under the guidance of experienced doctors and faculty. This ensures that students not only understand theoretical concepts but also develop essential medical skills. Outside the classroom, the university offers a variety of sports, cultural activities, clubs, and events. Students can participate in basketball, football, badminton, and other recreational activities, as well as cultural festivals that celebrate diversity on campus. These activities promote teamwork, leadership, and personal growth. Accommodation is provided through well-furnished hostels with modern amenities, including high-speed internet, laundry facilities, common areas, and safe dining options. The campus also has medical and counseling services available to support students’ mental and physical well-being.",
+        "whyChooseUsIntro": "iExplain Education is a trusted and experienced consultancy for students aspiring to pursue MBBS abroad, especially in top medical universities like Nanjing Medical University. Choosing iExplain Education ensures a smooth, transparent, and hassle-free admission process. Here are the key reasons to rely on iExplain Education:",
+        "whyChooseUs": [
+            "Expert Guidance & Counseling – iExplain Education provides personalized guidance on university selection, course details, and career planning. Students receive detailed counseling on pursuing MBBS in Nanjing Medical University, including eligibility criteria, fee structure, syllabus, and clinical opportunities.",
+            "Hassle-Free Admission Process – The team assists in preparing and verifying all required documents, applying to the university, and securing admission. This includes handling application forms, transcripts, passport copies, photos, and other mandatory paperwork.",
+            "NEET & Licensing Exam Support – For Indian students, iExplain Education offers guidance on NEET qualification and preparation for FMGE/NExT after completing MBBS abroad, ensuring students are fully prepared to practice medicine in India.",
+            "Visa & Travel Assistance – iExplain Education helps students with visa applications, travel arrangements, and pre-departure formalities. This ensures that students reach Nanjing smoothly and on time, without any administrative hurdles.",
+            "Hostel & Accommodation Support – The consultancy assists students in selecting suitable on-campus or off-campus accommodation, ensuring comfort, safety, and affordability during their stay in Nanjing.",
+            "Post-Arrival Assistance – After reaching Nanjing, iExplain Education continues to support students with university registration, orientation, local guidance, and integration into campus life, making the transition easier for international students.",
+            "Transparent & Reliable Services – iExplain Education maintains a high standard of transparency, ensuring no hidden fees or unnecessary intermediaries. Students and parents are kept informed at every step of the admission process.",
+            "Long-Term Career Support – Beyond admission, the consultancy provides advice on postgraduate studies, global licensing exams, and career pathways, helping students plan a successful medical career internationally."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Completed admission application form of Nanjing Medical University"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid international passport (minimum 18 months validity)"
+            },
+            {
+                "document": "10th & 12th Mark Sheets",
+                "details": "Academic transcripts showing Physics, Chemistry, Biology, and English scores"
+            },
+            {
+                "document": "NEET Score Card",
+                "details": "Mandatory for Indian students to qualify FMGE/NExT eligibility"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Verified copy for age proof"
+            },
+            {
+                "document": "Medical / Health Certificate",
+                "details": "Includes general health check-up and vaccination details"
+            },
+            {
+                "document": "HIV Test Report",
+                "details": "Required for health clearance"
+            },
+            {
+                "document": "Financial Proof / Bank Statement",
+                "details": "Proof of sufficient funds to cover tuition fees and living expenses"
+            },
+            {
+                "document": "Other Supporting Documents",
+                "details": "Any additional documents requested by the university or visa authorities"
+            }
+        ],
+        "conclusion": "Pursuing MBBS at Nanjing Medical University offers international students, especially from India, a globally recognized medical degree in an English-medium program, combined with excellent academic training, hands-on clinical exposure, and modern infrastructure. With a 6-year duration including a full-year internship, students gain strong theoretical knowledge as well as practical experience in affiliated hospitals, preparing them for licensing exams such as FMGE/NExT, USMLE, and PLAB. The university provides a safe, multicultural, and student-friendly environment, with modern hostels, libraries, laboratories, and extensive support services for international students. Recognized by the World Health Organization (WHO) and listed in global medical directories, the degree from Nanjing Medical University is valid worldwide, ensuring students can pursue a successful medical career globally. By choosing Nanjing Medical University through iExplain Education, students benefit from expert guidance, hassle-free admission, visa assistance, accommodation support, and ongoing mentorship, ensuring a smooth transition to studying MBBS abroad.",
+        "faqs": [
+            {
+                "question": "Is Nanjing Medical University recognized globally?",
+                "answer": "Yes. Nanjing Medical University is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) of India. Its degree is accepted worldwide, allowing graduates to practice medicine after clearing respective licensing exams such as FMGE/NExT, USMLE, and PLAB."
+            },
+            {
+                "question": "What is the duration of MBBS at Nanjing Medical University?",
+                "answer": "The MBBS program spans 6 years, including 5 years of academic and clinical training and 1 year of mandatory internship in affiliated hospitals, providing practical exposure to patient care."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program for international students is taught in English, with optional Chinese language courses to help students communicate during clinical practice and daily life in China."
+            },
+            {
+                "question": "What is the total fee for MBBS in Nanjing Medical University?",
+                "answer": "The tuition fee is approximately CNY 34,000 per year, and hostel fees range from CNY 5,000–8,000 per year, making it an affordable option for MBBS abroad. The total cost for tuition and accommodation for 6 years is roughly CNY 234,000–252,000."
+            },
+            {
+                "question": "Is NEET qualification required for Indian students?",
+                "answer": "Yes. Indian students must qualify NEET to be eligible for admission to MBBS abroad and to appear for the FMGE/NExT exam after graduation."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include: Passport and visa, 10th and 12th mark sheets / high school diploma, NEET score card (for Indian students), Health and HIV certificates, Financial proof / bank statement, and Passport-size photographs."
+            },
+            {
+                "question": "Are hostel and accommodation facilities available?",
+                "answer": "Yes. The university provides modern on-campus hostels with furnished rooms, internet, laundry facilities, and safe dining options. Separate hostels for boys and girls are available, ensuring comfort and security."
+            },
+            {
+                "question": "What support is provided to international students?",
+                "answer": "International students receive guidance for admission, visa processing, pre-departure orientation, airport pickup, university registration, accommodation, academic mentoring, and ongoing counselling."
+            },
+            {
+                "question": "Can I practice medicine in India after MBBS from Nanjing Medical University?",
+                "answer": "Yes. After completing MBBS, Indian students must clear the FMGE/NExT exam to practice in India. The degree from Nanjing Medical University is fully recognized by the National Medical Commission."
+            },
+            {
+                "question": "How is student life at Nanjing Medical University?",
+                "answer": "Student life is vibrant and multicultural, with academic, cultural, and sports activities. Students benefit from clubs, seminars, workshops, and a supportive campus community, ensuring a balanced and enriching MBBS journey abroad."
+            }
+        ]
+    },
+    "jilin-university": {
+        "title": "Jilin University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Jilin_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Jilin_Mobile.webp",
+        "intro": {
+            "text": "Jilin University is one of China’s premier higher education institutions, renowned for its excellence in medical education, research, and innovation. Established in 1946 and located in Changchun, Jilin Province, China, the university has grown into a multidisciplinary and globally recognized center of learning. For international students seeking to study MBBS abroad, Jilin University offers an ideal combination of quality education, modern infrastructure, and affordable tuition.\n\nThe university is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC), India, making its MBBS degree globally valid and eligible for licensing exams like FMGE/NExT, USMLE, and PLAB. Jilin University is known for its highly qualified faculty, advanced laboratories, and affiliation with numerous teaching hospitals, which provide students with extensive clinical exposure.\n\nOffering an English-medium MBBS program, Jilin University attracts students from India, Asia, Africa, and Europe, providing a multicultural and inclusive environment. The campus includes modern hostels, libraries, research centers, sports facilities, and student support services, ensuring that international students experience a safe, engaging, and academically rich environment.\n\nJilin University is associated with over 20 teaching hospitals, which provide students with an opportunity to work with experienced medical professionals, participate in research, and experience modern healthcare facilities. The university’s teachers are highly qualified, with some of them possessing higher qualifications and international experience, which enables them to mentor students throughout their academic journey.\n\nThe university campus offers a safe, student-friendly, and multicultural environment. The international students are offered well-furnished hostels that are equipped with facilities such as high-speed internet connectivity, study rooms, laundry facilities, and canteens that meet the dietary needs of international students. Apart from academic activities, Jilin University focuses on the holistic development of students through sports, cultural events, student clubs, and seminars. The multicultural environment of the university campus helps international students to establish relationships with Asian, African, European, and international students."
+        },
+        "quickOverview": {
+            "University Name": "Jilin University",
+            "Established": "1946",
+            "Location": "Changchun, Jilin Province, China",
+            "Type": "Public, Multidisciplinary, Research-Oriented",
+            "Medium of Instruction": "English (for international MBBS students)",
+            "Program Offered": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "Duration of MBBS": "6 Years (including 1-year clinical internship)",
+            "Global Recognition": "Recognized by WHO, NMC (India), listed in WDOMS",
+            "Affiliated Hospitals": "20+ teaching and clinical hospitals"
+        },
+        "benefits": {
+            "intro": "Choosing to pursue MBBS at Jilin University offers international students a combination of quality education, global recognition, affordable fees, and excellent clinical exposure, making it one of the top choices for students planning to study MBBS abroad. Here are the key reasons:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "Jilin University’s MBBS program is recognized by the World Health Organization (WHO), listed in the World Directory of Medical Schools (WDOMS), and approved by the National Medical Commission (NMC) of India. This recognition allows graduates to practice medicine internationally after clearing licensing exams such as FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The university offers a fully English-taught MBBS program, enabling international students to study without language barriers. Additionally, students have the opportunity to learn basic Chinese, which helps in communicating with patients during clinical rotations."
+                },
+                {
+                    "Heading": "Affordable Tuition & Living Costs",
+                    "Details": "Compared to private medical colleges in India and many Western countries, MBBS in Jilin University is highly cost-effective. Tuition fees are approximately CNY 33,000 – 36,000 per year, and hostel accommodation ranges from CNY 5,000 – 8,000 per year, making it a viable option for students seeking low-cost MBBS abroad."
+                },
+                {
+                    "Heading": "Experienced Faculty & Modern Infrastructure",
+                    "Details": "The university boasts highly qualified faculty with international experience, modern laboratories, research centers, digital libraries, and advanced simulation facilities, ensuring students receive quality education and practical training."
+                },
+                {
+                    "Heading": "Excellent Clinical Exposure",
+                    "Details": "Jilin University is affiliated with over 20 teaching hospitals and clinical centers, providing extensive hands-on experience in real hospital settings. Clinical rotations begin from the third year, and the final year includes a full-year internship, preparing students for professional medical practice."
+                },
+                {
+                    "Heading": "Multicultural & Supportive Campus Life",
+                    "Details": "The campus hosts students from all over the world, offering a multicultural environment that encourages global networking and cultural exchange. Modern hostels, recreational facilities, sports, and cultural activities contribute to a balanced student life."
+                },
+                {
+                    "Heading": "Research & International Collaborations",
+                    "Details": "Students have opportunities to participate in cutting-edge research projects and exchange programs through partnerships with universities and medical institutions in the USA, UK, Germany, Japan, and Australia. This enhances global exposure and career prospects."
+                },
+                {
+                    "Heading": "Career Opportunities",
+                    "Details": "Graduates of Jilin University are eligible for medical practice globally. Indian students can appear for FMGE/NExT, while other international students can pursue postgraduate studies or practice in their home countries or abroad."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at Jilin University is a 6-year course designed to provide international students with comprehensive theoretical knowledge, practical skills, and clinical exposure, preparing them for global medical careers.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "1st Year (Pre-Clinical)",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry, Histology & Embryology, Genetics, Medical Ethics, Introduction to Clinical Medicine, English for Medical Studies"
+                },
+                {
+                    "Year": "2nd Year (Pre-Clinical)",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry, Histology & Embryology, Genetics, Medical Ethics, Introduction to Clinical Medicine, English for Medical Studies"
+                },
+                {
+                    "Year": "3rd Year (Para-Clinical)",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology, Immunology, Community Medicine / Preventive Medicine, Forensic Medicine, Medical Psychology"
+                },
+                {
+                    "Year": "4th Year (Clinical)",
+                    "Subjects Covered": "Internal Medicine, Surgery, Obstetrics & Gynecology, Pediatrics, Ophthalmology, ENT, Dermatology, Radiology, Psychiatry"
+                },
+                {
+                    "Year": "5th Year (Clinical)",
+                    "Subjects Covered": "Continuation of Clinical Rotations in Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency Medicine, Specialized Departments"
+                },
+                {
+                    "Year": "6th Year (Clinical)",
+                    "Subjects Covered": "Full-year internship in affiliated hospitals: Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency Medicine, Specialized Departments"
+                }
+            ]
+        },
+        "feesIntro": "Here’s a clear breakdown of the annual fees for the MBBS (Clinical Medicine) program at Jilin University for international students",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6 Year",
+                    "tuition": "33,000 CNY",
+                    "hostel": "5,000 – 8,000 CNY",
+                    "total": "₹4.3 - 4.8 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The curriculum is broadly structured to build from basic medical sciences in early years to clinical subjects and 1 year of internship/clinical practice at the end.",
+        "duration": {
+            "headers": ["Component", "Duration"],
+            "table": [
+                {
+                    "Component": "Pre-Clinical (Basic Sciences)",
+                    "Duration": "1st – 2nd Year"
+                },
+                {
+                    "Component": "Para-Clinical & Clinical Subjects",
+                    "Duration": "3rd – 5th Year"
+                },
+                {
+                    "Component": "Clinical Internship / Rotations",
+                    "Duration": "6th Year (Full-year hands-on training in affiliated hospitals)"
+                }
+            ]
+        },
+        "studentSupport": "Jilin University offers a comprehensive and student-focused support system designed to help international students excel academically, socially, and personally while pursuing MBBS in China. The university’s support services ensure that students can concentrate fully on their medical education without facing unnecessary stress or administrative challenges. A dedicated International Students Office assists with the entire admission process, documentation, and visa procedures, helping students from various countries navigate complex requirements with clarity and ease. Prior to departure, students receive detailed guidance on travel, accommodation, and pre-departure preparations, ensuring they are well-prepared for life in China. Upon arrival, the university organizes orientation programs to introduce students to campus life, academic expectations, local culture, and safety procedures, helping them settle in comfortably. Multilingual staff and mentors are available on campus to provide ongoing support with academic questions, language challenges, and cultural adaptation, making the transition smooth and stress-free. For academic growth, students have access to modern libraries, online learning platforms, digital classrooms, and research laboratories. Experienced faculty members offer personalized guidance, tutoring, and mentoring whenever needed. Clinical training is conducted in affiliated teaching hospitals, allowing students to gain hands-on experience under the supervision of skilled clinicians—a vital component of MBBS education abroad.",
+        "recognition": "Jilin University is a prestigious institution recognized nationally and internationally for its excellence in medical education and research. Established in 1946, the university has consistently maintained high academic standards and is fully recognized by the Ministry of Education of China. Its MBBS program is approved by the World Directory of Medical Schools (WDOMS), which ensures that graduates are eligible to apply for licensing exams like the FMGE/NExT in India and pursue medical careers worldwide. The university is also a member of several international academic organizations, promoting collaborations, research exchanges, and student mobility programs across countries. Its affiliation with top teaching hospitals allows MBBS students to gain practical clinical experience under expert guidance. Over the years, Jilin University has achieved numerous accolades in research, innovation, and education quality, consistently ranking among the top universities in China for medical studies. The university’s emphasis on internationalization has attracted students from over 100 countries, fostering a diverse and vibrant learning environment. These achievements reflect Jilin University’s commitment to producing competent, globally-minded medical professionals.",
+        "hostelFacilities": "The university also provides comfortable accommodation through well-furnished, secure hostels equipped with high-speed internet, laundry facilities, common areas, and dining options that cater to international dietary preferences. Both on-campus and nearby off-campus housing options are available, accommodating different budgets and lifestyle needs. Campus facilities also include cafeterias offering a variety of cuisines, medical centers, banks, and recreational areas, making it a convenient and safe environment for students.",
+        "studentLife": "Student Life at Jilin University is vibrant, diverse, and designed to provide international students with a holistic and enriching experience while pursuing MBBS in China. The university campus offers a lively and inclusive environment where students can grow academically, socially, and personally. With a student community representing more than 100 countries, international students are welcomed into a multicultural atmosphere that encourages cross-cultural interactions, friendships, and collaborations. Academically, students benefit from a rigorous and structured MBBS curriculum supported by modern classrooms, well-equipped laboratories, and comprehensive libraries. Experienced faculty members are approachable and provide mentoring, guidance, and support, ensuring students receive personalized attention throughout their studies. Clinical training is conducted in affiliated teaching hospitals, where students gain hands-on experience under the supervision of skilled clinicians, giving them exposure to real-life medical practice from early in their course. Beyond academics, Jilin University places a strong emphasis on campus life and extracurricular engagement. Students can participate in a wide range of activities, including sports clubs, cultural societies, music and art programs, and volunteer opportunities. Annual festivals, cultural events, and international student gatherings foster community spirit, help students integrate socially, and provide opportunities to showcase talents and cultural heritage.",
+        "whyChooseUsIntro": "Choosing iExplain Education for your MBBS admission at Jilin University ensures a smooth, transparent, and hassle-free process from start to finish. As a trusted overseas education consultancy, iExplain Education specializes in guiding international students through every step of the admission process, helping them secure a globally recognized medical degree in China.",
+        "whyChooseUs": [
+            "Expert Guidance on Admission – Personalized counseling to help students understand eligibility, course structure, and prepare a strong application for MBBS at Jilin University.",
+            "Document Preparation & Verification – Assistance with all required documents, including academic certificates, passports, medical reports, and financial statements.",
+            "Visa Assistance – Guidance throughout the Chinese student visa application process to ensure compliance and avoid delays.",
+            "Pre-Departure Support – Advice on travel arrangements, accommodation options, campus life, local culture, and safety measures before leaving for China.",
+            "Ongoing Support – Assistance with hostel allocation, airport pickup, university registration, and any issues during the course of study.",
+            "Trusted Expertise & Proven Track Record – Years of experience in overseas medical admissions with hundreds of successful students placed in reputed universities like Jilin University.",
+            "Student-Centric Approach – Dedicated support focused on academic success, personal well-being, and smooth adaptation to life and studies abroad."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled official application form of Jilin University."
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport with at least 18 months validity; notarized copies required."
+            },
+            {
+                "document": "Academic Certificates",
+                "details": "High school/12th-grade mark sheets and passing certificates; transcripts if applicable."
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Certificate issued by a registered doctor confirming good health."
+            },
+            {
+                "document": "HIV & Blood Test Reports",
+                "details": "Recent test reports required for admission and visa purposes."
+            },
+            {
+                "document": "Financial Documents",
+                "details": "Bank statements, scholarship letters, or sponsorship certificates to prove financial capacity."
+            },
+            {
+                "document": "Recommendation Letters",
+                "details": "From school/college authorities (if applicable)."
+            },
+            {
+                "document": "Visa Application Documents",
+                "details": "Completed visa forms and other supporting documents as per Chinese embassy requirements."
+            }
+        ],
+        "conclusion": "Pursuing MBBS at Jilin University offers international students a globally recognized medical degree, hands-on clinical training, and exposure to a multicultural campus environment. With modern facilities, experienced faculty, and strong support systems in place, students are well-prepared for both academic success and professional medical careers worldwide. Choosing the right guidance, such as iExplain Education, ensures a smooth admission process, proper document handling, visa assistance, and ongoing support throughout the course. By carefully preparing all required documents, understanding the curriculum, and taking advantage of the university’s resources, students can focus entirely on their studies and clinical training, making their MBBS journey in China rewarding, enriching, and hassle-free.",
+        "faqs": [
+            {
+                "question": "Is Jilin University recognized for MBBS abroad?",
+                "answer": "Yes, Jilin University is recognized by the Ministry of Education of China and listed in the World Directory of Medical Schools (WDOMS). Graduates are eligible to appear for exams like FMGE/NExT in India and other international licensing exams."
+            },
+            {
+                "question": "What is the duration of the MBBS program?",
+                "answer": "The MBBS program at Jilin University is 6 years long, which includes 5 years of academic study and 1 year of internship/clinical rotation in affiliated hospitals."
+            },
+            {
+                "question": "In which language is the MBBS program taught?",
+                "answer": "The MBBS program is offered in English medium, making it accessible for international students. Some courses or hospital rotations may include basic exposure to Mandarin, which the university provides support for."
+            },
+            {
+                "question": "What are the eligibility criteria for admission?",
+                "answer": "Students should have completed 12th grade (or equivalent) with Physics, Chemistry, and Biology and meet the minimum academic percentage as per university norms. NEET qualification is required for Indian students."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include the application form, passport, academic certificates, medical fitness certificate, passport-sized photographs, financial proof, and other university-specific requirements. iExplain Education can assist in preparing all documents."
+            },
+            {
+                "question": "Are scholarships available for international students?",
+                "answer": "Yes, Jilin University offers merit-based scholarships and other funding opportunities for outstanding international students. Students can also explore government scholarships for Chinese study programs."
+            },
+            {
+                "question": "What is the fee structure for MBBS at Jilin University?",
+                "answer": "The tuition and living expenses are affordable compared to many countries, and fees may vary slightly each year. iExplain Education provides detailed guidance on the current fee structure and payment process."
+            },
+            {
+                "question": "What support is available for international students?",
+                "answer": "International students receive support through the International Students Office, orientation programs, mentoring, hostel assistance, and access to libraries, laboratories, and student clubs."
+            },
+            {
+                "question": "Can I practice medicine in India after MBBS from Jilin University?",
+                "answer": "Yes, after completing MBBS, graduates can appear for the FMGE/NExT exam in India to practice medicine professionally. The university’s curriculum is designed to meet international standards."
+            },
+            {
+                "question": "How can iExplain Education help with admission?",
+                "answer": "iExplain Education provides end-to-end support, including counseling, document preparation, visa assistance, pre-departure guidance, airport pickup, and ongoing support throughout the MBBS course."
+            }
+        ]
+    },
+    "dalian-medical-university": {
+        "title": "Dalian Medical University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Dalian_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Dalian_Mobile.webp",
+        "intro": {
+            "text": "Dalian Medical University is a highly reputed public medical university in China, located in the vibrant coastal city of Dalian in Liaoning Province. Founded in 1947, it has established itself as one of the leading institutions for medical education, health sciences, clinical medicine, and biomedical research in the country. With a strong tradition of academic excellence and innovation, the university has become a preferred choice for students aspiring to pursue MBBS abroad, international medical degree programs, and careers in global healthcare.\n\nAs an institution committed to delivering quality education, Dalian Medical University offers a comprehensive MBBS program in English that caters to the needs of international students from Asia, Africa, Europe, and beyond. The English‑medium MBBS course spans approximately 6 years, comprising rigorous theoretical instruction, hands‑on practical laboratory training, and structured clinical internships at the university’s affiliated hospitals. This well‑designed curriculum ensures that students develop a solid foundation in anatomy, physiology, pathology, pharmacology, and other core medical sciences, while also gaining real‑world experience in patient care and clinical settings.\n\nOne of the most attractive aspects of studying at Dalian Medical University is its global recognition and accreditation. The MBBS degree awarded by the university is recognized by major international bodies, including the World Health Organization (WHO) and the National Medical Commission (NMC) of India, which makes graduates eligible to appear for licensing examinations such as the Foreign Medical Graduates Examination (FMGE/NExT), USMLE, PLAB, and other medical licensing tests in different countries. This recognition enhances the career opportunities of students and supports their ambitions to practice medicine internationally after graduation."
+        },
+        "quickOverview": {
+            "University Name": "Dalian Medical University",
+            "Established": "1947",
+            "Location": "Dalian, Liaoning Province, China",
+            "Type": "Public Medical University",
+            "Programs Offered": "MBBS, MD, Nursing, Pharmacy, Biomedical Science, Public Health",
+            "Medium of Instruction": "English & Chinese",
+            "Duration of MBBS": "6 Years (Including Internship)",
+            "Global Recognition": "WHO, NMC (India), ECFMG, Other International Medical Councils",
+            "Affiliated Hospitals": "Multiple Teaching Hospitals in Dalian for Clinical Training",
+            "Eligibility": "Completion of 10+2 with Physics, Chemistry, Biology; NEET Qualified for Indian Students"
+        },
+        "benefits": {
+            "intro": "Dalian Medical University is one of the most preferred destinations for students seeking to pursue MBBS abroad due to its globally recognized degree, affordable tuition fees, and high-quality education. Here are the main reasons to choose this university for MBBS abroad:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The MBBS program at Dalian Medical University is recognized by the World Health Organization (WHO), National Medical Commission (NMC, India), and other international medical councils, allowing graduates to pursue medical practice worldwide."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The university offers a 6-year MBBS course in English, making it ideal for international students who want quality medical education without learning Chinese initially."
+                },
+                {
+                    "Heading": "Affordable Tuition Fees",
+                    "Details": "Compared to Western countries and some Asian nations, Dalian Medical University offers low-cost MBBS programs, making it a cost-effective option for students seeking quality medical education abroad."
+                },
+                {
+                    "Heading": "Experienced Faculty and Advanced Curriculum",
+                    "Details": "Students learn from highly qualified professors with decades of experience, following an updated MBBS syllabus that integrates theory, practical lab work, and clinical exposure."
+                },
+                {
+                    "Heading": "State-of-the-Art Infrastructure",
+                    "Details": "The university boasts modern classrooms, well-equipped laboratories, simulation centers, medical libraries, and affiliated hospitals, ensuring students gain practical experience in a professional environment."
+                },
+                {
+                    "Heading": "Excellent Clinical Exposure",
+                    "Details": "With multiple affiliated teaching hospitals, students get hands-on clinical training in various specialties, preparing them for real-world medical practice."
+                },
+                {
+                    "Heading": "Support for International Students",
+                    "Details": "The university provides comfortable hostels, student counseling, language support, and a safe environment for international students adjusting to life in China."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "Hosting students from Asia, Africa, Europe, and the Middle East, Dalian Medical University offers a diverse and culturally rich learning environment that enhances global understanding and collaboration."
+                },
+                {
+                    "Heading": "Career Opportunities",
+                    "Details": "Graduates can appear for FMGE/NExT in India, USMLE (USA), PLAB (UK), and other licensing exams, enabling them to pursue a medical career anywhere in the world."
+                },
+                {
+                    "Heading": "Vibrant Campus Life in Dalian",
+                    "Details": "Located in a scenic coastal city, students enjoy a safe, student-friendly environment with access to cultural activities, sports, and recreational facilities."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at Dalian Medical University is carefully designed to provide students with a strong foundation in medical sciences while integrating practical clinical training. The curriculum is updated regularly to match international medical education standards.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Community Medicine, Forensic Medicine, ENT, Ophthalmology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Internal Medicine, Surgery, Psychiatry, Dermatology, Radiology"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Clinical Internship / Rotatory Internship"
+                }
+            ]
+        },
+        "feesIntro": "The total course fee is structured to cover tuition, hostel accommodation, and other academic expenses, ensuring transparency and ease for students planning their education.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6 Year",
+                    "tuition": "USD 4,000 – 5,000",
+                    "hostel": "USD 800 – 1,200",
+                    "total": "₹4.1 – 5.2 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The total duration of the course is 6 years, including 5 years of academic study and 1 year of mandatory clinical internship at the university’s affiliated hospitals.",
+        "duration": {
+            "headers": ["Course", "Duration", "Details"],
+            "table": [
+                {
+                    "Course": "MBBS (English Medium)",
+                    "Duration": "6 Years",
+                    "Details": "5 Years of Academic Study + 1 Year Clinical Internship"
+                },
+                {
+                    "Course": "Pre-Clinical & Para-Clinical",
+                    "Duration": "2 Years",
+                    "Details": "Anatomy, Physiology, Biochemistry, Pathology, Microbiology, Pharmacology"
+                },
+                {
+                    "Course": "Clinical Subjects",
+                    "Duration": "3 Years",
+                    "Details": "General Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Specialized Departments"
+                },
+                {
+                    "Course": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Rotatory clinical internship in affiliated hospitals for hands-on experience"
+                }
+            ]
+        },
+        "studentSupport": "Dalian Medical University is committed to providing a holistic and supportive environment for international students pursuing MBBS abroad, ensuring that their academic journey is smooth, comfortable, and enriching. From the very beginning, students receive assistance with admission procedures, document verification, and visa guidance, making the transition to studying in China seamless. Upon arrival, the university conducts orientation programs to familiarize students with campus life, academic expectations, and local culture, helping them adjust quickly to a new environment. Throughout their studies, students benefit from continuous academic advising, personalized mentorship, and counseling services, enabling them to overcome academic or personal challenges effectively. Dalian Medical University also places a strong emphasis on career guidance, preparing students for international medical licensing exams such as FMGE/NExT in India, USMLE in the USA, and PLAB in the UK, and providing advice on future specialization and medical career paths. The university ensures that living and accommodation needs are fully met with well-maintained hostels, clean and secure facilities, nutritious mess services, and access to high-quality medical care and health insurance. To support smooth communication and integration, the university also offers English and optional Chinese language support, helping students interact with faculty, peers, and patients during clinical training. Beyond academics, Dalian Medical University encourages participation in extracurricular activities, sports, cultural events, and community programs, promoting social engagement, teamwork, and leadership skills. The university’s International Student Office is dedicated to addressing all student concerns, from visa renewals to travel assistance, creating a safe and student-friendly campus environment.",
+        "recognition": "Dalian Medical University is a highly reputed public medical university in China, known for its excellence in medical education, clinical training, and biomedical research. The university is officially affiliated with the Ministry of Education of China and operates under strict regulatory and academic standards, ensuring high-quality teaching and research programs. Affiliation: Dalian Medical University is a prominent public medical university in China and is officially affiliated with the Ministry of Education of China. This affiliation ensures that the university follows strict academic standards, regulatory guidelines, and government-approved curricula for all its medical programs. The university operates multiple affiliated hospitals and research centers, providing students with extensive opportunities for clinical training, practical exposure, and medical research throughout their MBBS program. Recognition: The university’s MBBS program for international students is recognized by the World Health Organization (WHO), the National Medical Commission (NMC) of India, and several other global medical councils. This recognition allows graduates to appear for major licensing exams such as FMGE/NExT in India, USMLE in the USA, and PLAB in the UK, enabling them to pursue a global medical career. Achievements: Dalian Medical University has achieved numerous milestones in medical education, research, and clinical practice. The university boasts state-of-the-art laboratories, advanced teaching hospitals, and modern classrooms, where students gain hands-on experience in various medical disciplines. It has established strong international collaborations with leading universities and research institutions, offering opportunities for student exchange programs and collaborative research. The university has received multiple national and international awards for academic excellence, research contributions, and innovative teaching methods. Graduates from Dalian Medical University have gone on to excel in medicine, research, and healthcare leadership across the globe.",
+        "hostelFacilities": "The university ensures that living and accommodation needs are fully met with well-maintained hostels, clean and secure facilities, nutritious mess services, and access to high-quality medical care and health insurance. Separate hostels for boys and girls are available, ensuring comfort and security. On-campus hostels are equipped with basic amenities, internet, and laundry facilities to support a convenient lifestyle for international students.",
+        "studentLife": "Life at Dalian Medical University offers a perfect balance between academic rigor and personal development, making it one of the most sought-after destinations for students pursuing MBBS abroad. The university provides a safe, secure, and supportive campus environment where international students can focus on their studies while feeling at home. The campus is equipped with modern classrooms, advanced laboratories, fully stocked libraries, computer centers, and research facilities, ensuring that students have all the resources needed for high-quality medical education. Comfortable on-campus hostels with 24/7 security, hygienic dining facilities, and recreational spaces make student living convenient and stress-free. Beyond academics, the university emphasizes holistic development through sports, cultural events, student clubs, and community engagement programs, which encourage teamwork, leadership, and social interaction. The student body is highly diverse, with individuals from Asia, Africa, Europe, and the Middle East, creating a multicultural environment that fosters cross-cultural understanding, global friendships, and a broader perspective on healthcare practices. Students also benefit from the city of Dalian, a coastal city known for its scenic beauty, pleasant climate, and safe surroundings, which offers numerous opportunities for leisure, sightseeing, and cultural exploration. International students are supported through language assistance, counseling services, and mentorship programs, helping them adjust to life in China and excel academically.",
+        "whyChooseUsIntro": "iExplain Education is a trusted and professional consultancy that helps students secure MBBS admission at Dalian Medical University with ease and confidence. With years of experience in guiding students for MBBS abroad in China, the team provides complete support in admissions, documentation, visa assistance, and pre-departure guidance.",
+        "whyChooseUs": [
+            "Expert Counseling: Personalized guidance on choosing the right university and program based on student’s academic profile and career goals.",
+            "Complete Admission Assistance: Step-by-step support in filling applications, submitting documents, and confirming admission.",
+            "Visa Guidance: Assistance with visa application, medical tests, and interview preparation.",
+            "Fee & Financial Guidance: Clear advice on tuition fees, scholarships, payment procedures, and cost management.",
+            "Pre-Departure Support: Help with travel arrangements, flight bookings, orientation, and settling into the new country.",
+            "Accommodation Assistance: Guidance in selecting safe, comfortable, and affordable hostels or apartments.",
+            "NEET & Licensing Exam Support: Information and tips on preparing for FMGE/NExT (India), USMLE (USA), PLAB (UK), and other international exams.",
+            "Document Verification & Translation: Ensuring all academic and legal documents meet university and visa requirements.",
+            "Airport Pickup & Initial Settling: Assistance with arrival in China and initial orientation to campus and city life.",
+            "24/7 Support: Ongoing assistance during the entire study period for academic, personal, or emergency needs.",
+            "Global Exposure Guidance: Advice on opportunities for research, international seminars, and exchange programs.",
+            "Transparent & Reliable Services: Open communication between students, parents, and the university to avoid confusion or delays."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled and signed application form provided by the university."
+            },
+            {
+                "document": "10+2 / High School Marksheet",
+                "details": "Certified copy showing Physics, Chemistry, Biology, and English scores."
+            },
+            {
+                "document": "High School Passing Certificate",
+                "details": "Proof of successful completion of 10+2 or equivalent."
+            },
+            {
+                "document": "NEET Score Card",
+                "details": "Mandatory for Indian students to appear in MBBS abroad programs."
+            },
+            {
+                "document": "Passport",
+                "details": "Valid international passport with at least 18 months validity."
+            },
+            {
+                "document": "Medical / Health Certificate",
+                "details": "Issued by a recognized hospital, confirming good health and fitness."
+            },
+            {
+                "document": "HIV / Infectious Disease Test Report",
+                "details": "Required by the university for admission and visa purposes."
+            },
+            {
+                "document": "Financial Proof",
+                "details": "Bank statements, sponsorship letter, or affidavit showing ability to cover tuition and living expenses."
+            },
+            {
+                "document": "Admission / Offer Letter",
+                "details": "Issued by Dalian Medical University upon acceptance."
+            },
+            {
+                "document": "Recommendation / Character Certificate",
+                "details": "Issued by the school or college principal/authority."
+            }
+        ],
+        "conclusion": "Choosing to pursue MBBS at Dalian Medical University is a smart and rewarding decision for students seeking high-quality medical education abroad. The university offers a globally recognized MBBS degree, approved by the World Health Organization (WHO), the National Medical Commission (NMC) of India, and other international medical councils, allowing graduates to pursue medical careers anywhere in the world. With English-medium instruction, experienced faculty, modern laboratories, advanced teaching hospitals, and a well-structured curriculum, students gain a strong foundation in both theoretical knowledge and practical clinical skills. By choosing iExplain Education, students gain expert guidance, transparent communication, and end-to-end support, making their journey to pursue a globally recognized MBBS degree in China simple and stress-free.",
+        "faqs": [
+            {
+                "question": "Is Dalian Medical University recognized by the NMC for Indian students?",
+                "answer": "Yes, Dalian Medical University is recognized by the National Medical Commission (NMC, India). Indian students graduating from the university are eligible to appear for FMGE/NExT to practice medicine in India."
+            },
+            {
+                "question": "What is the duration of the MBBS course at Dalian Medical University?",
+                "answer": "The MBBS program is 6 years long, including 5 years of academic study and 1 year of compulsory clinical internship at the university’s affiliated hospitals."
+            },
+            {
+                "question": "Is the MBBS course at Dalian Medical University in English?",
+                "answer": "Yes, the MBBS program is fully taught in English, making it convenient for international students to study without learning Chinese before admission."
+            },
+            {
+                "question": "What documents are required for MBBS admission at Dalian Medical University?",
+                "answer": "Students need to submit 10+2 mark sheets, NEET score card, passport, medical fitness certificate, financial proof, photographs, and the completed application form, among other essential documents."
+            },
+            {
+                "question": "Can Indian students apply directly for MBBS at Dalian Medical University?",
+                "answer": "Yes, Indian students can apply directly or through trusted consultancies like iExplain Education, which provides complete admission, documentation, and visa support."
+            },
+            {
+                "question": "Are hostel and accommodation facilities available for international students?",
+                "answer": "Yes, the university provides safe, well-maintained hostels with basic amenities, hygienic mess facilities, and 24/7 security."
+            },
+            {
+                "question": "Can students appear for international licensing exams after graduating?",
+                "answer": "Yes, graduates of Dalian Medical University are eligible for exams like USMLE (USA), PLAB (UK), FMGE/NExT (India), and other recognized international medical licensing tests."
+            },
+            {
+                "question": "How is the student life at Dalian Medical University for international students?",
+                "answer": "The university offers a multicultural and supportive environment, with access to sports, cultural events, student clubs, extracurricular activities, and a safe city life in Dalian, promoting both academic and personal growth."
+            },
+            {
+                "question": "Why should I choose iExplain Education for MBBS admission in China?",
+                "answer": "iExplain Education provides end-to-end support, including counselling, admission guidance, visa assistance, travel support, pre-departure help, and ongoing guidance during your MBBS studies abroad, ensuring a smooth and stress-free journey."
+            }
+        ]
+    },
+    "tribhuvan-university": {
+        "title": "Tribhuvan University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Tribhuvan_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Tribhuvan_Mobile.webp",
+        "intro": {
+            "text": "Tribhuvan University is the oldest and largest university in Nepal, established in 1959 (2016 B.S.), and it has been at the forefront of higher education in the country for over six decades. The university offers a wide range of programs across medicine, engineering, management, social sciences, and humanities, and has earned a reputation for quality education, research, and professional training. It is widely recognized not just in Nepal, but also internationally, making it a popular choice for students from India and other countries who want to pursue MBBS or other professional courses abroad.\n\nThe Institute of Medicine (IOM) under Tribhuvan University is responsible for medical education and offers the MBBS program, which combines rigorous academic study with practical clinical training in affiliated hospitals. The program is designed to equip students with strong knowledge in anatomy, physiology, biochemistry, pathology, pharmacology, and clinical medicine, along with hands-on experience in patient care. This makes Tribhuvan University graduates well-prepared for medical practice anywhere in the world, and its MBBS degree is recognized by the National Medical Commission (NMC) of India, the Medical Council of Nepal (MCN), and other international medical bodies.\n\nApart from academics, Tribhuvan University encourages research, community engagement, and international collaborations, providing students with opportunities to participate in health camps, medical research projects, workshops, and conferences. The university is known for its supportive campus environment, experienced faculty, and affordable fee structure, making it accessible to students from different backgrounds. The city of Kathmandu, where the main campus is located, offers a safe, culturally rich, and vibrant environment for students to live and study."
+        },
+        "quickOverview": {
+            "University Name": "Tribhuvan University",
+            "Established": "1959 (2016 B.S.)",
+            "Location": "Kathmandu, Nepal",
+            "Type": "Public University",
+            "Affiliated Institutes": "Institute of Medicine (IOM) and multiple campuses across Nepal",
+            "Courses Offered": "MBBS, BDS, Nursing, Pharmacy, Management, Engineering, Humanities, and more",
+            "Medium of Instruction": "English (for MBBS and other professional courses)",
+            "Recognition": "Recognized by the National Medical Commission (NMC, India), Medical Council of Nepal (MCN), and WHO",
+            "Student Population": "Over 400,000 students across all campuses"
+        },
+        "benefits": {
+            "intro": "Tribhuvan University is one of the most trusted and reputed universities in Nepal, making it an excellent choice for students who wish to pursue MBBS abroad. Here are the key reasons to choose Tribhuvan University for MBBS:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "MBBS program approved by NMC (India), MCN (Nepal), and listed by WHO, enabling graduates to practice medicine internationally."
+                },
+                {
+                    "Heading": "English Medium Program",
+                    "Details": "Entire course is taught in English, making it convenient for Indian and other international students."
+                },
+                {
+                    "Heading": "Affordable Fees",
+                    "Details": "Lower tuition and living costs compared to many countries, offering quality medical education at reasonable expenses."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Hands-on training in well-equipped teaching hospitals under the Institute of Medicine (IOM)."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "Learn from qualified and experienced professors and medical practitioners."
+                },
+                {
+                    "Heading": "Research Opportunities",
+                    "Details": "Participate in medical research projects, workshops, and seminars."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "Students from India, Asia, and Africa study together, promoting cultural exchange and global exposure."
+                },
+                {
+                    "Heading": "Preparation for Licensing Exams",
+                    "Details": "Well-structured curriculum prepares students for FMGE/NExT, USMLE, PLAB, and other international exams."
+                },
+                {
+                    "Heading": "Safe and Supportive Campus",
+                    "Details": "Comfortable hostels, libraries, sports facilities, and guidance services for international students."
+                },
+                {
+                    "Heading": "Community & Healthcare Focus",
+                    "Details": "Opportunities to engage in community health programs and medical camps, enhancing practical skills and social responsibility."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at Tribhuvan University is designed to provide a strong foundation in medical sciences along with practical clinical training. The course follows a well-structured curriculum under the Institute of Medicine (IOM) and is divided into basic sciences, para-clinical subjects, and clinical training.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry (Basics of human body structure, functions, and biochemical processes)"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology (Study of diseases, microorganisms, and drug treatments)"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Community Medicine, Forensic Medicine, ENT, Ophthalmology (Public health, legal medicine, and introduction to clinical specialties)"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects Covered": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology (Core clinical subjects with hospital-based training)"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects Covered": "Internal Medicine, Surgery, Psychiatry, Dermatology, Orthopedics (Advanced clinical studies with practical exposure)"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects Covered": "Internship (Rotatory Internship – Hands-on training in all major departments and patient care)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS program at Tribhuvan University is considered affordable compared to private medical colleges in India and many other countries, making it a popular choice for students pursuing MBBS abroad in Nepal.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "Yearly Tuition Fee",
+                    "tuition": "INR 6.3 – 6.5 Lakhs",
+                    "hostel": "INR 80,000 – 1,00,000",
+                    "total": "₹7.1 – 7.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Total for 5 Years",
+                    "tuition": "INR 30 – 32 Lakhs",
+                    "hostel": "INR 4.0 – 5.0 Lakhs",
+                    "total": "₹34 – 37 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Grand Total Cost",
+                    "tuition": "Full Course",
+                    "hostel": "Estimated",
+                    "total": "₹40 – 50 Lakhs"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Tribhuvan University is structured to provide students with a balanced combination of theoretical knowledge, practical training, and clinical exposure.",
+        "duration": {
+            "headers": ["Course Phase", "Duration", "Details"],
+            "table": [
+                {
+                    "Course Phase": "MBBS (Total Duration)",
+                    "Duration": "5.5 Years",
+                    "Details": "4.5 Years Academic + 1 Year Internship"
+                },
+                {
+                    "Course Phase": "Basic Sciences",
+                    "Duration": "1.5 Years",
+                    "Details": "Subjects like Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Course Phase": "Para-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Pathology, Microbiology, Pharmacology, Forensic Medicine"
+                },
+                {
+                    "Course Phase": "Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Course Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Rotatory clinical training in hospitals"
+                }
+            ]
+        },
+        "studentSupport": "Tribhuvan University ensures that students receive strong and continuous support services throughout their academic journey, especially for those pursuing MBBS abroad in Nepal. From the initial stage of admission, the university provides proper guidance for documentation, enrollment, and orientation programs, helping students understand the academic system, curriculum, and campus environment. New students are introduced to faculty members, departments, and facilities, which makes it easier for them to settle into university life. The university also offers excellent academic support through experienced professors, regular lectures, practical sessions, and mentorship programs, ensuring that students can perform well in their studies and build a solid foundation in medical sciences. In addition to academics, Tribhuvan University focuses on the overall well-being of students by providing counseling and guidance services, which help students manage stress, academic pressure, and personal challenges during their MBBS course. The university also supports students with hostel and accommodation facilities, offering a safe, clean, and comfortable living environment. Students have access to libraries, laboratories, research centers, and study materials, which play a crucial role in enhancing their learning experience. For international students, the university provides assistance in adapting to a new country, including help with local communication, cultural adjustment, and daily living needs. Furthermore, Tribhuvan University encourages students to participate in sports, cultural programs, seminars, workshops, and extracurricular activities, which help in developing confidence, leadership skills, and social connections. Students also get opportunities to take part in medical camps, community health programs, and research activities, which provide real-life exposure and practical experience in the healthcare field. The friendly campus environment, supportive faculty, and diverse student community create a positive atmosphere where students can grow academically as well as personally.",
+        "recognition": "Tribhuvan University is one of the most prestigious institutions in Nepal, known for its strong foundation in education, research, and professional training. Affiliation: Tribhuvan University is a government-funded public university in Nepal and is officially affiliated with the Ministry of Education, Science and Technology of Nepal. It operates through multiple constituent campuses and affiliated colleges across the country. For medical education, the university functions under its prestigious Institute of Medicine (IOM), which manages the MBBS program, teaching hospitals, and research centers. Recognition: The MBBS degree offered by Tribhuvan University is widely recognized at both national and international levels. It is approved by the National Medical Commission (NMC) of India, the Medical Council of Nepal (MCN), and is listed in the World Directory of Medical Schools (WHO). This recognition allows graduates to appear for major medical licensing exams such as FMGE/NExT in India, USMLE in the USA, and PLAB in the UK, making it easier for students to pursue global medical careers. Achievements: Tribhuvan University has achieved a strong reputation over the years for its contribution to higher education, medical training, and research in Nepal. It is the largest university in Nepal, serving hundreds of thousands of students across various disciplines. The university has produced many successful doctors, healthcare professionals, researchers, and academicians who are working both in Nepal and internationally. Its Institute of Medicine (IOM) is especially known for its quality medical education, experienced faculty, and strong focus on community healthcare and research. Tribhuvan University regularly conducts medical camps, research programs, seminars, and workshops, contributing significantly to public health and medical advancements.",
+        "hostelFacilities": "The university provides safe and comfortable hostel and accommodation facilities for students, offering a clean living environment. Students have access to libraries, laboratories, research centers, and study materials. Kathmandu provides a lively and culturally rich environment with easy access to cafes, markets, historical places, and natural beauty.",
+        "studentLife": "Student life at Tribhuvan University is vibrant, engaging, and well-balanced, offering students a perfect mix of academic learning and personal growth. The university provides a friendly and supportive environment where students from different parts of Nepal and countries like India come together to study and build their future. The campus is equipped with essential facilities such as libraries, laboratories, research centers, and sports complexes, which help students in both their studies and extracurricular development. Students pursuing MBBS under the Institute of Medicine (IOM) get regular exposure to teaching hospitals, which adds practical value to their daily learning experience. Apart from academics, students are encouraged to take part in cultural programs, sports activities, seminars, and workshops, which help in improving confidence, communication skills, and teamwork. Festivals and events celebrated on campus give students a chance to experience the rich culture and traditions of Nepal, making their journey more enjoyable. The university also offers hostel facilities and safe accommodation options, along with access to basic amenities, making student life comfortable and secure. The city of Kathmandu provides a lively and culturally rich environment, with cafes, markets, historical places, and natural beauty, allowing students to relax and explore during their free time. Students also get opportunities to participate in medical camps, community health programs, and research activities, which enhance their practical knowledge and social responsibility. With a combination of quality education, clinical exposure, cultural diversity, and supportive surroundings, student life at Tribhuvan University becomes a memorable and enriching experience for those pursuing MBBS abroad in Nepal.",
+        "whyChooseUsIntro": "iExplain Education is a reliable and experienced consultancy that helps students secure MBBS admission at Tribhuvan University in a smooth and hassle-free manner. With deep knowledge of the MBBS admission process in Nepal, the team provides complete guidance at every step.",
+        "whyChooseUs": [
+            "Expert Career Counseling: Personalized guidance based on student profile and career goals.",
+            "Complete Admission Assistance: Step-by-step support from application to confirmation.",
+            "Documentation Support: Help in preparing, verifying, and submitting all required documents correctly.",
+            "Entrance & Eligibility Guidance: Proper information about admission criteria and requirements.",
+            "Visa Assistance: Guidance for visa process, documentation, and approvals.",
+            "Fee & Financial Guidance: Clear explanation of fee structure and expense planning.",
+            "Pre-Departure Support: Help with travel planning, packing guidance, and orientation.",
+            "Accommodation Assistance: Support in finding safe and comfortable hostels or living options.",
+            "Travel & Arrival Support: Assistance with airport pickup and initial settling.",
+            "24/7 Student Support: Continuous help during the entire course duration.",
+            "Transparent Process: Honest and clear communication with students and parents.",
+            "Post-Admission Support: Guidance even after reaching the university for a smooth transition."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled and signed application form of Tribhuvan University"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of date of birth and basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology, and English"
+            },
+            {
+                "document": "NEET Score Card",
+                "details": "Mandatory for Indian students applying for MBBS abroad"
+            },
+            {
+                "document": "Passport / ID Proof",
+                "details": "Valid passport or government ID (for identification)"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Proof of good health issued by a recognized hospital"
+            },
+            {
+                "document": "Character Certificate",
+                "details": "Issued by last attended school/college"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "Required for students from other boards/universities"
+            },
+            {
+                "document": "Financial Proof",
+                "details": "Bank statement or sponsor letter showing financial capability"
+            },
+            {
+                "document": "Admission Offer Letter",
+                "details": "Issued by Tribhuvan University after selection"
+            }
+        ],
+        "conclusion": "Pursuing MBBS at Tribhuvan University is an excellent choice for students who are looking for a globally recognized medical degree at an affordable cost. As the oldest and largest university in Nepal, Tribhuvan University offers high-quality education through its well-established Institute of Medicine (IOM), combining strong theoretical knowledge with practical clinical exposure. The university is recognized by major bodies like the National Medical Commission (NMC) and is listed in the World Directory of Medical Schools, allowing graduates to pursue medical careers not only in Nepal but also in India and other countries after clearing required licensing exams such as FMGE/NExT, USMLE, and PLAB. With its experienced faculty, modern infrastructure, affordable fee structure, and strong focus on community healthcare, Tribhuvan University provides students with the right environment to grow academically and professionally. The supportive campus life, cultural diversity, and opportunities for research, medical camps, and practical training further enhance the overall learning experience.",
+        "faqs": [
+            {
+                "question": "Is Tribhuvan University recognized by NMC for Indian students?",
+                "answer": "Yes, Tribhuvan University is recognized by the National Medical Commission (NMC, India). Indian students can appear for FMGE/NExT after completing their MBBS."
+            },
+            {
+                "question": "What is the duration of MBBS at Tribhuvan University?",
+                "answer": "The MBBS course duration is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program is taught in English, making it suitable for Indian and international students."
+            },
+            {
+                "question": "What is the total fee for MBBS at Tribhuvan University?",
+                "answer": "The total cost of the MBBS program is approximately INR 40–50 lakhs, including tuition and other expenses."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad and practice in India later."
+            },
+            {
+                "question": "Does Tribhuvan University conduct an entrance exam?",
+                "answer": "Yes, admission to MBBS is usually based on an entrance examination conducted by the Institute of Medicine (IOM)."
+            },
+            {
+                "question": "Are hostel facilities available for students?",
+                "answer": "Yes, the university provides hostel and accommodation facilities with basic amenities for both local and international students."
+            },
+            {
+                "question": "Can students practice in India after completing MBBS from Tribhuvan University?",
+                "answer": "Yes, students can practice in India after clearing the FMGE/NExT exam as per NMC guidelines."
+            },
+            {
+                "question": "How is student life at Tribhuvan University?",
+                "answer": "Student life is safe, vibrant, and culturally rich, with access to sports, cultural events, medical camps, and extracurricular activities."
+            },
+            {
+                "question": "Why should I choose iExplain Education for MBBS admission?",
+                "answer": "iExplain Education provides complete support including counseling, admission guidance, documentation, visa assistance, and pre-departure services, ensuring a smooth admission process."
+            }
+        ]
+    },
+    "kathmandu-university": {
+        "title": "Kathmandu University",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Kathmandu_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Kathmandu_Mobile.webp",
+        "intro": {
+            "text": "Kathmandu University is one of the leading and most respected universities in Nepal, established in 1991, and known for its focus on quality education, innovation, and research. Located in a peaceful and scenic area near Dhulikhel, Nepal, the university provides an excellent environment for students to study and grow academically. It offers a wide range of programs in medicine, engineering, management, science, and arts, and has gained strong recognition both nationally and internationally.\n\nFor students planning to pursue MBBS abroad in Nepal, Kathmandu University is a popular choice due to its high academic standards and practical-oriented teaching approach. The MBBS program is offered through its affiliated medical colleges and is designed to provide a strong foundation in medical sciences along with hands-on clinical training in well-equipped hospitals. The course is taught in English, making it suitable for Indian and international students.\n\nThe university is recognized by the National Medical Commission (NMC) of India, the Medical Council of Nepal (MCN), and is listed in the World Directory of Medical Schools (WHO). This allows graduates to appear for FMGE/NExT, USMLE, and PLAB, opening opportunities for a global medical career. With its experienced faculty, modern infrastructure, research opportunities, and student-friendly environment, Kathmandu University provides a perfect platform for students to achieve their dream of becoming successful doctors.\n\nOne of the major advantages of studying at Kathmandu University is its global recognition and credibility. The university is recognized by the National Medical Commission (NMC) of India, the Medical Council of Nepal (MCN), and is listed in the World Directory of Medical Schools (WHO). This means that students graduating from Kathmandu University are eligible to appear for important licensing exams like FMGE/NExT in India, USMLE in the USA, and PLAB in the UK, which helps them build a successful medical career not only in Nepal but across the world.\n\nApart from academics, Kathmandu University focuses strongly on practical exposure and real-life medical training. Students get the opportunity to work in well-equipped hospitals, interact with patients, and gain hands-on experience, which is very important in the medical field. The university also encourages participation in research projects, workshops, seminars, and community health programs, helping students develop a deeper understanding of healthcare systems and social responsibility."
+        },
+        "quickOverview": {
+            "University Name": "Kathmandu University",
+            "Established": "1991",
+            "Location": "Dhulikhel, Nepal",
+            "Type": "Public University",
+            "Affiliated Colleges": "Multiple medical, engineering, and management colleges across Nepal",
+            "Courses Offered": "MBBS, BDS, Nursing, Engineering, Management, Science, Arts, and more",
+            "Medium of Instruction": "English (for MBBS and most professional courses)",
+            "Recognition": "Recognized by NMC (India), Medical Council of Nepal (MCN), WHO (WDOMS)",
+            "MBBS Duration": "5.5 Years (4.5 Years Study + 1 Year Internship)"
+        },
+        "benefits": {
+            "intro": "Kathmandu University is one of the top choices for students who want to pursue MBBS abroad in Nepal due to its high academic standards, global recognition, and practical-oriented teaching approach. Here are the key reasons why students prefer this institute:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The MBBS degree from Kathmandu University is recognized by NMC (India), Medical Council of Nepal (MCN), and WHO (WDOMS), which allows students to pursue higher studies or medical practice in different countries after clearing required licensing exams."
+                },
+                {
+                    "Heading": "English Medium MBBS Program",
+                    "Details": "The entire course is taught in English, which makes learning easier for international students and removes the need to learn a new language before starting the program."
+                },
+                {
+                    "Heading": "Affordable Fee Structure",
+                    "Details": "The cost of studying MBBS is much lower compared to private medical colleges in India and many other countries, making it a budget-friendly option without compromising on quality."
+                },
+                {
+                    "Heading": "High-Quality Education System",
+                    "Details": "The university follows a modern and updated curriculum that includes both theoretical classes and practical sessions, helping students understand medical concepts in depth."
+                },
+                {
+                    "Heading": "Excellent Clinical Exposure",
+                    "Details": "Students get hands-on training in well-equipped teaching hospitals, where they interact with real patients and gain practical experience from early stages of the course."
+                },
+                {
+                    "Heading": "Experienced & Qualified Faculty",
+                    "Details": "The university has highly experienced professors, doctors, and medical professionals who guide students with both academic knowledge and clinical expertise."
+                },
+                {
+                    "Heading": "Preparation for Global Licensing Exams",
+                    "Details": "The syllabus is designed to help students prepare for exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK), increasing their chances of building an international career."
+                },
+                {
+                    "Heading": "Safe & Peaceful Environment",
+                    "Details": "Located in Dhulikhel, the university offers a calm, pollution-free, and safe environment, which is ideal for focused study and student life."
+                },
+                {
+                    "Heading": "Multicultural Learning Environment",
+                    "Details": "Students from India and various other countries study together, creating a diverse environment that promotes cultural exchange and global exposure."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Kathmandu University is designed to provide students with a strong foundation in medical sciences along with practical clinical training. The curriculum is divided into three major phases: pre-clinical, para-clinical, and clinical, followed by a compulsory internship.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "Phase I – Pre-Clinical (1–1.5 Years)",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Year": "Phase II – Para-Clinical (1 Year)",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology, Forensic Medicine, Community Medicine"
+                },
+                {
+                    "Year": "Phase III – Clinical (2–2.5 Years)",
+                    "Subjects Covered": "General Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Psychiatry, Orthopedics, ENT, Ophthalmology, Dermatology"
+                },
+                {
+                    "Year": "Community Medicine (Integrated)",
+                    "Subjects Covered": "Public Health, Epidemiology"
+                },
+                {
+                    "Year": "Internship (Compulsory)",
+                    "Subjects Covered": "Rotatory Internship (1 Year)"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Kathmandu University is considered affordable compared to private medical colleges in India and other countries, making it a popular option for students pursuing MBBS abroad in Nepal.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "INR 9 – 12 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹9.6 – 13.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "INR 7 – 9 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹7.6 – 10.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "INR 6 – 8 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹6.6 – 9.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "INR 6 – 8 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹6.6 – 9.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "INR 5 – 7 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹5.6 – 8.2 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Total Fees",
+                    "tuition": "INR 35 – 50 Lakhs",
+                    "hostel": "INR 60,000 – 1,20,000",
+                    "total": "₹35 – 50 Lakhs (Variable per college)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Kathmandu University is designed to provide students with a complete understanding of medical sciences along with practical clinical training. The total duration of the course is 5.5 years (66 months).",
+        "duration": {
+            "headers": ["Course Phase", "Duration", "Details"],
+            "table": [
+                {
+                    "Course Phase": "Total MBBS Duration",
+                    "Duration": "5.5 Years",
+                    "Details": "4.5 Years Study + 1 Year Internship"
+                },
+                {
+                    "Course Phase": "Pre-Clinical Phase",
+                    "Duration": "1.5 – 2 Years",
+                    "Details": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Course Phase": "Para-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Pathology, Microbiology, Pharmacology, Forensic Medicine"
+                },
+                {
+                    "Course Phase": "Clinical Phase",
+                    "Duration": "2 – 2.5 Years",
+                    "Details": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Course Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Rotatory training in hospitals with patient care"
+                }
+            ]
+        },
+        "studentSupport": "Kathmandu University offers a well-developed and student-focused support system to ensure that students have a smooth and comfortable academic journey, especially those pursuing MBBS abroad in Nepal. The university has a dedicated Student Welfare Directorate, which looks after students’ overall well-being, including academic guidance, counseling, hostel management, and extracurricular activities. It plays an important role in maintaining communication between students and university authorities, while also organizing sports, cultural programs, and social activities for holistic development. The university provides strong academic support through experienced faculty, mentorship programs, and continuous assessments, helping students stay focused and perform well in their studies. Students also have access to counseling services for emotional and mental well-being, which is very important during a demanding course like MBBS. Additionally, the university ensures a safe and secure campus environment with anti-ragging policies and support systems where students can report issues and seek help easily. Kathmandu University also offers excellent hostel and accommodation facilities, including separate hostels for boys and girls, along with essential amenities like food services, internet, and security. The campus includes facilities such as a fitness center, swimming pool, libraries, and laboratories, supporting both academic and personal development. For international students, the university provides additional support such as assistance with documentation, visa guidance, local adjustment, and communication, making it easier to adapt to a new country. Students are also encouraged to participate in research activities, seminars, workshops, and community health programs, which enhance their practical skills and professional growth.",
+        "recognition": "Kathmandu University is one of the most reputed universities in Nepal, known for its strong academic system and global outlook. Affiliation: Kathmandu University is an autonomous, non-profit public institution established by an Act of Parliament and operates under the Government of Nepal. It is officially affiliated with the University Grants Commission (UGC) of Nepal, which ensures the quality and regulation of higher education in the country. The university also runs its medical programs through the Kathmandu University School of Medical Sciences (KUSMS) and has affiliations with several reputed medical colleges and teaching hospitals across Nepal. In addition, Kathmandu University has established collaborations with more than 50 national and international universities and institutions, enabling student exchange programs, joint research, and global exposure. Recognition: Kathmandu University is widely recognized at both national and international levels, making it a trusted choice for MBBS students. It is recognized by the Government of Nepal and approved by the Nepal Medical Council (NMC Nepal). For Indian students, the university is also recognized by the National Medical Commission (NMC India), allowing them to appear for FMGE/NExT after graduation. The university is listed in the World Directory of Medical Schools (WDOMS) and recognized by the World Health Organization (WHO), which makes its medical degree globally accepted. Achievements: Kathmandu University has achieved significant milestones in the field of education, research, and innovation since its establishment. It is known for maintaining a high standard of academic excellence, regular academic schedules, and a strong focus on research and community-based learning. The university has introduced several first-of-its-kind programs in Nepal, including advanced courses in medical sciences, engineering, and technology. Its graduates are known for their professional competence, research skills, and global adaptability.",
+        "hostelFacilities": "Kathmandu University offers excellent hostel and accommodation facilities, including separate hostels for boys and girls, along with essential amenities like food services, internet, and security. The campus includes facilities such as a fitness center, swimming pool, libraries, and laboratories, supporting both academic and personal development. The surrounding area of Dhulikhel offers a peaceful lifestyle with scenic beauty, fresh air, and nearby places to explore during free time.",
+        "studentLife": "Student life at Kathmandu University is vibrant, balanced, and full of opportunities for both academic growth and personal development. The university provides a peaceful and student-friendly environment in Dhulikhel, which helps students stay focused on their studies while also enjoying campus life. Students pursuing MBBS get regular exposure to clinical training in affiliated hospitals, which becomes an important part of their daily routine and helps them gain real-life medical experience. Along with academics, the university encourages students to take part in cultural events, sports activities, seminars, workshops, and student clubs, which help in building confidence, leadership skills, and teamwork. The campus is equipped with modern facilities such as libraries, laboratories, hostels, sports complexes, cafeterias, and recreational areas, ensuring a comfortable and convenient lifestyle for students. The university celebrates various festivals and cultural programs, allowing students from different backgrounds to connect and share their traditions, creating a multicultural and inclusive environment. International students, especially from India, find it easy to adapt due to the similar culture, food habits, and friendly atmosphere. Students also get opportunities to participate in research projects, medical camps, and community health programs, which enhance their practical knowledge and social responsibility.",
+        "whyChooseUsIntro": "Getting admission to Kathmandu University for MBBS can be a competitive and detailed process, which is why choosing the right guidance is very important. iExplain Education is a trusted consultancy that helps students achieve their dream of studying MBBS abroad in Nepal with complete ease and confidence.",
+        "whyChooseUs": [
+            "Expert Career Counseling: Personalized guidance based on student profile, NEET score, and career goals to help choose the best medical college under Kathmandu University.",
+            "Complete Admission Assistance: Step-by-step support from filling out application forms to securing admission confirmation without any confusion.",
+            "Documentation Support: Assistance in preparing, verifying, and submitting all required documents correctly to avoid rejection or delays.",
+            "Entrance Exam Guidance: Proper guidance regarding entrance exams, eligibility criteria, and preparation tips for MBBS admission in Nepal.",
+            "Transparent Fee Guidance: Clear explanation of fee structure, payment process, and total expenses with no hidden charges.",
+            "Visa & Travel Assistance: Support in visa documentation, application process, and travel arrangements for a smooth transition.",
+            "Pre-Departure Orientation: Guidance on packing, travel, currency, and basic information about living in Nepal before departure.",
+            "Accommodation Support: Help in arranging safe and comfortable hostel or living options near the university campus.",
+            "On-Arrival Assistance: Airport pickup and support in settling down at the university and hostel.",
+            "24/7 Student Support: Continuous assistance even after admission for academic, personal, or emergency needs.",
+            "Post-Admission Guidance: Help with university formalities, local adjustments, and ongoing student support during the MBBS course."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled and signed application form"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of date of birth and basic education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology, and English"
+            },
+            {
+                "document": "NEET Score Card",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Entrance Exam Score",
+                "details": "As per Kathmandu University admission requirement"
+            },
+            {
+                "document": "Passport / ID Proof",
+                "details": "Valid passport or government ID"
+            },
+            {
+                "document": "Passport Size Photographs",
+                "details": "Recent photographs as per specifications"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Proof of good health from a recognized doctor/hospital"
+            },
+            {
+                "document": "Character Certificate",
+                "details": "Character Certificate"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "Required for students from different boards"
+            },
+            {
+                "document": "Financial Proof",
+                "details": "Bank statement or sponsor letter"
+            }
+        ],
+        "conclusion": "Choosing to pursue MBBS at Kathmandu University is a smart and practical decision for students who are looking for a globally recognized medical degree at an affordable cost. The university is well-known for its high academic standards, modern teaching methods, and strong focus on practical clinical training, which helps students build a solid foundation in medical sciences. With recognition from major bodies like the National Medical Commission (NMC) and listing in the World Directory of Medical Schools (WHO), students get the opportunity to appear for important licensing exams such as FMGE/NExT, USMLE, and PLAB, opening doors to international medical careers. Kathmandu University provides a balanced learning environment, where students not only gain theoretical knowledge but also receive hands-on experience in affiliated hospitals, preparing them for real-world medical challenges.",
+        "faqs": [
+            {
+                "question": "Is Kathmandu University recognized by NMC for Indian students?",
+                "answer": "Yes, Kathmandu University is recognized by the National Medical Commission (NMC, India). Indian students can appear for FMGE/NExT after completing their MBBS."
+            },
+            {
+                "question": "What is the duration of MBBS at Kathmandu University?",
+                "answer": "The total duration of the MBBS course is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program is taught in English, which makes it suitable for Indian and international students."
+            },
+            {
+                "question": "What is the total fee for MBBS at Kathmandu University?",
+                "answer": "The total MBBS fee ranges between INR 35–50 lakhs, depending on the affiliated medical college."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad and practice in India later."
+            },
+            {
+                "question": "Does Kathmandu University conduct an entrance exam?",
+                "answer": "Yes, admission is generally based on an entrance exam conducted by Kathmandu University or its affiliated colleges."
+            },
+            {
+                "question": "Are hostel facilities available for students?",
+                "answer": "Yes, the university provides hostel and accommodation facilities with basic amenities for students."
+            },
+            {
+                "question": "Can students practice in India after completing MBBS?",
+                "answer": "Yes, students can practice in India after clearing the FMGE/NExT exam as per NMC guidelines."
+            },
+            {
+                "question": "How is student life at Kathmandu University?",
+                "answer": "Student life is safe, peaceful, and engaging, with opportunities for sports, cultural events, research, and clinical exposure."
+            },
+            {
+                "question": "Why should I choose iExplain Education for MBBS admission?",
+                "answer": "iExplain Education provides complete support, including counseling, admission guidance, documentation, visa assistance, and pre-departure services, ensuring a smooth process."
+            }
+        ]
+    },
+    "bp-koirala-institute-of-health-sciences": {
+        "title": "B. P. Koirala Institute of Health Sciences",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/BPKIHS_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/BPKIHS_Mobile.webp",
+        "intro": {
+            "text": "B. P. Koirala Institute of Health Sciences (BPKIHS) is one of the most reputed and well-established medical universities in Nepal, located in the beautiful city of Dharan. Established through a historic collaboration between the Government of Nepal and the Government of India, the institute was founded with a vision to strengthen healthcare education, promote advanced medical research, and deliver high-quality healthcare services across the region.\n\nWhen it comes to Study MBBS Abroad, BPKIHS stands out as a top choice for international students, especially Indian aspirants. The university offers a globally recognized MBBS in Nepal program that is designed according to international medical education standards. The curriculum focuses on a perfect balance of theoretical knowledge, clinical training, and practical exposure, making it an ideal destination for students who want to pursue MBBS Abroad at an affordable cost.\n\nOne of the major highlights of BPKIHS is its strong emphasis on hands-on clinical experience. The institute is attached to a well-equipped teaching hospital where students get early exposure to real patient interactions. This practical approach helps students develop excellent diagnostic, communication, and clinical skills, which are essential for a successful medical career. The university follows a modern teaching methodology that includes interactive learning, research-based studies, and advanced medical technologies.\n\nFor students searching for the Top Countries for MBBS Abroad, Nepal has become a preferred destination due to its proximity to India, similar culture, and no language barrier. At BPKIHS, the medium of instruction is English, making it convenient for international students to adapt quickly. The affordability of tuition fees and living expenses further adds to its popularity among students looking for Low-Cost MBBS Abroad options.\n\nThe institute is recognized by major international medical bodies, ensuring that the degree holds global value. Students graduating from BPKIHS are eligible to appear for various licensing exams such as FMGE/NExT in India, USMLE in the USA, and PLAB in the UK. This opens up wide career opportunities for those planning to build a successful medical career globally."
+        },
+        "quickOverview": {
+            "University Name": "B. P. Koirala Institute of Health Sciences (BPKIHS)",
+            "Location": "Dharan, Nepal",
+            "Established": "1993",
+            "Type": "Public Medical University",
+            "Medium of Teaching": "English",
+            "Course Offered": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "Duration of MBBS": "5.5 Years (including internship)",
+            "Recognition": "NMC (India), WHO, and other global bodies",
+            "Entrance Requirement": "NEET Qualification (for Indian students)",
+            "Affiliation": "Autonomous Health Sciences University"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is one of the most important decisions for any medical aspirant planning to Study MBBS Abroad. B. P. Koirala Institute of Health Sciences (BPKIHS), located in Dharan, offers an ideal combination of quality education, affordability, and global recognition, making it a top choice for students pursuing MBBS in Nepal.",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "BPKIHS is recognized by major medical bodies such as NMC (India) and WHO. This ensures that students graduating from here are eligible to appear for licensing exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Affordable MBBS Abroad Option",
+                    "Details": "For students looking for Low-Cost MBBS Abroad, BPKIHS provides high-quality education at a much lower cost compared to private medical colleges in India and other countries."
+                },
+                {
+                    "Heading": "High-Quality Education & Modern Curriculum",
+                    "Details": "The MBBS program at BPKIHS follows international standards with a well-structured curriculum that balances theoretical knowledge and practical training."
+                },
+                {
+                    "Heading": "Early Clinical Exposure",
+                    "Details": "One of the biggest advantages of studying at BPKIHS is the early clinical exposure. Students get hands-on training in a well-equipped teaching hospital."
+                },
+                {
+                    "Heading": "English Medium Instruction",
+                    "Details": "The entire MBBS course is taught in English, making it easier for international students, especially Indian students, to understand and adapt."
+                },
+                {
+                    "Heading": "Experienced Faculty & Advanced Infrastructure",
+                    "Details": "BPKIHS has highly qualified and experienced faculty members. The campus includes modern laboratories, digital libraries, and advanced medical equipment."
+                },
+                {
+                    "Heading": "Safe & Comfortable Environment",
+                    "Details": "Located in Dharan, the institute offers a safe, peaceful, and student-friendly environment. Cultural similarity with India makes adjustment easier."
+                },
+                {
+                    "Heading": "Ideal Destination for Indian Students",
+                    "Details": "Nepal is considered one of the Top Countries for MBBS Abroad for Indian students due to close proximity, similar food/culture, and no visa complications."
+                },
+                {
+                    "Heading": "Strong Career Opportunities",
+                    "Details": "Graduates from BPKIHS have excellent career prospects. After completing MBBS Abroad, students can pursue higher studies or practice medicine globally."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at B. P. Koirala Institute of Health Sciences (BPKIHS), located in Dharan, is designed according to international medical education standards. The course focuses on building a strong foundation in basic sciences, followed by clinical subjects and hands-on training through hospital exposure. The total duration is 4.5 years of academic study + 1 year compulsory internship.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects Covered"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects Covered": "Pathology, Microbiology, Pharmacology"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects Covered": "Community Medicine, Forensic Medicine"
+                },
+                {
+                    "Year": "4th Year (Final Year)",
+                    "Subjects Covered": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Orthopedics, Ophthalmology, ENT"
+                },
+                {
+                    "Year": "Internship (1 Year)",
+                    "Subjects Covered": "Rotations in Medicine, Surgery, Pediatrics, Gynecology, Community Health, Emergency"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at B. P. Koirala Institute of Health Sciences (BPKIHS), located in Dharan, is considered moderate compared to private medical colleges in India. The total cost includes tuition fees, hostel charges, and other basic expenses.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "At Admission (Year 1)",
+                    "tuition": "$24,000 – $25,000",
+                    "hostel": "$300 – $1,400",
+                    "total": "₹21.5 – 22.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Year 2",
+                    "tuition": "$15,000 – $16,000",
+                    "hostel": "$300 – $1,400",
+                    "total": "₹13.5 – 14.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Year 3",
+                    "tuition": "$10,000 – $15,000",
+                    "hostel": "$300 – $1,400",
+                    "total": "₹9.5 – 13.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Year 4",
+                    "tuition": "$8,000 – $10,000",
+                    "hostel": "$300 – $1,400",
+                    "total": "₹7.5 – 9.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Total Tuition Fee",
+                    "tuition": "$60,000 – $75,000",
+                    "hostel": "$300 – $1,400",
+                    "total": "₹52 – 65 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at B. P. Koirala Institute of Health Sciences (BPKIHS), located in Dharan, is structured as per international medical education standards and includes both academic study and practical training.",
+        "duration": {
+            "headers": [
+                "Course Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Course Phase": "Total MBBS Duration",
+                    "Duration": "5.5 Years",
+                    "Details": "4.5 Years Study + 1 Year Internship"
+                },
+                {
+                    "Course Phase": "Pre-Clinical Phase",
+                    "Duration": "1.5 Years",
+                    "Details": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Course Phase": "Para-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Pathology, Microbiology, Pharmacology, Forensic Medicine"
+                },
+                {
+                    "Course Phase": "Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Course Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Rotatory training in hospital departments"
+                }
+            ]
+        },
+        "studentSupport": "B. P. Koirala Institute of Health Sciences provides a strong and well-structured student support system to ensure that students have a smooth and comfortable academic journey, especially those pursuing MBBS abroad in Nepal. From the beginning of the admission process, the institute offers guidance through its academic and administrative departments, helping students with enrollment, course orientation, and understanding the curriculum. There are dedicated offices such as the academic division, registrar office, and information desk, where students can easily reach out for any queries or support during their studies. The institute also provides excellent academic support, with experienced faculty, regular lectures, practical sessions, and continuous assessments to help students stay on track. Students benefit from access to modern laboratories, research facilities, and an e-library system, which supports both academic learning and research activities. In addition, BPKIHS promotes a culture of continuous medical education, workshops, and training programs, ensuring that students keep updating their knowledge and skills throughout the course. For student well-being, the institute offers hostel and accommodation facilities within the campus, along with dining services, recreational areas, and sports facilities, creating a comfortable living environment. There is also a strong focus on mental and emotional support, where students can seek guidance and counseling when dealing with academic pressure or personal challenges. The campus includes basic amenities like canteens, banks, ATMs, and common areas, making daily life convenient for students. One of the key highlights of student support at BPKIHS is its teaching hospital and community-based training system, where students gain hands-on experience while being guided by experienced doctors and faculty members. The institute follows a “learn by doing” approach, where students are posted in hospitals and community health centers, helping them develop real-world medical skills under supervision.",
+        "recognition": "B. P. Koirala Institute of Health Sciences is one of the most prestigious medical institutions in Nepal, known for its excellence in medical education, healthcare services, and research. For students planning to pursue MBBS abroad in Nepal, understanding its affiliation, recognition, and achievements is important, as these factors ensure the quality, credibility, and global acceptance of the degree. Affiliation: B. P. Koirala Institute of Health Sciences (BPKIHS) is an autonomous health sciences university established by the Government of Nepal and later upgraded to a university-level institution. It operates under the Ministry of Health and Population, Nepal, and is supported by a unique collaboration between the Governments of Nepal and India. The institute runs its own teaching hospital, medical colleges, and research centers, allowing students to receive integrated education and clinical training within the same campus. This strong institutional structure ensures that students get consistent academic guidance and hands-on medical experience. Recognition: BPKIHS is widely recognized at both national and international levels. It is approved by the Nepal Medical Council (NMC Nepal) and is also recognized by the National Medical Commission (NMC India), which allows Indian students to appear for FMGE/NExT after completing their MBBS. The institute is listed in the World Directory of Medical Schools (WDOMS) and recognized by global organizations such as the World Health Organization (WHO). This recognition enables graduates to pursue higher studies or medical practice in countries like India, USA, UK, and others, after clearing respective licensing exams such as USMLE and PLAB. Achievements: Over the years, B. P. Koirala Institute of Health Sciences has achieved a strong reputation for its contribution to medical education, healthcare delivery, and community services. It is known for its “community-oriented medical education” model, where students actively participate in rural health programs, medical camps, and public health initiatives. The institute has developed a well-equipped teaching hospital with advanced medical facilities, providing quality healthcare services to a large population. BPKIHS also promotes research and innovation, with students and faculty regularly involved in national and international research projects, seminars, and conferences. Its graduates are known for their clinical competence, practical skills, and global adaptability, making it one of the top choices for students seeking MBBS abroad in Nepal.",
+        "hostelFacilities": "For student well-being, the institute offers hostel and accommodation facilities within the campus, along with dining services, recreational areas, and sports facilities, creating a comfortable living environment. The campus includes basic amenities like canteens, banks, ATMs, and common areas, making daily life convenient for students. Being a residential campus, BPKIHS helps create a strong sense of community and better interaction among students from different regions and countries, including India.",
+        "studentLife": "Student life at B. P. Koirala Institute of Health Sciences is well-balanced, engaging, and focused on both academic excellence and personal development. The institute provides a disciplined yet friendly environment where students can fully concentrate on their medical studies while also enjoying campus life. Since BPKIHS is a residential campus, most students stay within the campus, which helps create a strong sense of community and better interaction among students from different regions and countries, including India. The campus is equipped with all essential facilities such as modern classrooms, advanced laboratories, a well-stocked library, hostels, sports grounds, cafeterias, and recreational areas, ensuring that students have a comfortable and convenient lifestyle. Medical students get regular exposure to the institute’s teaching hospital, where they interact with real patients and gain practical clinical experience from the early stages of their MBBS program. This hands-on learning plays a crucial role in building confidence and medical skills. Apart from academics, BPKIHS encourages students to participate in sports events, cultural programs, seminars, workshops, and student clubs, which help in developing leadership qualities, communication skills, and teamwork. Various festivals and cultural activities are celebrated on campus, allowing students to relax and enjoy their time while also connecting with different cultures. The institute also promotes involvement in community health programs and medical camps, where students get real-life exposure to rural healthcare systems and social responsibilities. The surrounding environment of the campus is peaceful, safe, and student-friendly, which helps students maintain a good balance between studies and personal life. International students find it easier to adapt due to the supportive faculty, friendly peers, and cultural similarities.",
+        "whyChooseUsIntro": "Getting admission to B. P. Koirala Institute of Health Sciences for MBBS requires proper guidance, accurate documentation, and a clear understanding of the admission process. iExplain Education is a trusted consultancy that helps students achieve their dream of studying MBBS abroad in Nepal with ease and confidence.",
+        "whyChooseUs": [
+            "Personalized Career Counseling: One-on-one guidance based on student profile, NEET score, and career goals to choose the best option.",
+            "Complete Admission Assistance: Step-by-step support from application filling to final admission confirmation.",
+            "Documentation Support: Help in preparing, verifying, and submitting all required documents correctly to avoid rejection.",
+            "Entrance Exam Guidance: Proper guidance regarding entrance exams, eligibility criteria, and preparation strategy.",
+            "Transparent Fee Guidance: Clear breakdown of total fees, payment process, and no hidden charges.",
+            "Visa & Travel Assistance: Support with visa documentation, application process, and travel arrangements.",
+            "Pre-Departure Orientation: Guidance on travel, currency exchange, packing, and life in Nepal.",
+            "Accommodation Support: Assistance in securing safe and comfortable hostel or nearby accommodation.",
+            "On-Arrival Assistance: Airport pickup and help in settling into the campus and hostel.",
+            "24/7 Student Support: Continuous assistance during the entire MBBS course for any academic or personal issues.",
+            "Post-Admission Support: Help with university formalities, local adjustment, and ongoing student guidance.",
+            "Experienced & Trusted Consultancy: Proven track record of successfully placing students in top medical universities abroad."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled and signed application form"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of date of birth"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, Biology, and English"
+            },
+            {
+                "document": "NEET Score Card",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Entrance Exam Score",
+                "details": "As per BPKIHS admission requirements"
+            },
+            {
+                "document": "Passport / ID Proof",
+                "details": "Valid passport or government ID"
+            },
+            {
+                "document": "Passport Size Photographs",
+                "details": "Recent photographs as per specifications"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a recognized hospital/doctor"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "Required for students from other boards"
+            },
+            {
+                "document": "Admission Offer Letter",
+                "details": "Issued by the institute after selection"
+            }
+        ],
+        "conclusion": "Choosing to pursue MBBS at B. P. Koirala Institute of Health Sciences is a great decision for students who are looking for a high-quality and globally recognized medical education at an affordable cost. The institute is well-known for its strong academic system, experienced faculty, and excellent clinical training through its own teaching hospital, which helps students gain real-world medical experience. With recognition from major bodies like the National Medical Commission (NMC) and listing in the World Directory of Medical Schools (WHO), students get the opportunity to appear for important licensing exams such as FMGE/NExT, USMLE, and PLAB, making it easier to build a successful medical career both in India and abroad. BPKIHS follows a community-oriented medical education approach, where students actively participate in medical camps, rural healthcare programs, and research activities, helping them develop practical skills along with a sense of social responsibility. The institute provides a safe, disciplined, and student-friendly campus environment, along with modern facilities like hostels, libraries, laboratories, and recreational areas, ensuring a comfortable and focused learning experience.",
+        "faqs": [
+            {
+                "question": "Is B. P. Koirala Institute of Health Sciences recognized by NMC for Indian students?",
+                "answer": "Yes, B. P. Koirala Institute of Health Sciences is recognized by the National Medical Commission (NMC, India). Indian students can appear for FMGE/NExT after completing their MBBS."
+            },
+            {
+                "question": "What is the duration of MBBS at BPKIHS?",
+                "answer": "The MBBS course duration is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program is taught in English, making it suitable for Indian and international students."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad and practice in India later."
+            },
+            {
+                "question": "Does BPKIHS conduct an entrance exam?",
+                "answer": "Yes, admission is generally based on an entrance exam conducted by the institute."
+            },
+            {
+                "question": "What is the approximate fee for MBBS at BPKIHS?",
+                "answer": "The total MBBS fee is generally around INR 60–70 lakhs, depending on the category and seat type."
+            },
+            {
+                "question": "Are hostel facilities available for students?",
+                "answer": "Yes, the institute provides on-campus hostel facilities with basic amenities for students."
+            },
+            {
+                "question": "Can students practice in India after completing MBBS from BPKIHS?",
+                "answer": "Yes, students can practice in India after clearing the FMGE/NExT exam as per NMC guidelines."
+            },
+            {
+                "question": "How is student life at BPKIHS?",
+                "answer": "Student life is disciplined, safe, and engaging, with opportunities for clinical exposure, sports, cultural events, and research activities."
+            }
+        ]
+    },
+    "patan-academy-of-health-sciences": {
+        "title": "Patan Academy of Health Sciences",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/PAHS_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/PAHS_Mobile.webp",
+        "intro": {
+            "text": "Patan Academy of Health Sciences is one of the leading medical institutions in Nepal, established in 2008, with a strong focus on providing quality medical education, research, and healthcare services. Located in Lalitpur (Patan), Nepal, the academy is closely associated with the well-known Patan Hospital, which serves as its primary teaching hospital. The institution was established with the mission of improving healthcare services in rural and underserved areas, making it unique compared to many other medical universities.\n\nFor students planning to pursue MBBS abroad in Nepal, Patan Academy of Health Sciences offers a well-structured and globally recognized MBBS program. The course is designed to provide a strong foundation in basic medical sciences along with practical clinical training, ensuring that students develop both theoretical knowledge and real-world medical skills. The MBBS program is taught in English, which makes it convenient for Indian and international students. Students also get early exposure to hospital training and community-based healthcare programs, which helps them understand real patient care and public health challenges.\n\nThe academy is recognized by the Nepal Medical Council (NMC Nepal) and is also listed in the World Directory of Medical Schools (WHO), allowing graduates to appear for licensing exams such as FMGE/NExT (India), USMLE (USA), and PLAB (UK). With its focus on community-oriented medical education, experienced faculty, modern infrastructure, and hands-on clinical exposure, Patan Academy of Health Sciences has become a preferred choice for students who want to pursue MBBS abroad at an affordable cost while gaining meaningful medical experience.\n\nOverall, Patan Academy of Health Sciences provides a perfect combination of quality education, practical training, and social responsibility, helping students become not only skilled doctors but also responsible healthcare professionals ready to serve society."
+        },
+        "quickOverview": {
+            "University Name": "Patan Academy of Health Sciences",
+            "Established": "2008",
+            "Location": "Lalitpur (Patan), Nepal",
+            "Type": "Public Medical Institution",
+            "Affiliated Hospital": "Patan Hospital",
+            "Courses Offered": "MBBS, Nursing, Public Health, Allied Health Sciences",
+            "Medium of Instruction": "English",
+            "Recognition": "Recognized by Nepal Medical Council (NMC Nepal), Listed in WDOMS (WHO)",
+            "MBBS Duration": "5.5 Years (4.5 Years Study + 1 Year Internship)"
+        },
+        "benefits": {
+            "intro": "Patan Academy of Health Sciences (PAHS) in Nepal is one of the most respected medical institutions in South Asia, offering a unique MBBS program designed to produce competent, socially responsible, and community-oriented doctors.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Strong Academic Reputation & Recognition",
+                    "Details": "PAHS is a fully autonomous public medical institution established by the Nepalese Parliament, ensuring government-level support and credibility. Its MBBS degree is recognized internationally, including by the NMC India, which allows Indian students to appear for the FMGE/NExT exam."
+                },
+                {
+                    "Heading": "Modern & Innovative Curriculum",
+                    "Details": "The MBBS program at PAHS follows Problem-Based Learning (PBL) and clinical presentation methods, which emphasize critical thinking, analytical skills, and self-directed learning. Students are exposed to real-life medical problems from the first year."
+                },
+                {
+                    "Heading": "Extensive Clinical Exposure",
+                    "Details": "Students at PAHS get hands-on training from early years of study in Patan Hospital and during rural postings in community health centers. They gain experience with a wide variety of diseases and patient demographics."
+                },
+                {
+                    "Heading": "Focus on Community Health & Rural Care",
+                    "Details": "PAHS has a unique mission to strengthen rural healthcare. Students actively participate in community health projects, mobile health camps, and rural hospital postings, preparing them to serve areas with critical medical needs."
+                },
+                {
+                    "Heading": "Cost-Effective Education",
+                    "Details": "Compared to many private medical colleges in India and other countries, PAHS offers MBBS education at an affordable cost without compromising on quality."
+                },
+                {
+                    "Heading": "English-Medium Instruction",
+                    "Details": "All MBBS courses at PAHS are taught in English, facilitating easy comprehension for international students and preparing them for global medical exams such as USMLE, PLAB, or FMGE/NExT."
+                },
+                {
+                    "Heading": "Career Opportunities & Global Exposure",
+                    "Details": "Graduates from PAHS are well-prepared for clinical practice, postgraduate medical studies, research, and public health roles, with opportunities to work internationally."
+                },
+                {
+                    "Heading": "Holistic Student Support",
+                    "Details": "Beyond academics, PAHS provides a supportive environment including hostels, libraries, labs, and guidance from experienced faculty. Students receive mentoring, counseling, and career guidance."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS course offered by Patan Academy of Health Sciences (PAHS) is an integrated course, which includes 6 years of academic and clinical learning. The course focuses on developing students' theoretical knowledge, skills, and community-based healthcare delivery skills.",
+        "syllabus": {
+            "headers": ["Year / Phase", "Subjects Covered"],
+            "table": [
+                {
+                    "Year / Phase": "Foundation / Introductory (First 6 months)",
+                    "Subjects Covered": "Introduction to Clinical Medicine (ICM), Communication & Professional Skills, Community Health"
+                },
+                {
+                    "Year / Phase": "1st Year (Pre-Clinical)",
+                    "Subjects Covered": "Anatomy, Histology, Physiology, Biochemistry"
+                },
+                {
+                    "Year / Phase": "2nd Year (Pre-Clinical / Para-Clinical)",
+                    "Subjects Covered": "Microbiology, Pathology, Pharmacology, Genetics, Community Medicine"
+                },
+                {
+                    "Year / Phase": "3rd Year (Clinical Phase begins)",
+                    "Subjects Covered": "Pathophysiology, Pharmacology, Obstetrics & Gynecology, Forensic Medicine, Family Health, Internal Medicine"
+                },
+                {
+                    "Year / Phase": "4th Year (Clinical Rotations)",
+                    "Subjects Covered": "Surgery & Allied, Pediatrics, Internal Medicine, Obstetrics & Gynecology, ENT, Ophthalmology, Emergency Medicine"
+                },
+                {
+                    "Year / Phase": "5th Year (Advanced Clinical Rotations)",
+                    "Subjects Covered": "Neurology & Psychiatry, Cardiology, Orthopedics, Infectious & Tropical Diseases, Critical Care"
+                },
+                {
+                    "Year / Phase": "Rural Rotation / Community Posting",
+                    "Subjects Covered": "Community Medicine, Primary Health Care"
+                },
+                {
+                    "Year / Phase": "6th Year (Internship / Rotating Internship)",
+                    "Subjects Covered": "All Clinical Departments"
+                }
+            ]
+        },
+        "feesIntro": "Patan Academy of Health Sciences (PAHS) offers one of the most affordable and high-quality MBBS programs in Nepal. As a public government-funded medical institution, its fees are regulated and lower than most private colleges.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1 Year",
+                    "tuition": "1,122,691",
+                    "hostel": "40,000",
+                    "total": "₹7.5 – 8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2 Year",
+                    "tuition": "1,114,691",
+                    "hostel": "40,000",
+                    "total": "₹7.5 – 8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3 Year",
+                    "tuition": "373,697",
+                    "hostel": "40,000",
+                    "total": "₹2.6 – 2.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4 Year",
+                    "tuition": "373,697",
+                    "hostel": "40,000",
+                    "total": "₹2.6 – 2.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5 Year",
+                    "tuition": "370,496",
+                    "hostel": "40,000",
+                    "total": "₹2.6 – 2.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "Total (Approx.)",
+                    "tuition": "3,355,272",
+                    "hostel": "2,00,000",
+                    "total": "₹33 – 34 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Patan Academy of Health Sciences (PAHS) is designed to provide comprehensive medical education that combines theoretical knowledge, clinical training, and community health exposure.",
+        "duration": {
+            "headers": ["Course Phase", "Duration", "Details"],
+            "table": [
+                {
+                    "Course Phase": "Total MBBS Duration",
+                    "Duration": "5.5 Years",
+                    "Details": "4.5 Years Study + 1 Year Internship"
+                },
+                {
+                    "Course Phase": "Pre-Clinical Phase",
+                    "Duration": "1.5 Years",
+                    "Details": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Course Phase": "Para-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Pathology, Microbiology, Pharmacology, Forensic Medicine"
+                },
+                {
+                    "Course Phase": "Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Course Phase": "Internship",
+                    "Duration": "1 Year",
+                    "Details": "Rotatory training in hospital departments"
+                }
+            ]
+        },
+        "studentSupport": "Patan Academy of Health Sciences (PAHS) is dedicated to providing a comprehensive and holistic support system for all MBBS students, ensuring that they thrive academically, professionally, and personally throughout their medical education. From the very beginning of the program, students are provided with academic mentorship and guidance by experienced faculty members who help them navigate the rigorous curriculum. This mentorship includes personalized academic counseling, guidance in clinical skill development, and continuous feedback on performance, ensuring that students develop a strong foundation in both theoretical knowledge and practical medical skills.\n\nOne of the key strengths of PAHS is its hands-on clinical training, which begins early in the program. Students receive practical exposure at Patan Hospital, one of the largest teaching hospitals in Nepal, as well as at affiliated rural health centers across the country. During these clinical rotations, students are supervised by experienced doctors and faculty members who guide them in patient examination, diagnosis, treatment planning, and communication skills, helping them gain confidence and competence in real-world medical practice. PAHS emphasizes not only hospital-based clinical learning but also community and rural health exposure, where students actively participate in health camps, outreach programs, and preventive medicine projects.\n\nIn addition to clinical training, PAHS provides extensive academic resources to support learning and research. The academy maintains a modern library with a wide range of medical books, journals, and digital resources, including e-learning platforms and research databases. The institution also provides safe and comfortable hostel accommodations with essential amenities for both local and international students, creating an environment conducive to focused study and personal growth. Students also have access to counseling and mental health services, helping them manage the stress and pressures of medical education.",
+        "recognition": "Patan Academy of Health Sciences (PAHS) is a prestigious medical institution in Nepal with strong affiliations, recognitions, and a record of notable achievements. Affiliation: Patan Academy of Health Sciences (PAHS) is an autonomous public medical institution established by the Nepalese Parliament. It is closely affiliated with Patan Hospital, one of the leading tertiary care hospitals in Nepal, as well as several rural and community health centers. Recognition: PAHS is recognized by multiple medical authorities, ensuring that its MBBS degree is valid both in Nepal and internationally. Key recognitions include the Nepal Medical Council (NMC Nepal) and the National Medical Commission (NMC India). It is also listed in the World Directory of Medical Schools, enabling graduates to pursue higher studies or clinical practice worldwide. Achievements: PAHS has established a reputation for producing competent, socially responsible, and highly skilled doctors. Its notable achievements include a strong focus on rural healthcare and community medicine, providing students with extensive experience in preventive care and public health. The implementation of Problem-Based Learning (PBL) and early clinical exposure are key factors in its success, leading to a high success rate in postgraduate entrance exams and international licensing examinations.",
+        "hostelFacilities": "The institution provides safe and comfortable hostel accommodations with essential amenities for both local and international students, creating an environment conducive to focused study and personal growth. The campus provides common recreational areas and access to sports and fitness facilities. Patan/Lalitpur is a culturally rich area with all urban facilities available near the campus.",
+        "studentLife": "Student life at Patan Academy of Health Sciences (PAHS) is a balanced blend of rigorous academic training, clinical exposure, community service, and extracurricular activities, designed to nurture well-rounded medical professionals. The academy emphasizes early clinical exposure, allowing students to interact with patients and healthcare teams from the first year, which helps them develop confidence, communication skills, and practical medical expertise. A unique feature of student life at PAHS is its focus on rural healthcare, where students participate in community postings, health camps, and preventive medicine projects in district hospitals and rural clinics.\n\nBeyond academics, PAHS encourages students to maintain a healthy and balanced lifestyle. The campus provides safe and comfortable hostel accommodations, common recreational areas, and access to sports and fitness facilities. Students actively participate in cultural events, social clubs, medical seminars, workshops, and sports competitions, promoting teamwork, leadership, and personal growth. The academy also provides counseling and mental health support, helping students manage stress and maintain well-being during the demanding MBBS program. International students at PAHS receive special guidance for adapting to life in Nepal, including orientation programs, peer mentorship, and language assistance.",
+        "whyChooseUsIntro": "Choosing the right consultancy can make the MBBS admission process abroad smooth, reliable, and stress-free. iExplain Education has established itself as a trusted education consultancy for students aspiring to study MBBS at Patan Academy of Health Sciences (PAHS), Nepal.",
+        "whyChooseUs": [
+            "Expert Guidance and Counseling: iExplain Education provides personalized counseling to help students understand eligibility, admission criteria, and course structure.",
+            "Complete Documentation Support: Assistance with all admission documents, including application forms, academic certificates, and passport requirements.",
+            "Direct Liaison with PAHS: Strong coordination with PAHS administration ensures timely updates, seat confirmation, and smooth admission procedures.",
+            "Visa and Travel Assistance: Support for student visa processing, travel arrangements, and pre-departure guidance.",
+            "Accommodation and Hostel Guidance: Help in arranging safe and comfortable hostel or living facilities near the campus.",
+            "Pre-Departure Orientation: Students receive orientation programs, tips on living in Nepal, cultural adaptation, and academic expectations.",
+            "Career and FMGE/NExT Support: Guidance on preparing for licensing exams and planning for a successful future medical career.",
+            "Transparent and Reliable Services: iExplain Education maintains honesty, transparency, and a student-first approach throughout the process."
+        ],
+        "documents": [
+            {
+                "document": "Completed Application Form",
+                "details": "Filled and signed PAHS MBBS application form"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid passport with at least 2 years of validity"
+            },
+            {
+                "document": "Mark Sheets / Certificates",
+                "details": "Class 10 & 12 certificates with subjects and marks"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a registered medical practitioner confirming fitness"
+            },
+            {
+                "document": "Passport-sized Photographs",
+                "details": "Recent color photographs (as per PAHS specifications)"
+            },
+            {
+                "document": "Migration / Transfer Certificate",
+                "details": "Required for students applying from other boards"
+            },
+            {
+                "document": "Character / Conduct Certificate",
+                "details": "Issued by the last attended school or college"
+            },
+            {
+                "document": "NEET Score Card (for Indian students)",
+                "details": "Mandatory for Indian students to appear in MBBS abroad programs"
+            },
+            {
+                "document": "Visa / Travel Documents",
+                "details": "Required once admission is confirmed for travel to Nepal"
+            }
+        ],
+        "conclusion": "Patan Academy of Health Sciences (PAHS) stands out as one of the most reputable and student-friendly medical institutions in Nepal, offering a well-structured MBBS program that combines academic excellence, clinical exposure, and community-oriented healthcare training. With its strong affiliations, international recognitions, and focus on rural healthcare, PAHS ensures that students not only gain comprehensive medical knowledge but also develop the skills and values required to become competent, socially responsible doctors.\n\nChoosing PAHS for MBBS is a wise decision for students seeking quality education abroad at an affordable cost, with opportunities for practical training, research, and global career prospects. With the guidance of a trusted consultancy like iExplain Education, students can navigate the admission process smoothly and begin their journey with confidence.",
+        "faqs": [
+            {
+                "question": "What is the duration of the MBBS program at PAHS?",
+                "answer": "The MBBS program at PAHS is 5.5 years long, which includes 5 years of academic study and 6 months of compulsory internship, along with rural and community health postings."
+            },
+            {
+                "question": "Is Patan Academy of Health Sciences recognized for international students?",
+                "answer": "Yes, PAHS is recognized by the Nepal Medical Council (NMC Nepal), the National Medical Commission (NMC India), and listed in the World Directory of Medical Schools, allowing graduates to practice or pursue higher studies internationally."
+            },
+            {
+                "question": "What is the eligibility criteria for Indian students?",
+                "answer": "Indian students must have completed Class 12 (10+2) with Physics, Chemistry, and Biology, and must have qualified the NEET exam to apply for MBBS at PAHS."
+            },
+            {
+                "question": "How much is the tuition fee for MBBS at PAHS?",
+                "answer": "The total tuition fee for the MBBS course is approximately NPR 4,223,090 (~INR 33–34 lakhs), which includes tuition installments and hostel charges. Additional expenses like living, books, and insurance are separate."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include passport, NEET score card, Class 10 & 12 mark sheets, medical fitness certificate, character certificate, photos, and completed application form. iExplain Education assists students in preparing all documents."
+            },
+            {
+                "question": "Does PAHS provide hostel facilities?",
+                "answer": "Yes, PAHS offers safe and comfortable hostel accommodations for both local and international students, ensuring a supportive environment for study and personal growth."
+            },
+            {
+                "question": "What is the language of instruction?",
+                "answer": "The medium of instruction at PAHS is English, making it easier for international students, including Indians, to adapt to the curriculum."
+            },
+            {
+                "question": "How is the student life at PAHS?",
+                "answer": "Student life combines rigorous academics, clinical exposure, community postings, and extracurricular activities. Students engage in sports, cultural events, workshops, and social initiatives alongside their medical education."
+            },
+            {
+                "question": "Can iExplain Education help with the admission process?",
+                "answer": "Yes, iExplain Education provides end-to-end guidance, including admission counseling, documentation, visa assistance, travel guidance, and pre-departure support, making the process smooth and hassle-free."
+            },
+            {
+                "question": "Do PAHS graduates need to take FMGE/NExT in India?",
+                "answer": "Yes, Indian students who graduate from PAHS must clear the FMGE/NExT exam to practice medicine in India. iExplain Education also provides guidance and tips to help students prepare for this exam."
+            }
+        ]
+    },
+    "dhaka-national-medical-college": {
+        "title": "Dhaka National Medical College",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/DNMC_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/DNMC_Mobile.webp",
+        "intro": {
+            "text": "Dhaka National Medical College (DNMC), located in the heart of Dhaka, Bangladesh, is one of the country’s well-established private medical institutions known for providing high-quality medical education. Established in 1992, DNMC has grown into a reputable center for undergraduate and postgraduate medical training, combining modern teaching methods, advanced clinical exposure, and a strong emphasis on research and community health.\n\nThe college is affiliated with the University of Dhaka, one of Bangladesh’s premier universities, ensuring that its MBBS degree is recognized nationally and internationally. The medium of instruction is English, making it a preferred choice for international students, particularly from India, Nepal, and other neighboring countries. The college is recognized by the Bangladesh Medical and Dental Council (BMDC), the Medical Council of India (MCI/NMC India), and listed in the World Directory of Medical Schools, allowing graduates to appear for licensing exams and pursue medical careers globally.\n\nDhaka National Medical College offers a comprehensive MBBS curriculum that combines pre-clinical, para-clinical, and clinical education with extensive hospital-based practical training at the college’s own teaching hospital, which serves thousands of patients every year. The college also emphasizes community health programs, rural postings, and research initiatives, providing students with hands-on experience in real-world healthcare settings.\n\nWith a student-centric approach, experienced faculty, modern facilities, and a vibrant campus life, Dhaka National Medical College continues to attract students from Bangladesh and abroad who aspire to become competent and socially responsible medical professionals."
+        },
+        "quickOverview": {
+            "Name of College": "Dhaka National Medical College (DNMC)",
+            "Established": "1992",
+            "Location": "Dhaka, Bangladesh",
+            "Affiliation": "University of Dhaka",
+            "Recognition": "Bangladesh Medical and Dental Council (BMDC), National Medical Commission (NMC India), World Directory of Medical Schools",
+            "Medium of Instruction": "English",
+            "Course Offered": "MBBS (Bachelor of Medicine and Bachelor of Surgery)",
+            "Duration of MBBS": "5 years academic study + 1-year compulsory internship (total 6 years)",
+            "Teaching Hospital": "Dhaka National Medical College Hospital (attached)",
+            "Facilities": "Modern classrooms, well-equipped laboratories, library, hostel accommodations, sports and extracurricular facilities",
+            "Focus Areas": "Clinical training, research, community and rural health programs, preventive medicine"
+        },
+        "benefits": {
+            "intro": "Dhaka National Medical College (DNMC) is one of the most sought-after destinations for MBBS aspirants from Bangladesh, India, and other countries. The college offers a high-quality medical education that combines strong academic learning, extensive clinical exposure, and community health training. Here are the key reasons to choose DNMC:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Internationally Recognized Degree",
+                    "Details": "DNMC is affiliated with the University of Dhaka, recognized by the BMDC, National Medical Commission (NMC India), and listed in the World Directory of Medical Schools, ensuring graduates can pursue careers or higher studies globally."
+                },
+                {
+                    "Heading": "Medium of Instruction in English",
+                    "Details": "The MBBS program is taught entirely in English, making it convenient for international students, especially from India, Nepal, and other countries, to follow the curriculum easily."
+                },
+                {
+                    "Heading": "Extensive Clinical Exposure",
+                    "Details": "Students train at the Dhaka National Medical College Hospital, gaining hands-on experience in patient care, diagnosis, and treatment from the early years of the program."
+                },
+                {
+                    "Heading": "Focus on Community & Rural Health",
+                    "Details": "DNMC emphasizes community medicine, rural postings, and preventive healthcare programs, helping students develop social responsibility and practical skills to serve diverse populations."
+                },
+                {
+                    "Heading": "Affordable Tuition Fees",
+                    "Details": "The cost of MBBS in DNMC is significantly lower than many private medical colleges in India, making it an attractive option for budget-conscious students seeking quality education abroad."
+                },
+                {
+                    "Heading": "Experienced Faculty & Modern Facilities",
+                    "Details": "The college has a dedicated team of qualified professors, modern laboratories, libraries, and simulation labs, providing a high standard of medical education and research opportunities."
+                },
+                {
+                    "Heading": "Support for International Students",
+                    "Details": "DNMC provides guidance for visa, travel, accommodation, and adaptation to life in Bangladesh, ensuring a smooth transition for foreign students."
+                },
+                {
+                    "Heading": "Strong Career Opportunities",
+                    "Details": "Graduates are well-prepared to appear for licensing exams like FMGE/NExT in India, pursue postgraduate studies, or practice medicine internationally."
+                },
+                {
+                    "Heading": "Holistic Student Life",
+                    "Details": "Students enjoy a vibrant campus life with extracurricular activities, sports, cultural events, and seminars, promoting personal development alongside medical education."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at DNMC is structured over 5 years of academic study followed by a 1-year compulsory internship, covering pre-clinical, para-clinical, and clinical subjects. The syllabus is designed to provide strong theoretical knowledge, practical skills, and clinical exposure to prepare competent doctors.",
+        "syllabus": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Subjects / Courses"
+            ],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical",
+                    "Duration": "1st Year",
+                    "Subjects / Courses": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Phase": "Para-Clinical",
+                    "Duration": "2nd & 3rd Year",
+                    "Subjects / Courses": "Pathology, Microbiology, Pharmacology, Forensic Medicine, Community Medicine"
+                },
+                {
+                    "Phase": "Clinical",
+                    "Duration": "4th & 5th Year",
+                    "Subjects / Courses": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Ophthalmology, ENT, Psychiatry, Dermatology, Orthopedics"
+                },
+                {
+                    "Phase": "Internship / Rotating Internship",
+                    "Duration": "1 Year",
+                    "Subjects / Courses": "All major clinical specialties"
+                },
+                {
+                    "Phase": "Community & Rural Health Posting",
+                    "Duration": "Integrated",
+                    "Subjects / Courses": "Community Medicine, Public Health Projects, Rural Healthcare Programs"
+                }
+            ]
+        },
+        "feesIntro": "Dhaka National Medical College (DNMC), located in Dhaka, Bangladesh, offers one of the most cost‑effective MBBS programs for international students, especially Indian students looking for quality medical education abroad. The fee structure is divided into admission fees, tuition fees, and additional charges such as hostel and food expenses.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "Total",
+                    "tuition": "₹14,94,000",
+                    "hostel": "₹2,49,000",
+                    "total": "₹17,43,000"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Dhaka National Medical College (DNMC) is designed to provide students with a comprehensive medical education that combines theoretical knowledge, practical skills, and clinical exposure. The total duration of the MBBS course is 5 years of academic study followed by a 1-year compulsory internship, making it 6 years in total.",
+        "duration": {
+            "headers": [
+                "Phase",
+                "Duration",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical Study",
+                    "Duration": "1st Year",
+                    "Details": "Focus on Anatomy, Physiology, Biochemistry; foundational medical knowledge and laboratory work"
+                },
+                {
+                    "Phase": "Para-Clinical Study",
+                    "Duration": "2nd & 3rd Year",
+                    "Details": "Pathology, Microbiology, Pharmacology, Forensic Medicine, Community Medicine; integration of disease mechanisms, drugs, preventive medicine, and public health"
+                },
+                {
+                    "Phase": "Clinical Study",
+                    "Duration": "4th & 5th Year",
+                    "Details": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Ophthalmology, ENT, Psychiatry, Dermatology, Orthopedics; extensive hospital-based practical training and patient care"
+                },
+                {
+                    "Phase": "Rotating Internship",
+                    "Duration": "6th Year (1 year)",
+                    "Details": "Hands-on clinical training in all major specialties; emergency management, patient care, and practical application of knowledge"
+                },
+                {
+                    "Phase": "Total Duration",
+                    "Duration": "6 Years",
+                    "Details": "5 years academic study + 1-year compulsory internship, including rural/community health exposure"
+                }
+            ]
+        },
+        "studentSupport": "Dhaka National Medical College (DNMC) provides a comprehensive range of student support services designed to help both local and international students excel academically, socially, and personally. The college ensures that students receive guidance and assistance throughout their MBBS journey, starting from admission to graduation. DNMC offers academic support, including access to experienced faculty, well-equipped laboratories, modern classrooms, libraries with extensive medical resources, and digital learning platforms. This ensures that students have all the tools necessary to understand complex medical concepts and perform well in exams.\n\nFor international students, especially those from India, Nepal, and other countries, DNMC provides orientation programs and guidance for adapting to life in Bangladesh, including help with hostel arrangements, food, cultural adaptation, and local transport. The college has comfortable hostel accommodations with safe living environments, recreational areas, and 24/7 security. Students also have access to healthcare facilities, counseling services, and mentorship programs, which help them manage stress and maintain mental well-being during the demanding MBBS program.\n\nDNMC encourages students to participate in extracurricular activities, sports, cultural programs, seminars, and workshops, which enhance leadership, teamwork, and communication skills. The college also organizes community outreach programs, health camps, and rural postings, allowing students to gain practical experience in public health and preventive medicine while developing a sense of social responsibility. With a focus on holistic development, academic excellence, and personal growth, the student support services at DNMC ensure that students are well-prepared for both professional practice and global medical careers.",
+        "recognition": "Dhaka National Medical College (DNMC) is one of Bangladesh’s leading private medical colleges, known for its high academic standards, clinical training, and global recognition. The college is fully affiliated with the University of Dhaka, ensuring that its MBBS degree is credible and recognized both nationally and internationally.\n\nAffiliation of Dhaka National Medical College\nDhaka National Medical College (DNMC) is affiliated with the University of Dhaka, one of Bangladesh’s oldest and most prestigious universities. This affiliation ensures that the MBBS curriculum, examinations, and degrees are conducted under the strict academic standards of the University of Dhaka, providing students with a credible and recognized qualification. The college follows the syllabus and guidelines prescribed by the University, maintaining high academic standards comparable to international medical education frameworks.\n\nRecognition of Dhaka National Medical College\nDNMC is recognized by multiple national and international bodies, making it a trusted choice for medical aspirants worldwide:\n- Bangladesh Medical and Dental Council (BMDC): Official recognition to conduct MBBS programs in Bangladesh.\n- National Medical Commission (NMC India): Approval for Indian students to pursue MBBS and appear for FMGE/NExT.\n- World Directory of Medical Schools (WDOMS): Listing ensures international recognition for higher studies or medical practice abroad.\n\nAchievements of Dhaka National Medical College\nDhaka National Medical College has made significant strides in medical education, research, and healthcare service since its establishment:\n- Maintains a high success rate in FMGE/NExT exams for Indian students.\n- Operates its own teaching hospital, serving thousands of patients annually, giving students excellent clinical exposure.\n- Actively participates in community health programs, rural healthcare initiatives, and preventive medicine projects, contributing to public health in Bangladesh.\n- Equipped with modern laboratories, advanced medical equipment, and digital learning facilities, ensuring students receive high-quality practical training.\n- Recognized for producing competent, socially responsible doctors who excel both nationally and internationally.",
+        "hostelFacilities": "The college has comfortable hostel accommodations with safe living environments, recreational areas, and 24/7 security. DNMC provides orientation programs and guidance for adapting to life in Bangladesh, including help with hostel arrangements, food, cultural adaptation, and local transport. The college ensures safe accommodation with mess facilities, Wi-Fi, and recreation areas for international students.",
+        "studentLife": "The student life at Dhaka National Medical College (DNMC) is designed to provide a comprehensive and holistic experience for both local and international students pursuing MBBS in Bangladesh. The college offers a perfect balance of academics, clinical training, and extracurricular activities, ensuring that students develop both professional competence and personal growth. From the very first years of study, students receive extensive clinical exposure in the Dhaka National Medical College Hospital, gaining practical experience in patient care, diagnosis, treatment planning, and emergency management, which prepares them for real-world medical practice.\n\nThe campus facilities are designed to support international MBBS students, including modern classrooms, advanced laboratories, fully equipped libraries, hostels with safe and comfortable accommodations, Wi-Fi connectivity, and recreational spaces. Students have ample opportunities to participate in sports, cultural festivals, medical seminars, workshops, debates, quizzes, and research projects, helping them enhance their leadership, teamwork, and communication skills. The college also emphasizes community health, rural postings, and preventive medicine programs, giving students practical exposure to public health, rural healthcare initiatives, and preventive healthcare campaigns, which are essential for becoming socially responsible doctors.\n\nDNMC maintains a diverse and inclusive student community, attracting students from India, Nepal, and other countries, which promotes cross-cultural learning, global networking, and international exposure. With strong student support services, mentorship programs, and counseling facilities, the college ensures that students are guided throughout their MBBS journey, both academically and personally. Overall, the student life at Dhaka National Medical College not only focuses on high-quality medical education and clinical expertise but also encourages personal development, social responsibility, and preparation for global medical careers, making it one of the top choices for students looking to pursue MBBS abroad in Bangladesh.",
+        "whyChooseUsIntro": "iExplain Education is a trusted and experienced education consultancy that provides comprehensive guidance for students seeking to pursue MBBS abroad, particularly in Bangladesh. For students aiming to study at Dhaka National Medical College (DNMC), iExplain Education ensures a smooth and hassle-free admission process.",
+        "whyChooseUs": [
+            "Expert Guidance for MBBS Abroad: iExplain Education provides personalized guidance for Indian and international students seeking to pursue MBBS in Bangladesh, helping them choose the right college and program.",
+            "Transparent Admission Process: The consultancy ensures a smooth and hassle-free admission process for Dhaka National Medical College, handling documentation, application submission, and fee payments efficiently.",
+            "Complete Documentation Assistance: iExplain Education assists students in preparing all required documents for MBBS admission, including academic transcripts, passport, visa application, and eligibility certificates, reducing errors and delays.",
+            "Visa and Travel Support: The team provides step-by-step support for visa processing, travel arrangements, and airport pickup, making the transition to Bangladesh comfortable and stress-free.",
+            "Affordable MBBS Abroad Options: iExplain Education helps students understand the fee structure, tuition fees, hostel charges, and total cost of MBBS in Bangladesh, ensuring cost-effective planning for studying abroad.",
+            "Counseling & Career Guidance: Students receive expert counseling on MBBS abroad, career prospects, FMGE/NExT preparation, and postgraduate opportunities, helping them make informed decisions.",
+            "End-to-End Support: From college selection, admission confirmation, hostel allocation, and airport reception to guidance throughout the MBBS course, iExplain Education offers complete end-to-end support for students.",
+            "Trusted by Hundreds of Students: iExplain Education has a proven track record of successful admissions in Dhaka National Medical College and other top medical colleges in Bangladesh, ensuring credibility and trustworthiness.",
+            "Focus on Student Comfort & Safety: The consultancy ensures that students have safe accommodation, a smooth adjustment to life in Bangladesh, and continuous support, helping them focus entirely on their medical studies."
+        ],
+        "documents": [
+            {
+                "document": "Completed Application Form",
+                "details": "Duly filled DNMC admission application form"
+            },
+            {
+                "document": "Passport",
+                "details": "Valid international passport with at least 18 months validity."
+            },
+            {
+                "document": "10th / Secondary School Certificate",
+                "details": "Mark sheet or certificate showing completion of secondary education."
+            },
+            {
+                "document": "12th / Higher Secondary Certificate (HSC)",
+                "details": "Official transcripts and mark sheets in Physics, Chemistry, Biology."
+            },
+            {
+                "document": "Equivalence Certificate",
+                "details": "For students from countries where HSC equivalents differ; issued by relevant education board."
+            },
+            {
+                "document": "Medical / Health Certificate",
+                "details": "Issued by a certified doctor, showing the student is medically fit."
+            },
+            {
+                "document": "Police Clearance / Character Certificate",
+                "details": "From local authorities, confirming good conduct."
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Student visa application and supporting documents for Bangladesh."
+            },
+            {
+                "document": "Bank Statements / Financial Proof",
+                "details": "Proof of funds to cover tuition and living expenses in Bangladesh."
+            },
+            {
+                "document": "Other Supporting Documents",
+                "details": "Any additional certificates like English proficiency (if required), recommendation letters, etc."
+            }
+        ],
+        "conclusion": "Dhaka National Medical College (DNMC) stands out as one of the top choices for Indian and international students seeking to pursue MBBS abroad in Bangladesh. With its affiliation to the University of Dhaka, recognition by the Bangladesh Medical and Dental Council (BMDC), and listing in the World Directory of Medical Schools, DNMC offers a globally recognized MBBS degree. The college provides high-quality medical education in English, combining theoretical learning with extensive clinical exposure at its own teaching hospital. Students benefit from modern laboratories, well-equipped libraries, supportive hostel facilities, and vibrant campus life, ensuring holistic development alongside academics.\n\nMoreover, DNMC emphasizes community health, preventive medicine, and rural postings, preparing students to become competent and socially responsible doctors. With affordable tuition fees, experienced faculty, structured syllabus, and strong student support services, pursuing MBBS at Dhaka National Medical College is an ideal pathway for students aiming for successful medical careers, FMGE/NExT qualification in India, and international opportunities. Guided by expert consultancies like iExplain Education, students can navigate the admission process seamlessly, making DNMC a reliable and attractive destination for MBBS abroad.",
+        "faqs": [
+            {
+                "question": "Is Dhaka National Medical College recognized by the Medical Council of India (NMC)?",
+                "answer": "Yes, DNMC is recognized by the National Medical Commission (NMC India), which allows Indian students to appear for the FMGE/NExT exam after completing their MBBS."
+            },
+            {
+                "question": "What is the duration of the MBBS course at DNMC?",
+                "answer": "The MBBS program at DNMC is 5 years of academic study followed by a 1-year compulsory internship, making the total duration 6 years."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS at DNMC?",
+                "answer": "The entire MBBS curriculum is taught in English, which is ideal for international students from India, Nepal, and other countries."
+            },
+            {
+                "question": "Are Indian students eligible to apply for MBBS at DNMC?",
+                "answer": "Yes, Indian students are eligible, provided they meet the academic eligibility criteria (10+2 with Physics, Chemistry, Biology) and complete the necessary admission documents and visa requirements."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include: application form, passport, 10th & 12th mark sheets, medical certificate, passport-sized photos, police clearance, financial proof, and student visa. iExplain Education can help prepare all documents efficiently."
+            },
+            {
+                "question": "Does DNMC provide hostel facilities for international students?",
+                "answer": "Yes, DNMC offers safe and comfortable hostel accommodations with mess facilities, Wi-Fi, recreation areas, and 24/7 security for international students."
+            },
+            {
+                "question": "Is clinical exposure provided during the MBBS course?",
+                "answer": "Absolutely. Students receive early clinical exposure from the 2nd year onwards at the Dhaka National Medical College Hospital, gaining hands-on experience in patient care, diagnostics, and treatments."
+            },
+            {
+                "question": "Can students appear for postgraduate studies after MBBS from DNMC?",
+                "answer": "Yes, the MBBS degree from DNMC is recognized internationally, allowing graduates to pursue postgraduate studies in India or abroad."
+            },
+            {
+                "question": "How does iExplain Education assist in admission to DNMC?",
+                "answer": "iExplain Education provides end-to-end support, including college selection, admission process, document verification, visa guidance, travel arrangements, and career counseling, ensuring a smooth and hassle-free MBBS abroad experience."
+            }
+        ]
+    },
 
 };
