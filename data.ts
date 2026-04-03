@@ -501,12 +501,97 @@ export const MEGA_MENU_DATA = {
 };
 
 export const STUDENT_SERVICES_DATA = [
-  { id: "crypto-exchange-development", title: "Crypto Exchange Development", icon: "fa-solid fa-coins", desc: "Secure and scalable crypto exchange platform development." },
-  { id: "bitcoin-software-development", title: "Bitcoin Software Development", icon: "fa-brands fa-bitcoin", desc: "Custom Bitcoin software solutions for your business needs." },
-  { id: "blockchain-software-development", title: "Blockchain Software Development", icon: "fa-solid fa-link", desc: "Robust blockchain applications with modern architecture." },
-  { id: "web-application-development", title: "Web Application Development", icon: "fa-solid fa-globe", desc: "Responsive and high-performance web applications." },
-  { id: "software-development", title: "Software Development", icon: "fa-solid fa-code", desc: "End-to-end software development for diverse industries." },
-  { id: "app-development-android-ios", title: "App Development (Android / iOS)", icon: "fa-solid fa-mobile-screen", desc: "Native and cross-platform mobile app development services." }
+  {
+    id: "career-counselling",
+    title: "Career Counselling",
+    icon: "fa-solid fa-compass",
+    desc: "Unbiased, personalized guidance to help students choose the right career path.",
+    fullDesc: "It is often difficult for students to select a career path, given the increasing number of options. iExplain experts help students make the right career choices by matching their interests, skill set, qualifications, and personality. We provide unbiased guidance and create personalized career plans that remove doubt, confusion, and apprehension.",
+    benefits: [
+      "Personalized career roadmap based on profile and goals",
+      "Objective and unbiased counselling support",
+      "Clear direction that reduces confusion and decision stress"
+    ],
+    process: ["Profile assessment", "Career mapping session", "Personalized action plan"]
+  },
+  {
+    id: "application-process-assistance",
+    title: "Application Process Assistance",
+    icon: "fa-solid fa-file-signature",
+    desc: "Complete admission support from applications to final university follow-ups.",
+    fullDesc: "Our counsellors are fully trained to help with all admission requirements, including application process, resume/CV preparation, Statement of Purpose (SOP), and portfolio preparation. We also do regular follow-ups with universities to ensure timely decisions, giving students enough time for visa applications and travel planning.",
+    benefits: [
+      "End-to-end application document support",
+      "SOP, CV, and portfolio guidance from experts",
+      "University follow-ups for timely admission outcomes"
+    ],
+    process: ["Document planning", "Application submission", "University follow-ups"]
+  },
+  {
+    id: "scholarship-financial-aid-guidance",
+    title: "Scholarship & Financial Aid Guidance",
+    icon: "fa-solid fa-hand-holding-dollar",
+    desc: "Step-by-step help to maximize scholarships, bursaries, and fee waivers.",
+    fullDesc: "iExplain understands the value of money and works to help students get financial aid such as tuition fee bursaries, scholarships, and application fee waivers. These are awarded to international students based on academic merit and financial need at the discretion of each institution's Scholarship Committee. iExplain has set up unique resources for step-by-step scholarship application guidance and highlights programs with internship and industrial placement options.",
+    benefits: [
+      "Guidance on merit and need-based funding options",
+      "Support for scholarship and fee-waiver applications",
+      "Visibility into programs with internship and placement options"
+    ],
+    process: ["Funding eligibility review", "Scholarship application support", "Program-wise aid optimization"]
+  },
+  {
+    id: "education-loan-assistance",
+    title: "Education Loan Assistance",
+    icon: "fa-solid fa-building-columns",
+    desc: "Assistance with selecting lenders and preparing education loan documentation.",
+    fullDesc: "Most public and private banks provide education loans for studying abroad. The sanctioned loan can cover university fees, books, equipment, travel expenses, and computer purchases. iExplain helps students connect to the right bank or financial institution and guides them through documentation and requirements.",
+    benefits: [
+      "Support in identifying suitable loan providers",
+      "Guidance for required loan documents and processes",
+      "Clarity on eligible education-related expense coverage"
+    ],
+    process: ["Loan profile assessment", "Lender shortlisting", "Documentation and filing guidance"]
+  },
+  {
+    id: "test-preparation-coaching",
+    title: "Test Preparation Coaching",
+    icon: "fa-solid fa-chalkboard-user",
+    desc: "Affordable online coaching for global admission tests.",
+    fullDesc: "iExplain provides online coaching at affordable prices for GRE, GMAT, IELTS, TOEFL, PTE, SAT, and ACT. Our preparation approach focuses on concepts, strategy, and performance tracking so students can improve confidence and scores.",
+    benefits: [
+      "Coaching for GRE, GMAT, IELTS, TOEFL, PTE, SAT, and ACT",
+      "Affordable online classes with exam-focused practice",
+      "Score-improvement strategy with expert mentoring"
+    ],
+    process: ["Diagnostic evaluation", "Structured prep plan", "Mock tests and score tracking"]
+  },
+  {
+    id: "visa-assistance",
+    title: "Visa Assistance",
+    icon: "fa-solid fa-passport",
+    desc: "Comprehensive visa support to improve successful outcomes.",
+    fullDesc: "Our team provides comprehensive visa support, guiding students through each step of the visa process and ensuring all documentation is in order to increase the likelihood of a successful outcome.",
+    benefits: [
+      "Complete support across the visa journey",
+      "Document checklist and application readiness reviews",
+      "Reduced risk of avoidable errors and delays"
+    ],
+    process: ["Visa eligibility planning", "Documentation checks", "Application and interview readiness"]
+  },
+  {
+    id: "free-counselling-sessions",
+    title: "Free Counselling Sessions",
+    icon: "fa-solid fa-comments",
+    desc: "Free in-person and virtual counselling for students and parents.",
+    fullDesc: "We offer free counselling sessions at our head office in Noida with in-person discussions for students and parents. Virtual support is also available through phone calls and online meetings.",
+    benefits: [
+      "No-cost guidance for students and families",
+      "In-person counselling at Noida head office",
+      "Virtual support through calls and online meetings"
+    ],
+    process: ["Session booking", "One-on-one counselling", "Follow-up action plan"]
+  }
 ];
 
 export const BLOG_POSTS: Blog[] = [

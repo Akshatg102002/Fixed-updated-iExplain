@@ -33,6 +33,11 @@ async function startServer() {
 
   app.use(cors());
   app.use(express.json());
+  app.use((req, res, next) => {
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    next();
+  });
 
   // API Routes
   app.get("/api/health", (req, res) => {
@@ -137,7 +142,7 @@ async function startServer() {
         const buffer = Buffer.from(base64, 'base64');
 
         res.setHeader('Content-Type', type);
-        res.setHeader('Cache-Control', 'public, max-age=86400'); // Cache for 1 day
+        res.setHeader('Cache-Control', 'public, max-age=2592000, immutable'); // Cache for 30 days
         res.send(buffer);
       } catch (error) {
         console.error("Error decoding base64:", error);
@@ -154,19 +159,31 @@ async function startServer() {
       if (docSnap.exists()) {
         const data = docSnap.data();
         res.header("Content-Type", "application/xml");
+        res.setHeader("Cache-Control", "public, max-age=43200");
         res.send(data.content);
       } else {
         // Default sitemap if none exists
+        const staticUrls = [
+          "/",
+          "/about",
+          "/services",
+          "/blog",
+          "/contact",
+          "/privacy-policy",
+          "/terms-conditions",
+        ];
+        const currentIso = new Date().toISOString();
         const defaultSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://iexplain.education/</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+  ${staticUrls.map((path) => `  <url>
+    <loc>https://iexplain.education${path}</loc>
+    <lastmod>${currentIso}</lastmod>
+    <changefreq>${path === "/" ? "daily" : "weekly"}</changefreq>
+    <priority>${path === "/" ? "1.0" : "0.8"}</priority>
+  </url>`).join('\n')}
 </urlset>`;
         res.header("Content-Type", "application/xml");
+        res.setHeader("Cache-Control", "public, max-age=43200");
         res.send(defaultSitemap);
       }
     } catch (error) {
@@ -184,7 +201,18 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // Production static file serving (if built)
-    app.use(express.static("dist"));
+    app.use(express.static("dist", {
+      index: false,
+      etag: true,
+      maxAge: "1y",
+      setHeaders: (res, filePath) => {
+        if (filePath.endsWith(".html")) {
+          res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+        } else {
+          res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        }
+      }
+    }));
     
     // SPA Fallback for production
     app.get("*", (req, res) => {
