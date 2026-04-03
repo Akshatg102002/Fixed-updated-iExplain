@@ -60,6 +60,66 @@ const LoadingOverlay = () => (
   </div>
 );
 
+const SEOManager = () => {
+  const location = useLocation();
+  const baseUrl = 'https://iexplain.education';
+  const isNotFound = location.pathname === '/404';
+
+  useEffect(() => {
+    const canonicalUrl = new URL(location.pathname, baseUrl).toString();
+    let canonicalTag = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+
+    if (!canonicalTag) {
+      canonicalTag = document.createElement('link');
+      canonicalTag.rel = 'canonical';
+      document.head.appendChild(canonicalTag);
+    }
+
+    canonicalTag.href = canonicalUrl;
+
+    let robotsMeta = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    if (!robotsMeta) {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.name = 'robots';
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.content = isNotFound ? 'noindex,follow' : 'index,follow';
+
+    const pageTitle = isNotFound
+      ? 'Page Not Found | iExplain Education'
+      : 'iExplain Education | Global Admissions';
+    document.title = pageTitle;
+  }, [location.pathname, isNotFound]);
+
+  return null;
+};
+
+const NotFoundPage = () => (
+  <div className="min-h-[70vh] flex items-center justify-center bg-gray-50 dark:bg-slate-900 px-4">
+    <div className="max-w-2xl w-full bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-[2rem] shadow-xl p-10 text-center">
+      <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-brand-blue/10 text-brand-blue dark:text-brand-gold flex items-center justify-center">
+        <i className="fa-solid fa-compass text-3xl"></i>
+      </div>
+      <p className="text-xs font-black tracking-[0.2em] uppercase text-brand-gold mb-3">Error 404</p>
+      <h1 className="text-3xl md:text-4xl font-black text-brand-blue dark:text-white mb-4">Sorry, this page does not exist.</h1>
+      <p className="text-gray-600 dark:text-gray-300 font-medium mb-8">
+        The URL may be broken, moved, or unavailable. Use one of the navigation options below.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Link to="/" className="px-6 py-3 rounded-xl bg-brand-gold text-white font-bold text-xs uppercase tracking-widest">
+          Go to Homepage
+        </Link>
+        <Link to="/contact" className="px-6 py-3 rounded-xl bg-brand-blue text-white font-bold text-xs uppercase tracking-widest">
+          Contact Us
+        </Link>
+        <Link to="/blog" className="px-6 py-3 rounded-xl border border-brand-blue text-brand-blue dark:text-white font-bold text-xs uppercase tracking-widest">
+          Explore Blog
+        </Link>
+      </div>
+    </div>
+  </div>
+);
+
 // --- SHARED COMPONENTS ---
 const ContactMapSection = () => {
   const hq = OFFICE_ADDRESSES[0];
@@ -620,6 +680,38 @@ const App: React.FC = () => {
     else document.documentElement.classList.remove('dark');
   }, [isDarkMode]);
 
+  // Global lazy loading and async decoding for media without altering layout/structure.
+  useEffect(() => {
+    const eagerPaths = new Set(['/', '/about', '/contact']);
+    const images = Array.from(document.querySelectorAll('img'));
+    const videos = Array.from(document.querySelectorAll('video'));
+    const iframes = Array.from(document.querySelectorAll('iframe'));
+
+    images.forEach((img, index) => {
+      if (!img.hasAttribute('loading')) {
+        img.setAttribute('loading', eagerPaths.has(location.pathname) && index < 2 ? 'eager' : 'lazy');
+      }
+      if (!img.hasAttribute('decoding')) {
+        img.setAttribute('decoding', 'async');
+      }
+      if (!img.hasAttribute('fetchpriority')) {
+        img.setAttribute('fetchpriority', index === 0 ? 'high' : 'auto');
+      }
+    });
+
+    videos.forEach((video) => {
+      if (!video.hasAttribute('preload')) {
+        video.setAttribute('preload', 'metadata');
+      }
+    });
+
+    iframes.forEach((iframe) => {
+      if (!iframe.hasAttribute('loading')) {
+        iframe.setAttribute('loading', 'lazy');
+      }
+    });
+  }, [location.pathname]);
+
   // Handle Admin Exit
   const handleAdminExit = () => {
     navigate('/');
@@ -633,6 +725,7 @@ const App: React.FC = () => {
       {location.pathname !== '/admin' && (
         <Navbar isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} />
       )}
+      <SEOManager />
 
       <main className="flex-grow">
         <Routes location={location}>
@@ -667,13 +760,13 @@ const App: React.FC = () => {
           <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
-          <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
           <Route path="/exams/:subPath" element={<ExamPage />} />
           <Route path="/office/:slug" element={<OfficeDetailPage />} />
           <Route path="/college/:slug" element={<LegacyCollegeRedirect />} />
           <Route path="/privacy-policy" element={<PolicyPage title="Privacy Policy" content={PRIVACY_POLICY_CONTENT} />} />
           <Route path="/terms-conditions" element={<PolicyPage title="Terms & Conditions" content={TERMS_CONTENT} />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>
 
         {/* Global CTA Strip on all pages except Home and Contact */}
