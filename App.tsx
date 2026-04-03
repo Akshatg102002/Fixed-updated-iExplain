@@ -464,16 +464,10 @@ const LegacyCollegeRedirect = () => {
 };
 
 const StudyIndiaWrapper = () => {
-  const { courseSlug } = useParams<{ courseSlug: string }>();
-  const data = INDIA_COURSES_DETAILED[courseSlug || 'mbbs'];
-  if (!data) return <Navigate to="/mbbs-in-india" replace />;
-  return <StudyIndiaDetailPage data={data} />;
-};
-
-const LegacyStudyIndiaRedirect = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  const targetCourse = createSlug(subPath || 'mbbs');
-  return <Navigate to={`/${targetCourse}-in-india`} replace />;
+  const data = INDIA_COURSES_DETAILED[subPath || 'mbbs'];
+  if (!data) return <Navigate to="/study-india/mbbs" replace />;
+  return <StudyIndiaDetailPage data={data} />;
 };
 
 const CategoryTitleSlugWrapper = () => {
@@ -554,13 +548,6 @@ const CategoryTitleSlugWrapper = () => {
     return <MBBSDetailPage data={data} />;
   }
 
-  if (normalizedSlug.endsWith('-in-india')) {
-    const courseSlug = normalizedSlug.replace(/-in-india$/, '');
-    const data = INDIA_COURSES_DETAILED[courseSlug];
-    if (!data) return <Navigate to="/mbbs-in-india" replace />;
-    return <StudyIndiaDetailPage data={data} />;
-  }
-
   return <Navigate to="/" replace />;
 };
 
@@ -573,33 +560,6 @@ const BlogDetailWrapper = () => {
   const { slug } = useParams<{ category: string, slug: string }>();
   if (!slug) return <Navigate to="/blog" replace />;
   return <BlogDetailPage slug={slug || ''} />;
-};
-
-const NotFoundPage = () => {
-  return (
-    <div className="min-h-[70vh] flex items-center justify-center bg-gray-50 dark:bg-slate-900 px-4">
-      <div className="max-w-2xl w-full bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-[2rem] shadow-sm p-10 text-center">
-        <span className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-red-50 dark:bg-red-900/20 text-red-500 text-2xl mb-6">
-          <i className="fa-solid fa-triangle-exclamation"></i>
-        </span>
-        <h1 className="text-4xl font-black text-brand-blue dark:text-white mb-4">404 - Page Not Found</h1>
-        <p className="text-gray-600 dark:text-gray-300 font-medium mb-8">
-          The page you are looking for may have been moved or no longer exists. Please use one of the links below.
-        </p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Link to="/" className="px-6 py-3 rounded-xl bg-brand-blue text-white text-xs font-black uppercase tracking-widest">
-            Back to Home
-          </Link>
-          <Link to="/contact" className="px-6 py-3 rounded-xl bg-brand-gold text-white text-xs font-black uppercase tracking-widest">
-            Contact Us
-          </Link>
-          <Link to="/blog" className="px-6 py-3 rounded-xl bg-gray-100 dark:bg-slate-700 text-brand-blue dark:text-white text-xs font-black uppercase tracking-widest">
-            Read Blog
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
 };
 
 
@@ -660,43 +620,6 @@ const App: React.FC = () => {
     else document.documentElement.classList.remove('dark');
   }, [isDarkMode]);
 
-  useEffect(() => {
-    const canonicalUrl = `${window.location.origin}${location.pathname}`;
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.href = canonicalUrl;
-  }, [location.pathname]);
-
-  useEffect(() => {
-    const allImages = Array.from(document.querySelectorAll<HTMLImageElement>('img'));
-    allImages.forEach((image, index) => {
-      if (!image.hasAttribute('loading')) {
-        image.loading = index < 2 ? 'eager' : 'lazy';
-      }
-      if (!image.hasAttribute('decoding')) {
-        image.decoding = 'async';
-      }
-
-      const src = image.currentSrc || image.src;
-      if (!src || image.hasAttribute('srcset')) return;
-
-      if (src.includes('images.unsplash.com')) {
-        const addWidth = (url: string, width: number) => {
-          const separator = url.includes('?') ? '&' : '?';
-          return `${url}${separator}w=${width}&auto=format`;
-        };
-        image.srcset = `${addWidth(src, 480)} 480w, ${addWidth(src, 768)} 768w, ${addWidth(src, 1200)} 1200w`;
-        if (!image.sizes) {
-          image.sizes = '(max-width: 768px) 100vw, 50vw';
-        }
-      }
-    });
-  }, [location.pathname]);
-
   // Handle Admin Exit
   const handleAdminExit = () => {
     navigate('/');
@@ -741,9 +664,7 @@ const App: React.FC = () => {
           <Route path="/blog/:category/:slug" element={<BlogDetailWrapper />} />
           <Route path="/blog/:slug" element={<BlogDetailWrapper />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/404" element={<NotFoundPage />} />
-          <Route path="/study-india/:subPath" element={<LegacyStudyIndiaRedirect />} />
-          <Route path="/:courseSlug-in-india" element={<StudyIndiaWrapper />} />
+          <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
@@ -752,7 +673,7 @@ const App: React.FC = () => {
           <Route path="/college/:slug" element={<LegacyCollegeRedirect />} />
           <Route path="/privacy-policy" element={<PolicyPage title="Privacy Policy" content={PRIVACY_POLICY_CONTENT} />} />
           <Route path="/terms-conditions" element={<PolicyPage title="Terms & Conditions" content={TERMS_CONTENT} />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
 
         {/* Global CTA Strip on all pages except Home and Contact */}
