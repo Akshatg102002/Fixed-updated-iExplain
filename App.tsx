@@ -111,18 +111,6 @@ const ContactMapSection = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-10 pt-8 border-t border-white/15">
-                <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-brand-gold mb-4">Services Provided</h4>
-                <ul className="space-y-2 text-sm text-white/90 font-medium">
-                  <li>1. Crypto Exchange Development</li>
-                  <li>2. Bitcoin Software Development</li>
-                  <li>3. Blockchain Software Development</li>
-                  <li>4. Web Application Development</li>
-                  <li>5. Software Development</li>
-                  <li>6. App Development (Android / iOS)</li>
-                </ul>
-              </div>
             </div>
           </div>
 
@@ -164,7 +152,7 @@ const ServicesPage = () => {
             Our Premium <span className="text-brand-gold">Services</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto leading-relaxed text-justify md:text-center">
-            We provide end-to-end technology services, from blockchain solutions to web and mobile app development.
+            From initial counseling to landing in your dream destination, we are with you at every step of your journey.
           </p>
         </div>
 
@@ -279,7 +267,7 @@ const ServiceDetailPage = () => {
             <div className="bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-lg border border-gray-100 dark:border-slate-700 sticky top-24">
               <div className="text-center mb-8">
                 <h3 className="text-xl font-black text-brand-blue dark:text-white mb-2">Get Expert Help</h3>
-                <p className="text-sm text-gray-500 font-medium">Fill the form to get started with {service.title}.</p>
+                <p className="text-sm text-gray-500 font-medium">Fill the form to start your {service.title} journey.</p>
               </div>
               <ContactForm />
             </div>
