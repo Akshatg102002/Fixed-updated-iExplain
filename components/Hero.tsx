@@ -17,6 +17,9 @@ const Hero: React.FC<HeroProps> = ({ onBookSession }) => {
           src="https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775215352/cambridge_dliuf9.webp" 
           alt="Hero Background" 
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/60"></div>
       </div>

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { LOGO_URL, MEGA_MENU_DATA, OFFICE_ADDRESSES, FOOTER_COLLEGES } from '../data.ts';
-import { createSlug, createStudyInPath } from '../utils.ts';
+import { createIndiaProgramPath, createSlug, createStudyInPath } from '../utils.ts';
 import * as Flags from 'country-flag-icons/react/3x2';
 import { Link, useNavigate } from 'react-router-dom';
 import { db, collection, getDocs } from '../firebase.ts';
@@ -22,7 +22,7 @@ const FlagIcon = ({ code }: { code: string }) => {
     <img 
       src={flagUrl} 
       alt={code} 
-      className="w-6 h-4 rounded shadow-sm object-cover"
+      className="w-6 h-4 rounded shadow-sm object-cover" loading="lazy" decoding="async"
       onError={(e) => {
         // Fallback to library if image fails, or just hide
         e.currentTarget.style.display = 'none';
@@ -243,7 +243,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
       <nav className="relative h-20 w-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 w-full flex items-center justify-between">
           <div className="flex-shrink-0 cursor-pointer w-[140px] md:w-[180px]" onClick={() => navigate('/')}>
-            <img src={logoUrl || LOGO_URL} alt="iExplain" className="h-10 md:h-12 w-auto dark:brightness-110" />
+            <img src={logoUrl || LOGO_URL} alt="iExplain" className="h-10 md:h-12 w-auto dark:brightness-110" loading="eager" fetchPriority="high" decoding="async" />
           </div>
 
           <div className="hidden lg:flex flex-grow justify-center h-full items-center space-x-8 xl:space-x-10">
@@ -334,7 +334,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                           {countryData.names.map((college: string, cIdx: number) => {
                             let link = `/${createSlug(college)}`;
                             if (activeCollegeTab === 'INDIA') {
-                              link = `/mbbs-india/${createSlug(college)}`;
+                              link = createIndiaProgramPath(college);
                             } else if (countryData.country === 'Europe Top Destinations') {
                               link = createStudyInPath(college);
                             }
@@ -364,7 +364,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
           <div className="p-6">
             <div className="flex items-center justify-between mb-8">
                <div className="w-[140px]">
-                 <img src={logoUrl || LOGO_URL} alt="Logo" className="w-full h-auto dark:brightness-110" />
+                 <img src={logoUrl || LOGO_URL} alt="Logo" className="w-full h-auto dark:brightness-110" loading="lazy" decoding="async" />
                </div>
                <button onClick={() => setIsMobileMenuOpen(false)} className="w-12 h-12 rounded-full bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-500 hover:bg-red-50 hover:text-red-500 transition-colors">
                  <i className="fa-solid fa-xmark text-xl"></i>
@@ -498,7 +498,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{region.country}</p>
                                      <div className="pl-4 space-y-2">
                                        {region.names.map((state, cIdx) => (
-                                         <Link key={cIdx} to={`/mbbs-india/${createSlug(state)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
+                                         <Link key={cIdx} to={createIndiaProgramPath(state)} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
                                            {state}
                                          </Link>
                                        ))}

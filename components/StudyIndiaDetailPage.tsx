@@ -30,7 +30,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
          {/* ── Hero ── */}
          <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
-               <img src={data.heroImage} className="w-full h-full object-cover" alt={data.title} />
+               <img src={data.heroImage} className="w-full h-full object-cover" alt={data.title} loading="lazy" decoding="async" />
                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             </div>
             <div className="relative z-10 text-center max-w-6xl mx-auto px-4 mt-20">

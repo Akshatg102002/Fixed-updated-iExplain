@@ -6,7 +6,7 @@ import {
     FOOTER_COLLEGES,
     OFFICE_ADDRESSES
 } from '../data.ts';
-import { createMBBSInPath, createSlug, createStudyInPath } from '../utils.ts';
+import { createIndiaProgramPath, createMBBSInPath, createSlug, createStudyInPath } from '../utils.ts';
 
 interface FooterProps {
     logoUrl?: string;
@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, helpline, email }) => {
 
                         {/* Column 1: Brand Info */}
                         <div className="space-y-6">
-                            <img src={logoUrl || LOGO_URL} alt="iExplain" className="h-10 w-auto dark:brightness-125" />
+                            <img src={logoUrl || LOGO_URL} alt="iExplain" className="h-10 w-auto dark:brightness-125" loading="lazy" decoding="async" />
                             <p className="text-xs text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-xs">
                                 iExplain Education is a trusted source for authentic educational guidance. From admission-related help to e-learning resources, it ensures that students receive all the help they need.
                             </p>
