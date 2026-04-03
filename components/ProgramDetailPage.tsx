@@ -30,7 +30,7 @@ const ProgramDetailPage: React.FC<ProgramDetailPageProps> = ({ data, type }) => 
       {/* Hero Banner */}
       <div className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} className="w-full h-full object-cover" alt={data.title} loading="lazy" decoding="async" />
+          <img src={heroImg} className="w-full h-full object-cover" alt={data.title} />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-blue via-brand-blue/60 to-brand-blue/30"></div>
         </div>
         <div className="relative z-10 text-center max-w-5xl mx-auto px-4 mt-16 animate-fade-in">
