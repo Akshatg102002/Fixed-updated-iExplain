@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ onBookSession }) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/20/cambridge.JPG?q=80&w=1920" 
+          src="https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775215352/cambridge_dliuf9.webp" 
           alt="Hero Background" 
           className="w-full h-full object-cover"
         />

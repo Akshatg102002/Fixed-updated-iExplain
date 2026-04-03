@@ -75,7 +75,7 @@ const ContactMapSection = () => {
 
             <div className="relative z-10">
               <div className="mb-10">
-                <img src="https://socialfoundationindia.org/wp-content/uploads/2026/03/Contact.jpeg" alt="Office" className="w-full h-64 object-cover rounded-3xl mb-8 shadow-lg border-4 border-white/10" />
+                <img src="https://images.unsplash.com/photo-1773332585754-f1436987743b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Office" className="w-full h-64 object-cover rounded-3xl mb-8 shadow-lg border-4 border-white/10" />
                 <h3 className="text-3xl font-black mb-2">Get In Touch</h3>
                 <p className="text-white/70 font-medium">We are here to help you shape your future.</p>
               </div>
