@@ -484,12 +484,12 @@ export const MEGA_MENU_DATA = {
     { name: "Serbia", link: "/mbbs-in-serbia", code: "RS" }
   ],
   "STUDY IN INDIA": [
-    { name: "MBBS", link: "/study-india/mbbs", icon: "fa-solid fa-user-doctor" },
-    { name: "MD/MS", link: "/study-india/md-ms", icon: "fa-solid fa-stethoscope" },
-    { name: "B.Tech", link: "/study-india/btech", icon: "fa-solid fa-microchip" },
-    { name: "MBA", link: "/study-india/mba", icon: "fa-solid fa-briefcase" },
-    { name: "BBA", link: "/study-india/bba", icon: "fa-solid fa-chart-line" },
-    { name: "PGDM", link: "/study-india/pgdm", icon: "fa-solid fa-graduation-cap" }
+    { name: "MBBS", link: "/mbbs-in-india", icon: "fa-solid fa-user-doctor" },
+    { name: "MD/MS", link: "/md-ms-in-india", icon: "fa-solid fa-stethoscope" },
+    { name: "B.Tech", link: "/btech-in-india", icon: "fa-solid fa-microchip" },
+    { name: "MBA", link: "/mba-in-india", icon: "fa-solid fa-briefcase" },
+    { name: "BBA", link: "/bba-in-india", icon: "fa-solid fa-chart-line" },
+    { name: "PGDM", link: "/pgdm-in-india", icon: "fa-solid fa-graduation-cap" }
   ],
   "ENTRANCE EXAMS": [
     { name: "NEET UG", link: "/exams/neet-ug", icon: "fa-solid fa-file-medical" },
