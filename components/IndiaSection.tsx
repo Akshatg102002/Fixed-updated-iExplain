@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { INDIA_COURSES } from '../data.ts';
-import { createIndiaProgramPath } from '../utils.ts';
 
 const IndiaSection: React.FC = () => {
   return (
@@ -25,10 +23,10 @@ const IndiaSection: React.FC = () => {
               <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-base leading-relaxed mb-4 sm:mb-6 font-medium">
                 {course.desc}
               </p>
-              <Link to={createIndiaProgramPath(course.id)} className="text-brand-gold font-bold text-[10px] sm:text-xs uppercase tracking-widest flex items-center group/link">
+              <a href={`#/study-india/${course.id}`} className="text-brand-gold font-bold text-[10px] sm:text-xs uppercase tracking-widest flex items-center group/link">
                 View Details
                 <i className="fa-solid fa-arrow-right ml-2 transition-transform group-hover/link:translate-x-2"></i>
-              </Link>
+              </a>
             </div>
           ))}
         </div>

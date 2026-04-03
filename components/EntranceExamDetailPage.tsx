@@ -28,7 +28,7 @@ const EntranceExamDetailPage: React.FC<EntranceExamDetailPageProps> = ({ data })
       {/* Hero */}
       <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={data.heroImage} className="w-full h-full object-cover" alt={data.title} loading="lazy" decoding="async" />
+          <img src={data.heroImage} className="w-full h-full object-cover" alt={data.title} />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-brand-blue/40 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center max-w-5xl mx-auto px-4 mt-20">
