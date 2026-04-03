@@ -30,18 +30,9 @@ const db = getFirestore(firebaseApp);
 async function startServer() {
   const app = express();
   const PORT = 3000;
-  const indiaCourseSlugs = ['mbbs', 'md-ms', 'btech', 'mba', 'bba', 'pgdm'];
 
   app.use(cors());
   app.use(express.json());
-
-  app.get("/study-india/:course", (req, res) => {
-    const normalizedCourse = String(req.params.course || '').toLowerCase();
-    if (!indiaCourseSlugs.includes(normalizedCourse)) {
-      return res.redirect(301, "/404");
-    }
-    return res.redirect(301, `/${normalizedCourse}-in-india`);
-  });
 
   // API Routes
   app.get("/api/health", (req, res) => {
@@ -166,15 +157,6 @@ async function startServer() {
         res.send(data.content);
       } else {
         // Default sitemap if none exists
-        const indiaUrls = indiaCourseSlugs
-          .map((course) => `  <url>
-    <loc>https://iexplain.education/${course}-in-india</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`)
-          .join('\n');
-
         const defaultSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -183,7 +165,6 @@ async function startServer() {
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-${indiaUrls}
 </urlset>`;
         res.header("Content-Type", "application/xml");
         res.send(defaultSitemap);
@@ -203,27 +184,10 @@ ${indiaUrls}
     app.use(vite.middlewares);
   } else {
     // Production static file serving (if built)
-    app.use(
-      "/assets",
-      express.static("dist/assets", {
-        maxAge: "1y",
-        immutable: true,
-      }),
-    );
-
-    app.use(
-      express.static("dist", {
-        maxAge: "7d",
-        setHeaders: (res, filePath) => {
-          if (filePath.endsWith('.html')) {
-            res.setHeader('Cache-Control', 'no-cache');
-          }
-        },
-      }),
-    );
+    app.use(express.static("dist"));
     
     // SPA Fallback for production
-    app.use((req, res) => {
+    app.get("*", (req, res) => {
       res.sendFile(new URL('./dist/index.html', import.meta.url).pathname);
     });
   }
