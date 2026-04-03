@@ -175,12 +175,13 @@ const ContactMapSection = () => {
               <div className="mt-10 pt-8 border-t border-white/15">
                 <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-brand-gold mb-4">Services Provided</h4>
                 <ul className="space-y-2 text-sm text-white/90 font-medium">
-                  <li>1. Crypto Exchange Development</li>
-                  <li>2. Bitcoin Software Development</li>
-                  <li>3. Blockchain Software Development</li>
-                  <li>4. Web Application Development</li>
-                  <li>5. Software Development</li>
-                  <li>6. App Development (Android / iOS)</li>
+                  <li>1. Career Counselling</li>
+                  <li>2. Application Process Assistance</li>
+                  <li>3. Scholarship & Financial Aid Guidance</li>
+                  <li>4. Education Loan Assistance</li>
+                  <li>5. Test Preparation Coaching</li>
+                  <li>6. Visa Assistance</li>
+                  <li>7. Free Counselling Sessions</li>
                 </ul>
               </div>
             </div>
@@ -224,7 +225,7 @@ const ServicesPage = () => {
             Our Premium <span className="text-brand-gold">Services</span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto leading-relaxed text-justify md:text-center">
-            We provide end-to-end technology services, from blockchain solutions to web and mobile app development.
+            We provide end-to-end student support services, from career counselling and admissions to funding, test prep, and visa guidance.
           </p>
         </div>
 
