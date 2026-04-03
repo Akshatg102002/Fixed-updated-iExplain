@@ -501,10 +501,12 @@ export const MEGA_MENU_DATA = {
 };
 
 export const STUDENT_SERVICES_DATA = [
-  { id: "counseling", title: "Career Counseling", icon: "fa-solid fa-comments", desc: "Expert guidance to choose the right path." },
-  { id: "admission", title: "Admission Guidance", icon: "fa-solid fa-university", desc: "Step-by-step assistance for admission." },
-  { id: "visa", title: "Visa Assistance", icon: "fa-solid fa-passport", desc: "Hassle-free visa application process." },
-  { id: "loan", title: "Education Loan", icon: "fa-solid fa-money-check-dollar", desc: "Financial support for your education." }
+  { id: "crypto-exchange-development", title: "Crypto Exchange Development", icon: "fa-solid fa-coins", desc: "Secure and scalable crypto exchange platform development." },
+  { id: "bitcoin-software-development", title: "Bitcoin Software Development", icon: "fa-brands fa-bitcoin", desc: "Custom Bitcoin software solutions for your business needs." },
+  { id: "blockchain-software-development", title: "Blockchain Software Development", icon: "fa-solid fa-link", desc: "Robust blockchain applications with modern architecture." },
+  { id: "web-application-development", title: "Web Application Development", icon: "fa-solid fa-globe", desc: "Responsive and high-performance web applications." },
+  { id: "software-development", title: "Software Development", icon: "fa-solid fa-code", desc: "End-to-end software development for diverse industries." },
+  { id: "app-development-android-ios", title: "App Development (Android / iOS)", icon: "fa-solid fa-mobile-screen", desc: "Native and cross-platform mobile app development services." }
 ];
 
 export const BLOG_POSTS: Blog[] = [
