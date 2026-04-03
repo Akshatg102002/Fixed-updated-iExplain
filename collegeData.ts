@@ -1710,8 +1710,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "georgian-american-university": {
         "title": "Georgian American University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859708/Georgian_American_University_ivnlbz.jpg",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774859710/Georgian_American_University_2_nkifti.jpg",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213942/Georgian_American_2_ssda3c.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213943/Georgian_American_p32m18.jpg",
         "intro": {
             "text": "Georgian American University is a reputed private university located in Tbilisi, the capital city of Georgia. Established with the aim of delivering high-quality education based on international standards, GAU has quickly gained recognition as one of the leading institutions for higher education in the region. The university follows a modern, student-centered approach that combines academic excellence with practical learning, preparing students for global career opportunities.\n\nGeorgian American University offers a wide range of undergraduate and postgraduate programs in fields such as medicine, business administration, law, social sciences, and information technology. Its medical program, especially the MBBS (MD), is designed according to international medical education standards, making it a preferred choice for students planning to pursue MBBS abroad. The university is recognized by the Ministry of Education of Georgia and follows global academic practices, ensuring that students receive a degree that is widely accepted.\n\nThe campus of GAU is equipped with advanced infrastructure, including modern classrooms, well-equipped laboratories, libraries, and research facilities. The university emphasizes practical training through clinical exposure, internships, and hands-on learning, helping students develop real-world skills alongside theoretical knowledge.\n\nOne of the key strengths of GAU is its highly qualified and experienced faculty, including international professionals who bring global exposure to the classroom. The university also promotes research, innovation, and student participation in academic events such as seminars, workshops, and conferences."
         },
@@ -2358,8 +2358,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "astana-medical-university": {
         "title": "Astana Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Astana_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Astana_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213941/Astana_Medical_rvl3ut.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213941/Astana_Medical_2_uwr6x1.jpg",
         "intro": {
             "text": "Astana Medical University is a prestigious and globally recognized medical institution located in Astana, the capital of Kazakhstan. Established in 1964 and later granted university status in 2009, it has grown into one of the leading medical universities in the country, known for its excellence in medical education and research.\n\nPursuing MBBS in Astana Medical University is an excellent choice for international students, especially those looking for high-quality education at an affordable cost. The university offers modern infrastructure, experienced faculty, and advanced clinical training, ensuring students gain strong theoretical knowledge along with practical exposure.\n\nThe MBBS program is designed according to international standards and is available in English medium, making it convenient for Indian and other international students. The university is recognized by global medical bodies such as World Health Organization (WHO) and National Medical Commission (NMC), which allows graduates to pursue medical careers worldwide.\n\nWith its strong academic reputation, global collaborations, and student-friendly environment, Astana Medical University has become a popular destination for students aiming to study MBBS in Kazakhstan.\n\nApart from academics, Astana Medical University provides a supportive and student-friendly environment, with comfortable hostels, modern libraries, sports facilities, and extracurricular opportunities that contribute to holistic development. The university also encourages research, international collaboration, and participation in medical conferences, which enhances students’ knowledge and professional growth.\n\nOverall, Astana Medical University is considered one of the top choices for students seeking an affordable yet globally recognized medical education in Kazakhstan. Its combination of quality teaching, advanced infrastructure, international recognition, and a multicultural environment makes it an ideal destination for pursuing MBBS in abroad."
         },
@@ -2602,8 +2602,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "south-kazakhstan-medical-academy": {
         "title": "South Kazakhstan Medical Academy",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/SKMA_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/SKMA_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213943/South_Kazakhstan_Medical_fhm4as.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213944/South_Kazakhstan_2_bbgjsw.jpg",
         "intro": {
             "text": "South Kazakhstan Medical Academy (SKMA) is one of the oldest and most respected medical institutions in Shymkent, Kazakhstan, established in 1979 with the mission to provide high‑quality medical, pharmaceutical, and healthcare education to students from around the world. As a government‑funded university operating under the Ministry of Education and Science of the Republic of Kazakhstan, it has built a strong reputation for academic excellence, modern infrastructure, and practical training opportunities.\n\nSouth Kazakhstan Medical Academy offers a range of programs in medicine, dentistry, pharmacy, public health, pediatrics, and nursing, attracting both local and international students seeking MBBS in Kazakhstan and other healthcare degrees. The academy emphasizes a balanced blend of theoretical knowledge and practical clinical exposure to prepare students for real‑world medical challenges.\n\nFor international students, MBBS in South Kazakhstan Medical Academy is particularly appealing due to its affordable fee structure, English‑medium instruction (with local language support), and supportive learning environment. The academy also maintains academic partnerships with institutions in Europe, Russia, and other countries, enhancing the global exposure and research opportunities available to its students.\n\nWith decades of experience in medical education and a diverse multicultural student community, South Kazakhstan Medical Academy continues to be a preferred choice for students aspiring to pursue a medical career through MBBS in Kazakhstan, especially from countries like India."
         },
@@ -2850,8 +2850,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "osh-state-university": {
         "title": "Osh State University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Osh_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Osh_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213943/Osh_State_xh8cy8.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213943/Osh_State_2_kr2hu5.jpg",
         "intro": {
             "text": "Osh State University is one of the oldest and most prestigious government universities in Kyrgyzstan, widely recognized for its excellence in medical education and research. Established in 1951, the university is located in Osh, the second-largest and one of the most culturally rich cities in Kyrgyzstan. Over the years, it has developed into a major educational hub, attracting thousands of students from across the world who aspire to pursue MBBS in Osh State University and build successful medical careers internationally.\n\nThe university is especially popular among Indian students looking for MBBS in Kyrgyzstan due to its globally recognized degree, affordable fee structure, and high-quality education system. Osh State University is officially recognized by top medical bodies such as the National Medical Commission (NMC) of India, the World Health Organization (WHO), and is listed in the World Directory of Medical Schools (WDOMS). This global recognition allows students pursuing MBBS abroad to appear for licensing exams like FMGE/NExT in India, USMLE in the USA, and PLAB in the UK.\n\nOsh State University offers a well-structured MBBS program in English medium, specifically designed for international students. The curriculum follows international medical education standards and includes a perfect balance of theoretical knowledge and practical training. Students gain strong clinical exposure through affiliated hospitals, where they interact with real patients and develop hands-on medical skills. This practical approach makes it a preferred destination for students planning study MBBS abroad.\n\nThe university is equipped with modern infrastructure, including advanced laboratories, digital classrooms, research centers, and a well-stocked library. It also emphasizes research and innovation, encouraging students to participate in medical conferences, seminars, and international exchange programs. The experienced faculty members at Osh State University provide continuous academic support and mentorship, helping students excel in their studies and professional careers."
         },
@@ -3097,8 +3097,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "jalal-abad-state-university": {
         "title": "Jalal-Abad State University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/JASU_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/JASU_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213942/Jalal-Abad_State_m6vlbc.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775213941/Jalal-Abad_State_2_qgywsi.jpg",
         "intro": {
             "text": "Jalal-Abad State University is a well-recognized government university in Kyrgyzstan, gaining strong popularity among international students who are looking to study MBBS abroad at an affordable cost. Established with the aim of providing quality higher education, the university has developed a solid reputation for delivering globally accepted medical education with a focus on both theoretical knowledge and practical clinical training.\n\nThe MBBS in Jalal-Abad State University program is specifically designed to meet international standards, making it an excellent choice for students planning to pursue a career in medicine. One of the biggest advantages of choosing this university is that the MBBS abroad program is offered in English medium, which makes it highly convenient for Indian students and eliminates any language barrier during the course.\n\nWhen it comes to affordability, MBBS in Abroad, especially at Jalal-Abad State University, is considered a smart option for students with a limited budget. The total MBBS fees in Jalal-Abad State University are much lower compared to private medical colleges in India, making it possible for middle-class families to fulfill their dream of becoming a doctor without financial burden. Additionally, the university follows a simple admission process, where students are only required to qualify NEET, without any entrance exams or donation fees.\n\nThe university is equipped with modern infrastructure, advanced laboratories, and well-affiliated hospitals, ensuring that students receive hands-on clinical exposure throughout their medical education. This practical training plays a crucial role in preparing students for global medical licensing exams such as FMGE/NExT, which is essential for practicing in India after completing MBBS abroad.\n\nAnother key highlight of Jalal-Abad State University is its diverse international student community, safe environment, and supportive academic system. Students not only gain medical knowledge but also benefit from international exposure, which enhances their overall personality and career opportunities."
         },
@@ -3879,8 +3879,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "tashkent-state-medical-university": {
         "title": "Tashkent State Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Tashkent_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Tashkent_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214617/Tashkent_State_mnljqn.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214617/Tashkent_State_2_mibgm9.jpg",
         "intro": {
             "text": "Tashkent State Medical University is one of the most prestigious and well-established medical universities in Uzbekistan, making it a top choice for students aspiring to pursue MBBS in Abroad. Founded with a vision to deliver high-quality medical education and research, the university has built a strong reputation among international students, especially those looking for MBBS in Uzbekistan at an affordable cost. With modern infrastructure, advanced laboratories, and globally recognized teaching methodologies, Tashkent State Medical University offers an excellent environment for medical studies.\n\nFor students planning to Study MBBS Abroad, Tashkent State Medical University provides a perfect blend of theoretical knowledge and practical exposure. The university follows international medical education standards and offers MBBS programs in English medium, which makes it highly attractive for Indian and other international students. The curriculum is designed to match global medical guidelines, helping students prepare for licensing exams like FMGE/NExT, USMLE, and PLAB.\n\nOne of the major advantages of choosing MBBS in Tashkent State Medical University is its affordable fee structure compared to private medical colleges in India. Students can complete their MBBS Abroad journey at a fraction of the cost while still receiving world-class education. Additionally, the cost of living in Uzbekistan is quite economical, making it a budget-friendly destination for medical aspirants.\n\nThe university is recognized by major global medical bodies such as the World Health Organization and the National Medical Commission, ensuring that the degree holds international value. This recognition allows graduates to practice medicine in different countries after clearing the required licensing exams.\n\nAnother key highlight of Study MBBS in Uzbekistan at Tashkent State Medical University is the availability of experienced faculty members and advanced clinical training in affiliated hospitals. Students gain hands-on experience, which is crucial for building strong medical skills. The university also emphasizes research, innovation, and practical learning, making it an ideal destination for those who want to build a successful medical career."
         },
@@ -4151,8 +4151,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "samarkand-state-medical-university": {
         "title": "Samarkand State Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Samarkand_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Samarkand_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214617/Samarkand_State_Medical_hotxyu.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214616/Samarkand_State_Medical_2_cglapk.jpg",
         "intro": {
             "text": "Samarkand State Medical University is one of the oldest and most prestigious medical universities in Uzbekistan, making it a top destination for students planning to study MBBS abroad. Established in 1930, the university has a rich legacy of excellence in medical education and has trained thousands of skilled doctors who are now practicing worldwide. It is especially popular among international students looking for MBBS in Uzbekistan at an affordable cost with global recognition.\n\nFor students aiming to pursue MBBS in abroad, Samarkand State Medical University offers a well-structured and internationally aligned curriculum that combines theoretical knowledge with practical clinical training. The university provides MBBS programs in English medium, making it convenient for Indian and other international students. Its focus on modern teaching methodologies, advanced laboratories, and hands-on hospital training ensures that students gain real-world medical experience.\n\nOne of the major advantages of choosing MBBS in Samarkand State Medical University is its cost-effective fee structure. Compared to private medical colleges in India, the university offers quality education at a much lower cost, making it an ideal choice for students from middle-income families who want to study MBBS abroad without financial burden. Additionally, the cost of living in Uzbekistan is quite affordable, further reducing the overall expenses.\n\nThe university is recognized by global medical bodies such as the World Health Organization and the National Medical Commission, ensuring that the degree is valid internationally. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the historic city of Samarkand, the university provides a safe, student-friendly, and culturally rich environment. Students not only receive quality education but also experience a vibrant lifestyle while studying MBBS in Uzbekistan."
         },
@@ -4419,8 +4419,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "bukhara-state-medical-institute": {
         "title": "Bukhara State Medical Institute",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Bukhara_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Bukhara_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214614/Bukhara_State_Medical_g1xz0i.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214614/Bukhara_State_Medical_2_dmtleb.jpg",
         "intro": {
             "text": "Bukhara State Medical Institute is one of the leading government medical universities in Uzbekistan, widely known for providing high-quality medical education at an affordable cost. Established in 1990, the institute has gained strong popularity among international students, especially those planning to study MBBS abroad and looking for a reliable option for MBBS in Uzbekistan.\n\nFor students aiming to pursue MBBS in abroad, Bukhara State Medical Institute offers a well-structured and globally aligned curriculum that focuses on both theoretical knowledge and practical clinical training. The university provides MBBS programs in English medium, making it convenient for Indian and other international students. With modern infrastructure, advanced laboratories, and experienced faculty, the institute ensures a high standard of education.\n\nOne of the major advantages of choosing MBBS in Bukhara State Medical Institute is its affordable fee structure. Compared to private medical colleges in India, the cost of MBBS abroad here is significantly lower, making it an ideal choice for students from middle-income families. Additionally, the cost of living in Uzbekistan is economical, which further reduces the overall expenses for students.\n\nThe institute is recognized by major global medical organizations such as the World Health Organization and the National Medical Commission, ensuring that the degree is globally accepted. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the historic city of Bukhara, the institute offers a safe, peaceful, and culturally rich environment for students. It provides a perfect blend of academic excellence and comfortable living, making it an attractive destination for those planning to study MBBS abroad."
         },
@@ -4683,8 +4683,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "andijan-state-medical-institute": {
         "title": "Andijan State Medical Institute",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Andijan_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Andijan_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214614/Andijan_State_Medical_nu5qrl.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214613/Andijan_State_Medical_2_sjmqu7.jpg",
         "intro": {
             "text": "Andijan State Medical Institute is one of the prominent government medical universities in Uzbekistan, known for offering quality medical education at an affordable cost. Established in 1955, the institute has built a strong academic reputation and has become a preferred destination for international students, especially those planning to study MBBS abroad and pursue MBBS in Uzbekistan.\n\nFor students aiming to pursue MBBS in abroad, Andijan State Medical Institute provides a well-structured and globally recognized curriculum that focuses on both theoretical knowledge and practical clinical training. The university offers MBBS programs in English medium, making it convenient for Indian and other international students. With modern infrastructure, advanced laboratories, and experienced faculty, the institute ensures high-quality education aligned with global standards.\n\nOne of the major advantages of choosing MBBS in Andijan State Medical Institute is its affordable fee structure. Compared to private medical colleges in India, the cost of MBBS abroad here is significantly lower, making it an ideal option for students from middle-income families. Additionally, the cost of living in Uzbekistan is quite economical, which further reduces the overall expenses.\n\nThe institute is recognized by international medical bodies such as the World Health Organization and the National Medical Commission, ensuring global acceptance of its medical degree. This allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB after completing their MBBS in abroad.\n\nLocated in the city of Andijan, the institute provides a safe, peaceful, and student-friendly environment. The university offers a multicultural atmosphere with students from different countries, helping them gain international exposure while studying MBBS in Uzbekistan."
         },
@@ -4949,8 +4949,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "nanjing-medical-university": {
         "title": "Nanjing Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Nanjing_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Nanjing_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214616/Nanjing_Medical_foo0x8.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214615/Nanjing_Medical._2_tbhfhj.jpg",
         "intro": {
             "text": "Nanjing Medical University is a prestigious and globally recognized government medical university located in Nanjing, the capital of Jiangsu Province, China. Established in 1934, it has evolved over the decades into one of China’s leading centers for medical education, research, and healthcare training. With a rich legacy of excellence spanning nearly a century, the university is known for its commitment to producing skilled and competent medical professionals, making it a preferred destination for students planning to study MBBS abroad and pursue MBBS in China.\n\nThe university offers a comprehensive MBBS program in English, specifically designed for international students, including Indian students. The curriculum integrates theoretical knowledge, practical skills, and clinical exposure in a stepwise manner, ensuring that students are fully prepared to meet the challenges of global medical practice. Students are trained in modern medical sciences, including anatomy, physiology, biochemistry, pathology, pharmacology, and advanced clinical disciplines such as surgery, internal medicine, pediatrics, obstetrics, and gynecology. The university also focuses on preparing students for licensing exams like FMGE/NExT (India), USMLE (USA), and PLAB (UK), ensuring global career opportunities.\n\nNanjing Medical University emphasizes research and innovation, providing state-of-the-art laboratories, simulation centers, digital libraries, and research institutes. Students are encouraged to participate in scientific research projects and medical conferences, which enhances their understanding of modern medical advancements and prepares them for postgraduate studies and specialization programs worldwide. The university’s affiliated hospitals are equipped with advanced diagnostic and treatment facilities, providing hands-on clinical experience and training under the supervision of experienced faculty and practicing doctors.\n\nThe campus is designed to provide a safe, comfortable, and student-friendly environment, with modern hostel accommodations, recreational facilities, sports complexes, and cafeterias serving international cuisines. The university also provides dedicated support services for international students, including pre-departure guidance, orientation programs, visa assistance, and counseling services. This ensures that students can adjust easily to life in China and focus entirely on their studies without administrative or logistical difficulties."
         },
@@ -5198,8 +5198,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "jilin-university": {
         "title": "Jilin University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Jilin_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Jilin_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214617/Jilin_University_t8foit.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214615/Jilin_University_2_kfvjkw.jpg",
         "intro": {
             "text": "Jilin University is one of China’s premier higher education institutions, renowned for its excellence in medical education, research, and innovation. Established in 1946 and located in Changchun, Jilin Province, China, the university has grown into a multidisciplinary and globally recognized center of learning. For international students seeking to study MBBS abroad, Jilin University offers an ideal combination of quality education, modern infrastructure, and affordable tuition.\n\nThe university is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC), India, making its MBBS degree globally valid and eligible for licensing exams like FMGE/NExT, USMLE, and PLAB. Jilin University is known for its highly qualified faculty, advanced laboratories, and affiliation with numerous teaching hospitals, which provide students with extensive clinical exposure.\n\nOffering an English-medium MBBS program, Jilin University attracts students from India, Asia, Africa, and Europe, providing a multicultural and inclusive environment. The campus includes modern hostels, libraries, research centers, sports facilities, and student support services, ensuring that international students experience a safe, engaging, and academically rich environment.\n\nJilin University is associated with over 20 teaching hospitals, which provide students with an opportunity to work with experienced medical professionals, participate in research, and experience modern healthcare facilities. The university’s teachers are highly qualified, with some of them possessing higher qualifications and international experience, which enables them to mentor students throughout their academic journey.\n\nThe university campus offers a safe, student-friendly, and multicultural environment. The international students are offered well-furnished hostels that are equipped with facilities such as high-speed internet connectivity, study rooms, laundry facilities, and canteens that meet the dietary needs of international students. Apart from academic activities, Jilin University focuses on the holistic development of students through sports, cultural events, student clubs, and seminars. The multicultural environment of the university campus helps international students to establish relationships with Asian, African, European, and international students."
         },
@@ -5436,8 +5436,8 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "dalian-medical-university": {
         "title": "Dalian Medical University",
         "coursetype": "MBBS",
-        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Dalian_Main.webp",
-        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Dalian_Mobile.webp",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214615/Dalian_Medical_University_bcjris.jpg",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1775214615/Dalian_Medical_2_yytkvf.jpg",
         "intro": {
             "text": "Dalian Medical University is a highly reputed public medical university in China, located in the vibrant coastal city of Dalian in Liaoning Province. Founded in 1947, it has established itself as one of the leading institutions for medical education, health sciences, clinical medicine, and biomedical research in the country. With a strong tradition of academic excellence and innovation, the university has become a preferred choice for students aspiring to pursue MBBS abroad, international medical degree programs, and careers in global healthcare.\n\nAs an institution committed to delivering quality education, Dalian Medical University offers a comprehensive MBBS program in English that caters to the needs of international students from Asia, Africa, Europe, and beyond. The English‑medium MBBS course spans approximately 6 years, comprising rigorous theoretical instruction, hands‑on practical laboratory training, and structured clinical internships at the university’s affiliated hospitals. This well‑designed curriculum ensures that students develop a solid foundation in anatomy, physiology, pathology, pharmacology, and other core medical sciences, while also gaining real‑world experience in patient care and clinical settings.\n\nOne of the most attractive aspects of studying at Dalian Medical University is its global recognition and accreditation. The MBBS degree awarded by the university is recognized by major international bodies, including the World Health Organization (WHO) and the National Medical Commission (NMC) of India, which makes graduates eligible to appear for licensing examinations such as the Foreign Medical Graduates Examination (FMGE/NExT), USMLE, PLAB, and other medical licensing tests in different countries. This recognition enhances the career opportunities of students and supports their ambitions to practice medicine internationally after graduation."
         },
@@ -7022,5 +7022,732 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             }
         ]
     },
-
+    "bangladesh-medical-college": {
+        "title": "Bangladesh Medical College",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/BMC_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/BMC_Mobile.webp",
+        "intro": {
+            "text": "Bangladesh Medical College (BMC), Dhaka, established in 1986, holds the distinction of being the first private medical college in Bangladesh, and over the decades, it has built a strong reputation for providing high-quality medical education to both local and international students. The college has become a preferred destination for students seeking MBBS abroad, particularly for Indian, Nepali, and other international aspirants who wish to pursue their medical studies in English at an affordable cost while receiving global recognition for their degree. BMC offers a 5-year MBBS program followed by a 1-year compulsory internship, ensuring that students not only gain theoretical knowledge but also practical, hands-on clinical experience in hospital settings.\n\nThe college is affiliated with the University of Dhaka, which ensures that the curriculum, examinations, and degree adhere to international medical education standards. It is also recognized by the Bangladesh Medical and Dental Council (BMDC) and the National Medical Commission (NMC India), allowing graduates to practice medicine in Bangladesh, India (after FMGE/NExT), and other countries worldwide. BMC emphasizes a holistic approach to medical education, combining rigorous academic training with clinical rotations, community health programs, and preventive medicine initiatives, preparing students to become competent, socially responsible doctors.\n\nThe campus provides state-of-the-art facilities including modern classrooms, fully equipped laboratories, digital libraries, and a teaching hospital where students gain practical exposure to real-world medical scenarios. Additionally, comfortable hostels, recreational facilities, and student support services ensure a safe and conducive environment for international students to adapt to life in Bangladesh. By focusing on academic excellence, clinical skills, research opportunities, and personal growth, Bangladesh Medical College continues to be one of the top choices for MBBS abroad in Bangladesh, helping students achieve their dream of becoming successful medical professionals."
+        },
+        "quickOverview": {
+            "Name of College": "Bangladesh Medical College (BMC)",
+            "Established": "1986",
+            "Location": "Dhaka, Bangladesh",
+            "Type": "Private Medical College",
+            "Affiliation": "University of Dhaka",
+            "Recognition": "Bangladesh Medical and Dental Council (BMDC), National Medical Commission (NMC India), Listed in World Directory of Medical Schools (WDOMS)",
+            "Course Offered": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "Medium of Instruction": "English",
+            "Duration of MBBS": "5 Years Academic + 1 Year Compulsory Internship (Total 6 Years)",
+            "Hostel Facilities": "Available for both male and female students with safe and comfortable accommodations",
+            "International Students": "Accepted from India, Nepal, Sri Lanka, Middle East, and other countries"
+        },
+        "benefits": {
+            "intro": "Bangladesh Medical College (BMC), located in Dhaka, is one of the most reputable private medical colleges in Bangladesh and has been a pioneer in medical education since its establishment in 1986. The college offers a globally recognized MBBS degree, combining quality theoretical education with extensive clinical exposure, making it a preferred choice for Indian and international students seeking MBBS abroad. With English as the medium of instruction, affordable tuition fees, and a supportive campus environment, BMC ensures that students receive a holistic learning experience.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Affiliation with University of Dhaka",
+                    "Details": "The college is affiliated with the University of Dhaka, ensuring that the MBBS degree is nationally and internationally recognized, providing credibility for higher studies and medical practice worldwide."
+                },
+                {
+                    "Heading": "Recognition by BMDC and NMC India",
+                    "Details": "BMC is recognized by the Bangladesh Medical and Dental Council (BMDC) and the National Medical Commission (NMC India), enabling graduates to practice medicine in India after clearing FMGE/NExT."
+                },
+                {
+                    "Heading": "English-Medium Education",
+                    "Details": "All courses and lectures are conducted in English, allowing international students to easily understand, communicate, and excel academically without facing language barriers."
+                },
+                {
+                    "Heading": "Comprehensive Curriculum",
+                    "Details": "The MBBS program integrates pre-clinical, para-clinical, and clinical subjects, including Anatomy, Physiology, Biochemistry, Pathology, Pharmacology, Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, ensuring a well-rounded medical education."
+                },
+                {
+                    "Heading": "Practical Clinical Exposure",
+                    "Details": "Students gain hands-on experience at the Bangladesh Medical College Hospital, participating in ward rounds, outpatient clinics, diagnostic procedures, and emergency care, which prepares them for real-world medical practice."
+                },
+                {
+                    "Heading": "Affordable Tuition and Living Costs",
+                    "Details": "Compared to many private medical colleges in India, BMC offers a cost-effective MBBS program with reasonable tuition fees and hostel charges, making it accessible for middle-income families."
+                },
+                {
+                    "Heading": "Focus on Community Health and Preventive Medicine",
+                    "Details": "BMC emphasizes rural postings, community health programs, and preventive medicine initiatives, teaching students social responsibility and public health awareness."
+                },
+                {
+                    "Heading": "Modern Facilities and Infrastructure",
+                    "Details": "The college is equipped with state-of-the-art laboratories, libraries, digital classrooms, and well-maintained hostels, providing students with a comfortable and conducive learning environment."
+                },
+                {
+                    "Heading": "Vibrant Student Life",
+                    "Details": "Students are encouraged to participate in sports, cultural activities, medical seminars, workshops, and research projects, helping them develop leadership, teamwork, and communication skills alongside academics."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Bangladesh Medical College (BMC) is structured to provide students with a comprehensive medical education, combining theoretical knowledge, practical skills, and clinical exposure. The curriculum is designed in accordance with the guidelines of the University of Dhaka and Bangladesh Medical and Dental Council (BMDC), ensuring that graduates receive a globally recognized medical degree.",
+        "syllabus": {
+            "headers": ["Year", "Subjects Covered"],
+            "table": [
+                {
+                    "Year": "1st Year – Pre-Clinical",
+                    "Subjects Covered": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Year": "2nd Year – Para-Clinical (Part 1)",
+                    "Subjects Covered": "Pathology, Microbiology"
+                },
+                {
+                    "Year": "3rd Year – Para-Clinical (Part 2)",
+                    "Subjects Covered": "Pharmacology, Forensic Medicine, Community Medicine"
+                },
+                {
+                    "Year": "4th Year – Clinical (Part 1)",
+                    "Subjects Covered": "Medicine, Surgery, Obstetrics & Gynecology, Pediatrics"
+                },
+                {
+                    "Year": "5th Year – Clinical (Part 2)",
+                    "Subjects Covered": "Ophthalmology, ENT, Psychiatry, Dermatology, Orthopedics, Emergency Medicine"
+                },
+                {
+                    "Year": "6th Year – Rotating Internship",
+                    "Subjects Covered": "Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Community Health, Emergency Medicine"
+                },
+                {
+                    "Year": "Additional Components Throughout Course",
+                    "Subjects Covered": "Research Methodology, Medical Ethics, Communication Skills, Preventive & Community Health Programs"
+                }
+            ]
+        },
+        "feesIntro": "Bangladesh Medical College offers an affordable and transparent fee structure for students pursuing MBBS abroad in Bangladesh. The fees are designed to cover tuition and hostel facilities, making it an attractive option for international students, especially from India and neighboring countries.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "₹2,98,800",
+                    "hostel": "₹49,800",
+                    "total": "₹3,48,600"
+                },
+                {
+                    "year": "Total (5 Years)",
+                    "tuition": "₹14,94,000",
+                    "hostel": "₹2,49,000",
+                    "total": "₹17,43,000"
+                }
+            ]
+        },
+        "durationIntro": "Bangladesh Medical College offers a structured MBBS program that combines academic learning with practical clinical training, ensuring that students are well-prepared for professional medical practice and licensing exams like FMGE/NExT in India.",
+        "duration": {
+            "headers": ["Program", "Duration", "Details"],
+            "table": [
+                {
+                    "Program": "MBBS Academic Study",
+                    "Duration": "5 Years",
+                    "Details": "Covers pre-clinical, para-clinical, and clinical subjects with lectures, practicals, and hospital exposure."
+                },
+                {
+                    "Program": "Rotating Internship",
+                    "Duration": "1 Year",
+                    "Details": "Compulsory clinical internship in major departments like Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency Medicine, and Community Health."
+                },
+                {
+                    "Program": "Total Duration",
+                    "Duration": "6 Years",
+                    "Details": "Includes 5 years of academic study + 1-year internship, preparing students for FMGE/NExT, postgraduate studies, and global medical careers."
+                }
+            ]
+        },
+        "studentSupport": "Bangladesh Medical College (BMC), Dhaka, provides an extensive and holistic range of student support services designed to ensure that students pursuing MBBS abroad in Bangladesh have a smooth, comfortable, and successful academic journey. From the initial admission process to graduation, BMC emphasizes student welfare, academic excellence, and personal development, ensuring that both local and international students are supported at every step. The college assists students with admission counseling, document verification, visa guidance, and enrollment procedures, making it easier for aspiring doctors from India, Nepal, Sri Lanka, and other countries to secure admission without hassle.\n\nBMC offers well-maintained, secure, and comfortable hostel facilities for male and female students, featuring mess facilities with hygienic food, 24/7 security, Wi-Fi connectivity, recreation areas, and study zones, allowing students to focus on their studies and clinical training. In addition to accommodation, the college provides transport facilities, medical services, and emergency support to ensure student safety and health. Academically, BMC supports students through experienced and approachable faculty, interactive classroom teaching, mentorship programs, group tutorials, and access to well-equipped libraries and modern digital learning resources, which enhance conceptual understanding, practical skills, and clinical competence.\n\nTo further support professional growth, the college offers career counseling, guidance for FMGE/NExT exam preparation, postgraduate study options, and exposure to international medical conferences and workshops, preparing students for successful medical careers in India, Bangladesh, and worldwide. Moreover, BMC emphasizes mental health and overall well-being, providing counseling services, peer support networks, stress management workshops, and extracurricular activities including sports, cultural events, and medical societies, fostering teamwork, leadership, and communication skills.\n\nBy combining academic support, clinical training guidance, personal mentoring, hostel facilities, health and wellness services, and career-oriented programs, Bangladesh Medical College ensures that its students experience a comprehensive learning environment. These services not only help students achieve academic success and professional competence but also nurture them into confident, socially responsible, and globally competitive medical professionals ready to meet the demands of modern healthcare and make a meaningful impact in society.",
+        "recognition": "Bangladesh Medical College (BMC), Dhaka, is a prestigious institution for medical education in Bangladesh with a legacy of over three decades of excellence. The college is committed to providing high-quality MBBS education in a student-friendly environment that combines academic rigor, clinical exposure, and research opportunities. BMC’s curriculum and teaching standards are aligned with international medical education guidelines, ensuring that students graduate with a globally recognized MBBS degree. The college’s strong affiliations, accreditations, and accomplishments have made it a preferred destination for Indian and international students seeking MBBS abroad.\n\n1. Affiliation of Bangladesh Medical College\nBangladesh Medical College is affiliated with the University of Dhaka, one of the most prestigious and reputable universities in Bangladesh. This affiliation ensures that the MBBS curriculum, examinations, and degree meet high academic standards recognized both nationally and internationally. Students graduating from BMC receive a degree that is credible, globally accepted, and eligible for further studies or medical practice worldwide.\n- MBBS degree awarded under the University of Dhaka.\n- Ensures adherence to internationally accepted academic and clinical standards.\n- Enables graduates to pursue postgraduate studies or medical careers globally.\n\n2. Recognition of Bangladesh Medical College\nBMC is fully recognized by the Bangladesh Medical and Dental Council (BMDC) and the National Medical Commission (NMC India). It is also listed in the World Directory of Medical Schools (WDOMS). This recognition ensures that students completing their MBBS can practice medicine in Bangladesh, India (after FMGE/NExT), and other countries, and are eligible for higher education and licensing exams worldwide.\n- Recognized by BMDC, validating curriculum and clinical training.\n- Recognized by NMC India, allowing Indian students to take FMGE/NExT.\n- Listed in WDOMS, providing international credibility for graduates.\n\n3. Achievements of Bangladesh Medical College\nBangladesh Medical College has a legacy of academic excellence and medical achievements. With a well-equipped teaching hospital, active research programs, and focus on community health, BMC ensures that students gain hands-on clinical experience, research exposure, and social responsibility. Its graduates consistently perform well in professional exams and go on to pursue medical careers both in Bangladesh and internationally.\n- Attached to Bangladesh Medical College Hospital (BMCH) for practical training.\n- Encourages research, publications, and participation in medical conferences.\n- Focus on community health, rural postings, and preventive medicine initiatives.",
+        "hostelFacilities": "BMC offers well-maintained, secure, and comfortable hostel facilities for male and female students, featuring mess facilities with hygienic food, 24/7 security, Wi-Fi connectivity, recreation areas, and study zones, allowing students to focus on their studies and clinical training. In addition to accommodation, the college provides transport facilities, medical services, and emergency support to ensure student safety and health.",
+        "studentLife": "Life at Bangladesh Medical College (BMC), Dhaka offers a vibrant, supportive, and academically stimulating environment for students pursuing MBBS abroad in Bangladesh. The college combines rigorous medical education with extracurricular, cultural, and social activities, ensuring a holistic development of future doctors. Students at BMC enjoy modern classrooms, well-equipped laboratories, digital libraries, and access to the Bangladesh Medical College Hospital (BMCH) for practical clinical exposure. The campus fosters a collaborative and multicultural environment, with students from India, Nepal, Sri Lanka, and other countries, allowing for cross-cultural learning, networking, and global perspectives.\n\nThe college emphasizes academic excellence while promoting personal growth, offering mentorship programs, peer group interactions, workshops, seminars, and medical conferences to enhance learning beyond textbooks. Outside the classroom, students can engage in sports, cultural festivals, student clubs, and community outreach programs, promoting teamwork, leadership, and social responsibility. Hostel facilities provide a safe, comfortable, and well-managed living space, with amenities like mess facilities, Wi-Fi, recreational areas, and 24/7 security, ensuring that students can focus on both studies and extracurricular pursuits.\n\nBMC also encourages research, innovation, and community service, enabling students to participate in health awareness campaigns, preventive medicine programs, and rural health initiatives. This hands-on involvement ensures that students not only excel academically but also develop empathy, practical skills, and a sense of responsibility towards society. Overall, student life at Bangladesh Medical College is designed to be balanced, enriching, and globally oriented, preparing future doctors to be competent, confident, and socially responsible professionals ready to contribute to healthcare systems both in Bangladesh and worldwide.",
+        "whyChooseUsIntro": "Choosing iExplain Education for admission in MBBS at Bangladesh Medical College (BMC) ensures that students receive end-to-end guidance and professional support throughout the admission process. iExplain Education specializes in helping Indian and international students secure admission in top medical colleges abroad, including BMC, making the journey smooth, transparent, and stress-free.",
+        "whyChooseUs": [
+            "End-to-End Admission Support: iExplain Education assists students with application submission, document verification, and admission formalities, making the process smooth and hassle-free.",
+            "Visa and Travel Assistance: Students receive complete guidance for visa processing, travel arrangements, and hostel accommodations, ensuring a safe and comfortable transition to Bangladesh.",
+            "Personalized Counseling: The consultancy provides one-on-one counseling to help students select the best medical college based on fees, location, faculty, infrastructure, and career prospects.",
+            "Expert Guidance on MBBS Curriculum: iExplain Education explains the MBBS syllabus, course duration, clinical exposure, and internship opportunities at Bangladesh Medical College, helping students plan their studies effectively.",
+            "FMGE/NExT Preparation Advice: Students are guided on preparing for FMGE/NExT exams after graduation, ensuring they are eligible to practice medicine in India.",
+            "Compliance with International Guidelines: iExplain Education ensures that students meet eligibility criteria, NMC/WHO requirements, and college-specific regulations, reducing chances of admission errors or delays.",
+            "Post-Admission Support: The consultancy continues to assist students after enrollment, including academic queries, hostel guidance, cultural adjustment, and mentoring, ensuring a comfortable and productive study experience.",
+            "Proven Track Record: iExplain Education has successfully helped hundreds of students gain admission to top medical colleges in Bangladesh, Russia, China, Kazakhstan, and other countries, making it a trusted and reliable consultancy.",
+            "Transparent and Reliable Guidance: Students receive authentic information, fee clarity, and honest advice, ensuring informed decision-making while choosing MBBS abroad."
+        ],
+        "documents": [
+            {
+                "document": "High School / 10+2 Marksheet",
+                "details": "Certified copy showing minimum 50% in PCB (Physics, Chemistry, Biology) for eligibility."
+            },
+            {
+                "document": "Passport",
+                "details": "Must be valid for at least 2–3 years at the time of admission."
+            },
+            {
+                "document": "Passport-Size Photographs",
+                "details": "Recent color photographs (usually 8–10 copies)."
+            },
+            {
+                "document": "NEET Qualification Certificate",
+                "details": "Mandatory for Indian students to study MBBS abroad."
+            },
+            {
+                "document": "Migration / Transfer Certificate",
+                "details": "From the previous school or college."
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a recognized medical authority; ensures the student is fit for MBBS studies."
+            },
+            {
+                "document": "HIV / Blood Test Reports",
+                "details": "Some colleges require recent health test reports for admission."
+            },
+            {
+                "document": "Character Certificate",
+                "details": "Issued by the school / previous institution, attested."
+            },
+            {
+                "document": "Financial Proof / Sponsorship Letter",
+                "details": "Required to show ability to pay tuition and living expenses."
+            }
+        ],
+        "conclusion": "Pursuing MBBS at Bangladesh Medical College (BMC), Dhaka is an excellent choice for students seeking a quality, affordable, and internationally recognized medical education abroad. The college offers a well-structured MBBS curriculum, combining pre-clinical, para-clinical, and clinical training with extensive hands-on experience at the Bangladesh Medical College Hospital (BMCH). With English as the medium of instruction, modern facilities, supportive faculty, and strong student support services, BMC ensures that students receive a holistic and enriching learning experience.\n\nThe college’s affiliation with the University of Dhaka, recognition by BMDC and NMC India, and listing in the World Directory of Medical Schools make its MBBS degree globally accepted, allowing graduates to pursue careers or higher studies in India, Bangladesh, and other countries. Additionally, BMC emphasizes community health, preventive medicine, research, and extracurricular development, preparing students to become competent, socially responsible, and confident medical professionals.\n\nWith affordable tuition fees, safe hostel facilities, vibrant student life, and continuous support from expert consultants like iExplain Education, aspiring doctors can achieve their dream of becoming a successful medical professional while studying at one of Bangladesh’s most reputable private medical colleges.",
+        "faqs": [
+            {
+                "question": "Is Bangladesh Medical College recognized by the Medical Council of India (NMC)?",
+                "answer": "Yes, Bangladesh Medical College (BMC) is recognized by the National Medical Commission (NMC India), allowing Indian students to appear for the FMGE/NExT exams after graduation. The college is also listed in the World Directory of Medical Schools (WDOMS), making its MBBS degree internationally valid."
+            },
+            {
+                "question": "What is the duration of MBBS at Bangladesh Medical College?",
+                "answer": "The MBBS program at BMC is 6 years in total, consisting of 5 years of academic study (pre-clinical, para-clinical, and clinical training) and a 1-year compulsory rotating internship in various departments of the Bangladesh Medical College Hospital (BMCH)."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS at BMC?",
+                "answer": "The MBBS course at Bangladesh Medical College is taught entirely in English, making it suitable for international students, including those from India, Nepal, and Sri Lanka."
+            },
+            {
+                "question": "What is the approximate fee structure for MBBS at Bangladesh Medical College?",
+                "answer": "The tuition and hostel fees are affordable compared to many private medical colleges in India. Approximate fees are: Tuition Fees: ₹2,98,800 per year; Hostel Fees: ₹49,800 per year; Total (5 Years): Tuition ₹14,94,000 + Hostel ₹2,49,000."
+            },
+            {
+                "question": "What documents are required for admission in BMC?",
+                "answer": "Key documents include: 10+2 mark sheet and passing certificate (PCB subjects with minimum 50%), NEET qualification certificate (for Indian students), Passport and passport-size photographs, Birth certificate, medical fitness certificate, HIV/blood test reports, Character certificate, migration certificate, and financial proof."
+            },
+            {
+                "question": "What kind of student support services does BMC provide?",
+                "answer": "BMC offers comprehensive support services, including: Admission guidance and visa assistance; Hostel facilities with mess, Wi-Fi, and security; Academic mentoring, tutorials, and library access; FMGE/NExT preparation advice; Counseling, extracurricular activities, and community health programs."
+            },
+            {
+                "question": "Can students pursue higher studies or practice medicine in India after BMC?",
+                "answer": "Yes, since BMC is recognized by NMC India, Indian students can appear for FMGE/NExT exams after completing their MBBS. Graduates are also eligible for postgraduate studies, residency programs, and medical practice in India and internationally."
+            },
+            {
+                "question": "What makes Bangladesh Medical College a good choice for MBBS abroad?",
+                "answer": "BMC offers a combination of affordable fees, quality education, English-medium instruction, well-equipped hospital training, and international recognition. The college also emphasizes research, community health, and holistic student development, making it ideal for students who want a global standard medical education at a reasonable cost."
+            }
+        ]
+    },
+    "jahurul-islam-medical-college": {
+        "title": "Jahurul Islam Medical College",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/JIMC_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/JIMC_Mobile.webp",
+        "intro": {
+            "text": "Jahurul Islam Medical College (JIMC), Bangladesh is a prestigious private medical institution recognized for delivering high-quality MBBS education abroad in a modern, student-friendly, and internationally oriented environment. Established under the guidance of the Jahurul Islam Foundation, the college has been at the forefront of medical education in Bangladesh, offering students a platform to pursue their dream of becoming a doctor while gaining hands-on clinical experience. The institution is renowned for its rigorous academic programs, well-structured MBBS syllabus, and emphasis on research, ethics, and community health, making it an ideal choice for Indian and international students seeking MBBS abroad at an affordable cost.\n\nJIMC provides a comprehensive MBBS curriculum, integrating pre-clinical, para-clinical, and clinical training with real-world exposure at its affiliated Jahurul Islam Medical College Hospital. This ensures that students develop strong practical skills, clinical reasoning, and professional competence from the early stages of their medical education. With English as the medium of instruction, international students face no language barriers, making it convenient for Indian, Nepalese, Sri Lankan, and other foreign students to adapt quickly and excel academically.\n\nThe college is equipped with state-of-the-art laboratories, modern lecture halls, simulation centers, and a well-stocked digital library, providing students with access to advanced learning resources, research facilities, and interactive teaching methodologies. Jahurul Islam Medical College also emphasizes student support services, including hostel accommodations, mentoring programs, FMGE/NExT preparation guidance, and community outreach initiatives, ensuring a holistic development of medical students."
+        },
+        "quickOverview": {
+            "College Name": "Jahurul Islam Medical College (JIMC)",
+            "Established": "1992",
+            "Type": "Private Medical College",
+            "Location": "Bajitpur, Kishoreganj, Bangladesh",
+            "Affiliated University": "University of Dhaka",
+            "Recognition": "Bangladesh Medical and Dental Council (BMDC), National Medical Commission (NMC India), World Directory of Medical Schools (WDOMS)",
+            "Course Offered": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "Medium of Instruction": "English",
+            "Duration of MBBS": "5 years academic study + 1 year compulsory internship (total 6 years)",
+            "Career Opportunities": "Eligible for FMGE/NExT in India, postgraduate studies in Bangladesh and abroad, global medical practice"
+        },
+        "benefits": {
+            "intro": "Choosing Jahurul Islam Medical College (JIMC), Bangladesh for pursuing MBBS is an ideal choice for students seeking quality medical education abroad at an affordable cost. The college offers a comprehensive MBBS curriculum that integrates pre-clinical, para-clinical, and clinical training with hands-on practical experience at the Jahurul Islam Medical College Hospital (JIMCH).",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "International Recognition",
+                    "Details": "The MBBS degree is recognized by BMDC, NMC India, and listed in WDOMS, making it valid for global medical practice."
+                },
+                {
+                    "Heading": "Affordable Fees",
+                    "Details": "JIMC offers cost-effective tuition and hostel facilities compared to private medical colleges in India, making MBBS abroad accessible."
+                },
+                {
+                    "Heading": "English-Medium Curriculum",
+                    "Details": "All subjects are taught in English, ensuring ease of learning for international students."
+                },
+                {
+                    "Heading": "Comprehensive Clinical Exposure",
+                    "Details": "Affiliated with Jahurul Islam Medical College Hospital, students get practical, hands-on training in all major medical departments."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The college has highly qualified and experienced faculty providing personalized guidance, mentorship, and academic support."
+                },
+                {
+                    "Heading": "Modern Infrastructure",
+                    "Details": "Equipped with digital libraries, simulation labs, well-stocked laboratories, and modern classrooms for a high-quality learning experience."
+                },
+                {
+                    "Heading": "Holistic Student Development",
+                    "Details": "Focus on extracurricular activities, cultural programs, research opportunities, and community health initiatives."
+                },
+                {
+                    "Heading": "Support for International Students",
+                    "Details": "Offers hostels, FMGE/NExT exam preparation, counseling, and student support services, ensuring a smooth academic journey."
+                },
+                {
+                    "Heading": "Career Opportunities",
+                    "Details": "Graduates can pursue medical practice, postgraduate studies, or specialization in India, Bangladesh, and globally."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS program at Jahurul Islam Medical College (JIMC) is designed to provide students with a comprehensive and structured medical education, combining theoretical knowledge with extensive practical and clinical exposure. The course is divided into pre-clinical, para-clinical, clinical phases, followed by a compulsory one-year rotating internship.",
+        "syllabus": {
+            "headers": ["Phase", "Duration", "Subjects / Courses"],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical",
+                    "Duration": "1 Year",
+                    "Subjects / Courses": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Phase": "Para-Clinical (2nd & 3rd Year)",
+                    "Duration": "2 Years",
+                    "Subjects / Courses": "Pathology, Pharmacology, Microbiology, Community Medicine, Forensic Medicine"
+                },
+                {
+                    "Phase": "Clinical (4th & 5th Year)",
+                    "Duration": "2 Years",
+                    "Subjects / Courses": "Medicine, Surgery, Pediatrics, Gynecology & Obstetrics, Ophthalmology, ENT, Psychiatry, Dermatology"
+                },
+                {
+                    "Phase": "Internship / Rotating Internship",
+                    "Duration": "1 Year",
+                    "Subjects / Courses": "All Major Clinical Departments"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS fee structure at Jahurul Islam Medical College (JIMC) is designed to be affordable when compared to many private medical colleges in India, especially for students choosing to study MBBS abroad in Bangladesh. The total fees cover tuition, hostel seat rent, university registration, and session charges over the full 5‑year academic program (excluding internship).",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year (Admission + Academic Charges)",
+                    "tuition": "19,400 USD",
+                    "total": "₹15,52,000*"
+                },
+                {
+                    "year": "2nd Year Tuition + Hostel",
+                    "tuition": "5,400 USD",
+                    "total": "₹4,32,000*"
+                },
+                {
+                    "year": "3rd Year Tuition + Hostel",
+                    "tuition": "5,400 USD",
+                    "total": "₹4,32,000*"
+                },
+                {
+                    "year": "4th Year Tuition + Hostel",
+                    "tuition": "5,400 USD",
+                    "total": "₹4,32,000*"
+                },
+                {
+                    "year": "5th Year Tuition + Hostel",
+                    "tuition": "5,400 USD",
+                    "total": "₹4,32,000*"
+                },
+                {
+                    "year": "Total Fees",
+                    "tuition": "41,000 USD",
+                    "total": "₹32,80,000 *"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Jahurul Islam Medical College (JIMC) is a 6-year course designed to provide comprehensive medical education combining theoretical knowledge with practical clinical training.",
+        "duration": {
+            "headers": ["Phase", "Duration", "Key Details"],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical",
+                    "Duration": "1 Year",
+                    "Key Details": "Covers Anatomy, Physiology, Biochemistry with theoretical classes, lab sessions, and dissections. Builds a strong foundation in basic medical sciences."
+                },
+                {
+                    "Phase": "Para-Clinical",
+                    "Duration": "2 Years",
+                    "Key Details": "Includes Pathology, Pharmacology, Microbiology, Community Medicine, Forensic Medicine. Focus on disease mechanisms, drug actions, community health, and lab practicals."
+                },
+                {
+                    "Phase": "Clinical",
+                    "Duration": "2 Years",
+                    "Key Details": "Covers clinical subjects with extensive hospital-based practical training and patient care."
+                },
+                {
+                    "Phase": "Rotating Internship",
+                    "Duration": "1 Year",
+                    "Key Details": "Full-time practical training across all major clinical departments, including emergency care, OPD/IPD management, and community health rotations. Prepares students for professional practice and FMGE/NExT exams."
+                },
+                {
+                    "Phase": "Total Duration",
+                    "Duration": "6 Years",
+                    "Key Details": "5 years of academic study + 1-year compulsory internship. Fully aligned with BMDC and NMC India guidelines."
+                }
+            ]
+        },
+        "studentSupport": "Jahurul Islam Medical College (JIMC) provides a comprehensive range of student support services designed to ensure that both local and international students have a comfortable, secure, and productive academic experience while pursuing their MBBS abroad in Bangladesh. The college offers well-furnished hostel accommodations with mess facilities, Wi-Fi connectivity, and 24/7 security, creating a safe and conducive environment for study and personal growth. Students also have access to modern classrooms, fully equipped laboratories, and a digital library with a wide range of medical journals, e-books, and research materials, ensuring continuous learning and academic excellence.\n\nJIMC places a strong emphasis on mentorship and personalized academic guidance, where experienced faculty assist students with subject clarification, exam preparation, and research projects. For international students, especially from India, Nepal, and Sri Lanka, the college provides special orientation programs, language support, and cultural integration activities, helping them adapt quickly to the campus environment. Additionally, career counseling, FMGE/NExT exam preparation, and internship guidance are available to ensure that students are well-prepared for medical licensing exams and future career opportunities. The college also encourages extracurricular development, including sports, cultural events, community health programs, and volunteer initiatives, fostering a holistic and well-rounded medical education.",
+        "recognition": "Jahurul Islam Medical College (JIMC) is one of the leading private medical colleges in Bangladesh, known for providing high-quality MBBS education abroad that is affordable, internationally recognized, and aligned with global medical standards. Affiliation: Jahurul Islam Medical College (JIMC) is affiliated with the University of Dhaka, one of the most prestigious universities in Bangladesh. This affiliation ensures that the MBBS curriculum, examination system, and degree awarded are fully standardized and internationally recognized. Recognition: JIMC is recognized by the Bangladesh Medical and Dental Council (BMDC), the National Medical Commission (NMC) of India, and is listed in the World Directory of Medical Schools (WDOMS). This recognition ensures that Indian and international students completing their MBBS at JIMC are eligible to appear for licensing exams such as FMGE/NExT in India and can pursue higher studies or medical practice globally. Achievements: Over the years, Jahurul Islam Medical College has achieved remarkable milestones in medical education, research, and clinical training. The college boasts modern infrastructure, state-of-the-art laboratories, and a well-equipped teaching hospital (JIMCH), providing students with hands-on clinical exposure from the early years.",
+        "hostelFacilities": "Hostels provide a safe and comfortable living environment, with mess facilities, Wi-Fi connectivity, recreational areas, and 24/7 security, making it convenient for international students, especially those from India, Nepal, and Sri Lanka, to adapt quickly and feel at home. The college ensures a safe and conducive environment for study and personal growth through well-furnished hostel accommodations.",
+        "studentLife": "Student life at Jahurul Islam Medical College (JIMC) is designed to provide a well-rounded, engaging, and supportive environment for both local and international MBBS students. The college offers a vibrant campus atmosphere, combining academic rigor with extracurricular opportunities, which helps students develop both professionally and personally. The campus is equipped with modern classrooms, digital libraries, fully-equipped laboratories, and advanced simulation facilities, ensuring students have access to all resources needed for top-quality medical education abroad.\n\nApart from academics, JIMC encourages students to participate in cultural programs, sports events, community health outreach, and voluntary medical camps, fostering teamwork, leadership, and social responsibility. Hostels provide a safe and comfortable living environment, with mess facilities, Wi-Fi connectivity, recreational areas, and 24/7 security. Moreover, the college promotes research activities, workshops, and seminars, helping students stay updated with the latest developments in medical science. The friendly faculty and mentoring system ensures continuous guidance, while career counseling and FMGE/NExT preparation support prepare students for licensing exams and global medical careers.",
+        "whyChooseUsIntro": "Choosing iExplain Education for admission in Jahurul Islam Medical College (JIMC), Bangladesh ensures that students receive comprehensive guidance and personalized support throughout their journey of pursuing MBBS abroad. The consultancy assists with step-by-step admission procedures, document verification, and university communication, making the application process seamless and stress-free.",
+        "whyChooseUs": [
+            "Expert Guidance for Admission: iExplain Education provides step-by-step support throughout the admission process at JIMC, including application submission, document verification, and university correspondence.",
+            "Visa & Travel Assistance: The consultancy offers complete guidance for student visas, travel arrangements, and arrival support in Bangladesh, making it easy for international students to relocate and settle safely.",
+            "Transparent Fee Guidance: iExplain Education provides accurate information on tuition fees, hostel charges, and other expenses at JIMC, helping students and parents plan their budget effectively.",
+            "NEET & FMGE/NExT Support: For Indian students, the consultancy assists with NEET eligibility verification and later provides guidance and coaching for FMGE/NExT exams.",
+            "End-to-End Student Support: iExplain Education supports students with hostel selection, orientation programs, health insurance, and local guidance, ensuring students adapt comfortably to campus life.",
+            "Experienced & Trusted Consultants: With years of experience in MBBS abroad admissions, iExplain Education has a proven track record of helping students secure seats in top-ranked medical colleges.",
+            "Post-Admission Academic Guidance: The consultancy helps students understand the MBBS curriculum, academic planning, and clinical exposure.",
+            "Career & Higher Studies Counseling: iExplain Education also provides advice on postgraduate opportunities, specialty training, and global career options."
+        ],
+        "documents": [
+            {
+                "document": "Passport",
+                "details": "Valid international passport with at least 2 years validity from the date of admission."
+            },
+            {
+                "document": "Visa Application Form",
+                "details": "Completed visa form with recent passport-size photographs and supporting documents."
+            },
+            {
+                "document": "Marksheet of 10th / SSC / Equivalent",
+                "details": "Proof of secondary education, showing grades and subjects."
+            },
+            {
+                "document": "Marksheet of 12th / HSC / Equivalent",
+                "details": "Proof of higher secondary education with Physics, Chemistry, Biology, and English, as required for NEET eligibility."
+            },
+            {
+                "document": "NEET Qualifying Certificate (for Indian students)",
+                "details": "Required for eligibility to appear for FMGE/NExT exams in India after graduation."
+            },
+            {
+                "document": "Character Certificate",
+                "details": "Issued by the head of previous institution or local authority."
+            },
+            {
+                "document": "Medical / Health Certificate",
+                "details": "From a registered medical practitioner, confirming fitness for MBBS studies."
+            },
+            {
+                "document": "Migration / Transfer Certificate",
+                "details": "From the last attended school/college, if applicable."
+            },
+            {
+                "document": "Bank Statement / Financial Proof",
+                "details": "To demonstrate ability to pay tuition and living expenses."
+            },
+            {
+                "document": "Recommendation Letter (Optional)",
+                "details": "From teachers or mentors, supporting academic and personal credentials."
+            }
+        ],
+        "conclusion": "Jahurul Islam Medical College (JIMC), Bangladesh, stands out as a top choice for MBBS aspirants seeking high-quality medical education abroad at an affordable cost. With its affiliation to the University of Dhaka, recognition by BMDC and NMC India, and listing in WDOMS, the college ensures that students receive a globally recognized medical degree. The comprehensive MBBS syllabus, modern infrastructure, experienced faculty, and hands-on clinical training at JIMCH Hospital prepare students to become competent and skilled medical professionals. By choosing JIMC through iExplain Education, students not only gain world-class medical education but also develop holistic skills, research experience, and exposure to community health programs, paving the way for a successful global medical career.",
+        "faqs": [
+            {
+                "question": "Is Jahurul Islam Medical College recognized by Indian authorities?",
+                "answer": "Yes, JIMC is recognized by the National Medical Commission (NMC), India, and the Bangladesh Medical and Dental Council (BMDC). Indian students graduating from JIMC are eligible to appear for FMGE/NExT exams to practice medicine in India."
+            },
+            {
+                "question": "What is the duration of the MBBS course at JIMC?",
+                "answer": "The MBBS program at JIMC spans 6 years, which includes 5 years of academic study (pre-clinical, para-clinical, and clinical phases) and 1 year of compulsory rotating internship at Jahurul Islam Medical College Hospital (JIMCH)."
+            },
+            {
+                "question": "What is the medium of instruction at Jahurul Islam Medical College?",
+                "answer": "The entire MBBS curriculum at JIMC is taught in English, which makes it convenient for international students from India, Nepal, and other countries to understand lectures, study materials, and clinical training."
+            },
+            {
+                "question": "What are the eligibility criteria for Indian students to get admission in JIMC?",
+                "answer": "Indian students must have passed 10+2 or equivalent with Physics, Chemistry, Biology, and English, and must be NEET qualified. They also need to submit attested academic documents and a valid passport."
+            },
+            {
+                "question": "Are hostel facilities available for international students?",
+                "answer": "Yes, JIMC provides well-furnished hostel accommodations with Wi-Fi, mess facilities, and 24/7 security, ensuring a safe and comfortable living environment for international students."
+            },
+            {
+                "question": "Does JIMC provide clinical exposure during the MBBS course?",
+                "answer": "Absolutely. Students get hands-on training in major clinical departments such as Medicine, Surgery, Pediatrics, Gynecology & Obstetrics, ENT, Ophthalmology, Psychiatry, and Dermatology at Jahurul Islam Medical College Hospital, ensuring practical skills and real patient experience."
+            },
+            {
+                "question": "How can iExplain Education help students seeking admission in JIMC?",
+                "answer": "iExplain Education offers end-to-end support, including admission guidance, document verification, visa assistance, hostel arrangements, NEET eligibility check, FMGE/NExT preparation, and career counseling, making the entire MBBS abroad process smooth, safe, and transparent for students."
+            }
+        ]
+    }, 
+    "holy-family-red-crescent-medical-college": {
+        "title": "Holy Family Red Crescent Medical College",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/HFRCMC_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/HFRCMC_Mobile.webp",
+        "intro": {
+            "text": "Holy Family Red Crescent Medical College (HFRCMC), situated in Dhaka, Bangladesh, is a top-tier private medical college renowned for offering high-quality MBBS education abroad to both domestic and international students. Established with the vision of producing competent, ethical, and socially responsible medical professionals, HFRCMC combines rigorous academic training with practical clinical exposure to ensure graduates are fully prepared for modern medical practice globally. The college has grown into a reputable institution, recognized for its advanced infrastructure, well-equipped laboratories, modern classrooms, and a fully functional teaching hospital, which provides students with extensive hands-on clinical experience from the early years of their MBBS program.\n\nThe college offers a comprehensive MBBS curriculum in English medium, making it an ideal choice for Indian, Nepalese, and other international students who wish to pursue MBBS abroad at an affordable cost while gaining a globally recognized degree. HFRCMC places special emphasis on balancing theoretical knowledge with clinical practice, ensuring that students acquire critical thinking, diagnostic skills, and patient management expertise. The college also promotes research, community health programs, and extracurricular activities, fostering a well-rounded learning environment that encourages both academic excellence and personal development.\n\nWith its experienced faculty, modern teaching methodologies, and exposure to real-life medical scenarios at Holy Family Red Crescent Medical College Hospital, students receive continuous mentorship and guidance to excel in professional exams, FMGE/NExT preparation for Indian students, and international medical careers. By choosing HFRCMC, aspiring doctors gain not only a strong medical foundation and clinical expertise but also the confidence and skills to become competent medical practitioners anywhere in the world."
+        },
+        "quickOverview": {
+            "College Name": "Holy Family Red Crescent Medical College (HFRCMC)",
+            "Location": "Dhaka, Bangladesh",
+            "Established": "1998",
+            "Course Offered": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+            "Duration of MBBS": "5 Years Academic + 1 Year Compulsory Internship (6 Years Total)",
+            "Medium of Instruction": "English",
+            "Affiliation": "University of Dhaka, Bangladesh",
+            "Recognition": "Bangladesh Medical and Dental Council (BMDC), National Medical Commission (NMC) India, Listed in World Directory of Medical Schools (WDOMS)",
+            "Hostel Facilities": "Separate hostels for boys and girls with mess facilities, Wi-Fi, and 24/7 security"
+        },
+        "benefits": {
+            "intro": "Holy Family Red Crescent Medical College (HFRCMC) is a top-ranked private medical college in Bangladesh offering high-quality MBBS education abroad in English medium. Here are the key reasons to choose HFRCMC:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "Affiliated with the University of Dhaka and recognized by BMDC, NMC India, and WDOMS, ensuring international credibility."
+                },
+                {
+                    "Heading": "English Medium Education",
+                    "Details": "The entire MBBS syllabus is taught in English, facilitating learning for international students."
+                },
+                {
+                    "Heading": "Affordable Fees",
+                    "Details": "HFRCMC offers quality medical education at reasonable tuition and hostel fees, making it budget-friendly for Indian and other international students."
+                },
+                {
+                    "Heading": "Hands-On Clinical Training",
+                    "Details": "Students get extensive practical exposure at Holy Family Red Crescent Medical College Hospital, developing real-world medical skills."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The college has a highly qualified and experienced teaching staff guiding students through theoretical and practical learning."
+                },
+                {
+                    "Heading": "Comprehensive Student Support",
+                    "Details": "Includes hostel facilities, visa guidance, mentorship programs, and FMGE/NExT coaching."
+                },
+                {
+                    "Heading": "Focus on Research and Community Health",
+                    "Details": "Encourages students to participate in research projects, community outreach, and healthcare initiatives, fostering holistic development."
+                },
+                {
+                    "Heading": "Safe and Supportive Environment",
+                    "Details": "Separate hostels for boys and girls, 24/7 security, mess facilities, Wi-Fi, and a welcoming campus atmosphere for international students."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS syllabus at Holy Family Red Crescent Medical College (HFRCMC) is designed according to the guidelines of the University of Dhaka and Bangladesh Medical and Dental Council (BMDC). The syllabus is taught entirely in English, making it convenient for Indian, Nepalese, and other international students to pursue MBBS abroad.",
+        "syllabus": {
+            "headers": ["Phase", "Duration", "Subjects"],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical",
+                    "Duration": "1 Year",
+                    "Subjects": "Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Phase": "Para-Clinical",
+                    "Duration": "2 Years",
+                    "Subjects": "Pathology, Pharmacology, Microbiology, Forensic Medicine, Community Medicine"
+                },
+                {
+                    "Phase": "Clinical",
+                    "Duration": "2 Years",
+                    "Subjects": "Medicine, Surgery, Pediatrics, Gynecology & Obstetrics, ENT, Ophthalmology, Psychiatry, Dermatology"
+                },
+                {
+                    "Phase": "Rotating Internship",
+                    "Duration": "1 Year",
+                    "Subjects": "All major clinical departments"
+                }
+            ]
+        },
+        "feesIntro": "Choosing Holy Family Red Crescent Medical College (HFRCMC) for an MBBS abroad in Bangladesh means investing in a globally recognized medical education at a relatively affordable cost compared with many private medical colleges in India.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "₹20,80,000*",
+                    "hostel": "₹1,03,000*",
+                    "total": "₹21,83,000*"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "₹3,08,700*",
+                    "hostel": "₹1,03,000*",
+                    "total": "₹4,11,700*"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "₹3,08,700*",
+                    "hostel": "₹1,03,000*",
+                    "total": "₹4,11,700*"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "₹3,08,700*",
+                    "hostel": "₹1,03,000*",
+                    "total": "₹4,11,700*"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "₹3,08,700*",
+                    "hostel": "₹1,03,000*",
+                    "total": "₹4,11,700*"
+                },
+                {
+                    "year": "Total (5 Years)",
+                    "tuition": "₹33,14,000",
+                    "hostel": "₹5,15,000",
+                    "total": "₹38,29,000"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at Holy Family Red Crescent Medical College is structured as a 6-year course designed to provide comprehensive medical education and clinical training. The duration is divided as follows:",
+        "duration": {
+            "headers": ["Phase", "Duration", "Details"],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Covers Anatomy, Physiology, and Biochemistry, focusing on fundamental medical sciences."
+                },
+                {
+                    "Phase": "Para-Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Includes Pathology, Pharmacology, Microbiology, Forensic Medicine, and Community Medicine to build disease understanding and public health knowledge."
+                },
+                {
+                    "Phase": "Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Hands-on training in Medicine, Surgery, Pediatrics, Gynecology & Obstetrics, ENT, Ophthalmology, Psychiatry, Dermatology at JIMC Hospital."
+                },
+                {
+                    "Phase": "Rotating Internship",
+                    "Duration": "1 Year",
+                    "Details": "Full-time rotational internship in all major departments, providing practical experience in patient care and hospital management."
+                },
+                {
+                    "Phase": "Total Duration",
+                    "Duration": "6 Years",
+                    "Details": "5 years of academic study + 1-year compulsory internship."
+                }
+            ]
+        },
+        "studentSupport": "Holy Family Red Crescent Medical College (HFRCMC) places great emphasis on providing comprehensive support to its students, particularly international students from India, Nepal, and other countries. The college ensures that every student has access to academic guidance, personal development, and professional growth resources to help them succeed in their MBBS journey abroad. HFRCMC offers a variety of student support services, including: Academic Mentorship by experienced faculty members who provide continuous guidance in theoretical subjects and practical skills; Clinical Training Support at Holy Family Red Crescent Medical College Hospital with guidance on clinical procedures and patient interaction; FMGE/NExT Preparation assistance for Indian students; Secure and comfortable Hostel and Accommodation Assistance; Visa and Documentation Support; Counseling and Cultural Integration programs; and Career Guidance and Research Opportunities to prepare for future specialization or global medical careers.",
+        "recognition": "Holy Family Red Crescent Medical College (HFRCMC), Dhaka, Bangladesh, is a highly reputable institution for MBBS education abroad due to its strong affiliation, recognition, and remarkable achievements. Affiliation: Holy Family Red Crescent Medical College is officially affiliated with the University of Dhaka, one of the most prestigious and highly respected universities in Bangladesh. This affiliation guarantees that the MBBS degree awarded by HFRCMC is internationally recognized, academically credible, and accepted for further medical studies or professional practice worldwide. Recognition: HFRCMC is recognized by the Bangladesh Medical and Dental Council (BMDC), which ensures that the college complies with national standards for medical education, teaching infrastructure, and clinical training. Additionally, it is recognized by the National Medical Commission (NMC) of India, which allows Indian students to pursue MBBS in Bangladesh and appear for the FMGE/NExT exam after graduation. HFRCMC is also listed in the World Directory of Medical Schools (WDOMS). Achievements: Over the years, HFRCMC has earned a strong reputation for academic excellence and clinical training. The college has consistently produced high FMGE passing rates for Indian students. HFRCMC actively encourages students to participate in research projects and community health programs. The college’s teaching hospital provides students with extensive hands-on clinical exposure, covering a wide range of medical specialties.",
+        "hostelFacilities": "Hostel life at HFRCMC is comfortable and secure, with separate accommodations for boys and girls, 24/7 security, mess facilities, and Wi-Fi connectivity, allowing students to focus on their studies and practical training while enjoying a safe and nurturing environment. The college provides orientation programs and guidance for adapting to life in Bangladesh, including help with cultural adjustment and local logistics.",
+        "studentLife": "Life at Holy Family Red Crescent Medical College (HFRCMC) is designed to provide students with a balanced blend of academic excellence, practical clinical training, and personal growth. The college offers a supportive and multicultural environment, where students from India, Nepal, Sri Lanka, and other countries live, learn, and grow together. The campus life at HFRCMC goes beyond classroom learning; students have access to modern lecture halls, well-equipped laboratories, and a fully functional teaching hospital—Holy Family Red Crescent Medical College Hospital. Beyond academics, the college encourages participation in extracurricular activities, sports, cultural programs, and community health initiatives. The college also provides student counseling services, mentorship programs, and cultural orientation sessions to help international students adapt quickly to campus life, manage stress, and integrate socially.",
+        "whyChooseUsIntro": "Choosing the right consultancy can make a huge difference when pursuing MBBS abroad, and iExplain Education has established itself as a trusted partner for students aspiring to study MBBS in Bangladesh, including at Holy Family Red Crescent Medical College (HFRCMC).",
+        "whyChooseUs": [
+            "Trusted Admission Guidance: Expert counseling for MBBS abroad, helping students understand the admission process and eligibility criteria.",
+            "End-to-End Support: Managing all aspects of admission, including application submission, document verification, and fee guidance.",
+            "Visa & Travel Assistance: Assistance with visa processing, document attestation, travel arrangements, and pre-departure orientation.",
+            "Financial Planning & Fee Guidance: Providing accurate information about tuition fees, hostel costs, and other expenses.",
+            "FMGE/NExT Exam Preparation Support: Guidance and resources to help Indian students prepare for licensing exams.",
+            "Alumni & Career Networking: Connecting students with alumni and professional networks for future opportunities.",
+            "Personalized Mentorship: One-on-one mentoring for academic and personal guidance.",
+            "Comprehensive Information: Complete details on syllabus, clinical exposure, hostel facilities, and student life."
+        ],
+        "documents": [
+            {
+                "document": "10th / Secondary School Certificate",
+                "details": "Proof of basic education, with attested copies from school and relevant authorities."
+            },
+            {
+                "document": "12th / Higher Secondary Certificate (HSC)",
+                "details": "Minimum 50% marks in PCB subjects, attested copy required."
+            },
+            {
+                "document": "Birth Certificate / Passport",
+                "details": "Valid identity proof; passport must be valid for at least 2 years."
+            },
+            {
+                "document": "NEET Score Card (for Indian students)",
+                "details": "Mandatory for FMGE/NExT eligibility in India."
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a registered medical practitioner; must be attested."
+            },
+            {
+                "document": "HIV / Blood Test Report",
+                "details": "Recent HIV, Hepatitis B & C test results required for admission and hospital rotation."
+            },
+            {
+                "document": "Migration / Transfer Certificate",
+                "details": "For students moving from another school/college; must be attested."
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Including Student Visa application form, invitation letter, and passport copies."
+            }
+        ],
+        "conclusion": "Holy Family Red Crescent Medical College (HFRCMC), Dhaka, Bangladesh, stands out as one of the top choices for international students pursuing MBBS abroad, offering a high-quality, globally recognized medical education at an affordable cost. The college provides a comprehensive curriculum, combining theoretical knowledge with extensive clinical training, ensuring students gain practical skills and professional competence required for modern medical practice. With state-of-the-art teaching facilities, experienced faculty, and a supportive hospital environment, students receive hands-on exposure to diverse medical cases from early years of their MBBS program. Recognized by the Bangladesh Medical and Dental Council (BMDC) and the National Medical Commission (NMC) of India, the college ensures that graduates are eligible to appear for FMGE/NExT exams, enabling them to practice medicine in India and abroad.",
+        "faqs": [
+            {
+                "question": "Is Holy Family Red Crescent Medical College recognized internationally?",
+                "answer": "Yes, HFRCMC is affiliated with the University of Dhaka and recognized by the Bangladesh Medical and Dental Council (BMDC). It is also recognized by the National Medical Commission (NMC) of India and listed in the World Directory of Medical Schools (WDOMS), making its MBBS degree valid globally."
+            },
+            {
+                "question": "What is the duration of the MBBS course at HFRCMC?",
+                "answer": "The MBBS program at HFRCMC spans 6 years, which includes 5 years of academic study covering pre-clinical, para-clinical, and clinical phases, followed by a 1-year compulsory internship for hands-on practical experience."
+            },
+            {
+                "question": "Can Indian students pursue MBBS at HFRCMC?",
+                "answer": "Yes, Indian students are eligible to study MBBS at HFRCMC. They must have cleared NEET, meet the minimum PCB score criteria, and can appear for FMGE/NExT exams after graduation to practice medicine in India."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include 10th and 12th certificates, NEET score card (for Indian students), passport, medical fitness certificate, HIV/blood test reports, character certificate, visa documents, and fee payment receipts. All documents must be attested and submitted on time."
+            },
+            {
+                "question": "Does HFRCMC provide hostel facilities for international students?",
+                "answer": "Yes, the college offers safe and secure hostels with separate accommodations for boys and girls, including mess facilities, Wi-Fi, and 24/7 security, ensuring a comfortable living environment for all students."
+            },
+            {
+                "question": "How is student life at HFRCMC?",
+                "answer": "Student life is vibrant and supportive, with modern classrooms, well-equipped labs, access to a teaching hospital, cultural programs, sports activities, and counseling services. International students are fully supported for academic, personal, and social integration."
+            },
+            {
+                "question": "Why choose iExplain Education for admission to HFRCMC?",
+                "answer": "iExplain Education offers end-to-end guidance, including college selection, admission assistance, document preparation, visa support, and pre-departure orientation. They also provide FMGE/NExT preparation guidance and career counseling, ensuring a smooth and stress-free journey to studying MBBS abroad."
+            }
+        ]
+    },
 };
