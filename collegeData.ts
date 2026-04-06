@@ -7513,7 +7513,7 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
                 "answer": "iExplain Education offers end-to-end support, including admission guidance, document verification, visa assistance, hostel arrangements, NEET eligibility check, FMGE/NExT preparation, and career counseling, making the entire MBBS abroad process smooth, safe, and transparent for students."
             }
         ]
-    }, 
+    },
     "holy-family-red-crescent-medical-college": {
         "title": "Holy Family Red Crescent Medical College",
         "coursetype": "MBBS",
@@ -7750,4 +7750,1932 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             }
         ]
     },
+    "university-of-belgrade": {
+        "title": "University of Belgrade",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Belgrade_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Belgrade_Mobile.webp",
+        "intro": {
+            "text": "The University of Belgrade is one of the oldest, largest, and most prestigious universities in Europe, located in Belgrade, Serbia. Established in 1808, the university has a rich academic legacy and is widely recognized for its high-quality education, advanced research facilities, and global academic reputation. It comprises numerous faculties, including a well-established medical faculty that attracts international students who aspire to study MBBS abroad. The university follows a modern European education system, making it a preferred destination for students looking for MBBS in Serbia and MBBS in Europe at an affordable cost.\n\nFor Indian and international students, the University of Belgrade offers an excellent opportunity to pursue MBBS abroad for Indian students with globally accepted standards. The medical programs are designed to provide a perfect balance of theoretical knowledge and practical clinical exposure, with training conducted in affiliated hospitals equipped with advanced medical technology. The availability of English-medium MBBS programs ensures that language is not a barrier for international students. Additionally, the university is recognized by major global medical bodies, making it a reliable option for those searching for NMC approved medical colleges abroad and ensuring better career opportunities after graduation.\n\nMoreover, the University of Belgrade stands out for its affordable MBBS abroad fee structure, safe and student-friendly environment, and multicultural campus life, which helps students adapt easily to international education standards. With experienced faculty, modern infrastructure, and a strong focus on research and innovation, the university provides a solid foundation for a successful medical career. Choosing the University of Belgrade means investing in a globally respected degree while fulfilling the dream of becoming a doctor through study medicine in Europe and securing a bright future in the medical field."
+        },
+        "quickOverview": {
+            "University Name": "University of Belgrade",
+            "Location": "Belgrade, Serbia",
+            "Established Year": "1808",
+            "University Type": "Public University",
+            "Medium of Instruction": "English & Serbian",
+            "Popular Course": "MBBS (MD Equivalent)",
+            "Course Duration": "6 Years (Including Internship)",
+            "Recognition": "NMC, WHO, ECFMG, FAIMER",
+            "Eligibility": "10+2 with PCB (50% for General, 40% for Reserved)",
+            "NEET Requirement": "Mandatory for Indian Students",
+            "Hostel Facility": "Available"
+        },
+        "benefits": {
+            "intro": "Pursuing MBBS at the University of Belgrade is an excellent choice for students who want to study MBBS abroad in Europe with globally recognized standards. Located in Belgrade, the university offers a perfect combination of high-quality education, affordable tuition fees, and strong clinical exposure. The MBBS program is designed according to European medical education standards, ensuring that students gain both theoretical knowledge and practical skills. With English-medium instruction, experienced faculty, and modern infrastructure, it becomes an ideal destination for Indian students looking for NMC approved medical colleges abroad. The university also provides a safe and multicultural environment, making student life comfortable and enriching.",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by major medical bodies like NMC, WHO, ECFMG, allowing students to pursue medical careers worldwide."
+                },
+                {
+                    "Heading": "Affordable Tuition Fees",
+                    "Details": "Compared to private medical colleges in India and other European countries, the cost of studying MBBS here is budget-friendly for Indian students."
+                },
+                {
+                    "Heading": "English-Medium Program",
+                    "Details": "The MBBS course is available in English, making it easier for international students to study without any language barrier."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students get hands-on training in well-equipped hospitals, helping them gain real-life medical experience during their course."
+                },
+                {
+                    "Heading": "European Education Standards",
+                    "Details": "The curriculum follows modern European medical education systems, ensuring high-quality theoretical and practical knowledge."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "Highly qualified and experienced professors provide excellent academic guidance and mentorship to students."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Belgrade is known for its safety, welcoming culture, and comfortable lifestyle for international students."
+                },
+                {
+                    "Heading": "No Donation or Capitation Fee",
+                    "Details": "Admission is purely merit-based with a transparent process, unlike many private institutions."
+                },
+                {
+                    "Heading": "Global Career Opportunities",
+                    "Details": "Graduates are eligible to appear for exams like FMGE/NExT, USMLE, and PLAB, opening doors to international careers."
+                },
+                {
+                    "Heading": "Multicultural Exposure",
+                    "Details": "Students from different countries study together, providing global exposure and enhancing communication skills."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (MD equivalent) program at the University of Belgrade in Belgrade follows a 6-year European curriculum designed to provide a strong foundation in medical sciences along with advanced clinical training. The course is divided into pre-clinical, para-clinical, and clinical phases, ensuring that students gain both theoretical knowledge and practical exposure. With a focus on modern teaching methods, laboratory work, and hospital-based training, the syllabus prepares students for global medical careers and licensing exams.",
+        "syllabus": {
+            "headers": [
+                "Year",
+                "Subjects"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Physiology, Medical Biology, Biophysics, Medical Chemistry"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Biochemistry, Advanced Anatomy, System-based Physiology, Genetics, Introduction to Clinical Practice"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathology, Microbiology, Pharmacology, Immunology, Forensic Medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Radiology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Neurology, Psychiatry, Orthopedics, Dermatology, Ophthalmology, ENT"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Internship: Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency Medicine, Family Medicine"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS (MD equivalent) fee structure at the University of Belgrade in Belgrade is considered affordable compared to many European countries and private medical colleges in India. The tuition fee for international students generally ranges between €7,000 to €8,000 per year, depending on the intake and program structure.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€7,500",
+                    "hostel": "€1,500",
+                    "total": "₹8.0 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (MD equivalent) program at the University of Belgrade in Belgrade has a total duration of 6 years, designed according to the European (Bologna) education system. The course structure ensures a balanced combination of theoretical studies and practical clinical training, preparing students for global medical careers.",
+        "duration": {
+            "headers": [
+                "Year",
+                "Phase",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Basic subjects like Anatomy, Physiology, Biophysics"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Advanced concepts + Biochemistry, Genetics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Phase": "Para-Clinical",
+                    "Details": "Pathology, Pharmacology, Microbiology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Phase": "Clinical",
+                    "Details": "Medicine, Surgery, Pediatrics, Gynecology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Phase": "Clinical",
+                    "Details": "Specialized subjects like Neurology, Psychiatry, ENT"
+                },
+                {
+                    "Year": "6th Year",
+                    "Phase": "Internship",
+                    "Details": "Mandatory clinical rotations in hospitals"
+                }
+            ]
+        },
+        "studentSupport": "The University of Belgrade, located in Belgrade, offers a comprehensive range of student support services designed to help both local and international students succeed academically and adapt comfortably to university life. For students planning to study MBBS abroad, especially those looking for MBBS in Serbia or MBBS in Europe, the university ensures a smooth transition by providing dedicated assistance at every stage of their journey. From the moment students arrive, they receive guidance with admission procedures, visa support, accommodation arrangements, and documentation, making it easier for international students to settle in a new country. Academically, the university provides strong mentorship programs, faculty guidance, and academic counseling, helping students maintain excellent performance throughout their medical studies. For those pursuing MBBS abroad for Indian students, the availability of English-medium programs and additional language support ensures that communication barriers are minimized. The university also emphasizes student well-being by offering healthcare services, psychological counseling, and wellness programs, ensuring students remain physically and mentally fit during their course. In addition to academics, the University of Belgrade promotes a vibrant and inclusive campus environment through student clubs, cultural activities, and international exchange programs, allowing students to gain global exposure and build strong networks. Career-oriented support such as career counseling, skill development programs, and guidance for global licensing exams like FMGE/NExT, USMLE, and PLAB further enhances students' future prospects.",
+        "recognition": "The University of Belgrade, located in Belgrade, is globally recognized for its high academic standards, strong affiliations, and international accreditations. It is one of the most reputed universities for students planning to study MBBS abroad and MBBS in Europe. The university is affiliated with leading international academic organizations and follows globally accepted medical education standards. Its Faculty of Medicine is accredited by the Ministry of Education, Science and Technological Development of Serbia and is listed in the World Directory of Medical Schools (WDOMS), ensuring worldwide recognition of its medical degree.\n\nAffiliation of University of Belgrade:\nThe University of Belgrade is officially affiliated with the Ministry of Education, Science and Technological Development of Serbia, ensuring that it follows the national and European standards of higher education. The university is also a member of reputed international academic networks such as the European University Association (EUA), which enhances its global academic collaborations and exchange opportunities. For students planning to study MBBS abroad or pursue MBBS in Europe, these affiliations ensure a high-quality education system aligned with international standards.\n\nRecognition of University of Belgrade:\nThe University of Belgrade is widely recognized by major global medical bodies, making it a trusted choice for MBBS abroad for Indian students. It is listed in the World Directory of Medical Schools (WDOMS) and its degree is accepted by organizations such as NMC (National Medical Commission), WHO, ECFMG, and FAIMER. This global recognition allows students to appear for licensing exams like FMGE/NExT, USMLE, and PLAB, making it an ideal option for those searching for NMC approved medical colleges abroad and globally recognized MBBS degrees.\n\nAchievements of University of Belgrade:\nWith a legacy of over 200 years, the University of Belgrade has achieved a strong reputation in medical education and research excellence. It is considered one of the top universities in Serbia and Europe for higher education and has produced thousands of successful medical professionals working worldwide. The university continuously improves its global rankings, research output, and academic quality, making it a preferred destination for students looking for affordable MBBS abroad, high-quality medical education in Europe, and excellent career opportunities after graduation.",
+        "hostelFacilities": "The university provides well-equipped hostels, libraries, laboratories, and recreational facilities, ensuring a comfortable and productive lifestyle. International students benefit from strong support systems, including student communities, mentorship programs, and language support, making it easier to adapt to a new country. The university provides hostel facilities and assistance in finding private accommodation. The hostels are affordable and equipped with basic amenities, ensuring a comfortable living environment for international students.",
+        "studentLife": "Student life at the University of Belgrade, located in Belgrade, is vibrant, diverse, and highly student-friendly, making it an ideal destination for those planning to study MBBS abroad. The university offers a perfect balance between academic learning and social life, ensuring that students not only gain quality education but also enjoy a rich international experience. For students pursuing MBBS in Serbia or MBBS in Europe, the campus provides a multicultural environment where students from different countries come together, helping them build global connections and cultural understanding. The university provides well-equipped hostels, libraries, laboratories, and recreational facilities, ensuring a comfortable and productive lifestyle. Students can actively participate in clubs, sports activities, cultural events, and student organizations, which play a major role in personality development and stress management. The city of Belgrade itself is known for its affordable living cost, safe environment, and lively atmosphere, offering cafes, historical sites, and entertainment options that enhance the overall student experience. In addition, international students benefit from strong support systems, including student communities, mentorship programs, and language support, making it easier to adapt to a new country. The exposure to European culture, modern education system, and diverse peer groups helps students grow both personally and professionally.",
+        "whyChooseUsIntro": "Choosing the right consultancy is very important when planning to study MBBS abroad, especially in a reputed university like the University of Belgrade in Belgrade. iExplain Education is a trusted platform that provides end-to-end guidance for MBBS abroad for Indian students, helping them make the right decisions and avoid common mistakes. With expert counselors, personalized support, and a student-first approach, they ensure a smooth and hassle-free admission process.",
+        "whyChooseUs": [
+            "Expert Guidance for MBBS Abroad – iExplain Education provides professional counselling based on your NEET score, budget, and career goals, helping you choose the right path for MBBS abroad for Indian students.",
+            "Personalized Counselling Support – Every student receives one-on-one guidance to select the best university, ensuring the right decision for MBBS in Europe and long-term career success.",
+            "University Selection Assistance – Helps students choose NMC compliant medical colleges abroad like the University of Belgrade, ensuring eligibility for future licensing exams.",
+            "Complete Admission & Documentation Support – From application form filling to document verification and admission confirmation, the entire process is handled smoothly and professionally.",
+            "Visa Processing & Travel Assistance – Provides step-by-step support for visa application, interview preparation, and travel arrangements to make the transition stress-free.",
+            "Pre-Departure & Post-Arrival Support – Students receive guidance before leaving India and continued assistance after reaching Belgrade, including accommodation and settling help.",
+            "Transparent & Reliable Process – Ensures complete clarity in fees and procedures with no hidden charges, making it a trusted option for MBBS abroad admission.",
+            "Career & Licensing Exam Guidance – Offers support for exams like FMGE/NExT, USMLE, and PLAB, helping students build a successful global medical career."
+        ],
+        "documents": [
+            {
+                "document": "10th Marksheet",
+                "details": "For proof of date of birth"
+            },
+            {
+                "document": "12th Marksheet",
+                "details": "Must have PCB with required percentage"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Minimum 18 months validity"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a registered doctor"
+            },
+            {
+                "document": "HIV Test Report",
+                "details": "Required for international students"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "From the previous board/university"
+            },
+            {
+                "document": "Application Form",
+                "details": "Duly filled and signed"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Issued by the university"
+            },
+            {
+                "document": "Visa Documents",
+                "details": "Required for student visa processing"
+            }
+        ],
+        "conclusion": "Choosing the University of Belgrade in Belgrade for pursuing MBBS is a highly rewarding decision for students who aspire to study MBBS abroad and build a successful medical career on a global level. With its rich legacy of over two centuries, the university stands as a symbol of academic excellence, advanced research, and high-quality medical education in Europe. It offers a well-structured MBBS (MD equivalent) program that combines strong theoretical knowledge with extensive clinical exposure, ensuring students are well-prepared for real-world medical practice. For Indian students looking for MBBS abroad for Indian students, the University of Belgrade provides a perfect blend of affordability, global recognition, and English-medium education, making it easier to adapt and succeed. The university’s recognition by major medical bodies and adherence to international standards make it a reliable option for those aiming to appear for licensing exams like FMGE/NExT, USMLE, and PLAB. Additionally, the multicultural environment, safe surroundings, and student-friendly atmosphere in Belgrade further enhance the overall learning and living experience. Moreover, with proper guidance and careful planning, students can avoid common mistakes and select the right path for their medical journey. The University of Belgrade not only provides a degree but also opens doors to global career opportunities, international exposure, and professional growth.",
+        "faqs": [
+            {
+                "question": "Is the University of Belgrade a good option for MBBS abroad?",
+                "answer": "Yes, the University of Belgrade is considered one of the most reputed universities in Europe for medical education. With a legacy of more than 200 years, it offers high-quality education, modern infrastructure, and strong clinical exposure. For students planning to study MBBS abroad or pursue MBBS in Europe, it provides a globally recognized degree along with excellent academic and career opportunities."
+            },
+            {
+                "question": "Is the University of Belgrade NMC approved and valid for Indian students?",
+                "answer": "The university is listed in global directories like WDOMS and recognized by major international medical bodies. However, Indian students must ensure that they follow all NMC (FMGL) guidelines, including course duration, internship, and medium of instruction. Meeting these criteria allows students to appear for FMGE/NExT and practice medicine in India after completing their MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at the University of Belgrade?",
+                "answer": "The MBBS (MD equivalent) program at the University of Belgrade has a total duration of 6 years, which includes 5 years of academic study and 1 year of mandatory clinical internship. The course is structured according to the European education system, ensuring a balanced combination of theoretical learning and practical hospital training."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program is offered in English, which makes it convenient for international students, especially those from India. This ensures that students can easily understand the curriculum, participate in practical sessions, and communicate effectively during their clinical training."
+            },
+            {
+                "question": "What are the eligibility criteria for MBBS admission?",
+                "answer": "To apply for MBBS, students must have completed 10+2 with Physics, Chemistry, and Biology (PCB) with at least 50% marks (40% for reserved categories). Additionally, qualifying NEET is mandatory for Indian students as per NMC guidelines. Students must also meet basic age and medical fitness requirements."
+            },
+            {
+                "question": "What is the fee structure for MBBS at the University of Belgrade?",
+                "answer": "The tuition fee for MBBS is approximately €7,000 – €8,000 per year, which makes it a good option for students looking for affordable MBBS abroad. In addition to tuition fees, students should also consider hostel charges and living expenses, which are comparatively lower than many other European countries."
+            },
+            {
+                "question": "Are there part-time work opportunities for students?",
+                "answer": "Yes, international students in Belgrade may find limited part-time work opportunities while studying. However, since MBBS is a demanding course, students are advised to focus primarily on their studies and clinical training."
+            },
+            {
+                "question": "Is accommodation available for international students?",
+                "answer": "Yes, the university provides hostel facilities and assistance in finding private accommodation. The hostels are affordable and equipped with basic amenities, ensuring a comfortable living environment for international students pursuing MBBS in Serbia."
+            },
+            {
+                "question": "Can I practice in India after completing MBBS from this university?",
+                "answer": "Yes, after completing MBBS from the University of Belgrade, Indian students are required to clear the FMGE (Foreign Medical Graduate Examination) or upcoming NExT exam to obtain a license to practice in India. Proper preparation and choosing a university that follows NMC guidelines are essential for a successful medical career."
+            }
+        ]
+    },
+    "university-of-novi-sad": {
+        "title": "University of Novi Sad",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/NoviSad_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/NoviSad_Mobile.webp",
+        "intro": {
+            "text": "The University of Novi Sad is one of the most prominent and rapidly growing public universities in Serbia, located in the beautiful and student-friendly city of Novi Sad. Established in 1960, the university has built a strong reputation for delivering high-quality education, advanced research opportunities, and internationally recognized academic programs. It is home to multiple faculties, including a well-established Faculty of Medicine that attracts a large number of international students every year who aspire to study MBBS abroad. With its commitment to academic excellence and innovation, the university has become a preferred destination for students seeking MBBS in Serbia and MBBS in Europe.\n\nFor students looking for MBBS abroad for Indian students, the University of Novi Sad offers a perfect combination of affordable tuition fees, globally recognized degrees, and modern teaching methodologies. The MBBS (MD equivalent) program is structured according to European education standards and focuses on both strong theoretical foundations and extensive clinical exposure. Students receive hands-on training in affiliated hospitals equipped with modern medical technologies, which helps them gain real-world medical experience and practical skills essential for a successful career in medicine. The availability of English-medium MBBS programs ensures that international students can study comfortably without facing language barriers.\n\nMoreover, the university provides a supportive and multicultural environment that helps students easily adapt to a new country and lifestyle. The city of Novi Sad is known for its safe environment, affordable cost of living, and vibrant student life, making it ideal for international students. With experienced faculty, well-equipped laboratories, modern infrastructure, and strong academic support systems, the University of Novi Sad ensures holistic development of students. Its recognition by global medical organizations makes it a reliable choice for those searching for NMC approved medical colleges abroad, affordable MBBS abroad, and study medicine in Europe, ultimately helping students achieve their dream of becoming successful doctors on an international level."
+        },
+        "quickOverview": {
+            "University Name": "University of Novi Sad",
+            "Location": "Novi Sad, Serbia",
+            "Established Year": "1960",
+            "University Type": "Public University",
+            "Medium of Instruction": "English & Serbian",
+            "Popular Course": "MBBS (MD Equivalent)",
+            "Course Duration": "6 Years (Including Internship)",
+            "Recognition": "NMC, WHO, ECFMG, FAIMER",
+            "Eligibility": "10+2 with PCB (50% for General, 40% for Reserved)",
+            "NEET Requirement": "Mandatory for Indian Students",
+            "Hostel Facility": "Available"
+        },
+        "benefits": {
+            "intro": "Pursuing MBBS at the University of Novi Sad in Novi Sad is an excellent choice for students who want to study MBBS abroad with a perfect balance of quality education, affordability, and global exposure. The university follows European medical education standards and provides a well-structured MBBS (MD equivalent) program that focuses on both theoretical knowledge and practical clinical training. With modern infrastructure, experienced faculty, and English-medium instruction, it becomes a preferred destination for MBBS in Serbia and MBBS in Europe, especially for Indian students seeking NMC compliant medical colleges abroad.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by major international medical bodies such as NMC, WHO, ECFMG, and FAIMER, allowing students to pursue medical careers globally and appear for exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "Compared to private medical colleges in India and other European countries, the tuition fees are budget-friendly, making it a great option for students looking for affordable MBBS abroad without compromising on quality education."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The availability of English-medium courses ensures that international students can easily understand the curriculum and actively participate in academic and clinical training."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students receive hands-on training in well-equipped affiliated hospitals, gaining real-life medical experience that is essential for becoming a skilled doctor."
+                },
+                {
+                    "Heading": "European Education System",
+                    "Details": "The curriculum follows modern European standards, ensuring high academic quality, research-based learning, and practical skill development."
+                },
+                {
+                    "Heading": "Experienced & Qualified Faculty",
+                    "Details": "The university has highly experienced professors and medical professionals who provide excellent academic guidance and mentorship to students."
+                },
+                {
+                    "Heading": "Safe & Student-Friendly Environment",
+                    "Details": "Novi Sad is known for its safety, welcoming culture, and affordable cost of living, making it comfortable for international students."
+                },
+                {
+                    "Heading": "No Donation or Capitation Fee",
+                    "Details": "Admission is transparent and purely merit-based, with no hidden charges or donation requirements."
+                },
+                {
+                    "Heading": "Global Career Opportunities",
+                    "Details": "Graduates are eligible to pursue medical careers worldwide and can appear for international licensing exams, opening doors to global opportunities."
+                },
+                {
+                    "Heading": "Multicultural Exposure",
+                    "Details": "Students from various countries study together, providing international exposure, cultural exchange, and improved communication skills."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (MD equivalent) program at the University of Novi Sad in Novi Sad follows a 6-year European curriculum designed to provide a strong foundation in medical sciences along with advanced clinical training. The course is divided into pre-clinical, para-clinical, and clinical phases, ensuring students gain both theoretical knowledge and practical exposure. With a focus on modern teaching methods, laboratory work, and hospital-based training, the program prepares students for global medical careers and licensing exams.",
+        "syllabus": {
+            "headers": ["Year", "Subjects"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Physiology, Medical Biology, Biophysics, Medical Chemistry"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Biochemistry, Advanced Anatomy, System-based Physiology, Genetics, Introduction to Clinical Practice"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathology, Microbiology, Pharmacology, Immunology, Forensic Medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Radiology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Neurology, Psychiatry, Orthopedics, Dermatology, Ophthalmology, ENT"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Internship: Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Emergency Medicine, Family Medicine"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS (MD equivalent) program at the University of Novi Sad in Novi Sad is considered affordable for international students, especially compared to other European countries. The tuition fees generally range between €6,000 to €7,000 per year, depending on the academic session and intake. Additionally, hostel and living expenses are relatively low, making it a good option for students looking for affordable MBBS abroad.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€6,500",
+                    "hostel": "€1,000",
+                    "total": "₹7.0 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (MD equivalent) program at the University of Novi Sad in Novi Sad has a total duration of 6 years, designed according to the European medical education system. The program combines theoretical studies, practical training, and clinical exposure to prepare students for global medical careers.",
+        "duration": {
+            "headers": ["Year", "Phase", "Details"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Basic subjects like Anatomy, Physiology, Biophysics"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Advanced concepts, Biochemistry, Genetics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Phase": "Para-Clinical",
+                    "Details": "Pathology, Pharmacology, Microbiology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Phase": "Clinical",
+                    "Details": "Medicine, Surgery, Pediatrics, Gynecology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Phase": "Clinical",
+                    "Details": "Neurology, Psychiatry, ENT, Orthopedics"
+                },
+                {
+                    "Year": "6th Year",
+                    "Phase": "Internship",
+                    "Details": "Mandatory clinical rotations in hospitals"
+                }
+            ]
+        },
+        "studentSupport": "The University of Novi Sad, located in Novi Sad, provides a well-developed and student-focused support system to ensure that both local and international students have a smooth academic journey. For students planning to study MBBS abroad, especially those choosing MBBS in Serbia or MBBS in Europe, the university offers comprehensive assistance from admission to graduation. Dedicated student service centers help with enrollment, documentation, academic records, and administrative support, making the process simple and hassle-free. The university also places strong emphasis on academic success by offering mentorship programs, faculty guidance, and e-learning platforms, enabling students to manage their studies effectively. Modern digital systems like student portals and online learning platforms further enhance accessibility and learning experience. Additionally, international students receive specialized support, including visa assistance, residence guidance, and help with adapting to a new country, ensuring a comfortable transition into university life. In terms of well-being, the University of Novi Sad provides access to healthcare facilities, psychological counseling, and wellness services, helping students maintain both physical and mental health. Career development is another key focus area, with dedicated centers offering career counseling, skill development programs, and job placement support, preparing students for global opportunities after completing their MBBS abroad.",
+        "recognition": "The University of Novi Sad, located in Novi Sad, is widely known for its strong academic foundation, global affiliations, and international recognition. It follows European education standards and is connected with leading academic organizations, ensuring high-quality education for students planning to study MBBS abroad. The university’s medical programs are designed to meet global requirements, making it a reliable option for students looking for MBBS in Serbia, MBBS in Europe, and NMC compliant medical colleges abroad. Affiliation: The university is affiliated with the Ministry of Education, Science and Technological Development of Serbia, ensuring adherence to national and European academic standards. It is also a member of international organizations like the European University Association (EUA) and participates in global exchange programs such as Erasmus+, enhancing academic collaboration and student mobility. Recognition: The University of Novi Sad is recognized by official accreditation bodies in Serbia and listed among globally accepted universities. Its medical programs are acknowledged internationally, allowing students to pursue careers abroad and appear for licensing exams like FMGE/NExT, USMLE, and PLAB, making it a suitable option for MBBS abroad for Indian students. Achievements: The university is one of the largest and most reputed institutions in Serbia, known for its excellence in education, research, and innovation. It has a strong presence in global rankings and has produced successful professionals working worldwide. With modern infrastructure, numerous research projects, and international collaborations, it continues to grow as a preferred destination for affordable MBBS abroad and quality medical education in Europe.",
+        "hostelFacilities": "The university campus spread across a large area near the Danube River and close to the city center. It includes modern classrooms, libraries, student dormitories, restaurants, healthcare centers, and sports facilities, all located within a single campus area. Students also have access to multiple hostels and affordable accommodation options, along with cafeterias that provide budget-friendly meals for thousands of students every day. The university provides hostel facilities and assistance in finding private accommodation for international students.",
+        "studentLife": "Student life at the University of Novi Sad in Novi Sad is vibrant, dynamic, and highly student-friendly, making it an ideal destination for those planning to study MBBS abroad. The university offers a perfect blend of academic excellence and an engaging campus lifestyle, ensuring that students not only focus on their studies but also enjoy a well-rounded international experience. With nearly 50,000 students from different countries, the university provides a multicultural environment that helps students build global connections and cultural understanding. The centralized campus structure makes daily life convenient and promotes interaction among students. Apart from academics, students actively participate in cultural events, student organizations, sports activities, and social gatherings, which play a major role in personality development and stress relief. The university also offers facilities like a Student Health Centre, career development services, and counseling support, ensuring students maintain both physical and mental well-being during their studies. The city of Novi Sad itself is known as a “student city” due to its lively atmosphere, safety, and affordable lifestyle. Students can enjoy riverside walks, cafes, festivals, and a vibrant nightlife, making their overall experience memorable and enjoyable.",
+        "whyChooseUsIntro": "Choosing the right consultancy plays a crucial role when planning to study MBBS abroad, especially in a reputed institution like the University of Novi Sad in Novi Sad. iExplain Education provides complete, reliable, and student-focused support to ensure a smooth admission process for students aiming for MBBS in Serbia and MBBS in Europe. With expert guidance and a transparent approach, it helps students make the right decisions for their medical career.",
+        "whyChooseUs": [
+            "Expert Guidance for MBBS Abroad – Provides professional counselling based on NEET score, budget, and career goals, helping students choose the best option for MBBS abroad for Indian students.",
+            "Personalized Counselling Support – Offers one-on-one guidance to help students select the right university and plan their academic journey effectively.",
+            "University Selection Assistance – Helps in choosing NMC compliant medical colleges abroad like the University of Novi Sad, ensuring eligibility for future licensing exams.",
+            "Complete Admission & Documentation Support – Handles the entire admission process, including application, document verification, and confirmation, making it hassle-free.",
+            "Visa Processing & Travel Assistance – Provides step-by-step support for visa application, interview preparation, and travel arrangements.",
+            "Pre-Departure & Post-Arrival Support – Assists students before departure and after reaching Novi Sad, including accommodation and settling guidance.",
+            "Transparent & Trustworthy Process – Ensures no hidden charges and complete clarity in procedures, making it a reliable choice for MBBS abroad admission.",
+            "Career & Licensing Exam Guidance – Offers support for FMGE/NExT, USMLE, and PLAB, helping students build successful global medical careers."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Filled, signed application form submitted to the university"
+            },
+            {
+                "document": "10th & 12th Marksheet",
+                "details": "Academic records with PCB subjects (with notarized translation)"
+            },
+            {
+                "document": "High School Diploma",
+                "details": "Original certificate with verified translation"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Must be translated into Serbian and notarized"
+            },
+            {
+                "document": "Passport Copy",
+                "details": "Valid passport (personal details page)"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Entrance Exam Proof",
+                "details": "Biology & Chemistry entrance test qualification (if applicable)"
+            },
+            {
+                "document": "Certificate of Recognition",
+                "details": "Recognition of previous education by Serbian authority"
+            },
+            {
+                "document": "Medical Certificate",
+                "details": "Proof of medical fitness"
+            },
+            {
+                "document": "Proof of Fee Payment",
+                "details": "Tuition fee (1st installment) receipt"
+            }
+        ],
+        "conclusion": "Choosing the University of Novi Sad in Novi Sad for pursuing MBBS is a smart and future-oriented decision for students who wish to study MBBS abroad and build a successful medical career globally. The university offers a perfect combination of high-quality education, affordable tuition fees, modern infrastructure, and strong clinical exposure, making it one of the best options for MBBS in Serbia and MBBS in Europe. Its adherence to European education standards and global recognition ensures that students receive a degree that is respected worldwide. For Indian students looking for MBBS abroad for Indian students, the University of Novi Sad provides a comfortable and supportive environment with English-medium programs, experienced faculty, and a multicultural campus. Overall, with the right guidance and proper planning, students can confidently choose this university as a reliable destination for affordable MBBS abroad, NMC compliant medical colleges abroad, and long-term global career opportunities.",
+        "faqs": [
+            {
+                "question": "Is the University of Novi Sad good for MBBS abroad?",
+                "answer": "Yes, the University of Novi Sad is a well-recognized institution in Europe known for its quality medical education, affordable fees, and modern infrastructure. It is a good option for students planning to study MBBS abroad and build a global medical career."
+            },
+            {
+                "question": "Is the University of Novi Sad NMC approved?",
+                "answer": "The university is listed in global directories like WDOMS and follows European education standards. Indian students must ensure they meet NMC (FMGL) guidelines to be eligible for practicing in India after completing MBBS abroad."
+            },
+            {
+                "question": "What is the duration of MBBS at the University of Novi Sad?",
+                "answer": "The MBBS (MD equivalent) program duration is 6 years, including academic study and a mandatory clinical internship."
+            },
+            {
+                "question": "What is the medium of instruction?",
+                "answer": "The MBBS program is available in English, making it convenient for international students, especially from India."
+            },
+            {
+                "question": "What are the eligibility criteria for MBBS admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology (PCB) with at least 50% marks (40% for reserved category) and must qualify NEET."
+            },
+            {
+                "question": "Is hostel accommodation available?",
+                "answer": "Yes, the university provides hostel facilities and assistance in finding private accommodation for international students."
+            },
+            {
+                "question": "Can students work while studying MBBS?",
+                "answer": "Yes, students in Novi Sad may find part-time work opportunities, but they should primarily focus on their studies."
+            },
+            {
+                "question": "Can I practice in India after completing MBBS?",
+                "answer": "Yes, after completing MBBS from the University of Novi Sad, students need to clear FMGE/NExT to practice in India."
+            }
+        ]
+    },
+    "university-of-nis": {
+        "title": "University of Nis",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Nis_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Nis_Mobile.webp",
+        "intro": {
+            "text": "The University of Nis is one of the prominent public universities in Serbia, located in the historic and culturally rich city of Niš. Established in 1965, the university has developed a strong reputation for delivering high-quality education, advanced research opportunities, and globally recognized academic programs. It consists of multiple faculties, including a well-established Faculty of Medicine that attracts international students every year who aspire to study MBBS abroad. With its commitment to academic excellence and continuous development, the university has become a preferred destination for students looking for MBBS in Serbia and MBBS in Europe at an affordable cost.\n\nFor students planning MBBS abroad for Indian students, the University of Nis offers a balanced combination of affordable tuition fees, modern infrastructure, and international-standard medical education. The MBBS (MD equivalent) program is structured according to the European education system and focuses on building a strong foundation in both theoretical knowledge and practical clinical exposure. Students gain hands-on training in affiliated hospitals equipped with modern medical technology, which helps them develop real-life medical skills and clinical confidence. The availability of English-medium MBBS programs ensures that international students can easily understand the curriculum without facing language barriers.\n\nMoreover, the university provides a supportive and student-friendly environment that helps international students adapt smoothly to a new country and academic system. The city of Nis is known for its affordable cost of living, safe surroundings, and welcoming culture, making it ideal for students pursuing MBBS in Europe. With experienced faculty, well-equipped laboratories, modern teaching methods, and strong academic support services, the University of Nis ensures the overall development of students. Its global recognition and adherence to international medical education standards make it a reliable option for those searching for NMC approved medical colleges abroad, affordable MBBS abroad, and study medicine in Europe, ultimately helping students achieve their dream of becoming successful doctors on a global level."
+        },
+        "quickOverview": {
+            "University Name": "University of Nis",
+            "Location": "Nis, Serbia",
+            "Established Year": "1965",
+            "University Type": "Public University",
+            "Medium of Instruction": "English & Serbian",
+            "Popular Course": "MBBS (MD Equivalent)",
+            "Course Duration": "6 Years (Including Internship)",
+            "Recognition": "NMC, WHO, ECFMG, FAIMER",
+            "Eligibility": "10+2 with PCB (50% for General, 40% for Reserved)",
+            "NEET Requirement": "Mandatory for Indian Students",
+            "Hostel Facility": "Available"
+        },
+        "benefits": {
+            "intro": "Pursuing MBBS at the University of Nis in Nis is an excellent choice for students who want to study MBBS abroad with quality education at an affordable cost. The university follows European medical education standards and offers a well-structured MBBS (MD equivalent) program that focuses on both strong theoretical knowledge and practical clinical training. With modern infrastructure, experienced faculty, and English-medium programs, it is becoming a popular destination for students looking for MBBS in Serbia and MBBS in Europe, especially for Indian students seeking NMC compliant medical colleges abroad.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Degree",
+                    "Details": "The university is recognized by major international medical bodies such as NMC, WHO, ECFMG, and FAIMER, allowing students to pursue medical careers worldwide and appear for exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Affordable MBBS Fees",
+                    "Details": "Compared to many European countries and private medical colleges in India, the tuition fees are budget-friendly, making it a great option for students looking for affordable MBBS abroad."
+                },
+                {
+                    "Heading": "English-Medium Program",
+                    "Details": "The MBBS course is available in English, making it easier for international students to understand the curriculum and participate in clinical training."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students receive hands-on training in affiliated hospitals, gaining real-life medical experience and developing practical skills required in the medical field."
+                },
+                {
+                    "Heading": "European Education Standards",
+                    "Details": "The curriculum follows modern European systems, ensuring high-quality education, research opportunities, and practical learning."
+                },
+                {
+                    "Heading": "Experienced Faculty",
+                    "Details": "The university has highly qualified professors and medical professionals who provide excellent academic guidance and mentorship."
+                },
+                {
+                    "Heading": "Safe & Affordable Living",
+                    "Details": "Nis offers a safe environment and low cost of living, making it suitable for international students."
+                },
+                {
+                    "Heading": "No Donation or Capitation Fee",
+                    "Details": "Admission is transparent and merit-based, with no hidden charges or donations required."
+                },
+                {
+                    "Heading": "Global Career Opportunities",
+                    "Details": "Graduates are eligible to appear for international licensing exams, opening doors to global medical careers."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "Students from different countries study together, providing international exposure and cultural diversity."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (MD equivalent) program at the University of Nis in Nis follows a 6-year European curriculum designed to provide in-depth medical knowledge along with strong clinical exposure. The syllabus is divided into pre-clinical, para-clinical, and clinical phases, ensuring a gradual transition from basic sciences to advanced medical practice. Students are trained through lectures, laboratory work, seminars, and hospital-based clinical rotations, preparing them for global medical careers.",
+        "syllabus": {
+            "headers": ["Year", "Subjects"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Histology, Embryology, Medical Biology, Biochemistry, Medical Statistics"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Physiology, Genetics, Biochemistry (Advanced), Microbiology (Basics), Social Medicine"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathology, Pharmacology, Microbiology, Immunology, Forensic Medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Radiology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Neurology, Psychiatry, Orthopedics, Dermatology, Ophthalmology, ENT"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Internship: Internal Medicine, Surgery, Pediatrics, Gynecology, Emergency Medicine, Clinical Rotations"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS (MD equivalent) program at the University of Nis in Nis is known for its affordable fee structure and high-quality medical education. The tuition fee is approximately €6,000 per year, as per the official Faculty of Medicine fee structure. In addition, hostel and living expenses are budget-friendly, making it a great option for students looking for affordable MBBS abroad.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€800",
+                    "total": "₹6.5 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS program at the University of Nis, Serbia is designed as a comprehensive 6-year medical course combining theoretical knowledge with practical clinical training. It is structured to provide international students with the skills and competencies required to become competent medical professionals. The program leads to the Doctor of Medicine (MD) degree, which is equivalent to MBBS and recognized by international medical bodies such as the NMC (India) and WHO. Students spend the initial years focusing on basic medical sciences, followed by clinical rotations and practical exposure in affiliated hospitals.",
+        "duration": {
+            "headers": ["Year", "Phase", "Details"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Basic subjects like Anatomy, Physiology, Biophysics"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Phase": "Pre-Clinical",
+                    "Details": "Advanced concepts, Biochemistry, Genetics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Phase": "Para-Clinical",
+                    "Details": "Pathology, Pharmacology, Microbiology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Phase": "Clinical",
+                    "Details": "Medicine, Surgery, Pediatrics, Gynecology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Phase": "Clinical",
+                    "Details": "Neurology, Psychiatry, ENT, Orthopedics"
+                },
+                {
+                    "Year": "6th Year",
+                    "Phase": "Internship",
+                    "Details": "Mandatory clinical rotations in hospitals"
+                }
+            ]
+        },
+        "studentSupport": "The University of Nis provides an extensive and well-structured support system for its students, ensuring a holistic academic, social, and personal experience throughout their studies. At the heart of this system is the Career Development Centre, which offers personalized career guidance, workshops on CV and motivation letter writing, interview preparation, and opportunities to connect with potential employers, helping students build a strong foundation for their professional lives. For international students, the International Relations Office (IRO) plays a crucial role in facilitating a smooth transition to life in Serbia, providing assistance with enrollment procedures, visa and residence documentation, orientation programs, and a buddy network that pairs newcomers with experienced students to help them adapt to cultural, academic, and social aspects of university life. The university’s academic libraries and online resources support research, study, and access to global scientific publications, while well-maintained student accommodations and canteens ensure safe, affordable, and convenient living arrangements on campus. Beyond academics, students are encouraged to participate in a variety of clubs and societies, including international organizations like ELSA, IFMSA, AIESEC, and IAESTE, offering opportunities for extracurricular engagement, leadership development, volunteering, networking, and cross-cultural exchange. To promote student health and wellbeing, the university provides information on local healthcare services, mandatory health insurance requirements, and access to medical facilities. Moreover, informal peer groups and online student communities allow students to exchange experiences, seek advice on housing or academics, and create a sense of belonging within the university. Administrative support is also a key component, with faculty offices assisting in registration, academic record management, and resolving study-related queries efficiently.",
+        "recognition": "The University of Nis, located in Serbia, is a prestigious institution recognized for its high standards in medical education, research, and international collaboration. The University of Nis is officially affiliated with the Ministry of Education and Science of the Republic of Serbia, ensuring that all its programs meet rigorous national educational standards. For international students looking to study medicine in Serbia, this affiliation guarantees that their degree is legitimate and recognized nationally. The University of Nis is widely recognized internationally by major medical organizations. Its Faculty of Medicine is included in the World Directory of Medical Schools (WHO) and is approved by the National Medical Commission (NMC) of India, allowing Indian students to appear for the FMGE/NExT exams after graduation. This recognition ensures that the MBBS degree from University of Nis is valid for pursuing medical licensure, higher education, or clinical practice worldwide. Additionally, the university is acknowledged for maintaining high teaching standards, modern medical facilities, and English-medium programs for international students. Over the years, the University of Nis has achieved significant milestones in medical education and research. It has produced thousands of competent medical graduates who have excelled in clinical practice, research, and higher studies globally. Recognition of its graduates in global medical competitions and publications highlights the university’s commitment to excellence, innovation, and producing skilled medical professionals.",
+        "hostelFacilities": "The university offers affordable on-campus hostels and canteen facilities for students, along with guidance for off-campus accommodation if needed. The hostels provide safe and convenient living arrangements for international students. Canteens ensure affordable meals are available close to academic facilities. Additionally, the city of Nis offers a safe environment and low cost of living, which helps students manage their budget effectively while studying.",
+        "studentLife": "Life as a medical student at the University of Nis is a truly enriching experience, combining rigorous academic training with a vibrant campus culture and diverse extracurricular opportunities. For students aspiring to study MBBS in University of Nis, the university offers an international-friendly environment that caters to students from all over the world, especially from countries like India, Africa, and the Middle East. The campus is equipped with state-of-the-art lecture halls, modern laboratories, and extensive libraries. The English-medium MBBS program is tailored specifically for international students, making it easier for them to understand complex medical concepts. In addition to academic excellence, student life emphasizes practical clinical exposure. Through affiliations with local hospitals, students gain hands-on experience in patient care, diagnostics, and medical procedures. Beyond the classroom, the university fosters a sense of community by encouraging participation in a variety of clubs and societies. Groups such as ELSA, IFMSA, and AIESEC provide opportunities for leadership development, networking, volunteering, and cultural exchange. Orientation programs, a buddy system, and guidance on accommodation ensure international students adapt smoothly. Affordable on-campus hostels and canteens make life convenient, while social events, cultural festivals, and sports activities ensure students can balance their academic commitments with recreational pursuits.",
+        "whyChooseUsIntro": "Choosing the right consultancy can make a significant difference when planning to study MBBS in University of Nis. iExplain Education stands out as a trusted and experienced education partner for international students aspiring to pursue medical education in Serbia. With years of expertise in guiding students through the complexities of foreign medical admissions, iExplain Education ensures a seamless admission process from start to finish.",
+        "whyChooseUs": [
+            "Expert Guidance for International MBBS Admissions: iExplain Education has extensive experience in facilitating admissions for Indian and international students in universities like the University of Nis, ensuring compliance with all academic and regulatory requirements.",
+            "Comprehensive Support Services: From helping students gather and verify necessary documents to assisting with visa applications and travel arrangements, iExplain Education offers end-to-end support.",
+            "Trusted Network with Recognized Universities: iExplain Education maintains strong partnerships with globally recognized medical universities, ensuring students get verified and legitimate admission opportunities.",
+            "Student-Centric Approach: Understanding that each student has unique needs, iExplain Education offers personalized mentorship, addressing academic queries, career guidance, and cultural adaptation.",
+            "Transparent and Ethical Services: iExplain Education prides itself on providing transparent, ethical, and trustworthy consultancy services, ensuring applicants are aware of all costs and timelines."
+        ],
+        "documents": [
+            {
+                "document": "Completed Application Form",
+                "details": "Official application submitted to the University of Nis for MBBS admission."
+            },
+            {
+                "document": "Passport Copy",
+                "details": "Valid international passport required for identity verification and visa processing."
+            },
+            {
+                "document": "High School Certificate / 10+2 Marksheet",
+                "details": "Proof of completion of secondary education with subjects like Physics, Chemistry, and Biology. Must meet minimum eligibility criteria."
+            },
+            {
+                "document": "NEET Score Card (India)",
+                "details": "Mandatory for Indian students seeking recognition by the National Medical Commission (NMC) to pursue MBBS abroad."
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Issued by a registered physician confirming that the student is medically fit to pursue MBBS."
+            },
+            {
+                "document": "Passport-size Photographs",
+                "details": "Recent photographs as per university specifications for identification and documentation purposes."
+            },
+            {
+                "document": "Migration / Transfer Certificate",
+                "details": "Required if the student is transferring from another institution or country."
+            },
+            {
+                "document": "Letter of Recommendation (optional)",
+                "details": "Academic or personal reference supporting the student’s admission application."
+            },
+            {
+                "document": "Bank Statement / Financial Proof",
+                "details": "Evidence of sufficient funds to cover tuition fees, accommodation, and living expenses while studying in Serbia."
+            }
+        ],
+        "conclusion": "The University of Nis in Serbia offers a world-class, internationally recognized MBBS program designed for students seeking a high-quality medical education abroad. With a 6-year MBBS curriculum, modern infrastructure, clinical exposure in affiliated hospitals, and a supportive environment for international students, it provides an ideal platform for aspiring doctors to develop both academic and practical skills. The university’s recognition by the World Health Organization (WHO) and the National Medical Commission (NMC) of India ensures that graduates can pursue medical licensure and career opportunities worldwide. With comprehensive student support services, vibrant campus life, and guidance from trusted consultancies like iExplain Education, students can confidently navigate the admission process and transition smoothly into life in Serbia. Choosing the University of Nis means not only gaining a globally recognized MBBS degree but also experiencing personal growth, cultural exposure, and professional development, setting the foundation for a successful medical career anywhere in the world.",
+        "faqs": [
+            {
+                "question": "What is the duration of the MBBS program at University of Nis?",
+                "answer": "The MBBS program at the University of Nis is 6 years long, including 5 years of academic and clinical instruction and 1 year of practical internship, leading to a Doctor of Medicine (MD) degree equivalent to MBBS."
+            },
+            {
+                "question": "Is the MBBS degree from University of Nis recognized internationally?",
+                "answer": "Yes, the University of Nis is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) of India, making its MBBS degree valid for medical licensure and practice in many countries."
+            },
+            {
+                "question": "What are the eligibility criteria for Indian students?",
+                "answer": "Indian students must have completed 10+2 or equivalent with Physics, Chemistry, and Biology and must have qualified NEET as per NMC guidelines to pursue MBBS in University of Nis."
+            },
+            {
+                "question": "In which language is the MBBS program taught?",
+                "answer": "The MBBS program for international students is offered in English, ensuring that students from India and other countries can easily understand and follow the curriculum."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include: completed application form, passport copy, 10+2 mark sheets, NEET scorecard (for Indian students), medical fitness certificate, passport-size photographs, financial proof, and migration certificate (if applicable)."
+            },
+            {
+                "question": "Does University of Nis provide hostel facilities?",
+                "answer": "Yes, the university offers affordable on-campus hostels and canteen facilities for students, along with guidance for off-campus accommodation if needed."
+            },
+            {
+                "question": "How is student life for international students?",
+                "answer": "Student life is vibrant and supportive, with access to modern labs, libraries, sports facilities, clubs, societies, cultural events, and a buddy system to help international students adapt to life in Serbia."
+            },
+            {
+                "question": "Can I practice medicine in India after completing MBBS in Nis?",
+                "answer": "Yes, graduates from the University of Nis can appear for the NMC screening test (FMGE/NExT) to practice medicine in India after completing their degree."
+            },
+            {
+                "question": "Why choose iExplain Education for admission in University of Nis?",
+                "answer": "iExplain Education provides expert guidance, end-to-end admission support, visa assistance, document verification, and pre-departure counselling, making it easier for students to study MBBS abroad with confidence."
+            },
+            {
+                "question": "How much is the MBBS fee at the University of Nis?",
+                "answer": "Tuition fees are approximately €6,000 per year. Hostel fees are around €800 per year. Students should consult iExplain Education for updated and accurate fee details, scholarships, and financial planning advice."
+            }
+        ]
+    },
+    "university-of-kragujevac": {
+        "title": "University of Kragujevac",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Kragujevac_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Kragujevac_Mobile.webp",
+        "intro": {
+            "text": "The University of Kragujevac, Serbia, is a prestigious public institution and a well-established center of higher education known for its academic excellence, advanced research facilities, and student-focused learning environment. Founded in 1976, the university has developed into one of the most respected educational institutions in Serbia, offering a wide range of programs across various disciplines, including medicine, engineering, sciences, and humanities. For students aspiring to study MBBS in University of Kragujevac, the university provides a globally recognized medical program through its Faculty of Medical Sciences, which follows European standards of education and emphasizes both theoretical knowledge and practical clinical training. This makes it an ideal destination for international students who want to study medicine in Serbia and gain exposure to modern healthcare systems and advanced medical practices.\n\nThe MBBS in University of Kragujevac is designed to meet international medical education standards, combining classroom learning with hands-on clinical experience in affiliated hospitals and healthcare centers. Students benefit from a well-structured curriculum that covers basic medical sciences in the initial years, followed by clinical subjects and rotations that enhance diagnostic and patient care skills. The program is offered in English for international students, making it highly accessible for those coming from countries like India, where students are increasingly choosing MBBS abroad for better opportunities and global exposure. The university is recognized by international medical organizations such as the World Health Organization (WHO) and follows the guidelines set by the National Medical Commission (NMC) of India, ensuring that graduates are eligible to appear for licensing exams and pursue medical careers in different parts of the world.\n\nApart from strong academics, the University of Kragujevac offers a supportive and student-friendly environment that enhances the overall experience of studying abroad. The campus is equipped with modern laboratories, simulation centers, digital libraries, and research facilities that help students stay updated with the latest advancements in medical science. International students receive guidance and support through dedicated services, including orientation programs, accommodation assistance, and cultural integration activities, making their transition to a new country smooth and comfortable."
+        },
+        "quickOverview": {
+            "University Name": "University of Kragujevac",
+            "Location": "Kragujevac, Serbia",
+            "Established": "1976",
+            "Type": "Public University",
+            "Medium of Instruction": "English (for international students)",
+            "Popular Course": "MBBS / Doctor of Medicine (MD)",
+            "Duration of MBBS": "6 Years (including clinical training)",
+            "Recognition": "WHO, NMC (India), Ministry of Education Serbia",
+            "Eligibility": "10+2 with PCB, NEET qualification (for Indian students)"
+        },
+        "benefits": {
+            "intro": "Choosing the University of Kragujevac for pursuing MBBS abroad is an excellent decision for students who are looking for a globally recognized medical degree, affordable education, and strong clinical exposure. Here are the key reasons why it has become a preferred destination:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "Recognized by WHO and follows the guidelines of the National Medical Commission (NMC) of India, allowing graduates to appear for licensing exams like FMGE/NExT."
+                },
+                {
+                    "Heading": "Affordable MBBS Abroad Option",
+                    "Details": "The cost of studying at the University of Kragujevac is relatively low compared to Western countries or private medical colleges in India."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "Offers an English-taught course specifically for international students, eliminating language barriers for effective learning."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure",
+                    "Details": "Students gain hands-on experience through clinical rotations in affiliated hospitals, interacting with real patients and medical procedures."
+                },
+                {
+                    "Heading": "Modern Infrastructure and Facilities",
+                    "Details": "Equipped with advanced laboratories, simulation centers, research facilities, and digital libraries with the latest medical technologies."
+                },
+                {
+                    "Heading": "Safe and Student-Friendly Environment",
+                    "Details": "Kragujevac offers a safe environment, affordable cost of living, and a welcoming atmosphere for international students."
+                },
+                {
+                    "Heading": "International Exposure and Career Opportunities",
+                    "Details": "Beneficial international collaborations and exchange programs open doors to careers and higher education across different countries."
+                },
+                {
+                    "Heading": "Holistic Student Development",
+                    "Details": "Opportunities for extracurricular activities, cultural events, sports, and student organizations to develop leadership and teamwork skills."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS in University of Kragujevac is a well-structured and comprehensive program designed according to European medical education standards. The 6-year curriculum is integrated with modern teaching methodologies and patient-centered learning.",
+        "syllabus": {
+            "headers": ["Year", "Subjects"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Histology, Embryology, Medical Biology, Biochemistry, Medical Ethics"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Physiology, Microbiology, Pathology, Immunology, Pharmacology"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathophysiology, Forensic Medicine, Internal Medicine (Basics), Surgery (Basics)"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "General Surgery, Internal Medicine, Pediatrics, Obstetrics & Gynecology, Radiology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Neurology, Psychiatry, Orthopedics, ENT (Otorhinolaryngology), Ophthalmology, Dermatology"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Clinical Rotations, Internship, Practical Training, Patient Care, Final Examinations"
+                }
+            ]
+        },
+        "feesIntro": "The MBBS in University of Kragujevac is known for its affordable and transparent fee structure, making it a popular choice for students who want to study MBBS abroad at a reasonable cost.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€6,000",
+                    "hostel": "€1,800 – €3,600",
+                    "total": "₹7.1 – 8.8 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS in University of Kragujevac is a 6-year full-time medical program designed according to European education standards, ensuring students develop strong medical knowledge and hands-on skills.",
+        "duration": {
+            "headers": ["Phase", "Duration", "Details"],
+            "table": [
+                {
+                    "Phase": "Pre-Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Basic medical sciences such as Anatomy, Physiology, Biochemistry"
+                },
+                {
+                    "Phase": "Para-Clinical Phase",
+                    "Duration": "1 Year",
+                    "Details": "Subjects like Pathology, Pharmacology, Microbiology"
+                },
+                {
+                    "Phase": "Clinical Phase",
+                    "Duration": "2 Years",
+                    "Details": "Core clinical subjects with hospital exposure"
+                },
+                {
+                    "Phase": "Internship / Practical Training",
+                    "Duration": "1 Year",
+                    "Details": "Hands-on training, patient care, and final assessments"
+                }
+            ]
+        },
+        "studentSupport": "The University of Kragujevac offers a well-developed and student-oriented support system that ensures academic success, personal well-being, and professional growth for both local and international students. One of the key highlights is the Career Development and Student Counselling Center, which helps students with career planning, CV building, interview preparation, and access to internships, scholarships, and exchange programs. In addition to career services, the university has a dedicated Student Affairs Service that manages essential academic processes such as enrollment, exam registration, and certification. For academic development, students benefit from structured tutoring and mentoring support. The university also places strong emphasis on student well-being through its psychological and peer support services, where trained mentors provide emotional and social support. Special support is available for international students to ensure inclusivity and a smooth transition into university life. Furthermore, active student engagement is encouraged through organizations like the Student Parliament and sports associations, allowing students to participate in extracurricular activities and leadership roles.",
+        "recognition": "The University of Kragujevac, Serbia, is a well-established and globally connected institution known for its strong academic affiliations and international recognition. The university is officially affiliated with the Ministry of Education, Science and Technological Development of Serbia, ensuring that all academic programs meet national education standards. It is also a member of prominent international organizations such as the European University Association (EUA) and participates in programs like Erasmus+. The university is officially recognized and accredited by the Serbian government, making it a trusted institution for higher education. It follows European standards and is recognized at both national and international levels, allowing students who pursue MBBS in University of Kragujevac to appear for global licensing exams and continue their medical careers worldwide. The university has achieved significant milestones, being ranked among the top global scientists in research and innovation, reflecting its commitment to excellence with over 15,000 students and multiple faculties.",
+        "hostelFacilities": "The university ensures a comfortable living experience by offering affordable accommodation, hostel facilities, and student canteens, making it convenient for international students to manage their daily life. The city of Kragujevac itself is known for its safe surroundings, affordable cost of living, and student-friendly atmosphere, providing access to essential facilities for study and relaxation.",
+        "studentLife": "Student life at the University of Kragujevac is dynamic, engaging, and well-balanced. The university provides a welcoming and multicultural environment where international students can easily adapt. The campus is equipped with modern lecture halls, advanced laboratories, simulation centers, and well-stocked libraries. Students pursuing MBBS benefit from hands-on clinical exposure in affiliated hospitals, gaining real-life experience in patient care and diagnostics. Beyond academics, the university promotes a vibrant life through various clubs, societies, and student organizations focused on cultural activities, sports, volunteering, and leadership development. Students participate in festivals, international events, and academic conferences, which enhance their experience and help build global networks. Organizations provide platforms for collaboration and teamwork, making it easier to connect with peers from different backgrounds.",
+        "whyChooseUsIntro": "Choosing the right consultancy is a crucial step for students planning to study MBBS in University of Kragujevac. iExplain Education is a trusted and experienced partner that helps students achieve their dream with ease and confidence.",
+        "whyChooseUs": [
+            "Expert Guidance and Counseling – Personalized counseling based on academic profile, budget, and goals to choose the right path for MBBS abroad.",
+            "Hassle-Free Admission Process – End-to-end support for application, documentation, and university communication to avoid errors and delays.",
+            "Complete Documentation Support – Step-by-step assistance in preparing and verifying all required documents including certificates and medical records.",
+            "Visa Assistance and Travel Support – Complete support for visa application, interview preparation, travel arrangements, and airport pickup.",
+            "Pre-Departure and Post-Arrival Support – Detailed briefings before leaving and continued support after reaching Kragujevac, including help with accommodation.",
+            "Trusted and Transparent Services – A transparent process with no hidden charges, ensuring students and parents are fully informed.",
+            "Focus on Student Success – Committed to helping students build a strong medical career through continuous support and mentorship."
+        ],
+        "documents": [
+            {
+                "document": "Application Form",
+                "details": "Duly filled application form for admission to the University of Kragujevac"
+            },
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic academic qualification"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Required with Physics, Chemistry, and Biology subjects for MBBS eligibility"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students as per NMC guidelines"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Identity proof with minimum validity (generally 18 months or more)"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Proof of date of birth (translated if not in English)"
+            },
+            {
+                "document": "Medical Fitness Certificate",
+                "details": "Confirms that the student is medically fit for studies abroad"
+            },
+            {
+                "document": "HIV Test Report",
+                "details": "Required as part of medical screening for visa and admission"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Issued by the university after document verification"
+            },
+            {
+                "document": "Invitation Letter",
+                "details": "Required for applying for a student visa in Serbia"
+            },
+            {
+                "document": "Document Attestation & Legalization",
+                "details": "Documents must be attested by relevant authorities and legalized by the Serbian Embassy"
+            }
+        ],
+        "conclusion": "The University of Kragujevac stands out as a reliable and globally recognized destination for students aspiring to study MBBS abroad. With its well-structured 6-year medical program, modern infrastructure, and strong emphasis on practical clinical training, it offers an excellent platform for building a successful medical career. Students benefit from affordable tuition fees, international exposure, and a curriculum aligned with European standards. In addition to academic excellence, the university provides a supportive and student-friendly environment, making it easier for international students to adapt and thrive. With proper guidance from trusted consultancies like iExplain Education, the admission process becomes smooth and hassle-free, turning the dream of becoming a doctor into reality.",
+        "faqs": [
+            {
+                "question": "What is the duration of MBBS at University of Kragujevac?",
+                "answer": "The MBBS in University of Kragujevac is a 6-year program, which includes 5 years of academic and clinical study followed by 1 year of internship or practical training."
+            },
+            {
+                "question": "Is the MBBS degree from University of Kragujevac recognized?",
+                "answer": "Yes, the university is recognized by international medical bodies such as the World Health Organization (WHO) and follows National Medical Commission (NMC) guidelines, making it valid for global medical careers."
+            },
+            {
+                "question": "What are the eligibility criteria for MBBS admission?",
+                "answer": "Students must have completed 10+2 with Physics, Chemistry, and Biology and must qualify NEET (for Indian students) to apply for MBBS in University of Kragujevac."
+            },
+            {
+                "question": "In which language is the MBBS program taught?",
+                "answer": "The MBBS program is available in English for international students, making it easier for them to study and understand medical concepts."
+            },
+            {
+                "question": "Are hostel facilities available for international students?",
+                "answer": "Yes, the university provides affordable hostel accommodation along with canteen facilities and support for private housing if required."
+            },
+            {
+                "question": "Can I practice in India after completing MBBS from Kragujevac?",
+                "answer": "Yes, Indian students can practice in India after clearing the FMGE/NExT exam as per NMC regulations after completing their MBBS in University of Kragujevac."
+            },
+            {
+                "question": "Is NEET mandatory for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who wish to pursue MBBS abroad, including at the University of Kragujevac."
+            },
+            {
+                "question": "How is student life at University of Kragujevac?",
+                "answer": "Student life is vibrant and supportive, with access to modern facilities, clinical training, cultural events, sports, and student organizations, providing a balanced academic and social experience."
+            },
+            {
+                "question": "Why choose University of Kragujevac for MBBS?",
+                "answer": "The university offers affordable fees, global recognition, English-medium education, strong clinical exposure, and a safe environment, making it a great choice for students who want to study medicine in Serbia."
+            }
+        ]
+    },
+    "trinity-college-dublin": {
+        "title": "Trinity College Dublin",
+        "coursetype": "Study Abroad",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Trinity_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Trinity_Mobile.webp",
+        "intro": {
+            "text": "Trinity College Dublin, officially known as the University of Dublin, is one of the most prestigious and oldest universities in Europe, established in 1592. Located in the heart of Dublin, Ireland, it is globally recognized for its academic excellence, rich history, and world-class research facilities. For students planning to study abroad, Trinity College Dublin offers a perfect blend of high-quality education, international exposure, and career opportunities. It consistently ranks among the top universities in the world, making it a preferred destination for students who want to pursue higher education in a globally competitive environment.\n\nThe university provides a wide range of undergraduate and postgraduate programs across disciplines such as medicine, engineering, business, arts, and sciences. Students who choose to study at Trinity College Dublin benefit from a modern curriculum, experienced faculty, and access to cutting-edge research opportunities. The institution is especially popular among international students looking for study abroad in Ireland, as it offers a welcoming multicultural environment and English-medium education. Its strong focus on innovation and practical learning ensures that students are well-prepared for global careers.\n\nFor those seeking international education, study abroad programs, and globally recognized degrees, Trinity College Dublin stands out as an ideal choice. The university also has strong industry connections and partnerships with leading global companies, providing excellent internship and job placement opportunities. With its vibrant campus life, historic architecture, and location in one of Europe’s most student-friendly cities, Trinity offers a unique and enriching experience for students aiming to study abroad in top universities."
+        },
+        "quickOverview": {
+            "University Name": "Trinity College Dublin (University of Dublin)",
+            "Location": "Dublin, Ireland",
+            "Established": "1592",
+            "Type": "Public Research University",
+            "Global Ranking": "Among Top Universities in the World",
+            "Popular Courses": "Medicine, Engineering, Business, Arts, Science, Law",
+            "Medium of Instruction": "English",
+            "Programs Offered": "Undergraduate, Postgraduate, Research Programs",
+            "International Students": "Students from 120+ countries",
+            "Scholarships": "Available for international students"
+        },
+        "benefits": {
+            "intro": "Choosing to study abroad in Ireland at Trinity College Dublin is a smart decision for students who want a globally recognized degree, excellent career opportunities, and a rich international experience. Here are the key reasons to study at Trinity College Dublin:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Globally Recognized University",
+                    "Details": "Trinity College Dublin consistently ranks among the top universities in the world. A degree from Trinity is respected by employers and institutions worldwide."
+                },
+                {
+                    "Heading": "Wide Range of Courses",
+                    "Details": "The university offers diverse programs in medicine, engineering, business, arts, and science, allowing students to choose courses that align with their career goals."
+                },
+                {
+                    "Heading": "English-Medium Education",
+                    "Details": "All programs are taught in English, which makes it easier for international students, especially from India, to adapt and succeed."
+                },
+                {
+                    "Heading": "Strong Career Opportunities",
+                    "Details": "Trinity has excellent connections with global companies, offering students access to internships, research projects, and job placements."
+                },
+                {
+                    "Heading": "Research and Innovation Excellence",
+                    "Details": "The university is known for its advanced research facilities and innovation-driven approach, giving students opportunities to work on real-world projects."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "With students from over 120 countries, Trinity provides a diverse and inclusive environment, helping students build global networks."
+                },
+                {
+                    "Heading": "Prime Location in Dublin",
+                    "Details": "Located in Dublin, one of Europe’s most vibrant and student-friendly cities, providing a safe environment and excellent lifestyle."
+                },
+                {
+                    "Heading": "Scholarships and Financial Support",
+                    "Details": "Trinity offers various scholarships and financial aid options for international students, reducing the financial burden."
+                }
+            ]
+        },
+        "SyllabusIntro": "Trinity College Dublin is committed to delivering world-class education and innovation. Its values are centered on academic excellence, student success, and social responsibility, ensuring a transformative learning experience for international students.",
+        "syllabus": {
+            "headers": [
+                "Core Value",
+                "Description"
+            ],
+            "table": [
+                {
+                    "Core Value": "Academic Excellence",
+                    "Description": "Maintaining the highest standards in teaching, learning, and research to provide a strong academic foundation."
+                },
+                {
+                    "Core Value": "Innovation and Research",
+                    "Description": "Promoting cutting-edge research across disciplines and fostering creativity and problem-solving skills."
+                },
+                {
+                    "Core Value": "Diversity and Inclusion",
+                    "Description": "Valuing cultural diversity with students from over 120 countries, creating a welcoming environment."
+                },
+                {
+                    "Core Value": "Global Engagement",
+                    "Description": "Actively collaborating with international institutions and industries to promote global learning."
+                },
+                {
+                    "Core Value": "Social Responsibility",
+                    "Description": "Making a positive impact through community engagement and sustainability initiatives."
+                }
+            ]
+        },
+        "feesIntro": "For the 2026 academic year, Trinity College Dublin (TCD) fees for international students vary by the field of study. Below is the breakdown (Approx. exchange rate 1 EUR = 91 INR).",
+        "fees": {
+            "undergraduate": {
+                "headers": [
+                    "Faculty / Course",
+                    "Annual Fee (EUR)",
+                    "Annual Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Faculty / Course": "Medicine (MBBS/MB BCh BAO)",
+                        "Annual Fee (EUR)": "€56,000 – €60,000",
+                        "Annual Fee (INR Approx.)": "₹51.0 L – ₹54.6 Lakhs"
+                    },
+                    {
+                        "Faculty / Course": "Dentistry",
+                        "Annual Fee (EUR)": "€50,000 – €55,000",
+                        "Annual Fee (INR Approx.)": "₹45.5 L – ₹50.0 Lakhs"
+                    },
+                    {
+                        "Faculty / Course": "Engineering & Computer Science",
+                        "Annual Fee (EUR)": "€27,000 – €30,000",
+                        "Annual Fee (INR Approx.)": "₹24.5 L – ₹27.3 Lakhs"
+                    },
+                    {
+                        "Faculty / Course": "Business (BBS)",
+                        "Annual Fee (EUR)": "€22,000 – €26,000",
+                        "Annual Fee (INR Approx.)": "₹20.0 L – ₹23.6 Lakhs"
+                    },
+                    {
+                        "Faculty / Course": "Arts, Humanities & Social Science",
+                        "Annual Fee (EUR)": "€21,000 – €25,000",
+                        "Annual Fee (INR Approx.)": "₹19.1 L – ₹22.7 Lakhs"
+                    },
+                    {
+                        "Faculty / Course": "Science (Biological/Chemical)",
+                        "Annual Fee (EUR)": "€26,000 – €28,000",
+                        "Annual Fee (INR Approx.)": "₹23.6 L – ₹25.5 Lakhs"
+                    }
+                ]
+            },
+            "postgraduate": {
+                "headers": [
+                    "Program Type",
+                    "Total Fee (EUR)",
+                    "Total Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Program Type": "Master of Business Admin (MBA)",
+                        "Total Fee (EUR)": "€36,000 – €38,000",
+                        "Total Fee (INR Approx.)": "₹32.7 L – ₹34.5 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Computer Science / Data Science",
+                        "Total Fee (EUR)": "€24,000 – €27,000",
+                        "Total Fee (INR Approx.)": "₹21.8 L – ₹24.5 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Management / Finance",
+                        "Total Fee (EUR)": "€21,000 – €24,000",
+                        "Total Fee (INR Approx.)": "₹19.1 L – ₹21.8 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Phil (Arts/Humanities)",
+                        "Total Fee (EUR)": "€18,000 – €22,000",
+                        "Total Fee (INR Approx.)": "₹16.3 L – ₹20.0 Lakhs"
+                    },
+                    {
+                        "Program Type": "LL.M. (Law)",
+                        "Total Fee (EUR)": "€21,000 – €23,000",
+                        "Total Fee (INR Approx.)": "₹19.1 L – ₹20.9 Lakhs"
+                    }
+                ]
+            }
+        },
+        "durationIntro": "To apply for study at Trinity College Dublin, Indian students must meet specific academic and financial criteria. Below is a summary of the eligibility requirements.",
+        "duration": {
+            "headers": [
+                "Criteria",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Criteria": "Academic Qualification (UG)",
+                    "Details": "Completion of 10+2 (CBSE/ISC/State Board) with strong performance (75%–90% depending on course)."
+                },
+                {
+                    "Criteria": "Academic Qualification (PG)",
+                    "Details": "Bachelor’s degree from a recognized university with minimum 60%–75% or equivalent CGPA."
+                },
+                {
+                    "Criteria": "English Language Proficiency",
+                    "Details": "IELTS (6.5–7.0 overall) or TOEFL (90–100) or equivalent accepted test."
+                },
+                {
+                    "Criteria": "Statement of Purpose (SOP)",
+                    "Details": "Required for most postgraduate programs explaining goals and career plans."
+                },
+                {
+                    "Criteria": "Financial Proof",
+                    "Details": "Evidence of sufficient funds to cover tuition fees and living expenses."
+                }
+            ]
+        },
+        "studentSupport": "Trinity College Dublin provides a comprehensive and student-focused support system. Key services include the International Student Support Team, which assists with visa guidance and immigration formalities. New students are welcomed through orientation programs that introduce campus facilities and academic systems. Strong academic support services, including tutoring, writing assistance, and study workshops, help students meet Trinity’s high standards. Dedicated advisors guide students through course selection and career planning. For personal well-being, Trinity provides counselling services, health support, and mental wellness programs. Additionally, a buddy and mentoring system pairs new international students with experienced peers to help with cultural and academic adjustment.",
+        "recognition": "Trinity College Dublin is one of the most prestigious and oldest universities in Europe, established in 1592. It is globally recognized for its academic excellence and world-class research facilities. It consistently ranks among the top universities in the world. Its degrees are respected by employers and institutions worldwide, ensuring that graduates are well-prepared for global medical and professional careers.",
+        "hostelFacilities": "Trinity offers accommodation support for both on-campus and off-campus housing. Students enjoy access to modern accommodation, cafes, fitness centers, and recreational facilities on campus. The location in Dublin offers cultural landmarks, museum access, and excellent career opportunities, including part-time jobs and internships. Historic green spaces and modern facilities blend to create an inspiring environment for living and study.",
+        "studentLife": "Student life at Trinity is dynamic and enriching. It is home to over 100 student societies and 50+ sports clubs, allowing students to explore interests in debating, music, entrepreneurship, drama, and sports. Regular events, festivals, and student-led initiatives promote a strong sense of community. International students benefit from a multicultural environment that fosters cross-cultural interactions and lifelong friendships. This holistic experience combines academic rigor with social engagement and real-world exposure.",
+        "whyChooseUsIntro": "Choosing the right guidance is essential when planning to study abroad in Ireland. iExplain Education is a trusted consultancy that helps students navigate the entire admission journey at Trinity College Dublin.",
+        "whyChooseUs": [
+            "Expert Career Counselling: Personalized guidance to choose the right program based on academic background and interests.",
+            "End-to-End Admission Support: Managing the entire process from university selection to application submission.",
+            "Strong Documentation Assistance: Helping prepare essential documents like SOPs, LORs, and CVs.",
+            "Visa Guidance & Approval Support: Complete assistance with the student visa process, including financial proof and interview prep.",
+            "Scholarship & Financial Planning: Guidance on fee planning, scholarships, and education loans.",
+            "Pre-Departure & Post-Arrival Services: Sessions covering travel and accommodation, plus ongoing support after reaching Dublin.",
+            "Global Expertise: Reliable and updated information about international education in Ireland.",
+            "Transparent Approach: Complete transparency in processes, fees, and timelines."
+        ],
+        "documents": [
+            {
+                "document": "Academic Transcripts",
+                "details": "10th and 12th mark sheets for UG; Bachelor's degree transcripts for PG."
+            },
+            {
+                "document": "Passport",
+                "details": "Mandatory for application and visa process; minimum validity required."
+            },
+            {
+                "document": "English Proficiency Score",
+                "details": "IELTS or TOEFL scores as per course requirements."
+            },
+            {
+                "document": "Statement of Purpose (SOP)",
+                "details": "Explaining academic goals and reasons for choosing the program."
+            },
+            {
+                "document": "Letters of Recommendation (LOR)",
+                "details": "Usually 1–2 references required for postgraduate courses."
+            },
+            {
+                "document": "Financial Proof",
+                "details": "Bank statements or proof of funds for tuition and living costs."
+            },
+            {
+                "document": "CV / Resume",
+                "details": "Required for postgraduate and certain specialized applications."
+            },
+            {
+                "document": "Entrance Exam Proof",
+                "details": "GMAT/GRE scores for certain Business programs if applicable."
+            }
+        ],
+        "conclusion": "Choosing to study abroad at Trinity College Dublin is a life-changing decision that opens doors to global education, career opportunities, and personal growth. With its personalized counseling, end-to-end admission assistance, and strong focus on student success, iExplain Education ensures a smooth and stress-free experience for students planning to study in Ireland. From selecting the right course to settling in Dublin, the consultancy acts as a reliable partner throughout the process, increasing your chances of successfully securing a place at one of the world’s top universities.",
+        "faqs": [
+            {
+                "question": "Why should I choose Trinity College Dublin for study abroad?",
+                "answer": "Trinity College Dublin is one of the top-ranked universities globally, offering high-quality education, excellent research opportunities, and strong career prospects."
+            },
+            {
+                "question": "How can iExplain Education help me get admission?",
+                "answer": "iExplain Education provides complete support, including university selection, application process, documentation, and visa guidance."
+            },
+            {
+                "question": "What are the eligibility criteria for Indian students?",
+                "answer": "Students must have strong academic records (10+2 for UG or bachelor’s degree for PG), English proficiency (IELTS/TOEFL), and meet course-specific requirements."
+            },
+            {
+                "question": "Is IELTS mandatory for admission?",
+                "answer": "Yes, most programs require an English proficiency test like IELTS or TOEFL for international students who want to study in Ireland."
+            },
+            {
+                "question": "Does iExplain Education assist with scholarships?",
+                "answer": "Yes, iExplain Education helps students explore and apply for scholarships available at Trinity College Dublin, reducing the financial burden."
+            },
+            {
+                "question": "What documents are required for admission?",
+                "answer": "Key documents include academic transcripts, SOP, LORs, passport, English test scores, and financial proof."
+            },
+            {
+                "question": "How long does the admission process take?",
+                "answer": "The process usually takes 4–8 weeks, depending on the course and application timeline. Early application is recommended."
+            },
+            {
+                "question": "Does iExplain Education help with visa processing?",
+                "answer": "Yes, they provide complete visa assistance, including documentation, financial proof, and interview preparation."
+            },
+            {
+                "question": "Can I work while studying at Trinity College Dublin?",
+                "answer": "Yes, international students in Ireland can work part-time (up to 20 hours/week) during studies and full-time during holidays."
+            },
+            {
+                "question": "What support is provided after reaching Ireland?",
+                "answer": "iExplain Education offers post-arrival support including accommodation guidance, local assistance, and help in settling down in Dublin."
+            }
+        ]
+    },
+    "university-college-dublin": {
+        "title": "University College Dublin",
+        "coursetype": "Study Abroad",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/UCD_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/UCD_Mobile.webp",
+        "intro": {
+            "text": "University College Dublin (UCD) is one of the most prestigious and largest universities in Ireland, widely recognized for its academic excellence, global rankings, and strong emphasis on research, innovation, and career-focused education. Established in 1854, UCD has evolved into a world-class institution that consistently ranks among the top universities globally, attracting a diverse community of students from over 150 countries. This multicultural environment makes it an ideal destination for students who want to study abroad in Ireland and gain international exposure while pursuing a globally recognized degree.\n\nThe university provides a modern, flexible, and industry-orientated curriculum designed to meet global academic and professional standards. UCD focuses on a combination of theoretical knowledge and practical learning, ensuring that students are equipped with the skills required to succeed in today’s competitive job market. Through strong collaborations with leading multinational companies and research institutions, UCD provides excellent opportunities for internships, research projects, and industry placements. This makes it an excellent option for students looking for career-focused study abroad programs in Europe and aiming to build successful global careers.\n\nThe university’s main campus, located in Dublin, is one of the largest and most modern campuses in Europe, spread across a beautiful and well-equipped environment. It offers state-of-the-art facilities, including advanced laboratories, digital libraries, innovation and research centers, sports complexes, and dedicated student support services. Additionally, UCD is known for its strong global reputation and employability outcomes, with graduates highly valued by employers worldwide."
+        },
+        "quickOverview": {
+            "University Name": "University College Dublin (UCD)",
+            "Location": "Dublin, Ireland",
+            "Established": "1854",
+            "Type": "Public Research University",
+            "Global Ranking": "Among Top Universities in the World",
+            "Popular Courses": "Business, Engineering, Medicine, Computer Science, Arts, Law",
+            "Medium of Instruction": "English",
+            "Programs Offered": "Undergraduate, Postgraduate, PhD & Research Programs",
+            "International Students": "Students from 150+ countries",
+            "Campus Type": "Large Modern Campus (Belfield Campus)"
+        },
+        "benefits": {
+            "intro": "Choosing University College Dublin (UCD) for your study abroad in Ireland journey is an excellent decision for students seeking a globally recognized degree, strong career prospects, and a high-quality international education. Here are the key reasons:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Globally Ranked University",
+                    "Details": "UCD is consistently ranked among the top universities in the world, ensuring strong international recognition and credibility for your degree."
+                },
+                {
+                    "Heading": "Career-Focused Education",
+                    "Details": "UCD offers industry-oriented programs with strong links to global companies, providing internships, placements, and real-world exposure."
+                },
+                {
+                    "Heading": "Wide Range of Courses",
+                    "Details": "The university provides diverse programs in business, engineering, medicine, computer science, and humanities, allowing students to choose courses aligned with their career goals."
+                },
+                {
+                    "Heading": "Modern Campus & Advanced Facilities",
+                    "Details": "Located in Dublin, UCD has one of the most modern campuses in Europe, equipped with state-of-the-art laboratories, libraries, and research centers."
+                },
+                {
+                    "Heading": "Strong Research & Innovation Focus",
+                    "Details": "UCD is known for cutting-edge research and global collaborations, offering students opportunities to work on innovative projects."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "With students from over 150 countries, UCD provides a diverse and inclusive atmosphere, ideal for a global study abroad experience."
+                },
+                {
+                    "Heading": "English-Medium Programs",
+                    "Details": "All courses are taught in English, making it convenient for international students, especially Indian students, to succeed academically."
+                },
+                {
+                    "Heading": "Scholarships & Financial Support",
+                    "Details": "UCD offers a variety of scholarships and financial aid options for international students, helping reduce the cost of study abroad in Ireland."
+                }
+            ]
+        },
+        "SyllabusIntro": "University College Dublin is driven by a strong mission to deliver world-class education and impactful research. Its core values center on academic excellence, innovation, and global engagement.",
+        "syllabus": {
+            "headers": [
+                "Core Value",
+                "Description"
+            ],
+            "table": [
+                {
+                    "Core Value": "Excellence in Education",
+                    "Description": "Maintaining the highest standards in teaching and research to provide a strong academic foundation."
+                },
+                {
+                    "Core Value": "Innovation and Creativity",
+                    "Description": "Encouraging students to explore new ideas and develop creative solutions to global challenges."
+                },
+                {
+                    "Core Value": "Integrity and Accountability",
+                    "Description": "Valuing honesty, transparency, and ethical practices in all aspects of academic life."
+                },
+                {
+                    "Core Value": "Diversity and Inclusivity",
+                    "Description": "Fostering an inclusive culture where students from across the world feel welcomed and respected."
+                },
+                {
+                    "Core Value": "Global Perspective",
+                    "Description": "Actively engaging with international institutions and industries to provide global exposure."
+                }
+            ]
+        },
+        "feesIntro": "For the 2026 academic year, University College Dublin (UCD) fees for international (Non-EU) students are categorized by the specific college or faculty. Below is the breakdown (Approx. exchange rate 1 EUR = 91 INR).",
+        "fees": {
+            "undergraduate": {
+                "headers": [
+                    "Course Category",
+                    "Annual Fee (EUR)",
+                    "Annual Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Course Category": "Medicine (Non-EU)",
+                        "Annual Fee (EUR)": "€57,000 – €61,000",
+                        "Annual Fee (INR Approx.)": "₹51.8 L – ₹55.5 Lakhs"
+                    },
+                    {
+                        "Course Category": "Veterinary Medicine",
+                        "Annual Fee (EUR)": "€34,000 – €36,000",
+                        "Annual Fee (INR Approx.)": "₹30.9 L – ₹32.7 Lakhs"
+                    },
+                    {
+                        "Course Category": "Engineering & Architecture",
+                        "Annual Fee (EUR)": "€28,000 – €31,000",
+                        "Annual Fee (INR Approx.)": "₹25.4 L – ₹28.2 Lakhs"
+                    },
+                    {
+                        "Course Category": "Science & Computer Science",
+                        "Annual Fee (EUR)": "€27,000 – €30,000",
+                        "Annual Fee (INR Approx.)": "₹24.5 L – ₹27.3 Lakhs"
+                    },
+                    {
+                        "Course Category": "Business / Commerce",
+                        "Annual Fee (EUR)": "€21,000 – €25,000",
+                        "Annual Fee (INR Approx.)": "₹19.1 L – ₹22.7 Lakhs"
+                    },
+                    {
+                        "Course Category": "Arts, Humanities & Law",
+                        "Annual Fee (EUR)": "€21,000 – €23,000",
+                        "Annual Fee (INR Approx.)": "₹19.1 L – ₹20.9 Lakhs"
+                    }
+                ]
+            },
+            "postgraduate": {
+                "headers": [
+                    "Program Type",
+                    "Total Fee (EUR)",
+                    "Total Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Program Type": "Smurfit Business School (MBA)",
+                        "Total Fee (EUR)": "€36,000 – €37,500",
+                        "Total Fee (INR Approx.)": "₹32.7 L – ₹34.1 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Data & Computational Science",
+                        "Total Fee (EUR)": "€28,000 – €30,000",
+                        "Total Fee (INR Approx.)": "₹25.4 L – ₹27.3 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Engineering (Mechanical/Elec)",
+                        "Total Fee (EUR)": "€28,500 – €29,500",
+                        "Total Fee (INR Approx.)": "₹25.9 L – ₹26.8 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Management / Marketing",
+                        "Total Fee (EUR)": "€21,000 – €23,000",
+                        "Total Fee (INR Approx.)": "₹19.1 L – ₹20.9 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.A. International Relations / Arts",
+                        "Total Fee (EUR)": "€20,000 – €22,000",
+                        "Total Fee (INR Approx.)": "₹18.2 L – ₹20.0 Lakhs"
+                    }
+                ]
+            }
+        },
+        "durationIntro": "Indian students planning to study abroad in Ireland at University College Dublin must meet specific academic and admission requirements. Below is a summary of the eligibility criteria.",
+        "duration": {
+            "headers": [
+                "Criteria",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Criteria": "Academic Qualification (UG)",
+                    "Details": "Completion of 10+2 (CBSE/ISC/State Boards) with an average of 75%–90% depending on the course."
+                },
+                {
+                    "Criteria": "Academic Qualification (PG)",
+                    "Details": "Bachelor’s degree in a relevant field with minimum 60%–75% or equivalent CGPA."
+                },
+                {
+                    "Criteria": "English Language Requirement",
+                    "Details": "IELTS minimum 6.5 overall (no band below 6.0) or equivalent TOEFL/PTE score."
+                },
+                {
+                    "Criteria": "English Waiver Option",
+                    "Details": "Possible for students with strong English scores in CBSE/ISC (subject to university approval)."
+                },
+                {
+                    "Criteria": "Financial Proof",
+                    "Details": "Proof of sufficient funds to cover tuition and living expenses."
+                }
+            ]
+        },
+        "studentSupport": "University College Dublin (UCD) offers a comprehensive support system designed to help international students adapt to life in Ireland. Pre-departure guidance covers visa assistance and accommodation support. Upon arrival, structured orientation programs introduce students to the campus and local culture. Academically, UCD provides advisors, tutoring, writing centers, and study workshops. For personal well-being, students have access to counseling services, health support, and mental wellness programs. Additionally, mentoring and buddy programs pair newcomers with experienced students to help with academic and cultural adjustment. The university also organizes cultural events and networking sessions to foster a strong sense of community.",
+        "recognition": "University College Dublin, established in 1854, is one of the most prestigious and largest universities in Ireland. It consistently ranks among the top universities globally. UCD degrees are highly valued by employers worldwide due to the university's focus on innovation, research, and practical skills. The institution is part of global academic networks and holds affiliations with top-ranking universities and leading multinational companies, ensuring excellent employability outcomes for its graduates.",
+        "hostelFacilities": "UCD’s Belfield campus is one of the largest in Europe, offering modern infrastructure and on-campus residences. Facilities include advanced laboratories, digital libraries, sports complexes, fitness centers, cafes, and restaurants. The university also provides support for finding off-campus housing. Being located in Dublin, students gain access to cultural landmarks, entertainment, and networking opportunities with global companies based in the city.",
+        "studentLife": "Student life at UCD is dynamic and diverse. With over 70+ societies and numerous sports clubs, students can participate in music, drama, debating, cultural events, and athletics. Regular campus festivals and student-led initiatives create a lively culture. The campus hosts a multicultural community from over 150 countries, facilitating cross-cultural interaction and global friendships. This environment encourages personal growth and leadership development alongside academic excellence.",
+        "whyChooseUsIntro": "Planning to study at University College Dublin requires expert guidance. iExplain Education provides personalized counseling and end-to-end support to ensure a smooth admission journey for international students.",
+        "whyChooseUs": [
+            "Expert Career Counseling: Personalized guidance based on academic background and future goals.",
+            "Complete Admission Assistance: Managing the process from university selection to application submission.",
+            "Strong Documentation Support: Helping prepare essential documents like SOPs, LORs, and CVs.",
+            "Visa & Travel Support: Complete assistance with the student visa process and travel arrangements.",
+            "Scholarship & Financial Guidance: Assistance with fee planning, scholarships, and education loans.",
+            "Pre-Departure & Post-Arrival Services: Briefings on life in Ireland and ongoing support after arrival.",
+            "Global Expertise: Reliable and updated information about international education in Ireland.",
+            "Student-Focused Approach: Dedicated to helping students build strong medical and professional careers."
+        ],
+        "documents": [
+            {
+                "document": "Academic Transcripts",
+                "details": "10th and 12th mark sheets for UG; Bachelor's degree transcripts for PG."
+            },
+            {
+                "document": "Passport",
+                "details": "Mandatory for application and visa process; original passport required."
+            },
+            {
+                "document": "English Proficiency Score",
+                "details": "IELTS, TOEFL, or PTE scores as per course requirements."
+            },
+            {
+                "document": "Statement of Purpose (SOP)",
+                "details": "Explaining academic goals and reasons for choosing the program."
+            },
+            {
+                "document": "Letters of Recommendation (LOR)",
+                "details": "Usually 1–2 academic or professional references required."
+            },
+            {
+                "document": "CV / Resume",
+                "details": "Required for postgraduate and specialized professional courses."
+            },
+            {
+                "document": "Financial Proof",
+                "details": "Bank statements or proof of funds for tuition and living costs."
+            },
+            {
+                "document": "Entrance Exam Proof",
+                "details": "GMAT/GRE/SAT scores for specific programs if applicable."
+            }
+        ],
+        "conclusion": "University College Dublin stands as a premier institution for students seeking high-quality education and global exposure. With its strong emphasis on research innovation and holistic development, UCD provides a world-class environment for academic growth. For Indian students, UCD offers excellent support services, scholarship opportunities, and a vibrant multicultural community. Choosing UCD through iExplain Education ensures that students receive expert guidance and end-to-end assistance, making the transition to studying in Ireland smooth and successful. A degree from UCD opens doors to global career prospects and prepares students to become leaders in their fields.",
+        "faqs": [
+            {
+                "question": "Why should Indian students choose University College Dublin for studying abroad?",
+                "answer": "University College Dublin is a top-ranking university known for world-class academic programs and modern infrastructure. Indian students benefit from international support, vibrant campus life, and strong global recognition of degrees."
+            },
+            {
+                "question": "What programs are offered for international students at UCD?",
+                "answer": "UCD offers a wide range of programs including Bachelor’s, Master’s, and doctoral degrees in fields like Medicine, Engineering, Business, Law, Arts, and Computer Science."
+            },
+            {
+                "question": "Does UCD provide scholarships for Indian and international students?",
+                "answer": "Yes, UCD offers various merit-based scholarships such as the Global Excellence Scholarship, which can cover 50% or 100% of tuition fees."
+            },
+            {
+                "question": "How is campus life at University College Dublin?",
+                "answer": "Campus life is vibrant with numerous student clubs, sports activities, and cultural events. UCD provides modern facilities including residences, libraries, and recreational centers."
+            },
+            {
+                "question": "What support services are available for international students?",
+                "answer": "UCD offers guidance for orientation, academic counseling, visa assistance, and accommodation to ensure a smooth transition for students from India and other countries."
+            },
+            {
+                "question": "What are the eligibility criteria for Indian students at UCD?",
+                "answer": "Criteria include strong academic records (10+2 or Bachelor's), minimum English proficiency scores (IELTS 6.5), and meeting subject-specific prerequisites."
+            },
+            {
+                "question": "Is MBBS or Medicine offered at University College Dublin?",
+                "answer": "Yes, UCD offers highly recognized medical programs. The graduates are eligible for registration with global medical councils, including India’s Medical Council."
+            },
+            {
+                "question": "How can I apply for admission at University College Dublin?",
+                "answer": "Indian students can apply through UCD’s online portal or authorized consultants like iExplain Education, submitting transcripts, English scores, and an SOP."
+            },
+            {
+                "question": "What career opportunities are available after graduating from UCD?",
+                "answer": "Graduates have excellent global prospects due to UCD's strong industry connections, internships, and high employability rankings."
+            },
+            {
+                "question": "Is UCD safe for international students?",
+                "answer": "Yes, UCD is located in a safe environment with modern security systems and student support services ensuring the well-being of the multicultural campus community."
+            }
+        ]
+    },
+    "dublin-city-university": {
+        "title": "Dublin City University",
+        "coursetype": "Study Abroad",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/DCU_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/DCU_Mobile.webp",
+        "intro": {
+            "text": "Dublin City University (DCU) is a prestigious and fast-growing public university located in Dublin, Ireland, widely recognized for its academic excellence, innovative teaching methods, and strong industry partnerships. Established in 1975 as the National Institute for Higher Education and officially granted university status in 1989, DCU has transformed into a globally respected institution that attracts students from all over the world seeking quality education in Ireland.\n\nThe university is particularly well-known for its career-oriented approach to education, making it a top destination for students planning to study abroad in Ireland. DCU focuses on equipping students with practical skills, real-world experience, and industry exposure through internships, research projects, and collaborations with leading multinational companies. This emphasis on employability has consistently placed DCU among the top universities in Ireland for graduate employment rates.\n\nDublin City University offers a diverse range of undergraduate and postgraduate programs across multiple disciplines, including business, engineering, computer science, data analytics, humanities, social sciences, and health sciences. Its courses are designed to meet global academic standards while aligning with current industry demands, ensuring students receive a future-ready education. The university is especially recognized for its strengths in technology, innovation, entrepreneurship, and research excellence.\n\nBeing located in Dublin, one of Europe’s leading tech and business hubs, gives DCU students a significant advantage. Dublin is home to the European headquarters of many global companies like Google, Facebook, and Microsoft, offering excellent opportunities for internships, networking, and employment. This strategic location further strengthens DCU’s reputation as a preferred choice for students aiming to build successful careers in Europe."
+        },
+        "quickOverview": {
+            "University Name": "Dublin City University (DCU)",
+            "Location": "Dublin, Ireland",
+            "Established": "1975 (University status in 1989)",
+            "Type": "Public University",
+            "Popular For": "Academic excellence, innovation, industry connections",
+            "Medium of Instruction": "English",
+            "International Students": "Students from 100+ countries",
+            "Research Focus": "AI, Biotechnology, Sustainability, Digital Innovation"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is crucial for building a successful global career, and Dublin City University (DCU) stands out as one of the best options for students planning to study abroad in Ireland. Here are the key reasons:",
+            "headers": [
+                "Heading",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Heading": "Career-Focused Education System",
+                    "Details": "DCU is widely known for programs that combine academic learning with practical experience, designed in collaboration with industry experts to provide job-ready skills."
+                },
+                {
+                    "Heading": "Prime Location in Dublin",
+                    "Details": "Located in a leading tech and business hub, DCU offers access to top global companies like Google, Microsoft, and Meta for internships and networking."
+                },
+                {
+                    "Heading": "High Graduate Employability Rate",
+                    "Details": "The university consistently ranks high for employability, ensuring students are well-prepared for global job markets after graduation."
+                },
+                {
+                    "Heading": "Strong Focus on Research & Innovation",
+                    "Details": "DCU is a leader in Irish innovation, with dedicated centers in AI, biotechnology, and sustainability offering cutting-edge research opportunities."
+                },
+                {
+                    "Heading": "Modern Campus & Facilities",
+                    "Details": "The university features state-of-the-art infrastructure, including advanced laboratories, smart classrooms, digital libraries, and sports facilities."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "With students from over 100 countries, DCU provides a diverse and inclusive atmosphere ideal for developing global perspectives."
+                },
+                {
+                    "Heading": "Wide Range of Courses",
+                    "Details": "Programs are available across business, engineering, computer science, data analytics, humanities, and health sciences for diverse academic backgrounds."
+                },
+                {
+                    "Heading": "Excellent Support for International Students",
+                    "Details": "DCU provides comprehensive services such as career counseling, academic guidance, visa assistance, and accommodation support."
+                }
+            ]
+        },
+        "SyllabusIntro": "Dublin City University is driven by a clear mission to transform lives and societies. Its core values focus on excellence, innovation, and a student-centered approach.",
+        "syllabus": {
+            "headers": [
+                "Core Value",
+                "Description"
+            ],
+            "table": [
+                {
+                    "Core Value": "Excellence",
+                    "Description": "Striving for high standards in teaching, research, and student development to meet international education norms."
+                },
+                {
+                    "Core Value": "Innovation",
+                    "Description": "Encouraging creative thinking, entrepreneurship, and research-driven solutions to keep students competitive."
+                },
+                {
+                    "Core Value": "Student-Centered Approach",
+                    "Description": "Ensuring personalized learning, career support, and skill development are at the heart of the university mission."
+                },
+                {
+                    "Core Value": "Integrity and Ethics",
+                    "Description": "Promoting honesty, transparency, and ethical behavior in all academic and professional practices."
+                },
+                {
+                    "Core Value": "Inclusivity and Diversity",
+                    "Description": "Fostering a multicultural environment that welcomes students from all backgrounds with mutual respect."
+                }
+            ]
+        },
+        "feesIntro": "For the 2026/27 academic year, Dublin City University (DCU) remains a budget-friendly alternative while maintaining high global rankings. Below is the breakdown (Approx. exchange rate 1 EUR = 91 INR).",
+        "fees": {
+            "undergraduate": {
+                "headers": [
+                    "Faculty / Course Area",
+                    "Annual Fee (EUR)",
+                    "Annual Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Faculty / Course Area": "Business & Accounting",
+                        "Annual Fee (EUR)": "€17,000",
+                        "Annual Fee (INR Approx.)": "₹15.5 Lakhs"
+                    },
+                    {
+                        "Faculty / Course Area": "Engineering (B.Eng)",
+                        "Annual Fee (EUR)": "€17,900 – €19,400",
+                        "Annual Fee (INR Approx.)": "₹16.3 L – ₹17.6 Lakhs"
+                    },
+                    {
+                        "Faculty / Course Area": "Computer Science / Data Science",
+                        "Annual Fee (EUR)": "€17,900",
+                        "Annual Fee (INR Approx.)": "₹16.3 Lakhs"
+                    },
+                    {
+                        "Faculty / Course Area": "Science & Health (B.Sc)",
+                        "Annual Fee (EUR)": "€17,000 – €18,500",
+                        "Annual Fee (INR Approx.)": "₹15.5 L – ₹16.8 Lakhs"
+                    },
+                    {
+                        "Faculty / Course Area": "Humanities & Social Sciences",
+                        "Annual Fee (EUR)": "€15,000 – €16,500",
+                        "Annual Fee (INR Approx.)": "₹13.6 L – ₹15.0 Lakhs"
+                    },
+                    {
+                        "Faculty / Course Area": "Education (B.Ed)",
+                        "Annual Fee (EUR)": "€16,900",
+                        "Annual Fee (INR Approx.)": "₹15.4 Lakhs"
+                    }
+                ]
+            },
+            "postgraduate": {
+                "headers": [
+                    "Program Type",
+                    "Total Fee (EUR)",
+                    "Total Fee (INR Approx.)"
+                ],
+                "table": [
+                    {
+                        "Program Type": "M.Sc. Computing / AI / Data Analytics",
+                        "Total Fee (EUR)": "€18,000 – €22,000",
+                        "Total Fee (INR Approx.)": "₹16.4 L – ₹20.0 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Business / Finance / Marketing",
+                        "Total Fee (EUR)": "€17,000 – €21,000",
+                        "Total Fee (INR Approx.)": "₹15.5 L – ₹19.1 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.Sc. Electronic & Computer Engineering",
+                        "Total Fee (EUR)": "€18,000 – €20,000",
+                        "Total Fee (INR Approx.)": "₹16.4 L – ₹18.2 Lakhs"
+                    },
+                    {
+                        "Program Type": "M.A. Journalism / Communications",
+                        "Total Fee (EUR)": "€16,000 – €18,000",
+                        "Total Fee (INR Approx.)": "₹14.5 L – ₹16.4 Lakhs"
+                    },
+                    {
+                        "Program Type": "DCU Executive MBA (Part-time)",
+                        "Total Fee (EUR)": "€13,500 (per year)",
+                        "Total Fee (INR Approx.)": "₹12.3 Lakhs"
+                    }
+                ]
+            }
+        },
+        "durationIntro": "Indian students planning to study at Dublin City University must meet specific academic and language requirements for eligibility. Below is a summary of the general criteria.",
+        "duration": {
+            "headers": [
+                "Criteria",
+                "Details"
+            ],
+            "table": [
+                {
+                    "Criteria": "Undergraduate Academic Requirement",
+                    "Details": "12th grade from a recognized board with 60%–75% or above depending on course."
+                },
+                {
+                    "Criteria": "Postgraduate Academic Requirement",
+                    "Details": "Bachelor’s degree in a relevant field with minimum 60% or above."
+                },
+                {
+                    "Criteria": "English Language Requirement",
+                    "Details": "IELTS 6.0–6.5 overall (no band less than 5.5–6.0) / TOEFL / PTE accepted."
+                },
+                {
+                    "Criteria": "Age Requirement",
+                    "Details": "Minimum 18 years at the time of admission."
+                },
+                {
+                    "Criteria": "Visa Requirement",
+                    "Details": "Valid Ireland student visa, proof of funds, and health insurance."
+                }
+            ]
+        },
+        "studentSupport": "Dublin City University (DCU) provides well-structured support services for international students. Pre-arrival and post-arrival assistance includes guidance via handbooks and orientation programs. The Student Advice & Support Centre serves as a one-stop solution for academic and personal queries. Learning support services offer study skills, writing assistance, and subject-specific workshops. DCU also prioritizes mental health through confidential counseling and the 'Care & Connect' initiative. Specialized assistance is available for students with disabilities, while the Global Connect Café and numerous cultural clubs help international students build social networks.",
+        "recognition": "Dublin City University, established in 1975, is a prestigious and fast-growing public institution in Ireland. It is internationally recognized for its academic excellence and strong graduate employment rates. The university is a leader in research and innovation, maintaining collaborations with top multinational companies like Google and Microsoft. DCU's degrees carry significant global weight, making its graduates highly sought after in the international job market.",
+        "hostelFacilities": "DCU offers on-campus accommodation facilities across its multiple modern campuses. Infrastructure includes state-of-the-art labs, sports complexes, and central student hubs like the 'U Building' for relaxation and collaboration. The university also provides guidance for off-campus housing. Located in Dublin, students enjoy easy access to Europe’s leading tech Hubs, providing a safe and student-friendly environment for study and living.",
+        "studentLife": "Student life at DCU is vibrant and memory-rich. Beyond academics, students participate in a wide range of clubs and societies covering sports, arts, and technology. The 'U Building' acts as a social epicenter with lounges and event spaces. DCU features excellent sports and fitness facilities, including a gym and swimming pool. Regular cultural festivals and events organized by the Students’ Union ensure a balanced and engaging university experience in one of Europe’s most lively cities.",
+        "whyChooseUsIntro": "Choosing Dublin City University for higher education in Ireland ensures a future filled with global exposure and quality learning. DCU offers strong industry links and placement opportunities that are ideal for achieving long-term career success.",
+        "whyChooseUs": [
+            "Quality education with a practical learning approach.",
+            "Strong placement opportunities and industry connections.",
+            "Global exposure with students from over 100 countries.",
+            "Merit-based scholarships specifically for Indian students.",
+            "Comprehensive support services from admission to graduation.",
+            "Modern campus facilities and on-campus accommodation.",
+            "Strategic location in one of Europe's top student cities."
+        ],
+        "documents": [
+            {
+                "document": "Academic Transcripts",
+                "details": "10th and 12th certificates for UG; degree transcripts for PG applications."
+            },
+            {
+                "document": "Passport",
+                "details": "Valid international passport copy."
+            },
+            {
+                "document": "SOP (Statement of Purpose)",
+                "details": "Detailing academic goals and reasons for choosing DCU."
+            },
+            {
+                "document": "LOR (Letters of Recommendation)",
+                "details": "Academic or professional references required for postgraduate programs."
+            },
+            {
+                "document": "CV / Resume",
+                "details": "Comprehensive summary of education and experience for PG courses."
+            },
+            {
+                "document": "English Proficiency Score",
+                "details": "IELTS, TOEFL, or PTE test results."
+            },
+            {
+                "document": "Health Insurance",
+                "details": "Mandatory coverage for the duration of the student visa."
+            }
+        ],
+        "conclusion": "In conclusion, Dublin City University stands out as a top choice for students planning to study abroad in Ireland. With its high-quality education system, career-focused programs, modern campus facilities, and strong industry connections, DCU offers everything that international students need for a successful academic journey. For Indian students, the university provides excellent opportunities through scholarships, international student support, and globally recognized degrees, making it easier to build a strong future. Overall, choosing DCU means investing in a future filled with global exposure and long-term professional growth.",
+        "faqs": [
+            {
+                "question": "Where is Dublin City University located?",
+                "answer": "Dublin City University is located in Dublin, the capital city of Ireland, which is a major hub for education, technology, and business."
+            },
+            {
+                "question": "Is Dublin City University good for international students?",
+                "answer": "Yes, DCU is highly popular due to its career-focused education, modern campus, global recognition, and strong industry connections."
+            },
+            {
+                "question": "What courses are offered at Dublin City University?",
+                "answer": "DCU offers a wide range of undergraduate and postgraduate programs in business, engineering, computer science, data analytics, humanities, and health sciences."
+            },
+            {
+                "question": "What is the eligibility criteria for Indian students at DCU?",
+                "answer": "Indian students need 60%–75% in 12th (for UG) or a Bachelor’s degree with 60%+ (for PG), along with English proficiency tests like IELTS (6.0–6.5)."
+            },
+            {
+                "question": "Does Dublin City University offer scholarships for Indian students?",
+                "answer": "Yes, DCU provides merit-based scholarships, international scholarships, and Government of Ireland scholarships to reduce tuition fees."
+            },
+            {
+                "question": "What is the medium of instruction at DCU?",
+                "answer": "The medium of instruction at Dublin City University is English, so students must meet English language requirements."
+            },
+            {
+                "question": "What are the career opportunities after studying at DCU?",
+                "answer": "Graduates have excellent prospects in Ireland and globally thanks to strong industry connections and high employability rates."
+            },
+            {
+                "question": "Is Dublin a good city for students?",
+                "answer": "Yes, Dublin is one of the best student cities in Europe, offering a safe environment, vibrant lifestyle, and excellent job opportunities."
+            },
+            {
+                "question": "Does DCU provide accommodation for international students?",
+                "answer": "Yes, Dublin City University offers on-campus accommodation along with guidance for off-campus housing options."
+            },
+            {
+                "question": "Why should I choose DCU for studying in Ireland?",
+                "answer": "You should choose DCU because of its quality education, practical learning approach, global exposure, scholarships, and strong placement opportunities."
+            }
+        ]
+    },
+    
 };
