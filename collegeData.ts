@@ -1,6 +1,7 @@
 import { CollegeDetailData } from "./types";
+import { STUDY_ABROAD_COLLEGE_DETAILS } from "./studyAbroadCollegeData";
 
-export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
+const MBBS_ABROAD_COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
     "kazan-federal-university": {
         title: "Kazan Federal University",
         coursetype: "MBBS",
@@ -7750,4 +7751,9 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
             }
         ]
     },
+};
+
+export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
+    ...MBBS_ABROAD_COLLEGE_DETAILS,
+    ...STUDY_ABROAD_COLLEGE_DETAILS,
 };

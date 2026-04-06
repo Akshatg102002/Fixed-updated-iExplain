@@ -617,6 +617,19 @@ const LegacyMBBSAbroadRedirect = () => {
   return <Navigate to={`/mbbs-in-${createSlug(subPath || 'russia')}`} replace />;
 };
 
+const LegacyStudyAbroadRedirect = () => {
+  const { subPath } = useParams<{ subPath: string }>();
+  const normalized = createSlug(subPath || '');
+
+  if (!normalized) return <Navigate to="/study-in-usa" replace />;
+
+  if (STRUCTURED_COLLEGE_DETAILS[normalized] || LEGACY_COLLEGE_DETAILS[normalized]) {
+    return <Navigate to={`/${normalized}`} replace />;
+  }
+
+  return <Navigate to={`/study-in-${normalized}`} replace />;
+};
+
 const BlogDetailWrapper = () => {
   const { slug } = useParams<{ category: string, slug: string }>();
   if (!slug) return <Navigate to="/blog" replace />;
@@ -761,6 +774,7 @@ const App: React.FC = () => {
           <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
+          <Route path="/study-abroad/:subPath" element={<LegacyStudyAbroadRedirect />} />
           <Route path="/exams/:subPath" element={<ExamPage />} />
           <Route path="/office/:slug" element={<OfficeDetailPage />} />
           <Route path="/college/:slug" element={<LegacyCollegeRedirect />} />
