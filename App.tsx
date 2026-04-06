@@ -43,6 +43,7 @@ import {
   TERMS_CONTENT
 } from './data.ts';
 import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from './collegeData.ts';
+import { STUDY_ABROAD_COLLEGE_DETAILS } from './studyAbroadCollegeData.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
@@ -536,6 +537,8 @@ const CategoryTitleSlugWrapper = () => {
   const normalizedSlug = createSlug(titleSlug || '');
   const [remotePage, setRemotePage] = useState<any>(null);
   const [collegePage, setCollegePage] = useState<any>(null);
+  const [studyAbroadPage, setStudyAbroadPage] = useState<any>(null);
+  const [mbbsAbroadPage, setMbbsAbroadPage] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -558,10 +561,28 @@ const CategoryTitleSlugWrapper = () => {
           setRemotePage(null);
         }
 
+        setStudyAbroadPage(null);
+        setMbbsAbroadPage(null);
+
         if (!collegeSnapshot.empty) {
-          setCollegePage(normalizeCollegeDetailData(collegeSnapshot.docs[0].data(), normalizedSlug));
-        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
-          setCollegePage(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug], normalizedSlug));
+          const collegeDoc = collegeSnapshot.docs[0].data();
+
+          if (collegeDoc?.category === 'Study Abroad' && collegeDoc?.payload) {
+            setStudyAbroadPage(collegeDoc.payload);
+            setCollegePage(null);
+          } else if (collegeDoc?.category === 'MBBS Abroad' && collegeDoc?.payload) {
+            setMbbsAbroadPage(collegeDoc.payload);
+            setCollegePage(null);
+          } else {
+            setCollegePage(normalizeCollegeDetailData(collegeDoc, normalizedSlug));
+          }
+        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+          setCollegePage(normalizeCollegeDetailData(
+            STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
+            || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]
+            || LEGACY_COLLEGE_DETAILS[normalizedSlug],
+            normalizedSlug
+          ));
         } else {
           setCollegePage(null);
         }
@@ -569,8 +590,16 @@ const CategoryTitleSlugWrapper = () => {
         console.error('Failed to load dynamic page:', error);
         setRemotePage(null);
 
-        if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
-          setCollegePage(normalizeCollegeDetailData(STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug], normalizedSlug));
+        setStudyAbroadPage(null);
+        setMbbsAbroadPage(null);
+
+        if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+          setCollegePage(normalizeCollegeDetailData(
+            STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
+            || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]
+            || LEGACY_COLLEGE_DETAILS[normalizedSlug],
+            normalizedSlug
+          ));
         } else {
           setCollegePage(null);
         }
@@ -584,6 +613,14 @@ const CategoryTitleSlugWrapper = () => {
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
   if (isLoading) return <LoadingOverlay />;
+
+  if (studyAbroadPage) {
+    return <StudyAbroadDetailPage data={studyAbroadPage} />;
+  }
+
+  if (mbbsAbroadPage) {
+    return <MBBSDetailPage data={mbbsAbroadPage} />;
+  }
 
   if (collegePage) {
     return <CollegeDetailPage data={collegePage} />;
