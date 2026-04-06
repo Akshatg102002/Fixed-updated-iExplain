@@ -17,6 +17,8 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
   const collegeName = data.title;
   const coursetype = data.coursetype;
   const benefitItems = Array.isArray(data.benefits?.items) ? data.benefits.items : [];
+  const feeRows = Array.isArray(data.fees?.structure) ? data.fees.structure : [];
+  const feeHeaders = feeRows.length > 0 ? Object.keys(feeRows[0]) : [];
 
   const renderParagraphs = (text: string) =>
     text.split("\n\n").map((para, i) => (
@@ -190,28 +192,32 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
               </p>
             )}
 
-            <table className="w-full border border-collapse">
-              <thead>
-                <tr className="bg-gray-100">
-                  {Object.keys(data.fees.structure[0]).map((key) => (
-                    <th key={key} className="border p-3 text-left font-semibold capitalize">
-                      {key}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {data.fees.structure.map((row, i) => (
-                  <tr key={i}>
-                    {Object.values(row).map((value, idx) => (
-                      <td key={idx} className="border p-3">
-                        {value}
-                      </td>
+            {feeRows.length > 0 ? (
+              <table className="w-full border border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    {feeHeaders.map((key) => (
+                      <th key={key} className="border p-3 text-left font-semibold capitalize">
+                        {key}
+                      </th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {feeRows.map((row, i) => (
+                    <tr key={i}>
+                      {feeHeaders.map((header, idx) => (
+                        <td key={idx} className="border p-3">
+                          {(row as Record<string, string>)[header] || ''}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <p className="text-gray-700">Fee details will be updated soon. Please contact our counselor for the latest fee structure.</p>
+            )}
           </section>
         )}
 

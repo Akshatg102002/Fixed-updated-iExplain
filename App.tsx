@@ -477,6 +477,27 @@ const normalizeCollegeDetailData = (raw: any, slug: string) => {
     }
     return [];
   })();
+  const normalizedFees = (() => {
+    if (!raw.fees) return { structure: [] };
+    if (Array.isArray(raw.fees)) return { structure: raw.fees };
+    if (Array.isArray(raw.fees.structure)) return raw.fees;
+
+    if (typeof raw.fees === 'object') {
+      const feeGroups = Object.entries(raw.fees).filter(([, value]: [string, any]) => Array.isArray(value?.table));
+      if (!feeGroups.length) return { structure: [] };
+
+      const flattenedRows = feeGroups.flatMap(([groupName, value]: [string, any]) =>
+        value.table.map((row: Record<string, string>) => ({
+          'Program Level': groupName.charAt(0).toUpperCase() + groupName.slice(1),
+          ...row,
+        }))
+      );
+
+      return { structure: flattenedRows };
+    }
+
+    return { structure: [] };
+  })();
 
   return {
     ...raw,
@@ -507,7 +528,7 @@ const normalizeCollegeDetailData = (raw: any, slug: string) => {
     duration: raw.duration || { mbbs: 'Please contact counselor', internship: 'Please contact counselor' },
     syllabus: raw.syllabus || [],
     documents: raw.documents || [],
-    fees: raw.fees || { structure: [] },
+    fees: normalizedFees,
     courses: raw.courses || [],
     studentLife: raw.studentLife || [],
     placements: raw.placements || [],
