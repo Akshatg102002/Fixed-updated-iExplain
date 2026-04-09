@@ -285,6 +285,50 @@ export interface StudyAbroadDetailData {
   }[];
 }
 
+export interface StudyAbroadCollegeDetailData {
+  title: string;
+  coursetype: string;
+  heroImage: string;
+  heroImageMobile?: string;
+  intro: { text: string };
+  quickOverview: Record<string, string>;
+  benefits: {
+    intro: string;
+    items: { heading: string; details: string }[];
+  };
+  SyllabusIntro: string;
+  syllabus: {
+    headers: string[];
+    table: Record<string, string>[];
+  };
+  fees: {
+    sections: {
+      title: string;
+      headers: string[];
+      table: Record<string, string>[];
+    }[];
+  };
+  duration: {
+    headers: string[];
+    table: Record<string, string>[];
+  };
+  studentSupport: string;
+  recognition: string;
+  hostelFacilities: string;
+  studentLife: string;
+  scholarshipIntro: string;
+  scholarships: { title: string; details: string }[];
+  eligibility: {
+    headers: string[];
+    table: Record<string, string>[];
+  };
+  whyChooseUsIntro: string;
+  whyChooseUs: string[];
+  documents: { document: string; details: string }[];
+  conclusion: string;
+  faqs: { question: string; answer: string }[];
+}
+
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
 interface TitledPoint {

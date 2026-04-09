@@ -24,6 +24,7 @@ import ProgramDetailPage from './components/ProgramDetailPage.tsx';
 import StudyIndiaDetailPage from './components/StudyIndiaDetailPage.tsx';
 import StudyAbroadDetailPage from './components/StudyAbroadDetailPage.tsx';
 import MBBSDetailPage from './components/MBBSDetailPage.tsx';
+import StudyAbroadCollegeDetailPage from './components/StudyAbroadCollegeDetailPage.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
 import AirportDiaries from './components/AirportDiaries.tsx';
 import StudentReviews from './components/StudentReviews.tsx';
@@ -559,6 +560,7 @@ const CategoryTitleSlugWrapper = () => {
   const [remotePage, setRemotePage] = useState<any>(null);
   const [collegePage, setCollegePage] = useState<any>(null);
   const [studyAbroadPage, setStudyAbroadPage] = useState<any>(null);
+  const [studyAbroadCollegePage, setStudyAbroadCollegePage] = useState<any>(null);
   const [mbbsAbroadPage, setMbbsAbroadPage] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -583,6 +585,7 @@ const CategoryTitleSlugWrapper = () => {
         }
 
         setStudyAbroadPage(null);
+        setStudyAbroadCollegePage(null);
         setMbbsAbroadPage(null);
 
         if (!collegeSnapshot.empty) {
@@ -591,16 +594,21 @@ const CategoryTitleSlugWrapper = () => {
           if (collegeDoc?.category === 'Study Abroad' && collegeDoc?.payload) {
             setStudyAbroadPage(collegeDoc.payload);
             setCollegePage(null);
+          } else if (collegeDoc?.payload?.scholarships && collegeDoc?.payload?.quickOverview) {
+            setStudyAbroadCollegePage(collegeDoc.payload);
+            setCollegePage(null);
           } else if (collegeDoc?.category === 'MBBS Abroad' && collegeDoc?.payload) {
             setMbbsAbroadPage(collegeDoc.payload);
             setCollegePage(null);
           } else {
             setCollegePage(normalizeCollegeDetailData(collegeDoc, normalizedSlug));
           }
-        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+        } else if (STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]) {
+          setStudyAbroadCollegePage(STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]);
+          setCollegePage(null);
+        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
           setCollegePage(normalizeCollegeDetailData(
             STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
-            || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]
             || LEGACY_COLLEGE_DETAILS[normalizedSlug],
             normalizedSlug
           ));
@@ -612,12 +620,15 @@ const CategoryTitleSlugWrapper = () => {
         setRemotePage(null);
 
         setStudyAbroadPage(null);
+        setStudyAbroadCollegePage(null);
         setMbbsAbroadPage(null);
 
-        if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+        if (STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]) {
+          setStudyAbroadCollegePage(STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]);
+          setCollegePage(null);
+        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
           setCollegePage(normalizeCollegeDetailData(
             STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
-            || STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]
             || LEGACY_COLLEGE_DETAILS[normalizedSlug],
             normalizedSlug
           ));
@@ -637,6 +648,10 @@ const CategoryTitleSlugWrapper = () => {
 
   if (studyAbroadPage) {
     return <StudyAbroadDetailPage data={studyAbroadPage} />;
+  }
+
+  if (studyAbroadCollegePage) {
+    return <StudyAbroadCollegeDetailPage data={studyAbroadCollegePage} />;
   }
 
   if (mbbsAbroadPage) {
