@@ -232,9 +232,33 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
 
   const getCollegeData = () => {
     if (activeCollegeTab === 'MBBS') return dynamicCollegeGroups.mbbs.length > 0 ? dynamicCollegeGroups.mbbs : FOOTER_COLLEGES.mbbs;
-    if (activeCollegeTab === 'STUDY') return dynamicCollegeGroups.study.length > 0 ? dynamicCollegeGroups.study : FOOTER_COLLEGES.study;
+    if (activeCollegeTab === 'STUDY') {
+      if (dynamicCollegeGroups.study.length === 0) return FOOTER_COLLEGES.study;
+
+      const dynamicCountries = new Set(
+        dynamicCollegeGroups.study.map((group: { country: string }) => group.country.toLowerCase())
+      );
+      const missingFallbackGroups = FOOTER_COLLEGES.study.filter(
+        (group) => !dynamicCountries.has(group.country.toLowerCase())
+      );
+
+      return [...dynamicCollegeGroups.study, ...missingFallbackGroups];
+    }
     if (activeCollegeTab === 'INDIA') return FOOTER_COLLEGES.mbbs_india;
     return [];
+  };
+
+  const getMobileStudyCollegeData = () => {
+    if (dynamicCollegeGroups.study.length === 0) return FOOTER_COLLEGES.study;
+
+    const dynamicCountries = new Set(
+      dynamicCollegeGroups.study.map((group: { country: string }) => group.country.toLowerCase())
+    );
+    const missingFallbackGroups = FOOTER_COLLEGES.study.filter(
+      (group) => !dynamicCountries.has(group.country.toLowerCase())
+    );
+
+    return [...dynamicCollegeGroups.study, ...missingFallbackGroups];
   };
 
   return (
@@ -468,15 +492,21 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                              
                              {mobileCollegeOpen.study && (
                                <div className="pl-6 space-y-4 border-l-2 border-gray-100 dark:border-slate-800 animate-fade-in">
-                                 {(dynamicCollegeGroups.study.length > 0 ? dynamicCollegeGroups.study : FOOTER_COLLEGES.study).map((country, idx) => (
+                                 {getMobileStudyCollegeData().map((country, idx) => (
                                    <div key={idx}>
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
-                                       {country.names.map((college, cIdx) => (
-                                         <Link key={cIdx} to={`/${createSlug(college)}`} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
-                                           {college}
-                                         </Link>
-                                       ))}
+                                       {country.names.map((college, cIdx) => {
+                                         const link = country.country === 'Europe Top Destinations'
+                                           ? createStudyInPath(college)
+                                           : `/${createSlug(college)}`;
+
+                                         return (
+                                           <Link key={cIdx} to={link} onClick={() => setIsMobileMenuOpen(false)} className="block text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-brand-blue dark:hover:text-white">
+                                             {college}
+                                           </Link>
+                                         );
+                                       })}
                                      </div>
                                    </div>
                                  ))}
