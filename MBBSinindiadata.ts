@@ -105,8 +105,8 @@ const buildMBBSIndiaStateData = (state: string, region: string): MBBSIndiaColleg
 const uttarPradeshMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Uttar Pradesh',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/up-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/up-medical-hero-mobile.jpg',
+  heroImage: 'https://www.google.com/search?q=https://example.com/images/up-medical-hero.jpg',
+  heroImageMobile: 'https://www.google.com/search?q=https://example.com/images/up-medical-hero-mobile.jpg',
   intro: {
     text: 'MBBS in Uttar Pradesh is one of the most popular choices among medical aspirants in India who want to become successful doctors through quality and affordable medical education. Uttar Pradesh has rapidly developed into a major hub for medical studies, offering a large number of government and private medical colleges with modern infrastructure, advanced laboratories, and well-equipped teaching hospitals. This makes it a preferred destination for students seeking MBBS admission in Uttar Pradesh as well as a strong foundation for a medical career in India.\n\nPursuing MBBS in Uttar Pradesh for students provides excellent clinical exposure because students get hands-on training in high-patient-volume hospitals. This real-time experience helps them develop strong practical skills along with theoretical knowledge. Most medical colleges in the state are approved by the National Medical Commission (NMC), ensuring standardized and quality education aligned with national medical guidelines.\n\nStudents who choose MBBS in Uttar Pradesh benefit from a wide range of options, including highly reputed government medical colleges with low fees and private institutions with modern facilities. Admission is strictly based on NEET-UG scores, making it a transparent and merit-based process for all students across India. Along with Uttar Pradesh, MBBS in India is considered one of the most competitive and respected medical education systems globally. India offers world-class medical training, experienced faculty, and diverse clinical exposure due to its large and varied patient population.'
   },
@@ -180,6 +180,7 @@ const uttarPradeshMBBSData: MBBSIndiaCollegeDetailData = {
     ]
   },
   fees: {
+    note: 'Uttar Pradesh has some of the best government and private medical colleges in India. Below is the per-year fee structure for private medical colleges in the state.',
     sections: [
       {
         title: 'Private Medical College Fees (MBBS)',
