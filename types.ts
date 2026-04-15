@@ -329,18 +329,7 @@ export interface StudyAbroadCollegeDetailData {
   faqs: { question: string; answer: string }[];
 }
 
-export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {
-  internship?: {
-    intro: string;
-    headers: string[];
-    table: Record<string, string>[];
-  };
-  cutOff?: {
-    title: string;
-    headers: string[];
-    table: Record<string, string>[];
-  };
-}
+export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {}
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
