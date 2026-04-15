@@ -1,4 +1,3 @@
-
 export interface Destination {
   id: string;
   name: string;
@@ -45,47 +44,25 @@ export interface College {
 export interface CollegeDetailData {
   id?: string;
   slug?: string;
-
-  // BASIC INFO
   title: string;
-
-  // HERO
   heroImage: string;
   heroImageMobile?: string;
-
-  // INTRO
   intro: {
     text: string;
   };
-
-  // QUICK FACTS
   quickFacts: Record<string, string>;
-
-  // OVERVIEW
   quickOverview: Record<string, string>;
-
-  // BENEFITS
   benefits: string[];
-
-  // ELIGIBILITY
   eligibility: Record<string, string>;
-
-  // DURATION
   duration: {
     mbbs: string;
     internship: string;
   };
-
-  // SYLLABUS
   syllabus: {
     year: string;
     subjects: string;
   }[];
-
-  // DOCUMENTS
   documents: string[];
-
-  // FEES
   fees: {
     structure: {
       label: string;
@@ -93,32 +70,16 @@ export interface CollegeDetailData {
     }[];
     note?: string;
   };
-
-  // COURSES
   courses: string[];
-
-  // STUDENT LIFE
   studentLife: string[];
-
-  // PLACEMENTS
   placements: string[];
-
-  // HOSTEL
   hostelFacilities: {
     intro: string;
     features: string[];
   };
-
-  // CAREER
   careerOpportunities: Record<string, string>;
-
-  // RECOGNITION
   recognition: string[];
-
-  // GALLERY
   gallery: string[];
-
-  // FAQ
   faqs: {
     question: string;
     answer: string;
@@ -221,64 +182,51 @@ export interface StudyAbroadDetailData {
   title: string;
   heroImage: string;
   heroImageMobile?: string;
-
   intro: {
     text: string;
     image: string;
   };
-
   whyStudy: string[];
-
   qualifications: {
     name: string;
     duration: string;
     description: string;
   }[];
-
   courseStreams: {
     stream: string;
     courses: string[];
     careers: string[];
   }[];
-
   topUniversities: {
     name: string;
     location: string;
     description: string;
   }[];
-
   partTimeWork: {
     hoursPerWeek: string;
     details: string[];
   };
-
   postStudyWork: {
     program: string;
     duration: string;
     description: string;
   };
-
   documentsRequired: string[];
-
   intakes: {
     intake: string;
     months: string;
     details: string;
   }[];
-
   cost: {
     tuitionFees: string;
     livingExpenses: string;
     additionalCosts?: string;
   };
-
   whyChooseUs: string[];
-
   lifeAndCareer: {
     description: string;
     points: string[];
   };
-
   faqs: {
     question: string;
     answer: string;
@@ -296,28 +244,29 @@ export interface StudyAbroadCollegeDetailData {
     intro: string;
     items: { heading: string; details: string }[];
   };
-  SyllabusIntro: string;
-  syllabus: {
+  SyllabusIntro?: string;
+  syllabus?: {
     headers: string[];
     table: Record<string, string>[];
   };
   fees: {
+    note?: string;
     sections: {
       title: string;
       headers: string[];
       table: Record<string, string>[];
     }[];
   };
-  duration: {
+  duration?: {
     headers: string[];
     table: Record<string, string>[];
   };
-  studentSupport: string;
-  recognition: string;
-  hostelFacilities: string;
-  studentLife: string;
-  scholarshipIntro: string;
-  scholarships: { title: string; details: string }[];
+  studentSupport?: string;
+  recognition?: string;
+  hostelFacilities?: string;
+  studentLife?: string;
+  scholarshipIntro?: string;
+  scholarships?: { title: string; details: string }[];
   eligibility: {
     headers: string[];
     table: Record<string, string>[];
@@ -329,7 +278,18 @@ export interface StudyAbroadCollegeDetailData {
   faqs: { question: string; answer: string }[];
 }
 
-export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {}
+export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {
+  internship?: {
+    intro: string;
+    headers: string[];
+    table: Record<string, string>[];
+  };
+  cutOff?: {
+    title: string;
+    headers: string[];
+    table: Record<string, string>[];
+  };
+}
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
@@ -540,11 +500,6 @@ export interface Testimonial {
   avatar: string;
 }
 
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
 export interface GalleryItem {
   url: string;
   caption: string;
@@ -584,3 +539,38 @@ export interface RouteState {
   view: AppView;
   subPath?: string;
 }
+
+/**
+ * Builds a template for MBBS India State Data
+ * @param state The name of the Indian State (e.g., "Uttar Pradesh")
+ * @param region The region (e.g., "North India")
+ */
+export const buildMBBSIndiaStateData = (state: string, region: string): MBBSIndiaCollegeDetailData => {
+  return {
+    title: `MBBS in ${state}`,
+    coursetype: "Undergraduate (MBBS) & Postgraduate (MD/MS)",
+    heroImage: "",
+    heroImageMobile: "",
+    intro: {
+      text: `MBBS in ${state} is a premier choice for students in ${region}...`
+    },
+    quickOverview: {},
+    benefits: {
+      intro: `Why choose ${state} for your medical studies?`,
+      items: []
+    },
+    fees: {
+      note: `Fee structure for medical colleges in ${state} for 2026.`,
+      sections: []
+    },
+    eligibility: {
+      headers: ["Criteria", "Details"],
+      table: []
+    },
+    documents: [],
+    whyChooseUsIntro: "Why seek guidance from iExplain Education?",
+    whyChooseUs: [],
+    conclusion: `Completing your MBBS in ${state} opens up vast career opportunities.`,
+    faqs: []
+  };
+};
