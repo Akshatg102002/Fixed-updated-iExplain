@@ -25,6 +25,7 @@ import StudyIndiaDetailPage from './components/StudyIndiaDetailPage.tsx';
 import StudyAbroadDetailPage from './components/StudyAbroadDetailPage.tsx';
 import MBBSDetailPage from './components/MBBSDetailPage.tsx';
 import StudyAbroadCollegeDetailPage from './components/StudyAbroadCollegeDetailPage.tsx';
+import MBBSinindiadetailpage from './components/MBBSinindiadetailpage.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
 import AirportDiaries from './components/AirportDiaries.tsx';
 import StudentReviews from './components/StudentReviews.tsx';
@@ -45,6 +46,7 @@ import {
 } from './data.ts';
 import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from './collegeData.ts';
 import { STUDY_ABROAD_COLLEGE_DETAILS } from './studyAbroadCollegeData.ts';
+import { MBBS_IN_INDIA_DETAILS } from './MBBSinindiadata.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
@@ -554,6 +556,18 @@ const StudyIndiaWrapper = () => {
   return <StudyIndiaDetailPage data={data} />;
 };
 
+const MBBSIndiaCollegeWrapper = () => {
+  const { titleSlug } = useParams<{ titleSlug: string }>();
+  const normalizedSlug = createSlug(titleSlug || '');
+
+  if (!normalizedSlug) return <Navigate to="/study-india/mbbs" replace />;
+
+  const data = MBBS_IN_INDIA_DETAILS[normalizedSlug];
+  if (!data) return <Navigate to="/study-india/mbbs" replace />;
+
+  return <MBBSinindiadetailpage data={data} />;
+};
+
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
@@ -832,6 +846,7 @@ const App: React.FC = () => {
           <Route path="/blog/:slug" element={<BlogDetailWrapper />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
+          <Route path="/mbbs-india/:titleSlug" element={<MBBSIndiaCollegeWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
           <Route path="/exams/:subPath" element={<ExamPage />} />

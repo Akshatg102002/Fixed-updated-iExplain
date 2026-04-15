@@ -329,6 +329,8 @@ export interface StudyAbroadCollegeDetailData {
   faqs: { question: string; answer: string }[];
 }
 
+export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {}
+
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
 interface TitledPoint {
