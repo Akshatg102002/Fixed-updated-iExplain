@@ -26,6 +26,7 @@ import StudyAbroadDetailPage from './components/StudyAbroadDetailPage.tsx';
 import MBBSDetailPage from './components/MBBSDetailPage.tsx';
 import StudyAbroadCollegeDetailPage from './components/StudyAbroadCollegeDetailPage.tsx';
 import MBBSinindiadetailpage from './components/MBBSinindiadetailpage.tsx';
+import EntranceExamDetailPage from './components/EntranceExamDetailPage.tsx';
 import WhoWeAre from './components/WhoWeAre.tsx';
 import AirportDiaries from './components/AirportDiaries.tsx';
 import StudentReviews from './components/StudentReviews.tsx';
@@ -39,7 +40,6 @@ import {
   INDIA_COURSES_DETAILED,
   STUDY_ABROAD_DETAILED,
   MBBS_ABROAD_DETAILED,
-  EXAMS_DETAILED,
   HERO_IMG_URL,
   PRIVACY_POLICY_CONTENT,
   TERMS_CONTENT
@@ -47,6 +47,7 @@ import {
 import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from './collegeData.ts';
 import { STUDY_ABROAD_COLLEGE_DETAILS } from './studyAbroadCollegeData.ts';
 import { MBBS_IN_INDIA_DETAILS } from './MBBSinindiadata.ts';
+import { ENTRANCE_EXAM_DETAILS } from './EntranceExamdata.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
@@ -432,31 +433,16 @@ const OfficeDetailPage = () => {
   );
 };
 
-const ExamPage = () => {
+const EntranceExamWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
-  const data = EXAMS_DETAILED[subPath || 'neet-ug'];
+  const normalizedSlug = createSlug(subPath || '');
 
+  if (!normalizedSlug) return <Navigate to="/exams/neet-ug" replace />;
+
+  const data = ENTRANCE_EXAM_DETAILS[normalizedSlug];
   if (!data) return <Navigate to="/exams/neet-ug" replace />;
 
-  // Mapping legacy exam data to new ProgramDetailPage format
-  // If data.content is present (like in neet-ug), use it.
-  // Otherwise construct it from legacy fields.
-  const contentHtml = data.content || `
-     ${data.overview ? `<h3>About</h3><p>${data.overview}</p>` : ''}
-     ${data.eligibility && data.eligibility.length > 0 ? `<h3>Eligibility</h3><ul>${data.eligibility.map((e: string) => `<li>${e}</li>`).join('')}</ul>` : ''}
-     ${data.syllabus && data.syllabus.length > 0 ? `<h3>Syllabus</h3><ul>${data.syllabus.map((s: string) => `<li>${s}</li>`).join('')}</ul>` : ''}
-     ${data.prepTips && data.prepTips.length > 0 ? `<h3>Preparation Tips</h3><ul>${data.prepTips.map((t: string) => `<li>${t}</li>`).join('')}</ul>` : ''}
-   `;
-
-  const adaptedData = {
-    title: data.title,
-    tagline: data.tagline,
-    heroImage: data.heroImage || HERO_IMG_URL,
-    content: contentHtml,
-    faqs: data.faqs ? data.faqs.map((f: any) => ({ question: f.q, answer: f.a })) : []
-  };
-
-  return <ProgramDetailPage data={adaptedData} type="course" />;
+  return <EntranceExamDetailPage data={data} />;
 };
 
 const AboutPage = () => <div className="py-20 text-center"><h1 className="text-4xl font-bold">About Us</h1><AboutSection compact={false} /></div>;
@@ -849,7 +835,8 @@ const App: React.FC = () => {
           <Route path="/mbbs-india/:titleSlug" element={<MBBSIndiaCollegeWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />
           <Route path="/mbbs-abroad/:subPath" element={<LegacyMBBSAbroadRedirect />} />
-          <Route path="/exams/:subPath" element={<ExamPage />} />
+          <Route path="/exams/:subPath" element={<EntranceExamWrapper />} />
+          <Route path="/entrance-exams/:subPath" element={<EntranceExamWrapper />} />
           <Route path="/office/:slug" element={<OfficeDetailPage />} />
           <Route path="/college/:slug" element={<LegacyCollegeRedirect />} />
           <Route path="/privacy-policy" element={<PolicyPage title="Privacy Policy" content={PRIVACY_POLICY_CONTENT} />} />

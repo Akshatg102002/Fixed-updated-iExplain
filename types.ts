@@ -535,6 +535,8 @@ export interface EntranceExamData {
   preparationTips: string[];
 }
 
+export type EntranceExamDataMap = Record<string, EntranceExamData>;
+
 export interface RouteState {
   view: AppView;
   subPath?: string;

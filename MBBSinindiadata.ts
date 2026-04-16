@@ -1429,12 +1429,12 @@ Overall, MBBS in Delhi (2026) is considered a top choice for medical aspirants w
 export const MBBS_IN_INDIA_DETAILS: Record<string, MBBSIndiaCollegeDetailData> = {
   'uttar-pradesh': uttarPradeshMBBSData,
   haryana: buildMBBSIndiaStateData('Haryana', 'North India'),
-  delhi: buildMBBSIndiaStateData('Delhi', 'North India'),
+  delhi: delhiMBBSData,
   uttarakhand: buildMBBSIndiaStateData('Uttarakhand', 'North India'),
-  'himachal-pradesh': buildMBBSIndiaStateData('Himachal Pradesh', 'North India'),
+  'himachal-pradesh': himachalPradeshMBBSData,
   rajasthan: rajasthanMBBSData,
-  maharashtra: buildMBBSIndiaStateData('Maharashtra', 'Central & West India'),
+  maharashtra: maharashtraMBBSData,
   'madhya-pradesh': buildMBBSIndiaStateData('Madhya Pradesh', 'Central & West India'),
   bihar: buildMBBSIndiaStateData('Bihar', 'East & South India'),
-  karnataka: buildMBBSIndiaStateData('Karnataka', 'East & South India')
+  karnataka: karnatakaMBBSData
 };
