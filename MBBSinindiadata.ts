@@ -443,13 +443,215 @@ const uttarPradeshMBBSData: MBBSIndiaCollegeDetailData = {
   }
 };
 
+
+
+const rajasthanMBBSData: MBBSIndiaCollegeDetailData = {
+  title: 'MBBS in Rajasthan',
+  coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
+  heroImage: 'https://example.com/images/rajasthan-medical-hero.jpg',
+  heroImageMobile: 'https://example.com/images/rajasthan-medical-hero-mobile.jpg',
+  intro: {
+    text: `MBBS in Rajasthan is a highly preferred option for medical aspirants who are looking for quality education, affordable fees, and excellent clinical exposure in India. Rajasthan has emerged as a strong hub for medical studies, offering a wide range of government and private medical colleges equipped with modern infrastructure, advanced laboratories, and well-established teaching hospitals. This makes it a popular destination for students seeking MBBS admission in Rajasthan and aiming to build a successful career in healthcare.
+
+Pursuing MBBS in Rajasthan for students provides strong academic training along with practical exposure, as medical colleges in the state are associated with high patient-flow hospitals. This allows students to gain hands-on experience in real-life medical scenarios, which is a crucial part of MBBS in India. Most colleges are approved by the National Medical Commission (NMC), ensuring standard quality education and recognition across the country.
+
+Students who choose MBBS in Rajasthan benefit from comparatively affordable fees in government colleges and a variety of options in private institutions. Admission is strictly based on NEET-UG scores, ensuring a transparent and merit-based selection process. The state also attracts students from across India due to its increasing number of medical seats and improving educational infrastructure.
+
+Along with Rajasthan, MBBS in India is known for its rigorous training, experienced faculty, and diverse clinical exposure. The Indian medical education system prepares students to handle a wide range of medical conditions, making them capable professionals both nationally and internationally.
+
+Overall, MBBS in Rajasthan is an excellent choice for students who want a balance of affordability, quality education, and strong clinical training. It provides a solid foundation for a successful medical career and is an important part of the growing scope of MBBS in India.`
+  },
+  quickOverview: {
+    'Course Name': 'MBBS (Bachelor of Medicine and Bachelor of Surgery)',
+    'Course Level': 'Undergraduate',
+    Duration: '5.5 Years (4.5 Years Academic + 1 Year Internship)',
+    Eligibility: '10+2 with PCB (Physics, Chemistry, Biology)',
+    'Minimum Marks': 'General: 50%',
+    'Entrance Exam': 'NEET-UG (Mandatory)',
+    'Admission Process': 'NEET-based Counselling',
+    'Counselling Authority': 'RUHS / State Medical Authority',
+    Approval: 'National Medical Commission (NMC)',
+    'Top College Types': 'Government & Private Medical Colleges',
+    'Career Options': 'Doctor, Surgeon, MD/MS, Government Jobs',
+    Internship: '1 Year Compulsory'
+  },
+  benefits: {
+    intro: 'Choosing MBBS in Rajasthan (2026) is an excellent option for medical aspirants who are looking for quality education, affordable fees, and strong clinical exposure. Rajasthan has rapidly developed its medical education infrastructure in recent years, with a growing number of government and private medical colleges. This increase in seats improves the chances of admission for students who want to pursue MBBS in Rajasthan through NEET-based counselling.',
+    items: [
+      { heading: 'Growing Number of Medical Colleges & Seats', details: 'Rajasthan has significantly increased its number of government and private medical colleges, improving admission chances for students pursuing MBBS in Rajasthan.' },
+      { heading: 'Affordable Government College Fees', details: 'Government medical colleges offer low tuition fees, making it a cost-effective option for students planning MBBS in India.' },
+      { heading: 'Top Medical Institutions', details: 'Renowned colleges like All India Institute of Medical Sciences Jodhpur and Sawai Man Singh Medical College provide high-quality education and excellent hospital facilities.' },
+      { heading: 'Strong Clinical Exposure', details: 'Hospitals attached to medical colleges have high patient flow, giving students real-time practical experience.' },
+      { heading: 'Transparent NEET-Based Admission', details: 'Admission is strictly based on NEET-UG scores, ensuring a fair and merit-based process.' },
+      { heading: 'Good Infrastructure & Facilities', details: 'Colleges are equipped with modern labs, libraries, hostels, and advanced medical equipment.' },
+      { heading: 'Wide Range of Private Colleges', details: 'Students have multiple private college options if they do not secure a government seat.' },
+      { heading: 'Better Career Opportunities', details: 'Graduates have strong chances for PG courses (MD/MS), government jobs, and private practice.' }
+    ]
+  },
+  SyllabusIntro: 'The MBBS in Rajasthan syllabus follows the guidelines of the National Medical Commission (NMC) and is similar across all medical colleges in India. The course is designed to provide a strong foundation in medical sciences along with practical clinical training, making it an important part of MBBS in India.',
+  syllabus: {
+    headers: ['Year', 'Subjects', 'Key Details'],
+    table: [
+      { Year: 'First Year', Subjects: 'Anatomy, Physiology, Biochemistry, Introduction to Clinical Medicine', 'Key Details': 'Basic understanding of human body structure, functions, and biochemical processes' },
+      { Year: 'Second Year', Subjects: 'Pathology, Microbiology, Pharmacology, Forensic Medicine', 'Key Details': 'Study of diseases, microorganisms, drug action, and medical-legal aspects' },
+      { Year: 'Third Year (Part 1)', Subjects: 'ENT, Ophthalmology, Community Medicine', 'Key Details': 'Focus on sensory organs and public health concepts' },
+      { Year: 'Final Year (Part 2)', Subjects: 'Medicine, Surgery, Pediatrics, Obstetrics & Gynaecology, Orthopedics', 'Key Details': 'Advanced clinical subjects with diagnosis and treatment training' },
+      { Year: 'Internship (1 Year)', Subjects: 'Hospital Training, Rural Posting, Emergency Care, Rotational Duties', 'Key Details': 'Hands-on practical experience across all departments' }
+    ]
+  },
+  fees: {
+    note: 'Rajasthan is home to some of the best medical colleges in India, offering high-quality education, excellent clinical exposure, and affordable fees. Many of these institutions are highly ranked and preferred by students who want to pursue MBBS in Rajasthan and build a strong career in MBBS in India.',
+    sections: [
+      {
+        title: 'Top MBBS Colleges in Rajasthan (2026)',
+        headers: ['COLLEGE', 'ESTD. YEAR', 'STATE QUOTA', 'MANAGEMENT QUOTA'],
+        table: [
+          { COLLEGE: 'NIMS, JAIPUR', 'ESTD. YEAR': '2004', 'STATE QUOTA': '24,00,000', 'MANAGEMENT QUOTA': '30,00,000' },
+          { COLLEGE: 'AMERICAN INST. OF MED. SC, UDAIPUR', 'ESTD. YEAR': '2016', 'STATE QUOTA': '18,90,000', 'MANAGEMENT QUOTA': '32,00,000' },
+          { COLLEGE: 'ANANTA INSTITUTE OF MED. SC, RAJSAMAND', 'ESTD. YEAR': '2016', 'STATE QUOTA': '18,90,000', 'MANAGEMENT QUOTA': '28,00,000' },
+          { COLLEGE: 'GEETANJALI MC, UDAIPUR', 'ESTD. YEAR': '2008', 'STATE QUOTA': '23,00,000', 'MANAGEMENT QUOTA': '30,00,000' },
+          { COLLEGE: 'JNU INSTITUTE FOR MED. SC. & RC, JAIPUR', 'ESTD. YEAR': '2016', 'STATE QUOTA': '23,00,000', 'MANAGEMENT QUOTA': '28,00,000' },
+          { COLLEGE: 'MAHATMA GANDHI MED COLL. JAIPUR', 'ESTD. YEAR': '2001', 'STATE QUOTA': '19,50,000', 'MANAGEMENT QUOTA': '26,75,000' },
+          { COLLEGE: 'PACIFIC INSTI OF MED SC, UDAIPUR', 'ESTD. YEAR': '2015', 'STATE QUOTA': '25,00,000', 'MANAGEMENT QUOTA': '35,00,000' },
+          { COLLEGE: 'PACIFIC MED COLLEGE AHOS, UDAIPUR', 'ESTD. YEAR': '2014', 'STATE QUOTA': '25,00,000', 'MANAGEMENT QUOTA': '34,00,000' },
+          { COLLEGE: 'DR SS TANTIA MEDICAL COLLEGE & HOSPITAL', 'ESTD. YEAR': '2021', 'STATE QUOTA': '22,25,000', 'MANAGEMENT QUOTA': '29,25,000' },
+          { COLLEGE: 'VYAS MEDICAL COLLEGE AND HOSPITAL', 'ESTD. YEAR': '2024', 'STATE QUOTA': '23,00,000', 'MANAGEMENT QUOTA': '30,00,000' },
+          { COLLEGE: 'SUDHA MEDICAL COLLEGE AND HOSPITAL', 'ESTD. YEAR': '2024', 'STATE QUOTA': '18,90,000', 'MANAGEMENT QUOTA': '28,20,000' }
+        ]
+      }
+    ]
+  },
+  duration: {
+    headers: ['Program Component', 'Duration'],
+    table: [
+      { 'Program Component': 'Academic Study', Duration: '4.5 Years' },
+      { 'Program Component': 'Compulsory Internship', Duration: '1 Year' },
+      { 'Program Component': 'Total MBBS Duration', Duration: '5.5 Years' }
+    ]
+  },
+  scholarshipIntro: 'iExplain Education provides scholarship & financial guidance. Students get help in exploring scholarships, education loans, and budget-friendly options for MBBS in Rajasthan.',
+  scholarships: [
+    { title: 'Scholarship & Financial Guidance', details: 'Students get help in exploring scholarships, education loans, and budget-friendly options for MBBS in Rajasthan.' }
+  ],
+  eligibility: {
+    headers: ['Criteria', 'Details'],
+    table: [
+      { Criteria: 'Educational Qualification (MBBS)', Details: '10+2 with Physics, Chemistry, Biology/Biotechnology & English' },
+      { Criteria: 'Minimum Marks (MBBS)', Details: 'General: 50%' },
+      { Criteria: 'Entrance Exam (MBBS)', Details: 'NEET-UG (Mandatory)' },
+      { Criteria: 'Age Limit (MBBS)', Details: 'Minimum 17 years at the time of admission' },
+      { Criteria: 'Nationality (MBBS)', Details: 'Indian / NRI / OCI (as per rules)' },
+      { Criteria: 'Admission Process (MBBS)', Details: 'NEET-based counselling' },
+      { Criteria: 'Domicile (MBBS)', Details: 'Required for Rajasthan state quota seats' },
+      { Criteria: 'Educational Qualification (MD/MS)', Details: 'MBBS degree from a recognized medical college' },
+      { Criteria: 'Internship (MD/MS)', Details: '1-year compulsory rotatory internship completed' },
+      { Criteria: 'Registration (MD/MS)', Details: 'Valid NMC/State Medical Council registration' },
+      { Criteria: 'Entrance Exam (MD/MS)', Details: 'NEET-PG (Mandatory)' },
+      { Criteria: 'Admission Process (MD/MS)', Details: 'NEET-PG counselling' },
+      { Criteria: 'Domicile (MD/MS)', Details: 'Required for state quota (if applicable)' }
+    ]
+  },
+  documents: [
+    { document: '10th Marksheet & Certificate', details: 'Proof of date of birth' },
+    { document: '12th Marksheet & Certificate', details: 'Must include Physics, Chemistry, Biology' },
+    { document: 'NEET-UG Scorecard', details: 'Mandatory for admission' },
+    { document: 'NEET-UG Admit Card', details: 'Required during counselling' },
+    { document: 'Valid Photo ID Proof', details: 'Aadhaar Card / PAN Card / Passport' },
+    { document: 'Domicile Certificate', details: 'Required for Rajasthan state quota' },
+    { document: 'Counselling Registration Slip', details: 'Proof of Rajasthan NEET counselling registration' },
+    { document: 'Seat Allotment Letter', details: 'Issued after seat allocation' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS (if applicable)' }
+  ],
+  documentsPG: [
+    { document: 'MBBS Degree Certificate', details: 'Proof of completion of MBBS course' },
+    { document: 'MBBS Marksheets (All Years)', details: 'First, Second, and Final year marksheets' },
+    { document: 'NEET-PG Scorecard', details: 'Mandatory for PG admission' },
+    { document: 'NEET-PG Admit Card', details: 'Required during counselling' },
+    { document: 'Internship Completion Certificate', details: '1-year compulsory rotatory internship proof' },
+    { document: 'Medical Registration Certificate', details: 'Valid registration from NMC/State Medical Council' },
+    { document: 'Valid Photo ID Proof', details: 'Aadhaar Card / PAN Card / Passport' },
+    { document: 'Domicile Certificate', details: 'Required for Rajasthan state quota (if applicable)' },
+    { document: 'Counselling Registration Slip', details: 'Rajasthan NEET-PG counselling proof' },
+    { document: 'Seat Allotment Letter', details: 'Issued after seat allocation' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS (if applicable)' }
+  ],
+  admissionProcess: {
+    ug: {
+      title: 'MBBS in Rajasthan – Admission Process',
+      intro: 'The MBBS in Rajasthan admission process is completely merit-based and conducted through NEET-UG scores. Students who want to pursue MBBS in Rajasthan must follow the official counselling procedure managed by the state authority and central counselling bodies under MBBS in India.',
+      steps: [
+        { step: '1. NEET-UG Qualification', details: 'Candidates must qualify the NEET-UG exam, which is mandatory for admission into all medical colleges across India, including Rajasthan.' },
+        { step: '2. Counselling Registration', details: 'Eligible candidates need to register online for Rajasthan NEET counselling conducted by the state authority (RUHS / Rajasthan Medical Education Department).' },
+        { step: '3. Choice Filling & Locking', details: 'Students must select their preferred government and private medical colleges and lock their choices carefully.' },
+        { step: '4. Merit List Release', details: 'A merit list is prepared based on NEET rank, category, reservation rules, and eligibility criteria.' },
+        { step: '5. Seat Allotment', details: 'Seats are allotted based on rank, preference, and availability in different colleges.' },
+        { step: '6. Document Verification', details: 'Candidates must report to the allotted college for verification of original documents.' },
+        { step: '7. Admission Confirmation', details: 'After successful verification, students need to pay the admission fee to confirm their MBBS seat.' }
+      ]
+    },
+    pg: {
+      title: 'MD/MS in Rajasthan – Admission Process',
+      intro: 'The MD/MS in Rajasthan admission process is conducted through NEET-PG scores and follows a transparent, merit-based counselling system. Candidates who want to pursue postgraduate medical courses must participate in the official counselling process under MD/MS in India.',
+      steps: [
+        { step: '1. NEET-PG Qualification', details: 'Candidates must qualify the NEET-PG exam, which is mandatory for admission into MD/MS courses in Rajasthan and across India.' },
+        { step: '2. Counselling Registration', details: 'Eligible candidates must register online for Rajasthan NEET-PG counselling conducted by the state authority (RUHS / Rajasthan Medical Education Department) and Medical Counselling Committee for All India Quota seats.' },
+        { step: '3. Choice Filling & Locking', details: 'Students need to select their preferred MD/MS specializations and colleges, then lock their choices carefully.' },
+        { step: '4. Merit List Release', details: 'A merit list is prepared based on NEET-PG rank, category, reservation policy, and eligibility.' },
+        { step: '5. Seat Allotment', details: 'Seats are allotted according to merit rank, preferences, and availability in government and private medical colleges.' },
+        { step: '6. Document Verification', details: 'Candidates must report to the allotted college for verification of original documents.' },
+        { step: '7. Admission Confirmation', details: 'After verification, candidates must pay the admission fees to confirm their seat' }
+      ]
+    }
+  },
+  studentSupport: 'iExplain Education provides complete guidance with a student-focused approach, simplifying the complex admission process of MBBS in India with expert support.',
+  hostelFacilities: 'Medical colleges are equipped with modern labs, libraries, hostels, and advanced medical equipment.',
+  studentLife: 'Rajasthan offers a student-friendly environment with strong clinical exposure due to hospitals attached to medical colleges having high patient flow.',
+  recognition: 'Most colleges are approved by the National Medical Commission (NMC), ensuring standard quality education and recognition across the country.',
+  whyChooseUsIntro: 'Choosing the right consultancy is very important for securing admission in MBBS in Rajasthan, and iExplain Education provides complete guidance with a student-focused approach. It helps students simplify the complex admission process of MBBS in India with expert support and reliable services.',
+  whyChooseUs: [
+    'Expert Career Counseling: iExplain Education offers professional counselling to help students choose the best medical colleges based on their NEET score, budget, and career goals.',
+    'End-to-End Admission Support: From college selection to final admission, students receive complete assistance including application filling, documentation, and counselling guidance.',
+    'Personalized Guidance: The consultancy follows a student-centric approach, focusing on individual strengths, preferences, and academic profile to provide the best options.',
+    'Accurate & Transparent Information: iExplain ensures students get authentic and updated information about colleges, fees, and admission processes without confusion.',
+    'Documentation & Visa Support: Full assistance with documentation, application procedures, and other formalities ensures a smooth admission process.',
+    'Scholarship & Financial Guidance: Students get help in exploring scholarships, education loans, and budget-friendly options for MBBS in Rajasthan.'
+  ],
+  conclusion: 'In conclusion, pursuing MBBS in Rajasthan is a great choice for medical aspirants who are looking for quality education, affordable fee structures, and strong clinical exposure. Rajasthan has developed into a prominent medical education hub with a growing number of government and private medical colleges, providing students with multiple opportunities to secure admission based on their NEET performance. Top institutions like All India Institute of Medical Sciences Jodhpur and Sawai Man Singh Medical College offer excellent academic standards, experienced faculty, and advanced hospital facilities, ensuring students receive both theoretical knowledge and practical training. Additionally, the transparent NEET-based admission process, affordable living costs, and student-friendly environment make Rajasthan a preferred destination for medical studies. With increasing medical seats and improving infrastructure, the scope of MBBS in Rajasthan continues to grow every year.',
+  faqs: [
+    { question: 'What is MBBS in Rajasthan?', answer: 'MBBS in Rajasthan refers to pursuing a Bachelor of Medicine and Bachelor of Surgery degree from government or private medical colleges in the state.' },
+    { question: 'Is NEET required for MBBS in Rajasthan?', answer: 'Yes, NEET-UG is mandatory for admission into all medical colleges in Rajasthan and across MBBS in India.' },
+    { question: 'What is the duration of MBBS in Rajasthan?', answer: 'The course duration is 5.5 years, including 4.5 years of academic study + 1 year compulsory internship.' },
+    { question: 'What are the fees for MBBS in Rajasthan?', answer: 'Government colleges: ₹20,000 – ₹1,00,000 per year Private colleges: ₹8,00,000 – ₹20,00,000 per year (approx.)' },
+    { question: 'What is the eligibility for MBBS in Rajasthan?', answer: 'Students must have 10+2 with Physics, Chemistry, Biology and qualify NEET-UG with required cutoff marks.' },
+    { question: 'How many seats are available for MBBS in Rajasthan?', answer: 'Rajasthan has a large number of MBBS seats in both government and private medical colleges, and the number is increasing every year.' },
+    { question: 'Which are the top colleges for MBBS in Rajasthan?', answer: 'Top colleges include All India Institute of Medical Sciences Jodhpur and Sawai Man Singh Medical College.' },
+    { question: 'Can I get a government seat in MBBS in Rajasthan?', answer: 'Yes, students can secure a government seat based on NEET rank through state quota or All India Quota counselling.' },
+    { question: 'Is MBBS in Rajasthan good for career?', answer: 'Yes, it offers quality education, strong clinical exposure, and excellent career opportunities in the healthcare sector.' }
+  ],
+  internship: {
+    intro: 'Internship is important during your MBBS degree. Therefore, it is crucial to know about the pattern of MBBS internship. See the given below table to gain knowledge about it.',
+    headers: ['Subjects', 'Time Duration'],
+    table: [
+      { Subjects: 'Community Medicine', 'Time Duration': '2 months' },
+      { Subjects: 'Medicine, including Psychiatry', 'Time Duration': '2 months' },
+      { Subjects: 'Obstetrics/Gynecology', 'Time Duration': '2 months' },
+      { Subjects: 'Pediatrics', 'Time Duration': '1 month' },
+      { Subjects: 'Orthopedics including PMR', 'Time Duration': '1 month' },
+      { Subjects: 'ENT', 'Time Duration': '15 days' },
+      { Subjects: 'Ophthalmology', 'Time Duration': '15 days' },
+      { Subjects: 'Casualty', 'Time Duration': '15 days' },
+      { Subjects: 'Elective Posting', 'Time Duration': '15 days' },
+      { Subjects: 'Total', 'Time Duration': '12 months' }
+    ]
+  }
+};
 export const MBBS_IN_INDIA_DETAILS: Record<string, MBBSIndiaCollegeDetailData> = {
   'uttar-pradesh': uttarPradeshMBBSData,
   haryana: buildMBBSIndiaStateData('Haryana', 'North India'),
   delhi: buildMBBSIndiaStateData('Delhi', 'North India'),
   uttarakhand: buildMBBSIndiaStateData('Uttarakhand', 'North India'),
   'himachal-pradesh': buildMBBSIndiaStateData('Himachal Pradesh', 'North India'),
-  rajasthan: buildMBBSIndiaStateData('Rajasthan', 'Central & West India'),
+  rajasthan: rajasthanMBBSData,
   maharashtra: buildMBBSIndiaStateData('Maharashtra', 'Central & West India'),
   'madhya-pradesh': buildMBBSIndiaStateData('Madhya Pradesh', 'Central & West India'),
   bihar: buildMBBSIndiaStateData('Bihar', 'East & South India'),
