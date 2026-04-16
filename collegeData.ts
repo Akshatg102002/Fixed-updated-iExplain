@@ -8819,6 +8819,987 @@ export const COLLEGE_DETAILS: Record<string, CollegeDetailData> = {
                 "answer": "The university offers affordable fees, global recognition, English-medium education, strong clinical exposure, and a safe environment, making it a great choice for students who want to study medicine in Serbia."
             }
         ]
+    },
+    "carol-davila-university": {
+        "title": "Carol Davila University of Medicine and Pharmacy",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Carol_Davila_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Carol_Davila_Mobile.webp",
+        "intro": {
+            "text": "The Carol Davila University of Medicine and Pharmacy is one of the oldest and most prestigious medical universities in Europe, located in Bucharest, Romania. Established in 1857 by the famous physician Carol Davila, the university has a rich legacy of excellence in medical education, research, and healthcare training. Over the years, it has become a top destination for international students seeking MBBS in abroad and especially MBBS in Romania, due to its high academic standards and global recognition.\n\nFor students planning to study MBBS abroad, the Carol Davila University stands out as a preferred choice because of its modern teaching methods, advanced laboratories, and extensive clinical exposure. The university is affiliated with numerous top hospitals in Bucharest, allowing students to gain hands-on practical experience during their course. This practical approach makes it highly attractive for Indian and international students who are looking for quality medical education at an affordable cost compared to private medical colleges.\n\nWhen it comes to pursuing MBBS in Romania, this university offers globally recognized degrees that are accepted by major medical councils, making graduates eligible to practice medicine in various countries after clearing required licensing exams. The university follows a European-standard curriculum, focusing on both theoretical knowledge and clinical skills, which is a major advantage for students aiming for an international medical career. Another major reason why students choose this university for MBBS abroad is its multicultural environment. The campus hosts students from different parts of the world, providing global exposure and a diverse learning atmosphere. The medium of instruction for international programs is English, which makes it easier for Indian students to adapt without facing language barriers."
+        },
+        "quickOverview": {
+            "University Name": "Carol Davila University of Medicine and Pharmacy",
+            "Location": "Bucharest, Romania",
+            "Established": "1857",
+            "Type": "Public University",
+            "Medium of Instruction": "English & Romanian",
+            "Popular Course": "MBBS (General Medicine)",
+            "Duration of MBBS": "6 Years",
+            "Recognition": "WHO, NMC, ECFMG, European Union",
+            "Affiliated Hospitals": "20+ Teaching Hospitals in Bucharest",
+            "Eligibility": "12th with PCB (Physics, Chemistry, Biology), NEET qualification (for Indian students)"
+        },
+        "benefits": {
+            "intro": "Choosing the right university is crucial for students planning to pursue MBBS in abroad, and the Carol Davila University of Medicine and Pharmacy stands out as one of the best options for MBBS in Romania due to its academic excellence, global recognition, and strong clinical training:",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "The university offers a worldwide recognized MBBS degree, making it an excellent choice for students who want to build an international medical career."
+                },
+                {
+                    "Heading": "Rich Legacy & Academic Excellence",
+                    "Details": "Established in 1857, the university has over 150 years of experience in medical education with a strong academic foundation."
+                },
+                {
+                    "Heading": "Top Location in Europe",
+                    "Details": "Located in Bucharest, the capital city, students benefit from modern lifestyle and advanced healthcare infrastructure."
+                },
+                {
+                    "Heading": "Advanced Clinical Training",
+                    "Details": "Affiliated with 20+ teaching hospitals where students gain real-time clinical exposure essential for practical skills."
+                },
+                {
+                    "Heading": "Affordable MBBS Abroad Option",
+                    "Details": "More cost-effective compared to private medical colleges in India, making it a popular choice for low-cost MBBS abroad."
+                },
+                {
+                    "Heading": "English Medium Education",
+                    "Details": "The MBBS program is available in English, which eliminates language barriers for international students."
+                },
+                {
+                    "Heading": "No Donation or Capitation Fees",
+                    "Details": "Admission is based on merit with no donation or hidden charges, ensuring a transparent process."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (General Medicine) program at Carol Davila University of Medicine and Pharmacy is a 6-year course designed according to European medical education standards. The curriculum is divided into pre-clinical, para-clinical, and clinical phases.",
+        "syllabus": {
+            "headers": ["Year", "Subjects / Topics Covered", "Focus Area"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects / Topics Covered": "Anatomy, Histology, Physiology, Biochemistry, Biophysics, Medical Psychology, Biostatistics",
+                    "Focus Area": "Basic medical sciences & human body fundamentals"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects / Topics Covered": "Pharmacology, Pathology, Microbiology, Medical Semiology, Primary Health Care",
+                    "Focus Area": "Disease understanding & diagnosis basics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects / Topics Covered": "Advanced Pathology, Advanced Pharmacology, Clinical Basics, Pediatrics (Intro)",
+                    "Focus Area": "Transition from theory to clinical learning"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects / Topics Covered": "General Surgery, Neurology, Oncology, Primary Care Medicine",
+                    "Focus Area": "Core clinical subjects & hospital exposure"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects / Topics Covered": "Internal Medicine, Obstetrics & Gynecology, ENT, Cardiology, Psychiatry, Emergency Medicine",
+                    "Focus Area": "Advanced clinical training & specialization exposure"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects / Topics Covered": "Internship: Internal Medicine, Surgery, Pediatrics, OB-GYN, Emergency, Community Medicine",
+                    "Focus Area": "Full-time clinical rotations & practical patient care"
+                }
+            ]
+        },
+        "feesIntro": "The Carol Davila University of Medicine and Pharmacy is considered one of the premium options for MBBS in Romania. The fee structure is relatively affordable compared to private Indian medical colleges.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€10,000",
+                    "hostel": "€3,300 (Admin + Application)",
+                    "total": "₹11–12 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (General Medicine) program at Carol Davila University of Medicine and Pharmacy has a total duration of 6 years, following the European medical education system.",
+        "duration": {
+            "headers": ["Particulars", "Duration"],
+            "table": [
+                {
+                    "Particulars": "Total Course Duration",
+                    "Duration": "6 Years"
+                },
+                {
+                    "Particulars": "Academic Study (Pre-Clinical + Clinical)",
+                    "Duration": "5 Years"
+                },
+                {
+                    "Particulars": "Internship / Clinical Rotations",
+                    "Duration": "1 Year"
+                },
+                {
+                    "Particulars": "Total Semesters",
+                    "Duration": "12 Semesters"
+                }
+            ]
+        },
+        "studentSupport": "The Carol Davila University of Medicine and Pharmacy provides a wide range of student support services to ensure academic success, personal well-being, and overall development. The university offers strong academic support through its central library and digital resources, including access to thousands of medical books and journals. The Central Library provides access to over 500,000+ volumes along with platforms like ScienceDirect and Springer. IT & Digital Support is available via a modern computer center and internet-enabled campus. For accommodation, students are provided with on-campus hostel facilities managed by the university administration. The university also offers healthcare support services, including medical consultations and vaccinations. Additionally, active student associations and societies organize academic events, workshops, and extracurricular activities to support student-led initiatives.",
+        "recognition": "The Carol Davila University of Medicine and Pharmacy is one of the most prestigious institutions for MBBS abroad, known for its strong global affiliations and achievements. It is a member of the International Association of Universities and the European University Association. The university collaborates with international research institutions and multiple teaching hospitals in Bucharest. Recognized as an advanced research and education university by the Romanian Ministry of Education, its degrees are widely accepted across Europe and the globe. It is listed in international rankings like Times Higher Education and was ranked 1st among universities in Romania in the 2026 SCImago Institutions Rankings. Notably, the university produced Nobel Prize winner George Emil Palade and is known for scientific contributions related to insulin discovery.",
+        "hostelFacilities": "Students are provided with on-campus hostel facilities, and accommodation is managed by the university administration. International students are guided through the housing process, ensuring a safe and comfortable stay. Living in Bucharest offers a unique experience with affordable and well-maintained accommodation options, including both student dormitories and private housing.",
+        "studentLife": "Student life at the Carol Davila University of Medicine and Pharmacy is highly enriching, dynamic, and globally oriented. Situated in Bucharest, the university offers a blend of academic excellence and vibrant campus life. Students engage in a rigorous schedule of lectures, laboratory sessions, and extensive clinical training in affiliated hospitals. The multicultural environment welcomes students from different countries, enhancing cultural exchange. Beyond academics, students participate in various student organizations, medical societies, and cultural clubs. The university provides modern libraries, digital platforms, sports complexes, and recreational areas. Living in Bucharest allows students to enjoy cafes, cultural festivals, museums, and a safe, student-friendly environment, ensuring complete personal and professional development.",
+        "whyChooseUsIntro": "Choosing the right consultancy is as important as choosing the right university for MBBS in abroad. iExplain Education is a trusted name for students planning MBBS in Romania, especially for admission to Carol Davila University of Medicine and Pharmacy.",
+        "whyChooseUs": [
+            "Expert Guidance & Counseling – Free and personalized counseling helping students understand university selection, eligibility, and career planning.",
+            "Complete Admission Assistance – End-to-end support including shortlisting, application process, documentation handling, and admission confirmation.",
+            "Visa & Travel Support – Assistance with student visa application, forex guidance, and travel arrangements to reduce stress.",
+            "Pre & Post-Departure Support – Providing guidance before leaving and on-arrival support in Romania, including help with accommodation.",
+            "Trusted & Student-Centric Approach – Focus on transparency and satisfaction with no hidden charges and genuine university options.",
+            "Wide Network of Universities – Access to multiple globally recognized universities ensuring students get the best college according to budget."
+        ],
+        "documents": [
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of basic education qualification"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry, and Biology subjects"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students as per NMC guidelines"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Identity proof with minimum required validity"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Must be translated into English/Romanian if required"
+            },
+            {
+                "document": "Medical Certificate",
+                "details": "General health and fitness report for study abroad"
+            },
+            {
+                "document": "Admission Letter",
+                "details": "Official letter issued by the university"
+            },
+            {
+                "document": "Police Clearance Certificate (PCC)",
+                "details": "Required for the visa application process"
+            },
+            {
+                "document": "Proof of Residence",
+                "details": "Address verification as per requirements"
+            },
+            {
+                "document": "Document Translation & Apostille",
+                "details": "Mandatory legalization of documents by relevant authorities"
+            }
+        ],
+        "conclusion": "In conclusion, the Carol Davila University of Medicine and Pharmacy stands as one of the top choices for students planning MBBS in abroad and especially MBBS in Romania. With its long-standing legacy of excellence, globally recognized medical degree, and strong emphasis on clinical training, the university offers a perfect combination of quality education and practical exposure. Its modern infrastructure, experienced faculty, and multicultural environment further enhance the overall learning experience. Additionally, the affordable fee structure and English-medium programs make it a highly attractive destination. Choosing Carol Davila University ensures a solid foundation for a successful medical career with guidance from trusted partners like iExplain Education.",
+        "faqs": [
+            {
+                "question": "Where is Carol Davila University of Medicine and Pharmacy located?",
+                "answer": "The Carol Davila University of Medicine and Pharmacy is located in Bucharest, the capital city of Romania."
+            },
+            {
+                "question": "What is the duration of MBBS at this university?",
+                "answer": "The MBBS (General Medicine) program duration is 6 years, including academic study and clinical internship."
+            },
+            {
+                "question": "Is the MBBS degree from this university recognized globally?",
+                "answer": "Yes, the degree is globally recognized, allowing students to pursue medical careers internationally after clearing licensing exams."
+            },
+            {
+                "question": "What is the medium of instruction for MBBS?",
+                "answer": "The MBBS program is available in English and Romanian, making it suitable for international students."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who wish to pursue MBBS in abroad."
+            },
+            {
+                "question": "What is the eligibility criteria for MBBS admission?",
+                "answer": "Students must have completed 12th with Physics, Chemistry, and Biology (PCB) and meet the minimum required marks."
+            },
+            {
+                "question": "What is the approximate fee for MBBS?",
+                "answer": "The annual tuition fee is approximately €7,500 – €10,000, making it an affordable option for MBBS in Romania."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the university provides student dormitories and accommodation support for international students."
+            }
+        ]
+    },
+    "grigore-t-popa-university": {
+        "title": "Grigore T. Popa University of Medicine and Pharmacy",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Grigore_Popa_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Grigore_Popa_Mobile.webp",
+        "intro": {
+            "text": "The Grigore T. Popa University of Medicine and Pharmacy is one of the leading and most respected medical universities in Romania, located in Iași, Romania, which is one of the oldest and most important academic cities in the country. It is a top preference among international students who are planning to pursue MBBS in abroad and especially MBBS in Romania because of its strong academic reputation, European-standard medical education, and globally recognized degree.\n\nThe university is named after the famous Romanian physiologist Grigore T. Popa, who made significant contributions to medical science. Established as a public medical university, it has a long tradition of excellence in medical education, research, and healthcare training, making it one of the most trusted institutions in Central and Eastern Europe. Over the years, it has developed into a modern university that combines traditional medical knowledge with advanced scientific research and innovative teaching methods.\n\nFor students planning MBBS in Romania, the university offers a comprehensive 6-year General Medicine program designed according to European medical education standards. The course is divided into pre-clinical, para-clinical, and clinical stages, ensuring a balanced focus on theoretical knowledge and practical skills. Students receive extensive hands-on training in well-equipped university hospitals and clinics, which helps them develop strong clinical competence required for a successful medical career.\n\nOne of the key highlights of this university is its English-medium MBBS program, which makes it highly suitable for international students, especially those coming from India and other non-European countries. This eliminates language barriers and allows students to focus entirely on their medical studies. The university also maintains a diverse and multicultural environment, with students from various countries, providing excellent global exposure and cultural exchange opportunities. The Grigore T. Popa University is also known for its modern infrastructure, advanced laboratories, research centers, and experienced faculty members, who are actively involved in medical research and innovation. The institution collaborates with several international universities and medical organizations, which further enhances its global recognition and academic standards."
+        },
+        "quickOverview": {
+            "University Name": "Grigore T. Popa University of Medicine and Pharmacy",
+            "Location": "Iași, Romania",
+            "Type": "Public Medical University",
+            "Established": "1879 (medical education roots in Iași)",
+            "Named After": "Grigore T. Popa",
+            "Popular Course": "MBBS (General Medicine)",
+            "Course Duration": "6 Years (including internship)",
+            "Medium of Instruction": "English & Romanian",
+            "Recognition": "WHO, NMC, ECFMG, European medical bodies",
+            "Admission Type": "Based on academic eligibility (no major entrance exam for international students)",
+            "Eligibility Criteria": "12th with PCB (Physics, Chemistry, Biology)"
+        },
+        "benefits": {
+            "intro": "The Grigore T. Popa University of Medicine and Pharmacy, located in Iași and named after Grigore T. Popa, is one of the most reputed medical universities in Romania and a popular choice for students planning MBBS in abroad and especially MBBS in Romania. The university is well known for its strong academic heritage, European-standard medical education, and high-quality clinical training, making it a trusted destination for international medical aspirants.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "The university offers a highly respected MBBS (General Medicine) degree, making it a strong option for students planning MBBS in abroad. The degree is accepted in many countries after clearing required licensing exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "Strong Academic Reputation & Legacy",
+                    "Details": "Located in Iași, the university is one of the oldest and most reputed medical institutions in Romania. It is named after Grigore T. Popa, and is known for its long-standing tradition of excellence in medical education and research."
+                },
+                {
+                    "Heading": "European Standard Medical Education",
+                    "Details": "The university follows a European medical curriculum, focusing on conceptual clarity, practical learning, and clinical exposure. This makes it a preferred choice for students planning MBBS in Romania."
+                },
+                {
+                    "Heading": "Strong Clinical Training & Hospital Exposure",
+                    "Details": "Students get hands-on training in well-equipped hospitals and clinics, allowing them to develop real-time medical skills and gain confidence in patient care from early stages."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The MBBS program is offered in English for international students, making it easier for Indian and other foreign students to study without language barriers."
+                },
+                {
+                    "Heading": "Affordable MBBS Abroad Option",
+                    "Details": "Compared to many private medical universities globally, the cost of studying MBBS here is relatively affordable, making it a good choice for students seeking MBBS in abroad."
+                }
+            ]
+        },
+        "SyllabusIntro": "The Grigore T. Popa University of Medicine and Pharmacy, located in Iași, follows a 6-year MBBS (General Medicine) program designed according to European medical education standards. The syllabus is structured in a step-by-step manner, starting from basic medical sciences and gradually moving toward advanced clinical training and internship, making it a strong option for students planning MBBS in abroad and MBBS in Romania.",
+        "syllabus": {
+            "headers": ["Year", "Subjects", "Focus Area"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Histology, Biochemistry, Biophysics, Medical Biology, Medical Chemistry, Informatics",
+                    "Focus Area": "Basic medical foundation & human body structure"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Physiology, Microbiology, Immunology, Pathology, Pharmacology, Genetics, Pathophysiology",
+                    "Focus Area": "Understanding body functions, diseases & medicines"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "General Semiology, Internal Medicine (Basics), Surgery (Basics), Pediatrics, OBGYN (Intro), Public Health",
+                    "Focus Area": "Introduction to clinical medicine"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "Internal Medicine, Surgery, Orthopedics, Neurology, Dermatology, Radiology, Oncology, Anesthesia",
+                    "Focus Area": "Core clinical subjects & hospital exposure"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Cardiology, Psychiatry, ENT, Ophthalmology, Pediatrics (Advanced), OBGYN (Advanced), Infectious Diseases",
+                    "Focus Area": "Advanced clinical training & specialization"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Internship: Internal Medicine, Surgery, Pediatrics, Emergency Medicine, Family Medicine, Forensic Medicine",
+                    "Focus Area": "Full-time clinical rotations & hands-on patient care"
+                }
+            ]
+        },
+        "feesIntro": "The Grigore T. Popa University of Medicine and Pharmacy, located in Iași, Romania, offers an affordable MBBS (General Medicine) program for international students planning MBBS in abroad and especially MBBS in Romania. The fee structure is designed as per European medical education standards and varies slightly depending on the course and medium of instruction.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€8,000 – €9,000",
+                    "hostel": "-",
+                    "total": "₹7 – ₹8.5 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (General Medicine) program at Grigore T. Popa University of Medicine and Pharmacy, located in Iași, follows the standard European medical education structure and is designed for students planning MBBS in abroad and especially MBBS in Romania.",
+        "duration": {
+            "headers": ["Particulars", "Duration"],
+            "table": [
+                {
+                    "Particulars": "Total Course Duration",
+                    "Duration": "6 Years"
+                },
+                {
+                    "Particulars": "Academic Study (Pre-Clinical + Clinical)",
+                    "Duration": "5 Years"
+                },
+                {
+                    "Particulars": "Internship / Clinical Rotations",
+                    "Duration": "1 Year"
+                },
+                {
+                    "Particulars": "Total Semesters",
+                    "Duration": "12 Semesters"
+                }
+            ]
+        },
+        "studentSupport": "The Grigore T. Popa University of Medicine and Pharmacy, located in Iași, provides strong student support services to ensure that international students pursuing MBBS in abroad and especially MBBS in Romania can study comfortably, stay safe, and perform well academically. The university offers academic guidance through faculty mentors, tutoring sessions, and departmental consultations. A dedicated counselling service is available for students who face stress, anxiety, or academic pressure. The university provides support for on-campus dormitory accommodation, including assistance with room allocation and housing-related queries. The administration office supports international students with admission documents, residence permits, registration, and academic records. Students get access to libraries, study halls, cafeterias, and transport facilities. The university encourages participation in student associations, cultural events, workshops, and medical conferences. Basic healthcare services and medical assistance are available for students in case of illness or emergencies, ensuring a safe living environment during their studies.",
+        "recognition": "The Grigore T. Popa University of Medicine and Pharmacy, located in Iași, Romania, is one of the most prestigious medical universities in Europe. It is a member of European academic networks and collaborates with several European universities for student exchange programs. Partnered with multiple hospitals and clinical centers for training, it uses the European Credit Transfer and Accumulation System (ECTS) for academic mobility. It is recognized by the Ministry of Education, Romania as an advanced research and education university and is listed in the World Directory of Medical Schools (WDOMS). It is recognized by global medical bodies such as NMC (India), WHO, ECFMG (USA), and GMC (UK) eligibility standards. The university is one of the oldest in Romania (est. 1879), ranked leading for research output in fields like pharmacology and surgery, and known for producing highly skilled doctors working globally in Europe and the USA.",
+        "hostelFacilities": "The university provides support for on-campus dormitory accommodation, including assistance with room allocation and housing-related queries. Hostel facilities are structured and affordable, helping international students settle easily. Living in Iași adds great value; the city is known for being safe, affordable, and student-friendly, with parks, cafes, and cultural events providing a lively social atmosphere.",
+        "studentLife": "Student life at the Grigore T. Popa University of Medicine and Pharmacy is vibrant, multicultural, and academically intensive. The university hosts more than 10,000 students from over 60 countries. Academically, students experience a rigorous curriculum with lectures, laboratory work, and hospital-based clinical training from early years. Beyond academics, life is enriched through various student organizations, cultural clubs, sports activities, and international associations. These groups organize workshops, medical conferences, and social events, allowing students to network and develop leadership skills. Iași offers a blend of historical charm and modern student life, ensuring a balanced lifestyle between studies and relaxation.",
+        "whyChooseUsIntro": "Choosing the right consultancy is very important for students planning MBBS in abroad and especially MBBS in Romania, because the admission process can be complex. iExplain Education helps students apply smoothly to top universities like the Grigore T. Popa University of Medicine and Pharmacy with proper guidance and support.",
+        "whyChooseUs": [
+            "Expert Career Counseling – Personalised counselling to help students choose the right university based on their marks, budget, and career goals.",
+            "Complete Admission Guidance – Assistance in university selection, application submission, eligibility checking, and admission confirmation.",
+            "Documentation Support – Helping prepare important documents such as passport, academic certificates, NEET scorecard, and visa paperwork.",
+            "Visa & Travel Assistance – Supporting students with student visa processing, travel planning, and pre-departure guidance.",
+            "University Selection Support – Guiding students in choosing the best medical universities in countries like Romania.",
+            "Pre & Post Admission Support – Including hostel guidance, arrival support, and local adjustment help.",
+            "Student-Friendly Approach – Focus on transparent and student-centered guidance."
+        ],
+        "documents": [
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of secondary education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry & Biology (PCB)"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Must have sufficient validity"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Must be in English or translated & notarized"
+            },
+            {
+                "document": "Medical Certificate",
+                "details": "General health check-up report"
+            },
+            {
+                "document": "Application Form",
+                "details": "Filled and signed university application"
+            },
+            {
+                "document": "Admission/Invitation Letter",
+                "details": "Issued by the university after selection"
+            },
+            {
+                "document": "Migration Certificate",
+                "details": "From previous educational board/institution"
+            }
+        ],
+        "conclusion": "In overall conclusion, the Grigore T. Popa University of Medicine and Pharmacy, located in Iași, is one of the most reputed and trusted medical universities in Europe for students planning MBBS in abroad and especially MBBS in Romania. With its long academic legacy, strong European-standard curriculum, and excellent clinical training system, the university provides a complete platform for students to become skilled and successful doctors. The university ensures high-quality education through experienced faculty, modern laboratories, and strong hospital affiliations. Its affordable fee structure, English-medium program, and multicultural environment make it a preferred choice globally.",
+        "faqs": [
+            {
+                "question": "Where is Grigore T. Popa University located?",
+                "answer": "It is located in Iași, one of the major educational cities in Romania."
+            },
+            {
+                "question": "Is Grigore T. Popa University good for MBBS in abroad?",
+                "answer": "Yes, it is a well-known and reputed medical university in Europe, making it a strong option for students planning MBBS in abroad and especially MBBS in Romania."
+            },
+            {
+                "question": "What is the duration of MBBS at this university?",
+                "answer": "The MBBS (General Medicine) program duration is 6 years, including academic studies and internship."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students applying for MBBS abroad."
+            },
+            {
+                "question": "What is the medium of instruction?",
+                "answer": "The MBBS program is offered in English and Romanian, making it suitable for international students."
+            },
+            {
+                "question": "What is the eligibility for MBBS admission?",
+                "answer": "Students must have completed 12th with Physics, Chemistry, and Biology (PCB) with required minimum marks."
+            },
+            {
+                "question": "What is the approximate fee for MBBS?",
+                "answer": "The tuition fee is approximately €8,000 – €9,000 per year, depending on the program and intake."
+            },
+            {
+                "question": "Is the university recognized internationally?",
+                "answer": "Yes, the university is recognized and its degree is accepted in many countries after clearing licensing exams."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the university provides hostel and accommodation support for international students."
+            },
+            {
+                "question": "Is Romania safe for students?",
+                "answer": "Yes, Romania is considered safe and student-friendly for international education."
+            }
+        ]
+    },
+    "iuliu-hatieganu-university": {
+        "title": "Iuliu Hațieganu University of Medicine and Pharmacy",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Iuliu_Hatieganu_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Iuliu_Hatieganu_Mobile.webp",
+        "intro": {
+            "text": "The Iuliu Hațieganu University of Medicine and Pharmacy is one of the most prestigious and oldest medical universities in Romania, located in Cluj-Napoca, Romania. It is a top destination for students planning to pursue MBBS in abroad and especially MBBS in Romania, due to its high academic standards, modern medical training, and strong international reputation.\n\nThe university is named after the famous Romanian physician Iuliu Hațieganu, who contributed significantly to the development of medical education in Romania. Established in 1919, the university has a long history of excellence in medical education, research, and healthcare services. For students aiming for MBBS in Romania, the university offers a 6-year General Medicine program that follows the European medical education system. The course includes both theoretical studies and practical clinical training in well-equipped university hospitals, ensuring strong hands-on experience for students.\n\nThe university is also known for its modern infrastructure, advanced laboratories, experienced faculty, and strong research output, making it one of the top choices for international medical aspirants. It offers English-medium programs for foreign students, which makes it easier for Indian and other international students to study without language barriers. Iuliu Hațieganu University of Medicine and Pharmacy is considered a top-ranked medical university in Romania, offering excellent education, global exposure, and strong career opportunities for students pursuing MBBS in abroad."
+        },
+        "quickOverview": {
+            "University Name": "Iuliu Hațieganu University of Medicine and Pharmacy",
+            "Location": "Cluj-Napoca",
+            "Established": "1919",
+            "Type": "Public Medical University",
+            "Popular Course": "MBBS (General Medicine)",
+            "Course Duration": "6 Years (including internship)",
+            "Medium of Instruction": "English & Romanian",
+            "Recognition": "WHO, NMC, ECFMG, European medical bodies",
+            "Admission Type": "Based on academic eligibility (no major entrance exam for international students)",
+            "Affiliated Hospitals": "Multiple teaching hospitals in Cluj-Napoca"
+        },
+        "benefits": {
+            "intro": "The Iuliu Hațieganu University of Medicine and Pharmacy, located in Cluj-Napoca, is one of the most prestigious medical universities in Romania and a top choice for students planning MBBS in abroad and especially MBBS in Romania. It is known for its strong academic tradition, modern medical training, and excellent international reputation.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "The university offers a worldwide accepted MBBS (General Medicine) degree. After completing the course, graduates can appear for major international licensing exams such as FMGE/NExT (India), USMLE (USA), and PLAB (UK)."
+                },
+                {
+                    "Heading": "Strong Academic Reputation & Legacy",
+                    "Details": "Established in 1919 and located in Cluj-Napoca, the university has a long history of excellence. It is named after Iuliu Hațieganu, a respected figure in medical science."
+                },
+                {
+                    "Heading": "European Standard Medical Curriculum",
+                    "Details": "The university follows a European medical education system designed to provide a perfect balance between theoretical knowledge and practical training, updated according to global advancements."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure & Hospital Training",
+                    "Details": "Students receive extensive hands-on training in well-equipped teaching hospitals and clinics, observing and participating in real patient care under supervision."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The MBBS program is available in English for international students, ensuring better understanding of complex medical subjects without language barriers."
+                },
+                {
+                    "Heading": "Affordable MBBS Abroad Option",
+                    "Details": "Compared to private medical universities in many countries, studying here is more affordable and cost-effective while maintaining high-quality European standards."
+                },
+                {
+                    "Heading": "Advanced Infrastructure & Research Facilities",
+                    "Details": "The university provides modern laboratories, simulation centers, research labs, and digital learning resources, encouraging participation in medical innovation."
+                },
+                {
+                    "Heading": "Multicultural Student Environment",
+                    "Details": "Hosts students from different countries, creating a diverse international learning environment that helps improve communication skills and global professional networks."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (General Medicine) program at Iuliu Hațieganu University of Medicine and Pharmacy is a 6-year course divided into pre-clinical and clinical phases, focusing on both theoretical knowledge and practical training.",
+        "syllabus": {
+            "headers": ["Year", "Subjects"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Histology, Biophysics, Medical Chemistry, Medical Biology, Cell Biology, Basics of Medicine"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Biochemistry, Physiology, Microbiology, Immunology, Medical Informatics"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathology, Pharmacology, Parasitology, Medical Psychology, Psychiatry, Medical Sociology"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "Internal Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology (Advanced Clinical Training)"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Emergency Medicine, Radiology, Anesthesia, Family Medicine, Forensic Medicine + Internship"
+                }
+            ]
+        },
+        "feesIntro": "The Iuliu Hațieganu University of Medicine and Pharmacy, located in Cluj-Napoca, offers a well-structured and affordable fee system for students planning MBBS in abroad and especially MBBS in Romania.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€10,000",
+                    "hostel": "-",
+                    "total": "₹9 – ₹9.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€8,500",
+                    "hostel": "-",
+                    "total": "₹7.5 – ₹8 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€7,000 – €8,500",
+                    "hostel": "-",
+                    "total": "₹6 – ₹7.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€7,000 – €8,500",
+                    "hostel": "-",
+                    "total": "₹6 – ₹7.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€7,000 – €8,500",
+                    "hostel": "-",
+                    "total": "₹6 – ₹7.5 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€7,000 – €8,500",
+                    "hostel": "-",
+                    "total": "₹6 – ₹7.5 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (General Medicine) program at Iuliu Hațieganu University of Medicine and Pharmacy, located in Cluj-Napoca, follows a well-structured 6-year European medical education system.",
+        "duration": {
+            "headers": ["Particulars", "Duration"],
+            "table": [
+                {
+                    "Particulars": "Total Course Duration",
+                    "Duration": "6 Years"
+                },
+                {
+                    "Particulars": "Academic Study (Pre-Clinical + Clinical)",
+                    "Duration": "5 Years"
+                },
+                {
+                    "Particulars": "Internship / Clinical Rotations",
+                    "Duration": "1 Year"
+                },
+                {
+                    "Particulars": "Total Semesters",
+                    "Duration": "12 Semesters"
+                }
+            ]
+        },
+        "studentSupport": "The Iuliu Hațieganu University of Medicine and Pharmacy, located in Cluj-Napoca, offers a well-developed and student-friendly support system. The university provides strong academic support through experienced faculty members, mentorship programs, and regular doubt-solving sessions. In addition, student counselling and psychological support services are available to help students manage stress and academic pressure. The institution also provides assistance with hostel and accommodation, helping students find safe and affordable living options. On-campus facilities, libraries, and laboratories are easily accessible. For international students, dedicated administrative and international support services help with admission procedures, visa guidance, residence permits, and documentation. Students can also participate in cultural activities, organizations, sports, and medical conferences, enhancing their overall personality and global exposure.",
+        "recognition": "Iuliu Hațieganu University of Medicine and Pharmacy is one of the most prestigious and internationally recognized medical universities in Europe. It is a member of the International Association of Universities (IAU) and European University Association (EUA). It follows the European Credit Transfer System (ECTS) and is recognized by the Romanian Ministry of Education as an advanced research and education university. Globally, it is listed in the World Directory of Medical Schools (WDOMS) and recognized by major medical bodies such as WHO, NMC (India), ECFMG (USA), and GMC (UK). It is accredited internationally by agencies like IAAR. The university is known for its strong research output, multiple research centers, and excellence labs, often organizing international conferences like Medicalis. Graduates consistently achieve high success rates in residency exams and international medical careers.",
+        "hostelFacilities": "The university provides assistance with hostel and accommodation, helping students find safe and affordable living options. Comfortable hostel facilities are available in campuses like Hasdeu and Observator. These hostels, along with modern libraries and healthcare support services, ensure students maintain a healthy balance between studies and personal well-being.",
+        "studentLife": "Student life at the Iuliu Hațieganu University of Medicine and Pharmacy is dynamic, multicultural, and well-balanced. The university hosts thousands of students, including over 2,800 international students from more than 60 countries. Academically, students experience a rigorous and practical-oriented education where classroom learning is combined with clinical exposure and research opportunities. Life is enriched through scientific circles, student organizations, and academic events. The city of Cluj-Napoca itself adds great value, known as a vibrant student city with rich culture, nightlife, cafes, and festivals. It is considered safe, welcoming, and student-friendly, offering plenty of opportunities to relax and socialize after academic hours.",
+        "whyChooseUsIntro": "Choosing the right consultancy is crucial for students planning MBBS in abroad and especially MBBS in Romania, and iExplain Education is considered a reliable option due to its student-focused approach and complete admission support system.",
+        "whyChooseUs": [
+            "Expert Guidance & Counseling – Free and personalized counseling helping students understand university selection, eligibility, and career planning.",
+            "Complete Admission Assistance – End-to-end support including application filling, document verification, and university communication to avoid errors and delays.",
+            "Visa & Travel Support – Assistance with student visa application, forex guidance, and travel arrangements to ensure a smooth transition.",
+            "Pre & Post-Departure Support – Providing guidance before leaving and on-arrival support in Romania, including accommodation guidance and settlement assistance.",
+            "Trusted & Student-Centric Approach – Personalized career counseling analyzing academic profile, budget, and goals before suggesting the best options.",
+            "Wide Network of Universities – Access to multiple globally recognized universities, assisting with scholarships, education loans, and financial planning."
+        ],
+        "documents": [
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of secondary education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry & Biology (PCB)"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Must have sufficient validity"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Must be in English or translated & notarized"
+            },
+            {
+                "document": "Medical Certificate",
+                "details": "General health check-up report"
+            },
+            {
+                "document": "HIV Test Report",
+                "details": "Required medical screening report"
+            },
+            {
+                "document": "English Proficiency Proof",
+                "details": "IELTS/TOEFL or Medium of Instruction certificate"
+            },
+            {
+                "document": "Application Form",
+                "details": "Filled and signed university application"
+            },
+            {
+                "document": "Admission/Offer Letter",
+                "details": "Issued by the university after selection"
+            },
+            {
+                "document": "Police Clearance Certificate (PCC)",
+                "details": "Required for visa process"
+            }
+        ],
+        "conclusion": "In conclusion, the Iuliu Hațieganu University of Medicine and Pharmacy stands as one of the top and most prestigious destinations for students planning MBBS in abroad and especially MBBS in Romania. With its rich academic legacy, globally recognized degree, and European-standard curriculum, the university offers a complete medical education that meets international standards. From a well-structured MBBS syllabus and affordable fee structure to strong clinical training and modern infrastructure, the university provides everything required for building a successful medical career. The English-medium program, multicultural environment, and advanced research facilities further enhance the learning experience. Additionally, with proper student support services, students can confidently pursue their dream of becoming doctors with global career opportunities.",
+        "faqs": [
+            {
+                "question": "Where is Iuliu Hațieganu University located?",
+                "answer": "The university is located in Cluj-Napoca, one of the top student cities in Romania."
+            },
+            {
+                "question": "Is this university good for MBBS in abroad?",
+                "answer": "Yes, it is one of the most reputed medical universities in Europe, making it an excellent choice for MBBS in abroad and especially MBBS in Romania."
+            },
+            {
+                "question": "What is the duration of MBBS at this university?",
+                "answer": "The MBBS (General Medicine) program duration is 6 years, including academic study and internship."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad."
+            },
+            {
+                "question": "What is the medium of instruction?",
+                "answer": "The MBBS program is available in English and Romanian, which is suitable for international students."
+            },
+            {
+                "question": "What is the eligibility criteria for MBBS?",
+                "answer": "Students must have completed 12th with Physics, Chemistry, and Biology (PCB) with required minimum marks."
+            },
+            {
+                "question": "What is the fee structure for MBBS?",
+                "answer": "The tuition fee ranges approximately between €7,000 – €10,000 per year depending on the course year."
+            },
+            {
+                "question": "Is the university internationally recognized?",
+                "answer": "Yes, the university is globally recognized, and its degree is valid in many countries after clearing licensing exams."
+            }
+        ]
+    },
+    "ovidius-university": {
+        "title": "Ovidius University of Constanța",
+        "coursetype": "MBBS",
+        "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514514/Ovidius_Constanta_Main.webp",
+        "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Ovidius_Constanta_Mobile.webp",
+        "intro": {
+            "text": "The Ovidius University of Constanța is one of the well-known public universities in Romania, offering high-quality medical education and attracting students from around the world. Located in Constanța, a beautiful coastal city on the Black Sea, the university is a popular choice for students planning MBBS in abroad and especially MBBS in Romania due to its affordable education and modern teaching approach.\n\nEstablished in 1961, Ovidius University has developed into a comprehensive institution with multiple faculties, including a well-recognized Faculty of Medicine. The university is named after the famous Roman poet Ovid, reflecting its historical and cultural significance. For students aiming to pursue MBBS in Romania, the university offers a 6-year General Medicine (MBBS equivalent) program that follows the European medical education system. The curriculum is designed to provide a strong foundation in medical sciences along with practical clinical training in affiliated hospitals and healthcare centers.\n\nThe university is known for its English-medium MBBS program, which makes it suitable for international students, especially from India and other non-European countries. It also provides modern infrastructure, laboratories, libraries, and experienced faculty members who focus on both academic excellence and practical learning. Another major advantage of studying at Ovidius University is its affordable fee structure and low cost of living, making it a budget-friendly option for students seeking MBBS in abroad. The multicultural environment and student-friendly atmosphere further enhance the overall experience."
+        },
+        "quickOverview": {
+            "University Name": "Ovidius University of Constanța",
+            "Location": "Constanța, Romania",
+            "Established": "1961",
+            "Type": "Public University",
+            "Faculty of Medicine": "Yes",
+            "Popular Course": "MBBS (General Medicine)",
+            "Course Duration": "6 Years (including internship)",
+            "Medium of Instruction": "English & Romanian",
+            "Recognition": "WHO, NMC, ECFMG, European medical bodies",
+            "Admission Type": "Based on academic eligibility",
+            "Affiliated Hospitals": "Multiple teaching hospitals in Constanța"
+        },
+        "benefits": {
+            "intro": "The Ovidius University of Constanța, located in Constanța, is a popular destination for students planning MBBS in abroad and especially MBBS in Romania. Known for its affordable fee structure, European-standard education system, and strong clinical training, the university offers a perfect combination of quality education and practical exposure. It provides an ideal environment for international students who want to build a successful global medical career.",
+            "headers": ["Heading", "Details"],
+            "table": [
+                {
+                    "Heading": "Globally Recognized Medical Degree",
+                    "Details": "The MBBS (General Medicine) degree from Ovidius University of Constanța is recognized by major global medical bodies such as WHO, NMC, and ECFMG, allowing graduates to appear for exams like FMGE/NExT, USMLE, and PLAB."
+                },
+                {
+                    "Heading": "European Standard Education System",
+                    "Details": "The university follows a European Union (EU) curriculum, ensuring high-quality education with updated medical knowledge and practical training that prepares students for global medical standards."
+                },
+                {
+                    "Heading": "Affordable MBBS in Romania",
+                    "Details": "Compared to many private medical colleges, the university offers cost-effective tuition fees, making it a budget-friendly option without compromising quality."
+                },
+                {
+                    "Heading": "English-Medium MBBS Program",
+                    "Details": "The university provides an English-medium MBBS program, which is ideal for international students, especially from India, allowing them to study without language barriers."
+                },
+                {
+                    "Heading": "Strong Clinical Exposure & Hospital Training",
+                    "Details": "Students gain hands-on experience through clinical training in affiliated hospitals, learning real patient care and medical practices."
+                },
+                {
+                    "Heading": "Modern Infrastructure & Research Facilities",
+                    "Details": "Advanced laboratories, research centers, and modern classrooms are available, including specialized centers for cancer research and nanotechnology."
+                },
+                {
+                    "Heading": "Multicultural Environment",
+                    "Details": "With students from more than 60 countries, the university offers a diverse learning environment that builds global exposure and communication skills."
+                },
+                {
+                    "Heading": "Strategic Location & Student Life",
+                    "Details": "Located in a coastal city on the Black Sea, Constanța offers a vibrant student life, cultural diversity, and a safe environment well-connected to Europe."
+                }
+            ]
+        },
+        "SyllabusIntro": "The MBBS (General Medicine) program at Ovidius University of Constanța follows a 6-year European medical curriculum designed to provide a strong foundation in medical sciences along with advanced clinical training.",
+        "syllabus": {
+            "headers": ["Year", "Subjects"],
+            "table": [
+                {
+                    "Year": "1st Year",
+                    "Subjects": "Anatomy, Histology, Biochemistry, Medical Biology"
+                },
+                {
+                    "Year": "2nd Year",
+                    "Subjects": "Physiology, Microbiology, Immunology, Advanced Biochemistry, Introductory Pathology"
+                },
+                {
+                    "Year": "3rd Year",
+                    "Subjects": "Pathology, Pharmacology, Medical Genetics, Behavioral Sciences, Basic Clinical Skills"
+                },
+                {
+                    "Year": "4th Year",
+                    "Subjects": "Internal Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, ENT, Ophthalmology"
+                },
+                {
+                    "Year": "5th Year",
+                    "Subjects": "Cardiology, Neurology, Psychiatry, Emergency Medicine, Radiology, Public Health"
+                },
+                {
+                    "Year": "6th Year",
+                    "Subjects": "Advanced Clinical Training in all major medical specialties"
+                },
+                {
+                    "Year": "Internship",
+                    "Subjects": "Rotations in Medicine, Surgery, Pediatrics, OBGY, Emergency, Orthopedics, ENT, etc."
+                }
+            ]
+        },
+        "feesIntro": "The Ovidius University of Constanța offers an affordable and budget-friendly fee structure for students planning MBBS in abroad and especially MBBS in Romania. The tuition fees are comparatively lower than many European medical universities.",
+        "fees": {
+            "structure": [
+                {
+                    "year": "1st Year",
+                    "tuition": "€6,500 – €7,500",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹6.7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "2nd Year",
+                    "tuition": "€6,500 – €8,000",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "3rd Year",
+                    "tuition": "€6,500 – €8,000",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "4th Year",
+                    "tuition": "€6,500 – €8,000",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "5th Year",
+                    "tuition": "€6,500 – €8,000",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹7 Lakhs (Approx.)"
+                },
+                {
+                    "year": "6th Year",
+                    "tuition": "€6,500 – €8,000",
+                    "hostel": "-",
+                    "total": "₹5.8 – ₹7 Lakhs (Approx.)"
+                }
+            ]
+        },
+        "durationIntro": "The MBBS (General Medicine) program at Ovidius University of Constanța follows a 6-year European medical education system. The course is designed to provide a strong balance between theoretical knowledge and practical clinical training.",
+        "duration": {
+            "headers": ["Particulars", "Duration"],
+            "table": [
+                {
+                    "Particulars": "Total Course Duration",
+                    "Duration": "6 Years"
+                },
+                {
+                    "Particulars": "Academic Study (Pre-Clinical + Clinical)",
+                    "Duration": "5 Years"
+                },
+                {
+                    "Particulars": "Internship / Clinical Rotations",
+                    "Duration": "1 Year"
+                },
+                {
+                    "Particulars": "Total Semesters",
+                    "Duration": "12 Semesters"
+                }
+            ]
+        },
+        "studentSupport": "The Ovidius University of Constanța, located in Constanța, offers a well-developed support system for international students. The university has a dedicated International Students Department, which helps students with admission procedures, documentation, and resolving social or administrative issues. This department plays a key role in making the transition to a new country smooth and comfortable. In terms of accommodation, the university provides student dormitories with affordable living options and also assists students in finding private housing near the campus. Academically, students benefit from modern libraries, computer labs, and digital learning resources. The university also provides language support through its Language Centre, where international students can learn Romanian and improve communication skills, which is especially helpful during clinical training.",
+        "recognition": "Ovidius University of Constanța is a well-recognized public university in Europe. It is a member of the European University Association (EUA) and European Association of Institutions in Higher Education (EURASHE). It is associated with the Agence Universitaire de la Francophonie (AUF) and is part of the Black Sea Universities Network (BSUN) and Balkan Universities Network (BUA). Officially recognized by the Ministry of Education, Romania, it is listed in global directories and rankings. It is included in the QS Europe University Rankings – Eastern Europe (#=99 in 2026) and ranked in the 1501+ category of the Times Higher Education Rankings. The degree is internationally accepted and suitable for global medical careers.",
+        "hostelFacilities": "The university provides student dormitories with affordable living options and also assists students in finding private housing near the campus. The cost of living in Constanța is relatively low compared to other European cities, which makes it easier for students to manage their expenses while studying MBBS abroad. Cafeterias offering low-cost meals are also accessible to students.",
+        "studentLife": "Student life at the Ovidius University of Constanța is vibrant, diverse, and well-balanced. The university has a multicultural student community with students from over 60 countries. Diversity allows students to interact with peers from different backgrounds, improving communication skills. Life is enriched through student organizations and international clubs like the Erasmus Student Network, which organize cultural events, sports activities, and excursions. The city of Constanța itself offers beaches, nightlife, cafes, and tourist attractions. During summer, places like Mamaia resort become major hubs, while malls, cinemas, theaters, and sports facilities are available throughout the year, ensuring a high-quality lifestyle.",
+        "whyChooseUsIntro": "Choosing the right consultancy is very important for students planning MBBS in abroad and especially MBBS in Romania, and iExplain Education stands out as a reliable and student-focused option. It provides complete guidance and support for students who want to take admission in top universities like Ovidius University of Constanța.",
+        "whyChooseUs": [
+            "Expert Career Counseling – Personalized counseling approach analyzing academic background, budget, and goals before suggesting suitable universities.",
+            "Complete Admission Assistance – Helping students at every stage—from selecting the right university to final enrollment smoothly.",
+            "Documentation Support – Comprehensive services including application processing and direct communication with universities to reduce errors.",
+            "Visa & Travel Support – Assistance with documentation and processing to ensure a stress-free journey for MBBS abroad.",
+            "Wide Network & Genuine Options – Focusing on student needs rather than promoting specific institutions, ensuring better decision-making."
+        ],
+        "documents": [
+            {
+                "document": "10th Marksheet & Certificate",
+                "details": "Proof of secondary education"
+            },
+            {
+                "document": "12th Marksheet & Certificate",
+                "details": "Must include Physics, Chemistry & Biology (PCB)"
+            },
+            {
+                "document": "NEET Scorecard",
+                "details": "Mandatory for Indian students"
+            },
+            {
+                "document": "Valid Passport",
+                "details": "Copy of passport (first pages) required"
+            },
+            {
+                "document": "Birth Certificate",
+                "details": "Translated & notarized copy required"
+            },
+            {
+                "document": "Medical Certificate",
+                "details": "Proof that the student is medically fit"
+            },
+            {
+                "document": "English Proficiency Certificate",
+                "details": "Minimum B1 level (IELTS/TOEFL or university test)"
+            },
+            {
+                "document": "Document Translation & Apostille",
+                "details": "Required for non-English documents"
+            },
+            {
+                "document": "Academic Transcripts",
+                "details": "Complete record of previous studies"
+            }
+        ],
+        "conclusion": "In conclusion, the Ovidius University of Constanța, located in Constanța, is a reliable and cost-effective destination for students planning MBBS in abroad and especially MBBS in Romania. The university offers a well-structured medical program based on European standards, combining strong theoretical knowledge with practical clinical training. From its affordable fee structure and English-medium MBBS program to modern infrastructure and experienced faculty, the university provides all the essential elements required for quality medical education. The well-designed syllabus, hands-on hospital training, and global recognition of the degree help students build a strong foundation for their future medical careers. Additionally, the university ensures a supportive environment through student services, accommodation facilities, and a multicultural campus life.",
+        "faqs": [
+            {
+                "question": "Where is Ovidius University of Constanța located?",
+                "answer": "The university is located in Constanța, a coastal city on the Black Sea."
+            },
+            {
+                "question": "Is Ovidius University good for MBBS in abroad?",
+                "answer": "Yes, it is a well-known and affordable option for students planning MBBS in abroad and especially MBBS in Romania."
+            },
+            {
+                "question": "What is the duration of MBBS at this university?",
+                "answer": "The MBBS (General Medicine) program duration is 6 years, including academic studies and clinical training."
+            },
+            {
+                "question": "Is NEET required for admission?",
+                "answer": "Yes, NEET qualification is mandatory for Indian students who want to study MBBS abroad."
+            },
+            {
+                "question": "What is the medium of instruction?",
+                "answer": "The MBBS program is offered in English and Romanian for international students."
+            },
+            {
+                "question": "What is the eligibility criteria for MBBS?",
+                "answer": "Students must have completed 12th with Physics, Chemistry, and Biology (PCB) with required minimum marks."
+            },
+            {
+                "question": "What is the fee structure for MBBS?",
+                "answer": "The tuition fee is approximately €6,500 – €8,000 per year, making it an affordable option."
+            },
+            {
+                "question": "Is the university internationally recognized?",
+                "answer": "Yes, the university is globally recognized, and its degree is accepted in many countries after licensing exams."
+            },
+            {
+                "question": "Are hostel facilities available?",
+                "answer": "Yes, the university provides hostel and accommodation support for students."
+            }
+        ]
     }
-    
 };

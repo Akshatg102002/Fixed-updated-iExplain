@@ -76,7 +76,7 @@ export const FOOTER_COLLEGES = {
     { country: 'China', code: 'CN', names: ['Nanjing Medical University', 'Jilin University', 'China Medical University', 'Dalian Medical University'] },
     { country: 'Nepal', code: 'NP', names: ['Tribhuvan University', 'Kathmandu University', 'BP Koirala Institute of Health Sciences', 'Patan Academy of Health Sciences'] },
     { country: 'Bangladesh', code: 'BD', names: ['Dhaka National Medical College', 'Bangladesh Medical College', 'Jahurul Islam Medical College', 'Holy Family Red Crescent Medical College'] },
-    { country: 'Romania', code: 'RO', names: ['Carol Davila University', 'Grigore T. Popa University', 'Iuliu Hatieganu University', 'Ovidius University'] },
+    { country: 'Romania', code: 'RO', names: ['Carol Davila University', 'Grigore T Popa University', 'Iuliu Hatieganu University', 'Ovidius University'] },
     { country: 'Serbia', code: 'RS', names: ['University of Belgrade', 'University of Novi Sad', 'University of Nis', 'University of Kragujevac'] }
   ],
   study: [
