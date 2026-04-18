@@ -47,6 +47,8 @@ const ArrayInput = ({ label, items, onChange }: { label: string, items: string[]
   );
 };
 
+type DynamicPageCategory = 'MBBS Abroad' | 'Study Abroad' | 'MBBS in India' | 'Colleges' | 'Entrance Exams';
+
 const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
@@ -234,6 +236,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const generateSlug = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 
   const startEditingPage = (page: any) => {
+    const allowedCategories: DynamicPageCategory[] = ['MBBS Abroad', 'Study Abroad', 'MBBS in India', 'Colleges', 'Entrance Exams'];
     setPageForm({
       title: page.title || '',
       slug: page.slug || '',
@@ -376,7 +379,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         
         <header className="bg-white h-16 shrink-0 flex items-center justify-between px-10 border-b border-gray-100 shadow-sm">
           <span className="text-brand-blue font-black text-sm uppercase tracking-widest">{activeTab === 'entries' ? 'Leads & Entries' : activeTab}</span>
-          <div className="text-xs font-bold text-gray-400">v3.4.0</div>
+          <div className="flex items-center gap-3">
+            <button onClick={handleSyncAllSiteData} className="px-4 py-2 bg-emerald-600 text-white rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-emerald-700 transition-all">
+              Sync All Site Data
+            </button>
+            <div className="text-xs font-bold text-gray-400">v3.4.0</div>
+          </div>
         </header>
 
         <div className="flex-grow overflow-y-auto p-10 no-scrollbar">
@@ -660,9 +668,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
                     <div>
                       <label className="label">Category</label>
-                      <select className="input-std" value={pageForm.category} onChange={e => setPageForm({ ...pageForm, category: e.target.value as 'MBBS Abroad' | 'Study Abroad' })}>
+                      <select className="input-std" value={pageForm.category} onChange={e => setPageForm({ ...pageForm, category: e.target.value as DynamicPageCategory })}>
                         <option value="MBBS Abroad">MBBS Abroad</option>
                         <option value="Study Abroad">Study Abroad</option>
+                        <option value="MBBS in India">MBBS in India</option>
+                        <option value="Colleges">Colleges</option>
+                        <option value="Entrance Exams">Entrance Exams</option>
                       </select>
                     </div>
 
