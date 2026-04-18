@@ -15,9 +15,6 @@ import { Blog, BlogCategory, SiteSettings, MediaItem, VideoStory, CollegeDetailD
 import { LOGO_URL, FOOTER_COLLEGES } from '../data.ts';
 import { MBBS_ABROAD_DETAILED } from '../mbbs_data.ts';
 import { STUDY_ABROAD_DETAILED } from '../studyAbroad_Data.ts';
-import { MBBS_IN_INDIA_DETAILS } from '../MBBSinindiadata.ts';
-import { COLLEGE_DETAILS } from '../collegeData.ts';
-import { ENTRANCE_EXAM_DETAILS } from '../EntranceExamdata.ts';
 import MediaManager from './MediaManager';
 
 type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
@@ -85,11 +82,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [pageForm, setPageForm] = useState<{
     title: string;
     slug: string;
-    category: DynamicPageCategory;
+    category: 'MBBS Abroad' | 'Study Abroad';
     payloadText: string;
     focusKeyphrase: string;
     metaTitle: string;
-    seoSlug: string;
     metaDescription: string;
   }>({
     title: '',
@@ -98,7 +94,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     payloadText: '',
     focusKeyphrase: '',
     metaTitle: '',
-    seoSlug: '',
     metaDescription: ''
   });
   
@@ -200,7 +195,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       payloadText: '',
       focusKeyphrase: '',
       metaTitle: '',
-      seoSlug: '',
       metaDescription: ''
     });
     setCollegeForm(initialCollegeState);
@@ -246,11 +240,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setPageForm({
       title: page.title || '',
       slug: page.slug || '',
-      category: allowedCategories.includes(page.category) ? page.category : 'MBBS Abroad',
+      category: page.category === 'Study Abroad' ? 'Study Abroad' : 'MBBS Abroad',
       payloadText: JSON.stringify(page.payload || {}, null, 2),
       focusKeyphrase: page.seo?.focusKeyphrase || '',
       metaTitle: page.seo?.metaTitle || '',
-      seoSlug: page.seo?.slug || '',
       metaDescription: page.seo?.metaDescription || ''
     });
     setEditingId(page.id);
@@ -274,73 +267,28 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       seo: {
         focusKeyphrase: pageForm.focusKeyphrase || '',
         metaTitle: pageForm.metaTitle || '',
-        slug: pageForm.seoSlug || '',
         metaDescription: pageForm.metaDescription || ''
       }
     });
   };
 
-  const handleSyncAllSiteData = async () => {
+  const handleSyncLocalData = async () => {
     setLoading(true);
     try {
-      const buildSeo = (existingSeo: any) => ({
-        focusKeyphrase: existingSeo?.focusKeyphrase || '',
-        metaTitle: existingSeo?.metaTitle || '',
-        slug: existingSeo?.slug || '',
-        metaDescription: existingSeo?.metaDescription || ''
-      });
-
-      const remoteExisting = await getDocs(collection(db, 'dynamic_pages'));
-      const existingSeoBySlug = new Map<string, any>();
-      remoteExisting.forEach((snapshot) => {
-        const data = snapshot.data();
-        const docSlug = data?.slug || snapshot.id;
-        if (docSlug) existingSeoBySlug.set(docSlug, data?.seo || null);
-      });
-
-      const mbbsAbroadEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
+      const mbbsEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
         slug,
         title: payload?.title || slug.replace(/-/g, ' '),
         category: 'MBBS Abroad' as const,
         payload
       }));
-
-      const studyAbroadEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
+      const studyEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
         slug,
         title: payload?.title || slug.replace(/-/g, ' '),
         category: 'Study Abroad' as const,
         payload
       }));
 
-      const mbbsIndiaEntries = Object.entries(MBBS_IN_INDIA_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'MBBS in India' as const,
-        payload
-      }));
-
-      const collegeEntries = Object.entries(COLLEGE_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || payload?.name || slug.replace(/-/g, ' '),
-        category: 'Colleges' as const,
-        payload
-      }));
-
-      const entranceExamEntries = Object.entries(ENTRANCE_EXAM_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'Entrance Exams' as const,
-        payload
-      }));
-
-      const allEntries = [
-        ...mbbsAbroadEntries,
-        ...studyAbroadEntries,
-        ...mbbsIndiaEntries,
-        ...collegeEntries,
-        ...entranceExamEntries
-      ];
-
+      const allEntries = [...mbbsEntries, ...studyEntries];
       await Promise.all(
         allEntries.map(entry =>
           setDoc(
@@ -349,8 +297,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               slug: entry.slug,
               title: entry.title,
               category: entry.category,
-              payload: entry.payload,
-              seo: buildSeo(existingSeoBySlug.get(entry.slug))
+              payload: entry.payload
             },
             { merge: true }
           )
@@ -358,10 +305,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       );
 
       await fetchData();
-      alert(`Synced ${allEntries.length} records to dynamic_pages (programs + colleges).`);
+      alert(`Synced ${allEntries.length} local page records to dynamic_pages.`);
     } catch (err) {
       console.error('Sync local data failed:', err);
-      alert('Failed to sync all site data.');
+      alert('Failed to sync local data.');
     } finally {
       setLoading(false);
     }
@@ -666,6 +613,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl font-black text-brand-blue">Manage <span className="text-brand-gold">Program Pages</span></h2>
                 <div className="flex gap-3">
+                  {viewMode === 'list' && (
+                    <button onClick={handleSyncLocalData} className="px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">
+                      Sync Local Data
+                    </button>
+                  )}
                   <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
                     {viewMode === 'list' ? 'New Program Page' : 'Back to List'}
                   </button>
@@ -725,18 +677,14 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       </select>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label className="label">Focus Keyphrase</label>
                         <input type="text" className="input-std" value={pageForm.focusKeyphrase} onChange={e => setPageForm({ ...pageForm, focusKeyphrase: e.target.value })} />
                       </div>
                       <div>
-                        <label className="label">SEO Title</label>
+                        <label className="label">Meta Title</label>
                         <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
-                      </div>
-                      <div>
-                        <label className="label">SEO Slug</label>
-                        <input type="text" className="input-std" value={pageForm.seoSlug} onChange={e => setPageForm({ ...pageForm, seoSlug: e.target.value })} />
                       </div>
                     </div>
 
