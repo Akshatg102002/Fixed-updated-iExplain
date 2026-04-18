@@ -13,6 +13,8 @@ import {
 } from '../firebase.ts';
 import { Blog, BlogCategory, SiteSettings, MediaItem, VideoStory, CollegeDetailData } from '../types';
 import { LOGO_URL, FOOTER_COLLEGES } from '../data.ts';
+import { MBBS_ABROAD_DETAILED } from '../mbbs_data.ts';
+import { STUDY_ABROAD_DETAILED } from '../studyAbroad_Data.ts';
 import MediaManager from './MediaManager';
 
 type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
@@ -75,11 +77,22 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   // Removed mediaForm state as it is handled by MediaManager
   const [storyForm, setStoryForm] = useState<Partial<VideoStory>>({});
   const [settingsForm, setSettingsForm] = useState<Partial<SiteSettings>>({});
-  const [pageForm, setPageForm] = useState<{ title: string; slug: string; category: 'MBBS Abroad' | 'Study Abroad'; payloadText: string }>({
+  const [pageForm, setPageForm] = useState<{
+    title: string;
+    slug: string;
+    category: 'MBBS Abroad' | 'Study Abroad';
+    payloadText: string;
+    focusKeyphrase: string;
+    metaTitle: string;
+    metaDescription: string;
+  }>({
     title: '',
     slug: '',
     category: 'MBBS Abroad',
-    payloadText: ''
+    payloadText: '',
+    focusKeyphrase: '',
+    metaTitle: '',
+    metaDescription: ''
   });
   
   // College Form State
@@ -173,7 +186,15 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setCategoryForm({ name: '', slug: '' });
     // Removed mediaForm reset
     setStoryForm({ studentName: '', university: '', videoUrl: '', thumbnailUrl: '', tagline: '' });
-    setPageForm({ title: '', slug: '', category: 'MBBS Abroad', payloadText: '' });
+    setPageForm({
+      title: '',
+      slug: '',
+      category: 'MBBS Abroad',
+      payloadText: '',
+      focusKeyphrase: '',
+      metaTitle: '',
+      metaDescription: ''
+    });
     setCollegeForm(initialCollegeState);
     setImagePreview(null);
     setEditingId(null);
@@ -217,7 +238,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       title: page.title || '',
       slug: page.slug || '',
       category: page.category === 'Study Abroad' ? 'Study Abroad' : 'MBBS Abroad',
-      payloadText: JSON.stringify(page.payload || {}, null, 2)
+      payloadText: JSON.stringify(page.payload || {}, null, 2),
+      focusKeyphrase: page.seo?.focusKeyphrase || '',
+      metaTitle: page.seo?.metaTitle || '',
+      metaDescription: page.seo?.metaDescription || ''
     });
     setEditingId(page.id);
     setViewMode('edit');
@@ -236,8 +260,55 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       title: pageForm.title,
       slug: pageForm.slug || generateSlug(pageForm.title),
       category: pageForm.category,
-      payload: parsedPayload
+      payload: parsedPayload,
+      seo: {
+        focusKeyphrase: pageForm.focusKeyphrase || '',
+        metaTitle: pageForm.metaTitle || '',
+        metaDescription: pageForm.metaDescription || ''
+      }
     });
+  };
+
+  const handleSyncLocalData = async () => {
+    setLoading(true);
+    try {
+      const mbbsEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
+        slug,
+        title: payload?.title || slug.replace(/-/g, ' '),
+        category: 'MBBS Abroad' as const,
+        payload
+      }));
+      const studyEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
+        slug,
+        title: payload?.title || slug.replace(/-/g, ' '),
+        category: 'Study Abroad' as const,
+        payload
+      }));
+
+      const allEntries = [...mbbsEntries, ...studyEntries];
+      await Promise.all(
+        allEntries.map(entry =>
+          setDoc(
+            doc(db, 'dynamic_pages', entry.slug),
+            {
+              slug: entry.slug,
+              title: entry.title,
+              category: entry.category,
+              payload: entry.payload
+            },
+            { merge: true }
+          )
+        )
+      );
+
+      await fetchData();
+      alert(`Synced ${allEntries.length} local page records to dynamic_pages.`);
+    } catch (err) {
+      console.error('Sync local data failed:', err);
+      alert('Failed to sync local data.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (!isAuthenticated) {
@@ -533,9 +604,16 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             <div className="animate-fade-in">
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl font-black text-brand-blue">Manage <span className="text-brand-gold">Program Pages</span></h2>
-                <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
-                  {viewMode === 'list' ? 'New Program Page' : 'Back to List'}
-                </button>
+                <div className="flex gap-3">
+                  {viewMode === 'list' && (
+                    <button onClick={handleSyncLocalData} className="px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">
+                      Sync Local Data
+                    </button>
+                  )}
+                  <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
+                    {viewMode === 'list' ? 'New Program Page' : 'Back to List'}
+                  </button>
+                </div>
               </div>
 
               {viewMode === 'list' ? (
@@ -586,6 +664,27 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         <option value="MBBS Abroad">MBBS Abroad</option>
                         <option value="Study Abroad">Study Abroad</option>
                       </select>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="label">Focus Keyphrase</label>
+                        <input type="text" className="input-std" value={pageForm.focusKeyphrase} onChange={e => setPageForm({ ...pageForm, focusKeyphrase: e.target.value })} />
+                      </div>
+                      <div>
+                        <label className="label">Meta Title</label>
+                        <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="label">Meta Description</label>
+                      <textarea
+                        rows={3}
+                        className="input-std"
+                        value={pageForm.metaDescription}
+                        onChange={e => setPageForm({ ...pageForm, metaDescription: e.target.value })}
+                      />
                     </div>
 
                     <div>
