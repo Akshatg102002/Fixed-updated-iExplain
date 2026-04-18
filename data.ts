@@ -457,6 +457,1017 @@ export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
       ]
     }
   },
+  "md-ms": {
+    "title": "Study MD/MS in India for Medical Graduates",
+    "heroImage": "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
+    "intro": "MD (Doctor of Medicine) and MS (Master of Surgery) are postgraduate medical degrees that students pursue after completing their MBBS to gain advanced knowledge, clinical expertise, and specialization in a particular branch of medicine. These programs are considered the next crucial step for medical graduates who want to enhance their skills and build a successful career in the healthcare sector. In India, admission to MD/MS courses is primarily based on the NEET PG (National Eligibility cum Entrance Test – Postgraduate), conducted by the National Board of Examinations (NBE), followed by centralized counselling.\n\nMD is a non-surgical postgraduate degree that focuses on the diagnosis, prevention, and medical treatment of diseases. It includes specializations such as General Medicine, Pediatrics, Dermatology, Radiology, Psychiatry, and Anesthesiology. On the other hand, MS is a surgical postgraduate degree that deals with surgical procedures and operative techniques, with specializations like General Surgery, Orthopedics, ENT (Ear, Nose, and Throat), and Obstetrics & Gynecology. Both MD and MS programs typically have a duration of 3 years, during which students undergo rigorous academic training along with hands-on clinical practice in hospitals.\n\nDuring the MD/MS course, students are exposed to real patient care, hospital duties, emergency cases, ward rounds, and clinical research, which helps them develop practical skills and decision-making abilities. They also participate in seminars, case studies, and thesis work, which are essential for academic and research development. This combination of theoretical learning and practical exposure ensures that doctors are well-prepared to handle complex medical situations independently.\n\nPursuing MD/MS offers numerous career opportunities. After completing these degrees, doctors can work as specialists or consultants in hospitals, clinics, and healthcare institutions, or they can start their own practice. Additionally, they can opt for further super-specialization courses such as DM (Doctorate of Medicine) or MCh (Master of Chirurgiae), which provide even deeper expertise in specific medical fields. MD/MS graduates can also explore careers in medical research, teaching, hospital administration, and public health sectors.\n\nWith the growing demand for specialized healthcare services and increasing awareness about quality medical treatment, the importance of MD/MS degrees has significantly increased. These programs not only improve a doctor's professional skills but also enhance their earning potential and career growth. Overall, pursuing MD/MS in India is a vital step for medical graduates who aim to achieve excellence, specialization, and long-term success in the medical profession.",
+
+    "overview": {
+      "title": "MD vs MS – Overview",
+      "table": [
+        { "particular": "Full Form", "md": "Doctor of Medicine", "ms": "Master of Surgery" },
+        { "particular": "Type of Course", "md": "Non-Surgical Postgraduate Degree", "ms": "Surgical Postgraduate Degree" },
+        { "particular": "Focus Area", "md": "Diagnosis & Medical Treatment", "ms": "Surgical Procedures & Operations" },
+        { "particular": "Course Duration", "md": "3 Years", "ms": "3 Years" },
+        { "particular": "Eligibility", "md": "MBBS + NEET PG Qualified", "ms": "MBBS + NEET PG Qualified" },
+        { "particular": "Admission Process", "md": "Based on NEET PG conducted by National Board of Examinations", "ms": "Same as MD (NEET PG based)" },
+        { "particular": "Top Specializations", "md": "General Medicine, Pediatrics, Radiology, Dermatology, Psychiatry", "ms": "General Surgery, Orthopedics, ENT, Obstetrics & Gynecology" },
+        { "particular": "Training Type", "md": "Clinical & Theoretical (Non-surgical)", "ms": "Clinical + Surgical Hands-on Training" },
+        { "particular": "Career Options", "md": "Physician, Specialist Doctor, Consultant", "ms": "Surgeon, Surgical Specialist" },
+        { "particular": "Work Area", "md": "Hospitals, Clinics, Research, Teaching", "ms": "Hospitals, Operation Theatres, Clinics" },
+        { "particular": "Further Studies", "md": "DM (Super Specialization)", "ms": "MCh (Super Specialization)" },
+        { "particular": "Scope in India", "md": "High demand for medical specialists", "ms": "High demand for skilled surgeons" }
+      ]
+    },
+
+    "whatIs": {
+      "title": "What is MD and MS?",
+      "description": "MD (Doctor of Medicine) and MS (Master of Surgery) are postgraduate medical degrees that students pursue after completing their MBBS to gain specialization in a specific field of medicine. These courses help doctors develop advanced knowledge, clinical skills, and expertise required to become specialists in the healthcare sector.",
+      "points": [
+        {
+          "title": "MD (Doctor of Medicine)",
+          "description": "MD is a non-surgical postgraduate degree that focuses on the diagnosis, prevention, and treatment of diseases through medicines and non-invasive methods. It includes specializations such as General Medicine, Pediatrics, Dermatology, Radiology, and Psychiatry. Doctors who complete MD generally work as physicians or specialists in hospitals and clinics."
+        },
+        {
+          "title": "MS (Master of Surgery)",
+          "description": "MS is a surgical postgraduate degree that focuses on surgical procedures and operative techniques. It includes fields like General Surgery, Orthopedics, ENT (Ear, Nose, and Throat), and Obstetrics & Gynecology. MS graduates are trained to perform surgeries and handle surgical cases."
+        }
+      ]
+    },
+
+    "curriculum": {
+      "title": "MD/MS Course Duration and Structure",
+      "description": "The MD (Doctor of Medicine) and MS (Master of Surgery) programs are postgraduate medical courses designed to provide advanced clinical training, specialization, and practical exposure after MBBS. In India, these courses are regulated and admissions are conducted through NEET PG by the National Board of Examinations.",
+      "durationTable": [
+        { "course": "MD (Doctor of Medicine)", "duration": "3 Years" },
+        { "course": "MS (Master of Surgery)", "duration": "3 Years" }
+      ],
+      "phases": [
+        { "phase": "1st Year", "structure": "Basic Clinical Training", "details": "Introduction to specialization, patient interaction, ward duties, and basic procedures" },
+        { "phase": "2nd Year", "structure": "Advanced Clinical Exposure", "details": "Diagnosis, case handling, assisting in procedures/surgeries, seminars, and presentations" },
+        { "phase": "3rd Year", "structure": "Specialization & Research", "details": "Independent case handling, thesis submission, advanced procedures/surgeries" }
+      ],
+      "mdCourses": [
+        "Anatomy", "Physiology", "Biochemistry", "Pharmacology", "Pathology",
+        "Microbiology", "Forensic Medicine", "Community Medicine (PSM)", "General Medicine",
+        "Pediatrics", "Dermatology, Venereology & Leprosy (Skin)", "Psychiatry",
+        "Radiodiagnosis (Radio)", "Anaesthesiology", "Pulmonary Medicine (TB & Chest)",
+        "Emergency Medicine", "Nuclear Medicine", "Physical Medicine & Rehabilitation (PMR)",
+        "Sports Medicine", "Geriatrics", "Immunohematology & Blood Transfusion"
+      ],
+      "msCourses": [
+        "General Surgery", "Orthopaedics", "Ophthalmology (Eye)",
+        "Otorhinolaryngology (ENT)", "Obstetrics & Gynaecology"
+      ]
+    },
+
+    "eligibility": {
+      "title": "Eligibility Criteria for MD/MS in India (2026)",
+      "description": "To pursue MD (Doctor of Medicine) or MS (Master of Surgery) in India, candidates must fulfill specific eligibility requirements set by medical authorities and institutions. Admission to these postgraduate medical courses is primarily based on the NEET PG examination, conducted by the National Board of Examinations.",
+      "table": [
+        { "criteria": "Educational Qualification", "details": "Candidates must have successfully completed their MBBS degree from a recognized medical college approved by the relevant medical regulatory authority." },
+        { "criteria": "Internship Requirement", "details": "Applicants must complete a one-year compulsory rotating internship on or before the specified deadline (generally March 31 of the admission year)." },
+        { "criteria": "NEET PG Qualification", "details": "Candidates must qualify the NEET PG exam with the required minimum percentile to participate in counselling and seat allotment." },
+        { "criteria": "Cut-off – General Category", "details": "50th percentile in NEET PG." },
+        { "criteria": "Cut-off – OBC/SC/ST", "details": "40th percentile in NEET PG." },
+        { "criteria": "Cut-off – General PwD", "details": "45th percentile in NEET PG." },
+        { "criteria": "Medical Council Registration", "details": "Candidates must be registered with the National Medical Commission (NMC) or a State Medical Council." },
+        { "criteria": "Nationality", "details": "Indian Citizens, Overseas Citizens of India (OCI), Non-Resident Indians (NRI), and Persons of Indian Origin (PIO) are eligible as per respective quotas and regulations." },
+        { "criteria": "Age Limit", "details": "There is no upper age limit for applying to MD/MS courses. Candidates must meet all academic and exam-related requirements." }
+      ]
+    },
+
+    "documents": {
+      "title": "Documents Required for MD/MS in India (2026)",
+      "subtitle": "To secure admission in MD (Doctor of Medicine) and MS (Master of Surgery) programs in India, candidates must present a set of essential documents during counselling and admission. These documents are verified by the counselling authority and allotted colleges to confirm eligibility and academic records.",
+      "table": [
+        { "document": "NEET PG Admit Card", "details": "Issued by National Board of Examinations." },
+        { "document": "NEET PG Scorecard/Rank Letter", "details": "Proof of qualifying NEET PG exam." },
+        { "document": "MBBS Degree Certificate", "details": "From a recognized medical college." },
+        { "document": "MBBS Mark Sheets", "details": "All professional exam mark sheets (1st to final year)." },
+        { "document": "Internship Completion Certificate", "details": "Must be completed before the admission deadline." },
+        { "document": "Permanent/Provisional Registration Certificate", "details": "Issued by NMC or State Medical Council." },
+        { "document": "Class 10 Certificate", "details": "Proof of date of birth." },
+        { "document": "Class 12 Certificate", "details": "Academic qualification proof." },
+        { "document": "Valid ID Proof", "details": "Aadhaar Card, PAN Card, Passport, etc." },
+        { "document": "Category Certificate (if applicable)", "details": "SC/ST/OBC/EWS certificate." },
+        { "document": "PwD Certificate (if applicable)", "details": "For physically disabled candidates." },
+        { "document": "Domicile Certificate", "details": "Required for state quota counselling." }
+      ],
+      "quickList": [
+        "NEET PG Admit Card",
+        "NEET PG Scorecard/Rank Letter",
+        "MBBS Degree Certificate",
+        "MBBS Mark Sheets",
+        "Internship Completion Certificate",
+        "Registration Certificate (NMC/State Medical Council)",
+        "Class 10 Certificate",
+        "Valid ID Proof"
+      ]
+    },
+
+    "topColleges": {
+      "title": "Top Private Colleges for MD/MS in India (2026)",
+      "description": "Here is a list of some of the best private medical colleges in India for MD/MS based on infrastructure, clinical exposure, faculty, and reputation.",
+      "colleges": [
+        { "name": "M.S. Ramaiah Medical College", "location": "Bangalore", "highlights": "Known for hands-on training and practical exposure" },
+        { "name": "Bharati Vidyapeeth Medical College", "location": "Pune", "highlights": "Popular deemed university with wide PG specializations" },
+        { "name": "Sharda University (School of Medical Sciences & Research)", "location": "Greater Noida", "highlights": "Emerging private college with good facilities" },
+        { "name": "Hind Institute of Medical Sciences", "location": "Sitapur", "highlights": "Budget-friendly private option for MD/MS" },
+        { "name": "Sri Aurobindo Institute of Medical Sciences", "location": "Indore", "highlights": "High patient flow, strong clinical exposure" },
+        { "name": "Chirayu Medical College & Hospital", "location": "Bhopal", "highlights": "Good infrastructure & PG seats" },
+        { "name": "RD Gardi Medical College", "location": "Ujjain", "highlights": "Popular for PG courses & practical training" },
+        { "name": "Geetanjali Medical College & Hospital", "location": "Udaipur", "highlights": "Top PG branches + strong academics" },
+        { "name": "NIMS Medical College (NIMS University)", "location": "Jaipur", "highlights": "Wide PG specializations" },
+        { "name": "Pacific Medical College & Hospital", "location": "Udaipur", "highlights": "Good clinical exposure & infrastructure" },
+        { "name": "Mata Gujri Memorial Medical College", "location": "Kishanganj", "highlights": "Good academics + PG courses" },
+        { "name": "Katihar Medical College", "location": "Katihar", "highlights": "One of the oldest private colleges" }
+      ],
+      "feeHeaders": ["College Name", "Location", "Highlights"]
+    },
+
+    "careerScope": {
+      "title": "Scope and Career Opportunities After MD/MS in India",
+      "description": "Completing MD/MS in India opens the door to a wide range of career opportunities in the healthcare sector. With the increasing demand for specialized medical professionals and the expansion of healthcare services, MD/MS graduates have excellent career prospects in both the public and private sectors.",
+      "paths": [
+        {
+          "title": "Clinical Practice as a Specialist",
+          "description": "MD/MS graduates can work as specialists or consultants in hospitals, clinics, and healthcare institutions. They can also start their own private practice after gaining professional experience and registration with the National Medical Commission."
+        },
+        {
+          "title": "Super-Specialization (DM/MCh)",
+          "description": "After completing MD or MS, doctors can pursue further super-specialization through DM (Doctorate of Medicine) or MCh (Master of Chirurgiae), which provide even deeper expertise in specific medical sub-fields like cardiology, neurosurgery, or plastic surgery."
+        },
+        {
+          "title": "Medical Research and Academia",
+          "description": "MD/MS graduates can work in medical research institutions, pharmaceutical companies, or pursue a PhD in medical sciences. They can also take up teaching roles in medical colleges and contribute to academic development."
+        },
+        {
+          "title": "Hospital Administration and Public Health",
+          "description": "Graduates can move into hospital administration roles, healthcare management, or work in public health sectors under national healthcare programs run by the Ministry of Health and Family Welfare."
+        }
+      ]
+    },
+
+    "advantages": {
+      "title": "Advantages of Pursuing MD/MS in India",
+      "description": "Pursuing MD/MS in India offers several key advantages for medical graduates who want to build a specialized and successful career in the healthcare field.",
+      "points": [
+        {
+          "title": "Advanced Specialization",
+          "description": "MD/MS programs provide in-depth knowledge and expertise in a specific medical or surgical field, enabling doctors to become recognized specialists and handle complex cases."
+        },
+        {
+          "title": "Enhanced Career Opportunities",
+          "description": "Specialized doctors are in high demand across hospitals, clinics, and research centers, offering better career growth and higher earning potential compared to general MBBS practitioners."
+        },
+        {
+          "title": "Extensive Clinical and Surgical Training",
+          "description": "During the 3-year program, students gain hands-on experience through real patient care, emergency duties, ward rounds, and clinical research, preparing them to handle complex medical situations independently."
+        },
+        {
+          "title": "Pathway to Super-Specialization",
+          "description": "Completing MD/MS opens the door to further super-specialization through DM or MCh programs, which are among the most prestigious qualifications in the medical field."
+        }
+      ]
+    },
+
+    "whyIExplain": {
+      "title": "Why Choose iExplain Education for Admission in MD/MS in India?",
+      "description": "Choosing the right guidance for MD/MS admission in India is very important. iExplain Education stands out as a trusted consultancy due to its student-focused approach, expert guidance, and end-to-end support.",
+      "points": [
+        {
+          "title": "Personalized Career Guidance",
+          "description": "iExplain Education follows a student-centric approach, where every student gets guidance based on their profile, rank, budget, and career goals. Unlike many consultancies, they focus on what is best for the student, not just available options."
+        },
+        {
+          "title": "Complete MD/MS Admission Support",
+          "description": "They provide end-to-end assistance for MD/MS admission, including NEET PG counselling guidance, college and branch selection, documentation support, and seat allotment assistance, ensuring a smooth and hassle-free admission process."
+        },
+        {
+          "title": "Expert Knowledge & Experience",
+          "description": "With strong experience in medical education consulting, iExplain Education provides accurate and updated information about MD/MS colleges, fee structures, cut-offs, and the counselling process."
+        },
+        {
+          "title": "Wide Network & Opportunities",
+          "description": "They help students explore MD/MS options in India through private and deemed universities, as well as MBBS and PG abroad, giving students multiple options based on their NEET PG rank."
+        },
+        {
+          "title": "Transparent & Honest Guidance",
+          "description": "The organization provides authentic insights and unbiased counselling, avoiding the common issue where consultants push colleges for profit. Students and parents receive accurate information without any hidden charges."
+        },
+        {
+          "title": "One-to-One Support (Online + Offline)",
+          "description": "Students can get face-to-face counselling through office visits or phone and online consultations, ensuring continuous support at every step of the admission journey."
+        },
+        {
+          "title": "Additional Services",
+          "description": "iExplain Education also offers career counselling, entrance exam guidance, scholarship assistance, and education loan and documentation help."
+        }
+      ]
+    },
+
+    "faqs": {
+      "title": "MD/MS in India – Frequently Asked Questions (FAQs)",
+      "items": [
+        {
+          "question": "What is MD and MS in medical education?",
+          "answer": "MD (Doctor of Medicine) and MS (Master of Surgery) are postgraduate medical degrees pursued after MBBS for specialization in medical and surgical fields."
+        },
+        {
+          "question": "What is the duration of MD/MS courses in India?",
+          "answer": "Both MD and MS courses have a duration of 3 years."
+        },
+        {
+          "question": "What is the eligibility for MD/MS in India?",
+          "answer": "Candidates must have an MBBS degree, complete a 1-year internship, and qualify the NEET PG exam conducted by the National Board of Examinations."
+        },
+        {
+          "question": "Is NEET PG mandatory for MD/MS admission?",
+          "answer": "Yes, NEET PG is mandatory for admission to MD/MS courses in India."
+        },
+        {
+          "question": "What is the difference between MD and MS?",
+          "answer": "MD is a non-surgical specialization (medicine-based), while MS is a surgical specialization focused on operations and surgical procedures."
+        },
+        {
+          "question": "What are the top specializations in MD/MS?",
+          "answer": "Popular MD specializations include General Medicine, Radiology, Dermatology, and Pediatrics, while MS includes General Surgery, Orthopedics, ENT, and Gynecology."
+        },
+        {
+          "question": "What documents are required for MD/MS admission?",
+          "answer": "Key documents include NEET PG scorecard, MBBS degree, internship completion certificate, registration certificate, valid ID proof, and academic mark sheets."
+        },
+        {
+          "question": "How does MD/MS counselling work?",
+          "answer": "Counselling is conducted through centralized processes based on NEET PG rank, managed by authorities like MCC for All India Quota and state authorities for state quota seats."
+        },
+        {
+          "question": "Can I do MD/MS from private colleges?",
+          "answer": "Yes, many private and deemed universities offer MD/MS courses with good infrastructure and clinical exposure."
+        },
+        {
+          "question": "What is the career scope after MD/MS?",
+          "answer": "After MD/MS, doctors can work as specialists, consultants, or pursue higher studies like DM/MCh, research, or teaching."
+        }
+      ]
+    }
+  },
+  "btech": {
+    "title": "Study B.Tech in India - Complete Guide for Engineering Aspirants",
+    "heroImage": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=1600",
+    "intro": "B.Tech in India (Bachelor of Technology) is one of the most popular and career-oriented undergraduate degree programs for students who aspire to build a strong future in the field of engineering, technology, and innovation. It is a professional course designed to equip students with technical knowledge, analytical thinking, problem-solving skills, and practical exposure required in today's fast-growing industries. In India, B.Tech is offered by a wide range of institutions including IITs, NITs, government colleges, private universities, and deemed universities, making it one of the most accessible and in-demand courses after completing 12th with Science (PCM).\n\nThe duration of B.Tech in India is generally 4 years, divided into 8 semesters, where students study both core engineering subjects and specialization-based subjects. The course structure includes classroom learning, laboratory work, industrial training, live projects, and internships, which help students gain real-world experience and industry readiness. Some of the most popular specializations in B.Tech in India include Computer Science Engineering (CSE), Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics & Communication Engineering (ECE), Artificial Intelligence, Data Science, and Information Technology (IT).\n\nAdmission to B.Tech in India is mainly based on national and state-level entrance exams such as the JEE Main, JEE Advanced, and various state CET exams, along with private university entrance tests. These exams evaluate students' knowledge in Physics, Chemistry, and Mathematics, and play a crucial role in determining admission to top engineering colleges. Due to high competition, students often prepare rigorously to secure a seat in reputed institutions.\n\nOne of the biggest advantages of pursuing B.Tech in India is the wide range of career opportunities available after graduation. Students can work in IT companies, core engineering sectors, manufacturing industries, research and development organizations, startups, and government sectors. With the rapid growth of technology, fields like Artificial Intelligence, Machine Learning, Cybersecurity, Data Science, and Robotics are creating new and high-paying job opportunities for B.Tech graduates.\n\nAdditionally, students can opt for higher education such as M.Tech, MBA, or MS abroad, or prepare for competitive exams like GATE, UPSC, and other government job exams. Entrepreneurship is also a growing trend, with many engineering graduates starting their own startups.",
+
+    "overview": {
+      "title": "B.Tech in India – Overview",
+      "table": [
+        { "particular": "Course Name", "details": "B.Tech (Bachelor of Technology)" },
+        { "particular": "Course Level", "details": "Undergraduate" },
+        { "particular": "Duration", "details": "4 Years (8 Semesters)" },
+        { "particular": "Eligibility", "details": "10+2 with Physics, Chemistry & Mathematics (PCM)" },
+        { "particular": "Minimum Marks", "details": "50–75% (varies by college)" },
+        { "particular": "Entrance Exams", "details": "JEE Main, JEE Advanced, State CETs, University Exams" },
+        { "particular": "Admission Process", "details": "Entrance Exam + Counselling" },
+        { "particular": "Top Specializations", "details": "CSE, Mechanical, Civil, Electrical, ECE, AI, Data Science, IT" },
+        { "particular": "Course Structure", "details": "Theory + Practical + Labs + Internships + Projects" },
+        { "particular": "Top Recruiters", "details": "TCS, Infosys, Wipro, Google, Microsoft" },
+        { "particular": "Career Options", "details": "Engineer, Software Developer, Data Analyst, Researcher, Entrepreneur" }
+      ]
+    },
+
+    "whatIs": {
+      "title": "What is B.Tech?",
+      "description": "B.Tech (Bachelor of Technology) is a 4-year undergraduate engineering degree that focuses on technical knowledge, practical skills, and industry-oriented learning. It is designed to prepare students for careers in engineering, technology, and innovation across various sectors.",
+      "points": [
+        {
+          "title": "Engineering Foundation",
+          "description": "B.Tech provides a comprehensive foundation in engineering principles, combining theoretical knowledge with practical application. Students learn core subjects in Physics, Chemistry, and Mathematics, along with specialized engineering topics relevant to their chosen branch."
+        },
+        {
+          "title": "Specialization Options",
+          "description": "The program offers diverse specializations including Computer Science Engineering (CSE), Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics & Communication Engineering (ECE), Artificial Intelligence, Data Science, and Information Technology (IT), allowing students to align their education with career goals."
+        },
+        {
+          "title": "Industry Readiness",
+          "description": "Through internships, industrial training, live projects, and hands-on laboratory work, B.Tech programs ensure students are industry-ready upon graduation. The curriculum is regularly updated to match current technological trends and market demands."
+        }
+      ]
+    },
+
+    "admissionProcess": {
+      "title": "Admission Process and Entrance Exams for Engineering Colleges (B.Tech in India)",
+      "description": "The admission process for engineering colleges in India is primarily based on entrance exams, followed by counselling and seat allotment. Students who wish to pursue B.Tech in India must go through a structured process to secure admission in top government or private engineering colleges.",
+      "steps": [
+        { "step": "1. Eligibility Check", "details": "Must have passed 10+2 with Physics, Chemistry & Mathematics (PCM)" },
+        { "step": "2. Entrance Exam Registration", "details": "Register for exams like JEE Main, JEE Advanced, or state-level exams" },
+        { "step": "3. Appear for Exam", "details": "Attempt the entrance exam based on preparation" },
+        { "step": "4. Result Declaration", "details": "Results are released with All India Rank (AIR)" },
+        { "step": "5. Counselling Registration", "details": "Apply for counselling (JoSAA/State/Private)" },
+        { "step": "6. Seat Allotment", "details": "Seats are allotted based on rank, preference & availability" },
+        { "step": "7. Document Verification", "details": "Submit required documents for validation" },
+        { "step": "8. Admission Confirmation", "details": "Pay fees and confirm your seat" }
+      ]
+    },
+
+    "entranceExams": {
+      "title": "Top Entrance Exams for B.Tech in India",
+      "description": "For admission into B.Tech in India, students must qualify various national, state, and university-level entrance exams. These exams test candidates on Physics, Chemistry, and Mathematics (PCM) and play a crucial role in securing admission to top engineering colleges.",
+      "exams": [
+        { "examName": "JEE Main", "level": "National", "conductingBody": "National Testing Agency", "acceptedBy": "NITs, IIITs, Govt & Private Colleges" },
+        { "examName": "JEE Advanced", "level": "National", "conductingBody": "IITs", "acceptedBy": "IITs (Top Engineering Colleges)" },
+        { "examName": "BITSAT", "level": "University", "conductingBody": "BITS Pilani", "acceptedBy": "BITS Pilani, Goa, Hyderabad" },
+        { "examName": "VITEEE", "level": "University", "conductingBody": "VIT", "acceptedBy": "VIT Campuses" },
+        { "examName": "SRMJEEE", "level": "University", "conductingBody": "SRM Institute", "acceptedBy": "SRM Campuses" },
+        { "examName": "State CET Exams", "level": "State", "conductingBody": "State Authorities", "acceptedBy": "State Government Colleges" },
+        { "examName": "COMEDK UGET", "level": "National/Private", "conductingBody": "COMEDK", "acceptedBy": "Private Colleges in Karnataka" },
+        { "examName": "WBJEE", "level": "State", "conductingBody": "West Bengal Board", "acceptedBy": "Colleges in West Bengal" },
+        { "examName": "MHT CET", "level": "State", "conductingBody": "Maharashtra Govt", "acceptedBy": "Colleges in Maharashtra" },
+        { "examName": "KCET", "level": "State", "conductingBody": "Karnataka Govt", "acceptedBy": "Colleges in Karnataka" }
+      ]
+    },
+
+    "specializations": {
+      "title": "Top Best B.Tech Specializations in India",
+      "description": "Choosing the right specialization in B.Tech in India is very important as it directly impacts your career growth, job opportunities, and salary potential. Here are the top and most in-demand B.Tech specializations.",
+      "branches": [
+        {
+          "specialization": "Computer Science Engineering (CSE)",
+          "description": "Focus on programming, software development, AI, data science",
+          "careerScope": "High demand in IT, startups, MNCs (Google, Microsoft)"
+        },
+        {
+          "specialization": "Artificial Intelligence & Machine Learning (AI/ML)",
+          "description": "Advanced technologies like automation, robotics, data analysis",
+          "careerScope": "Fastest-growing field with high salary packages"
+        },
+        {
+          "specialization": "Data Science",
+          "description": "Data analysis, big data, statistics",
+          "careerScope": "Jobs in analytics, finance, tech companies"
+        },
+        {
+          "specialization": "Information Technology (IT)",
+          "description": "Software, networking, databases",
+          "careerScope": "IT companies, system management roles"
+        },
+        {
+          "specialization": "Electronics & Communication Engineering (ECE)",
+          "description": "Communication systems, electronics, circuits",
+          "careerScope": "Telecom, semiconductor, IT sectors"
+        },
+        {
+          "specialization": "Mechanical Engineering",
+          "description": "Machines, manufacturing, design",
+          "careerScope": "Core industries, automobile, production"
+        },
+        {
+          "specialization": "Civil Engineering",
+          "description": "Construction, infrastructure, design",
+          "careerScope": "Government projects, real estate, construction"
+        },
+        {
+          "specialization": "Electrical Engineering",
+          "description": "Power systems, electrical machines",
+          "careerScope": "Energy sector, PSUs, core companies"
+        },
+        {
+          "specialization": "Cyber Security",
+          "description": "Network security, ethical hacking",
+          "careerScope": "High demand in IT security & defense sectors"
+        },
+        {
+          "specialization": "Robotics Engineering",
+          "description": "Automation, robotics systems",
+          "careerScope": "Emerging field in manufacturing & AI"
+        }
+      ]
+    },
+
+    "eligibility": {
+      "title": "Eligibility Criteria for B.Tech Engineering Course After 12th",
+      "description": "To pursue B.Tech in India after 12th, students must fulfill specific eligibility criteria set by engineering colleges and entrance exam authorities. The most important requirement for B.Tech admission in India is that candidates must have successfully completed their Class 12 (10+2) education from a recognized board with Physics, Chemistry, and Mathematics (PCM) as compulsory subjects. These subjects form the foundation of engineering, and a strong understanding of them is essential for pursuing any specialization in B.Tech.",
+      "keyPoints": [
+        {
+          "title": "Academic Qualification",
+          "description": "Candidates must have successfully completed their Class 12 (10+2) education from a recognized board with Physics, Chemistry, and Mathematics (PCM) as compulsory subjects."
+        },
+        {
+          "title": "Minimum Marks Requirement",
+          "description": "For most colleges offering B.Tech in India, students are required to secure a minimum of 50% to 75% aggregate marks in PCM subjects, although this percentage may vary depending on whether the college is a government institution, private university, or a top-tier institute like IITs and NITs."
+        },
+        {
+          "title": "Entrance Exam Qualification",
+          "description": "Qualifying an entrance exam is a crucial part of the B.Tech admission process in India. Students must appear for exams such as JEE Main, JEE Advanced, state-level CET exams, or university-specific entrance tests."
+        },
+        {
+          "title": "Age Requirement",
+          "description": "Generally, candidates must be at least 17 years old at the time of admission, although there is usually no strict upper age limit for most colleges."
+        },
+        {
+          "title": "Category Relaxation",
+          "description": "Students belonging to different categories such as General, OBC, SC, ST, or PwD may have relaxation in minimum marks as per government norms."
+        },
+        {
+          "title": "Lateral Entry Option",
+          "description": "Those who have completed a Diploma in Engineering from a recognized institute are also eligible for lateral entry admission in B.Tech in India, which allows them to directly enter the second year (3rd semester) of the course."
+        }
+      ]
+    },
+
+    "whyCollegeMatters": {
+      "title": "Why Choosing the Right B.Tech College Matters",
+      "description": "Choosing the right college for B.Tech in India is one of the most important decisions for any engineering aspirant, as it directly impacts their career growth, skill development, and future opportunities. While many students focus only on getting admission, the quality of the college plays a crucial role in shaping their overall learning experience and professional success.",
+      "reasons": [
+        {
+          "title": "Strong Academic Foundation",
+          "description": "A good B.Tech college provides strong academic foundations, experienced faculty, and updated curriculum that aligns with industry requirements. Top institutions ensure that students not only learn theoretical concepts but also gain practical knowledge through labs, projects, and internships."
+        },
+        {
+          "title": "Excellent Placement Opportunities",
+          "description": "Reputed engineering colleges have strong connections with top recruiters like TCS, Infosys, Google, and Microsoft, offering students better chances of securing high-paying jobs. Colleges with a good placement record also provide training in soft skills, aptitude, and interview preparation."
+        },
+        {
+          "title": "Modern Infrastructure",
+          "description": "Infrastructure and facilities matter a lot when selecting the right college for B.Tech in India. Modern labs, libraries, research centers, and digital resources enhance the learning experience and encourage innovation."
+        },
+        {
+          "title": "Network and Exposure",
+          "description": "Choosing the right college can influence your network and exposure. Studying in a reputed institution allows students to connect with talented peers, experienced professors, and industry experts, which can be beneficial for future career opportunities, internships, and collaborations."
+        }
+      ]
+    },
+
+    "selectionFactors": {
+      "title": "Factors to Consider Before Selecting a B.Tech College",
+      "description": "Choosing the right college for B.Tech in India is a crucial decision that can shape your entire career in engineering. With so many options available, students must carefully evaluate multiple factors before finalizing a college. Making an informed choice ensures better education, skill development, and career opportunities.",
+      "factors": [
+        {
+          "title": "College Accreditation and Approval",
+          "description": "Always check whether the college is approved by relevant authorities like AICTE and recognized by the government. This ensures that your degree is valid and accepted for jobs and higher studies. The ranking and reputation of the college also play a significant role."
+        },
+        {
+          "title": "Faculty and Teaching Quality",
+          "description": "Experienced and qualified professors can make a huge difference in understanding concepts and gaining practical knowledge. A good college should also have an updated curriculum that matches current industry trends, especially in fields like AI, Data Science, and emerging technologies."
+        },
+        {
+          "title": "Infrastructure and Facilities",
+          "description": "Modern laboratories, well-equipped libraries, smart classrooms, and access to research facilities enhance the overall learning experience. Colleges that provide opportunities for internships, industrial training, and live projects help students gain real-world exposure."
+        },
+        {
+          "title": "Placement Records",
+          "description": "Look at the average salary packages, top recruiters, and placement percentage. Colleges with strong industry connections and placement support can significantly improve your chances of getting a good job after graduation."
+        },
+        {
+          "title": "Location and Campus Environment",
+          "description": "A college located in or near major cities may offer better exposure, internships, and networking opportunities. At the same time, a safe and supportive campus environment contributes to overall personal and academic growth."
+        }
+      ]
+    },
+
+    "topGovtColleges": {
+      "title": "Top Government B.Tech Colleges in India (2026)",
+      "description": "Here is a carefully curated list of the best government engineering colleges in India based on NIRF rankings, reputation, placements, and academic excellence.",
+      "colleges": [
+        { "name": "IIT Madras", "location": "Chennai", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Delhi", "location": "New Delhi", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Bombay", "location": "Mumbai", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Kanpur", "location": "Kanpur", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Kharagpur", "location": "Kharagpur", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Roorkee", "location": "Roorkee", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Guwahati", "location": "Guwahati", "entranceExam": "JEE Advanced" },
+        { "name": "IIT Hyderabad", "location": "Hyderabad", "entranceExam": "JEE Advanced" },
+        { "name": "NIT Tiruchirappalli", "location": "Tamil Nadu", "entranceExam": "JEE Main" },
+        { "name": "IIT BHU", "location": "Varanasi", "entranceExam": "JEE Advanced" }
+      ],
+      "feeHeaders": ["College Name", "Location", "Entrance Exam"]
+    },
+
+    "topPrivateColleges": {
+      "title": "Top Private Engineering Colleges in India (2026)",
+      "description": "Here is a list of the top private engineering colleges for B.Tech in India, based on reputation, placements, infrastructure, and academic excellence.",
+      "colleges": [
+        { "name": "BITS Pilani", "location": "Pilani", "entranceExam": "BITSAT" },
+        { "name": "VIT Vellore", "location": "Vellore", "entranceExam": "VITEEE" },
+        { "name": "SRM Institute of Science and Technology", "location": "Chennai", "entranceExam": "SRMJEEE" },
+        { "name": "Amrita Vishwa Vidyapeetham", "location": "Coimbatore", "entranceExam": "Amrita Entrance" },
+        { "name": "Thapar Institute of Engineering and Technology", "location": "Patiala", "entranceExam": "JEE Main" },
+        { "name": "Manipal Institute of Technology", "location": "Manipal", "entranceExam": "MET" },
+        { "name": "Shiv Nadar University", "location": "Greater Noida", "entranceExam": "SNUSAT/JEE" },
+        { "name": "Ashoka University", "location": "Sonipat", "entranceExam": "University Test" },
+        { "name": "Chandigarh University", "location": "Chandigarh", "entranceExam": "CUCET" },
+        { "name": "KIIT University", "location": "Bhubaneswar", "entranceExam": "KIITEE" }
+      ],
+      "feeHeaders": ["College Name", "Location", "Entrance Exam"]
+    },
+
+    "careerScope": {
+      "title": "Career Opportunities After B.Tech in India",
+      "description": "One of the biggest advantages of pursuing B.Tech in India is the wide range of career opportunities available after graduation. Students can work in IT companies, core engineering sectors, manufacturing industries, research and development organizations, startups, and government sectors.",
+      "paths": [
+        {
+          "title": "IT and Software Industry",
+          "description": "B.Tech graduates, especially from CSE, IT, and related branches, can work as software developers, data analysts, system engineers, and IT consultants in companies like TCS, Infosys, Wipro, Google, Microsoft, and Amazon."
+        },
+        {
+          "title": "Core Engineering Sectors",
+          "description": "Graduates from Mechanical, Civil, Electrical, and ECE branches can work in manufacturing industries, construction companies, power sectors, automobile industries, and PSUs (Public Sector Undertakings)."
+        },
+        {
+          "title": "Higher Education",
+          "description": "Students can opt for higher education such as M.Tech for specialization, MBA for management roles, or MS abroad for international exposure and research opportunities."
+        },
+        {
+          "title": "Competitive Exams and Government Jobs",
+          "description": "B.Tech graduates can prepare for competitive exams like GATE, UPSC, SSC, and other government job exams for positions in railways, defense, civil services, and other public sectors."
+        },
+        {
+          "title": "Research and Development",
+          "description": "Students interested in innovation can pursue careers in R&D departments of tech companies, ISRO, DRDO, and academic research institutions."
+        },
+        {
+          "title": "Entrepreneurship and Startups",
+          "description": "Entrepreneurship is a growing trend, with many engineering graduates starting their own tech startups, consulting firms, or innovation-driven businesses."
+        }
+      ]
+    },
+
+    "advantages": {
+      "title": "Advantages of Pursuing B.Tech in India",
+      "description": "Pursuing B.Tech in India offers several key advantages for students who want to build a specialized and successful career in engineering and technology.",
+      "points": [
+        {
+          "title": "Wide Range of Career Opportunities",
+          "description": "B.Tech opens doors to diverse career paths in IT, core engineering, research, government sectors, and entrepreneurship, with excellent growth potential."
+        },
+        {
+          "title": "Industry-Relevant Skills",
+          "description": "The curriculum combines theoretical knowledge with practical training through labs, projects, internships, and industrial exposure, making graduates industry-ready."
+        },
+        {
+          "title": "High Earning Potential",
+          "description": "Engineering graduates, especially from top colleges and in-demand specializations like CSE, AI/ML, and Data Science, command competitive salaries ranging from ₹3-10 LPA and higher."
+        },
+        {
+          "title": "Gateway to Higher Education",
+          "description": "B.Tech serves as a strong foundation for pursuing advanced degrees like M.Tech, MBA, MS abroad, or PhD, opening doors to specialized roles and research careers."
+        },
+        {
+          "title": "Innovation and Problem-Solving",
+          "description": "Engineering education develops critical thinking, analytical abilities, and problem-solving skills that are valuable across all industries and life situations."
+        }
+      ]
+    },
+
+    "conclusion": {
+      "title": "Conclusion – B.Tech in India",
+      "description": "In conclusion, pursuing B.Tech in India is one of the most promising career choices for students aiming to build a strong future in engineering, technology, and innovation. From understanding the eligibility criteria, entrance exams, admission process, specializations, and top colleges (government & private), every step plays a crucial role in shaping a successful engineering journey.\n\nChoosing the right specialization and college is equally important, as it directly impacts your skills, knowledge, placement opportunities, and long-term career growth. With the availability of top institutions through exams like JEE Main and other entrance tests, students have multiple pathways to secure admission in reputed colleges. Proper planning, preparation, and awareness of the admission process can significantly improve the chances of getting into a good institution.\n\nAdditionally, focusing on practical learning, internships, and skill development during the course is essential to stay competitive in today's fast-evolving job market. Fields like Computer Science, AI, Data Science, and Core Engineering branches offer excellent career opportunities in India and globally.\n\nOverall, B.Tech in India is not just a degree but a gateway to a wide range of career options in IT, core industries, research, and entrepreneurship. With the right guidance, dedication, and smart decision-making, students can achieve great success and build a rewarding career in the engineering field."
+    },
+
+    "faqs": {
+      "title": "B.Tech in India – Frequently Asked Questions (FAQs)",
+      "items": [
+        {
+          "question": "What is B.Tech in India?",
+          "answer": "B.Tech (Bachelor of Technology) is a 4-year undergraduate engineering degree that focuses on technical knowledge, practical skills, and industry-orientated learning in India."
+        },
+        {
+          "question": "What is the eligibility for B.Tech after 12th?",
+          "answer": "Students must pass 10+2 with Physics, Chemistry, and Mathematics (PCM) and meet the minimum marks required by colleges. They also need to qualify entrance exams like JEE Main."
+        },
+        {
+          "question": "What are the top entrance exams for B.Tech in India?",
+          "answer": "Major exams include JEE Main, JEE Advanced, BITSAT, VITEEE, and state-level CET exams."
+        },
+        {
+          "question": "What is the duration of a B.Tech course?",
+          "answer": "The duration of B.Tech in India is 4 years, divided into 8 semesters."
+        },
+        {
+          "question": "Which are the best specializations in B.Tech?",
+          "answer": "Popular specializations include Computer Science Engineering (CSE), AI & ML, Data Science, Mechanical, Civil, Electrical, and Electronics & Communication Engineering."
+        },
+        {
+          "question": "What is the admission process for B.Tech in India?",
+          "answer": "Admission is based on entrance exams, counselling, seat allotment, document verification, and fee payment."
+        },
+        {
+          "question": "What are the top government colleges for B.Tech?",
+          "answer": "Top government colleges include IITs, NITs, and IIITs, which are known for high-quality education and excellent placements."
+        },
+        {
+          "question": "What are the top private engineering colleges in India?",
+          "answer": "Top private colleges include BITS Pilani, VIT Vellore, and SRM Institute of Science and Technology."
+        },
+        {
+          "question": "What is the average salary after B.Tech?",
+          "answer": "The average salary ranges from ₹3–10 LPA, but it can go much higher depending on skills, specialization, and college."
+        },
+        {
+          "question": "Can I do B.Tech without JEE?",
+          "answer": "Yes, many private universities offer admission through their own entrance exams or direct admission based on merit."
+        }
+      ]
+    }
+  },
+  "mba": {
+    "title": "Study MBA in India - Complete Guide for Management Aspirants",
+    "heroImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600",
+
+    "intro": "MBA in India (Master of Business Administration) is one of the most popular postgraduate programs for students who want to build a successful career in management, business, and leadership roles. This professional degree is designed to develop analytical thinking, decision-making skills, leadership qualities, and business knowledge, making it a top choice among graduates from various backgrounds such as commerce, engineering, science, and arts.\n\nThe duration of an MBA in India is typically 2 years, divided into 4 semesters, although some institutes also offer 1-year executive MBA programs for working professionals. The course covers a wide range of subjects including Marketing, Finance, Human Resource Management, Operations, Business Analytics, International Business, and Entrepreneurship. Students also gain practical exposure through case studies, internships, industry projects, and presentations, which help them understand real-world business challenges.\n\nAdmission to MBA programs in India is mainly based on entrance exams such as CAT, XAT, MAT, CMAT, and GMAT. These exams test candidates on aptitude, logical reasoning, quantitative ability, and verbal skills. After clearing the exam, students usually go through further selection rounds like Group Discussion (GD), Personal Interview (PI), and Written Ability Test (WAT).\n\nOne of the biggest advantages of pursuing an MBA in India is the wide range of career opportunities available after graduation. Students can work in sectors like banking, consulting, marketing, IT, finance, healthcare, and startups. Top recruiters include multinational companies, consulting firms, and leading corporations offering attractive salary packages.\n\nMBA in India is not just a degree but a gateway to high-paying jobs, leadership roles, and global career opportunities. With the right college, specialization, and skills, students can achieve significant career growth and long-term success in the business world.",
+
+    "overview": {
+      "title": "MBA in India – Overview",
+      "table": [
+        { "particular": "Course Name", "details": "MBA (Master of Business Administration)" },
+        { "particular": "Course Level", "details": "Postgraduate" },
+        { "particular": "Duration", "details": "2 Years (4 Semesters)" },
+        { "particular": "Eligibility", "details": "Bachelor’s Degree in any stream" },
+        { "particular": "Minimum Marks", "details": "50% (45% for reserved categories)" },
+        { "particular": "Entrance Exams", "details": "CAT, XAT, MAT, CMAT, GMAT, SNAP, NMAT" },
+        { "particular": "Admission Process", "details": "Entrance Exam + GD + PI + WAT" },
+        { "particular": "Top Specializations", "details": "Finance, Marketing, HR, Business Analytics, Operations, IB" },
+        { "particular": "Course Structure", "details": "Case Studies + Internships + Projects + Presentations" },
+        { "particular": "Top Recruiters", "details": "Deloitte, Amazon, Google, Accenture, McKinsey" },
+        { "particular": "Career Options", "details": "Manager, Consultant, Analyst, Entrepreneur" }
+      ]
+    },
+
+    "whyMBA": {
+      "title": "Why Pursue MBA in India?",
+      "description": "Pursuing an MBA in India has become one of the most popular choices among students and working professionals who want to build a strong career in management, leadership, and business development. India offers a perfect combination of quality education, affordable fees, and excellent career opportunities.\n\nWith the presence of top institutes like IIMs, XLRI, and FMS, students get access to world-class education and exposure. The growing Indian economy also creates numerous job opportunities across sectors such as IT, finance, consulting, and startups.",
+      "points": [
+        {
+          "title": "Top Institutes",
+          "description": "India is home to world-class management institutes that offer high-quality education and global exposure."
+        },
+        {
+          "title": "Cost Effective",
+          "description": "Compared to studying abroad, MBA in India is much more affordable while still offering excellent career opportunities."
+        },
+        {
+          "title": "Wide Specializations",
+          "description": "Students can choose from a wide range of specializations based on their career goals."
+        },
+        {
+          "title": "Growing Economy",
+          "description": "India’s rapidly growing economy creates strong demand for skilled management professionals."
+        }
+      ]
+    },
+
+    "types": {
+      "title": "Types of MBA in India (2026)",
+      "description": "MBA programs in India are offered in multiple formats to suit different needs of students and professionals. Depending on career goals, time availability, and experience level, candidates can choose from various types of MBA programs.",
+      "points": [
+        {
+          "title": "Full-Time MBA",
+          "description": "A 2-year regular program ideal for fresh graduates looking for comprehensive management education."
+        },
+        {
+          "title": "Executive MBA",
+          "description": "Designed for working professionals with experience, usually completed in 1 year."
+        },
+        {
+          "title": "Part-Time MBA",
+          "description": "Flexible option for working individuals who want to study alongside their job."
+        },
+        {
+          "title": "Online MBA",
+          "description": "Provides flexibility to learn remotely with digital platforms and recorded lectures."
+        }
+      ]
+    },
+
+    "topPrivateColleges": {
+      "title": "Top MBA Private Colleges in India (2026)",
+      "description": "Private MBA colleges in India offer excellent infrastructure, global exposure, and strong placement records.",
+      "colleges": [
+        { "name": "XLRI Jamshedpur", "location": "Jamshedpur", "entranceExam": "XAT" },
+        { "name": "ISB Hyderabad", "location": "Hyderabad", "entranceExam": "GMAT" },
+        { "name": "MDI Gurgaon", "location": "Gurgaon", "entranceExam": "CAT" }
+      ],
+      "feeHeaders": ["College Name", "Location", "Entrance Exam"]
+    },
+
+    "specializations": {
+      "title": "Top MBA Specializations in India (2026)",
+      "description": "Selecting the right specialization is crucial for career growth, as it determines job roles, industry exposure, and salary potential.",
+      "branches": [
+        {
+          "specialization": "Finance",
+          "description": "Focuses on investment, banking, and financial management.",
+          "careerScope": "High demand in banking and financial services."
+        },
+        {
+          "specialization": "Marketing",
+          "description": "Covers branding, sales, and digital marketing.",
+          "careerScope": "Roles in FMCG, advertising, and corporate marketing."
+        },
+        {
+          "specialization": "Human Resource Management",
+          "description": "Focuses on recruitment, employee management, and HR strategy.",
+          "careerScope": "HR leadership roles in organizations."
+        },
+        {
+          "specialization": "Business Analytics",
+          "description": "Focuses on data-driven decision making.",
+          "careerScope": "High-demand roles in analytics and tech firms."
+        },
+        {
+          "specialization": "Operations",
+          "description": "Deals with supply chain and logistics.",
+          "careerScope": "Roles in manufacturing and e-commerce."
+        }
+      ]
+    },
+
+    "eligibility": {
+      "title": "Eligibility Criteria for MBA Programs in India (2026)",
+      "description": "To apply for MBA programs in India, candidates must meet specific eligibility requirements related to education and entrance exams.",
+      "keyPoints": [
+        {
+          "title": "Academic Qualification",
+          "description": "Candidates must have a bachelor’s degree in any discipline from a recognized university."
+        },
+        {
+          "title": "Minimum Marks",
+          "description": "Most institutes require at least 50% marks in graduation."
+        },
+        {
+          "title": "Entrance Exams",
+          "description": "Students must qualify exams like CAT, XAT, MAT, CMAT, etc."
+        },
+        {
+          "title": "Final Year Students",
+          "description": "Students in the final year of graduation can also apply."
+        }
+      ]
+    },
+
+    "placements": {
+      "title": "MBA in India Placements (2026)",
+      "description": "MBA colleges in India offer excellent placement opportunities with top companies visiting campuses every year.\n\nTop B-schools provide high salary packages and international job offers, especially in consulting, finance, and tech sectors.",
+      "points": [
+        {
+          "title": "Top Recruiters",
+          "description": "Companies like Deloitte, Amazon, Google, Accenture, EY, and McKinsey hire MBA graduates."
+        },
+        {
+          "title": "High Salary Packages",
+          "description": "Top institutes offer attractive salary packages with strong career growth opportunities."
+        }
+      ]
+    },
+
+    "whoShouldDo": {
+      "title": "Who Should Do an MBA in India? (2026)",
+      "description": "MBA is suitable for a wide range of individuals who want to advance their careers or move into leadership roles.",
+      "points": [
+        {
+          "title": "Fresh Graduates",
+          "description": "Those looking for better job opportunities and career growth."
+        },
+        {
+          "title": "Working Professionals",
+          "description": "Individuals aiming for promotions or career switch."
+        },
+        {
+          "title": "Entrepreneurs",
+          "description": "Those who want to start and manage their own business."
+        }
+      ]
+    },
+
+    "careerScope": {
+      "title": "Career Scope After an MBA in India (2026)",
+      "description": "MBA graduates have diverse career opportunities across industries such as IT, finance, consulting, and marketing.",
+      "paths": [
+        {
+          "title": "Corporate Jobs",
+          "description": "Roles such as Business Analyst, Marketing Manager, and Financial Analyst."
+        },
+        {
+          "title": "Emerging Fields",
+          "description": "Opportunities in business analytics, fintech, and AI-driven management roles."
+        },
+        {
+          "title": "Entrepreneurship",
+          "description": "Starting new ventures or managing family businesses."
+        }
+      ]
+    },
+
+    "whyChooseUs": {
+      "title": "Why Choose iExplain Education for MBA in India?",
+      "description": "iExplain Education offers complete guidance for MBA admissions including counselling, college selection, and exam preparation.",
+      "points": [
+        {
+          "title": "Personalized Counselling",
+          "description": "Expert advice based on student goals."
+        },
+        {
+          "title": "College Selection",
+          "description": "Guidance to choose the best-fit college."
+        },
+        {
+          "title": "Admission Support",
+          "description": "End-to-end assistance in application and admission."
+        },
+        {
+          "title": "Exam Guidance",
+          "description": "Support for MBA entrance exams."
+        }
+      ]
+    },
+
+    "conclusion": {
+      "title": "MBA in India",
+      "description": "MBA in India is a powerful career option that opens doors to leadership roles, high-paying jobs, and global opportunities. With proper planning, the right specialization, and a good college, students can achieve long-term success in the business world."
+    },
+
+    "faqs": {
+      "title": "FAQs – MBA in India (2026)",
+      "items": [
+        {
+          "question": "What is the duration of an MBA in India?",
+          "answer": "The duration is typically 2 years."
+        },
+        {
+          "question": "What is the eligibility for MBA?",
+          "answer": "A bachelor’s degree with minimum 50% marks."
+        },
+        {
+          "question": "Which exams are required?",
+          "answer": "CAT, XAT, MAT, CMAT, GMAT, etc."
+        },
+        {
+          "question": "What is the salary after MBA?",
+          "answer": "It ranges from ₹5 LPA to ₹25+ LPA depending on college and skills."
+        },
+        {
+          "question": "Is MBA worth it?",
+          "answer": "Yes, it offers strong career growth and leadership opportunities."
+        }
+      ]
+    }
+  },
+  "bba": {
+    "title": "BBA in India",
+    "intro": "BBA in India (Bachelor of Business Administration) is a highly popular 3-year undergraduate management degree designed for students who want to build a strong foundation in business studies, management principles, leadership skills, and corporate knowledge. It is one of the most preferred courses after 12th in India for students from any stream (Arts, Commerce, or Science) who are interested in pursuing a career in the business, finance, marketing, human resources, and corporate sectors.\n\nThe demand for BBA in India has increased rapidly due to the growing need for skilled business professionals in startups, multinational companies (MNCs), banking, and service industries. This course helps students understand how real businesses operate and prepares them for future leadership and managerial roles.\n\nThe curriculum of BBA in India includes important subjects such as Principles of Management, Business Economics, Financial Accounting, Marketing Management, Human Resource Management, Organizational Behavior, Business Law, Operations Management, and Entrepreneurship Development. Along with classroom learning, students also gain practical exposure through case studies, internships, industry projects, presentations, and workshops, which help them develop real-world business skills.\n\nOne of the biggest advantages of pursuing BBA in India is that it builds a strong academic and professional base for higher studies like MBA (Master of Business Administration). Many students choose the BBA → MBA pathway to achieve high-level managerial positions and better career opportunities in top companies.\n\nDuring the course of BBA in India, students develop essential skills such as communication skills, leadership skills, teamwork, decision-making ability, analytical thinking, problem-solving skills, and business understanding, which are highly valued in today's competitive job market.\n\nOverall, BBA in India is an excellent choice for students who want early exposure to the corporate world, strong career opportunities in management fields, and a solid foundation for higher education like MBA. It opens doors to careers in banking, finance, marketing, consulting, entrepreneurship, and corporate management, making it one of the most career-oriented undergraduate programs in India.",
+
+    "overview": {
+      "title": "BBA in India – Overview",
+      "table": [
+        { "aspect": "Course Name", "details": "Bachelor of Business Administration (BBA)" },
+        { "aspect": "Level", "details": "Undergraduate (UG)" },
+        { "aspect": "Duration", "details": "3 Years" },
+        { "aspect": "Eligibility", "details": "10+2 (any stream) from a recognized board with minimum 45–50% marks (varies by college)" },
+        { "aspect": "Admission Process", "details": "Merit-based or Entrance Exam (CUET, SET, IPU CET, NPAT, etc.)" },
+        { "aspect": "Popular Specializations", "details": "Marketing, Finance, HR, International Business, Business Analytics, Entrepreneurship" },
+        { "aspect": "Core Subjects", "details": "Principles of Management, Business Economics, Financial Accounting, Marketing Management, HRM, Business Law" },
+        { "aspect": "Top BBA Colleges in India", "details": "Shaheed Sukhdev College of Business Studies (DU), NMIMS Mumbai, Christ University, Symbiosis, Loyola College" },
+        { "aspect": "Career Options", "details": "Business Analyst, Marketing Executive, HR Executive, Sales Manager, Entrepreneur" },
+        { "aspect": "Higher Study Option", "details": "MBA (Most preferred), PGDM, Professional Certifications" }
+      ]
+    },
+
+    "whyPursue": {
+      "title": "Why Pursue BBA in India? (2026)",
+      "description": "Pursuing BBA in India (Bachelor of Business Administration) is a smart choice for students who want to build a strong foundation in business management, leadership, and corporate skills right after 12th. India is one of the fastest-growing economies, and there is a rising demand for skilled management professionals in sectors like finance, marketing, HR, consulting, startups, and banking, making BBA a highly valuable undergraduate degree.\n\nOne of the main reasons to pursue BBA in India is that it provides early exposure to the corporate world and helps students understand how real businesses operate. The course combines both theoretical knowledge and practical learning through case studies, internships, live projects, presentations, and industry training, which makes students job-ready from an early stage.\n\nAnother major advantage of BBA in India is its flexibility in career options. After completing BBA, students can either enter the job market in roles like business executive, marketing associate, HR executive, sales manager, or business analyst, or pursue higher studies like MBA (Master of Business Administration) for better career growth and higher salary packages. Many students prefer the BBA → MBA pathway for long-term success in corporate leadership roles.\n\nBBA also helps in developing important professional skills such as communication skills, leadership qualities, decision-making ability, problem-solving skills, teamwork, and analytical thinking, which are highly valued in today's competitive job market. These skills not only help in getting better job opportunities but also prepare students for entrepreneurship and startup ventures.\n\nIn addition, studying BBA in India is more affordable compared to many international business programs, while still offering quality education in reputed colleges and universities. With strong industry connections, internships, and placement opportunities, students get good exposure and career support from top companies."
+    },
+
+    "topColleges": {
+      "title": "Top BBA Colleges in India (2026)",
+      "description": "BBA in India is offered by many reputed government and private universities that provide quality education, strong placements, industry exposure, and good ROI (Return on Investment). Choosing the right college is very important for building a successful career in business management, finance, marketing, HR, and entrepreneurship.",
+      "colleges": [
+        { "name": "Shaheed Sukhdev College of Business Studies (SSCBS)", "location": "Delhi", "admissionProcess": "CUET" },
+        { "name": "NMIMS – Anil Surendra Modi School of Commerce", "location": "Mumbai", "admissionProcess": "NPAT" },
+        { "name": "Christ University", "location": "Bangalore", "admissionProcess": "Entrance Test (CUET/Christ Exam)" },
+        { "name": "Symbiosis Centre for Management Studies (SCMS)", "location": "Pune", "admissionProcess": "SET Exam" },
+        { "name": "St. Xavier's College", "location": "Mumbai", "admissionProcess": "Merit/Entrance" },
+        { "name": "Loyola College", "location": "Chennai", "admissionProcess": "Merit/Entrance" },
+        { "name": "KIIT School of Management", "location": "Bhubaneswar", "admissionProcess": "KIITEE" },
+        { "name": "Bennett University", "location": "Greater Noida", "admissionProcess": "Entrance Exam" },
+        { "name": "FLAME University", "location": "Pune", "admissionProcess": "Entrance Test" }
+      ]
+    },
+
+    "specializations": {
+      "title": "BBA Specializations in India (2026)",
+      "description": "BBA in India offers multiple specializations that help students build expertise in specific areas of business management, finance, marketing, human resources, and analytics. Choosing the right specialization is very important because it directly impacts your career opportunities, job roles, and salary growth after graduation or MBA.",
+      "table": [
+        {
+          "specialization": "Marketing Management",
+          "description": "Focuses on advertising, branding, digital marketing, and sales strategies",
+          "careerOpportunities": "Marketing Executive, Brand Manager, Digital Marketing Specialist"
+        },
+        {
+          "specialization": "Finance Management",
+          "description": "Deals with banking, investment, financial planning, and accounting",
+          "careerOpportunities": "Financial Analyst, Investment Banker, Accountant"
+        },
+        {
+          "specialization": "Human Resource Management (HRM)",
+          "description": "Focuses on recruitment, employee management, and workplace policies",
+          "careerOpportunities": "HR Executive, Talent Acquisition Specialist"
+        },
+        {
+          "specialization": "Business Analytics",
+          "description": "Uses data and analytics for business decision-making",
+          "careerOpportunities": "Data Analyst, Business Analyst"
+        },
+        {
+          "specialization": "International Business",
+          "description": "Focuses on global trade, export-import, and international markets",
+          "careerOpportunities": "Export Manager, International Business Executive"
+        },
+        {
+          "specialization": "Operations Management",
+          "description": "Focuses on supply chain, logistics, and production management",
+          "careerOpportunities": "Operations Executive, Supply Chain Analyst"
+        }
+      ]
+    },
+
+    "careerScope": {
+      "title": "Career Scope After BBA in India (2026)",
+      "description": "The career scope after completing a BBA in India (Bachelor of Business Administration) is wide and promising, as it opens doors to multiple opportunities in the corporate sector, banking, finance, marketing, human resources, consulting, and startups. BBA is a professional undergraduate degree that builds a strong foundation in business management, leadership, communication, and analytical skills, which are highly valued by employers in today's competitive job market.\n\nAfter completing BBA in India, students can directly enter the job market in entry-level managerial and executive roles such as Business Development Executive, Marketing Executive, Sales Manager, HR Executive, Operations Executive, and Financial Analyst. These roles are offered in top industries including IT companies, FMCG, banking, insurance, e-commerce, consulting firms, and multinational companies (MNCs).\n\nOne of the biggest advantages of BBA is that it provides a strong base for higher education like MBA (Master of Business Administration), which significantly improves career growth and salary prospects. Many students choose the BBA → MBA pathway to achieve high-level positions such as Marketing Manager, Product Manager, Investment Banker, Business Consultant, and Operations Manager in top companies.\n\nIn addition to job opportunities, BBA in India also opens doors for entrepreneurship and startup ventures. Students gain knowledge in business planning, marketing strategies, financial management, and organisational behaviour, which helps them start and manage their own business successfully.\n\nWith the rise of digital transformation and growing industries in India, new career opportunities are emerging in fields like digital marketing, business analytics, data analysis, supply chain management, and fintech, making BBA graduates highly in demand."
+    },
+
+    "whyIExplain": {
+      "title": "Why Choose iExplain Education for BBA in India? (2026)",
+      "description": "Choosing the right guidance partner plays a very important role in building a successful career after 12th, especially for students planning to pursue BBA in India. iExplain Education is a trusted education consultancy that provides complete and structured admission support to students who want to enter the field of business management, corporate studies, and entrepreneurship through top BBA colleges in India. It focuses on helping students make the right academic decisions based on their interest, budget, academic background, and long-term career goals.",
+      "points": [
+        {
+          "title": "Personalized Career Counselling",
+          "description": "iExplain Education provides one-to-one counselling sessions where experts understand the student's academic performance, interests, and career goals to suggest the most suitable BBA colleges in India and specialization options."
+        },
+        {
+          "title": "Best College Selection Guidance",
+          "description": "It helps students choose from top government and private universities for BBA in India, ensuring they get the right balance of quality education, affordability, reputation, and placement opportunities."
+        },
+        {
+          "title": "BBA Specialization Guidance",
+          "description": "Students receive detailed guidance in selecting the right specialization such as Marketing, Finance, Human Resource Management, Business Analytics, International Business, and Entrepreneurship, based on future career scope."
+        },
+        {
+          "title": "Complete Admission Support",
+          "description": "From filling application forms to preparing documents and tracking admission status, iExplain Education provides step-by-step assistance throughout the BBA admission process in India."
+        },
+        {
+          "title": "Entrance Exam Assistance",
+          "description": "It also helps students prepare for important exams like CUET, NPAT, SET, IPMAT, and other university-level entrance tests, which are required for admission in top BBA colleges."
+        },
+        {
+          "title": "Scholarship & Education Loan Support",
+          "description": "iExplain Education guides students about available scholarships, fee waivers, and education loan options, making quality education more affordable and accessible."
+        },
+        {
+          "title": "Career Growth Guidance",
+          "description": "Experts provide complete information about career scope after BBA in India, including job roles, salary packages, industry demand, and future growth opportunities."
+        },
+        {
+          "title": "Mentorship & Career Planning",
+          "description": "Continuous mentorship is provided to help students plan their academic journey from BBA to MBA or direct corporate jobs, ensuring long-term career success."
+        }
+      ]
+    },
+
+    "conclusion": {
+      "title": "Conclusion – BBA in India",
+      "description": "BBA in India is one of the most popular and career-orientated undergraduate programs for students who want to build a strong foundation in business management, leadership, and corporate skills after 12th. With a wide range of specializations such as Marketing, Finance, HR, Business Analytics, and Entrepreneurship, the course offers excellent flexibility and multiple career opportunities in the corporate world. It not only helps students gain theoretical knowledge but also provides practical exposure through internships, projects, case studies, and industry training, making them job-ready from an early stage.\n\nOverall, pursuing BBA in India is a smart choice for students who aim for a successful career in banking, finance, consulting, marketing, startups, and multinational companies (MNCs). It also serves as a strong pathway for higher education, like MBA, which further enhances career growth and salary potential. With the right college selection, specialization choice, and proper guidance, students can achieve long-term success and stability in the competitive business environment. BBA truly acts as a stepping stone toward a bright future in the field of management and business administration."
+    },
+
+    "faqs": {
+      "title": "FAQs – BBA in India (2026)",
+      "items": [
+        {
+          "question": "What is BBA in India?",
+          "answer": "BBA (Bachelor of Business Administration) is a 3-year undergraduate management course that focuses on business studies, leadership, finance, marketing, HR, and entrepreneurship skills."
+        },
+        {
+          "question": "What is the eligibility for BBA in India?",
+          "answer": "Students must have completed 10+2 (any stream) from a recognized board with at least 45–50% marks (varies by college)."
+        },
+        {
+          "question": "What is the duration of BBA in India?",
+          "answer": "The duration of BBA in India is 3 years, divided into 6 semesters."
+        },
+        {
+          "question": "What are the career options after BBA in India?",
+          "answer": "After BBA, students can work as Business Executive, Marketing Executive, HR Executive, Sales Manager, Financial Analyst, or pursue MBA for higher career growth."
+        },
+        {
+          "question": "Which are the best specializations in BBA?",
+          "answer": "Popular BBA specializations include Marketing, Finance, HR, Business Analytics, International Business, and Entrepreneurship."
+        },
+        {
+          "question": "Is BBA a good career option in India?",
+          "answer": "Yes, BBA is a good career option as it provides strong business knowledge, job opportunities in MNCs, and a pathway to MBA and corporate leadership roles."
+        }
+      ]
+    }
+  },
 };
 
 export const MEGA_MENU_DATA = {

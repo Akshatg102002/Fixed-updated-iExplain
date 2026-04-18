@@ -43,19 +43,21 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
             {/* ── Intro ── */}
-            <div>
-               <h2 className="text-2xl md:text-3xl font-black text-brand-blue dark:text-white mb-6 leading-tight">
-                  {data.title}
-               </h2>
-               <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 font-medium leading-loose text-justify">
-                  {data.intro.split('\n\n').map((para, i) => (
-                     <p key={i} className={i > 0 ? 'mt-4' : ''}>{para}</p>
-                  ))}
+            {data.intro && (
+               <div>
+                  <h2 className="text-2xl md:text-3xl font-black text-brand-blue dark:text-white mb-6 leading-tight">
+                     {data.title}
+                  </h2>
+                  <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 font-medium leading-loose text-justify">
+                     {data.intro.split('\n\n').map((para, i) => (
+                        <p key={i} className={i > 0 ? 'mt-4' : ''}>{para}</p>
+                     ))}
+                  </div>
                </div>
-            </div>
+            )}
 
             {/* ── Quick Overview Table ── */}
-            {data.overview && (
+            {data.overview?.table?.length > 0 && (
                <div>
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-8 text-center">
                      {data.overview.title}
@@ -71,9 +73,21 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
                                  <td className="py-3 px-6 font-bold text-brand-blue dark:text-brand-gold w-1/3 border-r border-gray-200 dark:border-slate-700">
                                     {row.particular}
                                  </td>
-                                 <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
-                                    {row.details}
-                                 </td>
+                                 {/* Support both single-column (details) and two-column (md/ms) overview rows */}
+                                 {row.details !== undefined ? (
+                                    <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
+                                       {row.details}
+                                    </td>
+                                 ) : (
+                                    <>
+                                       <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium border-r border-gray-200 dark:border-slate-700">
+                                          {row.md}
+                                       </td>
+                                       <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
+                                          {row.ms}
+                                       </td>
+                                    </>
+                                 )}
                               </tr>
                            ))}
                         </tbody>
@@ -83,7 +97,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── Why Section ── */}
-            {data.why && (
+            {data.why?.points?.length > 0 && (
                <div className="bg-[#022c4a] rounded-[2rem] p-10 md:p-16 text-white shadow-xl relative overflow-hidden">
                   <h3 className="text-2xl font-black mb-4 text-center">{data.why.title}</h3>
                   {data.why.description && (
@@ -107,8 +121,33 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
                </div>
             )}
 
+            {/* ── What Is Section (MD/MS specific) ── */}
+            {data.whatIs?.points?.length > 0 && (
+               <div className="bg-[#022c4a] rounded-[2rem] p-10 md:p-16 text-white shadow-xl relative overflow-hidden">
+                  <h3 className="text-2xl font-black mb-4 text-center">{data.whatIs.title}</h3>
+                  {data.whatIs.description && (
+                     <p className="text-sm text-white/70 text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+                        {data.whatIs.description}
+                     </p>
+                  )}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+                     {data.whatIs.points.map((point, idx) => (
+                        <div key={idx} className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/10 hover:bg-white/15 transition-colors">
+                           <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-brand-gold text-[#022c4a] rounded-full w-7 h-7 flex items-center justify-center text-xs font-black shrink-0">
+                                 {idx + 1}
+                              </span>
+                              <h4 className="font-black text-sm text-white">{point.title}</h4>
+                           </div>
+                           <p className="text-xs text-white/75 leading-relaxed pl-10">{point.description}</p>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+            )}
+
             {/* ── Eligibility Table ── */}
-            {data.eligibility && (
+            {data.eligibility?.table?.length > 0 && (
                <div className="bg-gray-50 dark:bg-slate-800/50 rounded-[2rem] p-10">
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-8">
                      {data.eligibility.title}
@@ -136,14 +175,16 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── Documents ── */}
-            {data.documents && (
+            {data.documents?.table?.length > 0 && (
                <div>
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-2 text-center">
                      {data.documents.title}
                   </h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400 text-sm mb-10">
-                     {data.documents.subtitle}
-                  </p>
+                  {data.documents.subtitle && (
+                     <p className="text-center text-gray-500 dark:text-gray-400 text-sm mb-10">
+                        {data.documents.subtitle}
+                     </p>
+                  )}
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                      {/* Detailed table */}
                      <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-slate-700">
@@ -166,19 +207,21 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
                         </table>
                      </div>
                      {/* Quick list */}
-                     <div className="bg-[#022c4a] rounded-2xl p-8 text-white flex flex-col justify-center">
-                        <p className="text-xs font-black uppercase tracking-widest text-brand-gold mb-6">
-                           Quick Checklist
-                        </p>
-                        <ul className="space-y-3">
-                           {data.documents.quickList.map((item, idx) => (
-                              <li key={idx} className="flex items-center gap-3 text-sm font-medium">
-                                 <i className="fa-solid fa-check text-brand-gold text-xs" />
-                                 {item}
-                              </li>
-                           ))}
-                        </ul>
-                     </div>
+                     {data.documents.quickList?.length > 0 && (
+                        <div className="bg-[#022c4a] rounded-2xl p-8 text-white flex flex-col justify-center">
+                           <p className="text-xs font-black uppercase tracking-widest text-brand-gold mb-6">
+                              Quick Checklist
+                           </p>
+                           <ul className="space-y-3">
+                              {data.documents.quickList.map((item, idx) => (
+                                 <li key={idx} className="flex items-center gap-3 text-sm font-medium">
+                                    <i className="fa-solid fa-check text-brand-gold text-xs" />
+                                    {item}
+                                 </li>
+                              ))}
+                           </ul>
+                        </div>
+                     )}
                   </div>
                </div>
             )}
@@ -189,52 +232,129 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white bg-white dark:bg-slate-900 absolute -top-5 left-1/2 -translate-x-1/2 px-6 whitespace-nowrap">
                      {data.curriculum.title}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 mt-2">
-                     {data.curriculum.description}
-                  </p>
+                  {data.curriculum.description && (
+                     <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 mt-2">
+                        {data.curriculum.description}
+                     </p>
+                  )}
 
                   {/* Phases */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                     {data.curriculum.phases.map((phase, idx) => (
-                        <div key={idx} className="bg-[#022c4a] text-white rounded-xl p-5">
-                           <p className="text-xs font-black text-brand-gold uppercase tracking-widest mb-2">{phase.phase}</p>
-                           <p className="text-sm font-medium leading-relaxed text-white/80">{phase.subjects}</p>
-                        </div>
-                     ))}
-                  </div>
+                  {data.curriculum.phases?.length > 0 && (
+                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        {data.curriculum.phases.map((phase, idx) => (
+                           <div key={idx} className="bg-[#022c4a] text-white rounded-xl p-5">
+                              <p className="text-xs font-black text-brand-gold uppercase tracking-widest mb-2">{phase.phase}</p>
+                              {/* Support both MBBS (subjects) and MD/MS (structure + details) phase shapes */}
+                              {phase.subjects ? (
+                                 <p className="text-sm font-medium leading-relaxed text-white/80">{phase.subjects}</p>
+                              ) : (
+                                 <>
+                                    <p className="text-sm font-bold text-white mb-1">{phase.structure}</p>
+                                    <p className="text-xs font-medium leading-relaxed text-white/80">{phase.details}</p>
+                                 </>
+                              )}
+                           </div>
+                        ))}
+                     </div>
+                  )}
 
-                  {/* Internship note */}
-                  <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-5 mb-8 text-sm text-amber-900 dark:text-amber-300 font-medium leading-relaxed">
-                     <i className="fa-solid fa-stethoscope mr-2" />
-                     {data.curriculum.internship}
-                  </div>
+                  {/* Internship note — only shown if present */}
+                  {data.curriculum.internship && (
+                     <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-5 mb-8 text-sm text-amber-900 dark:text-amber-300 font-medium leading-relaxed">
+                        <i className="fa-solid fa-stethoscope mr-2" />
+                        {data.curriculum.internship}
+                     </div>
+                  )}
 
-                  {/* Subjects by year table */}
-                  <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-slate-700">
-                     <table className="w-full text-sm">
-                        <thead>
-                           <tr className="bg-brand-blue text-white">
-                              <th className="py-3 px-6 text-left font-black">Year</th>
-                              <th className="py-3 px-6 text-left font-black">Subjects Covered</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           {data.curriculum.subjectsTable.map((row, idx) => (
-                              <tr
-                                 key={idx}
-                                 className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
-                              >
-                                 <td className="py-3 px-6 font-bold text-brand-blue dark:text-brand-gold border-r border-gray-200 dark:border-slate-700">
-                                    {row.year}
-                                 </td>
-                                 <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
-                                    {row.subjects}
-                                 </td>
-                              </tr>
+                  {/* MD courses list — MD/MS specific */}
+                  {data.curriculum.mdCourses?.length > 0 && (
+                     <div className="mb-8">
+                        <p className="text-sm font-black text-brand-blue dark:text-brand-gold uppercase tracking-widest mb-4">
+                           MD Specializations
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                           {data.curriculum.mdCourses.map((course, idx) => (
+                              <span key={idx} className="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-xs font-medium px-3 py-1.5 rounded-full">
+                                 {course}
+                              </span>
                            ))}
-                        </tbody>
-                     </table>
-                  </div>
+                        </div>
+                     </div>
+                  )}
+
+                  {/* MS courses list — MD/MS specific */}
+                  {data.curriculum.msCourses?.length > 0 && (
+                     <div className="mb-8">
+                        <p className="text-sm font-black text-brand-blue dark:text-brand-gold uppercase tracking-widest mb-4">
+                           MS Specializations
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                           {data.curriculum.msCourses.map((course, idx) => (
+                              <span key={idx} className="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-xs font-medium px-3 py-1.5 rounded-full">
+                                 {course}
+                              </span>
+                           ))}
+                        </div>
+                     </div>
+                  )}
+
+                  {/* Subjects by year table — only shown if present */}
+                  {data.curriculum.subjectsTable?.length > 0 && (
+                     <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-slate-700">
+                        <table className="w-full text-sm">
+                           <thead>
+                              <tr className="bg-brand-blue text-white">
+                                 <th className="py-3 px-6 text-left font-black">Year</th>
+                                 <th className="py-3 px-6 text-left font-black">Subjects Covered</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              {data.curriculum.subjectsTable.map((row, idx) => (
+                                 <tr
+                                    key={idx}
+                                    className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
+                                 >
+                                    <td className="py-3 px-6 font-bold text-brand-blue dark:text-brand-gold border-r border-gray-200 dark:border-slate-700">
+                                       {row.year}
+                                    </td>
+                                    <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
+                                       {row.subjects}
+                                    </td>
+                                 </tr>
+                              ))}
+                           </tbody>
+                        </table>
+                     </div>
+                  )}
+
+                  {/* Duration table — MD/MS specific */}
+                  {data.curriculum.durationTable?.length > 0 && (
+                     <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-slate-700">
+                        <table className="w-full text-sm">
+                           <thead>
+                              <tr className="bg-brand-blue text-white">
+                                 <th className="py-3 px-6 text-left font-black">Course</th>
+                                 <th className="py-3 px-6 text-left font-black">Duration</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              {data.curriculum.durationTable.map((row, idx) => (
+                                 <tr
+                                    key={idx}
+                                    className={idx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
+                                 >
+                                    <td className="py-3 px-6 font-bold text-brand-blue dark:text-brand-gold border-r border-gray-200 dark:border-slate-700">
+                                       {row.course}
+                                    </td>
+                                    <td className="py-3 px-6 text-gray-700 dark:text-gray-300 font-medium">
+                                       {row.duration}
+                                    </td>
+                                 </tr>
+                              ))}
+                           </tbody>
+                        </table>
+                     </div>
+                  )}
                </div>
             )}
 
@@ -244,61 +364,100 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-2 text-center">
                      {data.topColleges.title}
                   </h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400 text-sm mb-10">
-                     {data.topColleges.description}
-                  </p>
-                  <div className="space-y-10">
-                     {data.topColleges.stateWise.map((stateData, sIdx) => (
-                        <div key={sIdx}>
-                           <h4 className="text-lg font-black text-brand-blue dark:text-white mb-4 flex items-center gap-3">
-                              <span className="w-2 h-6 bg-brand-gold rounded-full inline-block" />
-                              Private Medical Colleges in {stateData.state}
-                           </h4>
-                           <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-slate-700">
-                              <table className="w-full text-sm">
-                                 <thead>
-                                    <tr className="bg-[#022c4a] text-white">
-                                       {stateData.feeHeaders.map((header, hIdx) => (
-                                          <th key={hIdx} className="py-3 px-5 text-left font-black whitespace-nowrap">
-                                             {header}
-                                          </th>
-                                       ))}
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    {stateData.colleges.map((college, cIdx) => (
-                                       <tr
-                                          key={cIdx}
-                                          className={cIdx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
-                                       >
-                                          {Object.values(college).map((val, vIdx) => (
-                                             <td
-                                                key={vIdx}
-                                                className={`py-3 px-5 font-medium text-gray-700 dark:text-gray-300 ${vIdx === 0 ? 'font-bold text-brand-blue dark:text-white' : ''}`}
-                                             >
-                                                {String(val)}
-                                             </td>
+                  {data.topColleges.description && (
+                     <p className="text-center text-gray-500 dark:text-gray-400 text-sm mb-10">
+                        {data.topColleges.description}
+                     </p>
+                  )}
+
+                  {/* MBBS: state-wise tables */}
+                  {data.topColleges.stateWise?.length > 0 && (
+                     <div className="space-y-10">
+                        {data.topColleges.stateWise.map((stateData, sIdx) => (
+                           <div key={sIdx}>
+                              <h4 className="text-lg font-black text-brand-blue dark:text-white mb-4 flex items-center gap-3">
+                                 <span className="w-2 h-6 bg-brand-gold rounded-full inline-block" />
+                                 Private Medical Colleges in {stateData.state}
+                              </h4>
+                              <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-slate-700">
+                                 <table className="w-full text-sm">
+                                    <thead>
+                                       <tr className="bg-[#022c4a] text-white">
+                                          {stateData.feeHeaders?.map((header, hIdx) => (
+                                             <th key={hIdx} className="py-3 px-5 text-left font-black whitespace-nowrap">
+                                                {header}
+                                             </th>
                                           ))}
                                        </tr>
-                                    ))}
-                                 </tbody>
-                              </table>
+                                    </thead>
+                                    <tbody>
+                                       {stateData.colleges?.map((college, cIdx) => (
+                                          <tr
+                                             key={cIdx}
+                                             className={cIdx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
+                                          >
+                                             {Object.values(college).map((val, vIdx) => (
+                                                <td
+                                                   key={vIdx}
+                                                   className={`py-3 px-5 font-medium text-gray-700 dark:text-gray-300 ${vIdx === 0 ? 'font-bold text-brand-blue dark:text-white' : ''}`}
+                                                >
+                                                   {String(val)}
+                                                </td>
+                                             ))}
+                                          </tr>
+                                       ))}
+                                    </tbody>
+                                 </table>
+                              </div>
                            </div>
-                        </div>
-                     ))}
-                  </div>
+                        ))}
+                     </div>
+                  )}
+
+                  {/* MD/MS: flat colleges table */}
+                  {data.topColleges.colleges?.length > 0 && (
+                     <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-slate-700">
+                        <table className="w-full text-sm">
+                           <thead>
+                              <tr className="bg-[#022c4a] text-white">
+                                 {(data.topColleges.feeHeaders ?? ['College Name', 'Location', 'Highlights']).map((header, hIdx) => (
+                                    <th key={hIdx} className="py-3 px-5 text-left font-black whitespace-nowrap">
+                                       {header}
+                                    </th>
+                                 ))}
+                              </tr>
+                           </thead>
+                           <tbody>
+                              {data.topColleges.colleges.map((college, cIdx) => (
+                                 <tr
+                                    key={cIdx}
+                                    className={cIdx % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/60' : 'bg-white dark:bg-slate-800'}
+                                 >
+                                    <td className="py-3 px-5 font-bold text-brand-blue dark:text-white">{college.name}</td>
+                                    <td className="py-3 px-5 text-gray-700 dark:text-gray-300 font-medium">{college.location}</td>
+                                    {college.highlights && (
+                                       <td className="py-3 px-5 text-gray-700 dark:text-gray-300 font-medium">{college.highlights}</td>
+                                    )}
+                                 </tr>
+                              ))}
+                           </tbody>
+                        </table>
+                     </div>
+                  )}
                </div>
             )}
 
             {/* ── Career Scope ── */}
-            {data.careerScope && (
+            {data.careerScope?.paths?.length > 0 && (
                <div className="bg-gray-50 dark:bg-slate-800/50 rounded-[2rem] p-10">
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-4 text-center">
                      {data.careerScope.title}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-10 max-w-3xl mx-auto leading-relaxed">
-                     {data.careerScope.description}
-                  </p>
+                  {data.careerScope.description && (
+                     <p className="text-sm text-gray-600 dark:text-gray-400 text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+                        {data.careerScope.description}
+                     </p>
+                  )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                      {data.careerScope.paths.map((path, idx) => (
                         <div key={idx} className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow border border-gray-100 dark:border-slate-700 hover:-translate-y-1 transition-transform">
@@ -316,7 +475,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── Advantages ── */}
-            {data.advantages && (
+            {data.advantages?.points?.length > 0 && (
                <div className="bg-[#EAE2CF] dark:bg-[#3a352a] p-10 rounded-3xl border-4 border-[#D4C5A9] dark:border-[#524b3b]">
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-4 text-center">
                      {data.advantages.title}
@@ -341,7 +500,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── Why iExplain ── */}
-            {data.whyIExplain && (
+            {data.whyIExplain?.points?.length > 0 && (
                <div className="bg-white dark:bg-slate-800 p-10 rounded-[2rem] shadow-sm border border-gray-100 dark:border-slate-700">
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-4 text-center">
                      {data.whyIExplain.title}
@@ -366,7 +525,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── FAQs ── */}
-            {data.faqs && (
+            {data.faqs?.items?.length > 0 && (
                <div>
                   <h3 className="text-2xl font-black text-brand-blue dark:text-white mb-10 text-center">
                      {data.faqs.title}
@@ -402,7 +561,7 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
             )}
 
             {/* ── Contact Form ── */}
-            <div className="bg-brand-blue p-10 rounded-[2.5rem] shadow-xl text-white">
+            <div className="bg-brand-blue p-6 rounded-[2.5rem] shadow-xl text-white">
                <h3 className="text-2xl font-black mb-6 text-center">
                   Get Free Counseling for {data.title}
                </h3>
