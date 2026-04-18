@@ -436,8 +436,41 @@ const OfficeDetailPage = () => {
 const EntranceExamWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
   const normalizedSlug = createSlug(subPath || '');
+  const [remotePage, setRemotePage] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadRemotePage = async () => {
+      if (!normalizedSlug) {
+        setIsLoading(false);
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
+        if (!dynamicSnapshot.empty) {
+          setRemotePage(dynamicSnapshot.docs[0].data());
+        } else {
+          setRemotePage(null);
+        }
+      } catch (error) {
+        console.error('Failed to load entrance exam page from Firestore:', error);
+        setRemotePage(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadRemotePage();
+  }, [normalizedSlug]);
 
   if (!normalizedSlug) return <Navigate to="/exams/neet-ug" replace />;
+  if (isLoading) return <LoadingOverlay />;
+
+  if (remotePage?.category === 'Entrance Exams' && remotePage?.payload) {
+    return <EntranceExamDetailPage data={remotePage.payload} />;
+  }
 
   const data = ENTRANCE_EXAM_DETAILS[normalizedSlug];
   if (!data) return <Navigate to="/exams/neet-ug" replace />;
@@ -545,8 +578,41 @@ const StudyIndiaWrapper = () => {
 const MBBSIndiaCollegeWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const [remotePage, setRemotePage] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadRemotePage = async () => {
+      if (!normalizedSlug) {
+        setIsLoading(false);
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
+        if (!dynamicSnapshot.empty) {
+          setRemotePage(dynamicSnapshot.docs[0].data());
+        } else {
+          setRemotePage(null);
+        }
+      } catch (error) {
+        console.error('Failed to load MBBS India page from Firestore:', error);
+        setRemotePage(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadRemotePage();
+  }, [normalizedSlug]);
 
   if (!normalizedSlug) return <Navigate to="/study-india/mbbs" replace />;
+  if (isLoading) return <LoadingOverlay />;
+
+  if (remotePage?.category === 'MBBS in India' && remotePage?.payload) {
+    return <MBBSinindiadetailpage data={remotePage.payload} />;
+  }
 
   const data = MBBS_IN_INDIA_DETAILS[normalizedSlug];
   if (!data) return <Navigate to="/study-india/mbbs" replace />;
