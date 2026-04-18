@@ -247,10 +247,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       focusKeyphrase: page.seo?.focusKeyphrase || '',
       metaTitle: page.seo?.metaTitle || '',
       seoSlug: page.seo?.slug || '',
-      category: page.category === 'Study Abroad' ? 'Study Abroad' : 'MBBS Abroad',
-      payloadText: JSON.stringify(page.payload || {}, null, 2),
-      focusKeyphrase: page.seo?.focusKeyphrase || '',
-      metaTitle: page.seo?.metaTitle || '',
       metaDescription: page.seo?.metaDescription || ''
     });
     setEditingId(page.id);
@@ -299,10 +295,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       });
 
       const mbbsAbroadEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
-  const handleSyncLocalData = async () => {
-    setLoading(true);
-    try {
-      const mbbsEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
         slug,
         title: payload?.title || slug.replace(/-/g, ' '),
         category: 'MBBS Abroad' as const,
@@ -310,45 +302,16 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       }));
 
       const studyAbroadEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
-      const studyEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
         slug,
         title: payload?.title || slug.replace(/-/g, ' '),
         category: 'Study Abroad' as const,
         payload
       }));
 
-      const mbbsIndiaEntries = Object.entries(MBBS_IN_INDIA_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'MBBS in India' as const,
-        payload
-      }));
+      const allEntries = [...mbbsAbroadEntries, ...studyAbroadEntries];
 
-      const collegeEntries = Object.entries(COLLEGE_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || payload?.name || slug.replace(/-/g, ' '),
-        category: 'Colleges' as const,
-        payload
-      }));
-
-      const entranceExamEntries = Object.entries(ENTRANCE_EXAM_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'Entrance Exams' as const,
-        payload
-      }));
-
-      const allEntries = [
-        ...mbbsAbroadEntries,
-        ...studyAbroadEntries,
-        ...mbbsIndiaEntries,
-        ...collegeEntries,
-        ...entranceExamEntries
-      ];
-
-      const allEntries = [...mbbsEntries, ...studyEntries];
       await Promise.all(
-        allEntries.map(entry =>
+        allEntries.map((entry) =>
           setDoc(
             doc(db, 'dynamic_pages', entry.slug),
             {
@@ -357,7 +320,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               category: entry.category,
               payload: entry.payload,
               seo: buildSeo(existingSeoBySlug.get(entry.slug))
-              payload: entry.payload
             },
             { merge: true }
           )
@@ -365,21 +327,17 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       );
 
       await fetchData();
-      alert(`Synced ${allEntries.length} records to dynamic_pages (programs + colleges).`);
+      alert(`Synced ${allEntries.length} records to dynamic_pages.`);
     } catch (err) {
-      console.error('Sync local data failed:', err);
+      console.error('Sync all site data failed:', err);
       alert('Failed to sync all site data.');
     } finally {
       setLoading(false);
     }
   }
-      alert(`Synced ${allEntries.length} local page records to dynamic_pages.`);
-    } catch (err) {
-      console.error('Sync local data failed:', err);
-      alert('Failed to sync local data.');
-    } finally {
-      setLoading(false);
-    }
+
+  const handleSyncLocalData = async () => {
+    await handleSyncAllSiteData();
   };
 
   if (!isAuthenticated) {
