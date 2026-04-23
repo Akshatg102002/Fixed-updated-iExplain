@@ -15,8 +15,6 @@ import { Blog, BlogCategory, SiteSettings, MediaItem, VideoStory, CollegeDetailD
 import { LOGO_URL, FOOTER_COLLEGES } from '../data.ts';
 import { MBBS_ABROAD_DETAILED } from '../mbbs_data.ts';
 import { STUDY_ABROAD_DETAILED } from '../studyAbroad_Data.ts';
-import { COLLEGE_DETAILS } from '../collegeData.ts';
-import { STUDY_ABROAD_COLLEGE_DETAILS } from '../studyAbroadCollegeData.ts';
 import MediaManager from './MediaManager';
 
 type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
@@ -87,9 +85,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     category: 'MBBS Abroad' | 'Study Abroad';
     payloadText: string;
     focusKeyphrase: string;
-    seoTitle: string;
     metaTitle: string;
-    seoSlug: string;
     metaDescription: string;
   }>({
     title: '',
@@ -97,7 +93,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     category: 'MBBS Abroad',
     payloadText: '',
     focusKeyphrase: '',
-    seoTitle: '',
     metaTitle: '',
     seoSlug: '',
     metaDescription: ''
@@ -200,7 +195,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       category: 'MBBS Abroad',
       payloadText: '',
       focusKeyphrase: '',
-      seoTitle: '',
       metaTitle: '',
       seoSlug: '',
       metaDescription: ''
@@ -251,7 +245,6 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       category: allowedCategories.includes(page.category) ? page.category : 'MBBS Abroad',
       payloadText: JSON.stringify(page.payload || {}, null, 2),
       focusKeyphrase: page.seo?.focusKeyphrase || '',
-      seoTitle: page.seo?.seoTitle || page.seo?.metaTitle || '',
       metaTitle: page.seo?.metaTitle || '',
       seoSlug: page.seo?.slug || '',
       metaDescription: page.seo?.metaDescription || ''
@@ -276,42 +269,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       payload: parsedPayload,
       seo: {
         focusKeyphrase: pageForm.focusKeyphrase || '',
-        seoTitle: pageForm.seoTitle || '',
         metaTitle: pageForm.metaTitle || '',
         slug: pageForm.seoSlug || '',
         metaDescription: pageForm.metaDescription || ''
       }
     });
-  };
-
-  const chunkItems = <T,>(items: T[], chunkSize: number): T[][] => {
-    const chunks: T[][] = [];
-    for (let idx = 0; idx < items.length; idx += chunkSize) {
-      chunks.push(items.slice(idx, idx + chunkSize));
-    }
-    return chunks;
-  };
-
-  const runChunkedWrites = async <T,>(
-    entries: T[],
-    writeFn: (entry: T) => Promise<unknown>,
-    chunkSize = 25
-  ) => {
-    const chunks = chunkItems(entries, chunkSize);
-    for (const chunk of chunks) {
-      await Promise.all(chunk.map((entry) => writeFn(entry)));
-    }
-  };
-
-  const extractCountry = (quickOverview: Record<string, string> | undefined, fallback = 'Unknown') => {
-    const locationValue =
-      quickOverview?.Location ||
-      quickOverview?.location ||
-      quickOverview?.Country ||
-      quickOverview?.country ||
-      fallback;
-    const segments = String(locationValue).split(',').map((part) => part.trim()).filter(Boolean);
-    return segments[segments.length - 1] || fallback;
   };
 
   async function handleSyncAllSiteData() {
@@ -348,9 +310,8 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
       const allEntries = [...mbbsAbroadEntries, ...studyAbroadEntries];
 
-      await runChunkedWrites(
-        allEntries,
-        async (entry) =>
+      await Promise.all(
+        allEntries.map((entry) =>
           setDoc(
             doc(db, 'dynamic_pages', entry.slug),
             {
@@ -361,51 +322,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               seo: buildSeo(existingSeoBySlug.get(entry.slug))
             },
             { merge: true }
-          ),
-        25
-      );
-
-      const mbbsCollegeEntries = Object.entries(COLLEGE_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'MBBS Abroad' as const,
-        country: extractCountry(payload?.quickOverview, 'Russia'),
-        image: payload?.heroImage || '',
-        payload
-      }));
-
-      const studyCollegeEntries = Object.entries(STUDY_ABROAD_COLLEGE_DETAILS).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'Study Abroad' as const,
-        country: extractCountry(payload?.quickOverview),
-        image: payload?.heroImage || '',
-        payload
-      }));
-
-      const allCollegeEntries = [...mbbsCollegeEntries, ...studyCollegeEntries];
-
-      await runChunkedWrites(
-        allCollegeEntries,
-        async (entry) =>
-          setDoc(
-            doc(db, 'colleges', entry.slug),
-            {
-              slug: entry.slug,
-              name: entry.title,
-              title: entry.title,
-              category: entry.category,
-              country: entry.country,
-              image: entry.image,
-              payload: entry.payload
-            },
-            { merge: true }
-          ),
-        25
+          )
+        )
       );
 
       await fetchData();
-      alert(`Synced ${allEntries.length} program pages and ${allCollegeEntries.length} college pages.`);
+      alert(`Synced ${allEntries.length} records to dynamic_pages.`);
     } catch (err) {
       console.error('Sync all site data failed:', err);
       alert('Failed to sync all site data.');
@@ -572,16 +494,9 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             <div className="animate-fade-in">
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl font-black text-brand-blue">Manage <span className="text-brand-gold">Colleges</span></h2>
-                <div className="flex gap-3">
-                  {viewMode === 'list' && (
-                    <button onClick={handleSyncLocalData} className="px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg">
-                      Sync Local Data
-                    </button>
-                  )}
-                  <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
-                    {viewMode === 'list' ? 'New College' : 'Back to List'}
-                  </button>
-                </div>
+                <button onClick={() => { if(viewMode === 'list') { resetForms(); setViewMode('create'); } else { setViewMode('list'); } }} className="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-brand-gold transition-all shadow-lg">
+                  {viewMode === 'list' ? 'New College' : 'Back to List'}
+                </button>
               </div>
 
               {viewMode === 'list' ? (
@@ -788,6 +703,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       </select>
                     </div>
 
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label className="label">Focus Keyphrase</label>
@@ -795,17 +711,17 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       </div>
                       <div>
                         <label className="label">SEO Title</label>
-                        <input type="text" className="input-std" value={pageForm.seoTitle} onChange={e => setPageForm({ ...pageForm, seoTitle: e.target.value })} />
+                        <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
                       </div>
                       <div>
                         <label className="label">SEO Slug</label>
                         <input type="text" className="input-std" value={pageForm.seoSlug} onChange={e => setPageForm({ ...pageForm, seoSlug: e.target.value })} />
                       </div>
-                      <div className="md:col-span-2">
                         <label className="label">Meta Title</label>
                         <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
                       </div>
                     </div>
+
                     <div>
                       <label className="label">Meta Description</label>
                       <textarea
