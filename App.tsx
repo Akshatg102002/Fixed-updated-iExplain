@@ -49,7 +49,6 @@ import { STUDY_ABROAD_COLLEGE_DETAILS } from './studyAbroadCollegeData.ts';
 import { MBBS_IN_INDIA_DETAILS } from './MBBSinindiadata.ts';
 import { ENTRANCE_EXAM_DETAILS } from './EntranceExamdata.ts';
 import { RouteState, SiteSettings } from './types.ts';
-import { db, collection, getDocs, doc, getDoc, query, orderBy, where } from './firebase.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
 
 import { createSlug } from './utils.ts';
@@ -579,46 +578,11 @@ const MBBSIndiaCollegeWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
   const localMBBSIndiaPage = MBBS_IN_INDIA_DETAILS[normalizedSlug];
-  const [remotePage, setRemotePage] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const loadRemotePage = async () => {
-      if (!normalizedSlug || localMBBSIndiaPage) {
-        setIsLoading(false);
-        setRemotePage(null);
-        return;
-      }
-
-      setIsLoading(true);
-      try {
-        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
-        if (!dynamicSnapshot.empty) {
-          setRemotePage(dynamicSnapshot.docs[0].data());
-        } else {
-          setRemotePage(null);
-        }
-      } catch (error) {
-        console.error('Failed to load MBBS India page from Firestore:', error);
-        setRemotePage(null);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadRemotePage();
-  }, [normalizedSlug, localMBBSIndiaPage]);
 
   if (!normalizedSlug) return <Navigate to="/study-india/mbbs" replace />;
 
   if (localMBBSIndiaPage) {
     return <MBBSinindiadetailpage data={localMBBSIndiaPage} />;
-  }
-
-  if (isLoading) return <LoadingOverlay />;
-
-  if (remotePage?.category === 'MBBS in India' && remotePage?.payload) {
-    return <MBBSinindiadetailpage data={remotePage.payload} />;
   }
 
   return <Navigate to="/study-india/mbbs" replace />;
@@ -627,104 +591,36 @@ const MBBSIndiaCollegeWrapper = () => {
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const localStructuredCollegePage = STRUCTURED_COLLEGE_DETAILS[normalizedSlug];
   const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
   const localMBBSAbroadPage = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
   const localStudyAbroadPage = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
-  const [remotePage, setRemotePage] = useState<any>(null);
   const [collegePage, setCollegePage] = useState<any>(null);
-  const [studyAbroadPage, setStudyAbroadPage] = useState<any>(null);
-  const [studyAbroadCollegePage, setStudyAbroadCollegePage] = useState<any>(null);
-  const [mbbsAbroadPage, setMbbsAbroadPage] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const loadRemotePage = async () => {
+    const loadLocalPage = () => {
       if (!normalizedSlug) {
-        setIsLoading(false);
-        return;
-      }
-
-      if (localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
-        setRemotePage(null);
         setCollegePage(null);
-        setStudyAbroadPage(null);
-        setStudyAbroadCollegePage(null);
-        setMbbsAbroadPage(null);
-        setIsLoading(false);
         return;
       }
 
-      setIsLoading(true);
-      try {
-        const [dynamicSnapshot, collegeSnapshot] = await Promise.all([
-          getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug))),
-          getDocs(query(collection(db, 'colleges'), where('slug', '==', normalizedSlug))),
-        ]);
+      if (localStructuredCollegePage || localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
+        setCollegePage(null);
+        return;
+      }
 
-        if (!dynamicSnapshot.empty) {
-          setRemotePage(dynamicSnapshot.docs[0].data());
-        } else {
-          setRemotePage(null);
-        }
-
-        setStudyAbroadPage(null);
-        setStudyAbroadCollegePage(null);
-        setMbbsAbroadPage(null);
-
-        if (!collegeSnapshot.empty) {
-          const collegeDoc = collegeSnapshot.docs[0].data();
-
-          if (collegeDoc?.category === 'Study Abroad' && collegeDoc?.payload) {
-            setStudyAbroadPage(collegeDoc.payload);
-            setCollegePage(null);
-          } else if (collegeDoc?.payload?.scholarships && collegeDoc?.payload?.quickOverview) {
-            setStudyAbroadCollegePage(collegeDoc.payload);
-            setCollegePage(null);
-          } else if (collegeDoc?.category === 'MBBS Abroad' && collegeDoc?.payload) {
-            setMbbsAbroadPage(collegeDoc.payload);
-            setCollegePage(null);
-          } else {
-            setCollegePage(normalizeCollegeDetailData(collegeDoc, normalizedSlug));
-          }
-        } else if (STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]) {
-          setStudyAbroadCollegePage(STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]);
-          setCollegePage(null);
-        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
-          setCollegePage(normalizeCollegeDetailData(
-            STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
-            || LEGACY_COLLEGE_DETAILS[normalizedSlug],
-            normalizedSlug
-          ));
-        } else {
-          setCollegePage(null);
-        }
-      } catch (error) {
-        console.error('Failed to load dynamic page:', error);
-        setRemotePage(null);
-
-        setStudyAbroadPage(null);
-        setStudyAbroadCollegePage(null);
-        setMbbsAbroadPage(null);
-
-        if (STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]) {
-          setStudyAbroadCollegePage(STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug]);
-          setCollegePage(null);
-        } else if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
-          setCollegePage(normalizeCollegeDetailData(
-            STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
-            || LEGACY_COLLEGE_DETAILS[normalizedSlug],
-            normalizedSlug
-          ));
-        } else {
-          setCollegePage(null);
-        }
-      } finally {
-        setIsLoading(false);
+      if (LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+        setCollegePage(normalizeCollegeDetailData(
+          LEGACY_COLLEGE_DETAILS[normalizedSlug],
+          normalizedSlug
+        ));
+      } else {
+        setCollegePage(null);
       }
     };
 
-    loadRemotePage();
-  }, [normalizedSlug, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
+    loadLocalPage();
+  }, [normalizedSlug, localStructuredCollegePage, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
 
@@ -736,34 +632,16 @@ const CategoryTitleSlugWrapper = () => {
     return <MBBSDetailPage data={localMBBSAbroadPage} />;
   }
 
+  if (localStructuredCollegePage) {
+    return <MBBSDetailPage data={localStructuredCollegePage} />;
+  }
+
   if (localStudyAbroadPage) {
     return <StudyAbroadDetailPage data={localStudyAbroadPage} />;
   }
 
-  if (isLoading) return <LoadingOverlay />;
-
-  if (studyAbroadPage) {
-    return <StudyAbroadDetailPage data={studyAbroadPage} />;
-  }
-
-  if (studyAbroadCollegePage) {
-    return <StudyAbroadCollegeDetailPage data={studyAbroadCollegePage} />;
-  }
-
-  if (mbbsAbroadPage) {
-    return <MBBSDetailPage data={mbbsAbroadPage} />;
-  }
-
   if (collegePage) {
     return <CollegeDetailPage data={collegePage} />;
-  }
-
-  if (remotePage?.category === 'Study Abroad' && remotePage?.payload) {
-    return <StudyAbroadDetailPage data={remotePage.payload} />;
-  }
-
-  if (remotePage?.category === 'MBBS Abroad' && remotePage?.payload) {
-    return <MBBSDetailPage data={remotePage.payload} />;
   }
 
   if (normalizedSlug.startsWith('study-in-')) {
