@@ -604,14 +604,15 @@ const CategoryTitleSlugWrapper = () => {
         return;
       }
 
-      if (localStructuredCollegePage || localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
+      if (localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
         setCollegePage(null);
         return;
       }
 
-      if (LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
+      if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
         setCollegePage(normalizeCollegeDetailData(
-          LEGACY_COLLEGE_DETAILS[normalizedSlug],
+          STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
+          || LEGACY_COLLEGE_DETAILS[normalizedSlug],
           normalizedSlug
         ));
       } else {
@@ -620,7 +621,7 @@ const CategoryTitleSlugWrapper = () => {
     };
 
     loadLocalPage();
-  }, [normalizedSlug, localStructuredCollegePage, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
+  }, [normalizedSlug, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
 
@@ -630,10 +631,6 @@ const CategoryTitleSlugWrapper = () => {
 
   if (localMBBSAbroadPage) {
     return <MBBSDetailPage data={localMBBSAbroadPage} />;
-  }
-
-  if (localStructuredCollegePage) {
-    return <MBBSDetailPage data={localStructuredCollegePage} />;
   }
 
   if (localStudyAbroadPage) {
