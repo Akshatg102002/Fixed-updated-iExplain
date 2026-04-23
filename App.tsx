@@ -595,33 +595,19 @@ const CategoryTitleSlugWrapper = () => {
   const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
   const localMBBSAbroadPage = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
   const localStudyAbroadPage = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
-  const [collegePage, setCollegePage] = useState<any>(null);
 
-  useEffect(() => {
-    const loadLocalPage = () => {
-      if (!normalizedSlug) {
-        setCollegePage(null);
-        return;
-      }
-
-      if (localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
-        setCollegePage(null);
-        return;
-      }
-
-      if (STRUCTURED_COLLEGE_DETAILS[normalizedSlug] || LEGACY_COLLEGE_DETAILS[normalizedSlug]) {
-        setCollegePage(normalizeCollegeDetailData(
-          STRUCTURED_COLLEGE_DETAILS[normalizedSlug]
-          || LEGACY_COLLEGE_DETAILS[normalizedSlug],
-          normalizedSlug
-        ));
-      } else {
-        setCollegePage(null);
-      }
-    };
-
-    loadLocalPage();
-  }, [normalizedSlug, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
+  const collegePage = (
+    normalizedSlug
+    && !localStudyAbroadCollegePage
+    && !localMBBSAbroadPage
+    && !localStudyAbroadPage
+    && (localStructuredCollegePage || LEGACY_COLLEGE_DETAILS[normalizedSlug])
+  )
+    ? normalizeCollegeDetailData(
+        localStructuredCollegePage || LEGACY_COLLEGE_DETAILS[normalizedSlug],
+        normalizedSlug
+      )
+    : null;
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
 
