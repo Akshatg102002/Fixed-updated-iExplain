@@ -591,6 +591,7 @@ const MBBSIndiaCollegeWrapper = () => {
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const localStructuredCollegePage = STRUCTURED_COLLEGE_DETAILS[normalizedSlug];
   const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
   const localMBBSAbroadPage = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
   const localStudyAbroadPage = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);

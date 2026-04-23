@@ -412,7 +412,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme, logoUrl }) => 
                              
                              {mobileCollegeOpen.mbbs && (
                                <div className="pl-6 space-y-4 border-l-2 border-gray-100 dark:border-slate-800 animate-fade-in">
-                                 {(dynamicCollegeGroups.mbbs.length > 0 ? dynamicCollegeGroups.mbbs : FOOTER_COLLEGES.mbbs).map((country, idx) => (
+                                 {FOOTER_COLLEGES.mbbs.map((country, idx) => (
                                    <div key={idx}>
                                      <p className="font-bold text-gray-800 dark:text-gray-200 text-xs uppercase mb-2">{country.country}</p>
                                      <div className="pl-4 space-y-2">
