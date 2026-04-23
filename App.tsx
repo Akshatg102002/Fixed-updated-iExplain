@@ -578,13 +578,15 @@ const StudyIndiaWrapper = () => {
 const MBBSIndiaCollegeWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const localMBBSIndiaPage = MBBS_IN_INDIA_DETAILS[normalizedSlug];
   const [remotePage, setRemotePage] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const loadRemotePage = async () => {
-      if (!normalizedSlug) {
+      if (!normalizedSlug || localMBBSIndiaPage) {
         setIsLoading(false);
+        setRemotePage(null);
         return;
       }
 
@@ -605,24 +607,29 @@ const MBBSIndiaCollegeWrapper = () => {
     };
 
     loadRemotePage();
-  }, [normalizedSlug]);
+  }, [normalizedSlug, localMBBSIndiaPage]);
 
   if (!normalizedSlug) return <Navigate to="/study-india/mbbs" replace />;
+
+  if (localMBBSIndiaPage) {
+    return <MBBSinindiadetailpage data={localMBBSIndiaPage} />;
+  }
+
   if (isLoading) return <LoadingOverlay />;
 
   if (remotePage?.category === 'MBBS in India' && remotePage?.payload) {
     return <MBBSinindiadetailpage data={remotePage.payload} />;
   }
 
-  const data = MBBS_IN_INDIA_DETAILS[normalizedSlug];
-  if (!data) return <Navigate to="/study-india/mbbs" replace />;
-
-  return <MBBSinindiadetailpage data={data} />;
+  return <Navigate to="/study-india/mbbs" replace />;
 };
 
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
+  const localMBBSAbroadPage = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+  const localStudyAbroadPage = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
   const [remotePage, setRemotePage] = useState<any>(null);
   const [collegePage, setCollegePage] = useState<any>(null);
   const [studyAbroadPage, setStudyAbroadPage] = useState<any>(null);
@@ -633,6 +640,16 @@ const CategoryTitleSlugWrapper = () => {
   useEffect(() => {
     const loadRemotePage = async () => {
       if (!normalizedSlug) {
+        setIsLoading(false);
+        return;
+      }
+
+      if (localStudyAbroadCollegePage || localMBBSAbroadPage || localStudyAbroadPage) {
+        setRemotePage(null);
+        setCollegePage(null);
+        setStudyAbroadPage(null);
+        setStudyAbroadCollegePage(null);
+        setMbbsAbroadPage(null);
         setIsLoading(false);
         return;
       }
@@ -707,9 +724,22 @@ const CategoryTitleSlugWrapper = () => {
     };
 
     loadRemotePage();
-  }, [normalizedSlug]);
+  }, [normalizedSlug, localStudyAbroadCollegePage, localMBBSAbroadPage, localStudyAbroadPage]);
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
+
+  if (localStudyAbroadCollegePage) {
+    return <StudyAbroadCollegeDetailPage data={localStudyAbroadCollegePage} />;
+  }
+
+  if (localMBBSAbroadPage) {
+    return <MBBSDetailPage data={localMBBSAbroadPage} />;
+  }
+
+  if (localStudyAbroadPage) {
+    return <StudyAbroadDetailPage data={localStudyAbroadPage} />;
+  }
+
   if (isLoading) return <LoadingOverlay />;
 
   if (studyAbroadPage) {
@@ -737,15 +767,11 @@ const CategoryTitleSlugWrapper = () => {
   }
 
   if (normalizedSlug.startsWith('study-in-')) {
-    const data = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
-    if (!data) return <Navigate to="/study-in-usa" replace />;
-    return <StudyAbroadDetailPage data={data} />;
+    return <Navigate to="/study-in-usa" replace />;
   }
 
   if (normalizedSlug.startsWith('mbbs-in-')) {
-    const data = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
-    if (!data) return <Navigate to="/mbbs-in-russia" replace />;
-    return <MBBSDetailPage data={data} />;
+    return <Navigate to="/mbbs-in-russia" replace />;
   }
 
   return <Navigate to="/" replace />;
