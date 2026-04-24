@@ -82,10 +82,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [pageForm, setPageForm] = useState<{
     title: string;
     slug: string;
-    category: 'MBBS Abroad' | 'Study Abroad';
+    category: DynamicPageCategory;
     payloadText: string;
     focusKeyphrase: string;
+    seoTitle: string;
     metaTitle: string;
+    seoSlug: string;
     metaDescription: string;
   }>({
     title: '',
@@ -93,6 +95,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     category: 'MBBS Abroad',
     payloadText: '',
     focusKeyphrase: '',
+    seoTitle: '',
     metaTitle: '',
     seoSlug: '',
     metaDescription: ''
@@ -195,6 +198,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       category: 'MBBS Abroad',
       payloadText: '',
       focusKeyphrase: '',
+      seoTitle: '',
       metaTitle: '',
       seoSlug: '',
       metaDescription: ''
@@ -239,15 +243,17 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   const startEditingPage = (page: any) => {
     const allowedCategories: DynamicPageCategory[] = ['MBBS Abroad', 'Study Abroad', 'MBBS in India', 'Colleges', 'Entrance Exams'];
+    const seoData = page.payload?.seo || page.seo || {};
     setPageForm({
       title: page.title || '',
       slug: page.slug || '',
       category: allowedCategories.includes(page.category) ? page.category : 'MBBS Abroad',
       payloadText: JSON.stringify(page.payload || {}, null, 2),
-      focusKeyphrase: page.seo?.focusKeyphrase || '',
-      metaTitle: page.seo?.metaTitle || '',
-      seoSlug: page.seo?.slug || '',
-      metaDescription: page.seo?.metaDescription || ''
+      focusKeyphrase: seoData.focusKeyphrase || '',
+      seoTitle: seoData.seoTitle || '',
+      metaTitle: seoData.metaTitle || '',
+      seoSlug: seoData.slug || '',
+      metaDescription: seoData.metaDescription || ''
     });
     setEditingId(page.id);
     setViewMode('edit');
@@ -262,16 +268,21 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       return;
     }
 
+    const seoPayload = {
+      focusKeyphrase: pageForm.focusKeyphrase || '',
+      seoTitle: pageForm.seoTitle || '',
+      metaTitle: pageForm.metaTitle || '',
+      slug: pageForm.seoSlug || '',
+      metaDescription: pageForm.metaDescription || ''
+    };
+
     await handleSave('dynamic_pages', {
       title: pageForm.title,
       slug: pageForm.slug || generateSlug(pageForm.title),
       category: pageForm.category,
-      payload: parsedPayload,
-      seo: {
-        focusKeyphrase: pageForm.focusKeyphrase || '',
-        metaTitle: pageForm.metaTitle || '',
-        slug: pageForm.seoSlug || '',
-        metaDescription: pageForm.metaDescription || ''
+      payload: {
+        ...parsedPayload,
+        seo: seoPayload
       }
     });
   };
@@ -279,19 +290,17 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   async function handleSyncAllSiteData() {
     setLoading(true);
     try {
-      const buildSeo = (existingSeo: any) => ({
-        focusKeyphrase: existingSeo?.focusKeyphrase || '',
-        metaTitle: existingSeo?.metaTitle || '',
-        slug: existingSeo?.slug || '',
-        metaDescription: existingSeo?.metaDescription || ''
-      });
-
       const remoteExisting = await getDocs(collection(db, 'dynamic_pages'));
-      const existingSeoBySlug = new Map<string, any>();
+      const existingBySlug = new Map<string, any>();
       remoteExisting.forEach((snapshot) => {
         const data = snapshot.data();
         const docSlug = data?.slug || snapshot.id;
-        if (docSlug) existingSeoBySlug.set(docSlug, data?.seo || null);
+        if (docSlug) {
+          existingBySlug.set(docSlug, {
+            payload: data?.payload || {},
+            seo: data?.payload?.seo || data?.seo || null
+          });
+        }
       });
 
       const mbbsAbroadEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
@@ -318,8 +327,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               slug: entry.slug,
               title: entry.title,
               category: entry.category,
-              payload: entry.payload,
-              seo: buildSeo(existingSeoBySlug.get(entry.slug))
+              payload: {
+                ...(existingBySlug.get(entry.slug)?.payload || {}),
+                ...entry.payload,
+                seo: existingBySlug.get(entry.slug)?.seo || {}
+              }
             },
             { merge: true }
           )
@@ -703,20 +715,20 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       </select>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
+                      <div className="md:col-span-1">
                         <label className="label">Focus Keyphrase</label>
                         <input type="text" className="input-std" value={pageForm.focusKeyphrase} onChange={e => setPageForm({ ...pageForm, focusKeyphrase: e.target.value })} />
                       </div>
-                      <div>
+                      <div className="md:col-span-1">
                         <label className="label">SEO Title</label>
-                        <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
+                        <input type="text" className="input-std" value={pageForm.seoTitle} onChange={e => setPageForm({ ...pageForm, seoTitle: e.target.value })} />
                       </div>
-                      <div>
+                      <div className="md:col-span-2">
                         <label className="label">SEO Slug</label>
                         <input type="text" className="input-std" value={pageForm.seoSlug} onChange={e => setPageForm({ ...pageForm, seoSlug: e.target.value })} />
                       </div>
+                      <div className="md:col-span-1">
                         <label className="label">Meta Title</label>
                         <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
                       </div>
@@ -742,7 +754,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         value={pageForm.payloadText}
                         onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })}
                       />
-                      <p className="mt-2 text-xs text-gray-400">This keeps your current file-based process intact. Backend page is used first, local JSON remains fallback.</p>
+                      <p className="mt-2 text-xs text-gray-400">SEO values are embedded into payload.seo so page data stays together for all program and college categories.</p>
                     </div>
 
                     <button type="submit" className="w-full py-5 bg-brand-gold text-white rounded-2xl font-black uppercase tracking-widest shadow-xl">
