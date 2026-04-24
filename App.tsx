@@ -50,6 +50,7 @@ import { MBBS_IN_INDIA_DETAILS } from './MBBSinindiadata.ts';
 import { ENTRANCE_EXAM_DETAILS } from './EntranceExamdata.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
+import { db, collection, getDocs, query, where } from './firebase.ts';
 
 import { createSlug } from './utils.ts';
 

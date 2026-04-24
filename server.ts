@@ -6,6 +6,9 @@ import { getFirestore, doc, getDoc, collection, query, where, getDocs } from "fi
 import dotenv from "dotenv";
 import cors from "cors";
 import { Resend } from "resend";
+import fs from "fs/promises";
+import path from "path";
+import { fileURLToPath } from "url";
 
 // Load environment variables
 dotenv.config();
@@ -26,6 +29,109 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const DEFAULT_SEO = {
+  title: "iExplain Education | Global Admissions",
+  description: "iExplain Education helps students with admissions, counselling, and study abroad planning for top global universities.",
+  canonicalUrl: "https://iexplain.education/",
+  ogTitle: "iExplain Education | Global Admissions",
+  ogDescription: "Admissions guidance, counseling, and global education pathways for students.",
+  ogUrl: "https://iexplain.education/",
+  jsonLd: ""
+};
+
+const escapeHtml = (value = "") =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+const resolveSlugFromPath = (pathname: string) => {
+  const cleanPath = pathname.split("?")[0].replace(/^\/+|\/+$/g, "");
+  if (!cleanPath) return "";
+
+  if (cleanPath.startsWith("exams/")) {
+    return cleanPath.replace("exams/", "");
+  }
+
+  if (cleanPath.startsWith("entrance-exams/")) {
+    return cleanPath.replace("entrance-exams/", "");
+  }
+
+  if (cleanPath.startsWith("blog") || cleanPath.startsWith("admin") || cleanPath.startsWith("api")) {
+    return "";
+  }
+
+  const segments = cleanPath.split("/");
+  return segments[segments.length - 1] || "";
+};
+
+const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: string) => {
+  const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
+  const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;
+  const canonicalPath = seoPayload?.slug ? `/${seoPayload.slug}` : pathname;
+  const canonicalUrl = `https://iexplain.education${canonicalPath}`;
+  const jsonLd = seoPayload?.structuredData ? JSON.stringify(seoPayload.structuredData) : "";
+
+  return {
+    title: seoTitle,
+    description: seoDescription,
+    canonicalUrl,
+    ogTitle: seoTitle,
+    ogDescription: seoDescription,
+    ogUrl: canonicalUrl,
+    jsonLd,
+  };
+};
+
+const resolveSeoForRequest = async (pathname: string) => {
+  const slug = resolveSlugFromPath(pathname);
+  if (!slug) return DEFAULT_SEO;
+
+  try {
+    const dynamicSnapshot = await getDocs(query(collection(db, "dynamic_pages"), where("slug", "==", slug)));
+    if (!dynamicSnapshot.empty) {
+      const data = dynamicSnapshot.docs[0].data();
+      const seoPayload = data?.payload?.seo || data?.seo || {};
+      return buildSeoFromPayload(seoPayload, pathname, data?.title);
+    }
+
+    const collegeSnapshot = await getDocs(query(collection(db, "colleges"), where("slug", "==", slug)));
+    if (!collegeSnapshot.empty) {
+      const data = collegeSnapshot.docs[0].data();
+      return buildSeoFromPayload(data?.seo || {}, pathname, data?.name);
+    }
+  } catch (error) {
+    console.error("SEO resolution failed for path:", pathname, error);
+  }
+
+  return DEFAULT_SEO;
+};
+
+const injectSeoIntoHtml = (html: string, seo: typeof DEFAULT_SEO) => {
+  const titleTag = `<title>${escapeHtml(seo.title)}</title>`;
+  const descriptionTag = `<meta name="description" content="${escapeHtml(seo.description)}">`;
+  const canonicalTag = `<link rel="canonical" href="${escapeHtml(seo.canonicalUrl)}">`;
+  const ogTitleTag = `<meta property="og:title" content="${escapeHtml(seo.ogTitle)}">`;
+  const ogDescriptionTag = `<meta property="og:description" content="${escapeHtml(seo.ogDescription)}">`;
+  const ogUrlTag = `<meta property="og:url" content="${escapeHtml(seo.ogUrl)}">`;
+
+  const jsonLdScript = seo.jsonLd
+    ? `<script type="application/ld+json" id="server-jsonld-schema">${seo.jsonLd}</script>`
+    : "";
+
+  return html
+    .replace(/<title>[\s\S]*?<\/title>/i, titleTag)
+    .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, descriptionTag)
+    .replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, canonicalTag)
+    .replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/i, ogTitleTag)
+    .replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/i, ogDescriptionTag)
+    .replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i, ogUrlTag)
+    .replace("</head>", `${jsonLdScript}</head>`);
+};
 
 async function startServer() {
   const app = express();
@@ -199,6 +305,22 @@ async function startServer() {
       appType: "spa",
     });
     app.use(vite.middlewares);
+
+    app.get("*", async (req, res) => {
+      try {
+        const requestUrl = req.originalUrl || req.url;
+        const templatePath = path.resolve(__dirname, "index.html");
+        const rawTemplate = await fs.readFile(templatePath, "utf-8");
+        const transformed = await vite.transformIndexHtml(requestUrl, rawTemplate);
+        const seo = await resolveSeoForRequest(req.path);
+        const html = injectSeoIntoHtml(transformed, seo);
+        res.status(200).set({ "Content-Type": "text/html" }).end(html);
+      } catch (error) {
+        vite.ssrFixStacktrace(error as Error);
+        console.error(error);
+        res.status(500).end("Internal Server Error");
+      }
+    });
   } else {
     // Production static file serving (if built)
     app.use(express.static("dist", {
@@ -214,9 +336,18 @@ async function startServer() {
       }
     }));
     
-    // SPA Fallback for production
-    app.get("*", (req, res) => {
-      res.sendFile(new URL('./dist/index.html', import.meta.url).pathname);
+    // SPA Fallback for production with per-page SEO injection
+    app.get("*", async (req, res) => {
+      try {
+        const templatePath = path.resolve(__dirname, "dist/index.html");
+        const template = await fs.readFile(templatePath, "utf-8");
+        const seo = await resolveSeoForRequest(req.path);
+        const html = injectSeoIntoHtml(template, seo);
+        res.status(200).set({ "Content-Type": "text/html" }).send(html);
+      } catch (error) {
+        console.error("Failed to render HTML with SEO:", error);
+        res.status(500).send("Internal Server Error");
+      }
     });
   }
 
