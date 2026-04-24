@@ -20,33 +20,6 @@ import MediaManager from './MediaManager';
 type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
 type ViewMode = 'list' | 'create' | 'edit';
 
-// Helper component for managing array of strings
-const ArrayInput = ({ label, items, onChange }: { label: string, items: string[], onChange: (newItems: string[]) => void }) => {
-  return (
-    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-      <label className="text-[10px] font-black uppercase text-black mb-3 block">{label}</label>
-      <div className="space-y-2">
-        {items.map((item, idx) => (
-          <div key={idx} className="flex gap-2">
-            <input 
-              type="text" 
-              className="flex-grow px-4 py-2 rounded-lg border text-sm"
-              value={item}
-              onChange={(e) => {
-                const newItems = [...items];
-                newItems[idx] = e.target.value;
-                onChange(newItems);
-              }}
-            />
-            <button type="button" onClick={() => onChange(items.filter((_, i) => i !== idx))} className="px-3 bg-red-100 text-red-500 rounded-lg"><i className="fa-solid fa-xmark"></i></button>
-          </div>
-        ))}
-      </div>
-      <button type="button" onClick={() => onChange([...items, ''])} className="mt-3 text-xs font-bold text-brand-blue flex items-center"><i className="fa-solid fa-plus mr-1"></i> Add Item</button>
-    </div>
-  );
-};
-
 type DynamicPageCategory = 'MBBS Abroad' | 'Study Abroad' | 'MBBS in India' | 'Colleges' | 'Entrance Exams';
 
 const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
@@ -89,6 +62,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     metaTitle: string;
     seoSlug: string;
     metaDescription: string;
+    structuredData: string;
   }>({
     title: '',
     slug: '',
@@ -98,16 +72,15 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     seoTitle: '',
     metaTitle: '',
     seoSlug: '',
-    metaDescription: ''
+    metaDescription: '',
+    structuredData: ''
   });
   
   // College Form State
   const initialCollegeState: Partial<CollegeDetailData> = {
     name: '', slug: '', location: '', type: 'Public', established: '',
     country: 'Russia', category: 'MBBS Abroad', image: '', intro: '',
-    highlights: [], eligibility: [], admissionProcess: [], documents: [],
-    courses: [], studentLife: [], placements: [], gallery: [],
-    fees: { structure: [], note: '' }
+    focusKeyphrase: '', seoTitle: '', metaTitle: '', seoSlug: '', metaDescription: '', structuredData: ''
   };
   const [collegeForm, setCollegeForm] = useState<Partial<CollegeDetailData>>(initialCollegeState);
 
@@ -201,7 +174,8 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       seoTitle: '',
       metaTitle: '',
       seoSlug: '',
-      metaDescription: ''
+      metaDescription: '',
+      structuredData: ''
     });
     setCollegeForm(initialCollegeState);
     setImagePreview(null);
@@ -253,7 +227,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       seoTitle: seoData.seoTitle || '',
       metaTitle: seoData.metaTitle || '',
       seoSlug: seoData.slug || '',
-      metaDescription: seoData.metaDescription || ''
+      metaDescription: seoData.metaDescription || '',
+      structuredData: typeof seoData.structuredData === 'string'
+        ? seoData.structuredData
+        : JSON.stringify(seoData.structuredData || {}, null, 2)
     });
     setEditingId(page.id);
     setViewMode('edit');
@@ -268,12 +245,23 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       return;
     }
 
+    let parsedStructuredData: any = null;
+    if (pageForm.structuredData && pageForm.structuredData.trim()) {
+      try {
+        parsedStructuredData = JSON.parse(pageForm.structuredData);
+      } catch (error) {
+        alert('Invalid JSON in Structured Data. Please fix JSON format before saving.');
+        return;
+      }
+    }
+
     const seoPayload = {
       focusKeyphrase: pageForm.focusKeyphrase || '',
       seoTitle: pageForm.seoTitle || '',
       metaTitle: pageForm.metaTitle || '',
       slug: pageForm.seoSlug || '',
-      metaDescription: pageForm.metaDescription || ''
+      metaDescription: pageForm.metaDescription || '',
+      structuredData: parsedStructuredData
     };
 
     await handleSave('dynamic_pages', {
@@ -347,6 +335,53 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       setLoading(false);
     }
   }
+
+  const startEditingCollege = (college: any) => {
+    const seoData = college.seo || {};
+    setCollegeForm({
+      ...college,
+      focusKeyphrase: seoData.focusKeyphrase || '',
+      seoTitle: seoData.seoTitle || '',
+      metaTitle: seoData.metaTitle || '',
+      seoSlug: seoData.slug || '',
+      metaDescription: seoData.metaDescription || '',
+      structuredData: typeof seoData.structuredData === 'string'
+        ? seoData.structuredData
+        : JSON.stringify(seoData.structuredData || {}, null, 2)
+    });
+    setEditingId(college.id);
+    setViewMode('edit');
+  };
+
+  const handleSaveCollegeSeo = async () => {
+    let parsedStructuredData: any = null;
+    if ((collegeForm as any).structuredData?.trim()) {
+      try {
+        parsedStructuredData = JSON.parse((collegeForm as any).structuredData);
+      } catch (error) {
+        alert('Invalid JSON in College Structured Data. Please fix JSON format before saving.');
+        return;
+      }
+    }
+
+    const seoPayload = {
+      focusKeyphrase: (collegeForm as any).focusKeyphrase || '',
+      seoTitle: (collegeForm as any).seoTitle || '',
+      metaTitle: (collegeForm as any).metaTitle || '',
+      slug: (collegeForm as any).seoSlug || '',
+      metaDescription: (collegeForm as any).metaDescription || '',
+      structuredData: parsedStructuredData
+    };
+
+    await handleSave('colleges', {
+      name: collegeForm.name || '',
+      slug: collegeForm.slug || generateSlug(collegeForm.name || ''),
+      country: collegeForm.country || 'Russia',
+      category: (collegeForm as any).category || 'MBBS Abroad',
+      image: (collegeForm as any).image || '',
+      seo: seoPayload
+    });
+  };
 
   const handleSyncLocalData = async () => {
     await handleSyncAllSiteData();
@@ -529,7 +564,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                           <td className="px-8 py-5 text-sm font-medium text-gray-500">{c.country}</td>
                           <td className="px-8 py-5 text-xs font-black uppercase text-brand-gold tracking-wider">{c.category}</td>
                           <td className="px-8 py-5 text-right space-x-2">
-                            <button onClick={() => { setCollegeForm(c); setEditingId(c.id); setViewMode('edit'); setImagePreview(c.image); }} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><i className="fa-solid fa-pen"></i></button>
+                            <button onClick={() => startEditingCollege(c)} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><i className="fa-solid fa-pen"></i></button>
                             <button onClick={() => deleteItem('colleges', c.id)} className="p-2 text-red-500 hover:bg-red-50 rounded-lg"><i className="fa-solid fa-trash"></i></button>
                           </td>
                         </tr>
@@ -540,7 +575,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 </div>
               ) : (
                 <div className="bg-white rounded-[3rem] p-12 shadow-sm border border-gray-100">
-                  <form onSubmit={(e) => { e.preventDefault(); handleSave('colleges', collegeForm); }} className="grid grid-cols-2 gap-8">
+                  <form onSubmit={(e) => { e.preventDefault(); handleSaveCollegeSeo(); }} className="grid grid-cols-2 gap-8">
                     
                     <div className="col-span-2 md:col-span-1">
                        <label className="label">College Name</label>
@@ -574,49 +609,32 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                     </div>
 
                     <div className="col-span-2">
-                       <label className="label">Introduction</label>
-                       <textarea rows={4} className="input-std" value={collegeForm.intro} onChange={e => setCollegeForm({...collegeForm, intro: e.target.value})} />
+                      <label className="label">Focus Keyphrase</label>
+                      <input type="text" className="input-std" value={(collegeForm as any).focusKeyphrase || ''} onChange={e => setCollegeForm({ ...collegeForm, focusKeyphrase: e.target.value } as any)} />
                     </div>
-
-                    <ArrayInput label="Highlights" items={collegeForm.highlights || []} onChange={i => setCollegeForm({...collegeForm, highlights: i})} />
-                    <ArrayInput label="Eligibility" items={collegeForm.eligibility || []} onChange={i => setCollegeForm({...collegeForm, eligibility: i})} />
-                    <ArrayInput label="Admission Process" items={collegeForm.admissionProcess || []} onChange={i => setCollegeForm({...collegeForm, admissionProcess: i})} />
-                    <ArrayInput label="Documents" items={collegeForm.documents || []} onChange={i => setCollegeForm({...collegeForm, documents: i})} />
-                    <ArrayInput label="Courses Offered" items={collegeForm.courses || []} onChange={i => setCollegeForm({...collegeForm, courses: i})} />
-                    <ArrayInput label="Student Life" items={collegeForm.studentLife || []} onChange={i => setCollegeForm({...collegeForm, studentLife: i})} />
-                    <ArrayInput label="Placements" items={collegeForm.placements || []} onChange={i => setCollegeForm({...collegeForm, placements: i})} />
-                    <ArrayInput label="Gallery Images (URLs)" items={collegeForm.gallery || []} onChange={i => setCollegeForm({...collegeForm, gallery: i})} />
-
-                    <div className="col-span-2 bg-blue-50 p-6 rounded-2xl">
-                       <label className="label mb-4">Fee Structure</label>
-                       <div className="space-y-3">
-                          {collegeForm.fees?.structure?.map((fee, idx) => (
-                             <div key={idx} className="flex gap-4">
-                                <input placeholder="Label (e.g. Tuition)" className="input-std" value={fee.label} onChange={e => {
-                                   const newStruct = [...(collegeForm.fees?.structure || [])];
-                                   newStruct[idx].label = e.target.value;
-                                   setCollegeForm({...collegeForm, fees: { ...collegeForm.fees!, structure: newStruct }});
-                                }} />
-                                <input placeholder="Value (e.g. $5000)" className="input-std" value={fee.value} onChange={e => {
-                                   const newStruct = [...(collegeForm.fees?.structure || [])];
-                                   newStruct[idx].value = e.target.value;
-                                   setCollegeForm({...collegeForm, fees: { ...collegeForm.fees!, structure: newStruct }});
-                                }} />
-                                <button type="button" onClick={() => {
-                                   const newStruct = (collegeForm.fees?.structure || []).filter((_, i) => i !== idx);
-                                   setCollegeForm({...collegeForm, fees: { ...collegeForm.fees!, structure: newStruct }});
-                                }} className="text-red-500"><i className="fa-solid fa-trash"></i></button>
-                             </div>
-                          ))}
-                          <button type="button" onClick={() => {
-                             setCollegeForm({...collegeForm, fees: { ...collegeForm.fees!, structure: [...(collegeForm.fees?.structure || []), {label: '', value: ''}] }});
-                          }} className="text-xs font-bold text-blue-600">+ Add Fee Row</button>
-                       </div>
-                       <input placeholder="Fee Note (e.g. Exchange rate varies)" className="input-std mt-4" value={collegeForm.fees?.note} onChange={e => setCollegeForm({...collegeForm, fees: { ...collegeForm.fees!, note: e.target.value }})} />
+                    <div className="col-span-2 md:col-span-1">
+                      <label className="label">SEO Title</label>
+                      <input type="text" className="input-std" value={(collegeForm as any).seoTitle || ''} onChange={e => setCollegeForm({ ...collegeForm, seoTitle: e.target.value } as any)} />
+                    </div>
+                    <div className="col-span-2 md:col-span-1">
+                      <label className="label">Meta Title</label>
+                      <input type="text" className="input-std" value={(collegeForm as any).metaTitle || ''} onChange={e => setCollegeForm({ ...collegeForm, metaTitle: e.target.value } as any)} />
+                    </div>
+                    <div className="col-span-2">
+                      <label className="label">SEO Slug</label>
+                      <input type="text" className="input-std" value={(collegeForm as any).seoSlug || ''} onChange={e => setCollegeForm({ ...collegeForm, seoSlug: e.target.value } as any)} />
+                    </div>
+                    <div className="col-span-2">
+                      <label className="label">Meta Description</label>
+                      <textarea rows={3} className="input-std" value={(collegeForm as any).metaDescription || ''} onChange={e => setCollegeForm({ ...collegeForm, metaDescription: e.target.value } as any)} />
+                    </div>
+                    <div className="col-span-2">
+                      <label className="label">Structured Data (JSON-LD)</label>
+                      <textarea rows={8} className="input-std font-mono text-xs" value={(collegeForm as any).structuredData || ''} onChange={e => setCollegeForm({ ...collegeForm, structuredData: e.target.value } as any)} />
                     </div>
 
                     <button type="submit" className="col-span-2 py-5 bg-brand-gold text-white rounded-2xl font-black uppercase tracking-widest shadow-xl">
-                        {editingId ? 'Update College' : 'Add College'}
+                        {editingId ? 'Update College SEO' : 'Add College SEO'}
                     </button>
                   </form>
                 </div>
@@ -741,6 +759,17 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         className="input-std"
                         value={pageForm.metaDescription}
                         onChange={e => setPageForm({ ...pageForm, metaDescription: e.target.value })}
+                      />
+                    </div>
+
+                    <div>
+                      <label className="label">Structured Data (JSON-LD)</label>
+                      <textarea
+                        rows={8}
+                        className="input-std font-mono text-xs"
+                        value={pageForm.structuredData}
+                        onChange={e => setPageForm({ ...pageForm, structuredData: e.target.value })}
+                        placeholder='{"@context":"https://schema.org","@type":"WebPage","name":"Page Name"}'
                       />
                     </div>
 

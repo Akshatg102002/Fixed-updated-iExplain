@@ -50,6 +50,7 @@ import { MBBS_IN_INDIA_DETAILS } from './MBBSinindiadata.ts';
 import { ENTRANCE_EXAM_DETAILS } from './EntranceExamdata.ts';
 import { RouteState, SiteSettings } from './types.ts';
 import { Routes, Route, useLocation, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
+import { db, collection, getDocs, query, where } from './firebase.ts';
 
 import { createSlug } from './utils.ts';
 
@@ -96,6 +97,86 @@ const SEOManager = () => {
   }, [location.pathname, isNotFound]);
 
   return null;
+};
+
+const applyMetaTag = (name: string, content: string) => {
+  let metaTag = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+  if (!metaTag) {
+    metaTag = document.createElement('meta');
+    metaTag.name = name;
+    document.head.appendChild(metaTag);
+  }
+  metaTag.content = content;
+};
+
+const applyPropertyMetaTag = (property: string, content: string) => {
+  let metaTag = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+  if (!metaTag) {
+    metaTag = document.createElement('meta');
+    metaTag.setAttribute('property', property);
+    document.head.appendChild(metaTag);
+  }
+  metaTag.content = content;
+};
+
+const useDynamicSeo = (options: {
+  pathname: string;
+  pageTitle: string;
+  metaDescription?: string;
+  seo?: {
+    metaTitle?: string;
+    seoTitle?: string;
+    metaDescription?: string;
+    slug?: string;
+    structuredData?: Record<string, any> | Record<string, any>[] | string;
+  } | null;
+}) => {
+  const { pathname, pageTitle, metaDescription = '', seo } = options;
+
+  useEffect(() => {
+    const title = seo?.metaTitle || seo?.seoTitle || pageTitle;
+    const description = seo?.metaDescription || metaDescription || 'iExplain Education helps students with admissions, counselling, and study abroad planning.';
+    const canonicalPath = seo?.slug ? `/${seo.slug}` : pathname;
+    const canonicalUrl = `https://iexplain.education${canonicalPath}`;
+
+    document.title = title;
+    applyMetaTag('description', description);
+    applyPropertyMetaTag('og:title', title);
+    applyPropertyMetaTag('og:description', description);
+    applyPropertyMetaTag('og:url', canonicalUrl);
+
+    let jsonLdScript = document.getElementById('dynamic-jsonld-schema') as HTMLScriptElement | null;
+    if (jsonLdScript) {
+      jsonLdScript.remove();
+      jsonLdScript = null;
+    }
+
+    const structuredData = seo?.structuredData;
+    if (structuredData) {
+      let parsed: any = structuredData;
+      if (typeof structuredData === 'string') {
+        try {
+          parsed = JSON.parse(structuredData);
+        } catch (error) {
+          parsed = null;
+          console.warn('Invalid structuredData JSON provided for SEO.', error);
+        }
+      }
+
+      if (parsed) {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'dynamic-jsonld-schema';
+        script.text = JSON.stringify(parsed);
+        document.head.appendChild(script);
+      }
+    }
+
+    return () => {
+      const scriptTag = document.getElementById('dynamic-jsonld-schema');
+      if (scriptTag) scriptTag.remove();
+    };
+  }, [pathname, pageTitle, metaDescription, seo]);
 };
 
 const NotFoundPage = () => (
@@ -464,6 +545,13 @@ const EntranceExamWrapper = () => {
     loadRemotePage();
   }, [normalizedSlug]);
 
+  useDynamicSeo({
+    pathname: `/${normalizedSlug ? `exams/${normalizedSlug}` : ''}`,
+    pageTitle: remotePage?.payload?.title || ENTRANCE_EXAM_DETAILS[normalizedSlug]?.title || 'Entrance Exam',
+    metaDescription: remotePage?.payload?.intro?.text || ENTRANCE_EXAM_DETAILS[normalizedSlug]?.intro?.text || '',
+    seo: remotePage?.payload?.seo || null,
+  });
+
   if (!normalizedSlug) return <Navigate to="/exams/neet-ug" replace />;
   if (isLoading) return <LoadingOverlay />;
 
@@ -591,25 +679,100 @@ const MBBSIndiaCollegeWrapper = () => {
 const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
+  const [remotePage, setRemotePage] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const localStructuredCollegePage = STRUCTURED_COLLEGE_DETAILS[normalizedSlug];
   const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
   const localMBBSAbroadPage = Object.values(MBBS_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
   const localStudyAbroadPage = Object.values(STUDY_ABROAD_DETAILED).find(item => createSlug(item.title) === normalizedSlug);
+  const localCollegeFallback = localStructuredCollegePage || LEGACY_COLLEGE_DETAILS[normalizedSlug];
+
+  useEffect(() => {
+    const loadRemotePage = async () => {
+      if (!normalizedSlug) {
+        setRemotePage(null);
+        setIsLoading(false);
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
+        if (!dynamicSnapshot.empty) {
+          setRemotePage(dynamicSnapshot.docs[0].data());
+        } else {
+          setRemotePage(null);
+        }
+      } catch (error) {
+        console.error('Failed to load dynamic page from Firestore:', error);
+        setRemotePage(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadRemotePage();
+  }, [normalizedSlug]);
+
+  const resolvedTitle =
+    remotePage?.payload?.title ||
+    localStudyAbroadCollegePage?.title ||
+    localMBBSAbroadPage?.title ||
+    localStudyAbroadPage?.title ||
+    localCollegeFallback?.title ||
+    normalizedSlug.replace(/-/g, ' ');
+
+  const resolvedDescription =
+    remotePage?.payload?.seo?.metaDescription ||
+    remotePage?.payload?.intro?.text ||
+    localStudyAbroadCollegePage?.intro?.text ||
+    localMBBSAbroadPage?.intro?.text ||
+    localStudyAbroadPage?.intro?.text ||
+    localCollegeFallback?.intro?.text ||
+    '';
+
+  useDynamicSeo({
+    pathname: `/${normalizedSlug}`,
+    pageTitle: resolvedTitle,
+    metaDescription: resolvedDescription,
+    seo: remotePage?.payload?.seo || null,
+  });
 
   const collegePage = (
     normalizedSlug
+    && !remotePage
     && !localStudyAbroadCollegePage
     && !localMBBSAbroadPage
     && !localStudyAbroadPage
-    && (localStructuredCollegePage || LEGACY_COLLEGE_DETAILS[normalizedSlug])
+    && localCollegeFallback
   )
     ? normalizeCollegeDetailData(
-        localStructuredCollegePage || LEGACY_COLLEGE_DETAILS[normalizedSlug],
+        localCollegeFallback,
         normalizedSlug
       )
     : null;
 
   if (!normalizedSlug) return <Navigate to="/" replace />;
+  if (isLoading) return <LoadingOverlay />;
+
+  if (remotePage?.payload) {
+    if (remotePage.category === 'Colleges') {
+      const normalizedCollegePage = normalizeCollegeDetailData(remotePage.payload, normalizedSlug);
+      return <CollegeDetailPage data={normalizedCollegePage} />;
+    }
+
+    if (remotePage.category === 'MBBS Abroad') {
+      return <MBBSDetailPage data={remotePage.payload} />;
+    }
+
+    if (remotePage.category === 'Study Abroad') {
+      return <StudyAbroadDetailPage data={remotePage.payload} />;
+    }
+
+    if (remotePage.category === 'MBBS in India') {
+      return <MBBSinindiadetailpage data={remotePage.payload} />;
+    }
+  }
 
   if (localStudyAbroadCollegePage) {
     return <StudyAbroadCollegeDetailPage data={localStudyAbroadCollegePage} />;
