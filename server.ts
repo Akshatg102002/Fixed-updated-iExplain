@@ -9,6 +9,12 @@ import { Resend } from "resend";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { STUDY_ABROAD_DETAILED } from "./studyAbroad_Data.ts";
+import { MBBS_ABROAD_DETAILED } from "./mbbs_data.ts";
+import { COLLEGE_DETAILS as LEGACY_COLLEGE_DETAILS } from "./data.ts";
+import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from "./collegeData.ts";
+import { STUDY_ABROAD_COLLEGE_DETAILS } from "./studyAbroadCollegeData.ts";
+import { ENTRANCE_EXAM_DETAILS } from "./EntranceExamdata.ts";
 
 // Load environment variables
 dotenv.config();
@@ -69,6 +75,29 @@ const resolveSlugFromPath = (pathname: string) => {
   return segments[segments.length - 1] || "";
 };
 
+const buildSlugCandidates = (slug: string) => {
+  const normalized = (slug || "").toLowerCase().replace(/(^-|-$)+/g, "");
+  if (!normalized) return [];
+
+  const withoutStudyPrefix = normalized.startsWith("study-in-")
+    ? normalized.replace(/^study-in-/, "")
+    : normalized;
+  const withoutMbbsPrefix = normalized.startsWith("mbbs-in-")
+    ? normalized.replace(/^mbbs-in-/, "")
+    : normalized;
+
+  return Array.from(new Set([normalized, withoutStudyPrefix, withoutMbbsPrefix].filter(Boolean)));
+};
+
+const createSlug = (text = "") => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+
+const getIntroText = (value: any) => {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  if (typeof value?.text === "string") return value.text;
+  return "";
+};
+
 const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: string) => {
   const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
   const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;
@@ -90,22 +119,74 @@ const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: stri
 const resolveSeoForRequest = async (pathname: string) => {
   const slug = resolveSlugFromPath(pathname);
   if (!slug) return DEFAULT_SEO;
+  const slugCandidates = buildSlugCandidates(slug);
 
   try {
-    const dynamicSnapshot = await getDocs(query(collection(db, "dynamic_pages"), where("slug", "==", slug)));
-    if (!dynamicSnapshot.empty) {
-      const data = dynamicSnapshot.docs[0].data();
-      const seoPayload = data?.payload?.seo || data?.seo || {};
-      return buildSeoFromPayload(seoPayload, pathname, data?.title);
+    for (const candidate of slugCandidates) {
+      const dynamicSnapshot = await getDocs(query(collection(db, "dynamic_pages"), where("slug", "==", candidate)));
+      if (!dynamicSnapshot.empty) {
+        const data = dynamicSnapshot.docs[0].data();
+        const seoPayload = data?.payload?.seo || data?.seo || {};
+        return buildSeoFromPayload(seoPayload, pathname, data?.title);
+      }
     }
 
-    const collegeSnapshot = await getDocs(query(collection(db, "colleges"), where("slug", "==", slug)));
-    if (!collegeSnapshot.empty) {
-      const data = collegeSnapshot.docs[0].data();
-      return buildSeoFromPayload(data?.seo || {}, pathname, data?.name);
+    for (const candidate of slugCandidates) {
+      const collegeSnapshot = await getDocs(query(collection(db, "colleges"), where("slug", "==", candidate)));
+      if (!collegeSnapshot.empty) {
+        const data = collegeSnapshot.docs[0].data();
+        return buildSeoFromPayload(data?.seo || {}, pathname, data?.name);
+      }
     }
   } catch (error) {
     console.error("SEO resolution failed for path:", pathname, error);
+  }
+
+  const localStudyAbroad = Object.values(STUDY_ABROAD_DETAILED).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localStudyAbroad) {
+    return buildSeoFromPayload(
+      { metaTitle: localStudyAbroad.title, metaDescription: getIntroText(localStudyAbroad.intro) || DEFAULT_SEO.description },
+      pathname,
+      localStudyAbroad.title
+    );
+  }
+
+  const localMbbsAbroad = Object.values(MBBS_ABROAD_DETAILED).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localMbbsAbroad) {
+    return buildSeoFromPayload(
+      { metaTitle: localMbbsAbroad.title, metaDescription: getIntroText(localMbbsAbroad.intro) || DEFAULT_SEO.description },
+      pathname,
+      localMbbsAbroad.title
+    );
+  }
+
+  const localExam = Object.values(ENTRANCE_EXAM_DETAILS).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localExam) {
+    return buildSeoFromPayload(
+      { metaTitle: localExam.title, metaDescription: getIntroText(localExam.intro) || DEFAULT_SEO.description },
+      pathname,
+      localExam.title
+    );
+  }
+
+  const localCollege =
+    Object.values(STUDY_ABROAD_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || ""))) ||
+    Object.values(STRUCTURED_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || item?.name || ""))) ||
+    Object.values(LEGACY_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || item?.name || "")));
+
+  if (localCollege) {
+    const collegeTitle = localCollege.title || localCollege.name || DEFAULT_SEO.title;
+    return buildSeoFromPayload(
+      { metaTitle: collegeTitle, metaDescription: getIntroText(localCollege.intro) || DEFAULT_SEO.description },
+      pathname,
+      collegeTitle
+    );
   }
 
   return DEFAULT_SEO;

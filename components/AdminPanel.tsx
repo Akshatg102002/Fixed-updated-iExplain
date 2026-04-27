@@ -22,6 +22,17 @@ type ViewMode = 'list' | 'create' | 'edit';
 
 type DynamicPageCategory = 'MBBS Abroad' | 'Study Abroad' | 'MBBS in India' | 'Colleges' | 'Entrance Exams';
 
+const hasSeoConfigured = (seo: any) => {
+  if (!seo || typeof seo !== 'object') return false;
+  const hasTextField = [seo.focusKeyphrase, seo.seoTitle, seo.metaTitle, seo.slug, seo.metaDescription]
+    .some(value => typeof value === 'string' && value.trim().length > 0);
+  const hasStructuredData = seo.structuredData && (
+    (typeof seo.structuredData === 'string' && seo.structuredData.trim().length > 0)
+    || (typeof seo.structuredData === 'object' && Object.keys(seo.structuredData).length > 0)
+  );
+  return hasTextField || hasStructuredData;
+};
+
 const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
@@ -554,6 +565,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Name</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Country</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Category</th>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black">SEO Status</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black text-right">Actions</th>
                       </tr>
                     </thead>
@@ -563,13 +575,24 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                           <td className="px-8 py-5 text-sm font-bold text-brand-blue">{c.name}</td>
                           <td className="px-8 py-5 text-sm font-medium text-gray-500">{c.country}</td>
                           <td className="px-8 py-5 text-xs font-black uppercase text-brand-gold tracking-wider">{c.category}</td>
+                          <td className="px-8 py-5">
+                            {hasSeoConfigured(c.seo) ? (
+                              <span className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-black uppercase tracking-wider">
+                                <i className="fa-solid fa-circle-check mr-1.5"></i> Updated
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-[10px] font-black uppercase tracking-wider">
+                                <i className="fa-solid fa-triangle-exclamation mr-1.5"></i> Pending
+                              </span>
+                            )}
+                          </td>
                           <td className="px-8 py-5 text-right space-x-2">
                             <button onClick={() => startEditingCollege(c)} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><i className="fa-solid fa-pen"></i></button>
                             <button onClick={() => deleteItem('colleges', c.id)} className="p-2 text-red-500 hover:bg-red-50 rounded-lg"><i className="fa-solid fa-trash"></i></button>
                           </td>
                         </tr>
                       ))}
-                      {colleges.length === 0 && <tr><td colSpan={4} className="px-8 py-8 text-center text-gray-400 text-sm">No colleges found.</td></tr>}
+                      {colleges.length === 0 && <tr><td colSpan={5} className="px-8 py-8 text-center text-gray-400 text-sm">No colleges found.</td></tr>}
                     </tbody>
                   </table>
                 </div>
@@ -688,6 +711,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Title</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Slug</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black">Category</th>
+                        <th className="px-8 py-5 text-[10px] font-black uppercase text-black">SEO Status</th>
                         <th className="px-8 py-5 text-[10px] font-black uppercase text-black text-right">Actions</th>
                       </tr>
                     </thead>
@@ -697,13 +721,24 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                           <td className="px-8 py-5 text-sm font-bold text-brand-blue">{p.title || 'Untitled'}</td>
                           <td className="px-8 py-5 text-sm font-medium text-gray-500">/{p.slug}</td>
                           <td className="px-8 py-5 text-xs font-black uppercase text-brand-gold tracking-wider">{p.category || '-'}</td>
+                          <td className="px-8 py-5">
+                            {hasSeoConfigured(p?.payload?.seo || p?.seo) ? (
+                              <span className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-black uppercase tracking-wider">
+                                <i className="fa-solid fa-circle-check mr-1.5"></i> Updated
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-[10px] font-black uppercase tracking-wider">
+                                <i className="fa-solid fa-triangle-exclamation mr-1.5"></i> Pending
+                              </span>
+                            )}
+                          </td>
                           <td className="px-8 py-5 text-right space-x-2">
                             <button onClick={() => startEditingPage(p)} className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg"><i className="fa-solid fa-pen"></i></button>
                             <button onClick={() => deleteItem('dynamic_pages', p.id)} className="p-2 text-red-500 hover:bg-red-50 rounded-lg"><i className="fa-solid fa-trash"></i></button>
                           </td>
                         </tr>
                       ))}
-                      {pages.length === 0 && <tr><td colSpan={4} className="px-8 py-8 text-center text-gray-400 text-sm">No program pages found.</td></tr>}
+                      {pages.length === 0 && <tr><td colSpan={5} className="px-8 py-8 text-center text-gray-400 text-sm">No program pages found.</td></tr>}
                     </tbody>
                   </table>
                 </div>
