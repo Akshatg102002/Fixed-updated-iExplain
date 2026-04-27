@@ -89,15 +89,6 @@ const buildSlugCandidates = (slug: string) => {
   return Array.from(new Set([normalized, withoutStudyPrefix, withoutMbbsPrefix].filter(Boolean)));
 };
 
-const createSlug = (text = "") => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
-
-const getIntroText = (value: any) => {
-  if (!value) return "";
-  if (typeof value === "string") return value;
-  if (typeof value?.text === "string") return value.text;
-  return "";
-};
-
 const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: string) => {
   const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
   const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;

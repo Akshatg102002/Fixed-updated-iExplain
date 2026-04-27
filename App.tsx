@@ -148,21 +148,6 @@ const fetchDynamicPageBySlug = async (slug: string) => {
   return null;
 };
 
-const fetchCollegeBySlug = async (slug: string) => {
-  const slugCandidates = getDynamicSlugCandidates(slug);
-  for (const candidate of slugCandidates) {
-    const snapshot = await getDocs(query(collection(db, 'colleges'), where('slug', '==', candidate)));
-    if (!snapshot.empty) {
-      const match = snapshot.docs[0].data();
-      return {
-        ...match,
-        slug: match?.slug || candidate,
-      };
-    }
-  }
-  return null;
-};
-
 const useDynamicSeo = (options: {
   pathname: string;
   pageTitle: string;
@@ -741,8 +726,6 @@ const CategoryTitleSlugWrapper = () => {
       try {
         const page = await fetchDynamicPageBySlug(normalizedSlug);
         setRemotePage(page);
-        const college = await fetchCollegeBySlug(normalizedSlug);
-        setRemoteCollege(college);
       } catch (error) {
         console.error('Failed to load dynamic page from Firestore:', error);
         setRemotePage(null);
