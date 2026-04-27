@@ -119,6 +119,35 @@ const applyPropertyMetaTag = (property: string, content: string) => {
   metaTag.content = content;
 };
 
+const getDynamicSlugCandidates = (slug: string) => {
+  const normalized = createSlug(slug || '');
+  if (!normalized) return [];
+
+  const withoutStudyPrefix = normalized.startsWith('study-in-')
+    ? normalized.replace(/^study-in-/, '')
+    : normalized;
+  const withoutMbbsPrefix = normalized.startsWith('mbbs-in-')
+    ? normalized.replace(/^mbbs-in-/, '')
+    : normalized;
+
+  return Array.from(new Set([normalized, withoutStudyPrefix, withoutMbbsPrefix].filter(Boolean)));
+};
+
+const fetchDynamicPageBySlug = async (slug: string) => {
+  const slugCandidates = getDynamicSlugCandidates(slug);
+  for (const candidate of slugCandidates) {
+    const snapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', candidate)));
+    if (!snapshot.empty) {
+      const match = snapshot.docs[0].data();
+      return {
+        ...match,
+        slug: match?.slug || candidate,
+      };
+    }
+  }
+  return null;
+};
+
 const useDynamicSeo = (options: {
   pathname: string;
   pageTitle: string;
@@ -528,12 +557,8 @@ const EntranceExamWrapper = () => {
 
       setIsLoading(true);
       try {
-        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
-        if (!dynamicSnapshot.empty) {
-          setRemotePage(dynamicSnapshot.docs[0].data());
-        } else {
-          setRemotePage(null);
-        }
+        const page = await fetchDynamicPageBySlug(normalizedSlug);
+        setRemotePage(page);
       } catch (error) {
         console.error('Failed to load entrance exam page from Firestore:', error);
         setRemotePage(null);
@@ -697,12 +722,8 @@ const CategoryTitleSlugWrapper = () => {
 
       setIsLoading(true);
       try {
-        const dynamicSnapshot = await getDocs(query(collection(db, 'dynamic_pages'), where('slug', '==', normalizedSlug)));
-        if (!dynamicSnapshot.empty) {
-          setRemotePage(dynamicSnapshot.docs[0].data());
-        } else {
-          setRemotePage(null);
-        }
+        const page = await fetchDynamicPageBySlug(normalizedSlug);
+        setRemotePage(page);
       } catch (error) {
         console.error('Failed to load dynamic page from Firestore:', error);
         setRemotePage(null);
