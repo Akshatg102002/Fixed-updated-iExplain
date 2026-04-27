@@ -429,6 +429,7 @@ interface FAQSection {
 
 export interface StudyIndiaDetailData {
   title: string;
+  heroImageMobile: string;
   heroImage: string;
   intro: string;
   overview: OverviewSection;
@@ -512,6 +513,7 @@ export interface EntranceExamData {
   id?: string;
   title: string;
   heroImage: string;
+  mobileImage:string;
   intro: string;
   examParts?: string[];
   additionalNote?: string;

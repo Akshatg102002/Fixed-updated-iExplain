@@ -647,8 +647,8 @@ Overall, MBBS in Rajasthan is an excellent choice for students who want a balanc
 const himachalPradeshMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Himachal Pradesh',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/himachal-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/himachal-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286387/MBBS_IN_HIMACHAL_PRADESH_ams1m7.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286380/MBBS_IN_HIMACHAL_PRADESH_2_orkfne.jpg',
   intro: {
     text: `MBBS in Himachal Pradesh is an excellent option for students who want to pursue MBBS in India in a peaceful and academically focused environment. Known for its clean surroundings and quality education system, Himachal Pradesh offers a number of government and private medical colleges that are approved by the National Medical Commission (NMC), ensuring globally recognised degrees.
 
@@ -816,8 +816,8 @@ Overall, study MBBS in Himachal Pradesh provides a strong combination of quality
 const maharashtraMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Maharashtra',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/maharashtra-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/maharashtra-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286363/MBBS_IN_MAHARASHTRA_dj0bs2.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286377/MBBS_IN_MAHARASHTRA_2_edkmxy.jpg',
   intro: {
     text: `MBBS in Maharashtra is one of the most sought-after choices among medical aspirants in India because the state offers a perfect combination of high-quality medical education, world-class hospitals, experienced faculty, and excellent clinical exposure. Maharashtra has a large number of reputed government and private medical colleges that provide strong academic training along with practical hospital experience. Students get exposure to a wide variety of patients due to high footfall in government hospitals, which significantly improves their clinical knowledge and confidence.
 
@@ -1024,8 +1024,8 @@ Overall, choosing MBBS in Maharashtra 2026 is a great option for students who ar
 const karnatakaMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Karnataka',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/karnataka-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/karnataka-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286356/MBBS_in_Karnataka_clasyp.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286360/MBBS_IN_KARNATAKA_2_rbszfu.jpg',
   intro: {
     text: `MBBS in Karnataka is one of the most preferred choices among medical aspirants who wish to pursue MBBS in India due to the state’s excellent medical education system, advanced healthcare infrastructure, and high-quality clinical training. Karnataka is widely known as the “Medical Education Hub of India” because it hosts some of the top-ranked government and private medical colleges that attract students from all over the country.
 
@@ -1272,8 +1272,8 @@ Overall, Karnataka provides excellent academic guidance, modern laboratories, re
 const delhiMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Delhi',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/delhi-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/delhi-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286349/MBBS_IN_DELHI_rm0ues.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777286353/MBBS_IN_DELHI_2_ochl9g.jpg',
   intro: {
     text: `MBBS in Delhi (2026) is one of the most prestigious, competitive, and high-demand options for students who want to pursue MBBS in India. Delhi, the capital of India, is known for its world-class healthcare system, advanced medical infrastructure, and some of the highest-ranked government medical colleges in the country. Every year, thousands of NEET aspirants choose MBBS in Delhi due to its excellent academic environment and strong clinical exposure.
 

@@ -30,16 +30,30 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
          {/* ── Hero ── */}
          <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
-               <img src={data.heroImage} className="w-full h-full object-cover" alt={data.title} />
+
+               {/* Desktop Image */}
+               <img
+                  src={data.heroImage}
+                  className="w-full h-full object-cover hidden md:block"
+                  alt={data.title}
+               />
+
+               {/* Mobile Image */}
+               <img
+                  src={data.heroImageMobile}
+                  className="w-full h-full object-cover block md:hidden"
+                  alt={data.title}
+               />
+
                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             </div>
+
             <div className="relative z-10 text-center max-w-6xl mx-auto px-4 mt-20">
                <h1 className="text-5xl lg:text-7xl font-black text-white mb-4 tracking-tight text-center drop-shadow-lg uppercase">
                   {data.title.split(' ')[0]}
                </h1>
             </div>
          </div>
-
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
             {/* ── Intro ── */}

@@ -4,26 +4,26 @@ export const WHO_WE_ARE_CONTENT = {
   description: [
     "At iExplain Education, we are a trusted education consultancy dedicated to guiding students toward the right academic opportunities in India and abroad. We specialize in MBBS Abroad, MBBS in India, Study Abroad programs, MBA, B.Tech, and various other professional courses across top universities worldwide.",
     "Our mission is to make the admission journey simple, transparent, and stress-free for students and parents. From choosing the right country, university, and course to handling documentation, application processing, and visa guidance, we provide complete end-to-end support.",
-  
+
   ],
   image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" // Placeholder image
 };
 
 export const AIRPORT_DIARIES = [
-  { id: 1, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A16.jpeg" },
-  { id: 2, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A15.jpeg" },
-  { id: 3, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A14.jpeg" },
-  { id: 4, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A13.jpeg" },
-  { id: 5, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A12-1.jpeg" },
-  { id: 6, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A11-1.jpeg" },
-  { id: 7, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A10-1.jpeg" },
-  { id: 8, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A8-1.jpeg" },
-  { id: 9, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A7-1.jpeg" },
-  { id: 10, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A6-1.jpeg" },
-  { id: 11, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A5-1.jpeg" },
-  { id: 12, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A4-1.jpeg" },
-  { id: 13, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A2-1.jpeg" },
-  { id: 14, image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/A1-1.jpeg" }
+  { id: 1, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_015_bzg9e7.jpg" },
+  { id: 2, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_016_oervec.jpg" },
+  { id: 3, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_014_nwx0fs.jpg" },
+  { id: 4, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_012_ypkols.jpg" },
+  { id: 5, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_011_gdusf1.jpg" },
+  { id: 6, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_011_gdusf1.jpg" },
+  { id: 7, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_010_jhnt58.jpg" },
+  { id: 8, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_013_gitmtl.jpg" },
+  { id: 9, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_009_fadsp3.jpg" },
+  { id: 10, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277825/File_008_xsbcmr.jpg" },
+  { id: 11, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277824/File_006_u6pxhq.jpg" },
+  { id: 12, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277824/File_004_mbu1ko.jpg" },
+  { id: 13, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277824/File_007_kgexk4.jpg" },
+  { id: 14, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277824/File_001_zyycir.jpg" }
 ];
 
 export const STUDENT_REVIEWS = [

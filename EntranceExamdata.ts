@@ -3,7 +3,8 @@ import { EntranceExamData, EntranceExamDataMap } from './types.ts';
 export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   'neet-ug': {
     title: 'NEET UG',
-    heroImage: 'https://images.unsplash.com/photo-1579165466949-3180a3d056d1?auto=format&fit=crop&q=80&w=1600',
+    mobileImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293570/NEET_UG_xeoqsh.jpg",
+    heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293570/NEET_UG_xeoqsh.jpg',
     intro: [
       'NEET UG (National Eligibility cum Entrance Test – Undergraduate) is the most crucial and widely recognized national-level medical entrance examination in India for students who aspire to build a career in the medical field. Conducted by the National Testing Agency (NTA), NEET UG serves as the single gateway for admission to MBBS, BDS, AYUSH (BAMS, BHMS, BUMS), and other undergraduate medical courses in top government and private colleges across India. Over the years, NEET UG has replaced multiple state and institutional entrance exams, creating a uniform, transparent, and merit-based admission system that ensures equal opportunities for all students across the country. Every year, more than 20 lakh students appear for the NEET UG exam, making it one of the most competitive examinations in India, with a high level of difficulty and limited number of seats in prestigious medical colleges.',
       'The NEET UG exam is designed to evaluate a student\'s conceptual clarity, analytical ability, and problem-solving skills in core science subjects, namely Physics, Chemistry, and Biology (Botany and Zoology), based on the NCERT syllabus of Classes 11 and 12. It is conducted in offline mode (pen-and-paper based), and students must prepare thoroughly with a strong focus on fundamentals, regular practice, and time management. Qualifying NEET UG is not only essential for admission to medical colleges in India but is also mandatory for students who wish to pursue MBBS abroad, as per guidelines set for Indian medical aspirants. This makes NEET UG a critical milestone for anyone dreaming of becoming a doctor, whether in India or internationally.',
@@ -231,9 +232,8 @@ export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   },
   "jee-main": {
     "title": "JEE Main",
-
-    "heroImage": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=1600",
-
+    "mobileImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293592/JEE_MAIN_2_o68sbv.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293587/JEE_MAIN_qlejip.jpg",
     "intro": [
       "JEE Main (Joint Entrance Examination – Main) is a highly competitive national-level entrance exam in India conducted by the National Testing Agency (NTA) for students who wish to pursue undergraduate engineering and technical courses such as B.Tech, B.E, B.Arch, and B.Planning in top engineering colleges across the country. It is one of the most important exams for students aiming to build a career in engineering, technology, research, innovation, and applied sciences and is widely considered the gateway to some of the most prestigious institutions in India.",
       "JEE Main is the first stage of the engineering admission process for top institutes like NITs (National Institutes of Technology), IIITs (Indian Institutes of Information Technology), and other Centrally Funded Technical Institutions (CFTIs). It also acts as the qualifying examination for JEE Advanced, which is required for admission into the elite Indian Institutes of Technology (IITs). Because of this, JEE Main plays a very important role in shaping the future of engineering aspirants in India.",
@@ -543,7 +543,8 @@ export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   },
   "clat": {
     "title": "CLAT Exam",
-    "heroImage": "https://www.google.com/search?q=https://images.unsplash.com/photo-1589829545856-d10d557cf95f%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80%26w%3D1600",
+    "mobileImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293569/CLAT_EXAM_2_p1jict.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293568/CLAT_EXAM_fxpntq.jpg",
     "intro": [
       "CLAT (Common Law Admission Test) is a national-level entrance exam in India conducted by the Consortium of National Law Universities (NLUs Consortium) for admission into undergraduate and postgraduate law programs. It is the most important exam for students who want to pursue BA LL.B, BBA LL.B, and LL.M from top law universities in India.",
       "Every year, thousands of students appear for the CLAT exam in India to secure admission into prestigious institutions like the National Law Universities (NLUs), which are known for their high-quality legal education, experienced faculty, and excellent placement opportunities. CLAT is considered the gateway to building a successful career in law, judiciary, corporate law, legal consultancy, and civil services.",
@@ -683,7 +684,8 @@ export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   },
   "cuet": {
     "title": "CUET",
-    "heroImage": "https://www.google.com/search?q=https://images.unsplash.com/photo-1546410531-bb4caa6b424d%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80%26w%3D1600",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293578/CUET_elpeyt.jpg",
+    "mobileImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293582/CUET_EXAM_2_kfno4i.jpg",
     "intro": [
       "The Common University Entrance Test (CUET) is a national-level entrance examination introduced to streamline the admission process for undergraduate and postgraduate courses across India. Conducted by the National Testing Agency (NTA), CUET provides a single-window opportunity for students to apply to multiple universities using one standardized test.",
       "Earlier, university admissions were primarily based on Class 12 board marks, which often created disparities due to varying evaluation systems across different boards. CUET eliminates this issue by offering a common platform where all students are assessed on the same criteria, ensuring fairness, transparency, and equal opportunity.",

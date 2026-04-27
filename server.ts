@@ -194,19 +194,19 @@ async function startServer() {
       // Note: We need to query by 'url' or 'name'. 
       // Since we are constructing the URL as /assets/filename, we can query by that.
       // Or better, query by the 'name' field if we ensure it matches the filename in URL.
-      
+
       // However, Firestore query requires importing 'query', 'where', 'getDocs', 'collection'
       // We need to import these at the top level.
       // But wait, server.ts already imports getFirestore, doc, getDoc.
       // We need to add collection, query, where, getDocs to imports.
-      
+
       // Let's use a simple scan if we can't easily add imports, OR update imports.
       // Updating imports is better.
-      
+
       // For now, let's assume we can query.
       // Actually, to avoid complex queries without proper indexes, 
       // let's try to find the document.
-      
+
       // Since we don't have the ID, we must query.
       const mediaRef = collection(db, "media");
       // Query by 'name' field which stores the unique filename
@@ -217,12 +217,12 @@ async function startServer() {
         // Fallback: try querying by 'fileURL' field for backward compatibility
         const q2 = query(mediaRef, where("fileURL", "==", `/assets/${filename}`));
         const querySnapshot2 = await getDocs(q2);
-        
+
         if (querySnapshot2.empty) {
-             console.log(`File not found: ${filename}`);
-             return res.status(404).send("File not found");
+          console.log(`File not found: ${filename}`);
+          return res.status(404).send("File not found");
         }
-        
+
         const docData = querySnapshot2.docs[0].data();
         return serveBase64(res, docData.data);
       }
@@ -237,23 +237,23 @@ async function startServer() {
   });
 
   function serveBase64(res: any, base64Data: string) {
-      if (!base64Data || !base64Data.includes(';base64,')) {
-        return res.status(500).send("Invalid file data");
-      }
+    if (!base64Data || !base64Data.includes(';base64,')) {
+      return res.status(500).send("Invalid file data");
+    }
 
-      try {
-        // More robust parsing using split instead of regex
-        const [header, base64] = base64Data.split(';base64,');
-        const type = header.split(':')[1];
-        const buffer = Buffer.from(base64, 'base64');
+    try {
+      // More robust parsing using split instead of regex
+      const [header, base64] = base64Data.split(';base64,');
+      const type = header.split(':')[1];
+      const buffer = Buffer.from(base64, 'base64');
 
-        res.setHeader('Content-Type', type);
-        res.setHeader('Cache-Control', 'public, max-age=2592000, immutable'); // Cache for 30 days
-        res.send(buffer);
-      } catch (error) {
-        console.error("Error decoding base64:", error);
-        res.status(500).send("Error processing image");
-      }
+      res.setHeader('Content-Type', type);
+      res.setHeader('Cache-Control', 'public, max-age=2592000, immutable'); // Cache for 30 days
+      res.send(buffer);
+    } catch (error) {
+      console.error("Error decoding base64:", error);
+      res.status(500).send("Error processing image");
+    }
   }
 
   // Sitemap Route
@@ -306,7 +306,7 @@ async function startServer() {
     });
     app.use(vite.middlewares);
 
-    app.get("*", async (req, res) => {
+    app.use(async (req, res) => {
       try {
         const requestUrl = req.originalUrl || req.url;
         const templatePath = path.resolve(__dirname, "index.html");
@@ -314,6 +314,7 @@ async function startServer() {
         const transformed = await vite.transformIndexHtml(requestUrl, rawTemplate);
         const seo = await resolveSeoForRequest(req.path);
         const html = injectSeoIntoHtml(transformed, seo);
+
         res.status(200).set({ "Content-Type": "text/html" }).end(html);
       } catch (error) {
         vite.ssrFixStacktrace(error as Error);
@@ -335,7 +336,7 @@ async function startServer() {
         }
       }
     }));
-    
+
     // SPA Fallback for production with per-page SEO injection
     app.get("*", async (req, res) => {
       try {
