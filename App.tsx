@@ -705,6 +705,7 @@ const CategoryTitleSlugWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
   const [remotePage, setRemotePage] = useState<any>(null);
+  const [remoteCollege, setRemoteCollege] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const localStructuredCollegePage = STRUCTURED_COLLEGE_DETAILS[normalizedSlug];
   const localStudyAbroadCollegePage = STUDY_ABROAD_COLLEGE_DETAILS[normalizedSlug];
@@ -716,6 +717,7 @@ const CategoryTitleSlugWrapper = () => {
     const loadRemotePage = async () => {
       if (!normalizedSlug) {
         setRemotePage(null);
+        setRemoteCollege(null);
         setIsLoading(false);
         return;
       }
@@ -727,6 +729,7 @@ const CategoryTitleSlugWrapper = () => {
       } catch (error) {
         console.error('Failed to load dynamic page from Firestore:', error);
         setRemotePage(null);
+        setRemoteCollege(null);
       } finally {
         setIsLoading(false);
       }
@@ -735,8 +738,13 @@ const CategoryTitleSlugWrapper = () => {
     loadRemotePage();
   }, [normalizedSlug]);
 
+  const remoteSeo = remotePage?.payload?.seo || remotePage?.seo || remoteCollege?.seo || null;
+  const localSeo = localStructuredCollegePage?.seo || localStudyAbroadCollegePage?.seo || localCollegeFallback?.seo || null;
+  const resolvedSeo = remoteSeo || localSeo;
+
   const resolvedTitle =
     remotePage?.payload?.title ||
+    remoteCollege?.name ||
     localStudyAbroadCollegePage?.title ||
     localMBBSAbroadPage?.title ||
     localStudyAbroadPage?.title ||
@@ -744,8 +752,10 @@ const CategoryTitleSlugWrapper = () => {
     normalizedSlug.replace(/-/g, ' ');
 
   const resolvedDescription =
-    remotePage?.payload?.seo?.metaDescription ||
+    resolvedSeo?.metaDescription ||
     remotePage?.payload?.intro?.text ||
+    remoteCollege?.intro?.text ||
+    remoteCollege?.intro ||
     localStudyAbroadCollegePage?.intro?.text ||
     localMBBSAbroadPage?.intro?.text ||
     localStudyAbroadPage?.intro?.text ||
@@ -756,7 +766,7 @@ const CategoryTitleSlugWrapper = () => {
     pathname: `/${normalizedSlug}`,
     pageTitle: resolvedTitle,
     metaDescription: resolvedDescription,
-    seo: remotePage?.payload?.seo || null,
+    seo: resolvedSeo,
   });
 
   const collegePage = (

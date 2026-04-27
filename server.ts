@@ -9,6 +9,12 @@ import { Resend } from "resend";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { STUDY_ABROAD_DETAILED } from "./studyAbroad_Data.ts";
+import { MBBS_ABROAD_DETAILED } from "./mbbs_data.ts";
+import { COLLEGE_DETAILS as LEGACY_COLLEGE_DETAILS } from "./data.ts";
+import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from "./collegeData.ts";
+import { STUDY_ABROAD_COLLEGE_DETAILS } from "./studyAbroadCollegeData.ts";
+import { ENTRANCE_EXAM_DETAILS } from "./EntranceExamdata.ts";
 
 // Load environment variables
 dotenv.config();
@@ -125,6 +131,53 @@ const resolveSeoForRequest = async (pathname: string) => {
     }
   } catch (error) {
     console.error("SEO resolution failed for path:", pathname, error);
+  }
+
+  const localStudyAbroad = Object.values(STUDY_ABROAD_DETAILED).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localStudyAbroad) {
+    return buildSeoFromPayload(
+      { metaTitle: localStudyAbroad.title, metaDescription: getIntroText(localStudyAbroad.intro) || DEFAULT_SEO.description },
+      pathname,
+      localStudyAbroad.title
+    );
+  }
+
+  const localMbbsAbroad = Object.values(MBBS_ABROAD_DETAILED).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localMbbsAbroad) {
+    return buildSeoFromPayload(
+      { metaTitle: localMbbsAbroad.title, metaDescription: getIntroText(localMbbsAbroad.intro) || DEFAULT_SEO.description },
+      pathname,
+      localMbbsAbroad.title
+    );
+  }
+
+  const localExam = Object.values(ENTRANCE_EXAM_DETAILS).find((item: any) =>
+    slugCandidates.includes(createSlug(item?.title || ""))
+  );
+  if (localExam) {
+    return buildSeoFromPayload(
+      { metaTitle: localExam.title, metaDescription: getIntroText(localExam.intro) || DEFAULT_SEO.description },
+      pathname,
+      localExam.title
+    );
+  }
+
+  const localCollege =
+    Object.values(STUDY_ABROAD_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || ""))) ||
+    Object.values(STRUCTURED_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || item?.name || ""))) ||
+    Object.values(LEGACY_COLLEGE_DETAILS).find((item: any) => slugCandidates.includes(createSlug(item?.title || item?.name || "")));
+
+  if (localCollege) {
+    const collegeTitle = localCollege.title || localCollege.name || DEFAULT_SEO.title;
+    return buildSeoFromPayload(
+      { metaTitle: collegeTitle, metaDescription: getIntroText(localCollege.intro) || DEFAULT_SEO.description },
+      pathname,
+      collegeTitle
+    );
   }
 
   return DEFAULT_SEO;
