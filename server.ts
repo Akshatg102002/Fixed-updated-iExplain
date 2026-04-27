@@ -69,6 +69,20 @@ const resolveSlugFromPath = (pathname: string) => {
   return segments[segments.length - 1] || "";
 };
 
+const buildSlugCandidates = (slug: string) => {
+  const normalized = (slug || "").toLowerCase().replace(/(^-|-$)+/g, "");
+  if (!normalized) return [];
+
+  const withoutStudyPrefix = normalized.startsWith("study-in-")
+    ? normalized.replace(/^study-in-/, "")
+    : normalized;
+  const withoutMbbsPrefix = normalized.startsWith("mbbs-in-")
+    ? normalized.replace(/^mbbs-in-/, "")
+    : normalized;
+
+  return Array.from(new Set([normalized, withoutStudyPrefix, withoutMbbsPrefix].filter(Boolean)));
+};
+
 const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: string) => {
   const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
   const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;
@@ -90,19 +104,24 @@ const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: stri
 const resolveSeoForRequest = async (pathname: string) => {
   const slug = resolveSlugFromPath(pathname);
   if (!slug) return DEFAULT_SEO;
+  const slugCandidates = buildSlugCandidates(slug);
 
   try {
-    const dynamicSnapshot = await getDocs(query(collection(db, "dynamic_pages"), where("slug", "==", slug)));
-    if (!dynamicSnapshot.empty) {
-      const data = dynamicSnapshot.docs[0].data();
-      const seoPayload = data?.payload?.seo || data?.seo || {};
-      return buildSeoFromPayload(seoPayload, pathname, data?.title);
+    for (const candidate of slugCandidates) {
+      const dynamicSnapshot = await getDocs(query(collection(db, "dynamic_pages"), where("slug", "==", candidate)));
+      if (!dynamicSnapshot.empty) {
+        const data = dynamicSnapshot.docs[0].data();
+        const seoPayload = data?.payload?.seo || data?.seo || {};
+        return buildSeoFromPayload(seoPayload, pathname, data?.title);
+      }
     }
 
-    const collegeSnapshot = await getDocs(query(collection(db, "colleges"), where("slug", "==", slug)));
-    if (!collegeSnapshot.empty) {
-      const data = collegeSnapshot.docs[0].data();
-      return buildSeoFromPayload(data?.seo || {}, pathname, data?.name);
+    for (const candidate of slugCandidates) {
+      const collegeSnapshot = await getDocs(query(collection(db, "colleges"), where("slug", "==", candidate)));
+      if (!collegeSnapshot.empty) {
+        const data = collegeSnapshot.docs[0].data();
+        return buildSeoFromPayload(data?.seo || {}, pathname, data?.name);
+      }
     }
   } catch (error) {
     console.error("SEO resolution failed for path:", pathname, error);
