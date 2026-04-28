@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin
 Allow: /
 
-Sitemap: https://iexplaineducation.in/sitemap.xml
+Sitemap: https://iexplain.education/sitemap.xml

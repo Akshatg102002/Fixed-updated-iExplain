@@ -7,8 +7,7 @@
     "dev": "tsx server.ts",
     "build": "npm run generate:seo && vite build",
     "preview": "vite preview",
-    "generate:seo": "tsx scripts/generate-seo.ts",
-    "seo:init-from-admin": "tsx scripts/init-seo-routes-from-admin.ts"
+    "generate:seo": "tsx scripts/generate-seo.ts"
   },
   "dependencies": {
     "@google/genai": "^1.34.0",
