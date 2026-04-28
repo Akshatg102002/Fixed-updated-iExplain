@@ -1,0 +1,50 @@
+{
+  "siteUrl": "https://iexplaineducation.in",
+  "routes": [
+    {
+      "path": "/",
+      "priority": "1.0",
+      "source": "manual:static"
+    },
+    {
+      "path": "/about",
+      "priority": "0.8",
+      "source": "manual:static"
+    },
+    {
+      "path": "/blog",
+      "priority": "0.9",
+      "source": "manual:static"
+    },
+    {
+      "path": "/blog-list",
+      "priority": "0.7",
+      "source": "manual:static"
+    },
+    {
+      "path": "/blogs",
+      "priority": "0.7",
+      "source": "manual:static"
+    },
+    {
+      "path": "/contact",
+      "priority": "0.9",
+      "source": "manual:static"
+    },
+    {
+      "path": "/privacy-policy",
+      "priority": "0.4",
+      "source": "manual:static"
+    },
+    {
+      "path": "/services",
+      "priority": "0.9",
+      "source": "manual:static"
+    },
+    {
+      "path": "/terms-conditions",
+      "priority": "0.4",
+      "source": "manual:static"
+    }
+  ]
+}
