@@ -17,12 +17,24 @@ import { MBBS_IN_INDIA_DETAILS } from '../MBBSinindiadata.ts';
 import { STUDY_ABROAD_COLLEGE_DETAILS } from '../studyAbroadCollegeData.ts';
 import { createSlug } from '../utils.ts';
 
+type ManualRoute = {
+  path: string;
+  priority?: string;
+  include?: boolean;
+};
+
+type ManualSeoConfig = {
+  siteUrl?: string;
+  routes?: ManualRoute[];
+};
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 const appFile = path.join(repoRoot, 'App.tsx');
 const publicDir = path.join(repoRoot, 'public');
-const siteUrl = process.env.SITE_URL || 'https://iexplain.education';
+const manualRoutesFile = path.join(repoRoot, 'seo', 'manual-routes.json');
+const defaultSiteUrl = 'https://www.iexplaineducation.in';
 
 const escapeXml = (value: string) =>
   value
@@ -31,6 +43,12 @@ const escapeXml = (value: string) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&apos;');
+
+const normalizePath = (value: string): string => {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed === '/') return '/';
+  return `/${trimmed.replace(/^\/+/, '').replace(/\/+$/, '')}`;
+};
 
 const getPriority = (route: string): string | null => {
   if (route === '/') return '1.0';
@@ -92,11 +110,23 @@ const expandDynamicRoute = (routePattern: string): string[] => {
   }
 };
 
+const loadManualSeoConfig = async (): Promise<ManualSeoConfig> => {
+  try {
+    const manualConfigSource = await readFile(manualRoutesFile, 'utf8');
+    return JSON.parse(manualConfigSource) as ManualSeoConfig;
+  } catch {
+    return {};
+  }
+};
+
 const generate = async () => {
   const appSource = await readFile(appFile, 'utf8');
   const routeMatches = [...appSource.matchAll(/<Route\s+path="([^"]+)"/g)].map((match) => match[1]);
+  const manualConfig = await loadManualSeoConfig();
+  const siteUrl = process.env.SITE_URL || manualConfig.siteUrl || defaultSiteUrl;
 
   const discoveredRoutes = new Set<string>();
+  const manualPriorities = new Map<string, string>();
 
   for (const route of routeMatches) {
     if (route === '*' || route === '/admin' || route === '/404') {
@@ -112,12 +142,25 @@ const generate = async () => {
     }
   }
 
+  for (const manualRoute of manualConfig.routes || []) {
+    if (!manualRoute.path || manualRoute.include === false) {
+      continue;
+    }
+
+    const normalized = normalizePath(manualRoute.path);
+    discoveredRoutes.add(normalized);
+
+    if (manualRoute.priority) {
+      manualPriorities.set(normalized, manualRoute.priority);
+    }
+  }
+
   const sortedRoutes = [...discoveredRoutes].sort();
   const lastModified = new Date().toISOString();
 
   const sitemapEntries = sortedRoutes.map((route) => {
     const loc = `${siteUrl}${route}`;
-    const priority = getPriority(route);
+    const priority = manualPriorities.get(route) || getPriority(route);
 
     return [
       '  <url>',

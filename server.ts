@@ -40,10 +40,10 @@ const __dirname = path.dirname(__filename);
 const DEFAULT_SEO = {
   title: "iExplain Education | Global Admissions",
   description: "iExplain Education helps students with admissions, counselling, and study abroad planning for top global universities.",
-  canonicalUrl: "https://iexplain.education/",
+  canonicalUrl: "https://www.iexplaineducation.in/",
   ogTitle: "iExplain Education | Global Admissions",
   ogDescription: "Admissions guidance, counseling, and global education pathways for students.",
-  ogUrl: "https://iexplain.education/",
+  ogUrl: "https://www.iexplaineducation.in/",
   jsonLd: ""
 };
 
@@ -93,7 +93,7 @@ const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: stri
   const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
   const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;
   const canonicalPath = seoPayload?.slug ? `/${seoPayload.slug}` : pathname;
-  const canonicalUrl = `https://iexplain.education${canonicalPath}`;
+  const canonicalUrl = `https://www.iexplaineducation.in${canonicalPath}`;
   const jsonLd = seoPayload?.structuredData ? JSON.stringify(seoPayload.structuredData) : "";
 
   return {
@@ -354,7 +354,7 @@ async function startServer() {
         const defaultSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${staticUrls.map((path) => `  <url>
-    <loc>https://iexplain.education${path}</loc>
+    <loc>https://www.iexplaineducation.in${path}</loc>
     <lastmod>${currentIso}</lastmod>
     <changefreq>${path === "/" ? "daily" : "weekly"}</changefreq>
     <priority>${path === "/" ? "1.0" : "0.8"}</priority>
