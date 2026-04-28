@@ -169,8 +169,8 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   const resetForms = () => {
     setBlogForm({
-      title: '', category: categories[0]?.name || 'MBBS Abroad', author: '', readTime: '5 min read',
-      img: '', imgAlt: '', content: '', metaTitle: '', metaDesc: '',
+      title: '', slug: '', category: categories[0]?.name || 'General', author: 'Admin', readTime: '5 min read',
+      img: '', imgAlt: '', excerpt: '', content: '', metaTitle: '', metaDesc: '',
       date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
     });
     setCategoryForm({ name: '', slug: '' });
@@ -852,12 +852,121 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                      </table>
                   </div>
                ) : (
-                  <div className="bg-white rounded-[3rem] p-12 shadow-sm border border-gray-100">
-                     <form onSubmit={(e) => { e.preventDefault(); handleSave('blogs', blogForm); }} className="grid grid-cols-2 gap-8">
-                        <div className="col-span-2"><label className="label">Title</label><input required className="input-std" value={blogForm.title} onChange={e => setBlogForm({...blogForm, title: e.target.value})} /></div>
-                        <div className="col-span-2 md:col-span-1"><label className="label">Category</label><select className="input-std" value={blogForm.category} onChange={e => setBlogForm({...blogForm, category: e.target.value})}>{categories.map(c => <option key={c.id} value={c.name}>{c.name}</option>)}<option value="General">General</option></select></div>
-                        <div className="col-span-2"><label className="label">Content (HTML)</label><textarea rows={10} className="input-std" value={blogForm.content} onChange={e => setBlogForm({...blogForm, content: e.target.value})} /></div>
-                        <button className="col-span-2 py-5 bg-brand-gold text-white rounded-xl font-black uppercase tracking-widest shadow-xl">Publish</button>
+                  <div className="bg-white rounded-[2rem] p-6 md:p-10 shadow-sm border border-gray-100">
+                     <form onSubmit={(e) => { e.preventDefault(); handleSave('blogs', blogForm); }} className="grid grid-cols-1 xl:grid-cols-12 gap-6">
+                        <div className="xl:col-span-8 space-y-6">
+                          <div className="border border-gray-100 rounded-2xl p-6 space-y-5">
+                            <h3 className="text-xl font-black text-brand-blue">Content</h3>
+                            <div>
+                              <label className="label">Blog Title</label>
+                              <input
+                                required
+                                className="input-std"
+                                placeholder="Enter blog title..."
+                                value={blogForm.title || ''}
+                                onChange={e => setBlogForm({ ...blogForm, title: e.target.value, slug: generateSlug(e.target.value) })}
+                              />
+                            </div>
+                            <div>
+                              <label className="label">Slug (URL)</label>
+                              <input
+                                className="input-std"
+                                placeholder="auto-generated-from-title"
+                                value={blogForm.slug || ''}
+                                onChange={e => setBlogForm({ ...blogForm, slug: generateSlug(e.target.value) })}
+                              />
+                            </div>
+                            <div>
+                              <label className="label">Blog Content</label>
+                              <textarea
+                                rows={12}
+                                className="input-std"
+                                placeholder="Write your article content here..."
+                                value={blogForm.content || ''}
+                                onChange={e => setBlogForm({ ...blogForm, content: e.target.value })}
+                              />
+                              <p className="mt-2 text-xs text-gray-400">Basic text formatting supported.</p>
+                            </div>
+                            <div>
+                              <label className="label">Short Excerpt</label>
+                              <textarea
+                                rows={3}
+                                className="input-std"
+                                placeholder="Summary for the card view..."
+                                value={(blogForm as any).excerpt || ''}
+                                onChange={e => setBlogForm({ ...blogForm, excerpt: e.target.value } as any)}
+                              />
+                            </div>
+                          </div>
+
+                          <div className="border border-gray-100 rounded-2xl p-6 space-y-5">
+                            <h3 className="text-xl font-black text-brand-blue">SEO Settings</h3>
+                            <div>
+                              <label className="label">Meta Title</label>
+                              <input
+                                className="input-std"
+                                placeholder="SEO Title (defaults to blog title)"
+                                value={blogForm.metaTitle || ''}
+                                onChange={e => setBlogForm({ ...blogForm, metaTitle: e.target.value })}
+                              />
+                            </div>
+                            <div>
+                              <label className="label">Meta Description</label>
+                              <textarea
+                                rows={3}
+                                className="input-std"
+                                placeholder="SEO Description (defaults to excerpt)"
+                                value={blogForm.metaDesc || ''}
+                                onChange={e => setBlogForm({ ...blogForm, metaDesc: e.target.value })}
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="xl:col-span-4">
+                          <div className="border border-gray-100 rounded-2xl p-6 space-y-5 sticky top-6">
+                            <h3 className="text-xl font-black text-brand-blue">Publishing</h3>
+                            <div>
+                              <label className="label">Author</label>
+                              <input className="input-std" value={blogForm.author || ''} onChange={e => setBlogForm({ ...blogForm, author: e.target.value })} />
+                            </div>
+                            <div>
+                              <label className="label">Category</label>
+                              <select className="input-std" value={blogForm.category || 'General'} onChange={e => setBlogForm({ ...blogForm, category: e.target.value })}>
+                                {categories.map(c => <option key={c.id} value={c.name}>{c.name}</option>)}
+                                <option value="General">General</option>
+                              </select>
+                            </div>
+                            <div>
+                              <label className="label">Featured Image URL</label>
+                              <input className="input-std" placeholder="https://..." value={blogForm.img || ''} onChange={e => setBlogForm({ ...blogForm, img: e.target.value })} />
+                            </div>
+                            {blogForm.img ? (
+                              <div className="rounded-xl overflow-hidden border border-gray-100 bg-gray-50 aspect-video">
+                                <img src={blogForm.img} alt={blogForm.imgAlt || blogForm.title || 'Blog preview'} className="w-full h-full object-cover" />
+                              </div>
+                            ) : (
+                              <div className="rounded-xl border border-dashed border-gray-200 bg-gray-50 h-32" />
+                            )}
+                            <div>
+                              <label className="label">Image Alt Text</label>
+                              <input className="input-std" placeholder="Describe the image for accessibility" value={blogForm.imgAlt || ''} onChange={e => setBlogForm({ ...blogForm, imgAlt: e.target.value })} />
+                            </div>
+                            <div className="grid grid-cols-2 gap-3">
+                              <div>
+                                <label className="label">Publish Date</label>
+                                <input className="input-std" value={blogForm.date || ''} onChange={e => setBlogForm({ ...blogForm, date: e.target.value })} />
+                              </div>
+                              <div>
+                                <label className="label">Read Time</label>
+                                <input className="input-std" value={blogForm.readTime || ''} onChange={e => setBlogForm({ ...blogForm, readTime: e.target.value })} />
+                              </div>
+                            </div>
+                            <button className="w-full py-4 bg-brand-blue text-white rounded-xl font-black tracking-wide shadow-xl">
+                              {editingId ? 'Update Blog' : 'Publish Blog'}
+                            </button>
+                          </div>
+                        </div>
                      </form>
                   </div>
                )}

@@ -576,11 +576,13 @@ export interface VideoStory {
 export interface Blog {
   id: string;
   title: string;
+  slug?: string;
   img: string;
   imgAlt?: string;
   date: string;
   category: string;
   author: string;
+  excerpt?: string;
   content: string;
   readTime: string;
   metaTitle?: string;
