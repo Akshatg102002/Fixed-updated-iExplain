@@ -67,7 +67,7 @@ const LoadingOverlay = () => (
 
 const SEOManager = () => {
   const location = useLocation();
-  const baseUrl = 'https://iexplain.education';
+  const baseUrl = 'https://www.iexplaineducation.in';
   const isNotFound = location.pathname === '/404';
 
   useEffect(() => {
@@ -166,7 +166,7 @@ const useDynamicSeo = (options: {
     const title = seo?.metaTitle || seo?.seoTitle || pageTitle;
     const description = seo?.metaDescription || metaDescription || 'iExplain Education helps students with admissions, counselling, and study abroad planning.';
     const canonicalPath = seo?.slug ? `/${seo.slug}` : pathname;
-    const canonicalUrl = `https://iexplain.education${canonicalPath}`;
+    const canonicalUrl = `https://www.iexplaineducation.in${canonicalPath}`;
 
     document.title = title;
     applyMetaTag('description', description);

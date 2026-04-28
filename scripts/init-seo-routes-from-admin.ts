@@ -57,7 +57,7 @@ const run = async () => {
     })
     .filter((entry) => entry.path !== '/admin' && entry.path !== '/404');
 
-  let existing: ManualSeoConfig = { siteUrl: 'https://iexplaineducation.in', routes: [] };
+  let existing: ManualSeoConfig = { siteUrl: 'https://www.iexplaineducation.in', routes: [] };
   try {
     const content = await readFile(configPath, 'utf8');
     existing = JSON.parse(content) as ManualSeoConfig;
@@ -76,7 +76,7 @@ const run = async () => {
   }
 
   const config: ManualSeoConfig = {
-    siteUrl: existing.siteUrl || 'https://iexplaineducation.in',
+    siteUrl: existing.siteUrl || 'https://www.iexplaineducation.in',
     routes: [...merged.values()].sort((a, b) => a.path.localeCompare(b.path)),
   };
 
