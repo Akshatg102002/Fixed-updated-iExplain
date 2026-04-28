@@ -4,12 +4,12 @@ export const MBBS_ABROAD_DETAILED: Record<string, MBBSDetailData> = {
   russia: {
     title: "MBBS in Russia",
 
-    heroImage: "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA.jpg.jpeg",
-    heroImageMobile: "https://socialfoundationindia.org/wp-content/uploads/2026/03/RUSSIA-2.jpg.jpeg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774245749/RUSSIA-d_vobv9a.webp",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774245750/RUSSIA-m_mufcyi.webp",
 
     intro: {
-      text: "MBBS in Russia is one of the most popular options for Indian students who want to pursue medical education abroad at an affordable cost. Every year thousands of students choose MBBS in Russia because Russian medical universities provide globally recognized medical degrees with modern infrastructure and experienced faculty.<br /><br />One of the biggest advantages of MBBS in Russia is the affordable tuition fees compared to private medical colleges in India. Students who want to study MBBS in Russia can complete their medical education at a much lower cost without paying donation or capitation fees.<br /><br />Another reason why students prefer MBBS Russia is the high quality of education. Russian universities are recognized by global medical organizations and follow international medical education standards. This makes MBBS in Russia a reliable choice for students planning an international medical career.<br /><br />Indian students who study MBBS in Russia also benefit from modern laboratories, advanced research facilities, and experienced professors. This is why MBBS Russia has become one of the most trusted destinations for medical studies abroad.",
-      image: "https://images.unsplash.com/photo-1547448415-e9f5b28e570d?q=80&w=870&auto=format&fit=crop"
+      text: "",
+      image: ""
     },
 
     quickFacts: {
@@ -143,15 +143,18 @@ These advantages make MBBS Russia one of the most preferred destinations for med
       }
     ],
 
-    whyChooseUs: [
-      "Personalized Career Counseling: iExplain Education offers one-on-one counseling sessions to understand students' academic background, budget, and career goals. Based on this, they recommend the best NMC-approved universities in Russia.",
-      "Top University Selection: They help students choose from globally recognized and NMC-approved medical universities in Russia, ensuring better career prospects and quality education.",
-      "Complete Admission Assistance: From application to admission confirmation, iExplain provides full support including form filling & documentation, university application process, offer letter & admission confirmation.",
-      "Visa Guidance & Documentation: The visa process can be complex, but iExplain simplifies it by offering proper documentation guidance, visa application support, and interview preparation (if required).",
-      "Accommodation & Travel Support: Students receive assistance with hostel booking, travel arrangements, and pre-departure guidance to ensure a smooth transition to Russia.",
-      "Transparent Process: iExplain Education follows a 100% transparent policy with no hidden charges, keeping students and parents informed at every step.",
-      "Post-Arrival Support: Their support continues even after reaching Russia, including university registration assistance, local guidance, and help with settling in hostels."
-    ],
+    whyChooseUs: {
+      intro: "The choice of the correct consultancy company plays a very significant role in having an effective experience in studying MBBS abroad.\n\nOne such recognized company by the name iExplain Education assists students aspiring to pursue their MBBS in Russia in all matters.\n\nThis firm makes admission convenient since they have been offering these services for years.",
+      points: [
+        "Personalized Career Counseling: iExplain Education offers one-on-one counseling sessions to understand students' academic background, budget, and career goals. Based on this, they recommend the best NMC-approved universities in Russia.",
+        "Top University Selection: They help students choose from globally recognized and NMC-approved medical universities in Russia, ensuring better career prospects and quality education.",
+        "Complete Admission Assistance: From application to admission confirmation, iExplain provides full support including form filling & documentation, university application process, offer letter & admission confirmation.",
+        "Visa Guidance & Documentation: The visa process can be complex, but iExplain simplifies it by offering proper documentation guidance, visa application support, and interview preparation (if required).",
+        "Accommodation & Travel Support: Students receive assistance with hostel booking, travel arrangements, and pre-departure guidance to ensure a smooth transition to Russia.",
+        "Transparent Process: iExplain Education follows a 100% transparent policy with no hidden charges, keeping students and parents informed at every step.",
+        "Post-Arrival Support: Their support continues even after reaching Russia, including university registration assistance, local guidance, and help with settling in hostels."
+      ]
+    },
 
     checklist: [
       { item: "NEET Scorecard", required: true },
@@ -163,7 +166,8 @@ These advantages make MBBS Russia one of the most preferred destinations for med
     ],
 
     hostelFacilities: {
-      intro: "Students who choose MBBS in Russia receive comfortable and well-equipped hostel facilities provided by the universities. Most universities offering MBBS in Russia provide on-campus accommodation for international students, including Indian students. The hostels are designed to ensure safety, convenience, and a comfortable living environment for students who come to study MBBS in Russia.\n\nHostel facilities are one of the major reasons why many students prefer MBBS in Russia. Universities understand the needs of international students and provide modern accommodation with all the basic amenities. Students pursuing MBBS Russia programs can live close to the university campus, which makes it easier to attend classes and clinical training.",
+      intro: "Key Hostel Facilities for Students Studying MBBS in Russia",
+      subIntro: "Students who study MBBS in Russia usually receive the following hostel facilities:",
       features: [
         "Fully furnished rooms with beds, study tables, and wardrobes",
         "Separate hostels or floors for boys and girls",
@@ -174,10 +178,12 @@ These advantages make MBBS Russia one of the most preferred destinations for med
         "Common kitchen for cooking",
         "Indian food available in many hostels",
         "Reading rooms and study halls"
-      ]
+      ],
+      footer: "These facilities make MBBS in Russia comfortable for Indian students who move abroad for medical education."
     },
 
     careerOpportunities: {
+      intro: "Undertaking MBBS studies in Russia will open up various career opportunities for Indian students. Through comprehensive medical training, international certification, and practical experience acquired through MBBS programs in Russia, Indian students will be able to have a successful medical career. Careers which Indian students can embark on after completing their MBBS studies in Russia are listed below:",
       practiceInIndia: "Indian students who complete their MBBS in Russia must clear the FMGE/National Exit Test (NEXT) conducted by the National Board of Examinations (NBE) to practice medicine in India. After passing the FMGE, graduates need to complete a one-year internship in an Indian hospital to gain practical experience and become eligible for permanent registration with the Medical Council of India (MCI).",
       postgraduate: "Graduates can pursue postgraduate medical education (MD/MS) in India by appearing for the NEET-PG exam. Students may also choose to pursue postgraduate studies in other countries like the USA, UK, Canada, or Germany. Many Russian universities have collaborations with international institutions, facilitating easier transitions for further studies abroad.",
       research: "Graduates interested in medical research can join research institutes or universities in India or abroad. Russia has a strong emphasis on research, providing a solid foundation for those looking to pursue a career in medical research. Pursuing a Ph.D. in a specialized area of medicine is another option for those inclined towards academic and research careers.",
@@ -674,10 +680,72 @@ These advantages make MBBS Russia one of the most preferred destinations for med
       neet: "Mandatory",
       recognition: "NMC, WHO, ECFMG, FAIMER",
       intake: "September",
-      averageFees: "₹25 – ₹42 Lakhs"
+      averageFees: "₹25 – ₹42 Lakhs",
+      introfooter: "MBBS is preferred by most international students due to the high-quality infrastructure and world-class education provided by the universities. Students intending to pursue their MBBS in Georgia will enjoy state-of-the-art learning techniques and international experience.",
     },
 
-    forIndianStudents: "MBBS in Georgia for Indian students is gaining popularity because the universities offer high quality education with affordable fees. Students who want to study MBBS in Georgia do not need to clear any entrance exam except NEET.\n\nMany universities offering MBBS Georgia programs follow the American medical curriculum which helps students prepare for international licensing exams.\n\nMany international students choose MBBS in Georgia because the universities offer modern facilities and globally accepted medical education. Students planning to study MBBS in Georgia benefit from advanced teaching methods and international exposure.\n\nStudents who study MBBS in Georgia also learn the basic Georgian language during the course. This helps them communicate with patients during clinical training.",
+    forIndianStudents: {
+      title: "MBBS in Georgia for Indian Students",
+
+      introduction: [
+        "MBBS courses in Georgia for Indians are becoming more popular as universities provide excellent educational facilities at affordable costs.",
+        "For students interested in pursuing MBBS in Georgia, no entrance exam is required other than NEET.",
+        "The universities offering MBBS in Georgia usually follow American-based medical systems that help students prepare for global medical exams."
+      ],
+
+      advantages: {
+        title: "Advantages of MBBS in Georgia",
+        points: [
+          {
+            main: "Medium of Instruction",
+            subPoints: ["Medical courses are taught in English"]
+          },
+          {
+            main: "Affordable Fees",
+            subPoints: ["Low-cost tuition fees compared to many countries"]
+          },
+          {
+            main: "Global Recognition",
+            subPoints: ["Universities are reputed worldwide"]
+          },
+          {
+            main: "Safety",
+            subPoints: ["Safe environment for international students"]
+          },
+          {
+            main: "Infrastructure",
+            subPoints: ["Modern medical facilities and hospitals"]
+          }
+        ]
+      },
+
+      conclusion: "All these advantages make Georgia an ideal choice for pursuing MBBS abroad."
+    },
+
+
+    studentLife: {
+      title: "Student Life While Studying MBBS in Georgia",
+
+      introduction: [
+        "The lifestyle while studying MBBS in Georgia is lively, engaging, and full of opportunities.",
+        "Universities regularly organize cultural events, sports activities, and academic seminars for students."
+      ],
+
+      experience: [
+        "Students get the opportunity to explore Georgian culture, history, and natural beauty",
+        "Exposure to international student communities enhances overall experience"
+      ],
+
+      facilities: {
+        title: "University Facilities",
+        points: [
+          "Well-equipped libraries",
+          "Student clubs and extracurricular activities",
+          "Recreational and sports facilities",
+          "Supportive campus environment"
+        ]
+      }
+    },
 
     benefits: [
       "English medium medical programs",

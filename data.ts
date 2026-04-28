@@ -175,7 +175,7 @@ export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
   "mbbs": {
     title: "Study MBBS in India for Indian Students",
     heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294485/BBA_IN_INDIA_2_ugzin4.jpg",
-      heroImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
+    heroImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
     intro: "MBBS in India is one of the most preferred career choices for students who want to become doctors and serve in the healthcare sector. India has a well-established medical education system with numerous government and private medical colleges that provide high-quality medical training and clinical exposure. Every year thousands of students appear for the medical entrance examination to secure admission to MBBS programs across the country.\n\nMedical colleges in India are regulated by the National Medical Commission, which ensures that all institutions maintain proper education standards, infrastructure, and clinical training facilities. The MBBS course in India provides strong theoretical knowledge along with practical clinical experience through hospital internships.\n\nDue to the increasing demand for qualified doctors and healthcare professionals, MBBS in India continues to be one of the most respected and rewarding career options. Students receive hands-on clinical training, work with experienced doctors, and gain practical exposure in hospitals, which helps them build a successful medical career.\n\nOne of the most important benefits of pursuing MBBS in India is the exposure that is gained by the students. India is a vast country with a large population, and because of this, the exposure that is gained by the students is quite diverse, and they are able to learn from real-life situations under the guidance and supervision of experienced doctors and medical professionals. Many medical colleges in India are also well-equipped with modern laboratory facilities, research, and teaching hospitals, making the learning experience very fulfilling for the students.\n\nWith the growing healthcare industry, the demand for qualified doctors, and the continuous development of medical science, MBBS in India is a promising career destination. If students complete their MBBS course successfully, they can find employment in hospitals, healthcare centers, and research centers or can opt for higher specialization to have a successful career in the medical line.",
 
     overview: {
@@ -718,7 +718,7 @@ export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
   "btech": {
     "title": "Study B.Tech in India - Complete Guide for Engineering Aspirants",
     " heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294489/B_TECH_IN_INDIA_2_ihm3jb.jpg",
-    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294489/B_TECH_IN_INDIA_2_ihm3jb.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294493/B_TECH_IN_INDIA_sh8rqn.jpg",
     "intro": "B.Tech in India (Bachelor of Technology) is one of the most popular and career-oriented undergraduate degree programs for students who aspire to build a strong future in the field of engineering, technology, and innovation. It is a professional course designed to equip students with technical knowledge, analytical thinking, problem-solving skills, and practical exposure required in today's fast-growing industries. In India, B.Tech is offered by a wide range of institutions including IITs, NITs, government colleges, private universities, and deemed universities, making it one of the most accessible and in-demand courses after completing 12th with Science (PCM).\n\nThe duration of B.Tech in India is generally 4 years, divided into 8 semesters, where students study both core engineering subjects and specialization-based subjects. The course structure includes classroom learning, laboratory work, industrial training, live projects, and internships, which help students gain real-world experience and industry readiness. Some of the most popular specializations in B.Tech in India include Computer Science Engineering (CSE), Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics & Communication Engineering (ECE), Artificial Intelligence, Data Science, and Information Technology (IT).\n\nAdmission to B.Tech in India is mainly based on national and state-level entrance exams such as the JEE Main, JEE Advanced, and various state CET exams, along with private university entrance tests. These exams evaluate students' knowledge in Physics, Chemistry, and Mathematics, and play a crucial role in determining admission to top engineering colleges. Due to high competition, students often prepare rigorously to secure a seat in reputed institutions.\n\nOne of the biggest advantages of pursuing B.Tech in India is the wide range of career opportunities available after graduation. Students can work in IT companies, core engineering sectors, manufacturing industries, research and development organizations, startups, and government sectors. With the rapid growth of technology, fields like Artificial Intelligence, Machine Learning, Cybersecurity, Data Science, and Robotics are creating new and high-paying job opportunities for B.Tech graduates.\n\nAdditionally, students can opt for higher education such as M.Tech, MBA, or MS abroad, or prepare for competitive exams like GATE, UPSC, and other government job exams. Entrepreneurship is also a growing trend, with many engineering graduates starting their own startups.",
 
     "overview": {
@@ -1474,6 +1474,289 @@ export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
       ]
     }
   },
+  "pgdm": {
+    "title": "PGDM in India - Complete Guide for Management Aspirants",
+    "heroImageMobile": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294471/PGDM_IN_INDIA_2_uq7qqu.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294482/PGDM_IN_INDIA_v4cfbx.jpg",
+    "intro": "PGDM (Post Graduate Diploma in Management) is a 2-year professional management program offered by autonomous institutes in India that focuses on developing advanced skills in business management, leadership, entrepreneurship, and corporate decision-making. It is one of the most popular alternatives to an MBA and is designed to prepare students for the dynamic needs of the modern business world.\n\nIn India, PGDM courses are offered by many top management institutes approved by bodies like AICTE (All India Council for Technical Education). Unlike traditional MBA programs, which are university-affiliated, PGDM programs are more industry-oriented, practical, and updated regularly according to market trends, making them highly relevant for today’s competitive corporate environment.\n\nThe curriculum of PGDM in India includes core subjects such as Marketing Management, Financial Management, Human Resource Management, Operations Management, Business Analytics, Strategic Management, and Organizational Behavior. Along with theoretical learning, students gain strong practical exposure through case studies, live projects, internships, workshops, and corporate training programs.\n\nPGDM is highly valued in industries like consulting, finance, IT, marketing, banking, and startups, as it focuses on skill development, problem-solving ability, and real-world business applications. It is an excellent choice for students who want to enter the corporate world with strong managerial knowledge and leadership capabilities.",
+    "overview": {
+      "title": "PGDM in India – Overview",
+      "table": [
+        {
+          "particular": "Course Name",
+          "details": "Post Graduate Diploma in Management (PGDM in India)"
+        },
+        {
+          "particular": "Level",
+          "details": "Postgraduate (Professional Diploma)"
+        },
+        {
+          "particular": "Duration",
+          "details": "2 Years"
+        },
+        {
+          "particular": "Approval Body",
+          "details": "AICTE (All India Council for Technical Education)"
+        },
+        {
+          "particular": "Eligibility",
+          "details": "Bachelor’s degree in any stream with minimum 50% marks (varies by institute)"
+        },
+        {
+          "particular": "Admission Process",
+          "details": "Entrance Exam (CAT, XAT, GMAT, MAT, CMAT) + GD/PI"
+        },
+        {
+          "particular": "Course Type",
+          "details": "Industry-oriented, autonomous program (not university degree)"
+        },
+        {
+          "particular": "Popular Specializations",
+          "details": "Marketing, Finance, HR, Business Analytics, Operations, International Business"
+        }
+      ]
+    },
+    "whyPGDM": {
+      "title": "Why Pursue PGDM in India? (2026)",
+      "description": "Pursuing PGDM in India (Post Graduate Diploma in Management) is a great choice for students who want to build a strong career in business management, leadership, consulting, finance, marketing, and corporate strategy. PGDM programs are designed by autonomous institutes and are highly industry-focused, practical, and updated according to current market trends, making them more dynamic compared to traditional management courses.",
+      "points": [
+        {
+          "title": "Skill Development & Real-World Learning",
+          "description": "The course includes case studies, live projects, internships, workshops, and corporate training, which help students understand real business challenges and develop problem-solving abilities."
+        },
+        {
+          "title": "Excellent Placement Opportunities",
+          "description": "Top institutes like XLRI, SPJIMR, MDI Gurgaon, IMT Ghaziabad, and Great Lakes offer exposure to leading recruiters in consulting, banking, IT, FMCG, e-commerce, and startups with attractive salary packages."
+        },
+        {
+          "title": "Wide Range of Specializations",
+          "description": "Students can choose from Marketing, Finance, HR, Business Analytics, Operations, and IB, allowing them to build expertise in specific industries and improve job prospects."
+        },
+        {
+          "title": "Faster Career Growth & Industry Exposure",
+          "description": "Since PGDM programs are regularly updated based on corporate needs, students gain relevant knowledge that aligns with modern business requirements, making them better prepared for leadership roles."
+        }
+      ]
+    },
+    "topPrivateColleges": {
+      "title": "Top Private PGDM Colleges in India (2026)",
+      "description": "PGDM in India is offered by many top private institutes that are known for their industry-focused curriculum, strong placements, global exposure, and high ROI (Return on Investment). These colleges are highly preferred by MBA/PGDM aspirants because they provide excellent career opportunities in consulting, finance, marketing, analytics, IT, and management roles.",
+      "colleges": [
+        {
+          "name": "XLRI – Xavier School of Management",
+          "location": "Jamshedpur",
+          "entranceExam": "XAT"
+        },
+        {
+          "name": "SPJIMR (SP Jain Institute of Management & Research)",
+          "location": "Mumbai",
+          "entranceExam": "CAT / GMAT"
+        },
+        {
+          "name": "MDI Gurgaon (Management Development Institute)",
+          "location": "Gurugram",
+          "entranceExam": "CAT / GMAT"
+        },
+        {
+          "name": "IMT Ghaziabad",
+          "location": "Ghaziabad",
+          "entranceExam": "CAT / XAT / GMAT"
+        },
+        {
+          "name": "IMI Delhi (International Management Institute)",
+          "location": "New Delhi",
+          "entranceExam": "CAT / XAT"
+        },
+        {
+          "name": "Great Lakes Institute of Management",
+          "location": "Chennai / Gurgaon",
+          "entranceExam": "CAT / XAT / GMAT"
+        },
+        {
+          "name": "FORE School of Management",
+          "location": "New Delhi",
+          "entranceExam": "CAT / XAT / CMAT"
+        },
+        {
+          "name": "BIMTECH (Birla Institute of Management Technology)",
+          "location": "Greater Noida",
+          "entranceExam": "CAT / XAT / CMAT"
+        },
+        {
+          "name": "TAPMI (T. A. Pai Management Institute)",
+          "location": "Manipal",
+          "entranceExam": "CAT / XAT / GMAT"
+        }
+      ],
+      "feeHeaders": [
+        "College Name",
+        "Location",
+        "Admission Exam"
+      ]
+    },
+    "specializations": {
+      "title": "PGDM Specializations in India (2026)",
+      "description": "PGDM in India offers a wide range of specializations that help students develop expertise in specific areas of business management, leadership, analytics, finance, and marketing. Choosing the right specialization is very important because it directly impacts your career opportunities, job roles, and salary growth in the corporate world.",
+      "branches": [
+        {
+          "specialization": "Marketing Management",
+          "description": "Focuses on branding, advertising, digital marketing, and sales strategies.",
+          "careerScope": "Marketing Manager, Brand Manager, Digital Marketing Manager"
+        },
+        {
+          "specialization": "Finance Management",
+          "description": "Deals with banking, investment, corporate finance, and risk management.",
+          "careerScope": "Financial Analyst, Investment Banker, Risk Manager"
+        },
+        {
+          "specialization": "Human Resource Management (HRM)",
+          "description": "Focuses on recruitment, training, employee relations, and HR policies.",
+          "careerScope": "HR Manager, Talent Acquisition Specialist"
+        },
+        {
+          "specialization": "Business Analytics",
+          "description": "Uses data analysis for business decision-making and strategy.",
+          "careerScope": "Data Analyst, Business Analyst, Data Scientist"
+        },
+        {
+          "specialization": "Operations Management",
+          "description": "Focuses on supply chain, logistics, and production management.",
+          "careerScope": "Operations Manager, Supply Chain Manager"
+        },
+        {
+          "specialization": "International Business",
+          "description": "Deals with global trade, export-import, and international markets.",
+          "careerScope": "Export Manager, Global Business Consultant"
+        },
+        {
+          "specialization": "Information Technology Management",
+          "description": "Combines management with IT systems and digital transformation.",
+          "careerScope": "IT Manager, Product Manager, Tech Consultant"
+        },
+        {
+          "specialization": "Retail Management",
+          "description": "Focuses on retail operations, customer management, and store management.",
+          "careerScope": "Retail Manager, Store Manager"
+        },
+        {
+          "specialization": "Banking & Financial Services",
+          "description": "Focuses on banking operations, insurance, and financial markets.",
+          "careerScope": "Bank Manager, Relationship Manager, Insurance Analyst"
+        }
+      ]
+    },
+    "eligibility": {
+      "title": "Eligibility Criteria for PGDM Programs in India",
+      "description": "To apply for PGDM programs in India, candidates must meet specific eligibility requirements related to education and entrance exams.",
+      "keyPoints": [
+        {
+          "title": "Academic Qualification",
+          "description": "Candidates must have a bachelor’s degree in any stream from a recognized university."
+        },
+        {
+          "title": "Minimum Marks",
+          "description": "Most institutes require at least 50% marks in graduation (varies by institute)."
+        },
+        {
+          "title": "Entrance Exams",
+          "description": "Students must qualify common entrance exams like CAT, XAT, CMAT, MAT, GMAT, and ATMA."
+        },
+        {
+          "title": "Final Year Students",
+          "description": "Students in the final year of their bachelor's degree can also apply."
+        }
+      ]
+    },
+    "careerScope": {
+      "title": "Career Scope After PGDM in India (2026)",
+      "description": "The career scope after completing a PGDM in India is highly promising, as it opens doors to multiple high-growth industries such as consulting, finance, marketing, IT, analytics, banking, FMCG, and startups. PGDM programs are designed to develop strong managerial, analytical, leadership, and decision-making skills, making graduates highly valuable in the corporate world.",
+      "paths": [
+        {
+          "title": "Corporate Jobs & Top Recruiters",
+          "description": "Roles such as Business Analyst, Management Consultant, and Product Manager in top MNCs like Deloitte, EY, KPMG, Accenture, McKinsey, Amazon, Infosys, and HDFC Bank."
+        },
+        {
+          "title": "High Salary Packages",
+          "description": "The average salary ranges from ₹6 LPA to ₹25+ LPA, with top-tier institutes frequently securing international job offers and significantly higher packages."
+        },
+        {
+          "title": "Emerging Fields",
+          "description": "Strong opportunities in high-demand fields like business analytics, digital marketing, fintech, supply chain management, and AI in business."
+        },
+        {
+          "title": "Entrepreneurship",
+          "description": "Excellent foundation for pursuing entrepreneurship and startups, as the program builds strong skills in business planning, leadership, and strategic thinking."
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "title": "Why Choose iExplain Education for PGDM in India? (2026)",
+      "description": "Choosing the right PGDM college and career path is a very important decision for students, and iExplain Education plays a key role in making this journey simple, structured, and successful.",
+      "points": [
+        {
+          "title": "Personalized Career Counselling",
+          "description": "One-to-one sessions where experts analyze your background and goals to suggest the best PGDM colleges and specializations."
+        },
+        {
+          "title": "Best PGDM College Selection Guidance",
+          "description": "Helps students choose from top private institutes like XLRI, SPJIMR, and MDI Gurgaon to ensure better ROI and placements."
+        },
+        {
+          "title": "Right Specialization Selection",
+          "description": "Proper guidance in selecting specializations based on future industry demand, such as Business Analytics or International Business."
+        },
+        {
+          "title": "Complete Admission & Exam Support",
+          "description": "End-to-end assistance from application filling to admission tracking, including expert support for CAT, XAT, CMAT, MAT, and GMAT."
+        },
+        {
+          "title": "Scholarship & Loan Assistance",
+          "description": "Guidance provided for education loans, scholarships, and fee planning, making PGDM education more affordable."
+        }
+      ]
+    },
+    "conclusion": {
+      "title": "Conclusion – PGDM in India",
+      "description": "PGDM in India is a highly career-oriented and industry-focused management program that offers excellent opportunities for students who want to build a successful future in business management, consulting, finance, marketing, analytics, and corporate leadership. With its practical learning approach, updated curriculum, and strong industry exposure, PGDM helps students develop the skills required to succeed in today’s competitive business environment.\n\nOverall, pursuing PGDM in India is a smart choice for students who are looking for high-quality education, better job opportunities, strong placement support, and faster career growth. From top institutes like XLRI, SPJIMR, MDI Gurgaon, IMT Ghaziabad, and Great Lakes, students can access excellent corporate exposure and attractive salary packages. It also opens doors to global career opportunities and entrepreneurship.\n\nWith the right college selection, specialization choice, and proper guidance, PGDM can become a strong stepping stone toward a successful and rewarding career in the corporate world."
+    },
+    "faqs": {
+      "title": "FAQs – PGDM in India (2026)",
+      "items": [
+        {
+          "question": "What is PGDM in India?",
+          "answer": "PGDM (Post Graduate Diploma in Management) is a 2-year professional management program offered by autonomous institutes that focuses on practical and industry-oriented business education."
+        },
+        {
+          "question": "What is the eligibility for PGDM in India?",
+          "answer": "Candidates must have a bachelor’s degree in any stream with at least 50% marks (varies by institute). Final-year students can also apply."
+        },
+        {
+          "question": "What is the difference between PGDM and MBA?",
+          "answer": "MBA is a university degree, while PGDM is a diploma offered by autonomous institutes. PGDM is more industry-focused and regularly updated according to market trends."
+        },
+        {
+          "question": "Which entrance exams are required for PGDM?",
+          "answer": "Common entrance exams include CAT, XAT, CMAT, MAT, GMAT, and ATMA, depending on the college."
+        },
+        {
+          "question": "What is the duration of PGDM in India?",
+          "answer": "The PGDM program is generally of 2 years, divided into 4 semesters."
+        },
+        {
+          "question": "What are the career options after PGDM in India?",
+          "answer": "Students can work as Business Analyst, Management Consultant, Marketing Manager, HR Manager, Financial Analyst, Operations Manager, and Product Manager."
+        },
+        {
+          "question": "What is the average salary after PGDM in India?",
+          "answer": "The average salary ranges from ₹6 LPA to ₹25+ LPA, depending on the college, specialization, and skills."
+        },
+        {
+          "question": "Which are the top PGDM colleges in India?",
+          "answer": "Top institutes include XLRI, SPJIMR, MDI Gurgaon, IMT Ghaziabad, Great Lakes Institute of Management, and TAPMI."
+        }
+      ]
+    }
+  }
 };
 
 export const MEGA_MENU_DATA = {

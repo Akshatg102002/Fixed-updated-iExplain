@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MBBSDetailData } from "../types";
 import { FaCheckCircle } from "react-icons/fa";
 import { LOGO_URL } from '../data.ts';
+import { count } from "console";
 
 interface Props {
   data: MBBSDetailData;
@@ -84,6 +85,12 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
             MBBS in {country} Overview
           </h2>
 
+          {/* Intro Text */}
+          {data?.quickOverview?.introfooter && (
+            <p className="mb-4">{data.quickOverview.introfooter}</p>
+          )}
+
+          {/* Table */}
           <div className="overflow-x-auto">
             <table className="w-full border border-gray-300 text-left">
               <thead className="bg-gray-100">
@@ -94,14 +101,17 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
               </thead>
 
               <tbody>
-                {Object.entries(data.quickOverview).map(([k, v], i) => (
-                  <tr key={i} className="hover:bg-gray-50">
-                    <td className="p-3 border font-semibold capitalize">
-                      {k.replace(/([A-Z])/g, " $1").trim()}
-                    </td>
-                    <td className="p-3 border">{v}</td>
-                  </tr>
-                ))}
+                {data?.quickOverview &&
+                  Object.entries(data.quickOverview)
+                    .filter(([key]) => key !== "introfooter")
+                    .map(([key, value], index) => (
+                      <tr key={index} className="hover:bg-gray-50">
+                        <td className="p-3 border font-semibold capitalize">
+                          {key.replace(/([A-Z])/g, " $1").trim()}
+                        </td>
+                        <td className="p-3 border">{value}</td>
+                      </tr>
+                    ))}
               </tbody>
             </table>
           </div>
@@ -149,16 +159,25 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           <h2 className="text-2xl font-bold mb-3">
             Eligibility Criteria
           </h2>
-          <ul className="space-y-2">
-            {Object.entries(data.eligibility).map(([k, v], i) => (
-              <li key={i} className="flex items-start gap-2">
-                <FaCheckCircle className="text-green-500 mt-1" />
-                <span>
-                  <strong>{k}:</strong> {v}
-                </span>
-              </li>
-            ))}
-          </ul>
+
+          <div className="overflow-x-auto">
+            <table className="min-w-full border border-gray-200 rounded-lg">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="text-left px-4 py-2 border-b">Criteria</th>
+                  <th className="text-left px-4 py-2 border-b">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(data.eligibility).map(([k, v], i) => (
+                  <tr key={i} className="hover:bg-gray-50">
+                    <td className="px-4 py-2 border-b font-semibold">{k}</td>
+                    <td className="px-4 py-2 border-b">{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* Duration */}
@@ -205,22 +224,34 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
             MBBS in India vs {country}
           </h2>
 
-          <table className="w-full border">
+          <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-gray-100 text-left">
                 <th className="border p-3">Feature</th>
-                <th className="border p-3">India</th>
-                <th className="border p-3">{country}</th>
+                <th className="border p-3">MBBS in India</th>
+                <th className="border p-3">MBBS in {country}</th>
               </tr>
             </thead>
             <tbody>
-              {Object.entries(data.indiaVsCountry).map(([k, v], i) => (
-                <tr key={i}>
-                  <td className="border p-3">{k}</td>
-                  <td className="border p-3">{v.india}</td>
-                  <td className="border p-3">{v.country}</td>
-                </tr>
-              ))}
+              {Object.entries(data.indiaVsCountry).map(([k, v], i) => {
+                const formattedKey = k
+                  .replace(/([A-Z])/g, " $1") // add space before capital letters
+                  .replace(/^./, str => str.toUpperCase()); // capitalize first letter
+
+                return (
+                  <tr key={i} className="hover:bg-gray-50">
+                    <td className="border p-3 font-medium">
+                      {formattedKey}
+                    </td>
+                    <td className="border p-3">
+                      {v.india}
+                    </td>
+                    <td className="border p-3">
+                      {v.country}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </section>
@@ -316,16 +347,12 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* Intro Text */}
             <p className="text-justify">
-              At IExplain Education, we specialize in helping students pursue MBBS
-              abroad with complete confidence. Our experienced counselors guide you
-              through every step — from choosing the right country and university
-              to handling documentation and visa processes.
-            </p>
-
-            <p className="text-justify">
-              We ensure that students receive accurate information, personalized
-              counseling, and end-to-end support, making the journey of studying
-              MBBS in {country} smooth, transparent, and stress-free.
+              {data.intro.text.split("\n").map((line, i) => (
+                <span key={i}>
+                  {line}
+                  <br />
+                </span>
+              ))}
             </p>
 
             {/* Clear float */}
@@ -383,11 +410,17 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
             Hostel Facilities in {country} for Indian Students
           </h2>
 
-          <p className="mb-4 text-justify">
+          {/* Main paragraph */}
+          <p className="mb-4 text-justify text-gray-700 leading-relaxed">
             {data.hostelFacilities.intro}
           </p>
 
-          <ul className="space-y-2">
+          <h3 className="text-xl font-bold mb-3">
+            Key Hostel Facilities for Students Studying MBBS in {country}
+          </h3>
+
+          {/* Features list */}
+          <ul className="space-y-2 mb-4">
             {data.hostelFacilities.features.map((feature, i) => (
               <li key={i} className="flex items-start gap-2">
                 <FaCheckCircle className="text-purple-600 mt-1" />
@@ -401,6 +434,11 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           <h2 className="text-2xl font-bold mb-3">
             Career Opportunities after MBBS in {country}
           </h2>
+
+          <p className="mb-4 text-justify text-gray-700 leading-relaxed">
+            {data?.careerOpportunities?.intro}
+          </p>
+
 
           <div className="space-y-3">
 

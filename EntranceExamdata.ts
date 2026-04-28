@@ -3,7 +3,7 @@ import { EntranceExamData, EntranceExamDataMap } from './types.ts';
 export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   'neet-ug': {
     title: 'NEET UG',
-    mobileImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293570/NEET_UG_xeoqsh.jpg",
+    mobileImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777364760/NEET_UG_2.jpg_fqqzmz.jpg",
     heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777293570/NEET_UG_xeoqsh.jpg',
     intro: [
       'NEET UG (National Eligibility cum Entrance Test – Undergraduate) is the most crucial and widely recognized national-level medical entrance examination in India for students who aspire to build a career in the medical field. Conducted by the National Testing Agency (NTA), NEET UG serves as the single gateway for admission to MBBS, BDS, AYUSH (BAMS, BHMS, BUMS), and other undergraduate medical courses in top government and private colleges across India. Over the years, NEET UG has replaced multiple state and institutional entrance exams, creating a uniform, transparent, and merit-based admission system that ensures equal opportunities for all students across the country. Every year, more than 20 lakh students appear for the NEET UG exam, making it one of the most competitive examinations in India, with a high level of difficulty and limited number of seats in prestigious medical colleges.',
@@ -385,7 +385,8 @@ export const ENTRANCE_EXAM_DETAILS: EntranceExamDataMap = {
   },
   "cat": {
     "title": "CAT Exam",
-    "heroImage": "https://www.google.com/search?q=https://images.unsplash.com/photo-1523240715624-69ccebb429e3%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80%26w%3D1600",
+    "mobileImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777364658/CAT_EXAM_2_vxmxqz.jpg",
+    "heroImage": "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777364657/CAT_EXAM_oh8r0z.jpg",
     "intro": [
       "CAT Exam (Common Admission Test) is one of the most prestigious and competitive national-level entrance exams in India conducted by the Indian Institutes of Management (IIMs) for admission into top management programs such as MBA in India (Master of Business Administration) and PGDM courses. It is widely regarded as the primary gateway for students who want to pursue an MBA in India from top B-schools, including the IIMs and other leading institutes like FMS, SPJIMR, and MDI.",
       "Every year, lakhs of students appear for the CAT exam in India to secure admission into the best colleges for MBA in India, making it one of the most important exams for management aspirants. The exam is designed to evaluate key skills such as quantitative aptitude, logical reasoning, data interpretation, and verbal ability, which are essential for success in business management and corporate careers.",

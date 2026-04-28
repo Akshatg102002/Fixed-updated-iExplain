@@ -44,25 +44,52 @@ export interface College {
 export interface CollegeDetailData {
   id?: string;
   slug?: string;
+
   title: string;
   heroImage: string;
   heroImageMobile?: string;
+
   intro: {
     text: string;
   };
-  quickFacts: Record<string, string>;
-  quickOverview: Record<string, string>;
+
+  // Better than Record<string, string>
+  quickFacts: {
+    label: string;
+    value: string;
+  }[];
+
+  quickOverview: {
+    courseName: string;
+    duration: string;
+    medium: string;
+    eligibility: string;
+    neet: string;
+    recognition: string;
+    intake: string;
+    averageFees: string;
+    introfooter: string;
+  };
+
   benefits: string[];
-  eligibility: Record<string, string>;
+
+  eligibility: {
+    label: string;
+    value: string;
+  }[];
+
   duration: {
     mbbs: string;
     internship: string;
   };
+
   syllabus: {
     year: string;
-    subjects: string;
+    subjects: string[];
   }[];
+
   documents: string[];
+
   fees: {
     structure: {
       label: string;
@@ -70,16 +97,51 @@ export interface CollegeDetailData {
     }[];
     note?: string;
   };
+
   courses: string[];
-  studentLife: string[];
+
+  // ✅ Structured Student Life (UPDATED)
+  studentLife: {
+    title: string;
+    introduction: string[];
+    experience: string[];
+    facilities: {
+      title: string;
+      points: string[];
+    };
+  };
+
+  // ✅ New Section (you added earlier)
+  forIndianStudents: {
+    title: string;
+    introduction: string[];
+    advantages: {
+      title: string;
+      points: {
+        main: string;
+        subPoints: string[];
+      }[];
+    };
+    conclusion: string;
+  };
+
   placements: string[];
+
   hostelFacilities: {
     intro: string;
     features: string[];
   };
-  careerOpportunities: Record<string, string>;
+
+  // Better structure instead of Record
+  careerOpportunities: {
+    title: string;
+    roles: string[];
+  };
+
   recognition: string[];
+
   gallery: string[];
+
   faqs: {
     question: string;
     answer: string;
@@ -100,10 +162,12 @@ export interface MBBSDetailData {
   title: string;
   heroImage: string;
   heroImageMobile: string;
+
   intro: {
     text: string;
     image: string;
   };
+
   quickFacts: {
     country: string;
     capital: string;
@@ -115,6 +179,7 @@ export interface MBBSDetailData {
     popularCities: string;
     safety: string;
   };
+
   quickOverview: {
     courseName: string;
     duration: string;
@@ -123,20 +188,44 @@ export interface MBBSDetailData {
     neet: string;
     recognition: string;
     intake: string;
+    averageFees: string;
+    introfooter: string;
+    
   };
-  forIndianStudents: string;
+
+
+  ForIndianStudents = {
+  title: string;
+
+  introduction: string[];
+
+  advantages: {
+    title: string;
+    points: {
+      main: string;
+      subPoints: string[];
+    }[];
+  };
+
+  conclusion: string;
+};
+
   benefits: string[];
+
   duration: {
     mbbs: string;
     internship: string;
   };
+
   eligibility: {
     academic: string;
     marks: string;
     neet: string;
     age: string;
   };
+
   documents: string[];
+
   indiaVsCountry: {
     fees: { india: string; country: string };
     exam: { india: string; country: string };
@@ -144,6 +233,7 @@ export interface MBBSDetailData {
     exposure: { india: string; country: string };
     infrastructure: { india: string; country: string };
   };
+
   topUniversities: {
     name: string;
     description: string;
@@ -155,16 +245,28 @@ export interface MBBSDetailData {
     totalPackage: string;
     recognition: string;
   }[];
-  whyChooseUs: string[];
+
+  // ✅ FIXED
+  whyChooseUs: {
+    intro: string;
+    points: string[];
+  };
+
+  // ✅ FIXED spacing
   checklist: {
     item: string;
     required: boolean;
   }[];
+
   hostelFacilities: {
     intro: string;
+    subIntro: string;
+    footer: string;
     features: string[];
   };
+
   careerOpportunities: {
+    intro: string;
     practiceInIndia: string;
     postgraduate: string;
     research: string;
@@ -172,6 +274,8 @@ export interface MBBSDetailData {
     teaching: string;
     practiceAbroad: string;
   };
+
+  // ✅ FIXED spacing
   faqs: {
     question: string;
     answer: string;
@@ -513,7 +617,7 @@ export interface EntranceExamData {
   id?: string;
   title: string;
   heroImage: string;
-  mobileImage:string;
+  mobileImage: string;
   intro: string;
   examParts?: string[];
   additionalNote?: string;

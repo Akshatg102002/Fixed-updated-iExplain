@@ -26,32 +26,25 @@ const EntranceExamDetailPage: React.FC<EntranceExamDetailPageProps> = ({ data })
       <div className="bg-white dark:bg-slate-900 font-sans pb-20 animate-fade-in">
 
          {/* ── Hero ── */}
-         <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0">
-
-               <picture>
-                  <source media="(max-width: 768px)" srcSet={data.mobileImage} />
-                  <img
-                     src={data.heroImage}
-                     className="w-full h-full object-cover"
-                     alt={data.title}
-                  />
-               </picture>
-
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/90 via-brand-blue/40 to-transparent"></div>
-            </div>
-
-            <div className="relative z-10 text-center max-w-5xl mx-auto px-4 mt-20">
-               <span className="inline-block px-4 py-2 bg-brand-gold/20 backdrop-blur-md border border-brand-gold/40 text-brand-gold rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
-                  Entrance Examination
-               </span>
-               <h1 className="text-4xl lg:text-7xl font-black text-white mb-6 drop-shadow-xl">
-                  {data.title}
-               </h1>
-            </div>
+         <div className="relative w-full h-[60vh] min-h-[400px] overflow-hidden">
+            <picture>
+               <source
+                  media="(max-width: 768px)"
+                  srcSet={data.mobileImage}
+               />
+               <source
+                  media="(min-width: 769px)"
+                  srcSet={data.heroImage}
+               />
+               <img
+                  src={data.heroImage}
+                  alt={data.title}
+                  className="w-full h-full object-cover"
+               />
+            </picture>
          </div>
 
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20 space-y-16">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 relative z-20 space-y-16">
 
             {/* ── Overview ── */}
             {(data.intro || data.examParts || data.additionalNote) && (

@@ -105,8 +105,8 @@ const buildMBBSIndiaStateData = (state: string, region: string): MBBSIndiaColleg
 const uttarPradeshMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Uttar Pradesh',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://www.google.com/search?q=https://example.com/images/up-medical-hero.jpg',
-  heroImageMobile: 'https://www.google.com/search?q=https://example.com/images/up-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360928/MBBS_IN_UTTAR_PRADESH.jpg_pxdc00.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360929/MBBS_IN_RAJASTHAN_2.jpg_uqww5y.jpg',
   intro: {
     text: 'MBBS in Uttar Pradesh is one of the most popular choices among medical aspirants in India who want to become successful doctors through quality and affordable medical education. Uttar Pradesh has rapidly developed into a major hub for medical studies, offering a large number of government and private medical colleges with modern infrastructure, advanced laboratories, and well-equipped teaching hospitals. This makes it a preferred destination for students seeking MBBS admission in Uttar Pradesh as well as a strong foundation for a medical career in India.\n\nPursuing MBBS in Uttar Pradesh for students provides excellent clinical exposure because students get hands-on training in high-patient-volume hospitals. This real-time experience helps them develop strong practical skills along with theoretical knowledge. Most medical colleges in the state are approved by the National Medical Commission (NMC), ensuring standardized and quality education aligned with national medical guidelines.\n\nStudents who choose MBBS in Uttar Pradesh benefit from a wide range of options, including highly reputed government medical colleges with low fees and private institutions with modern facilities. Admission is strictly based on NEET-UG scores, making it a transparent and merit-based process for all students across India.\n\nAlong with Uttar Pradesh, MBBS in India is considered one of the most competitive and respected medical education systems globally. India offers world-class medical training, experienced faculty, and diverse clinical exposure due to its large and varied patient population. This makes MBBS in India a strong foundation for students aiming to practice medicine both nationally and internationally.\n\nOverall, MBBS in Uttar Pradesh is an excellent choice for students who want affordable education, strong clinical training, and a successful medical career. Combined with the broader scope of MBBS in India, it provides students with the right platform to achieve their dream of becoming professional and skilled doctors in the healthcare sector.'
   },
@@ -446,8 +446,8 @@ const uttarPradeshMBBSData: MBBSIndiaCollegeDetailData = {
 const rajasthanMBBSData: MBBSIndiaCollegeDetailData = {
   title: 'MBBS in Rajasthan',
   coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
-  heroImage: 'https://example.com/images/rajasthan-medical-hero.jpg',
-  heroImageMobile: 'https://example.com/images/rajasthan-medical-hero-mobile.jpg',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777363227/MBBS_IN_RAJASTHAN.jpg_onpise.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360929/MBBS_IN_RAJASTHAN_2.jpg_uqww5y.jpg',
   intro: {
     text: `MBBS in Rajasthan is a highly preferred option for medical aspirants who are looking for quality education, affordable fees, and excellent clinical exposure in India. Rajasthan has emerged as a strong hub for medical studies, offering a wide range of government and private medical colleges equipped with modern infrastructure, advanced laboratories, and well-established teaching hospitals. This makes it a popular destination for students seeking MBBS admission in Rajasthan and aiming to build a successful career in healthcare.
 
@@ -1426,15 +1426,1200 @@ Overall, MBBS in Delhi (2026) is considered a top choice for medical aspirants w
   }
 };
 
+const uttarakhandMBBSData: MBBSIndiaCollegeDetailData = {
+  title: 'MBBS in Uttarakhand',
+  coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360928/MBBS_IN_UTTRAKHAND.jpg_zb3vss.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360927/MBBS_IN_UTTRAKHAND_2.jpg_j91dcd.jpg',
+  intro: {
+    text: 'MBBS in Uttarakhand is a great option for students who want to pursue MBBS in India with quality education, peaceful surroundings, and good clinical exposure. The state is home to several reputed government and private medical colleges that are approved by the National Medical Commission (NMC), ensuring that the degree is recognized across India and internationally.\n\nAdmission to MBBS in Uttarakhand 2026 is based on the NEET (UG) exam, which is mandatory for MBBS admission in India. Students who qualify NEET can participate in both All India Quota (15%) and State Quota (85%) counselling, making the admission process transparent and merit-based.\n\nOne of the key advantages of choosing MBBS in Uttarakhand is the availability of well-established medical colleges with modern infrastructure and experienced faculty. Government colleges offer relatively affordable MBBS in India, while private colleges provide additional opportunities for students with higher budgets. The state also offers a good learning environment, away from the hustle of big cities, which helps students focus better on their medical studies.\n\nUttarakhand has a growing healthcare system with hospitals that provide decent patient inflow, allowing students to gain practical knowledge and hands-on training, which is essential during MBBS in India. The course structure includes theoretical learning, clinical training, and a compulsory internship, ensuring complete medical education.\n\nAfter completing MBBS in Uttarakhand, students have multiple career opportunities such as pursuing MD/MS, working in hospitals, preparing for government jobs, or starting their own practice. The recognized degree also allows students to explore opportunities abroad after qualifying required exams.\n\nOverall, study MBBS in Uttarakhand is a good choice for students looking for a balanced combination of quality education, a peaceful study environment, and career growth, making it a promising destination for MBBS in India.'
+  },
+  quickOverview: {
+    'Course Name': 'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
+    'Course Duration': '5.5 Years (4.5 Years Academic + 1 Year Internship)',
+    'Recognition': 'National Medical Commission (NMC)',
+    'Admission Process': 'Based on NEET (UG) Exam',
+    'Eligibility Criteria': '10+2 with PCB (Physics, Chemistry, Biology) + NEET Qualified',
+    'Minimum Marks Required': '50% (General), 40% (Reserved), 45% (PWD)',
+    'Counselling Authority': 'HNBUMU (Hemwati Nandan Bahuguna Uttarakhand Medical Education University)',
+    'Quota': '15% All India Quota & 85% State Quota',
+    'Number of Medical Colleges': '10+ Government & Private Colleges',
+    'Internship': '1 Year Compulsory',
+    'Career Opportunities': 'Doctor, MD/MS, Government Jobs, Private Practice'
+  },
+  benefits: {
+    intro: 'Choosing MBBS in Uttarakhand is a great option for students who want to pursue MBBS in India in a peaceful environment with quality education and good clinical exposure. Here are the key reasons why Uttarakhand is a strong choice in 2026:',
+    items: [
+      {
+        heading: 'Quality Medical Education',
+        details: 'Uttarakhand has several NMC-approved medical colleges that provide high-quality education and recognised MBBS degrees.'
+      },
+      {
+        heading: 'Peaceful & Focused Study Environment',
+        details: 'The state offers a calm and pollution-free environment, ideal for students to focus on their medical studies in India.'
+      },
+      {
+        heading: 'Good Clinical Exposure',
+        details: 'Hospitals in Uttarakhand provide decent patient flow, helping students gain practical experience and hands-on training.'
+      },
+      {
+        heading: 'Transparent NEET-Based Admission',
+        details: 'Admission to MBBS in Uttarakhand 2026 is strictly based on NEET, ensuring a fair and merit-based selection process.'
+      },
+      {
+        heading: 'Affordable Government Colleges',
+        details: 'Government medical colleges offer relatively low-cost MBBS in India, making it accessible for many students.'
+      },
+      {
+        heading: 'Modern Infrastructure in Private Colleges',
+        details: 'Private medical colleges in Uttarakhand provide advanced facilities, labs, and infrastructure for better learning.'
+      },
+      {
+        heading: 'Growing Healthcare Sector',
+        details: 'The state is improving its healthcare system, creating better opportunities for medical students and future doctors.'
+      },
+      {
+        heading: 'Ideal for MBBS in India Aspirants',
+        details: 'For students who prefer to study MBBS in India instead of going abroad, Uttarakhand offers a balanced mix of education, environment, and career growth.'
+      }
+    ]
+  },
+  SyllabusIntro: 'The MBBS in Uttarakhand syllabus follows the guidelines of the National Medical Commission (NMC) and is aligned with the standard MBBS in India curriculum. The course is structured over 5.5 years, including 1 year of compulsory internship, focusing on both theoretical knowledge and practical training.',
+  syllabus: {
+    headers: ['Phase / Year', 'Subjects Included'],
+    table: [
+      {
+        'Phase / Year': '1st Year (Pre-Clinical)',
+        'Subjects Included': 'Anatomy, Physiology, Biochemistry'
+      },
+      {
+        'Phase / Year': '2nd Year (Para-Clinical)',
+        'Subjects Included': 'Pathology, Pharmacology, Microbiology, Forensic Medicine, Community Medicine (Part 1)'
+      },
+      {
+        'Phase / Year': '3rd Year (Clinical – Part 1)',
+        'Subjects Included': 'Community Medicine (Part 2), Ophthalmology, ENT (Ear, Nose & Throat)'
+      },
+      {
+        'Phase / Year': 'Final Year (Clinical – Part 2)',
+        'Subjects Included': 'General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Orthopedics, Dermatology, Psychiatry, Radiology'
+      },
+      {
+        'Phase / Year': 'Internship (1 Year)',
+        'Subjects Included': 'Rotational Training in Medicine, Surgery, Pediatrics, Emergency, etc.'
+      }
+    ]
+  },
+  fees: {
+    note: 'Uttarakhand has several reputed MBBS colleges in India, including top government and private institutions known for quality education, infrastructure, and clinical exposure. Admission to these colleges is based on NEET (UG).',
+    sections: [
+      {
+        title: 'Top MBBS Colleges in Uttarakhand (2026)',
+        headers: ['College Name', 'ESTD. YEAR', 'State quota (₹)', 'Mgmt (₹)', 'NRI'],
+        table: [
+          { 'College Name': 'Graphic Era Institute of Medical Sciences, Dehradun', 'ESTD. YEAR': '2024', 'State quota (₹)': '24,50,000', 'Mgmt (₹)': '–', 'NRI': '$50,000' },
+          { 'College Name': 'Himalayan Institute of Medical Sciences, Dehradun', 'ESTD. YEAR': '1995', 'State quota (₹)': '15,75,000', 'Mgmt (₹)': '21,00,000', 'NRI': '–' },
+          { 'College Name': 'Shri Guru Ram Rai Institute of Medical & Health Sciences, Dehradun', 'ESTD. YEAR': '2006', 'State quota (₹)': '15,75,000', 'Mgmt (₹)': '21,00,000', 'NRI': '$1,60,000 (FOR ENTIRE COURSE)' },
+          { 'College Name': 'Gautam Buddha Chikitsa Mahavidyalaya, Dehradun', 'ESTD. YEAR': '2021', 'State quota (₹)': '15,75,000', 'Mgmt (₹)': '21,00,000', 'NRI': '$36,500' }
+        ]
+      }
+    ]
+  },
+  duration: {
+    headers: ['Program Component', 'Duration'],
+    table: [
+      { 'Program Component': 'Academic Study', 'Duration': '4.5 Years' },
+      { 'Program Component': 'Compulsory Internship', 'Duration': '1 Year' },
+      { 'Program Component': 'Total MBBS Duration', 'Duration': '5.5 Years' }
+    ]
+  },
+  scholarshipIntro: 'Students pursuing MBBS in Uttarakhand can explore scholarships and financial support opportunities provided by the state government and respective institutions based on eligibility and category.',
+  scholarships: [
+    { title: 'State & Central Scholarships', details: 'Eligible students may apply for government scholarship schemes through official portals.' },
+    { title: 'Institutional Financial Support', details: 'Some colleges may provide assistance based on merit, category, or economic background.' }
+  ],
+  eligibility: {
+    headers: ['Criteria', 'Details'],
+    table: [
+      { Criteria: 'Educational Qualification (UG)', Details: '10+2 with Physics, Chemistry, Biology & English' },
+      { Criteria: 'Minimum Marks (UG)', Details: '50% (General), 40% (SC/ST/OBC), 45% (PWD)' },
+      { Criteria: 'Entrance Exam (UG)', Details: 'NEET (UG) Qualified' },
+      { Criteria: 'Age Limit (UG)', Details: 'Minimum 17 years (as on 31st Dec of admission year)' },
+      { Criteria: 'Nationality (UG)', Details: 'Indian / OCI' },
+      { Criteria: 'Domicile (UG)', Details: 'Required for State Quota (Uttarakhand candidates)' },
+      { Criteria: 'Educational Qualification (PG)', Details: 'MBBS Degree from NMC-recognized college' },
+      { Criteria: 'Internship (PG)', Details: '1-year compulsory internship completed' },
+      { Criteria: 'Entrance Exam (PG)', Details: 'NEET PG Qualified' },
+      { Criteria: 'Registration (PG)', Details: 'Valid NMC/State Medical Council Registration' },
+      { Criteria: 'Domicile (PG)', Details: 'Required for State Quota (Uttarakhand candidates)' }
+    ]
+  },
+  documents: [
+    { document: 'NEET (UG) Scorecard', details: 'Proof of qualification for MBBS admission' },
+    { document: 'NEET Admit Card', details: 'Issued by NTA' },
+    { document: '10th Marksheet & Certificate', details: 'Proof of date of birth' },
+    { document: '12th Marksheet & Certificate', details: 'Proof of PCB qualification' },
+    { document: 'Transfer Certificate (TC)', details: 'From last attended school' },
+    { document: 'Migration Certificate', details: 'Required for other boards' },
+    { document: 'Domicile Certificate', details: 'For state quota (Uttarakhand candidates)' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS candidates (if applicable)' },
+    { document: 'Valid ID Proof', details: 'Aadhar Card / PAN Card / Passport' },
+    { document: 'Allotment Letter', details: 'Issued after counseling' }
+  ],
+  documentsPG: [
+    { document: 'NEET PG Scorecard', details: 'Mandatory for PG admission' },
+    { document: 'NEET PG Admit Card', details: 'Issued by NBE' },
+    { document: 'MBBS Degree Certificate', details: 'From NMC-recognized college' },
+    { document: 'MBBS Mark Sheets', details: 'All professional years' },
+    { document: 'Internship Completion Certificate', details: '1-year compulsory internship proof' },
+    { document: 'Medical Registration Certificate', details: 'NMC/State Medical Council' },
+    { document: 'Domicile Certificate', details: 'For state quota' },
+    { document: 'Category Certificate', details: 'Reserved category candidates (if applicable)' },
+    { document: 'Valid ID Proof', details: 'Aadhar Card / PAN Card / Passport' },
+    { document: 'Allotment Letter', details: 'Issued after counselling' }
+  ],
+  admissionProcess: {
+    ug: {
+      title: 'MBBS in Uttarakhand – Admission Process (2026)',
+      intro: 'The admission process for MBBS in Uttarakhand is based on the NEET (UG) exam, following the standard procedure of MBBS in India. Students must qualify NEET and participate in centralised counselling to secure a seat in government or private medical colleges.',
+      steps: [
+        { step: '1. Qualify NEET (UG)', details: 'Clear NEET with required cutoff for MBBS in India' },
+        { step: '2. Online Registration', details: 'Register on HNBUMU official counseling portal' },
+        { step: '3. Document Verification', details: 'Upload and verify required documents' },
+        { step: '4. Choice Filling', details: 'Select preferred MBBS colleges in Uttarakhand' },
+        { step: '5. Seat Allotment', details: 'Based on NEET rank, category, and preferences' },
+        { step: '6. Fee Payment', details: 'Pay admission fees to confirm seat' },
+        { step: '7. Reporting to College', details: 'Report to allotted college for final admission' }
+      ]
+    },
+    pg: {
+      title: 'MD/MS in Uttarakhand – Admission Process (2026)',
+      intro: 'The admission process for MD/MS in Uttarakhand is based on the NEET PG exam, following the standard system of PG medical admission in India. Candidates must qualify NEET PG and participate in counselling to secure a seat in postgraduate medical courses.',
+      steps: [
+        { step: '1. Qualify NEET PG', details: 'Clear NEET PG with required cutoff for MD/MS in India' },
+        { step: '2. Counseling Registration', details: 'Register on MCC (AIQ) or HNBUMU portal' },
+        { step: '3. Document Verification', details: 'Upload and verify required documents' },
+        { step: '4. Choice Filling', details: 'Select preferred colleges and MD/MS specializations' },
+        { step: '5. Seat Allotment', details: 'Based on NEET PG rank, category, and preferences' },
+        { step: '6. Fee Payment', details: 'Pay admission fees to confirm seat' },
+        { step: '7. Reporting to College', details: 'Report to allotted institute for final admission' }
+      ]
+    }
+  },
+  studentSupport: 'Students in Uttarakhand benefit from excellent academic mentorship and a peaceful environment conducive to intense medical studies.',
+  hostelFacilities: 'Most medical colleges in Uttarakhand provide secure and well-equipped hostel facilities with mess services and 24/7 security.',
+  studentLife: 'Student life in Uttarakhand blends rigorous medical training with the serenity of the surrounding environment, offering a balanced and healthy lifestyle.',
+  recognition: 'Medical colleges in Uttarakhand are approved by the National Medical Commission (NMC), ensuring globally recognized education.',
+  whyChooseUsIntro: 'Choosing the right consultancy is crucial when planning MBBS in Uttarakhand or overall MBBS in India. iExplain Education is a trusted name that provides complete guidance and support to ensure a smooth admission journey.',
+  whyChooseUs: [
+    'Personalized Career Counselling: iExplain offers one-on-one counselling based on your NEET score, budget, and preferences, helping you choose the best colleges in Uttarakhand.',
+    'Complete Admission Support: From registration to final admission, they provide end-to-end assistance, making the MBBS admission process simple and stress-free.',
+    'Student-Centric & Transparent Approach: The consultancy focuses on student needs, not profit, offering honest guidance and accurate information for better decision-making.',
+    'Experienced Team & Expert Guidance: With a skilled and knowledgeable team, they provide professional support for both UG (MBBS) and PG (MD/MS) admissions.',
+    'One-Stop Solution for Medical Aspirants: They provide complete services including Career counseling, College selection, Admission guidance, Scholarship & education loan support, and Documentation assistance.',
+    'Wide Range of Opportunities: iExplain helps students explore options not only in Uttarakhand but across India and abroad, increasing chances of admission.',
+    'Hassle-Free Process: They simplify complex procedures like application, documentation, and counselling, ensuring a smooth and tension-free admission experience.'
+  ],
+  conclusion: 'In conclusion, MBBS in Uttarakhand is a great choice for students who want to pursue MBBS in India with quality education in a peaceful and focused environment. The state offers NMC-approved medical colleges, NEET-based transparent admission, and a balanced mix of government and private institutions.\n\nWith decent clinical exposure, improving healthcare infrastructure, and affordable options in government colleges, MBBS in Uttarakhand 2026 provides a strong foundation for a successful medical career. Students also benefit from hands-on training, internships, and multiple career opportunities after graduation.\n\nOverall, choosing to study MBBS in Uttarakhand ensures a combination of recognized education, good learning environment, and career growth, making it a reliable option for aspiring doctors in India.',
+  faqs: [
+    {
+      question: 'What is the eligibility for MBBS in Uttarakhand?',
+      answer: 'Candidates must complete 10+2 with Physics, Chemistry, and Biology and qualify the NEET (UG) exam to apply for MBBS in Uttarakhand.'
+    },
+    {
+      question: 'Is NEET compulsory for MBBS in Uttarakhand?',
+      answer: 'Yes, NEET is mandatory for admission to all government and private MBBS colleges in Uttarakhand, as per MBBS in India rules.'
+    },
+    {
+      question: 'What is the duration of MBBS in Uttarakhand?',
+      answer: 'The course duration is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship.'
+    },
+    {
+      question: 'How many MBBS colleges are there in Uttarakhand?',
+      answer: 'Uttarakhand has around 10–12 medical colleges offering MBBS seats.'
+    },
+    {
+      question: 'Can other state students apply for MBBS in Uttarakhand?',
+      answer: 'Yes, students from other states can apply through the All India Quota (15%), while state quota seats require Uttarakhand domicile.'
+    },
+    {
+      question: 'Who conducts MBBS counselling in Uttarakhand?',
+      answer: 'The HNBUMU (Hemwati Nandan Bahuguna Uttarakhand Medical Education University) conducts state counselling.'
+    },
+    {
+      question: 'Is MBBS in Uttarakhand a good option?',
+      answer: 'Yes, due to quality education, peaceful environment, and recognized colleges, MBBS in Uttarakhand is a good option for MBBS in India.'
+    },
+    {
+      question: 'What documents are required for MBBS admission in Uttarakhand?',
+      answer: 'Key documents include NEET scorecard, 10th & 12th marksheets, domicile certificate, ID proof, and allotment letter.'
+    },
+    {
+      question: 'What are the career options after MBBS in Uttarakhand?',
+      answer: 'After completing MBBS in Uttarakhand, students can pursue MD/MS, work in hospitals, apply for government jobs, or start private practice.'
+    }
+  ],
+  internship: {
+    intro: 'Internship is important during your MBBS degree. Therefore, it is crucial to know about the pattern of MBBS internship. See the table given below to gain knowledge about it.',
+    headers: ['Subjects', 'Time Duration'],
+    table: [
+      { Subjects: 'Community Medicine', 'Time Duration': '2 months' },
+      { Subjects: 'Medicine, including Psychiatry', 'Time Duration': '2 months' },
+      { Subjects: 'Obstetrics/Gynecology', 'Time Duration': '2 months' },
+      { Subjects: 'Pediatrics', 'Time Duration': '1 month' },
+      { Subjects: 'Orthopedics including PMR', 'Time Duration': '1 month' },
+      { Subjects: 'ENT', 'Time Duration': '15 days' },
+      { Subjects: 'Ophthalmology', 'Time Duration': '15 days' },
+      { Subjects: 'Casualty', 'Time Duration': '15 days' },
+      { Subjects: 'Elective Posting', 'Time Duration': '15 days' },
+      { Subjects: 'Total', 'Time Duration': '12 months' }
+    ]
+  },
+  cutOff: {
+    title: 'UTTARAKHAND NEET CUTOFF 2025',
+    headers: ['College Name', '1st Round', '2nd Round', '3rd Round', 'Stray Vacancy Round'],
+    table: [
+      {
+        'College Name': 'Himalayan Institute of Medical Science, Jollygrant Dehradun',
+        '1st Round': 'State Gen: 126014 (447) | AIQ: 125238 (448)',
+        '2nd Round': 'State Gen: 152803 (431) | AIQ: 195625 (408)',
+        '3rd Round': 'State Gen: 45373 (506) | AIQ: 362491 (331)',
+        'Stray Vacancy Round': 'N/A'
+      },
+      {
+        'College Name': 'Shri Guru RamRai Institute of Medical & Health Sciences, Dehradun',
+        '1st Round': 'State Gen: 226786 (392) | AIQ: 201286 (405)',
+        '2nd Round': 'State Gen: 297185 (358) | AIQ: 442891 (300)',
+        '3rd Round': 'State Gen: 297185 (358) | AIQ: 442891 (300)',
+        'Stray Vacancy Round': 'State Gen: 297185 (358) | AIQ: 442891 (300)'
+      },
+      {
+        'College Name': 'Gautam Buddha Chiktsa Mahavidayalaya, Dehradun',
+        '1st Round': 'State Gen: 393337 (318) | AIQ: 330639 (344)',
+        '2nd Round': 'State Gen: 488806 (285) | AIQ: 529797 (271)',
+        '3rd Round': 'State Gen: 681975 (228) | AIQ: 690510 (226) | NRI: 1295398 (115)',
+        'Stray Vacancy Round': 'State Gen: 760878 (209) | AIQ: 702989 (223) | NRI: 1244662 (122)'
+      }
+    ]
+  }
+};
+
+const biharMBBSData: MBBSIndiaCollegeDetailData = {
+  title: 'MBBS in Bihar',
+  coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777363223/MBBS_IN_BIHAR.jpg_ur91nh.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360959/MBBS_IN_BIHAR_2.jpg_lixtxe.jpg',
+  intro: {
+    text: 'MBBS in Bihar is one of the most preferred choices for students who wish to pursue MBBS in India with a combination of affordability, quality education, and strong clinical exposure. As part of the growing landscape of medical education in India, Bihar offers a range of government and private medical colleges that are approved by the National Medical Commission (NMC). This ensures that students pursuing MBBS in Bihar receive a recognized degree that is valid across India and internationally.\n\nAdmission to MBBS in Bihar 2026 is conducted through the NEET (UG) examination, which is the standard entrance test for MBBS admission in India. Students who qualify NEET can participate in the state and All India counseling process to secure seats in top medical colleges. This makes Study MBBS in Bihar a transparent and merit-based process, similar to other top destinations for MBBS in India.\n\nOne of the major advantages of choosing MBBS in Bihar is the affordability factor, especially in government colleges where the tuition fees are significantly lower compared to many other states. This makes it an excellent opportunity for students who are looking for low-cost MBBS in India without compromising on the quality of education. Additionally, students gain hands-on experience through hospital training, patient interaction, and internships, which are essential parts of medical studies in India.\n\nThe state is continuously improving its healthcare and education infrastructure, making MBBS in Bihar an emerging destination for medical aspirants. With a growing number of hospitals and healthcare facilities, students get better practical exposure, which is a crucial advantage when pursuing MBBS in India. After completing the course, students have multiple career options including higher studies like MD/MS, government jobs, or private practice.\n\nOverall, Study MBBS in Bihar is a smart choice for students aiming to build a successful career in medicine while staying within India. With recognized colleges, affordable fees, NEET-based admission, and improving facilities, MBBS in Bihar stands as a strong option among the top choices for MBBS in India.'
+  },
+  quickOverview: {
+    'Course Name': 'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
+    'Course Duration': '5.5 Years (4.5 Years Academic + 1 Year Internship)',
+    'Recognition': 'National Medical Commission (NMC)',
+    'Admission Process': 'Based on NEET (UG) Exam',
+    'Eligibility Criteria': '10+2 with PCB (Physics, Chemistry, Biology) + NEET Qualified',
+    'Minimum Marks Required': '50% (General), 40% (Reserved Categories)',
+    'Counseling Authority': 'BCECEB (Bihar Combined Entrance Competitive Examination Board)',
+    'Number of Medical Colleges': 'Government & Private Colleges Available',
+    'Career Opportunities': 'Doctor, MD/MS, Government Jobs, Private Practice',
+    'Internship': 'Compulsory (1 Year)',
+    'Medium of Instruction': 'English'
+  },
+  benefits: {
+    intro: 'Choosing MBBS in Bihar is becoming a smart decision for students who want to pursue MBBS in India with quality education and affordability. Here are the key reasons why Bihar is a great option in 2026:',
+    items: [
+      {
+        heading: 'Affordable MBBS Fees',
+        details: 'Government medical colleges in Bihar offer low-cost MBBS in India, making it accessible for students from all financial backgrounds.'
+      },
+      {
+        heading: 'Recognized Medical Colleges',
+        details: 'All major colleges are approved by the National Medical Commission (NMC), ensuring your degree is valid across India and abroad.'
+      },
+      {
+        heading: 'NEET-Based Transparent Admission',
+        details: 'Admission to MBBS in Bihar 2026 is purely based on NEET, making the process fair, merit-based, and aligned with MBBS admission in India.'
+      },
+      {
+        heading: 'Good Clinical Exposure',
+        details: 'With a large patient base in government hospitals, students get strong practical experience, which is essential for medical training.'
+      },
+      {
+        heading: 'Growing Medical Infrastructure',
+        details: 'Bihar is rapidly improving its healthcare system, hospitals, and medical colleges, enhancing opportunities for medical studies in India.'
+      },
+      {
+        heading: 'Availability of Government & Private Colleges',
+        details: 'Students have multiple options with both government and private MBBS colleges in Bihar, increasing chances of admission.'
+      },
+      {
+        heading: 'Internship & Career Opportunities',
+        details: 'Compulsory internship and increasing demand for doctors open doors to careers in hospitals, clinics, or higher studies like MD/MS.'
+      },
+      {
+        heading: 'Ideal for MBBS in India Aspirants',
+        details: 'For students who prefer to study MBBS in India instead of going abroad, Bihar offers a strong mix of affordability, recognition, and career growth.'
+      }
+    ]
+  },
+  SyllabusIntro: 'The MBBS in Bihar syllabus follows the guidelines set by the National Medical Commission (NMC), similar to the standard MBBS in India curriculum. The course is divided into 3 main phases over 5.5 years, including 1 year of compulsory internship.',
+  syllabus: {
+    headers: ['Phase / Year', 'Subjects Included'],
+    table: [
+      {
+        'Phase / Year': '1st Year (Pre-Clinical)',
+        'Subjects Included': 'Anatomy, Physiology, Biochemistry'
+      },
+      {
+        'Phase / Year': '2nd Year (Para-Clinical)',
+        'Subjects Included': 'Pathology, Pharmacology, Microbiology, Forensic Medicine, Community Medicine (Part 1)'
+      },
+      {
+        'Phase / Year': '3rd Year (Clinical – Part 1)',
+        'Subjects Included': 'Community Medicine (Part 2), Ophthalmology, ENT (Ear, Nose & Throat)'
+      },
+      {
+        'Phase / Year': 'Final Year (Clinical – Part 2)',
+        'Subjects Included': 'General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Orthopedics, Dermatology, Psychiatry, Radiology'
+      },
+      {
+        'Phase / Year': 'Internship (1 Year)',
+        'Subjects Included': 'Rotational Training in Medicine, Surgery, Pediatrics, Emergency, etc.'
+      }
+    ]
+  },
+  fees: {
+    note: 'Bihar has several reputed MBBS colleges in India that offer quality medical education, strong clinical exposure, and affordable fees—especially in government institutions. Below is a list of the top MBBS colleges in Bihar 2026:',
+    sections: [
+      {
+        title: 'Top MBBS Colleges in Bihar (2026)',
+        headers: ['College Name', 'Location', 'Annual Fees', 'NRI Fees'],
+        table: [
+          { 'College Name': 'Katihar Medical College', 'Location': 'Katihar', 'Annual Fees': '₹11,05,000', 'NRI Fees': '$28,000' },
+          { 'College Name': 'Himalaya Medical College and Hospital', 'Location': 'Patna', 'Annual Fees': '₹16,50,000', 'NRI Fees': '$27,500' },
+          { 'College Name': 'Netaji subhas medical college and hospital', 'Location': 'Patna', 'Annual Fees': '₹16,00,000', 'NRI Fees': '$35,000' },
+          { 'College Name': 'Narayan Medical College', 'Location': 'Sasaram', 'Annual Fees': '₹12,25,000', 'NRI Fees': '$25,000' },
+          { 'College Name': 'Mata Gujri Memorial Medical College', 'Location': 'Kishanganj', 'Annual Fees': '₹9,63,000', 'NRI Fees': '–' },
+          { 'College Name': 'Lord Buddha Koshi Medical College', 'Location': 'Saharsa', 'Annual Fees': '₹12,00,000', 'NRI Fees': '$30,000' },
+          { 'College Name': 'Madhubani Medical College', 'Location': 'Madhubani', 'Annual Fees': '₹14,00,000', 'NRI Fees': '$30,000' },
+          { 'College Name': 'RDJM medical college and hospital', 'Location': 'Muzaffarpur', 'Annual Fees': '₹11,90,000', 'NRI Fees': '$25,000' },
+          { 'College Name': 'Shri narayana medical institute & hospital', 'Location': 'Saharsa', 'Annual Fees': '₹12,05,000', 'NRI Fees': '$30,000' }
+        ]
+      }
+    ]
+  },
+  duration: {
+    headers: ['Program Component', 'Duration'],
+    table: [
+      { 'Program Component': 'Academic Study', 'Duration': '4.5 Years' },
+      { 'Program Component': 'Compulsory Internship', 'Duration': '1 Year' },
+      { 'Program Component': 'Total MBBS Duration', 'Duration': '5.5 Years' }
+    ]
+  },
+  scholarshipIntro: 'Students pursuing MBBS in Bihar can explore scholarships and financial support opportunities provided by the state government, particularly aimed at economically weaker sections and reserved categories.',
+  scholarships: [
+    { title: 'State & Central Scholarships', details: 'Eligible students may apply for government scholarship schemes through official portals.' },
+    { title: 'Institutional Financial Support', details: 'Some colleges may provide assistance based on merit, category, or economic background.' }
+  ],
+  eligibility: {
+    headers: ['Criteria', 'Details'],
+    table: [
+      { Criteria: 'Educational Qualification (UG)', Details: '10+2 with Physics, Chemistry, Biology & English' },
+      { Criteria: 'Minimum Marks (UG)', Details: '50% (General), 40% (SC/ST/OBC), 45% (PWD)' },
+      { Criteria: 'Entrance Exam (UG)', Details: 'NEET (UG) Qualified' },
+      { Criteria: 'Age Limit (UG)', Details: 'Minimum 17 years (as on 31st Dec of admission year)' },
+      { Criteria: 'Nationality (UG)', Details: 'Indian / OCI' },
+      { Criteria: 'Domicile (UG)', Details: 'Required for State Quota (Bihar students)' },
+      { Criteria: 'Educational Qualification (PG)', Details: 'MBBS Degree from NMC recognized college' },
+      { Criteria: 'Internship (PG)', Details: '1-year compulsory internship completed' },
+      { Criteria: 'Entrance Exam (PG)', Details: 'NEET PG Qualified' },
+      { Criteria: 'Registration (PG)', Details: 'Valid NMC/State Medical Council Registration' },
+      { Criteria: 'Domicile (PG)', Details: 'Required for State Quota (Bihar candidates)' }
+    ]
+  },
+  documents: [
+    { document: 'NEET (UG) Scorecard', details: 'Proof of qualification for MBBS admission in India' },
+    { document: 'NEET Admit Card', details: 'Issued by NTA' },
+    { document: '10th Marksheet & Certificate', details: 'For date of birth verification' },
+    { document: '12th Marksheet & Certificate', details: 'Proof of PCB qualification' },
+    { document: 'Transfer Certificate (TC)', details: 'From last attended school' },
+    { document: 'Migration Certificate', details: 'Required for students from other boards/universities' },
+    { document: 'Domicile Certificate', details: 'Mandatory for Bihar state quota seats' },
+    { document: 'Category Certificate', details: 'For SC/ST/OBC/EWS candidates (if applicable)' },
+    { document: 'Character Certificate', details: 'Issued by school/college' },
+    { document: 'Allotment Letter', details: 'Issued after counseling seat allotment' },
+    { document: 'Valid ID Proof', details: 'Aadhar Card / PAN Card / Passport' }
+  ],
+  documentsPG: [
+    { document: 'NEET PG Scorecard', details: 'Mandatory for MD/MS admission in India' },
+    { document: 'NEET PG Admit Card', details: 'Issued by NBE' },
+    { document: 'MBBS Degree Certificate', details: 'From a recognized medical college' },
+    { document: 'MBBS Mark Sheets', details: 'All professional year mark sheets' },
+    { document: 'Internship Completion Certificate', details: 'Proof of 1-year compulsory internship' },
+    { document: 'Medical Registration Certificate', details: 'Issued by NMC/State Medical Council' },
+    { document: 'Domicile Certificate', details: 'Required for Bihar state quota' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS candidates (if applicable)' },
+    { document: 'ID Proof', details: 'Aadhar Card / PAN Card / Passport' },
+    { document: 'Allotment Letter', details: 'Issued after counseling seat allotment' }
+  ],
+  admissionProcess: {
+    ug: {
+      title: 'MBBS in Bihar – Admission Process (2026)',
+      intro: 'The admission process for MBBS in Bihar is completely based on the NEET (UG) exam, similar to the overall MBBS in India admission system. Students must follow a step-by-step procedure to secure a seat in government or private medical colleges.',
+      steps: [
+        { step: '1. Qualify NEET (UG)', details: 'Appear and clear NEET exam with required cutoff for MBBS in India' },
+        { step: '2. Registration for Counseling', details: 'Register on BCECEB official website for Bihar state counselling.' },
+        { step: '3. Choice Filling', details: 'Select preferred MBBS colleges in Bihar (government/private)' },
+        { step: '4. Seat Allotment', details: 'Seats allotted based on NEET rank, category, and preferences' },
+        { step: '5. Document Verification', details: 'Visit allotted center/college for verification of documents' },
+        { step: '6. Fee Payment', details: 'Pay required admission fees to confirm your seat' },
+        { step: '7. Final Admission', details: 'Report to the college and complete admission formalities' }
+      ]
+    },
+    pg: {
+      title: 'MD/MS in Bihar – Admission Process (2026)',
+      intro: 'The admission process for MD/MS in Bihar follows the standard procedure of PG medical admission in India and is based on the NEET PG exam. Candidates who wish to pursue postgraduate medical courses like MD (Doctor of Medicine) or MS (Master of Surgery) must qualify NEET PG and participate in the counselling process.',
+      steps: [
+        { step: '1. Qualify NEET PG', details: 'Appear and clear NEET PG with required cutoff for MD/MS in India' },
+        { step: '2. Counseling Registration', details: 'Register for counseling through MCC (All India Quota) or BCECEB (State)' },
+        { step: '3. Choice Filling', details: 'Select preferred colleges and MD/MS specializations in Bihar' },
+        { step: '4. Seat Allotment', details: 'Allotment based on NEET PG rank, category, and choices' },
+        { step: '5. Document Verification', details: 'Verify documents at the allotted institute/centre.' },
+        { step: '6. Fee Payment', details: 'Pay admission fees to confirm your PG seat' },
+        { step: '7. Final Reporting', details: 'Report to the allotted college and start your MD/MS course' }
+      ]
+    }
+  },
+  studentSupport: 'Bihar institutions offer extensive guidance for state quota applications, excellent clinical exposure in government hospital wards, and support for higher specialization.',
+  hostelFacilities: 'Most medical colleges in Bihar provide hostel facilities with necessary amenities including mess, security, and recreational areas for a comfortable learning environment.',
+  studentLife: 'Students experience a rich academic environment focusing on practical knowledge through heavy patient interactions, creating highly capable doctors ready for any situation.',
+  recognition: 'Colleges in Bihar are fully approved by the National Medical Commission (NMC), giving students the freedom to practice anywhere in India or apply for abroad exams like USMLE or PLAB.',
+  whyChooseUsIntro: 'Choosing the right guidance is as important as choosing the right college. iExplain Education stands out as a trusted partner for students planning MBBS in Bihar and overall MBBS in India due to its student-focused approach and complete admission support.',
+  whyChooseUs: [
+    'Personalized Career Counseling: iExplain Education provides one-on-one guidance based on your NEET score, budget, and career goals, helping you choose the best MBBS colleges in Bihar.',
+    'Complete Admission Assistance: From college selection to final admission, they guide you at every step of the MBBS admission process in India, ensuring a smooth and hassle-free experience.',
+    'Transparent & Student-Centric Approach: Unlike many consultants, iExplain focuses on student needs over profit, providing honest and accurate information for better decision-making.',
+    'Expert Team & Experience: With a skilled team and years of experience, they offer professional guidance for both MBBS in Bihar and other medical courses in India.',
+    'End-to-End Support: They assist in Counseling & college selection, Documentation & admission process, Scholarships & education loans, and Career planning. This makes them a one-stop solution.',
+    'Wide Network & Opportunities: iExplain helps students explore options not only in Bihar but across India and abroad, giving you multiple opportunities based on your profile.',
+    'Trusted Guidance for Medical Aspirants: Their focus on accurate information, transparency, and long-term student success makes them a reliable choice for MBBS aspirants.'
+  ],
+  conclusion: 'In conclusion, MBBS in Bihar is a strong and practical choice for students aiming to pursue MBBS in India with quality education at an affordable cost. With NMC-approved medical colleges, NEET-based transparent admission, and improving healthcare infrastructure, Bihar is steadily emerging as a reliable destination for medical studies.\n\nStudents benefit from low fees in government colleges, good clinical exposure due to a high patient inflow, and multiple career opportunities after graduation. Whether you plan to pursue higher studies like MD/MS or start your medical practice, MBBS in Bihar 2026 provides a solid foundation for a successful career in the healthcare field.\n\nOverall, choosing to study MBBS in Bihar ensures a balanced combination of affordability, recognition, and practical learning, making it an ideal option among the top choices for MBBS in India.',
+  faqs: [
+    {
+      question: 'What is the eligibility for MBBS in Bihar?',
+      answer: 'Candidates must complete 10+2 with Physics, Chemistry, and Biology and qualify the NEET (UG) exam to apply for MBBS in Bihar.'
+    },
+    {
+      question: 'Is NEET compulsory for MBBS in Bihar?',
+      answer: 'Yes, NEET is mandatory for admission to all government and private MBBS colleges in Bihar, as per MBBS in India guidelines.'
+    },
+    {
+      question: 'What is the duration of MBBS in Bihar?',
+      answer: 'The course duration is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship.'
+    },
+    {
+      question: 'How many MBBS colleges are there in Bihar?',
+      answer: 'Bihar has 20+ government and private medical colleges offering MBBS seats.'
+    },
+    {
+      question: 'Can other state students apply for MBBS in Bihar?',
+      answer: 'Yes, students from other states can apply through the All India Quota (15%), while state quota seats require Bihar domicile.'
+    },
+    {
+      question: 'Who conducts MBBS counselling in Bihar?',
+      answer: 'The BCECEB (Bihar Combined Entrance Competitive Examination Board) conducts state counselling for MBBS in Bihar.'
+    },
+    {
+      question: 'Is MBBS in Bihar a good option?',
+      answer: 'Yes, due to affordable fees, recognized colleges, and good clinical exposure, MBBS in Bihar is a great choice for students pursuing MBBS in India.'
+    }
+  ],
+  internship: {
+    intro: 'Internship is important during your MBBS degree. Therefore, it is crucial to know about the pattern of MBBS internship. See the given below table to gain knowledge about it.',
+    headers: ['Subjects', 'Time Duration'],
+    table: [
+      { Subjects: 'Community Medicine', 'Time Duration': '2 months' },
+      { Subjects: 'Medicine, including Psychiatry', 'Time Duration': '2 months' },
+      { Subjects: 'Obstetrics/Gynecology', 'Time Duration': '2 months' },
+      { Subjects: 'Pediatrics', 'Time Duration': '1 month' },
+      { Subjects: 'Orthopedics including PMR', 'Time Duration': '1 month' },
+      { Subjects: 'ENT', 'Time Duration': '15 days' },
+      { Subjects: 'Ophthalmology', 'Time Duration': '15 days' },
+      { Subjects: 'Casualty', 'Time Duration': '15 days' },
+      { Subjects: 'Elective Posting', 'Time Duration': '15 days' },
+      { Subjects: 'Total', 'Time Duration': '12 months' }
+    ]
+  },
+  cutOff: {
+    title: 'BIHAR NEET CUT OFF 2025',
+    headers: ['College Name', '1st Round', '2nd Round', '3rd Round', 'Stray Vacancy Round'],
+    table: [
+      {
+        'College Name': 'Katihar Medical College (Katihar)',
+        '1st Round': 'Gen: 126570 | NRI: 1095369 | Muslim: 235945',
+        '2nd Round': 'Gen: 131914 | NRI: 1291032 | Muslim: 242879',
+        '3rd Round': 'Gen: 135519 | NRI: 1226894 | Muslim: 281732',
+        'Stray Vacancy Round': 'Gen: 110432 | NRI: 973334 | Muslim: N/A'
+      },
+      {
+        'College Name': 'Mata Gujri Memorial Medical College (Kishanganj)',
+        '1st Round': 'Gen: 125773 | NRI: 883088 | Sikh: 382891',
+        '2nd Round': 'Gen: 131136 | NRI: 1037011 | Sikh: 391662',
+        '3rd Round': 'Gen: 61290 | NRI: 850673 | Sikh: 303448',
+        'Stray Vacancy Round': 'Gen: N/A | NRI: 711007 | Sikh: 342064'
+      },
+      {
+        'College Name': 'Narayana Medical College (Sasaram)',
+        '1st Round': 'Gen: 290048 | NRI: 1090355',
+        '2nd Round': 'Gen: 311448 | NRI: 1312625',
+        '3rd Round': 'Gen: 309837 | NRI: 950884',
+        'Stray Vacancy Round': 'Gen: 206926 | NRI: 955380'
+      },
+      {
+        'College Name': 'Madhubani Medical College (Madhubani)',
+        '1st Round': 'Gen: 372645 | NRI: 1262114 | Muslim: 539283',
+        '2nd Round': 'Gen: 411152 | NRI: 1262114 | Muslim: 654149',
+        '3rd Round': 'Gen: 420182 | NRI: 1291032 | Muslim: 641353',
+        'Stray Vacancy Round': 'Gen: 432461 | NRI: 1096287 | Muslim: 433366'
+      },
+      {
+        'College Name': 'Lord Buddha Koshi Medical College (Saharsa)',
+        '1st Round': 'Gen: 307128 | NRI: 1029420',
+        '2nd Round': 'Gen: 307128 | NRI: 1113071',
+        '3rd Round': 'Gen: 284199 | NRI: 847527',
+        'Stray Vacancy Round': 'Gen: 164606'
+      },
+      {
+        'College Name': 'Shri Narayan Medical College (Saharasa)',
+        '1st Round': 'Gen: 350554 | NRI: 980163',
+        '2nd Round': 'Gen: 375450 | NRI: 1296496',
+        '3rd Round': 'Gen: 374603 | NRI: 1295384',
+        'Stray Vacancy Round': 'Gen: 132961'
+      },
+      {
+        'College Name': 'Netaji Subhash Medical College (Patna)',
+        '1st Round': 'Gen: 393690 | NRI: 1057711',
+        '2nd Round': 'Gen: 435788 | NRI: 1265505',
+        '3rd Round': 'Gen: 448421 | NRI: 1188877',
+        'Stray Vacancy Round': 'Gen: 473262 | NRI: 835259'
+      },
+      {
+        'College Name': 'Himalaya Medical College (Patna)',
+        '1st Round': 'Gen: 421385 | NRI: 1222155',
+        '2nd Round': 'Gen: 474551 | NRI: 1313547',
+        '3rd Round': 'Gen: 518365 | NRI: 1220663',
+        'Stray Vacancy Round': 'Gen: 629238 | NRI: 773729'
+      },
+      {
+        'College Name': 'Shyamlal Chanrashekhar Medical College (Khagaria)',
+        '1st Round': 'N/A',
+        '2nd Round': 'Gen: 663497 | NRI: 1006276',
+        '3rd Round': 'Gen: 706195 | NRI: 947466',
+        'Stray Vacancy Round': 'N/A'
+      },
+      {
+        'College Name': 'Viraat Ramayan Institute of Medical Science (East Champaran)',
+        '1st Round': 'N/A',
+        '2nd Round': 'Gen: 684943 | NRI: 1119238',
+        '3rd Round': 'Gen: 685933 | NRI: 1000521',
+        'Stray Vacancy Round': 'N/A'
+      },
+      {
+        'College Name': 'Mahabodhi Medical College (Gaya)',
+        '1st Round': 'N/A',
+        '2nd Round': 'N/A',
+        '3rd Round': 'Gen: 693346 | NRI: 934654',
+        'Stray Vacancy Round': 'N/A'
+      }
+    ]
+  }
+};
+
+const madhyaPradeshMBBSData: MBBSIndiaCollegeDetailData = {
+  title: 'MBBS in Madhya Pradesh',
+  coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360928/MBBS_IN_MADHYA_PRADESH.jpg_vkiotm.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360928/MBBS_IN_MADHYA_PRADESH_2.jpg_kysrdm.jpg',
+  intro: {
+    text: 'MBBS in Madhya Pradesh is one of the most preferred options for students who want to pursue MBBS in India with high-quality education, affordable fee structure, and excellent clinical exposure. As a centrally located state with a strong network of medical institutions, Madhya Pradesh offers a wide range of government and private colleges that are approved by the National Medical Commission (NMC). This ensures that students pursuing MBBS in Madhya Pradesh receive a globally recognized medical degree, making them eligible for practice in India as well as abroad.\n\nAdmission to MBBS in Madhya Pradesh 2026 is conducted through the NEET (UG) examination, which is the mandatory entrance test for MBBS admission in India. Students who qualify NEET can participate in both All India Quota (15%) counseling and State Quota (85%) counseling conducted by the state authorities. This makes the process of study MBBS in Madhya Pradesh completely transparent, merit-based, and aligned with national-level standards of medical education in India.\n\nOne of the biggest advantages of choosing MBBS in Madhya Pradesh is the presence of reputed government medical colleges with very affordable tuition fees, making it an ideal destination for students looking for low-cost MBBS in India. Along with this, private medical colleges also offer good infrastructure, modern facilities, and additional seat availability for students who may not secure a government seat but still wish to pursue MBBS in India.\n\nThe state is known for its well-developed healthcare system and a high patient inflow in hospitals, which provides students with strong clinical exposure and hands-on practical training. This is a crucial aspect of MBBS in India, as real-time patient interaction helps students build confidence and gain essential medical skills. During the course, students also get opportunities for internships in well-equipped hospitals, which further enhances their learning experience.\n\nIn recent years, Madhya Pradesh has made significant improvements in its medical infrastructure, including the establishment of new medical colleges and upgrading existing ones. This has increased the number of MBBS seats and improved the overall quality of medical studies in India within the state. As a result, MBBS in Madhya Pradesh is becoming an emerging hotspot for medical aspirants across the country.'
+  },
+  quickOverview: {
+    'Course Name': 'MBBS (Bachelor of Medicine & Bachelor of Surgery)',
+    'Course Duration': '5.5 Years (4.5 Years Academic + 1 Year Internship)',
+    'Recognition': 'National Medical Commission (NMC)',
+    'Admission Process': 'Based on NEET (UG) Exam',
+    'Eligibility Criteria': '10+2 with PCB (Physics, Chemistry, Biology) + NEET Qualified',
+    'Minimum Marks Required': '50% (General), 40% (Reserved), 45% (PWD)',
+    'Counselling Authority': 'DME (Directorate of Medical Education), Madhya Pradesh',
+    'Quota': '15% All India Quota & 85% State Quota',
+    'Number of Medical Colleges': '25+ Government & Private Colleges',
+    'Medium of Instruction': 'English',
+    'Career Opportunities': 'Doctor, MD/MS, Government Jobs, Private Practice'
+  },
+  benefits: {
+    intro: 'Choosing MBBS in Madhya Pradesh is a smart decision for students who want to pursue MBBS in India with a perfect mix of quality education, affordability, and strong career opportunities. Here are the key reasons why Madhya Pradesh is a top choice in 2026:',
+    items: [
+      {
+        heading: 'Affordable MBBS Fees',
+        details: 'Government medical colleges in Madhya Pradesh offer low-cost MBBS in India, making it accessible for students from all financial backgrounds.'
+      },
+      {
+        heading: 'NMC-Approved Colleges',
+        details: 'All major colleges are recognized by the National Medical Commission (NMC), ensuring your degree is valid across India and internationally.'
+      },
+      {
+        heading: 'Transparent NEET-Based Admission',
+        details: 'Admission to MBBS in Madhya Pradesh 2026 is strictly based on NEET, making the process fair and aligned with MBBS admission in India.'
+      },
+      {
+        heading: 'Excellent Clinical Exposure',
+        details: 'Hospitals in Madhya Pradesh have a high patient flow, giving students strong practical training and real-life medical experience.'
+      },
+      {
+        heading: 'Wide Range of Colleges',
+        details: 'The state has 25+ government and private medical colleges, increasing chances of admission for MBBS aspirants.'
+      },
+      {
+        heading: 'Growing Medical Infrastructure',
+        details: 'Madhya Pradesh is continuously improving its healthcare system, hospitals, and educational facilities, enhancing the quality of medical studies in India.'
+      },
+      {
+        heading: 'Internship & Career Opportunities',
+        details: 'Students get compulsory internships in reputed hospitals and can pursue careers in government jobs, private hospitals, or higher studies like MD/MS.'
+      },
+      {
+        heading: 'Central Location Advantage',
+        details: 'Being centrally located in India, Madhya Pradesh is easily accessible from different parts of the country, making it convenient for students.'
+      }
+    ]
+  },
+  SyllabusIntro: 'The MBBS in Madhya Pradesh syllabus follows the guidelines of the National Medical Commission (NMC) and is similar to the standard MBBS in India curriculum. The course is divided into different phases over 5.5 years, including 1 year of compulsory internship, focusing on both theoretical knowledge and practical training.',
+  syllabus: {
+    headers: ['Phase / Year', 'Subjects Included'],
+    table: [
+      {
+        'Phase / Year': '1st Year (Pre-Clinical)',
+        'Subjects Included': 'Anatomy, Physiology, Biochemistry'
+      },
+      {
+        'Phase / Year': '2nd Year (Para-Clinical)',
+        'Subjects Included': 'Pathology, Pharmacology, Microbiology, Forensic Medicine, Community Medicine (Part 1)'
+      },
+      {
+        'Phase / Year': '3rd Year (Clinical – Part 1)',
+        'Subjects Included': 'Community Medicine (Part 2), Ophthalmology, ENT (Ear, Nose & Throat)'
+      },
+      {
+        'Phase / Year': 'Final Year (Clinical – Part 2)',
+        'Subjects Included': 'General Medicine, General Surgery, Pediatrics, Obstetrics & Gynecology, Orthopedics, Dermatology, Psychiatry, Radiology'
+      },
+      {
+        'Phase / Year': 'Internship (1 Year)',
+        'Subjects Included': 'Rotational Training in Medicine, Surgery, Pediatrics, Emergency, etc.'
+      }
+    ]
+  },
+  fees: {
+    note: 'Madhya Pradesh is home to several reputed MBBS colleges in India, including top government and private institutions known for quality education, infrastructure, and clinical exposure. Below is a list of the top MBBS colleges in Madhya Pradesh 2026:',
+    sections: [
+      {
+        title: 'Top MBBS Colleges in Madhya Pradesh (2026)',
+        headers: ['College Name', 'District', 'Estd', 'Annual Tuition Fee', 'Annual Tuition Fee (NRI)'],
+        table: [
+          { 'College Name': 'Amaltas Institute of Medical Sciences, Dewas', 'District': 'Dewas', 'Estd': '2016', 'Annual Tuition Fee': '₹13,17,000', 'Annual Tuition Fee (NRI)': '₹46,50,000' },
+          { 'College Name': 'Chirayu Medical College and Hospital', 'District': 'Bhopal', 'Estd': '2011', 'Annual Tuition Fee': '₹12,94,890', 'Annual Tuition Fee (NRI)': '₹45,70,200' },
+          { 'College Name': 'Index Medical College Hospital & Research Centre', 'District': 'Indore', 'Estd': '2007', 'Annual Tuition Fee': '₹13,77,000', 'Annual Tuition Fee (NRI)': '₹48,60,000' },
+          { 'College Name': 'L.N. Medical College and Research Centre', 'District': 'Bhopal', 'Estd': '2009', 'Annual Tuition Fee': '₹14,09,300', 'Annual Tuition Fee (NRI)': '₹49,74,000' },
+          { 'College Name': 'LNCT Medical College & Sewakunj Hospital Indore', 'District': 'Indore', 'Estd': '2021', 'Annual Tuition Fee': '₹13,21,070', 'Annual Tuition Fee (NRI)': '₹46,62,600' },
+          { 'College Name': 'Mahaveer Institute of Medical Sciences & Research', 'District': 'Bhopal', 'Estd': '2020', 'Annual Tuition Fee': '₹9,63,635', 'Annual Tuition Fee (NRI)': '₹33,80,000' },
+          { 'College Name': 'Peoples College of Medical Sciences & Research Centre', 'District': 'Bhopal', 'Estd': '2005', 'Annual Tuition Fee': '₹13,89,750', 'Annual Tuition Fee (NRI)': '₹49,05,000' },
+          { 'College Name': 'Ram Krishna Medical College Hospital and Research Center', 'District': 'Bhopal', 'Estd': '2021', 'Annual Tuition Fee': '₹8,67,275', 'Annual Tuition Fee (NRI)': '₹28,62,000' },
+          { 'College Name': 'Ruxmaniben Deepchand Gardi Medical College', 'District': 'Ujjain', 'Estd': '2001', 'Annual Tuition Fee': '₹8,18,181', 'Annual Tuition Fee (NRI)': '₹27,00,000' },
+          { 'College Name': 'RKDF Medical College Hospital & Research Centre', 'District': 'Bhopal', 'Estd': '2014', 'Annual Tuition Fee': '₹13,26,000', 'Annual Tuition Fee (NRI)': '₹46,80,000' },
+          { 'College Name': 'Sri Aurobindo Medical College and Post Graduate Institute', 'District': 'Indore', 'Estd': '2003', 'Annual Tuition Fee': '₹13,81,845', 'Annual Tuition Fee (NRI)': '₹48,77,100' },
+          { 'College Name': 'Sukh Sagar Medical College and Hospital', 'District': 'Bhopal', 'Estd': '2021', 'Annual Tuition Fee': '₹8,59,000', 'Annual Tuition Fee (NRI)': '₹37,80,000' }
+        ]
+      }
+    ]
+  },
+  duration: {
+    headers: ['Program Component', 'Duration'],
+    table: [
+      { 'Program Component': 'Academic Study', 'Duration': '4.5 Years' },
+      { 'Program Component': 'Compulsory Internship', 'Duration': '1 Year' },
+      { 'Program Component': 'Total MBBS Duration', 'Duration': '5.5 Years' }
+    ]
+  },
+  scholarshipIntro: 'Students pursuing MBBS in Madhya Pradesh can explore scholarships and financial support opportunities provided by the state government, particularly aimed at economically weaker sections and reserved categories.',
+  scholarships: [
+    { title: 'State & Central Scholarships', details: 'Eligible students may apply for government scholarship schemes through official portals.' },
+    { title: 'Institutional Financial Support', details: 'Some colleges may provide assistance based on merit, category, or economic background.' }
+  ],
+  eligibility: {
+    headers: ['Criteria', 'Details'],
+    table: [
+      { Criteria: 'Educational Qualification (UG)', Details: '10+2 with Physics, Chemistry, Biology & English' },
+      { Criteria: 'Minimum Marks (UG)', Details: '50% (General), 40% (SC/ST/OBC), 45% (PWD)' },
+      { Criteria: 'Entrance Exam (UG)', Details: 'NEET (UG) Qualified' },
+      { Criteria: 'Age Limit (UG)', Details: 'Minimum 17 years (as on 31st Dec of admission year)' },
+      { Criteria: 'Nationality (UG)', Details: 'Indian / OCI' },
+      { Criteria: 'Domicile (UG)', Details: 'Required for State Quota (MP students)' },
+      { Criteria: 'Educational Qualification (PG)', Details: 'MBBS Degree from NMC-recognized college' },
+      { Criteria: 'Internship (PG)', Details: '1-year compulsory internship completed' },
+      { Criteria: 'Entrance Exam (PG)', Details: 'NEET PG Qualified' },
+      { Criteria: 'Registration (PG)', Details: 'Valid NMC/State Medical Council Registration' },
+      { Criteria: 'Domicile (PG)', Details: 'Required for State Quota (Madhya Pradesh candidates)' }
+    ]
+  },
+  documents: [
+    { document: 'NEET (UG) Scorecard', details: 'Proof of qualification for MBBS admission in India' },
+    { document: 'NEET Admit Card', details: 'Issued by NTA' },
+    { document: '10th Marksheet & Certificate', details: 'For date of birth verification' },
+    { document: '12th Marksheet & Certificate', details: 'Proof of PCB qualification' },
+    { document: 'Transfer Certificate (TC)', details: 'From last attended school' },
+    { document: 'Migration Certificate', details: 'Required for students from other boards' },
+    { document: 'Domicile Certificate', details: 'Mandatory for state quota (MP candidates)' },
+    { document: 'Category Certificate', details: 'For SC/ST/OBC/EWS candidates (if applicable)' },
+    { document: 'Character Certificate', details: 'Issued by school/college' },
+    { document: 'Allotment Letter', details: 'Issued after counselling seat allotment' },
+    { document: 'Valid ID Proof', details: 'Aadhar Card / PAN Card / Passport' }
+  ],
+  documentsPG: [
+    { document: 'NEET PG Scorecard', details: 'Mandatory for MD/MS admission in India' },
+    { document: 'NEET PG Admit Card', details: 'Issued by NBE' },
+    { document: 'MBBS Degree Certificate', details: 'From an NMC-recognized medical college' },
+    { document: 'MBBS Mark Sheets', details: 'All professional year mark sheets' },
+    { document: 'Internship Completion Certificate', details: 'Proof of 1-year compulsory internship' },
+    { document: 'Medical Registration Certificate', details: 'Issued by NMC/State Medical Council' },
+    { document: '10th Certificate', details: 'Proof of date of birth' },
+    { document: '12th Certificate', details: 'Academic verification' },
+    { document: 'Domicile Certificate', details: 'Required for state quota (MP candidates)' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS candidates (if applicable)' },
+    { document: 'Valid ID Proof', details: 'Aadhar Card / PAN Card / Passport' }
+  ],
+  admissionProcess: {
+    ug: {
+      title: 'MBBS in Madhya Pradesh – Admission Process (2026)',
+      intro: 'The admission process for MBBS in Madhya Pradesh is conducted through the NEET (UG) exam, as per the standard procedure of MBBS in India. Students must qualify NEET and participate in the centralised counselling process to secure a seat in government or private medical colleges.',
+      steps: [
+        { step: '1. Qualify NEET (UG)', details: 'Appear and clear NEET with required cutoff for MBBS in India' },
+        { step: '2. Online Registration', details: 'Register on the official DME Madhya Pradesh counseling website' },
+        { step: '3. Document Verification', details: 'Upload and verify required documents online/offline' },
+        { step: '4. Choice Filling', details: 'Select preferred MBBS colleges in Madhya Pradesh' },
+        { step: '5. Seat Allotment', details: 'Based on NEET rank, category, and preferences' },
+        { step: '6. Fee Payment', details: 'Pay admission fees to confirm allotted seat' },
+        { step: '7. Reporting to College', details: 'Visit allotted college and complete admission formalities' }
+      ]
+    },
+    pg: {
+      title: 'MD/MS in Madhya Pradesh – Admission Process (2026)',
+      intro: 'The admission process for MD/MS in Madhya Pradesh is based on the NEET PG exam, following the standard system of PG medical admission in India. Candidates must qualify NEET PG and participate in centralised counselling to secure a seat in postgraduate medical courses.',
+      steps: [
+        { step: '1. Qualify NEET PG', details: 'Clear NEET PG with required cutoff for MD/MS in India' },
+        { step: '2. Counseling Registration', details: 'Register on MCC (AIQ) or DME Madhya Pradesh portal' },
+        { step: '3. Document Verification', details: 'Upload and verify required documents' },
+        { step: '4. Choice Filling', details: 'Select preferred colleges and MD/MS specializations' },
+        { step: '5. Seat Allotment', details: 'Based on NEET PG rank, category, and preferences' },
+        { step: '6. Fee Payment', details: 'Pay admission fees to confirm seat' },
+        { step: '7. Reporting to College', details: 'Report to allotted institute for final admission' }
+      ]
+    }
+  },
+  studentSupport: 'Madhya Pradesh institutions offer excellent guidance for state quota applications, substantial clinical exposure in government hospital wards, and structural support for further specialization.',
+  hostelFacilities: 'Most medical colleges in Madhya Pradesh provide robust hostel facilities with necessary amenities including mess, security, and recreational areas, ensuring a comfortable learning environment for students.',
+  studentLife: 'Students experience a rich academic environment focusing on practical knowledge through heavy patient interactions, creating highly capable doctors ready for any professional scenario.',
+  recognition: 'Medical colleges in Madhya Pradesh are fully approved by the National Medical Commission (NMC), giving students the freedom to practice anywhere in India or apply for global opportunities.',
+  whyChooseUsIntro: 'Choosing the right guidance is crucial when planning MBBS in Madhya Pradesh or overall MBBS in India. iExplain Education is a trusted consultancy that provides complete support to students, ensuring a smooth and successful admission journey.',
+  whyChooseUs: [
+    'Personalized Career Counseling: iExplain Education offers student-focused guidance, analyzing your NEET score, budget, and preferences to help you select the best medical colleges in Madhya Pradesh.',
+    'Complete Admission Support: From counselling registration to final admission, they provide end-to-end assistance, making the process of MBBS admission in India simple and stress-free.',
+    'Student-Centric & Transparent Approach: Unlike many consultants, iExplain focuses on honest advice and transparency, ensuring students get accurate information instead of profit-driven suggestions.',
+    'Experienced Team & Expert Guidance: With a skilled and experienced team, iExplain provides professional support for both UG (MBBS) and PG (MD/MS) medical admissions.',
+    'One-Stop Solution for Medical Aspirants: They offer complete services including Career counselling, College selection, Admission guidance, Scholarship & education loan assistance, and Documentation support.',
+    'Wide Range of Opportunities: iExplain helps students explore options not only in Madhya Pradesh but across India and abroad, giving multiple admission opportunities based on their profile.',
+    'Trusted & Result-Oriented Consultancy: Their mission is to provide accurate information, personalized support, and long-term career guidance, helping students achieve their dream of becoming a doctor.'
+  ],
+  conclusion: 'In conclusion, MBBS in Madhya Pradesh is an excellent choice for students who want to pursue MBBS in India with a perfect balance of affordability, quality education, and strong clinical exposure. The state offers a wide range of NMC-approved government and private medical colleges, ensuring recognized degrees and reliable academic standards.\n\nWith NEET-based transparent admission, affordable fees in government colleges, and continuously improving medical infrastructure, MBBS in Madhya Pradesh 2026 provides great opportunities for aspiring doctors. Students also benefit from hands-on training, internships, and a high patient flow, which are essential for building practical medical skills.\n\nOverall, choosing to study MBBS in Madhya Pradesh ensures a solid foundation for a successful medical career, making it one of the top emerging destinations for MBBS in India.',
+  faqs: [
+    {
+      question: 'What is the eligibility for MBBS in Madhya Pradesh?',
+      answer: 'Candidates must complete 10+2 with Physics, Chemistry, and Biology and qualify the NEET (UG) exam to apply for MBBS in Madhya Pradesh.'
+    },
+    {
+      question: 'Is NEET compulsory for MBBS in Madhya Pradesh?',
+      answer: 'Yes, NEET is mandatory for admission to all government and private MBBS colleges in Madhya Pradesh, as per MBBS in India rules.'
+    },
+    {
+      question: 'What is the duration of MBBS in Madhya Pradesh?',
+      answer: 'The course duration is 5.5 years, including 4.5 years of academic study and 1 year of compulsory internship.'
+    },
+    {
+      question: 'How many MBBS colleges are there in Madhya Pradesh?',
+      answer: 'Madhya Pradesh has 25+ government and private medical colleges offering MBBS seats.'
+    },
+    {
+      question: 'Can other state students apply for MBBS in Madhya Pradesh?',
+      answer: 'Yes, students from other states can apply through the All India Quota (15%), while state quota seats require MP domicile.'
+    },
+    {
+      question: 'Who conducts MBBS counselling in Madhya Pradesh?',
+      answer: 'The Directorate of Medical Education (DME), Madhya Pradesh conducts state counselling for MBBS admissions.'
+    },
+    {
+      question: 'Is MBBS in Madhya Pradesh a good option?',
+      answer: 'Yes, due to affordable fees, recognized colleges, and strong clinical exposure, MBBS in Madhya Pradesh is a great choice for students pursuing MBBS in India.'
+    },
+    {
+      question: 'What documents are required for MBBS admission in Madhya Pradesh?',
+      answer: 'Important documents include NEET scorecard, 10th & 12th marksheets, domicile certificate, ID proof, and allotment letter.'
+    },
+    {
+      question: 'What are the career options after MBBS in Madhya Pradesh?',
+      answer: 'After completing MBBS in Madhya Pradesh, students can pursue MD/MS, work in hospitals, apply for government jobs, or start private practice.'
+    }
+  ],
+  internship: {
+    intro: 'Internship is important during your MBBS degree. Therefore, it is crucial to know about the pattern of MBBS internship. See the given below table to gain knowledge about it.',
+    headers: ['Subjects', 'Time Duration'],
+    table: [
+      { Subjects: 'Community Medicine', 'Time Duration': '2 months' },
+      { Subjects: 'Medicine, including Psychiatry', 'Time Duration': '2 months' },
+      { Subjects: 'Obstetrics/Gynecology', 'Time Duration': '2 months' },
+      { Subjects: 'Pediatrics', 'Time Duration': '1 month' },
+      { Subjects: 'Orthopedics including PMR', 'Time Duration': '1 month' },
+      { Subjects: 'ENT', 'Time Duration': '15 days' },
+      { Subjects: 'Ophthalmology', 'Time Duration': '15 days' },
+      { Subjects: 'Casualty', 'Time Duration': '15 days' },
+      { Subjects: 'Elective Posting', 'Time Duration': '15 days' },
+      { Subjects: 'Total', 'Time Duration': '12 months' }
+    ]
+  },
+  cutOff: {
+    title: 'MADHYA PRADESH NEET CUT OFF 2025',
+    headers: ['College Name', 'Status'],
+    table: [
+      {
+        'College Name': 'Cutoff data for Madhya Pradesh is currently unavailable',
+        'Status': 'Pending Update'
+      }
+    ]
+  }
+};
+
+const haryanaMBBSData: MBBSIndiaCollegeDetailData = {
+  title: 'MBBS in Haryana',
+  coursetype: 'Undergraduate (MBBS) & Postgraduate (MD/MS)',
+  heroImage: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360928/MBBS_IN_Haryana.jpg_esx1a3.jpg',
+  heroImageMobile: 'https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777360958/MBBS_IN_haryana_2.jpg_yecfig.jpg',
+  intro: {
+    text: 'MBBS in Haryana is becoming an increasingly popular choice for medical aspirants who are looking for quality education, modern infrastructure, and strong clinical exposure within India. Haryana is home to several reputed government and private medical colleges that offer excellent academic facilities, experienced faculty, and well-equipped hospitals. This makes it a preferred destination for students seeking MBBS admission in Haryana and aiming to build a successful career in the medical field.\n\nPursuing MBBS in Haryana for students provides a strong balance between theoretical knowledge and practical training. Medical colleges in Haryana are associated with multi-specialty hospitals that have a good patient flow, allowing students to gain real-time clinical experience. This hands-on exposure is a key advantage for students pursuing MBBS in India, as it helps in developing essential diagnostic and treatment skills.\n\nMost medical colleges offering MBBS in Haryana are approved by the National Medical Commission (NMC), ensuring high standards of medical education and nationwide recognition. Students also benefit from structured curriculum, modern laboratories, digital learning resources, and internship opportunities in reputed hospitals.\n\nAdmission to MBBS in Haryana is conducted through NEET-UG, making the process transparent and merit-based. The state offers both affordable government colleges and well-equipped private institutions, giving students multiple options based on their budget and rank.\n\nOverall, MBBS in Haryana is an excellent choice for students who want quality education, strong clinical exposure, and good career opportunities. As part of the broader scope of MBBS in India, it provides a solid foundation for students to become skilled and successful medical professionals.'
+  },
+  quickOverview: {
+    'Course Name': 'MBBS (Bachelor of Medicine and Bachelor of Surgery)',
+    'Course Level': 'Undergraduate',
+    'Duration': '5.5 Years (4.5 Years Academic + 1 Year Internship)',
+    'Eligibility': '10+2 with PCB (Physics, Chemistry, Biology)',
+    'Minimum Marks': 'General: 50%',
+    'Entrance Exam': 'NEET-UG (Mandatory)',
+    'Admission Process': 'NEET-based Counselling',
+    'Counselling Authority': 'DMER Haryana',
+    'Approval': 'National Medical Commission (NMC)',
+    'Top College Types': 'Government & Private Medical Colleges',
+    'Internship': '1 Year Compulsory'
+  },
+  benefits: {
+    intro: 'Choosing MBBS in Haryana (2026) is a smart option for medical aspirants who are looking for quality education, modern infrastructure, and strong clinical exposure. Here are the key reasons why Haryana is a strong choice:',
+    items: [
+      {
+        heading: 'Rapidly Growing Medical Education Hub',
+        details: 'Haryana is expanding its medical infrastructure with new government and private colleges, increasing MBBS seat availability.'
+      },
+      {
+        heading: 'Proximity to Delhi NCR',
+        details: 'Many top colleges are located near Delhi NCR, offering better exposure, connectivity, and access to advanced healthcare facilities.'
+      },
+      {
+        heading: 'Quality Medical Colleges',
+        details: 'Institutions like Pandit Bhagwat Dayal Sharma Post Graduate Institute of Medical Sciences and ESIC Medical College Faridabad provide excellent academics and hospital training.'
+      },
+      {
+        heading: 'Strong Clinical Exposure',
+        details: 'Hospitals attached to colleges have good patient flow, helping students gain hands-on practical experience.'
+      },
+      {
+        heading: 'Transparent NEET-Based Admission',
+        details: 'Admission is strictly based on NEET-UG scores, ensuring a fair and merit-based selection process.'
+      },
+      {
+        heading: 'Modern Infrastructure & Facilities',
+        details: 'Medical colleges offer advanced labs, libraries, hostels, and digital learning resources.'
+      },
+      {
+        heading: 'Balanced Fee Structure',
+        details: 'Government colleges are affordable, while private colleges provide multiple options for students with different budgets.'
+      },
+      {
+        heading: 'Good Career Opportunities',
+        details: 'Graduates have strong chances for PG courses (MD/MS), government jobs, and private practice.'
+      }
+    ]
+  },
+  SyllabusIntro: 'The MBBS in Haryana syllabus is designed as per the guidelines of the National Medical Commission (NMC) and is similar across all medical colleges in India. It focuses on building strong theoretical knowledge along with practical clinical training, making it an essential part of MBBS in India.',
+  syllabus: {
+    headers: ['Year / Phase', 'Subjects', 'Key Details'],
+    table: [
+      {
+        'Year / Phase': 'First Year',
+        'Subjects': 'Anatomy, Physiology, Biochemistry, Introduction to Clinical Medicine',
+        'Key Details': 'Basic understanding of human body structure, functions, and biochemical processes'
+      },
+      {
+        'Year / Phase': 'Second Year',
+        'Subjects': 'Pathology, Microbiology, Pharmacology, Forensic Medicine',
+        'Key Details': 'Study of diseases, infections, drugs, and medico-legal aspects'
+      },
+      {
+        'Year / Phase': 'Third Year (Part 1)',
+        'Subjects': 'ENT, Ophthalmology, Community Medicine',
+        'Key Details': 'Focus on sensory organs and public health'
+      },
+      {
+        'Year / Phase': 'Final Year (Part 2)',
+        'Subjects': 'Medicine, Surgery, Pediatrics, Obstetrics & Gynaecology, Orthopedics',
+        'Key Details': 'Advanced clinical subjects with diagnosis and treatment'
+      },
+      {
+        'Year / Phase': 'Internship (1 Year)',
+        'Subjects': 'Hospital Training, Emergency Care, Rural Posting, Rotational Duties',
+        'Key Details': 'Hands-on practical experience across departments'
+      }
+    ]
+  },
+  fees: {
+    note: 'Haryana has a mix of reputed government and private medical colleges offering quality education, modern infrastructure, and strong clinical exposure. These colleges are highly preferred for students planning MBBS in Haryana.',
+    sections: [
+      {
+        title: 'Top MBBS Colleges in Haryana (2026)',
+        headers: ['COLLEGE', 'ESTABLISHMENT YEAR', 'FEES Per Year'],
+        table: [
+          { 'COLLEGE': 'Adesh Medical College and Hospital, Kurukshetra', 'ESTABLISHMENT YEAR': '2017', 'FEES Per Year': '₹12,00,000' },
+          { 'COLLEGE': 'NC Medical College and Hospital, Panipat', 'ESTABLISHMENT YEAR': '2016', 'FEES Per Year': '₹12,00,000' },
+          { 'COLLEGE': 'World College of Medical Sciences and Hospital, Jhajjar', 'ESTABLISHMENT YEAR': '2016', 'FEES Per Year': '₹12,00,000' },
+          { 'COLLEGE': 'Al-Falah School of Medical Science, Faridabad', 'ESTABLISHMENT YEAR': '2019', 'FEES Per Year': '₹16,37,000' },
+          { 'COLLEGE': 'SGT Medical College, Gurugram', 'ESTABLISHMENT YEAR': '2010', 'FEES Per Year': '₹22,50,000' },
+          { 'COLLEGE': 'Amrita School of Medical Sciences, Faridabad', 'ESTABLISHMENT YEAR': '2023', 'FEES Per Year': '₹25,00,000' },
+          { 'COLLEGE': 'Maharishi Markandeshwar Institute of Medical Sciences, Ambala', 'ESTABLISHMENT YEAR': '1993', 'FEES Per Year': '₹18,00,000' }
+        ]
+      }
+    ]
+  },
+  duration: {
+    headers: ['Program Component', 'Duration'],
+    table: [
+      { 'Program Component': 'Academic Study', 'Duration': '4.5 Years' },
+      { 'Program Component': 'Compulsory Internship', 'Duration': '1 Year' },
+      { 'Program Component': 'Total MBBS Duration', 'Duration': '5.5 Years' }
+    ]
+  },
+  scholarshipIntro: 'Students pursuing MBBS in Haryana can explore scholarships and financial support opportunities provided by the state government, particularly aimed at economically weaker sections and reserved categories.',
+  scholarships: [
+    { title: 'State & Central Scholarships', details: 'Eligible students may apply for government scholarship schemes through official portals.' },
+    { title: 'Institutional Financial Support', details: 'Some colleges may provide assistance based on merit, category, or economic background.' }
+  ],
+  eligibility: {
+    headers: ['Criteria', 'Details'],
+    table: [
+      { Criteria: 'Educational Qualification (UG)', Details: '10+2 with Physics, Chemistry, Biology/Biotechnology & English' },
+      { Criteria: 'Minimum Marks (UG)', Details: 'General: 50%' },
+      { Criteria: 'Entrance Exam (UG)', Details: 'NEET-UG (Mandatory)' },
+      { Criteria: 'Age Limit (UG)', Details: 'Minimum 17 years at the time of admission' },
+      { Criteria: 'Nationality (UG)', Details: 'Indian / NRI / OCI (as per rules)' },
+      { Criteria: 'Domicile (UG)', Details: 'Required for Haryana state quota seats' },
+      { Criteria: 'Educational Qualification (PG)', Details: 'MBBS degree from a recognized medical college' },
+      { Criteria: 'Internship (PG)', Details: '1-year compulsory rotatory internship completed' },
+      { Criteria: 'Registration (PG)', Details: 'Valid NMC/State Medical Council registration' },
+      { Criteria: 'Entrance Exam (PG)', Details: 'NEET-PG (Mandatory)' },
+      { Criteria: 'Domicile (PG)', Details: 'Required for state quota (if applicable)' }
+    ]
+  },
+  documents: [
+    { document: '10th Marksheet & Certificate', details: 'Proof of date of birth' },
+    { document: '12th Marksheet & Certificate', details: 'Must include Physics, Chemistry, Biology' },
+    { document: 'NEET-UG Scorecard', details: 'Mandatory for admission' },
+    { document: 'NEET-UG Admit Card', details: 'Required during counselling' },
+    { document: 'Valid Photo ID Proof', details: 'Aadhaar Card / PAN Card / Passport' },
+    { document: 'Domicile Certificate', details: 'Required for Haryana state quota (if applicable)' },
+    { document: 'Counselling Registration Slip', details: 'Proof of Haryana NEET counselling registration' },
+    { document: 'Seat Allotment Letter', details: 'Issued after seat allocation' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS (if applicable)' }
+  ],
+  documentsPG: [
+    { document: 'MBBS Degree Certificate', details: 'Proof of completion of MBBS course' },
+    { document: 'MBBS Marksheets (All Years)', details: 'First, Second, and Final year marksheets' },
+    { document: 'NEET-PG Scorecard', details: 'Mandatory for PG admission' },
+    { document: 'NEET-PG Admit Card', details: 'Required during counselling' },
+    { document: 'Internship Completion Certificate', details: '1-year compulsory rotatory internship proof' },
+    { document: 'Medical Registration Certificate', details: 'Valid registration from NMC/State Medical Council' },
+    { document: 'Valid Photo ID Proof', details: 'Aadhaar Card / PAN Card / Passport' },
+    { document: 'Domicile Certificate', details: 'Required for Haryana state quota (if applicable)' },
+    { document: 'Counselling Registration Slip', details: 'Haryana NEET-PG counselling proof' },
+    { document: 'Seat Allotment Letter', details: 'Issued after seat allocation' },
+    { document: 'Category Certificate', details: 'SC/ST/OBC/EWS (if applicable)' }
+  ],
+  admissionProcess: {
+    ug: {
+      title: 'MBBS in Haryana – Admission Process',
+      intro: 'The MBBS in Haryana admission process is conducted through NEET-UG scores and follows a transparent, merit-based counselling system. Students who want to pursue MBBS in Haryana must participate in the official counselling conducted by the state authority under the guidelines of MBBS in India.',
+      steps: [
+        { step: '1. NEET-UG Qualification', details: 'Candidates must qualify the NEET-UG exam, which is mandatory for admission into all medical colleges in Haryana and across India.' },
+        { step: '2. Counselling Registration', details: 'Eligible candidates must register online for Haryana NEET counselling conducted by the Directorate of Medical Education and Research (DMER Haryana).' },
+        { step: '3. Choice Filling & Locking', details: 'Students need to select their preferred government and private medical colleges and lock their choices carefully.' },
+        { step: '4. Merit List Release', details: 'A merit list is prepared based on NEET rank, category, and reservation criteria.' },
+        { step: '5. Seat Allotment', details: 'Seats are allotted based on merit rank, preferences, and availability in colleges.' },
+        { step: '6. Document Verification', details: 'Candidates must report to the allotted college for verification of original documents.' },
+        { step: '7. Admission Confirmation', details: 'After successful verification, students must pay the admission fees to confirm their MBBS seat.' }
+      ]
+    },
+    pg: {
+      title: 'MD/MS in Haryana – Admission Process',
+      intro: 'The MD/MS in Haryana admission process is conducted through NEET-PG scores and follows a transparent, merit-based counselling system. Candidates who want to pursue postgraduate medical courses must participate in the official counselling process under MD/MS in India.',
+      steps: [
+        { step: '1. NEET-PG Qualification', details: 'Candidates must qualify the NEET-PG exam, which is mandatory for admission into MD/MS courses in Haryana and across India.' },
+        { step: '2. Counselling Registration', details: 'Eligible candidates must register online for Haryana NEET-PG counselling conducted by the Directorate of Medical Education and Research (DMER Haryana) and Medical Counselling Committee for All India Quota seats.' },
+        { step: '3. Choice Filling & Locking', details: 'Students need to select their preferred MD/MS specializations and medical colleges, then lock their choices carefully.' },
+        { step: '4. Merit List Release', details: 'A merit list is prepared based on NEET-PG rank, category, reservation rules, and eligibility.' },
+        { step: '5. Seat Allotment', details: 'Seats are allotted according to merit rank, preferences, and availability in government and private medical colleges.' },
+        { step: '6. Document Verification', details: 'Candidates must report to the allotted college for verification of original documents.' },
+        { step: '7. Admission Confirmation', details: 'After verification, candidates must pay the admission fees to confirm their seat.' }
+      ]
+    }
+  },
+  studentSupport: 'Haryana institutions offer an excellent support system tailored for intense study periods and extensive clinical learning, especially given their proximity to major medical hubs in Delhi NCR.',
+  hostelFacilities: 'Most medical colleges in Haryana provide modern, well-equipped hostel accommodations featuring 24/7 security, mess facilities, and dedicated study areas.',
+  studentLife: 'Students enjoy a dynamic academic environment, benefiting from high-volume patient interactions and rigorous practical training that prepares them for diverse healthcare scenarios.',
+  recognition: 'All leading medical colleges in Haryana are recognized by the National Medical Commission (NMC), giving graduates the flexibility to practice anywhere in India or pursue international careers.',
+  whyChooseUsIntro: 'Choosing the right guidance partner is crucial for securing admission in MBBS in Haryana, and iExplain Education stands out as a reliable consultancy offering complete support to medical aspirants. With its structured approach and expert counselling services, it helps students navigate the competitive admission process of MBBS in India smoothly.',
+  whyChooseUs: [
+    'Expert Medical Career Counselling: iExplain Education provides personalized guidance to help students choose the best colleges in Haryana based on their NEET score, budget, and career goals.',
+    'Complete Admission Assistance: The consultancy offers end-to-end support including counselling registration, choice filling, seat allotment guidance, and admission confirmation.',
+    'Personalized Student Approach: Students receive one-on-one counselling sessions tailored to their academic profile, ensuring better decision-making.',
+    'Strong Expertise in Medical Admissions: iExplain Education specializes in MBBS admissions (India & abroad), offering deep knowledge of admission procedures, eligibility, and college selection.',
+    'Documentation & Application Support: Full assistance is provided for document preparation, verification, and application submission to avoid errors during the admission process.',
+    'Transparent & Honest Guidance: The consultancy focuses on providing accurate information about fees, colleges, and admission chances without hidden charges.',
+    'Scholarship & Financial Guidance: Students get help in exploring scholarships, education loans, and affordable options for MBBS in Haryana.'
+  ],
+  conclusion: 'In conclusion, pursuing MBBS in Haryana is a great choice for medical aspirants who are looking for quality education, modern infrastructure, and strong clinical exposure. Haryana has developed into a growing medical education hub with several reputed government and private medical colleges, offering students multiple opportunities to secure admission through NEET.\n\nTop institutions like Pandit Bhagwat Dayal Sharma Postgraduate Institute of Medical Sciences and ESIC Medical College Faridabad provide excellent academic standards, experienced faculty, and well-equipped hospitals. These colleges ensure strong clinical exposure through high patient inflow, which is essential for practical training in MBBS in India.\n\nAdditionally, Haryana offers a transparent admission process, good connectivity with Delhi NCR, and a safe, student-friendly environment. With increasing medical seats and improving infrastructure, the scope of MBBS in Haryana continues to expand.\n\nOverall, MBBS in Haryana provides the perfect balance of quality education, affordability, and career opportunities, making it an ideal choice for students aiming to build a successful future in the medical field under MBBS in India.',
+  faqs: [
+    {
+      question: 'What is MBBS in Haryana?',
+      answer: 'MBBS in Haryana refers to pursuing a Bachelor of Medicine and Bachelor of Surgery degree from government or private medical colleges in the state.'
+    },
+    {
+      question: 'Is NEET required for MBBS in Haryana?',
+      answer: 'Yes, NEET-UG is mandatory for admission into all medical colleges in Haryana and across MBBS in India.'
+    },
+    {
+      question: 'What is the duration of MBBS in Haryana?',
+      answer: 'The course duration is 5.5 years, including 4.5 years of academic study + 1 year compulsory internship.'
+    },
+    {
+      question: 'What is the eligibility for MBBS in Haryana?',
+      answer: 'Students must have 10+2 with Physics, Chemistry, Biology and qualify NEET-UG with required cutoff marks.'
+    },
+    {
+      question: 'How many seats are available for MBBS in Haryana?',
+      answer: 'Haryana has a growing number of MBBS seats in both government and private medical colleges.'
+    },
+    {
+      question: 'Which are the top colleges for MBBS in Haryana?',
+      answer: 'Top colleges include Pandit Bhagwat Dayal Sharma Post Graduate Institute of Medical Sciences and ESIC Medical College Faridabad.'
+    },
+    {
+      question: 'Can I get a government seat in MBBS in Haryana?',
+      answer: 'Yes, students can secure a government seat based on NEET rank through state quota or All India Quota counselling.'
+    },
+    {
+      question: 'Is MBBS in Haryana good for career?',
+      answer: 'Yes, it offers quality education, strong clinical exposure, and excellent career opportunities in the healthcare sector.'
+    }
+  ],
+  internship: {
+    intro: 'Internship is important during your MBBS degree. Therefore, it is crucial to know about the pattern of MBBS internship. See the given below table to gain knowledge about it.',
+    headers: ['Subjects', 'Time Duration'],
+    table: [
+      { Subjects: 'Community Medicine', 'Time Duration': '2 months' },
+      { Subjects: 'Medicine, including Psychiatry', 'Time Duration': '2 months' },
+      { Subjects: 'Obstetrics/Gynecology', 'Time Duration': '2 months' },
+      { Subjects: 'Pediatrics', 'Time Duration': '1 month' },
+      { Subjects: 'Orthopedics including PMR', 'Time Duration': '1 month' },
+      { Subjects: 'ENT', 'Time Duration': '15 days' },
+      { Subjects: 'Ophthalmology', 'Time Duration': '15 days' },
+      { Subjects: 'Casualty', 'Time Duration': '15 days' },
+      { Subjects: 'Elective Posting', 'Time Duration': '15 days' },
+      { Subjects: 'Total', 'Time Duration': '12 months' }
+    ]
+  },
+  cutOff: {
+    title: 'HARYANA NEET CUT OFF 2025',
+    headers: ['College Name', '1st Round', '2nd Round', '3rd Round', 'Stray Vacancy Round'],
+    table: [
+      {
+        'College Name': 'Adesh Medical College, Kurukshetra',
+        '1st Round': 'Gen: 84898 (475) | BCB: 151842 (432) | MGT: 125927 (448)',
+        '2nd Round': 'Gen: 163432 (425) | BCB: 251753 (379) | MGT: 213531 (398)',
+        '3rd Round': 'Gen: 229780 (390) | BCB: 315018 (350) | MGT: 209939 (400)',
+        'Stray Vacancy Round': 'Gen: 33326 (518) | BCB: N/A | MGT: 247784 (381)'
+      },
+      {
+        'College Name': 'NC Medical College, Panipat',
+        '1st Round': 'Gen: 222255 (394) | BCB: 349601 (336) | MGT: 230370 (390)',
+        '2nd Round': 'Gen: 327049 (345) | BCB: 393500 (318) | MGT: 354608 (334)',
+        '3rd Round': 'Gen: 467495 (292) | BCB: 575970 (257) | MGT: 421645 (308)',
+        'Stray Vacancy Round': 'Gen: N/A | BCB: N/A | MGT: 358216 (332)'
+      },
+      {
+        'College Name': 'SGT, Gurgaon',
+        '1st Round': 'Gen: 218090 (396) | BCB: N/A | MGT: 315186 (350)',
+        '2nd Round': 'Gen: 394853 (318) | BCB: N/A | MGT: 444876 (300)',
+        '3rd Round': 'Gen: 487885 (285) | BCB: N/A | MGT: 549821 (265)',
+        'Stray Vacancy Round': 'Gen: 522019 (274) | BCB: N/A | MGT: 444136 (300)'
+      },
+      {
+        'College Name': 'World Medical College, Jhajjar',
+        '1st Round': 'Gen: 271473 (370) | BCB: 393500 (318) | MGT: 296916 (359)',
+        '2nd Round': 'Gen: 407630 (313) | BCB: 422758 (307) | MGT: 403108 (315)',
+        '3rd Round': 'Gen: 545150 (267) | BCB: 607188 (249) | MGT: 574401 (258)',
+        'Stray Vacancy Round': 'Gen: N/A | BCB: 475925 (289) | MGT: 517927 (275)'
+      },
+      {
+        'College Name': 'Al-falah, Faridabad',
+        '1st Round': 'Gen: N/A | BCB: N/A | MGT: 372356 (327) | Muslim: 447694 (298)',
+        '2nd Round': 'Gen: N/A | BCB: N/A | MGT: 470343 (291) | Muslim: 523024 (273)',
+        '3rd Round': 'Gen: N/A | BCB: N/A | MGT: 626066 (243) | Muslim: 644875 (238)',
+        'Stray Vacancy Round': 'Gen: N/A | BCB: N/A | MGT: 670520 (231) | Muslim: 652171 (236)'
+      },
+      {
+        'College Name': 'MMU, Sadhopur',
+        '1st Round': 'Gen: 286203 (363) | BCB: N/A | MGT: 337309 (341)',
+        '2nd Round': 'Gen: 425021 (306) | BCB: N/A | MGT: 258650 (299)',
+        '3rd Round': 'Gen: 498143 (281) | BCB: N/A | MGT: 486304 (285)',
+        'Stray Vacancy Round': 'Gen: 555562 (263) | BCB: N/A | MGT: 533406 (270)'
+      }
+    ]
+  }
+};
+
+
 export const MBBS_IN_INDIA_DETAILS: Record<string, MBBSIndiaCollegeDetailData> = {
   'uttar-pradesh': uttarPradeshMBBSData,
-  haryana: buildMBBSIndiaStateData('Haryana', 'North India'),
+  haryana: haryanaMBBSData,
   delhi: delhiMBBSData,
-  uttarakhand: buildMBBSIndiaStateData('Uttarakhand', 'North India'),
+  uttarakhand: uttarakhandMBBSData,
   'himachal-pradesh': himachalPradeshMBBSData,
   rajasthan: rajasthanMBBSData,
   maharashtra: maharashtraMBBSData,
-  'madhya-pradesh': buildMBBSIndiaStateData('Madhya Pradesh', 'Central & West India'),
-  bihar: buildMBBSIndiaStateData('Bihar', 'East & South India'),
+  'madhya-pradesh': madhyaPradeshMBBSData,
+  bihar: biharMBBSData,
   karnataka: karnatakaMBBSData
 };

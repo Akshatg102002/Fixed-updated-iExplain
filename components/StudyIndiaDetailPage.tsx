@@ -28,32 +28,27 @@ const StudyIndiaDetailPage: React.FC<StudyIndiaDetailPageProps> = ({ data }) => 
       <div className="bg-white dark:bg-slate-900 font-sans pb-0 animate-fade-in">
 
          {/* ── Hero ── */}
-         <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0">
+         <div className="relative w-full overflow-hidden">
+            <div className="relative">
 
                {/* Desktop Image */}
                <img
                   src={data.heroImage}
-                  className="w-full h-full object-cover hidden md:block"
+                  className="w-full h-auto object-cover hidden md:block"
                   alt={data.title}
                />
 
                {/* Mobile Image */}
                <img
                   src={data.heroImageMobile}
-                  className="w-full h-full object-cover block md:hidden"
+                  className="w-full h-auto object-cover block md:hidden"
                   alt={data.title}
                />
 
-               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-            </div>
-
-            <div className="relative z-10 text-center max-w-6xl mx-auto px-4 mt-20">
-               <h1 className="text-5xl lg:text-7xl font-black text-white mb-4 tracking-tight text-center drop-shadow-lg uppercase">
-                  {data.title.split(' ')[0]}
-               </h1>
+               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
             </div>
          </div>
+
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
             {/* ── Intro ── */}
