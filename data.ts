@@ -174,8 +174,8 @@ export const TEAM_MEMBERS = [{ name: "Sunil Baranwal", role: "Director", image: 
 export const INDIA_COURSES_DETAILED: Record<string, StudyIndiaDetailData> = {
   "mbbs": {
     title: "Study MBBS in India for Indian Students",
-    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777294485/BBA_IN_INDIA_2_ugzin4.jpg",
-    heroImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
+    heroImageMobile: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777367547/MBBS_IN_INDIA_2.jpg_lhyoej.jpg",
+    heroImage: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777367578/MBBS_IN_INDIA.jpg_v7k6ru.jpg",
     intro: "MBBS in India is one of the most preferred career choices for students who want to become doctors and serve in the healthcare sector. India has a well-established medical education system with numerous government and private medical colleges that provide high-quality medical training and clinical exposure. Every year thousands of students appear for the medical entrance examination to secure admission to MBBS programs across the country.\n\nMedical colleges in India are regulated by the National Medical Commission, which ensures that all institutions maintain proper education standards, infrastructure, and clinical training facilities. The MBBS course in India provides strong theoretical knowledge along with practical clinical experience through hospital internships.\n\nDue to the increasing demand for qualified doctors and healthcare professionals, MBBS in India continues to be one of the most respected and rewarding career options. Students receive hands-on clinical training, work with experienced doctors, and gain practical exposure in hospitals, which helps them build a successful medical career.\n\nOne of the most important benefits of pursuing MBBS in India is the exposure that is gained by the students. India is a vast country with a large population, and because of this, the exposure that is gained by the students is quite diverse, and they are able to learn from real-life situations under the guidance and supervision of experienced doctors and medical professionals. Many medical colleges in India are also well-equipped with modern laboratory facilities, research, and teaching hospitals, making the learning experience very fulfilling for the students.\n\nWith the growing healthcare industry, the demand for qualified doctors, and the continuous development of medical science, MBBS in India is a promising career destination. If students complete their MBBS course successfully, they can find employment in hospitals, healthcare centers, and research centers or can opt for higher specialization to have a successful career in the medical line.",
 
     overview: {
@@ -2047,7 +2047,7 @@ export const POPULAR_COLLEGES: College[] = [
   // Russia
   // Russia
   { name: "Kazan Federal University", country: "Russia", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Kazan-Federal-University.webp" },
-  { name: "Bashkir State Medical University", country: "Russia", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Bashkir-State-Medical-University.webp" },
+  { name: "Bashkir State Medical University", country: "Russia", category: "MBBS Abroad", image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1774514513/Bashkir_State_Medical_2_r7sey6.webp" },
   { name: "Orenburg State Medical University", country: "Russia", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Orenburg-State-Medical-University.webp" },
   { name: "Crimea Federal University", country: "Russia", category: "MBBS Abroad", image: "https://socialfoundationindia.org/wp-content/uploads/2026/03/Crimea-Federal-University.webp" },
 
