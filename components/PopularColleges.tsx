@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { POPULAR_COLLEGES, COUNTRY_ICONS } from '../data.ts';
+import { COLLEGE_DETAILS } from '../collegeData.ts';
 import * as Flags from 'country-flag-icons/react/3x2';
 import { 
   db, 
@@ -90,6 +91,26 @@ const PopularColleges: React.FC = () => {
 
   const hasContent = availableCountries.length > 0;
 
+  const getCollegeImage = (college: any) => {
+    const normalizedName = (college.name || '').trim().toLowerCase();
+    const collegeDetail = Object.values(COLLEGE_DETAILS).find(
+      detail => detail.title.trim().toLowerCase() === normalizedName
+    );
+
+    if (collegeDetail) {
+      return {
+        mobile: collegeDetail.heroImageMobile || collegeDetail.heroImage,
+        desktop: collegeDetail.heroImage || collegeDetail.heroImageMobile,
+      };
+    }
+
+    return {
+      mobile: college.image,
+      desktop: college.image,
+    };
+  };
+
+
   return (
     <section className="py-12 bg-white dark:bg-slate-900 overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -168,15 +189,23 @@ const PopularColleges: React.FC = () => {
                     className="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-gray-100 dark:border-slate-700 flex flex-col mx-auto w-full max-w-[300px]"
                   >
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={college.image}
-                        alt={college.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src = "https://images.unsplash.com/photo-1541339907198-e08759dfc3ef?auto=format&fit=crop&q=80&w=1200";
-                        }}
-                      />
+                      {(() => {
+                        const image = getCollegeImage(college);
+                        return (
+                          <picture>
+                            <source media="(max-width: 767px)" srcSet={image.mobile} />
+                            <img
+                              src={image.desktop}
+                              alt={college.name}
+                              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+                              onError={(e) => {
+                                const target = e.target as HTMLImageElement;
+                                target.src = "https://images.unsplash.com/photo-1541339907198-e08759dfc3ef?auto=format&fit=crop&q=80&w=1200";
+                              }}
+                            />
+                          </picture>
+                        );
+                      })()}
                     </div>
                     <div className="p-3 sm:p-5 text-center bg-gray-50 dark:bg-slate-800/50 border-t border-gray-100 dark:border-slate-700 mt-auto min-h-[60px] sm:min-h-[80px] flex items-center justify-center">
                       <h3 className="text-xs sm:text-sm font-bold text-brand-blue dark:text-white line-clamp-2">
