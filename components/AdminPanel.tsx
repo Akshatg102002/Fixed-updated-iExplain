@@ -50,6 +50,42 @@ const setByPath = (obj: any, path: (string | number)[], value: any) => {
   return root;
 };
 
+const RichTextEditor: React.FC<{ value: string; onChange: (value: string) => void; minHeight?: number }> = ({ value, onChange, minHeight = 130 }) => {
+  const [showLinkUI, setShowLinkUI] = useState(false);
+  const [linkUrl, setLinkUrl] = useState('');
+  const [openInNewTab, setOpenInNewTab] = useState(false);
+
+  const applyLink = () => {
+    const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0 || selection.toString().trim().length === 0 || !linkUrl.trim()) return;
+    const safeUrl = /^(https?:\/\/|\/)/i.test(linkUrl) ? linkUrl : `https://${linkUrl}`;
+    const html = `<a href="${safeUrl}" ${openInNewTab ? 'target="_blank" rel="noopener noreferrer"' : ''}>${selection.toString()}</a>`;
+    document.execCommand('insertHTML', false, html);
+    setShowLinkUI(false);
+    setLinkUrl('');
+    setOpenInNewTab(false);
+  };
+
+  return (
+    <div className="space-y-2">
+      <div className="flex flex-wrap gap-2">
+        <button type="button" className="px-3 py-1 text-xs rounded-lg bg-slate-100 font-bold" onClick={() => document.execCommand('bold')}>Bold</button>
+        <button type="button" className="px-3 py-1 text-xs rounded-lg bg-slate-100 font-bold" onClick={() => document.execCommand('italic')}>Italic</button>
+        <button type="button" className="px-3 py-1 text-xs rounded-lg bg-slate-100 font-bold" onClick={() => setShowLinkUI((prev) => !prev)}>Link</button>
+        <button type="button" className="px-3 py-1 text-xs rounded-lg bg-slate-100 font-bold" onClick={() => document.execCommand('unlink')}>Unlink</button>
+      </div>
+      {showLinkUI && (
+        <div className="flex flex-wrap items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 p-2">
+          <input className="input-std text-sm !py-2" placeholder="https://example.com or /internal-path" value={linkUrl} onChange={(e) => setLinkUrl(e.target.value)} />
+          <label className="text-xs font-semibold flex items-center gap-2"><input type="checkbox" checked={openInNewTab} onChange={(e) => setOpenInNewTab(e.target.checked)} />Open in new tab</label>
+          <button type="button" className="px-3 py-2 text-xs rounded-lg bg-brand-blue text-white font-bold" onClick={applyLink}>Apply</button>
+        </div>
+      )}
+      <div className="input-std rich-editor" style={{ minHeight }} contentEditable suppressContentEditableWarning onInput={(e) => onChange((e.target as HTMLDivElement).innerHTML)} dangerouslySetInnerHTML={{ __html: value || '' }} />
+    </div>
+  );
+};
+
 const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
@@ -465,7 +501,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             <option value="false">Disabled</option>
           </select>
         ) : isLongText ? (
-          <textarea rows={4} className="input-std" value={String(value ?? '')} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, e.target.value))} />
+          <RichTextEditor value={String(value ?? '')} onChange={(nextValue) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, nextValue))} />
         ) : (
           <input className="input-std" value={String(value ?? '')} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, e.target.value))} />
         )}
@@ -737,7 +773,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                     </div>
                     <div className="col-span-2">
                       <label className="label">Structured Data (JSON-LD)</label>
-                      <textarea rows={8} className="input-std font-mono text-xs" value={(collegeForm as any).structuredData || ''} onChange={e => setCollegeForm({ ...collegeForm, structuredData: e.target.value } as any)} />
+                      <textarea rows={8} className="input-std json-editor font-mono text-xs" value={(collegeForm as any).structuredData || ''} onChange={e => setCollegeForm({ ...collegeForm, structuredData: e.target.value } as any)} spellCheck={false} />
                     </div>
 
                     <button type="submit" className="col-span-2 py-5 bg-brand-gold text-white rounded-2xl font-black uppercase tracking-widest shadow-xl">
@@ -883,7 +919,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
                     <div>
                       <label className="label">Structured Data (JSON-LD)</label>
-                      <textarea rows={6} className="input-std font-mono text-xs" value={structuredDataText} onChange={e => setStructuredDataText(e.target.value)} />
+                      <textarea rows={6} className="input-std json-editor font-mono text-xs" value={structuredDataText} onChange={e => setStructuredDataText(e.target.value)} spellCheck={false} />
                     </div>
                     <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">
                       <p className="text-xs text-gray-500">Autosave: {autosaveAt ? new Date(autosaveAt).toLocaleTimeString() : 'Waiting for changes...'}</p>
@@ -892,7 +928,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                     {advancedMode ? (
                       <div>
                         <label className="label">Page Payload (JSON)</label>
-                        <textarea required rows={18} className="input-std font-mono text-xs" value={pageForm.payloadText} onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })} />
+                        <textarea required rows={18} className="input-std json-editor font-mono text-xs" value={pageForm.payloadText} onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })} spellCheck={false} />
                       </div>
                     ) : (
                       <div className="space-y-4">
@@ -1094,9 +1130,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         <label className="label">Sitemap Content (Editable)</label>
                         <textarea 
                           rows={15} 
-                          className="input-std font-mono text-xs" 
+                          className="input-std json-editor font-mono text-xs" 
                           value={sitemapContent} 
                           onChange={(e) => setSitemapContent(e.target.value)}
+                          spellCheck={false}
                           placeholder="<?xml version='1.0' encoding='UTF-8'?>..."
                         />
                      </div>
@@ -1131,6 +1168,9 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         .label { display: block; font-size: 10px; font-weight: 900; text-transform: uppercase; margin-bottom: 0.5rem; color: black; }
         .input-std { width: 100%; padding: 0.75rem 1.25rem; border-radius: 0.75rem; background-color: #f9fafb; border: 1px solid #e5e7eb; outline: none; font-weight: 500; color: #0f172a; }
         .input-std:focus { ring: 2px; ring-color: #02385A; }
+        .json-editor { overflow: auto; white-space: pre; resize: both; line-height: 1.45; tab-size: 2; font-variant-ligatures: none; }
+        .rich-editor { overflow: auto; white-space: pre-wrap; word-break: break-word; line-height: 1.55; }
+        .rich-editor a { color: #2563eb; text-decoration: underline; }
       `}</style>
     </div>
   );
