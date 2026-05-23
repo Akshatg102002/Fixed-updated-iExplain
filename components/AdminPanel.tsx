@@ -33,6 +33,23 @@ const hasSeoConfigured = (seo: any) => {
   return hasTextField || hasStructuredData;
 };
 
+const isPlainObject = (value: any) => !!value && typeof value === 'object' && !Array.isArray(value);
+
+const setByPath = (obj: any, path: (string | number)[], value: any) => {
+  const root = Array.isArray(obj) ? [...obj] : { ...(obj || {}) };
+  let cursor: any = root;
+  for (let i = 0; i < path.length - 1; i++) {
+    const key = path[i];
+    const nextKey = path[i + 1];
+    const current = cursor[key as any];
+    const next = current ?? (typeof nextKey === 'number' ? [] : {});
+    cursor[key as any] = Array.isArray(next) ? [...next] : { ...next };
+    cursor = cursor[key as any];
+  }
+  cursor[path[path.length - 1] as any] = value;
+  return root;
+};
+
 const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [viewMode, setViewMode] = useState<ViewMode>('list');
@@ -63,6 +80,10 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   // Removed mediaForm state as it is handled by MediaManager
   const [storyForm, setStoryForm] = useState<Partial<VideoStory>>({});
   const [settingsForm, setSettingsForm] = useState<Partial<SiteSettings>>({});
+  const [payloadDraft, setPayloadDraft] = useState<any>({});
+  const [advancedMode, setAdvancedMode] = useState(false);
+  const [structuredDataText, setStructuredDataText] = useState('');
+  const [autosaveAt, setAutosaveAt] = useState<string | null>(null);
   const [pageForm, setPageForm] = useState<{
     title: string;
     slug: string;
@@ -188,6 +209,8 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaDescription: '',
       structuredData: ''
     });
+    setPayloadDraft({});
+    setStructuredDataText('');
     setCollegeForm(initialCollegeState);
     setImagePreview(null);
     setEditingId(null);
@@ -243,23 +266,31 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         ? seoData.structuredData
         : JSON.stringify(seoData.structuredData || {}, null, 2)
     });
+    setPayloadDraft(page.payload || {});
+    setStructuredDataText(
+      typeof seoData.structuredData === 'string'
+        ? seoData.structuredData
+        : JSON.stringify(seoData.structuredData || {}, null, 2)
+    );
     setEditingId(page.id);
     setViewMode('edit');
   };
 
   const handleSavePage = async () => {
-    let parsedPayload: any = {};
-    try {
-      parsedPayload = JSON.parse(pageForm.payloadText || '{}');
-    } catch (error) {
-      alert('Invalid JSON in Page Payload. Please fix JSON format before saving.');
-      return;
+    let parsedPayload: any = payloadDraft;
+    if (advancedMode) {
+      try {
+        parsedPayload = JSON.parse(pageForm.payloadText || '{}');
+      } catch (error) {
+        alert('Invalid JSON in Page Payload. Please fix JSON format before saving.');
+        return;
+      }
     }
 
     let parsedStructuredData: any = null;
-    if (pageForm.structuredData && pageForm.structuredData.trim()) {
+    if (structuredDataText && structuredDataText.trim()) {
       try {
-        parsedStructuredData = JSON.parse(pageForm.structuredData);
+        parsedStructuredData = JSON.parse(structuredDataText);
       } catch (error) {
         alert('Invalid JSON in Structured Data. Please fix JSON format before saving.');
         return;
@@ -397,6 +428,59 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const handleSyncLocalData = async () => {
     await handleSyncAllSiteData();
   };
+
+  const renderDynamicField = (key: string, value: any, path: (string | number)[] = []) => {
+    const currentPath = [...path, key];
+    const pathKey = currentPath.join('.');
+    if (Array.isArray(value)) {
+      return (
+        <div key={pathKey} className="border rounded-xl p-4 space-y-3">
+          <p className="font-bold text-sm">{key}</p>
+          {value.map((item, idx) => (
+            <div key={`${pathKey}-${idx}`} className="border rounded-lg p-3">
+              {isPlainObject(item) ? Object.entries(item).map(([k, v]) => renderDynamicField(k, v, [...currentPath, idx])) : (
+                <input className="input-std" value={String(item ?? '')} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, [...currentPath, idx], e.target.value))} />
+              )}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    if (isPlainObject(value)) {
+      return (
+        <div key={pathKey} className="border rounded-xl p-4 space-y-3">
+          <p className="font-bold text-sm">{key}</p>
+          {Object.entries(value).map(([k, v]) => renderDynamicField(k, v, currentPath))}
+        </div>
+      );
+    }
+    const isLongText = typeof value === 'string' && value.length > 120;
+    const isBoolean = typeof value === 'boolean';
+    return (
+      <div key={pathKey}>
+        <label className="label">{key}</label>
+        {isBoolean ? (
+          <select className="input-std" value={String(value)} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, e.target.value === 'true'))}>
+            <option value="true">Enabled</option>
+            <option value="false">Disabled</option>
+          </select>
+        ) : isLongText ? (
+          <textarea rows={4} className="input-std" value={String(value ?? '')} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, e.target.value))} />
+        ) : (
+          <input className="input-std" value={String(value ?? '')} onChange={(e) => setPayloadDraft((prev: any) => setByPath(prev, currentPath, e.target.value))} />
+        )}
+      </div>
+    );
+  };
+
+  useEffect(() => {
+    if (activeTab !== 'pages' || viewMode === 'list') return;
+    const timeout = setTimeout(() => {
+      localStorage.setItem('admin-page-draft', JSON.stringify({ pageForm, payloadDraft, structuredDataText }));
+      setAutosaveAt(new Date().toISOString());
+    }, 900);
+    return () => clearTimeout(timeout);
+  }, [pageForm, payloadDraft, structuredDataText, activeTab, viewMode]);
 
   if (!isAuthenticated) {
     return (
@@ -799,26 +883,28 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
                     <div>
                       <label className="label">Structured Data (JSON-LD)</label>
-                      <textarea
-                        rows={8}
-                        className="input-std font-mono text-xs"
-                        value={pageForm.structuredData}
-                        onChange={e => setPageForm({ ...pageForm, structuredData: e.target.value })}
-                        placeholder='{"@context":"https://schema.org","@type":"WebPage","name":"Page Name"}'
-                      />
+                      <textarea rows={6} className="input-std font-mono text-xs" value={structuredDataText} onChange={e => setStructuredDataText(e.target.value)} />
                     </div>
-
+                    <div className="flex items-center justify-between rounded-xl bg-slate-50 p-4">
+                      <p className="text-xs text-gray-500">Autosave: {autosaveAt ? new Date(autosaveAt).toLocaleTimeString() : 'Waiting for changes...'}</p>
+                      <label className="text-xs font-bold flex items-center gap-2"><input type="checkbox" checked={advancedMode} onChange={e => setAdvancedMode(e.target.checked)} /> Advanced JSON Mode</label>
+                    </div>
+                    {advancedMode ? (
+                      <div>
+                        <label className="label">Page Payload (JSON)</label>
+                        <textarea required rows={18} className="input-std font-mono text-xs" value={pageForm.payloadText} onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })} />
+                      </div>
+                    ) : (
+                      <div className="space-y-4">
+                        <h3 className="text-lg font-black text-brand-blue">Content Fields</h3>
+                        {Object.keys(payloadDraft || {}).length === 0 ? (
+                          <p className="text-sm text-gray-500">No payload found yet. Use Sync Local Data or switch on advanced mode to paste JSON once.</p>
+                        ) : Object.entries(payloadDraft).map(([key, value]) => renderDynamicField(key, value))}
+                      </div>
+                    )}
                     <div>
-                      <label className="label">Page Payload (JSON)</label>
-                      <textarea
-                        required
-                        rows={18}
-                        className="input-std font-mono text-xs"
-                        placeholder="Paste JSON structure used in mbbs_data.ts or studyAbroad_Data.ts"
-                        value={pageForm.payloadText}
-                        onChange={e => setPageForm({ ...pageForm, payloadText: e.target.value })}
-                      />
-                      <p className="mt-2 text-xs text-gray-400">SEO values are embedded into payload.seo so page data stays together for all program and college categories.</p>
+                      <label className="label">Preview Payload</label>
+                      <pre className="bg-slate-900 text-slate-100 text-xs rounded-xl p-4 overflow-auto max-h-80">{JSON.stringify(payloadDraft, null, 2)}</pre>
                     </div>
 
                     <button type="submit" className="w-full py-5 bg-brand-gold text-white rounded-2xl font-black uppercase tracking-widest shadow-xl">
