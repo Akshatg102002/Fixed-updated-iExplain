@@ -2,15 +2,28 @@ import React, { useState } from "react";
 import { MBBSDetailData } from "../types";
 import { FaCheckCircle } from "react-icons/fa";
 import { LOGO_URL } from '../data.ts';
-import { count } from "console";
 
 interface Props {
   data: MBBSDetailData;
 }
 
 const MBBSDetailPage: React.FC<Props> = ({ data }) => {
-  const country = data.quickFacts.country;
+  const country = data.quickFacts?.country || data.title?.replace(/^MBBS in\s*/i, '') || 'Abroad';
   const [openFAQ, setOpenFAQ] = useState<number>(0);
+  const introText = typeof data.intro === 'string' ? data.intro : data.intro?.text || '';
+  const forIndianStudentsText = typeof (data as any).forIndianStudents === 'string'
+    ? (data as any).forIndianStudents
+    : [
+        ...(Array.isArray((data as any).forIndianStudents?.introduction) ? (data as any).forIndianStudents.introduction : []),
+        ...(((data as any).forIndianStudents?.advantages?.points || []) as any[]).flatMap((point) => [point?.main, ...(point?.subPoints || [])]),
+        (data as any).forIndianStudents?.conclusion,
+      ].filter(Boolean).join('\n');
+  const whyChooseUsPoints = Array.isArray((data as any).whyChooseUs)
+    ? (data as any).whyChooseUs
+    : ((data as any).whyChooseUs?.points || []);
+  const whyChooseUsIntro = Array.isArray((data as any).whyChooseUs)
+    ? introText
+    : ((data as any).whyChooseUs?.intro || introText);
 
   const toggleFAQ = (i: number) => {
     setOpenFAQ(openFAQ === i ? -1 : i);
@@ -58,7 +71,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           <h2 className="text-2xl font-bold mb-3 text-center">
             {data.title}
           </h2>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data.intro.text }} />
+          <p className="text-justify" dangerouslySetInnerHTML={{ __html: introText }} />
         </section>
 
         {/* Quick Facts */}
@@ -72,7 +85,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
               {Object.entries(data.quickFacts).map(([k, v], i) => (
                 <tr key={i}>
                   <td className="border p-3 font-semibold capitalize">{k}</td>
-                  <td className="border p-3">{v}</td>
+                  <td className="border p-3">{String(v)}</td>
                 </tr>
               ))}
             </tbody>
@@ -109,7 +122,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
                         <td className="p-3 border font-semibold capitalize">
                           {key.replace(/([A-Z])/g, " $1").trim()}
                         </td>
-                        <td className="p-3 border">{value}</td>
+                        <td className="p-3 border">{String(value)}</td>
                       </tr>
                     ))}
               </tbody>
@@ -124,7 +137,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
           </h2>
 
           <div className="rounded-lg p-5 bg-white">
-            {data.forIndianStudents.split("\n").map((line, i) => {
+            {forIndianStudentsText.split("\n").map((line, i) => {
               if (!line.trim()) {
                 return <div key={i} className="h-3" />;
               }
@@ -172,7 +185,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
                 {Object.entries(data.eligibility).map(([k, v], i) => (
                   <tr key={i} className="hover:bg-gray-50">
                     <td className="px-4 py-2 border-b font-semibold">{k}</td>
-                    <td className="px-4 py-2 border-b">{v}</td>
+                    <td className="px-4 py-2 border-b">{String(v)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -244,10 +257,10 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
                       {formattedKey}
                     </td>
                     <td className="border p-3">
-                      {v.india}
+                      {(v as any).india}
                     </td>
                     <td className="border p-3">
-                      {v.country}
+                      {(v as any).country}
                     </td>
                   </tr>
                 );
@@ -347,7 +360,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
 
             {/* Intro Text */}
             <p className="text-justify">
-              {data.intro.text.split("\n").map((line, i) => (
+              {whyChooseUsIntro.split("\n").map((line: string, i: number) => (
                 <span key={i}>
                   {line}
                   <br />
@@ -366,7 +379,7 @@ const MBBSDetailPage: React.FC<Props> = ({ data }) => {
             </h3>
 
             <ul className="space-y-3">
-              {data.whyChooseUs.map((item, i) => (
+              {whyChooseUsPoints.map((item: string, i: number) => (
                 <li key={i} className="flex items-start gap-2">
                   <FaCheckCircle className="text-blue-700 mt-1 flex-shrink-0" />
                   <span className="text-justify">{item}</span>

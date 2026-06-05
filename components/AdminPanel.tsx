@@ -12,15 +12,19 @@ import {
   serverTimestamp 
 } from '../firebase.ts';
 import { Blog, BlogCategory, SiteSettings, MediaItem, VideoStory, CollegeDetailData } from '../types';
-import { LOGO_URL, FOOTER_COLLEGES } from '../data.ts';
+import { LOGO_URL, FOOTER_COLLEGES, INDIA_COURSES_DETAILED, COLLEGE_DETAILS as LEGACY_COLLEGE_DETAILS } from '../data.ts';
 import { MBBS_ABROAD_DETAILED } from '../mbbs_data.ts';
 import { STUDY_ABROAD_DETAILED } from '../studyAbroad_Data.ts';
+import { COLLEGE_DETAILS as STRUCTURED_COLLEGE_DETAILS } from '../collegeData.ts';
+import { STUDY_ABROAD_COLLEGE_DETAILS } from '../studyAbroadCollegeData.ts';
+import { MBBS_IN_INDIA_DETAILS } from '../MBBSinindiadata.ts';
+import { ENTRANCE_EXAM_DETAILS } from '../EntranceExamdata.ts';
 import MediaManager from './MediaManager';
 
 type AdminTab = 'dashboard' | 'blogs' | 'categories' | 'colleges' | 'pages' | 'entries' | 'media' | 'stories' | 'settings';
 type ViewMode = 'list' | 'create' | 'edit';
 
-type DynamicPageCategory = 'MBBS Abroad' | 'Study Abroad' | 'MBBS in India' | 'Colleges' | 'Entrance Exams';
+type DynamicPageCategory = 'MBBS Abroad' | 'Study Abroad' | 'Study in India' | 'MBBS in India' | 'Colleges' | 'Entrance Exams';
 
 const hasSeoConfigured = (seo: any) => {
   if (!seo || typeof seo !== 'object') return false;
@@ -130,6 +134,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     metaTitle: string;
     seoSlug: string;
     metaDescription: string;
+    canonical: string;
+    ogTitle: string;
+    ogDescription: string;
+    ogImage: string;
+    ogType: string;
     structuredData: string;
   }>({
     title: '',
@@ -141,6 +150,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     metaTitle: '',
     seoSlug: '',
     metaDescription: '',
+    canonical: '',
+    ogTitle: '',
+    ogDescription: '',
+    ogImage: '',
+    ogType: 'website',
     structuredData: ''
   });
   
@@ -148,7 +162,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const initialCollegeState: Partial<CollegeDetailData> = {
     name: '', slug: '', location: '', type: 'Public', established: '',
     country: 'Russia', category: 'MBBS Abroad', image: '', intro: '',
-    focusKeyphrase: '', seoTitle: '', metaTitle: '', seoSlug: '', metaDescription: '', structuredData: ''
+    focusKeyphrase: '', seoTitle: '', metaTitle: '', seoSlug: '', metaDescription: '', canonical: '', ogTitle: '', ogDescription: '', ogImage: '', ogType: 'website', structuredData: ''
   };
   const [collegeForm, setCollegeForm] = useState<Partial<CollegeDetailData>>(initialCollegeState);
 
@@ -243,6 +257,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaTitle: '',
       seoSlug: '',
       metaDescription: '',
+      canonical: '',
+      ogTitle: '',
+      ogDescription: '',
+      ogImage: '',
+      ogType: 'website',
       structuredData: ''
     });
     setPayloadDraft({});
@@ -286,7 +305,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const generateSlug = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 
   const startEditingPage = (page: any) => {
-    const allowedCategories: DynamicPageCategory[] = ['MBBS Abroad', 'Study Abroad', 'MBBS in India', 'Colleges', 'Entrance Exams'];
+    const allowedCategories: DynamicPageCategory[] = ['MBBS Abroad', 'Study Abroad', 'Study in India', 'MBBS in India', 'Colleges', 'Entrance Exams'];
     const seoData = page.payload?.seo || page.seo || {};
     setPageForm({
       title: page.title || '',
@@ -298,6 +317,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaTitle: seoData.metaTitle || '',
       seoSlug: seoData.slug || '',
       metaDescription: seoData.metaDescription || '',
+      canonical: seoData.canonical || seoData.canonicalUrl || '',
+      ogTitle: seoData.ogTitle || '',
+      ogDescription: seoData.ogDescription || '',
+      ogImage: seoData.ogImage || '',
+      ogType: seoData.ogType || 'website',
       structuredData: typeof seoData.structuredData === 'string'
         ? seoData.structuredData
         : JSON.stringify(seoData.structuredData || {}, null, 2)
@@ -339,6 +363,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaTitle: pageForm.metaTitle || '',
       slug: pageForm.seoSlug || '',
       metaDescription: pageForm.metaDescription || '',
+      canonical: pageForm.canonical || '',
+      canonicalUrl: pageForm.canonical || '',
+      ogTitle: pageForm.ogTitle || '',
+      ogDescription: pageForm.ogDescription || '',
+      ogImage: pageForm.ogImage || '',
+      ogType: pageForm.ogType || 'website',
       structuredData: parsedStructuredData
     };
 
@@ -369,43 +399,93 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         }
       });
 
-      const mbbsAbroadEntries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'MBBS Abroad' as const,
-        payload
-      }));
+      const getIntroText = (intro: any) => {
+        if (typeof intro === 'string') return intro;
+        if (typeof intro?.text === 'string') return intro.text;
+        if (Array.isArray(intro?.introduction)) return intro.introduction.join(' ');
+        return '';
+      };
 
-      const studyAbroadEntries = Object.entries(STUDY_ABROAD_DETAILED).map(([slug, payload]) => ({
-        slug,
-        title: payload?.title || slug.replace(/-/g, ' '),
-        category: 'Study Abroad' as const,
-        payload
-      }));
+      const trimDescription = (value: string) => value.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().slice(0, 160);
 
-      const allEntries = [...mbbsAbroadEntries, ...studyAbroadEntries];
+      const buildDefaultSeo = (entry: { slug: string; title: string; payload: any }) => {
+        const canonicalPath = `/${entry.slug}`;
+        const description = trimDescription(getIntroText(entry.payload?.intro) || entry.title);
+        return {
+          focusKeyphrase: entry.title,
+          seoTitle: entry.title,
+          metaTitle: entry.title,
+          slug: entry.slug,
+          metaDescription: description,
+          canonical: canonicalPath,
+          canonicalUrl: canonicalPath,
+          ogTitle: entry.title,
+          ogDescription: description,
+          ogImage: entry.payload?.heroImage || entry.payload?.image || '',
+          ogType: 'website',
+          structuredData: {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: entry.title,
+            url: `https://www.iexplaineducation.in${canonicalPath}`,
+            description
+          }
+        };
+      };
+
+      const toEntries = (
+        source: Record<string, any>,
+        category: DynamicPageCategory,
+        titleResolver = (slug: string, payload: any) => payload?.title || payload?.name || slug.replace(/-/g, ' '),
+        slugResolver = (slug: string, payload: any) => payload?.slug || slug
+      ) => Object.entries(source).map(([sourceSlug, payload]) => {
+        const slug = generateSlug(slugResolver(sourceSlug, payload));
+        return {
+          slug,
+          title: titleResolver(sourceSlug, payload),
+          category,
+          payload: { ...payload, slug }
+        };
+      });
+
+      const rawEntries = [
+        ...toEntries(MBBS_ABROAD_DETAILED, 'MBBS Abroad', (slug, payload) => payload?.title || `MBBS in ${slug.replace(/-/g, ' ')}`, (slug, payload) => payload?.seo?.slug || `mbbs-in-${slug}`),
+        ...toEntries(STUDY_ABROAD_DETAILED, 'Study Abroad', (slug, payload) => payload?.title || `Study in ${slug.replace(/-/g, ' ')}`, (slug, payload) => payload?.seo?.slug || `study-in-${slug}`),
+        ...toEntries(INDIA_COURSES_DETAILED, 'Study in India', (slug, payload) => payload?.title || slug.replace(/-/g, ' '), (slug) => `study-india-${slug}`),
+        ...toEntries(MBBS_IN_INDIA_DETAILS, 'MBBS in India', (slug, payload) => payload?.title || payload?.name || slug.replace(/-/g, ' '), (slug, payload) => `mbbs-india-${payload?.slug || slug}`),
+        ...toEntries(ENTRANCE_EXAM_DETAILS, 'Entrance Exams', (slug, payload) => payload?.title || slug.replace(/-/g, ' '), (slug) => `exams-${slug}`),
+        ...toEntries(STRUCTURED_COLLEGE_DETAILS, 'Colleges'),
+        ...toEntries(STUDY_ABROAD_COLLEGE_DETAILS, 'Colleges'),
+        ...toEntries(LEGACY_COLLEGE_DETAILS, 'Colleges'),
+      ];
+
+      const uniqueEntries = Array.from(new Map(rawEntries.map((entry) => [entry.slug, entry])).values());
 
       await Promise.all(
-        allEntries.map((entry) =>
-          setDoc(
-            doc(db, 'dynamic_pages', entry.slug),
+        uniqueEntries.map((entry) => {
+          const existing = existingBySlug.get(entry.slug);
+          const seo = existing?.seo && hasSeoConfigured(existing.seo) ? existing.seo : buildDefaultSeo(entry);
+          return setDoc(
+            doc(db, 'dynamic_pages', entry.slug.replace(/\//g, '__')),
             {
               slug: entry.slug,
               title: entry.title,
               category: entry.category,
               payload: {
-                ...(existingBySlug.get(entry.slug)?.payload || {}),
+                ...(existing?.payload || {}),
                 ...entry.payload,
-                seo: existingBySlug.get(entry.slug)?.seo || {}
-              }
+                seo
+              },
+              seo,
+              updatedAt: serverTimestamp()
             },
             { merge: true }
-          )
-        )
+          );
+        })
       );
 
       await fetchData();
-      alert(`Synced ${allEntries.length} records to dynamic_pages.`);
+      alert(`Synced ${uniqueEntries.length} records to dynamic_pages. Programs: ${uniqueEntries.filter((entry) => entry.category !== 'Colleges').length}, Colleges: ${uniqueEntries.filter((entry) => entry.category === 'Colleges').length}.`);
     } catch (err) {
       console.error('Sync all site data failed:', err);
       alert('Failed to sync all site data.');
@@ -423,6 +503,11 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaTitle: seoData.metaTitle || '',
       seoSlug: seoData.slug || '',
       metaDescription: seoData.metaDescription || '',
+      canonical: seoData.canonical || seoData.canonicalUrl || '',
+      ogTitle: seoData.ogTitle || '',
+      ogDescription: seoData.ogDescription || '',
+      ogImage: seoData.ogImage || '',
+      ogType: seoData.ogType || 'website',
       structuredData: typeof seoData.structuredData === 'string'
         ? seoData.structuredData
         : JSON.stringify(seoData.structuredData || {}, null, 2)
@@ -448,6 +533,12 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       metaTitle: (collegeForm as any).metaTitle || '',
       slug: (collegeForm as any).seoSlug || '',
       metaDescription: (collegeForm as any).metaDescription || '',
+      canonical: (collegeForm as any).canonical || '',
+      canonicalUrl: (collegeForm as any).canonical || '',
+      ogTitle: (collegeForm as any).ogTitle || '',
+      ogDescription: (collegeForm as any).ogDescription || '',
+      ogImage: (collegeForm as any).ogImage || '',
+      ogType: (collegeForm as any).ogType || 'website',
       structuredData: parsedStructuredData
     };
 
@@ -882,6 +973,7 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       <select className="input-std" value={pageForm.category} onChange={e => setPageForm({ ...pageForm, category: e.target.value as DynamicPageCategory })}>
                         <option value="MBBS Abroad">MBBS Abroad</option>
                         <option value="Study Abroad">Study Abroad</option>
+                        <option value="Study in India">Study in India</option>
                         <option value="MBBS in India">MBBS in India</option>
                         <option value="Colleges">Colleges</option>
                         <option value="Entrance Exams">Entrance Exams</option>
@@ -905,16 +997,33 @@ const AdminPanel: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         <label className="label">Meta Title</label>
                         <input type="text" className="input-std" value={pageForm.metaTitle} onChange={e => setPageForm({ ...pageForm, metaTitle: e.target.value })} />
                       </div>
+                      <div className="md:col-span-1">
+                        <label className="label">Canonical URL / Path</label>
+                        <input type="text" className="input-std" value={pageForm.canonical} onChange={e => setPageForm({ ...pageForm, canonical: e.target.value })} />
+                      </div>
+                      <div className="md:col-span-1">
+                        <label className="label">OG Title</label>
+                        <input type="text" className="input-std" value={pageForm.ogTitle} onChange={e => setPageForm({ ...pageForm, ogTitle: e.target.value })} />
+                      </div>
+                      <div className="md:col-span-1">
+                        <label className="label">OG Image</label>
+                        <input type="text" className="input-std" value={pageForm.ogImage} onChange={e => setPageForm({ ...pageForm, ogImage: e.target.value })} />
+                      </div>
+                      <div className="md:col-span-1">
+                        <label className="label">OG Type</label>
+                        <input type="text" className="input-std" value={pageForm.ogType} onChange={e => setPageForm({ ...pageForm, ogType: e.target.value })} />
+                      </div>
                     </div>
 
-                    <div>
-                      <label className="label">Meta Description</label>
-                      <textarea
-                        rows={3}
-                        className="input-std"
-                        value={pageForm.metaDescription}
-                        onChange={e => setPageForm({ ...pageForm, metaDescription: e.target.value })}
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="label">Meta Description</label>
+                        <textarea rows={3} className="input-std" value={pageForm.metaDescription} onChange={e => setPageForm({ ...pageForm, metaDescription: e.target.value })} />
+                      </div>
+                      <div>
+                        <label className="label">OG Description</label>
+                        <textarea rows={3} className="input-std" value={pageForm.ogDescription} onChange={e => setPageForm({ ...pageForm, ogDescription: e.target.value })} />
+                      </div>
                     </div>
 
                     <div>

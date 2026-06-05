@@ -157,6 +157,12 @@ const useDynamicSeo = (options: {
     seoTitle?: string;
     metaDescription?: string;
     slug?: string;
+    canonical?: string;
+    canonicalUrl?: string;
+    ogTitle?: string;
+    ogDescription?: string;
+    ogImage?: string;
+    ogType?: string;
     structuredData?: Record<string, any> | Record<string, any>[] | string;
   } | null;
 }) => {
@@ -165,14 +171,20 @@ const useDynamicSeo = (options: {
   useEffect(() => {
     const title = seo?.metaTitle || seo?.seoTitle || pageTitle;
     const description = seo?.metaDescription || metaDescription || 'iExplain Education helps students with admissions, counselling, and study abroad planning.';
-    const canonicalPath = seo?.slug ? `/${seo.slug}` : pathname;
-    const canonicalUrl = `https://www.iexplaineducation.in${canonicalPath}`;
+    const canonicalValue = seo?.canonicalUrl || seo?.canonical || (seo?.slug ? `/${seo.slug}` : pathname);
+    const canonicalUrl = canonicalValue.startsWith('http')
+      ? canonicalValue
+      : `https://www.iexplaineducation.in${canonicalValue.startsWith('/') ? canonicalValue : `/${canonicalValue}`}`;
+    const ogTitle = seo?.ogTitle || title;
+    const ogDescription = seo?.ogDescription || description;
 
     document.title = title;
     applyMetaTag('description', description);
-    applyPropertyMetaTag('og:title', title);
-    applyPropertyMetaTag('og:description', description);
+    applyPropertyMetaTag('og:title', ogTitle);
+    applyPropertyMetaTag('og:description', ogDescription);
     applyPropertyMetaTag('og:url', canonicalUrl);
+    applyPropertyMetaTag('og:type', seo?.ogType || 'website');
+    if (seo?.ogImage) applyPropertyMetaTag('og:image', seo.ogImage);
 
     let jsonLdScript = document.getElementById('dynamic-jsonld-schema') as HTMLScriptElement | null;
     if (jsonLdScript) {
@@ -573,7 +585,7 @@ const EntranceExamWrapper = () => {
   useDynamicSeo({
     pathname: `/${normalizedSlug ? `exams/${normalizedSlug}` : ''}`,
     pageTitle: remotePage?.payload?.title || ENTRANCE_EXAM_DETAILS[normalizedSlug]?.title || 'Entrance Exam',
-    metaDescription: remotePage?.payload?.intro?.text || ENTRANCE_EXAM_DETAILS[normalizedSlug]?.intro?.text || '',
+    metaDescription: remotePage?.payload?.intro?.text || (typeof ENTRANCE_EXAM_DETAILS[normalizedSlug]?.intro === 'string' ? ENTRANCE_EXAM_DETAILS[normalizedSlug]?.intro : (ENTRANCE_EXAM_DETAILS[normalizedSlug]?.intro as any)?.text) || '',
     seo: remotePage?.payload?.seo || null,
   });
 
@@ -593,6 +605,63 @@ const EntranceExamWrapper = () => {
 const AboutPage = () => <div className="py-20 text-center"><h1 className="text-4xl font-bold">About Us</h1><AboutSection compact={false} /></div>;
 const BlogListPage = () => <BlogSection />;
 const ContactPage = () => <div className="py-20 text-center"><h1 className="text-4xl font-bold">Contact</h1><ContactMapSection /></div>;
+
+const MBBSAbroadLandingPage = () => {
+  const countries = Object.entries(MBBS_ABROAD_DETAILED).map(([slug, page]) => ({
+    slug: createSlug(page.title || `MBBS in ${slug}`),
+    title: page.title || `MBBS in ${slug.replace(/-/g, ' ')}`,
+    image: page.heroImage,
+    description: typeof page.intro === 'string' ? page.intro : page.intro?.text || `Explore MBBS admission guidance for ${slug.replace(/-/g, ' ')}.`,
+  }));
+
+  useDynamicSeo({
+    pathname: '/mbbs-in-abroad',
+    pageTitle: 'MBBS in Abroad | iExplain Education',
+    metaDescription: 'Explore MBBS abroad destinations, top medical universities, admissions, eligibility, documents, and expert counselling from iExplain Education.',
+    seo: {
+      slug: 'mbbs-in-abroad',
+      metaTitle: 'MBBS in Abroad | iExplain Education',
+      metaDescription: 'Explore MBBS abroad destinations, top medical universities, admissions, eligibility, documents, and expert counselling from iExplain Education.',
+      canonical: '/mbbs-in-abroad',
+      ogTitle: 'MBBS in Abroad | iExplain Education',
+      ogDescription: 'Compare MBBS abroad destinations and get expert admission support from iExplain Education.',
+      ogType: 'website',
+      structuredData: {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'MBBS in Abroad',
+        url: 'https://www.iexplaineducation.in/mbbs-in-abroad'
+      }
+    }
+  });
+
+  return (
+    <div className="bg-gray-50 dark:bg-slate-900 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-gold/10 text-brand-gold text-[10px] font-black uppercase tracking-[0.2em] mb-4">Global Medical Admissions</span>
+          <h1 className="text-4xl lg:text-5xl font-black text-brand-blue dark:text-white mb-5">MBBS in <span className="text-brand-gold">Abroad</span></h1>
+          <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 font-medium leading-relaxed">
+            Compare country-wise MBBS abroad options, eligibility, fees, documents, top universities, and student support services with iExplain Education.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {countries.map((country) => (
+            <Link key={country.slug} to={`/${country.slug}`} className="group bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all">
+              <img src={country.image || HERO_IMG_URL} alt={country.title} className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="p-6">
+                <h2 className="text-xl font-black text-brand-blue dark:text-white mb-3 group-hover:text-brand-gold transition-colors">{country.title}</h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{country.description || 'Get complete admission guidance, eligibility checks, visa support, and university shortlisting.'}</p>
+                <span className="inline-flex mt-5 text-xs font-black uppercase tracking-widest text-brand-gold">Explore <i className="fa-solid fa-arrow-right ml-2"></i></span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 
 const normalizeCollegeDetailData = (raw: any, slug: string) => {
   if (!raw) return null;
@@ -682,20 +751,47 @@ const LegacyCollegeRedirect = () => {
 
 const StudyIndiaWrapper = () => {
   const { subPath } = useParams<{ subPath: string }>();
+  const normalizedSlug = createSlug(subPath || 'mbbs');
   const data = INDIA_COURSES_DETAILED[subPath || 'mbbs'];
+  const [remotePage, setRemotePage] = useState<any>(null);
+
+  useEffect(() => {
+    fetchDynamicPageBySlug(`study-india-${normalizedSlug}`).then(setRemotePage).catch(() => setRemotePage(null));
+  }, [normalizedSlug]);
+
+  useDynamicSeo({
+    pathname: `/study-india/${normalizedSlug}`,
+    pageTitle: remotePage?.payload?.title || data?.title || 'Study in India',
+    metaDescription: remotePage?.payload?.intro?.text || data?.intro?.text || '',
+    seo: remotePage?.payload?.seo || remotePage?.seo || null,
+  });
+
   if (!data) return <Navigate to="/study-india/mbbs" replace />;
-  return <StudyIndiaDetailPage data={data} />;
+  return <StudyIndiaDetailPage data={remotePage?.payload || data} />;
 };
 
 const MBBSIndiaCollegeWrapper = () => {
   const { titleSlug } = useParams<{ titleSlug: string }>();
   const normalizedSlug = createSlug(titleSlug || '');
   const localMBBSIndiaPage = MBBS_IN_INDIA_DETAILS[normalizedSlug];
+  const [remotePage, setRemotePage] = useState<any>(null);
+
+  useEffect(() => {
+    if (!normalizedSlug) return;
+    fetchDynamicPageBySlug(`mbbs-india-${normalizedSlug}`).then(setRemotePage).catch(() => setRemotePage(null));
+  }, [normalizedSlug]);
+
+  useDynamicSeo({
+    pathname: `/mbbs-india/${normalizedSlug}`,
+    pageTitle: remotePage?.payload?.title || localMBBSIndiaPage?.title || 'MBBS in India',
+    metaDescription: remotePage?.payload?.intro?.text || localMBBSIndiaPage?.intro?.text || '',
+    seo: remotePage?.payload?.seo || remotePage?.seo || null,
+  });
 
   if (!normalizedSlug) return <Navigate to="/study-india/mbbs" replace />;
 
-  if (localMBBSIndiaPage) {
-    return <MBBSinindiadetailpage data={localMBBSIndiaPage} />;
+  if (remotePage?.payload || localMBBSIndiaPage) {
+    return <MBBSinindiadetailpage data={remotePage?.payload || localMBBSIndiaPage} />;
   }
 
   return <Navigate to="/study-india/mbbs" replace />;
@@ -739,7 +835,7 @@ const CategoryTitleSlugWrapper = () => {
   }, [normalizedSlug]);
 
   const remoteSeo = remotePage?.payload?.seo || remotePage?.seo || remoteCollege?.seo || null;
-  const localSeo = localStructuredCollegePage?.seo || localStudyAbroadCollegePage?.seo || localCollegeFallback?.seo || null;
+  const localSeo = (localStructuredCollegePage as any)?.seo || (localStudyAbroadCollegePage as any)?.seo || (localCollegeFallback as any)?.seo || null;
   const resolvedSeo = remoteSeo || localSeo;
 
   const resolvedTitle =
@@ -757,7 +853,7 @@ const CategoryTitleSlugWrapper = () => {
     remoteCollege?.intro?.text ||
     remoteCollege?.intro ||
     localStudyAbroadCollegePage?.intro?.text ||
-    localMBBSAbroadPage?.intro?.text ||
+    (typeof localMBBSAbroadPage?.intro === 'string' ? localMBBSAbroadPage?.intro : localMBBSAbroadPage?.intro?.text) ||
     localStudyAbroadPage?.intro?.text ||
     localCollegeFallback?.intro?.text ||
     '';
@@ -978,6 +1074,7 @@ const App: React.FC = () => {
           <Route path="/blog/:category/:slug" element={<BlogDetailWrapper />} />
           <Route path="/blog/:slug" element={<BlogDetailWrapper />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/mbbs-in-abroad" element={<MBBSAbroadLandingPage />} />
           <Route path="/study-india/:subPath" element={<StudyIndiaWrapper />} />
           <Route path="/mbbs-india/:titleSlug" element={<MBBSIndiaCollegeWrapper />} />
           <Route path="/:titleSlug" element={<CategoryTitleSlugWrapper />} />

@@ -99,7 +99,7 @@ const CollegeDetailPage: React.FC<Props> = ({ data }) => {
                 {Object.entries(data.quickOverview).map(([k, v], i) => (
                   <tr key={i}>
                     <td className="border p-3 font-semibold">{k}</td>
-                    <td className="border p-3">{v}</td>
+                    <td className="border p-3">{String(v)}</td>
                   </tr>
                 ))}
               </tbody>

@@ -48,7 +48,7 @@ const StudyAbroadCollegeDetailPage: React.FC<Props> = ({ data }) => {
           <div className="grid md:grid-cols-2 gap-3">
             {Object.entries(data.quickOverview).map(([key, value], i) => (
               <div key={i}>
-                <strong>{key}:</strong> {value}
+                <strong>{key}:</strong> {String(value)}
               </div>
             ))}
           </div>
