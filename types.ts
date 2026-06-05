@@ -41,112 +41,8 @@ export interface College {
   link?: string;
 }
 
-export interface CollegeDetailData {
-  id?: string;
-  slug?: string;
+export type CollegeDetailData = Record<string, any>;
 
-  title: string;
-  heroImage: string;
-  heroImageMobile?: string;
-
-  intro: {
-    text: string;
-  };
-
-  // Better than Record<string, string>
-  quickFacts: {
-    label: string;
-    value: string;
-  }[];
-
-  quickOverview: {
-    courseName: string;
-    duration: string;
-    medium: string;
-    eligibility: string;
-    neet: string;
-    recognition: string;
-    intake: string;
-    averageFees: string;
-    introfooter: string;
-  };
-
-  benefits: string[];
-
-  eligibility: {
-    label: string;
-    value: string;
-  }[];
-
-  duration: {
-    mbbs: string;
-    internship: string;
-  };
-
-  syllabus: {
-    year: string;
-    subjects: string[];
-  }[];
-
-  documents: string[];
-
-  fees: {
-    structure: {
-      label: string;
-      value: string;
-    }[];
-    note?: string;
-  };
-
-  courses: string[];
-
-  // ✅ Structured Student Life (UPDATED)
-  studentLife: {
-    title: string;
-    introduction: string[];
-    experience: string[];
-    facilities: {
-      title: string;
-      points: string[];
-    };
-  };
-
-  // ✅ New Section (you added earlier)
-  forIndianStudents: {
-    title: string;
-    introduction: string[];
-    advantages: {
-      title: string;
-      points: {
-        main: string;
-        subPoints: string[];
-      }[];
-    };
-    conclusion: string;
-  };
-
-  placements: string[];
-
-  hostelFacilities: {
-    intro: string;
-    features: string[];
-  };
-
-  // Better structure instead of Record
-  careerOpportunities: {
-    title: string;
-    roles: string[];
-  };
-
-  recognition: string[];
-
-  gallery: string[];
-
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-}
 
 export interface ProgramDetailData {
   title: string;
@@ -158,242 +54,17 @@ export interface ProgramDetailData {
   about?: string;
 }
 
-export interface MBBSDetailData {
-  title: string;
-  heroImage: string;
-  heroImageMobile: string;
-
-  intro: {
-    text: string;
-    image: string;
-  };
-
-  quickFacts: {
-    country: string;
-    capital: string;
-    currency: string;
-    language: string;
-    population: string;
-    climate: string;
-    timeDifference: string;
-    popularCities: string;
-    safety: string;
-  };
-
-  quickOverview: {
-    courseName: string;
-    duration: string;
-    medium: string;
-    eligibility: string;
-    neet: string;
-    recognition: string;
-    intake: string;
-    averageFees: string;
-    introfooter: string;
-    
-  };
+export type MBBSDetailData = Record<string, any>;
 
 
-  ForIndianStudents = {
-  title: string;
+export type StudyAbroadDetailData = Record<string, any>;
 
-  introduction: string[];
 
-  advantages: {
-    title: string;
-    points: {
-      main: string;
-      subPoints: string[];
-    }[];
-  };
+export type StudyAbroadCollegeDetailData = Record<string, any>;
 
-  conclusion: string;
-};
 
-  benefits: string[];
+export type MBBSIndiaCollegeDetailData = Record<string, any>;
 
-  duration: {
-    mbbs: string;
-    internship: string;
-  };
-
-  eligibility: {
-    academic: string;
-    marks: string;
-    neet: string;
-    age: string;
-  };
-
-  documents: string[];
-
-  indiaVsCountry: {
-    fees: { india: string; country: string };
-    exam: { india: string; country: string };
-    donation: { india: string; country: string };
-    exposure: { india: string; country: string };
-    infrastructure: { india: string; country: string };
-  };
-
-  topUniversities: {
-    name: string;
-    description: string;
-    established: string;
-    location: string;
-    tuitionFees: string;
-    hostelFees: string;
-    firstYearPackage: string;
-    totalPackage: string;
-    recognition: string;
-  }[];
-
-  // ✅ FIXED
-  whyChooseUs: {
-    intro: string;
-    points: string[];
-  };
-
-  // ✅ FIXED spacing
-  checklist: {
-    item: string;
-    required: boolean;
-  }[];
-
-  hostelFacilities: {
-    intro: string;
-    subIntro: string;
-    footer: string;
-    features: string[];
-  };
-
-  careerOpportunities: {
-    intro: string;
-    practiceInIndia: string;
-    postgraduate: string;
-    research: string;
-    administration: string;
-    teaching: string;
-    practiceAbroad: string;
-  };
-
-  // ✅ FIXED spacing
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-}
-
-export interface StudyAbroadDetailData {
-  title: string;
-  heroImage: string;
-  heroImageMobile?: string;
-  intro: {
-    text: string;
-    image: string;
-  };
-  whyStudy: string[];
-  qualifications: {
-    name: string;
-    duration: string;
-    description: string;
-  }[];
-  courseStreams: {
-    stream: string;
-    courses: string[];
-    careers: string[];
-  }[];
-  topUniversities: {
-    name: string;
-    location: string;
-    description: string;
-  }[];
-  partTimeWork: {
-    hoursPerWeek: string;
-    details: string[];
-  };
-  postStudyWork: {
-    program: string;
-    duration: string;
-    description: string;
-  };
-  documentsRequired: string[];
-  intakes: {
-    intake: string;
-    months: string;
-    details: string;
-  }[];
-  cost: {
-    tuitionFees: string;
-    livingExpenses: string;
-    additionalCosts?: string;
-  };
-  whyChooseUs: string[];
-  lifeAndCareer: {
-    description: string;
-    points: string[];
-  };
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-}
-
-export interface StudyAbroadCollegeDetailData {
-  title: string;
-  coursetype: string;
-  heroImage: string;
-  heroImageMobile?: string;
-  intro: { text: string };
-  quickOverview: Record<string, string>;
-  benefits: {
-    intro: string;
-    items: { heading: string; details: string }[];
-  };
-  SyllabusIntro?: string;
-  syllabus?: {
-    headers: string[];
-    table: Record<string, string>[];
-  };
-  fees: {
-    note?: string;
-    sections: {
-      title: string;
-      headers: string[];
-      table: Record<string, string>[];
-    }[];
-  };
-  duration?: {
-    headers: string[];
-    table: Record<string, string>[];
-  };
-  studentSupport?: string;
-  recognition?: string;
-  hostelFacilities?: string;
-  studentLife?: string;
-  scholarshipIntro?: string;
-  scholarships?: { title: string; details: string }[];
-  eligibility: {
-    headers: string[];
-    table: Record<string, string>[];
-  };
-  whyChooseUsIntro: string;
-  whyChooseUs: string[];
-  documents: { document: string; details: string }[];
-  conclusion: string;
-  faqs: { question: string; answer: string }[];
-}
-
-export interface MBBSIndiaCollegeDetailData extends StudyAbroadCollegeDetailData {
-  internship?: {
-    intro: string;
-    headers: string[];
-    table: Record<string, string>[];
-  };
-  cutOff?: {
-    title: string;
-    headers: string[];
-    table: Record<string, string>[];
-  };
-}
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
@@ -531,22 +202,8 @@ interface FAQSection {
 
 // ─── Root interface ───────────────────────────────────────────────────────────
 
-export interface StudyIndiaDetailData {
-  title: string;
-  heroImageMobile: string;
-  heroImage: string;
-  intro: string;
-  overview: OverviewSection;
-  why: WhySection;
-  eligibility: EligibilitySection;
-  documents: DocumentsSection;
-  curriculum: CurriculumSection;
-  topColleges: TopCollegesSection;
-  careerScope: CareerScopeSection;
-  advantages: AdvantagesSection;
-  whyIExplain: WhyIExplainSection;
-  faqs: FAQSection;
-}
+export type StudyIndiaDetailData = Record<string, any>;
+
 
 export interface BlogCategory {
   id: string;
@@ -615,33 +272,8 @@ export interface GalleryItem {
 
 export type AppView = 'home' | 'about' | 'services' | 'contact' | 'mbbs-abroad' | 'study-abroad' | 'study-india' | 'exams' | 'admin' | 'service-detail' | 'legal' | 'achievements' | 'office-detail' | 'blog-list' | 'blog-detail' | 'college-detail';
 
-export interface EntranceExamData {
-  id?: string;
-  title: string;
-  heroImage: string;
-  mobileImage: string;
-  intro: string;
-  examParts?: string[];
-  additionalNote?: string;
-  eligibility: {
-    title: string;
-    points: string[];
-  };
-  syllabus: {
-    maths?: string[];
-    physics?: {
-      sectionA: string[];
-      sectionB: string[];
-    };
-    chemistry?: {
-      physical: string[];
-      inorganic: string[];
-      organic: string[];
-    };
-    biology?: string[]; // Added for NEET
-  };
-  preparationTips: string[];
-}
+export type EntranceExamData = Record<string, any>;
+
 
 export type EntranceExamDataMap = Record<string, EntranceExamData>;
 

@@ -47,6 +47,17 @@ const DEFAULT_SEO = {
   jsonLd: ""
 };
 
+
+const createSlug = (value = "") =>
+  value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+
+const getIntroText = (intro: any) => {
+  if (typeof intro === "string") return intro;
+  if (typeof intro?.text === "string") return intro.text;
+  if (Array.isArray(intro?.introduction)) return intro.introduction.join(" ");
+  return "";
+};
+
 const escapeHtml = (value = "") =>
   value
     .replace(/&/g, "&amp;")
@@ -92,16 +103,18 @@ const buildSlugCandidates = (slug: string) => {
 const buildSeoFromPayload = (seoPayload: any, pathname: string, pageTitle?: string) => {
   const seoTitle = seoPayload?.metaTitle || seoPayload?.seoTitle || pageTitle || DEFAULT_SEO.title;
   const seoDescription = seoPayload?.metaDescription || DEFAULT_SEO.description;
-  const canonicalPath = seoPayload?.slug ? `/${seoPayload.slug}` : pathname;
-  const canonicalUrl = `https://www.iexplaineducation.in${canonicalPath}`;
+  const canonicalValue = seoPayload?.canonicalUrl || seoPayload?.canonical || (seoPayload?.slug ? `/${seoPayload.slug}` : pathname);
+  const canonicalUrl = canonicalValue.startsWith('http')
+    ? canonicalValue
+    : `https://www.iexplaineducation.in${canonicalValue.startsWith('/') ? canonicalValue : `/${canonicalValue}`}`;
   const jsonLd = seoPayload?.structuredData ? JSON.stringify(seoPayload.structuredData) : "";
 
   return {
     title: seoTitle,
     description: seoDescription,
     canonicalUrl,
-    ogTitle: seoTitle,
-    ogDescription: seoDescription,
+    ogTitle: seoPayload?.ogTitle || seoTitle,
+    ogDescription: seoPayload?.ogDescription || seoDescription,
     ogUrl: canonicalUrl,
     jsonLd,
   };
@@ -190,6 +203,7 @@ const injectSeoIntoHtml = (html: string, seo: typeof DEFAULT_SEO) => {
   const ogTitleTag = `<meta property="og:title" content="${escapeHtml(seo.ogTitle)}">`;
   const ogDescriptionTag = `<meta property="og:description" content="${escapeHtml(seo.ogDescription)}">`;
   const ogUrlTag = `<meta property="og:url" content="${escapeHtml(seo.ogUrl)}">`;
+  const ogTypeTag = `<meta property="og:type" content="website">`;
 
   const jsonLdScript = seo.jsonLd
     ? `<script type="application/ld+json" id="server-jsonld-schema">${seo.jsonLd}</script>`
@@ -202,7 +216,7 @@ const injectSeoIntoHtml = (html: string, seo: typeof DEFAULT_SEO) => {
     .replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/i, ogTitleTag)
     .replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/i, ogDescriptionTag)
     .replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i, ogUrlTag)
-    .replace("</head>", `${jsonLdScript}</head>`);
+    .replace("</head>", `${ogTypeTag}${jsonLdScript}</head>`);
 };
 
 async function startServer() {

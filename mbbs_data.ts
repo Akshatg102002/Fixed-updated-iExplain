@@ -923,7 +923,6 @@ These advantages make MBBS Russia one of the most preferred destinations for med
       ]
     },
 
-    studentLife: "Student life during the time of pursuing MBBS in Georgia is quite vibrant and exciting. Cultural events, sports competitions, and academic conferences are held in the universities. Students who study MBBS in Georgia are also offered the chance to explore the country's culture, history, and natural beauty. Universities which offer the course of MBBS in Georgia provide their students with the facilities of clubs, libraries, and other leisure activities.",
 
     careerOpportunities: {
       practiceInIndia: "After completing their MBBS in Georgia, students can take the FMGE/NExT exam in India to practice medicine. Because of the globally recognized degree and quality education, students are well-prepared for these licensing exams.",

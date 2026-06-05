@@ -9,7 +9,7 @@ export const WHO_WE_ARE_CONTENT = {
   image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" // Placeholder image
 };
 
-export const AIRPORT_DIARIES = [
+export const AIRPORT_DIARIES: any[] = [
   { id: 1, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_015_bzg9e7.jpg" },
   { id: 2, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_016_oervec.jpg" },
   { id: 3, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277826/File_014_nwx0fs.jpg" },
@@ -26,7 +26,7 @@ export const AIRPORT_DIARIES = [
   { id: 14, image: "https://res.cloudinary.com/dcuuvw8zt/image/upload/v1777277824/File_001_zyycir.jpg" }
 ];
 
-export const STUDENT_REVIEWS = [
+export const STUDENT_REVIEWS: any[] = [
   {
     id: 1,
     name: "Ashish Naikwadi",

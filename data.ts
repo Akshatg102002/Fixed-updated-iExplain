@@ -1771,6 +1771,7 @@ export const MEGA_MENU_DATA = {
     { name: "Europe", link: "/study-in-europe", code: "EU" }
   ],
   "MBBS ABROAD": [
+    { name: "MBBS in Abroad", link: "/mbbs-in-abroad", icon: "fa-solid fa-globe" },
     { name: "Russia", link: "/mbbs-in-russia", code: "RU" },
     { name: "Georgia", link: "/mbbs-in-georgia", code: "GE" },
     { name: "Kazakhstan", link: "/mbbs-in-kazakhstan", code: "KZ" },
@@ -1800,7 +1801,7 @@ export const MEGA_MENU_DATA = {
   ]
 };
 
-export const STUDENT_SERVICES_DATA = [
+export const STUDENT_SERVICES_DATA: any[] = [
   {
     id: "career-counselling",
     title: "Career Counselling",
